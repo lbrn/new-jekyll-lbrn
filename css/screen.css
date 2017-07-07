@@ -157,6 +157,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   nav li a {
     color: white;
     text-decoration: none; }
+  nav li a:hover {
+    color: white; }
   nav li:last-child {
     border: none; }
 
