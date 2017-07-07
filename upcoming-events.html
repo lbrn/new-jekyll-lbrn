@@ -1,0 +1,9 @@
+---
+layout: default
+title: Upcoming Events
+---
+<section class="events" id="eventsContainer">
+  {% for post in site.categories.events %}
+    {% include events-list-item-long.html %}
+  {% endfor %}
+</section>

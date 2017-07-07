@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="css/screen.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="layout">
+        <a href="index.html"><img src="images/webLogo.png" alt="LBRN Logo"></a>
+        <h1>Louisiana&nbsp;Biomedical Research&nbsp;Network</h1>
+        <a href="#"><img id="navBug" src="images/menuClosed.png" alt="Menu Bug"></a>
+      </div>
+    </header>
+    <nav>
+      <ul class="layout">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="lbrn-events.html">Events</a></li>
+      </ul>
+    </nav>
+    <main class="layout">
+      <section id="lbrnEventHeader">
+        <div class="imagebox">
+          <img src="{{page.headerImage}}" alt="{{page.title}}">
+          <section id="quickReference">
+            <div><i class="fa fa-lg fa-info-circle"></i></div>
+            <p class="bold date"><i class="fa fa-lg fa-calendar"></i>  {{page.eventDate}}</p>
+            <p class="bold time"><i class="fa fa-lg fa-clock-o"></i>  {{page.eventTime}}</p>
+            <p class="bold location"><i class="fa fa-lg fa-map-pin"></i>  {{page.eventLocation}}</p>
+            <p class="bold deadlines"><i class="fa fa-lg fa-hourglass-half"></i>  {{page.eventDeadlines}}</p>
+          </section>
+        </div>
+        <div class="caption">
+          <h1>{{page.title}}</h1>
+          <p id="date">{{page.eventDate}}</p>
+          <button type="button" name="registration"><a href="#eventRegistration">Register Here</a></button>
+        </div>
+      </section>
+      <div class="content">
+        {{content}}
+      </div>
+    </main>
+    <footer>
+      <div class="layout">
+        <p>Copywright &copy; LBRN 2017</p>
+        <p>Support from the National Institute of Health through the National Institue of General Medical Science Grants
+          <span>5&nbsp;P2O&nbsp;GM103424-15</span> and <span>5&nbsp;P2O&nbsp;GM103424-15</span> are gratefully acknowledged.</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scrollMenu.js"></script>
+  </body>
+</html>

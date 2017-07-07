@@ -1,0 +1,11 @@
+<section id="{{post.date | date: '%d' }}{{post.date | date: '%b'}}">
+  <div class="date">
+    <h3 class="date-day"> {{post.date | date: '%d' }}</h3>
+    <h4 class="date-month">{{post.date | date: '%b'}}</h4>
+  </div>
+  <div class="details">
+    <p class="title">{{post.title}}</p>
+    <p class="description">{{post.description}}</p>
+    <p class="date-time">{{post.startTime}} to {{post.endTime}}</p>
+  </div>
+</section>

@@ -1,0 +1,110 @@
+@import "susy";
+@import "breakpoint";
+
+//Declaring variables
+$susy: (
+  columns: 12,
+  gutters: 1/2,
+  gutter-postion: after
+);
+$susySmall: (
+  columns: 3,
+  gutters: 1,
+  gutter-position: inside
+);
+$susyMedium: (
+  columns: 3,
+  gutters:.5,
+  gutter-position: inside
+);
+
+$large: 1224px;
+$standard: 667px;
+$medium: 414px;
+$small: 0;
+
+//dev styles:
+header, main, aside, body, ul, li, div, html, h1, h2, {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: lightGreen;
+}
+nav {
+  height: 3em;
+  background-color: seagreen;
+  ul {
+    li {
+      float:left;
+      list-style: none;
+    }
+  }
+}
+main {
+  min-height: 30em;
+  background-color: lightGrey;
+}
+aside {
+  background-color: lightBlue;
+  li { height: 5em; list-style: none;}
+}
+body {
+  background-color: darkGrey;
+}
+footer {
+  background-color: darkBlue;
+  color: white;
+}
+
+@include susy-breakpoint($medium, $susyMedium){
+  header {
+    @include span(full);
+  }
+  nav {
+    @include span(full);
+    display: none;
+  }
+  main {
+    @include span(full);
+  }
+  aside {
+    @include span(full);
+  }
+  footer {
+    @include span(full);
+  }
+}
+@include breakpoint($standard){
+    @include layout($susy, clean);
+  header {
+    @include span(full);
+  }
+  nav {
+    display: block;
+  }
+  main {
+    @include span(8);
+  }
+  .three-columns {
+    @include span(full);
+    background-color: grey;
+    section{
+      background-color: lightBlue;
+      @include span(4);
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+    section:nth-child(3n) {
+      @include span(last 4);
+    }
+  }
+  aside {
+    @include span(last 4);
+  }
+}
+@include susy-breakpoint($large, $susy){
+  .layout {
+    @include container(85%);
+  }
+}

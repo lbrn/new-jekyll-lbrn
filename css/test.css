@@ -1,0 +1,123 @@
+header, main, aside, body, ul, li, div, html, h1, h2 {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: lightGreen; }
+
+nav {
+  height: 3em;
+  background-color: seagreen; }
+nav ul li {
+  float: left;
+  list-style: none; }
+
+main {
+  min-height: 30em;
+  background-color: lightGrey; }
+
+aside {
+  background-color: lightBlue; }
+aside li {
+  height: 5em;
+  list-style: none; }
+
+body {
+  background-color: darkGrey; }
+
+footer {
+  background-color: darkBlue;
+  color: white; }
+
+@media (min-width: 414px) {
+  header {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 5.55556%;
+    padding-right: 5.55556%; }
+
+  nav {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 5.55556%;
+    padding-right: 5.55556%;
+    display: none; }
+
+  main {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 5.55556%;
+    padding-right: 5.55556%; }
+
+  aside {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 5.55556%;
+    padding-right: 5.55556%; }
+
+  footer {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 5.55556%;
+    padding-right: 5.55556%; } }
+@media (min-width: 667px) {
+  header {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+
+  nav {
+    display: block; }
+
+  main {
+    width: 65.71429%;
+    float: left;
+    margin-right: 2.85714%; }
+
+  .three-columns {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: grey; }
+  .three-columns section {
+    background-color: lightBlue;
+    width: 31.42857%;
+    float: left;
+    margin-right: 2.85714%;
+    margin-bottom: 1em;
+    margin-top: 1em; }
+  .three-columns section:nth-child(3n) {
+    width: 31.42857%;
+    float: right;
+    margin-right: 0; }
+
+  aside {
+    width: 31.42857%;
+    float: right;
+    margin-right: 0; } }
+@media (min-width: 1224px) {
+  .layout {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto; }
+  .layout:after {
+    content: " ";
+    display: block;
+    clear: both; } }
