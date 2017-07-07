@@ -33,6 +33,13 @@
     a:hover {
       color: darken($secondary, 15);
     }
+    a.natural-link {
+      text-decoration: none;
+      color: $primary;
+    }
+    a.natural-link:hover {
+      color: darken($primary, 15);
+    }
   }
   button {
     padding: .5em 2em .5em 2em;
@@ -112,6 +119,9 @@
       a {
         color: white;
         text-decoration: none;
+      }
+      a:hover {
+        
       }
     }
     li:last-child {

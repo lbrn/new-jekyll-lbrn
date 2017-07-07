@@ -52,6 +52,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #8ECB91; }
   body a:hover {
     color: #5ab35e; }
+  body a.natural-link {
+    text-decoration: none;
+    color: #2C3D6C; }
+  body a.natural-link:hover {
+    color: #161e36; }
 
   button {
     padding: .5em 2em .5em 2em;
