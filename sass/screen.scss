@@ -21,6 +21,13 @@
   body {
     p{
       font-weight: 400;
+      &.natural-link a {
+        text-decoration: none;
+        color: $primary;
+      }
+      &.natural-link:hover a {
+        color: darken($primary, 15);
+      }
     }
     h1 {
       font-weight: 700;
@@ -32,13 +39,6 @@
     }
     a:hover {
       color: darken($secondary, 15);
-    }
-    a.natural-link {
-      text-decoration: none;
-      color: $primary;
-    }
-    a.natural-link:hover {
-      color: darken($primary, 15);
     }
   }
   button {
