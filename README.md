@@ -19,7 +19,7 @@ Scripting includes <a href="https://jquery.com">jQuery</a>, which is linked into
 <ul>
   <li>Markup for the home page is actually in the "_layouts" directory, named home.html</li>
   <li>Some of those .md or .html page will contain code that is enclosednin either {{}} or {%%}. That is liquid, and it is mostly self explanatory, and only references other files (like templates in _layouts, or code blocks in _includes, etc.).</li>
-  <li>A working sample of the site so far can be found HERE</li>
+  <li>A working sample of the site so far can be found <a href="https://mjtheriot4.github.io/new-jekyll-lbrn/">HERE</a></li>
   </ul>
 
 
