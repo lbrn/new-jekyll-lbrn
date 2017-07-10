@@ -653,6 +653,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 0;
     margin-top: 1.2em; }
 
+  .seminar-speakers img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  .seminar-speakers h3 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  .seminar-speakers div {
+    clear: both; }
+  .seminar-speakers div i {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 13.7931%;
+    float: left;
+    margin-right: 3.44828%;
+    text-align: right; }
+  .seminar-speakers div p {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 82.75862%;
+    float: right;
+    margin-right: 0;
+    text-align: left; }
+
   .collapse {
     height: 0;
     overflow: hidden; }

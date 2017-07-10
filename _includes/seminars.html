@@ -1,0 +1,16 @@
+{% for speakers in site.data.seminar-speakers %}
+<article class="seminar-speaker">
+  <img src="{{seminars.img}}" alt="{{seminars.name}}">
+  <h3>{{seminars.name}}</h3>
+  <h4>{{seminars.title}}</h4>
+  <div>
+    <i class="fa fa-lg fa-calendar"></i><p>{{seminar.date}}</p>
+  </div>
+  <div>
+    <i class="fa fa-lg fa-cock-o"></i><p>{{seminar.time}}</p>
+  </div>
+  <div>
+    <i class="fa fa-lg fa-map-pin"></i><p>{{seminar.location}}</p>
+  </div>
+</article>
+{% endfor %}

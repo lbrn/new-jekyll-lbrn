@@ -517,6 +517,25 @@
       margin-top: 1.2em;
     }
   }
+  .seminar-speakers {
+    img {
+      @include span(full);
+    }
+    h3 {
+      @include span(full);
+    }
+    div {
+      clear:both;
+      i {
+        @include span(1);
+        text-align: right;
+      }
+      p {
+        @include span(last 5);
+        text-align: left;
+      }
+    }
+  }
   .collapse {
     height: 0;
     overflow: hidden;
