@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>LBRN Home</title>
-    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/screen.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
       <div class="layout">
-        <a href="/index.html"><img src="/images/webLogo.png" alt="LBRN Logo"></a>
+        <a href="{{site.baseurl}}/index.html"><img src="/{{site.baseurl}}/images/webLogo.png" alt="LBRN Logo"></a>
         <h1>Louisiana&nbsp;Biomedical Research&nbsp;Network</h1>
-        <a href="#"><img id="navBug" src="/images/menuClosed.png" alt="Menu Bug"></a>
+        <a href="#"><img id="navBug" src="{{site.baseurl}}/images/menuClosed.png" alt="Menu Bug"></a>
       </div>
     </header>
     <nav>
@@ -20,14 +20,14 @@
         <li><a href="#">Research</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Resources</a></li>
-        <li><a href="/lbrn-events.html">Events</a></li>
+        <li><a href="{{site.baseurl}}lbrn-events.html">Events</a></li>
       </ul>
     </nav>
     <main class="layout">
       <section id="lbrnEventHeader">
         <div class="imagebox">
           <!-- DYNAMIC:this image will have to be inserted into the src attribute. I used the Page title for the alt attribute -->
-          <img src=/{{page.featuredImageUrl}} alt={{page.title}}>
+          <img src={{page.featuredImageUrl}} alt={{page.title}}>
         </div>
         <div class="caption">
           <!-- this h1 should contain the blog post title -->
