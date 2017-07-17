@@ -653,7 +653,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 0;
     margin-top: 1.2em; }
 
-  .seminar-speakers img {
+  .seminar-speaker {
+    margin-top: 1em;
+    margin-bottom: 1em;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -661,7 +663,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0; }
-  .seminar-speakers h3 {
+  .seminar-speaker img {
+    margin: auto;
+    display: block; }
+  .seminar-speaker h3 {
+    margin-top: 1em;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -669,17 +675,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0; }
-  .seminar-speakers div {
-    clear: both; }
-  .seminar-speakers div i {
+  .seminar-speaker div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    position: relative; }
+  .seminar-speaker div i {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 13.7931%;
     float: left;
     margin-right: 3.44828%;
-    text-align: right; }
-  .seminar-speakers div p {
+    margin-left: 0;
+    text-align: center;
+    margin-top: .3em; }
+  .seminar-speaker div p {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

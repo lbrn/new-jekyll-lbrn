@@ -517,18 +517,27 @@
       margin-top: 1.2em;
     }
   }
-  .seminar-speakers {
+  .seminar-speaker {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    @include span(full);
     img {
-      @include span(full);
+      margin: auto;
+      display: block;
     }
     h3 {
+      margin-top: 1em;
       @include span(full);
     }
     div {
-      clear:both;
+      @include span(full);
+      margin-top: 1em;
+      position: relative;
       i {
         @include span(1);
-        text-align: right;
+        margin-left: 0;
+        text-align: center;
+        margin-top: .3em;
       }
       p {
         @include span(last 5);
