@@ -378,11 +378,11 @@
   .lbrn-event-wrapper {
     @include span(full);
     margin-bottom: 2%;
+    padding-bottom: 2em;
     section {
       background-color: lighten($secondary, 25%);
       @include span(90%);
       margin:2% 5% 0 5%;
-      min-height: 38em;
       position: relative;
       img {
         @include span(full);
@@ -749,10 +749,10 @@
     margin-left: 5%;
     margin-right: 5%;
 
-
     section {
       margin-left: 0;
       margin-right: 0;
+      min-height: 38em;
       @include span(6);
     }
     section:nth-child(2n) {

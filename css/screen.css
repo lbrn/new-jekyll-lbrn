@@ -448,7 +448,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 2%; }
+    margin-bottom: 2%;
+    padding-bottom: 2em; }
   .lbrn-event-wrapper section {
     background-color: #e5f3e6;
     -moz-box-sizing: border-box;
@@ -458,7 +459,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-right: 3.44828%;
     margin: 2% 5% 0 5%;
-    min-height: 38em;
     position: relative; }
   .lbrn-event-wrapper section img {
     -moz-box-sizing: border-box;
@@ -944,6 +944,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .lbrn-event-wrapper section {
     margin-left: 0;
     margin-right: 0;
+    min-height: 38em;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
