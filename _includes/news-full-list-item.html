@@ -1,0 +1,9 @@
+<article>
+  <a href="{{site.baseurl}}{{post.url}}">
+    <h3 id="{{post.date}}">{{post.title}}</h3>
+  </a>
+  <img src="{{post.featuredImageUrlSquare}}" alt="{{post.title}}">
+  <p class="post-date">{{post.date | date:" %B, %-d %Y"}}</p>
+  <p class="summary">{{post.excerpt | strip_html }}</p>
+  <a class="post-link"href="{{site.baseurl}}{{post.url}}">VIEW&nbsp;FULL&nbsp;STORY</a>
+</article>

@@ -3,38 +3,15 @@ layout: default
 title: News Archive
 ---
       <section class="news" id="newsPageContainer">
+        {% for post in site.categories.news %}
+          {% include news-full-list-item.html %}
+        {% endfor %}
         <!--Start of NEWS ITEM-->
-        <article class="spacers">
-          <h3 class="sideTitle">Article Title</h3>
-          <img src="images/placeholderNewsImage.png" alt="">
-          <p class="summary">This is an automatically generated description of the article that you are about to reed. The description should be determined by a character count that we determine.</p>
-          <a href="#">VIEW FULL STORY</a>
-        </article>
-        <!--End of NEWS ITEM-->
-        <article class="spacers">
-          <h3 class="sideTitle">Article Title</h3>
-          <img src="images/placeholderNewsImage.png" alt="">
-          <p class="summary">This is an automatically generated description of the article that you are about to reed. The description should be determined by a character count that we determine.</p>
-          <a href="#">VIEW FULL STORY</a>
-        </article>
-        <article class="spacers">
-          <h3 class="sideTitle">Article Title</h3>
-          <img src="images/placeholderNewsImage.png" alt="">
-          <p class="summary">This is an automatically generated description of the article that you are about to reed. The description should be determined by a character count that we determine.</p>
-          <a href="#">VIEW FULL STORY</a>
-        </article>
-        <article class="spacers">
-          <h3 class="sideTitle">Article Title</h3>
-          <img src="images/placeholderNewsImage.png" alt="">
-          <p class="summary">This is an automatically generated description of the article that you are about to reed. The description should be determined by a character count that we determine.</p>
-          <a href="#">VIEW FULL STORY</a>
-        </article>
       </section>
       <aside id="newsSidebar">
         <ul>
-          <li>small listing 1</li>
-          <li>small listing 2</li>
-          <li>small listing 3</li>
-          <li>small listing 4</li>
+          {% for post in site.categories.news %}
+            <a href="#{{post.date}}"><li>{{post.title}}</li></a>
+          {% endfor %}
         </ul>
       </aside>

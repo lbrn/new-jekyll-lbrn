@@ -235,6 +235,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: .5em;
     margin-top: .25em;
     margin-bottom: .25em; }
+  main div.content img {
+    max-width: 100%; }
+  main div.content .col-split {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 5%; }
+  main div.content .col-split-right {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 5%; }
 
   #newsContainer {
     padding-left: 5%;
@@ -256,7 +276,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-bottom: 1.5em; }
 
   .news h2 {
     font-size: 2.5em;
@@ -724,6 +745,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #lbrnEventSidebar {
     display: none; }
 
+  section.cores {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em; }
+  section.cores h2 {
+    margin-bottom: .5em; }
+  section.cores ul {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #d4ebd5; }
+  section.cores ul li {
+    width: 33.33332%;
+    text-align: center;
+    float: left;
+    list-style: none;
+    padding: 1em 0; }
+  section.cores ul li:hover {
+    background-color: #e5f3e6;
+    cursor: pointer; }
+  section.cores ul li.active {
+    background-color: #b1dbb3; }
+  section.cores ul li.active:hover {
+    cursor: move; }
+  section.cores #core-swap {
+    background-color: #b1dbb3;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  section.cores #core-swap h4 {
+    padding: 1em 0 0 1.6em; }
+  section.cores #core-swap p {
+    font-size: .8em;
+    font-weight: 300;
+    padding: 2em;
+    line-height: 1.5; }
+  section.cores #core-swap img {
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box; }
+
   footer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -804,6 +879,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
     width: 100%;
     height: 25em; }
+
+  main div.content .col-split {
+    width: 50%;
+    padding: 0 2%; }
+  main div.content .col-split-right {
+    width: 50%;
+    padding: 0 2%;
+    float: right; }
 
   #newsContainer {
     -moz-box-sizing: border-box;
@@ -891,8 +974,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #2C3D6C;
     text-align: center;
     padding: .5em 0; }
-  #newsSidebar ul li:nth-child(2n) {
+  #newsSidebar ul a:nth-child(2n) {
     background-color: #c2e3c4; }
+  #newsSidebar ul a > li {
+    background-color: inherit; }
 
   #eventsContainer {
     -moz-box-sizing: border-box;
@@ -1173,3 +1258,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     content: " ";
     display: block;
     clear: both; } }
+@keyframes slidy {
+  0% {
+    left: 0%; }
+  20% {
+    left: 0%; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+body {
+  margin: 0; }
+
+div#slider {
+  overflow: hidden; }
+
+div#slider figure img {
+  width: 20%;
+  float: left; }
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; }
