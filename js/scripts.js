@@ -1,5 +1,6 @@
 $( document ).ready(function() {
   quickRef();
+  coreSwap();
 //Mobile Menu
   $("#navBug").click(function(){
       $('nav').slideToggle('fast');
@@ -51,17 +52,29 @@ function quickRef(){
 }
 function coreSwap(){
   var corelis     = $('section.cores>ul>li');
-  var admin-txt   = "The Administrative Core (AC) of the Louisiana Biomedical Research Network (LBRN) provides the project with its overall leadership, day-to-day management, evaluations of all of its component parts, and communication with NIH staff. The AC is led by the Principal Investigator in close consultation with the Program Coordinator, as well as the Steering Committee and External Advisory Committee."
-  var admin       = "images/admin-core.svg"
-  var admin-title = Adiministrative Core
-  var bbc-txt     = "The Bioinformatics, Biostatistics, and Computational Biology Core (BBCC) of the Louisiana Biomedical Research Network (LBRN) serves to train and support project investigators and their teams across Louisiana, and to lead and support translational research activities at the frontiers of biomedical science. Its team uses both established and custom computational tools, operating at computational scales ranging from the mundane to analyses engaging many hundreds of compute cores."
-  var bbc         = "images/bbc-core.svg"
-  var admin-title = Bioinformatics, Biostatistics, and Computational Biology Core
-  var mcbr-txt    = "Molecular and cell biology provide an essential linkage among important basic fields of biomedical science, such as genetics, developmental biology, structural biology, immunology, neurobiology, and cancer biology. The MCBRC takes advantage of existing highly organized, centralized services and equipment facilities located primarily at the LSU flagship institution in Baton Rouge, effectively uniting these units toward the common goal of supporting biomedical research performed by PUI investigators. The MCBRC will provide technical and logistical support, enabling the ready exchange of information, ideas, technology, and research capabilities among PUI investigators. MCBRC will ensure that PUI researchers have full access to state-of-the-art equipment and modern research techniques and services."
-  var mcbr        = "images/mcbr-core.svg"
-  var admin-title = Molecular and Cell Biology Resources Core
-  corelis.eq(0).click(function{
-    $(this).
+  var adminTxt   = "The Administrative Core (AC) of the Louisiana Biomedical Research Network (LBRN) provides the project with its overall leadership, day-to-day management, evaluations of all of its component parts, and communication with NIH staff. The AC is led by the Principal Investigator in close consultation with the Program Coordinator, as well as the Steering Committee and External Advisory Committee."
+  var bbcTxt     = "The Bioinformatics, Biostatistics, and Computational Biology Core (BBCC) of the Louisiana Biomedical Research Network (LBRN) serves to train and support project investigators and their teams across Louisiana, and to lead and support translational research activities at the frontiers of biomedical science. Its team uses both established and custom computational tools, operating at computational scales ranging from the mundane to analyses engaging many hundreds of compute cores."
+  var mcbrTxt    = "Molecular and cell biology provide an essential linkage among important basic fields of biomedical science, such as genetics, developmental biology, structural biology, immunology, neurobiology, and cancer biology. The MCBRC takes advantage of existing highly organized, centralized services and equipment facilities located primarily at the LSU flagship institution in Baton Rouge, effectively uniting these units toward the common goal of supporting biomedical research performed by PUI investigators. The MCBRC will provide technical and logistical support, enabling the ready exchange of information, ideas, technology, and research capabilities among PUI investigators. MCBRC will ensure that PUI researchers have full access to state-of-the-art equipment and modern research techniques and services."
+  corelis.eq(0).click(function(){
+    corelis.removeClass();
+    $(this).addClass('active');
+    $('#core-swap>h4').text('Adiministrative Core');
+    $('#core-swap>p').text(adminTxt);
+    $('#core-swap>img').attr('src','images/admin-core.svg');
+  });
+  corelis.eq(1).click(function(){
+    corelis.removeClass();
+    $(this).addClass('active');
+    $('#core-swap>h4').text('Bioinformatics, Biostatistics, and Computational Biology Core');
+    $('#core-swap>p').text(bbcTxt);
+    $('#core-swap>img').attr('src','images/bbc-core.svg');
+  });
+  corelis.eq(2).click(function(){
+    corelis.removeClass();
+    $(this).addClass('active');
+    $('#core-swap>h4').text('Molecular and Cell Biology Resources Core');
+    $('#core-swap>p').text(mcbrTxt);
+    $('#core-swap>img').attr('src','images/mcbr-core.svg');
   });
 
 }

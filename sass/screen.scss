@@ -586,7 +586,7 @@
     }
     ul {
       @include span(full);
-      background-color: lighten($secondary, 20%);
+      background-color: lighten($secondary, 10%);
       li {
         width: 33.33332%;
         text-align: center;
@@ -599,14 +599,14 @@
         cursor: pointer;
       }
       li.active {
-        background-color: lighten($secondary, 10%);
+        background-color: lighten($secondary, 20%);
         &:hover {
-          cursor: move;
+          cursor: default;
         }
       }
     }
     #core-swap {
-      background-color: lighten($secondary, 10%);
+      background-color: lighten($secondary, 20%);
       @include span(full);
       h4 {
         padding: 1em 0 0 1.6em;
@@ -621,6 +621,7 @@
         width: 100%;
         padding: 1em;
         box-sizing: border-box;
+        background-color: lighten($secondary, 20%);
       }
     }
   }
