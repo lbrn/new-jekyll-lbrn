@@ -1,0 +1,37 @@
+---
+layout: default
+title: People
+---
+<aside id="lbrnEventSidebar">
+  <ul id="lbrnEventSidebarUl">
+    <li class="active"><a href="#lbrnAdminCore">Admin Core</a></li>
+    <li><a href="#lbrnBbcCore">BBC Core</a></li>
+    <li><a href="#lbrnMcbrCore">MCBR Core</a></li>
+  </ul>
+</aside>
+<div id="matchHeight">
+  <h2>LBRN Core Personnel</h2>
+  <h3 id="lbrnAdminCore">Admin Core</h3>
+  <section class="directory">
+    {% for people in site.data.LBRN-adminCore %}
+      {% include directory.html %}
+    {% endfor %}
+  </section>
+  <h3 id="lbrnBbcCore">BBC Core</h3>
+  <section class="directory">
+    {% for people in site.data.LBRN-BBC-Core %}
+      {% include directory.html %}
+    {% endfor %}
+  </section>
+  <h3 id="lbrnMcbrCore">MCBR Core</h3>
+  <section class="directory">
+    {% for people in site.data.LBRN-MCBR-Core %}
+      {% include directory.html %}
+    {% endfor %}
+  </section>
+  <h2>Project Investigators</h2>
+  <h2>Partner Institutes</h2>
+  <h2>LBRN Comittee Members</h2>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/scrollMenu.js"></script>

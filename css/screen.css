@@ -173,9 +173,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0;
-    height: 12em;
-    background-image: url("../images/surf.jpg");
-    background-size: cover; }
+    position: relative; }
 
   .page-heading {
     padding-left: 5%;
@@ -224,6 +222,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin: .25em 0;
     margin-top: 1.2em;
     padding-left: 1em;
+    clear: both;
     border-left: 8px solid #8ECB91; }
   main div.content h4 {
     font-size: 1.1em;
@@ -800,6 +799,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
     background-color: #d4ebd5; }
 
+  section.directory {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  section.directory img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 31.03448%;
+    float: left;
+    margin-right: 3.44828%; }
+  section.directory article.person {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 1em 0; }
+  section.directory h4, section.directory h5, section.directory ul {
+    font-family: "Open Sans", sans-serif;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 65.51724%;
+    float: right;
+    margin-right: 0;
+    border: none; }
+  section.directory ul {
+    margin-left: 0; }
+  section.directory h4 {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.2; }
+  section.directory ul li {
+    list-style: none;
+    border: none; }
+
   footer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -879,7 +921,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .slider {
     display: block;
     width: 100%;
-    height: 25em; }
+    height: 35em; }
 
   main div.content .col-split {
     width: 50%;
@@ -1259,40 +1301,3 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     content: " ";
     display: block;
     clear: both; } }
-@keyframes slidy {
-  0% {
-    left: 0%; }
-  20% {
-    left: 0%; }
-  25% {
-    left: -100%; }
-  45% {
-    left: -100%; }
-  50% {
-    left: -200%; }
-  70% {
-    left: -200%; }
-  75% {
-    left: -300%; }
-  95% {
-    left: -300%; }
-  100% {
-    left: -400%; } }
-body {
-  margin: 0; }
-
-div#slider {
-  overflow: hidden; }
-
-div#slider figure img {
-  width: 20%;
-  float: left; }
-
-div#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 30s slidy infinite; }

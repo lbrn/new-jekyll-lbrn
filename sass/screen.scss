@@ -132,9 +132,10 @@
     display: none;
     @include pad(5%);
     @include span(full);
-    height: 12em;
-    background-image: url("../images/surf.jpg");
-    background-size: cover;
+    position: relative;
+    // height: 12em;
+    // background-image: url("../images/surf.jpg");
+    // background-size: cover;
   }
   .page-heading{
     padding-left:5%;
@@ -183,6 +184,7 @@
       margin: .25em 0;
       margin-top: 1.2em;
       padding-left: 1em;
+      clear:both;
       border-left: 8px solid $secondary;
     }
     h4 {
@@ -625,6 +627,33 @@
       }
     }
   }
+  section.directory {
+    @include span(full);
+    img {
+      @include span(2);
+    }
+    article.person {
+      @include span(full);
+      margin: 1em 0;
+    }
+    h4, h5, ul {
+      font-family: $openFont;
+      @include span(last 4);
+      border: none;
+    }
+    ul {
+      margin-left: 0;
+    }
+    h4 {
+      font-weight: bold;
+      font-size: 1.2em;
+      line-height:1.2;
+    }
+    ul li {
+      list-style: none;
+      border: none;
+    }
+  }
   //Footer Styles ------------>
   footer {
     @include span(full);
@@ -709,7 +738,7 @@
   .slider {
     display: block;
     width: 100%;
-    height: 25em;
+    height: 35em;
   }
   main div.content{
     .col-split {
@@ -971,9 +1000,3 @@
     @include container(80%);
   }
 } // large Query ----------------------------------------
-
-
-// TEMPORARY:  Testing purposes only----------------------
-
-@import "partials/slider";
-//------------------------------------------------------------------------------
