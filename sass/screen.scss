@@ -73,6 +73,9 @@
     background-color: $primary;
     color: white;
   }
+  .hidden{
+    display: none;
+  }
   main.layout {
     min-height: 40em;
   }
@@ -211,7 +214,7 @@
       padding: 0 5%;
     }
   }
-  //News Styles ------------>
+  //News Styles ------------------>
   #newsContainer {
     @include pad(5%);
     @include span(full);
@@ -302,7 +305,7 @@
   #newsSidebar {
     display: none;
   }
-  //Events Styles ------------>
+  //Events Styles ---------------->
   #eventsPage {
     @include span(full);
   }
@@ -579,7 +582,12 @@
   #lbrnEventSidebar {
     display: none;
   }
-  //About Page Styles ------------>
+  // LBRN Resources Styles ----------->
+  div.resources section {
+    @include span(full);
+    background-color: $secondary;
+  }
+  //About Page Styles ------------->
   section.cores {
     @include span(full);
     margin-top: 1em;
@@ -654,7 +662,7 @@
       border: none;
     }
   }
-  //Footer Styles ------------>
+  //Footer Styles ----------------->
   footer {
     @include span(full);
     @include pad(5%);
@@ -687,7 +695,6 @@
   }
 } //Medium Query------------------------------------------
 @include susy-breakpoint($standard, $susy) {
-
   // Main Styles!!
   header {
     height: 10em;
@@ -751,7 +758,7 @@
       float:right;
     }
   }
-  //News Styles ------------>
+  //News Styles ------------------->
   #newsContainer {
     @include span(7);
     @include prefix(5%);
@@ -810,7 +817,7 @@
       }
     }
   }
-  //Events Styles ------------>
+  //Events Styles ----------------->
   #eventsContainer {
     @include span(full);
     background-color: white;
@@ -932,6 +939,10 @@
       background-color: lighten($secondary, 15%);
       font-weight: 400;
     }
+  }
+  // LBRN Resources Styles ----------->
+  div.resources section {
+    @include span(4);
   }
 } // Standard Query ----------------------------------------
 @include breakpoint($intermediate) {

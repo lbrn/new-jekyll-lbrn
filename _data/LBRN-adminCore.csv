@@ -1,6 +1,6 @@
-name,position,school,city,state,zip,email,phone
-K Gus Kousoulas,Principle Investigator,Louisiana State University School of Veterinary Medicine,Baton Rouge,Louisiana,70803,vtgusk@lsu.edu,(225) 578-5833
-Ramesh Subramanian,Program Coordinator,Louisiana State University School of Veterinary Medicine,Baton Rouge,Louisiana,70803,ramji@lsu.edu,(225) 578-9619
-Alexis White,Grant Administrator,Louisiana State University Dept. of Biological Science,Baton Rouge,Louisiana,70803,alexisw@lsu.edu,(225) 578-1848
-John Quibedeaux Jr.,Computer Manager,Louisiana State University Dept. of Biological Science,Baton Rouge,Louisiana,70803,johnq@lsu.edu,(225) 578-0062
-Kirschlan Blanchard,Accountant,Louisiana State University Dept. of Biological Science,Baton Rouge,Louisiana,70803,kblanchard@lsu.edu,(225) 578-8483
+name,position,school,city,state,zip,email,phone,image
+K Gus Kousoulas,Principle Investigator,Louisiana State University School of Veterinary Medicine,Baton Rouge,Louisiana,70803,vtgusk@lsu.edu,(225) 578-5833,kousoulas
+Ramesh Subramanian,Program Coordinator,Louisiana State University School of Veterinary Medicine,Baton Rouge,Louisiana,70803,ramji@lsu.edu,(225) 578-9619,person
+Alexis White,Grant Administrator,Louisiana State University Dept. of Biological Science,Baton Rouge,Louisiana,70803,alexisw@lsu.edu,(225) 578-1848,person
+John Quibedeaux Jr.,Computer Manager,Louisiana State University Dept. of Biological Science,Baton Rouge,Louisiana,70803,johnq@lsu.edu,(225) 578-0062,person
+Kirschlan Blanchard,Accountant,Louisiana State University Dept. of Biological Science,Baton Rouge,Louisiana,70803,kblanchard@lsu.edu,(225) 578-8483,person

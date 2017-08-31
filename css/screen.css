@@ -86,6 +86,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: #2C3D6C;
     color: white; }
 
+  .hidden {
+    display: none; }
+
   main.layout {
     min-height: 40em; }
 
@@ -744,6 +747,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #lbrnEventSidebar {
     display: none; }
 
+  div.resources section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #8ECB91; }
+
   section.cores {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1190,7 +1203,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-transform: capitalize; }
   #lbrnEventSidebar .active {
     background-color: #c2e3c4;
-    font-weight: 400; } }
+    font-weight: 400; }
+
+  div.resources section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 31.42857%;
+    float: left;
+    margin-right: 2.85714%; } }
 @media (min-width: 860px) {
   .lbrn-event-wrapper {
     -moz-box-sizing: border-box;

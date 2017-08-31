@@ -7,6 +7,9 @@ title: People
     <li class="active"><a href="#lbrnAdminCore">Admin Core</a></li>
     <li><a href="#lbrnBbcCore">BBC Core</a></li>
     <li><a href="#lbrnMcbrCore">MCBR Core</a></li>
+    <li><a href="#projectInvestigators">Project Investigators</a></li>
+    <li><a href="#partnerInstitutes">Partner Institutes</a></li>
+    <li><a href="#LbrnComitteeMembers">LBRN Comittee Members</a></li>
   </ul>
 </aside>
 <div id="matchHeight">
@@ -29,9 +32,27 @@ title: People
       {% include directory.html %}
     {% endfor %}
   </section>
+  <h3 id="projectInvestigators"></h3>
   <h2>Project Investigators</h2>
+  <section class="directory">
+    {% for people in site.data.Project-Investigators %}
+      {% include directory-pi.html %}
+    {% endfor %}
+  </section>
+  <h3 id="partnerInstitutes"></h3>
   <h2>Partner Institutes</h2>
+  <section class="directory">
+    {% for people in site.data.Partner Institutes}
+      {% include directory.html %}
+    {% endfor %}
+  </section>
+  <h3 id="LbrnComitteeMembers"></h3>
   <h2>LBRN Comittee Members</h2>
+  <section class="directory">
+    {% for people in site.data.LBRN-Comittee-Members %}
+      {% include directory.html %}
+    {% endfor %}
+  </section>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/scrollMenu.js"></script>
