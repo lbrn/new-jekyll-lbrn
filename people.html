@@ -3,56 +3,96 @@ layout: default
 title: People
 ---
 <aside id="lbrnEventSidebar">
-  <ul id="lbrnEventSidebarUl">
-    <li class="active"><a href="#lbrnAdminCore">Admin Core</a></li>
-    <li><a href="#lbrnBbcCore">BBC Core</a></li>
-    <li><a href="#lbrnMcbrCore">MCBR Core</a></li>
-    <li><a href="#projectInvestigators">Project Investigators</a></li>
-    <li><a href="#partnerInstitutes">Partner Institutes</a></li>
-    <li><a href="#LbrnComitteeMembers">LBRN Comittee Members</a></li>
+  <ul>
+    <div id="lbrnEventSidebarUl">
+      <li class="active"><a href="#lbrnAdminCore">Admin Core</a></li>
+      <li><a href="#lbrnBbcCore">BBC Core</a></li>
+      <li><a href="#lbrnMcbrCore">MCBR Core</a></li>
+      <li><a href="#currentlyFunded">Currently Funded PIs</a></li>
+      <li><a href="#previouslyFunded">Previously Funded PIs</a></li>
+      <li><a href="#partnerInstitutes">Partner Institutes</a></li>
+      <li><a href="#LbrnEAC">LBRN EAC</a></li>
+      <li><a href="#LbrnSteering">LBRN Steering Committee</a></li>
+    </div>
+    <li><a href="#">top</a></li>
   </ul>
 </aside>
-<div id="matchHeight">
+<div class="people" id="matchHeight">
   <h2>LBRN Core Personnel</h2>
-  <h3 id="lbrnAdminCore">Admin Core</h3>
-  <section class="directory">
-    {% for people in site.data.LBRN-adminCore %}
-      {% include directory.html %}
-    {% endfor %}
-  </section>
-  <h3 id="lbrnBbcCore">BBC Core</h3>
-  <section class="directory">
-    {% for people in site.data.LBRN-BBC-Core %}
-      {% include directory.html %}
-    {% endfor %}
-  </section>
-  <h3 id="lbrnMcbrCore">MCBR Core</h3>
-  <section class="directory">
-    {% for people in site.data.LBRN-MCBR-Core %}
-      {% include directory.html %}
-    {% endfor %}
-  </section>
-  <h3 id="projectInvestigators"></h3>
+  <div class="relative">
+    <h3 id="lbrnAdminCore">Admin Core</h3>
+    <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
+    <section class="directory collapse">
+      {% for people in site.data.LBRN-adminCore %}
+        {% include directory.html %}
+      {% endfor %}
+    </section>
+  </div>
+  <div class="relative">
+    <h3 id="lbrnBbcCore">BBC Core</h3>
+    <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
+    <section class="directory collapse">
+      {% for people in site.data.LBRN-BBC-Core %}
+        {% include directory.html %}
+      {% endfor %}
+    </section>
+  </div>
+  <div class="relative">
+    <h3 id="lbrnMcbrCore">MCBR Core</h3>
+    <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
+    <section class="directory collapse">
+      {% for people in site.data.LBRN-MCBR-Core %}
+        {% include directory.html %}
+      {% endfor %}
+    </section>
+  </div>
   <h2>Project Investigators</h2>
-  <section class="directory">
-    {% for people in site.data.Project-Investigators %}
-      {% include directory-pi.html %}
-    {% endfor %}
-  </section>
-  <h3 id="partnerInstitutes"></h3>
-  <h2>Partner Institutes</h2>
-  <section class="directory">
-    {% for people in site.data.Partner Institutes}
-      {% include directory.html %}
-    {% endfor %}
-  </section>
-  <h3 id="LbrnComitteeMembers"></h3>
-  <h2>LBRN Comittee Members</h2>
-  <section class="directory">
-    {% for people in site.data.LBRN-Comittee-Members %}
-      {% include directory.html %}
-    {% endfor %}
-  </section>
+  <div class="relative">
+    <h3 id="currentlyFunded">Currently Funded PIs</h3>
+    <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
+    <section class="directory collapse">
+      {% for people in site.data.currentPI %}
+        {% include directory-pi.html %}
+      {% endfor %}
+    </section>
+  </div>
+  <div class="relative">
+    <h3 id="previouslyFunded">Previously Funded PIs</h3>
+    <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
+    <section class="directory collapse">
+      {% for people in site.data.previousPI %}
+        {% include directory-pi.html %}
+      {% endfor %}
+    </section>
+  </div>
+  <div class="relative">
+    <h2 id="partnerInstitutes">Partner Institutes</h2>
+    <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin2" aria-hidden="true"></i>
+    <section class="directory collapse">
+      {% for people in site.data.Partner-Institutes %}
+        {% include directory-partner-institutes.html %}
+      {% endfor %}
+    </section>
+  </div>
+  <h2>Committee Members</h2>
+  <div class="relative">
+    <h3 id="LbrnEAC">LBRN External Advisory Committee</h3>
+    <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
+    <section class="directory collapse">
+      {% for people in site.data.LBRN-EAC %}
+        {% include directory-committee-members.html %}
+      {% endfor %}
+    </section>
+  </div>
+  <div class="relative">
+    <h3 id="LbrnSteering">LBRN Steering Committee</h3>
+    <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
+    <section class="directory collapse">
+      {% for people in site.data.LBRN-Steering-Committee %}
+        {% include directory-committee-members.html %}
+      {% endfor %}
+    </section>
+  </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/scrollMenu.js"></script>

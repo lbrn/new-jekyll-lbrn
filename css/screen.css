@@ -1,8 +1,3 @@
-/* Welcome t<div class="date">
-  <h3 class="date-day">{{post.date | date: '%d' }}</h3>
-  <h4 class="date-month">{{post.date | date: '%b'}}</h4>
-</div>
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
@@ -42,6 +37,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 @media (min-width: 0) {
+  .nudge {
+    padding-top: 1em; }
+
+  .relative {
+    position: relative;
+    overflow: hidden; }
+
+  .natural-link {
+    text-decoration: none;
+    color: #2C3D6C; }
+  .natural-link.natural-link:hover {
+    color: #425ca2; }
+
   body p {
     font-weight: 400; }
   body p.natural-link a {
@@ -108,7 +116,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-left: 5%;
     padding-right: 5%;
     height: 7em;
-    background-color: #2C3D6C;
+    background-image: url("../images/header-background.svg");
+    background-position: center;
+    background-size: cover;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -237,8 +247,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: .5em;
     margin-top: .25em;
     margin-bottom: .25em; }
-  main div.content img {
-    max-width: 100%; }
   main div.content .col-split {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -310,6 +318,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-weight: 700;
     font-size: 2em;
     line-height: 1.25em; }
+  .news article h3.override {
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 1.75em;
+    border: none; }
   .news article h3:hover {
     color: #6bbb6f; }
   .news article .summary {
@@ -463,7 +476,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .events .view-all:hover {
     color: black; }
 
-  .lbrn-event-wrapper {
+  .three-card-responsive, .two-card-responsive {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -473,7 +486,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 0;
     margin-bottom: 2%;
     padding-bottom: 2em; }
-  .lbrn-event-wrapper section {
+  .three-card-responsive section, .two-card-responsive section {
+    border-radius: 6px;
     background-color: #e5f3e6;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -481,9 +495,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 90%;
     float: left;
     margin-right: 3.44828%;
-    margin: 2% 5% 0 5%;
+    margin: 2% 5%;
+    padding-bottom: 2em;
     position: relative; }
-  .lbrn-event-wrapper section img {
+  .three-card-responsive section img, .two-card-responsive section img {
+    border-radius: 6px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -492,20 +508,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0;
     width: 100%; }
-  .lbrn-event-wrapper section h2 {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 95%;
-    float: left;
-    margin-right: 3.44828%;
-    padding: 2.5%;
-    font-size: 2.1em;
-    line-height: 1.2em;
+  .three-card-responsive section h2, .two-card-responsive section h2 {
+    font-size: 1.9em !important;
+    line-height: 1.2em !important;
+    text-transform: none !important;
     color: #2C3D6C;
     font-weight: 700;
-    font-family: "Open Sans Condensed", sans-serif; }
-  .lbrn-event-wrapper section p {
+    font-family: "Open Sans Condensed", sans-serif !important; }
+  .three-card-responsive section p, .two-card-responsive section p {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -515,8 +525,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 2.5%;
     color: #2C3D6C;
     font-family: "Ubuntu", sans-serif;
-    line-height: 1.25em; }
-  .lbrn-event-wrapper section p.more {
+    line-height: 1.25em;
+    hyphens: auto;
+    -webkit-hyphens: auto; }
+  .three-card-responsive section p.more, .two-card-responsive section p.more {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -531,7 +543,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-bottom: .5em;
     position: absolute;
     bottom: 0; }
-  .lbrn-event-wrapper section p.more:hover {
+  .three-card-responsive section p.more:hover, .two-card-responsive section p.more:hover {
     color: #4a66b4; }
 
   #lbrnEventHeader {
@@ -747,15 +759,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #lbrnEventSidebar {
     display: none; }
 
-  div.resources section {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    background-color: #8ECB91; }
+  div.resources a, div.research a {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+  div.resources section, div.research section {
+    background-color: unset; }
+  div.resources section:hover, div.research section:hover {
+    transition: background-color .1s;
+    background-color: #d4ebd5;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; }
+  div.resources img, div.research img {
+    display: block;
+    max-width: 10em;
+    margin: 5% auto;
+    float: none; }
+  div.resources h2, div.research h2 {
+    margin-top: 0 !important;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold; }
 
   section.cores {
     -moz-box-sizing: border-box;
@@ -800,12 +825,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0; }
   section.cores #core-swap h4 {
-    padding: 1em 0 0 1.6em; }
+    padding-left: 1.6em;
+    margin-top: 1em;
+    float: left;
+    line-height: 1.3; }
+  section.cores #core-swap button {
+    float: right;
+    font-size: 1em;
+    margin: 1em 5% 0 0; }
   section.cores #core-swap p {
     font-size: .8em;
     font-weight: 300;
-    padding: 2em;
-    line-height: 1.5; }
+    padding: 1em 2em;
+    line-height: 1.5;
+    clear: both; }
   section.cores #core-swap img {
     width: 100%;
     padding: 1em;
@@ -836,7 +869,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0;
     margin: 1em 0; }
-  section.directory h4, section.directory h5, section.directory ul {
+  section.directory h4, section.directory h5, section.directory h6, section.directory ul {
     font-family: "Open Sans", sans-serif;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -844,16 +877,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 65.51724%;
     float: right;
     margin-right: 0;
-    border: none; }
+    border: none;
+    line-height: 1.3; }
   section.directory ul {
     margin-left: 0; }
   section.directory h4 {
     font-weight: bold;
-    font-size: 1.2em;
-    line-height: 1.2; }
+    font-size: 1.3em;
+    padding-bottom: .2em; }
+  section.directory h5 {
+    font-size: 1.2em; }
+  section.directory h6 {
+    font-size: 1em; }
   section.directory ul li {
     list-style: none;
     border: none; }
+
+  .people h3 {
+    padding: .2em 0; }
+  .people .icon-margin {
+    margin-top: .7em; }
+  .people .icon-margin2 {
+    margin-top: .4em; }
+  .people i.collapseTrigger {
+    color: #8ECB91;
+    cursor: pointer; }
+
+  .presentation-templates section {
+    min-height: 0px !important;
+    text-align: center;
+    background-color: unset !important;
+    border-bottom: 10px solid #d4ebd5; }
+  .presentation-templates img {
+    float: none !important;
+    margin: 0 auto;
+    max-width: 20em; }
+  .presentation-templates h2 {
+    clear: both;
+    padding: .2em 0;
+    text-align: center; }
+  .presentation-templates button {
+    float: none !important;
+    text-align: center;
+    margin: 0 auto; }
 
   footer {
     -moz-box-sizing: border-box;
@@ -919,17 +985,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   nav {
     background-color: #8ECB91;
-    display: block; }
+    display: inline-block; }
   nav li {
     width: auto;
     float: left;
-    margin-right: 2em;
+    margin-right: .5em;
+    padding: 0;
     font-family: "Ubuntu", sans-serif;
     font-size: 1.2em;
-    border: none; }
+    border: none;
+    color: white; }
   nav li a {
-    color: white;
-    text-decoration: none; }
+    color: inherit;
+    padding: 1em .25em;
+    text-decoration: none;
+    display: block; }
+  nav li a:hover {
+    background-color: #b1dbb3;
+    color: #2C3D6C; }
 
   .slider {
     display: block;
@@ -1024,16 +1097,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: right;
     margin-right: 0; }
   #newsSidebar ul {
-    border: 1px solid #8ECB91; }
+    margin-left: 0; }
   #newsSidebar ul li {
-    font-family: "Ubuntu", sans-serif;
+    border-radius: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border: 1px solid white;
+    background-color: #dbeedc;
+    box-sizing: border-box;
+    list-style: none;
+    line-height: 1.3;
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: "Open Sans Condensed", sans-serif;
     color: #2C3D6C;
     text-align: center;
-    padding: .5em 0; }
-  #newsSidebar ul a:nth-child(2n) {
-    background-color: #c2e3c4; }
-  #newsSidebar ul a > li {
-    background-color: inherit; }
+    padding: .5em; }
+  #newsSidebar ul li:hover {
+    transition: background-color .1s;
+    background-color: #c9e6cb; }
 
   #eventsContainer {
     -moz-box-sizing: border-box;
@@ -1073,7 +1155,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .events section .details .description {
     display: block; }
 
-  .lbrn-event-wrapper {
+  .three-card-responsive, .two-card-responsive {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1082,17 +1164,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 2.85714%;
     margin-left: 5%;
     margin-right: 5%; }
-  .lbrn-event-wrapper section {
+  .three-card-responsive section, .two-card-responsive section {
     margin-left: 0;
     margin-right: 0;
-    min-height: 38em;
+    min-height: 36em;
+    padding-bottom: 2em;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 48.57143%;
     float: left;
     margin-right: 2.85714%; }
-  .lbrn-event-wrapper section:nth-child(2n) {
+  .three-card-responsive section:nth-child(2n), .two-card-responsive section:nth-child(2n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1188,7 +1271,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0;
     list-style: none;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    line-height: 1.3; }
   #lbrnEventSidebar ul a {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1205,15 +1289,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: #c2e3c4;
     font-weight: 400; }
 
-  div.resources section {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 31.42857%;
-    float: left;
-    margin-right: 2.85714%; } }
+  div.resources section, div.research section {
+    min-height: 21em; }
+  div.resources img, div.research img {
+    max-width: 90%; }
+
+  .people i.collapseTrigger {
+    display: none; } }
 @media (min-width: 860px) {
-  .lbrn-event-wrapper {
+  .three-card-responsive {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1222,7 +1306,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 2.85714%;
     margin-left: 5%;
     margin-right: 5%; }
-  .lbrn-event-wrapper section {
+  .three-card-responsive section {
     margin-left: 0;
     margin-right: 0;
     -moz-box-sizing: border-box;
@@ -1231,14 +1315,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 31.42857%;
     float: left;
     margin-right: 2.85714%; }
-  .lbrn-event-wrapper section:nth-child(2n) {
+  .three-card-responsive section:nth-child(2n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 31.42857%;
     float: left;
     margin-right: 2.85714%; }
-  .lbrn-event-wrapper section:nth-child(3n) {
+  .three-card-responsive section:nth-child(3n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1249,7 +1333,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .caption h1 {
     margin-top: 1.3em; }
   .caption p {
-    line-height: 1.6em; } }
+    line-height: 1.6em; }
+
+  div.research {
+    max-width: 45em;
+    margin: auto;
+    float: unset; }
+
+  div.resources section {
+    min-height: 21em; }
+
+  nav li {
+    margin-right: .5em; }
+  nav li a {
+    padding: 1em; } }
 @media (min-width: 1224px) {
   .layout {
     margin: 0;
@@ -1288,7 +1385,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #newsPageContainer {
     padding-right: 0; }
 
-  .lbrn-event-wrapper {
+  .three-card-responsive {
     margin: 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1297,6 +1394,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0; }
+
+  div.resources section {
+    min-height: 23em; }
 
   nav {
     padding: 0; }

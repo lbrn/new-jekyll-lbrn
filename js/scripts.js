@@ -23,12 +23,17 @@ $( document ).ready(function() {
     contentHeight = $('#matchHeight').css('height');
     $('#lbrnEventSidebar').css('height', contentHeight);
   });
-  $('.collapseTrigger').siblings('h2').click(function() {
+  //collapsable sections
+  $('.collapse').siblings('h3, h2, i').click(function() {
     console.log('fired');
     $(this).siblings('.collapse').toggleClass('expand');
-    $(this).siblings('.collapseTrigger').toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
+    if ($(this).hasClass('fa')){
+      $(this).toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
+    }
+    else {
+      $(this).siblings('.collapseTrigger').toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
+    }
   });
-
   $(window).scroll(function() {
     contentHeight = $('#matchHeight').css('height');
     $('#lbrnEventSidebar').css('height', contentHeight);
@@ -70,7 +75,7 @@ function coreSwap(){
     $('#core-swap>p').text(bbcTxt);
     $('#core-swap>img').attr('src','images/bbc-core.svg');
     $('#core-swap>button').removeClass();
-    $('#core-swap>button>a').attr('href','bbc-services.html').text('BBC Core Services');
+    $('#core-swap>button>a').attr('href','bbc-core.html').text('BBC Core Services');
   });
   corelis.eq(2).click(function(){
     corelis.removeClass();
@@ -79,6 +84,6 @@ function coreSwap(){
     $('#core-swap>p').text(mcbrTxt);
     $('#core-swap>img').attr('src','images/mcbr-core.svg');
     $('#core-swap>button').removeClass();
-    $('#core-swap>button>a').attr('href','mcbr-services.html').text('MCBR Core Services');
+    $('#core-swap>button>a').attr('href','mcbr-core.html').text('MCBR Core Services');
   });
 }
