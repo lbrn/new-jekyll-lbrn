@@ -1,6 +1,7 @@
 $( document ).ready(function() {
   quickRef();
   coreSwap();
+  piFilter();
 //Mobile Menu
   $("#navBug").click(function(){
       $('nav').slideToggle('fast');
@@ -86,4 +87,29 @@ function coreSwap(){
     $('#core-swap>button').removeClass();
     $('#core-swap>button>a').attr('href','mcbr-core.html').text('MCBR Core Services');
   });
+}
+function piFilter(){
+  var buttons = $('nav#pi-filter>ul>li');
+  var fulls = $('article[data-ptype="FullProject"]');
+  var starts = $('article[data-ptype="StartupProject"]');
+  var shares = $('article[data-ptype="SharedInstrumentProject"]');
+  var pilots = $('article[data-ptype="PilotProject"]');
+  buttons.click(function(){
+    $(this).toggleClass('on');
+    switch ($(this)) {
+    case $('#pi-fp'):
+        fulls.slideUp('fast');
+        break;
+    case $('#pi-sp'):
+        starts.slideUp('fast');
+        break;
+    case $('#pi-sip'):
+        shares.slideUp('fast');
+        break;
+    case $('#pi-pp'):
+        pilots.slideUp('fast');
+    };
+    if ($(this) == $('#pi-fp')){ buttons.css('display','hidden')};
+  });
+
 }

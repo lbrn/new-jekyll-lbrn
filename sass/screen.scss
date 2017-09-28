@@ -741,6 +741,51 @@
       cursor: pointer;
     }
   }
+  nav#pi-filter{
+    background-color: unset;
+    margin-bottom:1em;
+    padding-left: 0;
+    p {
+      font-style: italic;
+      color: $secondary;
+      padding-bottom: .5em;
+      padding-left: .2em;
+      text-transform: uppercase;
+    }
+    ul {
+      overflow: hidden;
+      margin-left: 0;
+      li {
+        font-size: 1rem;
+        float: left;
+        display: block;
+        padding: .5em;
+        margin: 0 .2em;
+        color: $secondary;
+        border-radius: 5px;
+        border: 1px solid $secondary;
+        transition: all .1s;
+        &:hover {
+          background-color: darken($secondary, 10%);
+          color: white;
+          cursor:pointer;
+        }
+        &:active {
+          background-color: darken($secondary, 20%);
+        }
+      }
+      .on {
+        background-color:$secondary;
+        color: white;
+        &:hover {
+          background-color: darken($secondary, 10%);
+        }
+        &:active {
+          background-color: darken($secondary, 20%);
+        }
+      }
+    }
+  }
   //Presentation Teplates Styles ----------------->
   .presentation-templates{
     section {

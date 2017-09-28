@@ -903,6 +903,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #8ECB91;
     cursor: pointer; }
 
+  nav#pi-filter {
+    background-color: unset;
+    margin-bottom: 1em;
+    padding-left: 0; }
+  nav#pi-filter p {
+    font-style: italic;
+    color: #8ECB91;
+    padding-bottom: .5em;
+    padding-left: .2em;
+    text-transform: uppercase; }
+  nav#pi-filter ul {
+    overflow: hidden;
+    margin-left: 0; }
+  nav#pi-filter ul li {
+    font-size: 1rem;
+    float: left;
+    display: block;
+    padding: .5em;
+    margin: 0 .2em;
+    color: #8ECB91;
+    border-radius: 5px;
+    border: 1px solid #8ECB91;
+    transition: all .1s; }
+  nav#pi-filter ul li:hover {
+    background-color: #6bbb6f;
+    color: white;
+    cursor: pointer; }
+  nav#pi-filter ul li:active {
+    background-color: #4da651; }
+  nav#pi-filter ul .on {
+    background-color: #8ECB91;
+    color: white; }
+  nav#pi-filter ul .on:hover {
+    background-color: #6bbb6f; }
+  nav#pi-filter ul .on:active {
+    background-color: #4da651; }
+
   .presentation-templates section {
     min-height: 0px !important;
     text-align: center;
