@@ -1,34 +1,41 @@
 $( document ).ready(function() {
   quickRef();
   coreSwap();
+  piFilter();
 //Mobile Menu
   $("#navBug").click(function(){
       $('nav').slideToggle('fast');
-      if ($(this).attr("src") == "images/menuOpen.png") {
-        $(this).attr("src", "images/menuClosed.png");
+      if ($(this).attr("src") == "/images/menuOpen.png") {
+        $(this).attr("src", "/images/menuClosed.png");
       }
-      else {$(this).attr("src", "images/menuOpen.png")}
+      else {$(this).attr("src", "/images/menuOpen.png")}
   });
   $("body > div.layout").click(function(){
     if ($('#navBug').css('display') != 'none'){
       $('nav').slideUp('fast');
-      $('#navBug').attr("src", "images/menuClosed.png")
+      $('#navBug').attr("src", "/images/menuClosed.png");
     }
   });
   $(window).resize(function(){
     if ($('#navBug').css('display') == 'none'){
       $('nav').css('display','block');
+      $('#navBug').attr("src", "/images/menuClosed.png")
     }
     else {$('nav').css('display','none')}
     contentHeight = $('#matchHeight').css('height');
     $('#lbrnEventSidebar').css('height', contentHeight);
   });
-  $('.collapseTrigger').siblings('h2').click(function() {
+  //collapsable sections
+  $('.collapse').siblings('h3, h2, i').click(function() {
     console.log('fired');
     $(this).siblings('.collapse').toggleClass('expand');
-    $(this).siblings('.collapseTrigger').toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
+    if ($(this).hasClass('fa')){
+      $(this).toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
+    }
+    else {
+      $(this).siblings('.collapseTrigger').toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
+    }
   });
-
   $(window).scroll(function() {
     contentHeight = $('#matchHeight').css('height');
     $('#lbrnEventSidebar').css('height', contentHeight);
@@ -61,6 +68,7 @@ function coreSwap(){
     $('#core-swap>h4').text('Adiministrative Core');
     $('#core-swap>p').text(adminTxt);
     $('#core-swap>img').attr('src','images/admin-core.svg');
+    $('#core-swap>button').addClass('hidden');
   });
   corelis.eq(1).click(function(){
     corelis.removeClass();
@@ -68,6 +76,8 @@ function coreSwap(){
     $('#core-swap>h4').text('Bioinformatics, Biostatistics, and Computational Biology Core');
     $('#core-swap>p').text(bbcTxt);
     $('#core-swap>img').attr('src','images/bbc-core.svg');
+    $('#core-swap>button').removeClass();
+    $('#core-swap>button>a').attr('href','bbc-core.html').text('BBC Core Services');
   });
   corelis.eq(2).click(function(){
     corelis.removeClass();
@@ -75,6 +85,31 @@ function coreSwap(){
     $('#core-swap>h4').text('Molecular and Cell Biology Resources Core');
     $('#core-swap>p').text(mcbrTxt);
     $('#core-swap>img').attr('src','images/mcbr-core.svg');
+    $('#core-swap>button').removeClass();
+    $('#core-swap>button>a').attr('href','mcbr-core.html').text('MCBR Core Services');
   });
+}
+function piFilter(){
+  // var buttons = $('nav#pi-filter ul li');
+  var fulls = $('article[data-ptype="FullProject"]');
+  var starts = $('article[data-ptype="StartupProject"]');
+  var shares = $('article[data-ptype="SharedInstrumentProject"]');
+  var pilots = $('article[data-ptype="PilotProject"]');
 
+  $("#pi-fp").click(function(){
+    $(this).toggleClass('on');
+    fulls.slideToggle('fast');
+  });
+  $("#pi-sp").click(function(){
+    $(this).toggleClass('on');
+    starts.slideToggle('fast');
+  });
+  $("#pi-sip").click(function(){
+    $(this).toggleClass('on');
+    shares.slideToggle('fast');
+  });
+  $("#pi-pp").click(function(){
+    $(this).toggleClass('on');
+    pilots.slideToggle('fast');
+  });
 }

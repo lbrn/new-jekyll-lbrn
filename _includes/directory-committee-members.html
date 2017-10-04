@@ -1,0 +1,8 @@
+<article class="person">
+  {% if people.category != "none" %}
+  <h3>{{people.category}}</h3>
+  {% endif %}
+  <img class="nudge" src="images/people/{{people.image}}" alt="{{people.name}}">
+  <h4>{{people.name}}</h4>
+  <h5>{{people.school}}</h5>
+</article>

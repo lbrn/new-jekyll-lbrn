@@ -1,0 +1,32 @@
+---
+layout: default
+title: Project Investigators
+---
+
+<nav id="pi-filter">
+  <p>Filters:</p>
+  <ul>
+    <li class="on" id="pi-fp">Full Project</li>
+    <li class="on" id="pi-sp">Startup Project</li>
+    <li class="on" id="pi-sip">Shared Instrument Project</li>
+    <li class="on" id="pi-pp">Pilot Project</li>
+  </ul>
+</nav>
+<h2>Currently Funded</h2>
+<section class="directory">
+  {% for post in site.categories.project-investigator %}
+  <article class="person" data-pType="{{post.project-type}}">
+    <img src="images/people/{{post.image}}" alt="{{post.author}}">
+    <h4>{{post.author}}</h4>
+    <a class="natural-link" href="{{post.url}}"><h5>{{post.title}}</h5></a>
+    <h6 style="margin-top: .6em;">{{post.school}}</h6>
+    <h6 style="margin-top: .6em;">{{post.project-type}}</h6>
+  </article>
+  {% endfor %}
+</section>
+<section class="directory">
+<h2>Previously Funded</h2>
+{% for people in site.data.previousPI %}
+  {% include directory-pi.html %}
+{% endfor %}
+</section>
