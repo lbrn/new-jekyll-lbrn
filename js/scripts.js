@@ -5,20 +5,21 @@ $( document ).ready(function() {
 //Mobile Menu
   $("#navBug").click(function(){
       $('nav').slideToggle('fast');
-      if ($(this).attr("src") == "images/menuOpen.png") {
-        $(this).attr("src", "images/menuClosed.png");
+      if ($(this).attr("src") == "/images/menuOpen.png") {
+        $(this).attr("src", "/images/menuClosed.png");
       }
-      else {$(this).attr("src", "images/menuOpen.png")}
+      else {$(this).attr("src", "/images/menuOpen.png")}
   });
   $("body > div.layout").click(function(){
     if ($('#navBug').css('display') != 'none'){
       $('nav').slideUp('fast');
-      $('#navBug').attr("src", "images/menuClosed.png")
+      $('#navBug').attr("src", "/images/menuClosed.png");
     }
   });
   $(window).resize(function(){
     if ($('#navBug').css('display') == 'none'){
       $('nav').css('display','block');
+      $('#navBug').attr("src", "/images/menuClosed.png")
     }
     else {$('nav').css('display','none')}
     contentHeight = $('#matchHeight').css('height');
@@ -89,27 +90,26 @@ function coreSwap(){
   });
 }
 function piFilter(){
-  var buttons = $('nav#pi-filter>ul>li');
+  // var buttons = $('nav#pi-filter ul li');
   var fulls = $('article[data-ptype="FullProject"]');
   var starts = $('article[data-ptype="StartupProject"]');
   var shares = $('article[data-ptype="SharedInstrumentProject"]');
   var pilots = $('article[data-ptype="PilotProject"]');
-  buttons.click(function(){
-    $(this).toggleClass('on');
-    switch ($(this)) {
-    case $('#pi-fp'):
-        fulls.slideUp('fast');
-        break;
-    case $('#pi-sp'):
-        starts.slideUp('fast');
-        break;
-    case $('#pi-sip'):
-        shares.slideUp('fast');
-        break;
-    case $('#pi-pp'):
-        pilots.slideUp('fast');
-    };
-    if ($(this) == $('#pi-fp')){ buttons.css('display','hidden')};
-  });
 
+  $("#pi-fp").click(function(){
+    $(this).toggleClass('on');
+    fulls.slideToggle('fast');
+  });
+  $("#pi-sp").click(function(){
+    $(this).toggleClass('on');
+    starts.slideToggle('fast');
+  });
+  $("#pi-sip").click(function(){
+    $(this).toggleClass('on');
+    shares.slideToggle('fast');
+  });
+  $("#pi-pp").click(function(){
+    $(this).toggleClass('on');
+    pilots.slideToggle('fast');
+  });
 }

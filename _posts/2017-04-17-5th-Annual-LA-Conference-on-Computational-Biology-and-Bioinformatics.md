@@ -19,3 +19,4 @@ excerpt_separator: <!--more-->
 <h2>deadlines</h2>
 <p>—March 15th, 2017 (Wednessday - Extended) Call for Abstracts Deadline<br>—March 17th, 2017 (Friday) Registration and Hotel</p>
 <!-- This button should be generated dynamically because it is optional and not appropriate for all blog posts. it you do generate it, be sure to include the classes listed inside the button tag below -->
+<button type="button" name="registration">Conference Information</button>

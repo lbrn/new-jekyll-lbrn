@@ -16,17 +16,16 @@
     </header>
     <nav>
       <ul class="layout">
-        <ul class="layout">
-          <li><a href="about.html">About</a></li>
-          <li><a href="people.html">People</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="lbrn-events.html">Events</a></li>
-        </ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/people.html">People</a></li>
+        <li><a href="/research.html">Research</a></li>
+        <li><a href="/resources.html">Resources</a></li>
+        <li><a href="/lbrn-events.html">Events</a></li>
       </ul>
     </nav>
     <main class="layout">
       <section id="lbrnEventHeader">
+        {% if page.featuredImageUrl %}
         <div class="imagebox">
           <!-- DYNAMIC:this image will have to be inserted into the src attribute. I used the Page title for the alt attribute -->
           <img src="{{site.baseurl}}/{{page.featuredImageUrl}}" alt="{{page.title}}">
@@ -37,12 +36,13 @@
           <!-- this is p is the post-date of the news item -->
           <p>{{page.date | date:" %B, %-d %Y"}}</p>
         </div>
+        {% else %}
+          <h1>{{page.title}}</h1>
+        {% endif %}
       </section>
       <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->
       <div class="content">
         {{content}}
-        <!-- This button should be generated dynamically because it is optional and not appropriate for all blog posts. it you do generate it, be sure to include the classes listed inside the button tag below -->
-        <button type="button" name="registration">Conference Information</button>
       </div>
     </main>
     <footer>
@@ -53,6 +53,6 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="/js/scripts.js"></script>
   </body>
 </html>

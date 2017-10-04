@@ -427,9 +427,11 @@
         width: 100%;
       }
       h2 {
-        font-size: 1.9em !important;
+        font-size: 1.5em !important;
         line-height: 1.2em !important;
         text-transform: none !important;
+        clear:both;
+        padding: .5em;
         color: $primary;
         font-weight: 700;
         font-family: $titleFont !important;
@@ -461,6 +463,13 @@
   #lbrnEventHeader {
     background-color: lighten($secondary, 20%);
     @include span(full);
+    h1 {
+      font-size: 2.4em;
+      line-height: 1.2em;
+      font-family: $titleFont;
+      color: $primary;
+      padding: 1.5em 5%;
+    }
     .imagebox {
       @include span(full);
       width: 100%;
@@ -492,9 +501,6 @@
       padding-left: 5%;
       padding-top: 1.5em;
       padding-bottom: 2em;
-      // .post{
-      //   text-align: center;
-      // }
       h1 {
         font-size: 2.4em;
         line-height: 1.2em;
@@ -1025,7 +1031,7 @@
     section {
       margin-left: 0;
       margin-right: 0;
-      min-height: 36em;
+      min-height: 30em;
       padding-bottom: 2em;
       @include span(6);
     }
