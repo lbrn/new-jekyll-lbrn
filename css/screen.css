@@ -435,13 +435,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .events section .date .date-day {
     font-weight: 500;
     font-size: 400%;
-    text-align: center; }
+    text-align: center;
+    border: none;
+    padding-left: 0; }
+  .events section .date .adjust {
+    margin-top: .25em; }
   .events section .date .date-month {
     font-size: 1.2em;
     text-transform: uppercase;
     text-align: center; }
   .events section .details .title {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: .2em; }
   .events section .details .description {
     font-weight: 300;
@@ -1197,6 +1201,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 400%; }
   .events section .date .date-month {
     font-size: 1.5em; }
+  .events section .details .title {
+    font-size: 1em; }
   .events section .details .description {
     display: block; }
 

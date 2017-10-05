@@ -361,7 +361,10 @@
           font-weight: 500;
           font-size: 400%;
           text-align: center;
+          border: none;
+          padding-left: 0;
         }
+        .adjust {margin-top: .25em;}
         .date-month {
           font-size: 1.2em;
           text-transform: uppercase;
@@ -370,7 +373,7 @@
       }
       .details {
         .title {
-          font-size: 1.2em;
+          font-size: 1.4em;
           margin-bottom: .2em;
         }
         .description {
@@ -1016,6 +1019,9 @@
         }
       }
       .details {
+        .title {
+          font-size: 1em;
+        }
         .description {
           display: block;
         }
