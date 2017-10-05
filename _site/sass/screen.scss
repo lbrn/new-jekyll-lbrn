@@ -1,0 +1,1226 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "partials/variables";
+@import "partials/grids";
+@import "breakpoint";
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+//generalized styles------------------------------------------
+@include susy-breakpoint($small, $susySmall) {
+  //Utility Classes
+  .nudge {
+    padding-top: 1em;
+  }
+  .relative{
+    position: relative;
+    overflow: hidden;
+  }
+  .natural-link {
+    text-decoration: none;
+    color: $primary;
+    &.natural-link:hover {
+      color: lighten($primary, 15);
+    }
+  }
+  //Miscellaneous
+  body {
+    p{
+      font-weight: 400;
+      &.natural-link a {
+        text-decoration: none;
+        color: $primary;
+      }
+      &.natural-link:hover a {
+        color: darken($primary, 15);
+      }
+    }
+    h1 {
+      font-weight: 700;
+      font-style: $openFont;
+    }
+    a {
+      text-decoration: none;
+      color: $secondary;
+    }
+    a:hover {
+      color: darken($secondary, 15);
+    }
+  }
+  button {
+    padding: .5em 2em .5em 2em;
+    background-color: $secondary;
+    color: $primary;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: $bodyFont;
+    margin-top: 2em;
+    border: none;
+    border-radius: 10px;
+    .secondary-button {
+      border: 1px solid $secondary;
+      background-color: white;
+      &:hover{
+        background-color: $secondary;
+      }
+    }
+    a {
+      background-color: inherit;
+      color:inherit;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+    }
+    a:hover {
+      color:white;
+    }
+  }
+  button:hover {
+    background-color: $primary;
+    color: white;
+  }
+  .hidden{
+    display: none;
+  }
+  main.layout {
+    min-height: 40em;
+  }
+  .layout {
+    @include container(100%);
+  }
+  header {
+    @include pad(5%);
+    height: 7em;
+    // background-color: $primary;
+    background-image: url('../images/header-background.svg');
+    background-position: center;
+    background-size: cover;
+    @include span(full);
+    position: relative;
+    img {
+      float:left;
+      margin:1em 0;
+      margin-top: 1em;
+      height: 5em;
+    }
+    #navBug {
+      float: right;
+    }
+    #navBug:hover {
+      cursor: pointer;
+    }
+    h1 {
+      display: none;
+
+    }
+  }
+  nav {
+    display: none;
+    background-color: $secondary;
+    @include pad(5%);
+    @include span(full);
+
+    li {
+      @include container(50%);
+      font-family: $bodyFont;
+      text-align: center;
+      border-bottom: 1px solid white;
+      padding-top: 1em;
+      padding-bottom: 1em;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+      }
+    }
+    li:last-child {
+      border: none;
+    }
+  }
+  .slider {
+    display: none;
+    @include pad(5%);
+    @include span(full);
+    position: relative;
+    // height: 12em;
+    // background-image: url("../images/surf.jpg");
+    // background-size: cover;
+  }
+  .page-heading{
+    padding-left:5%;
+    padding-right:5%;
+    h1 {
+     margin-top: .75em;
+     margin-bottom: .75em;
+     float: left;
+     font-size: 3em;
+     font-family: $openFont;
+     color: $primary;
+    }
+  }
+  .content {
+    ul {
+      margin-left: 2.8em;
+    }
+    li {
+      font-weight: 300;
+      list-style: square;
+    }
+    .bold {
+      font-weight: 400;
+    }
+  }
+  main div.content{
+    @include span(full);
+    font-family: $bodyFont;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: $primary;
+    @include pad(5%);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    h2 {
+      font-size: 1.5em;
+      margin-top: .5em;
+      font-family: $openFont;
+      color: $primary;
+      // color: $secondary;
+      line-height: 1.5em;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 1.25em;
+      margin: .25em 0;
+      margin-top: 1.2em;
+      padding-left: 1em;
+      clear:both;
+      border-left: 8px solid $secondary;
+    }
+    h4 {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-top: .5em;
+    }
+    .important {
+      font-style: italic;
+      background-color: lighten($secondary, 23);
+      padding: .5em;
+      margin-top: .25em;
+      margin-bottom: .25em;
+    }
+    img {
+      // max-width: 100%;
+    }
+    .col-split {
+      @include span(full);
+      padding: 0 5%;
+    }
+    .col-split-right {
+      @include span(full);
+      padding: 0 5%;
+    }
+  }
+  //News Styles ------------------>
+  #newsContainer {
+    @include pad(5%);
+    @include span(full);
+  }
+  #newsPageContainer {
+    @include pad(5%);
+    @include span(full);
+    margin-bottom: 1.5em;
+  }
+  .news {
+    h2 {
+      font-size: 2.5em;
+      font-family: $openFont;
+      color: $primary;
+      margin-top: 1em;
+      line-height: .5em
+
+    }
+    article {
+      img {
+        @include span(full);
+      }
+      h3 {
+        margin-top: 1.25em;
+        margin-bottom: .25em;
+        @include span (full);
+        font-family: $titleFont;
+        color: $secondary;
+        font-weight: 700;
+        font-size: 2em;
+        line-height: 1.25em;
+        &.override {
+          margin-left: 0;
+          padding-left: 0;
+          font-size: 1.75em;
+          border: none;
+        }
+      }
+      h3:hover {
+        color: darken($secondary, 10%);
+      }
+      .summary {
+        @include span(full);
+        margin-top: 1em;
+        font-size: 1em;
+        line-height: 1.2em;
+        font-family: $bodyFont;
+        color: $primary;
+      }
+      .post-link {
+        color: $secondary;
+        font-size: 1em;
+        font-family: $bodyFont;
+        float: right;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: right;
+        text-decoration: none;
+        //@include clearfix;
+      }
+      .post-link:hover {
+        color: darken($secondary, 30%);
+      }
+      .post-date {
+        font-weight: 700;
+        margin-top: 1.5em;
+        font-family: $bodyFont;
+        color: $primary;
+        @include span(full);
+      }
+      .post-date:before {
+        content: ""
+      }
+    }
+    .view-all {
+      @include span(full);
+      background-color: $primary;
+      margin:.5em 0;
+      padding-top: .5em;
+      padding-bottom: .5em;
+      a {
+        text-align: center;
+        padding: 0;
+        font-family: $bodyFont;
+        color: white;
+        text-decoration: none;
+      }
+      a:hover{
+        color: $secondary;
+      }
+    }
+  }
+  #newsSidebar {
+    display: none;
+  }
+  //Events Styles ---------------->
+  #eventsPage {
+    @include span(full);
+  }
+  #eventsContainer {
+    background-color: $secondary;
+    padding-top: 3em;
+  }
+  .events {
+    margin-top: 2em;
+    @include span(full);
+    @include pad(5%);
+    background-color: $secondary;
+    h2 {
+      font-size: 2.5em;
+      font-family: $openFont;
+      color: $primary;
+      margin: 1em 0;
+      text-align: center;
+      line-height: .5em;
+    }
+    section {
+      float:left;
+      width: 70%;
+      margin: 0 15%;
+      border-bottom: 1px solid $primary;
+      margin-bottom: 4%;
+      padding-bottom: 4%;
+      .date {
+        width: 33%;
+        float: left;
+        border-right: 1px solid $primary;
+        font-family: $bodyFont;
+        color: $primary;
+        .date-day {
+          font-weight: 500;
+          font-size: 400%;
+          text-align: center;
+          border: none;
+          padding-left: 0;
+        }
+        .adjust {margin-top: .25em;}
+        .date-month {
+          font-size: 1.2em;
+          text-transform: uppercase;
+          text-align: center;
+        }
+      }
+      .details {
+        .title {
+          font-size: 1.4em;
+          margin-bottom: .2em;
+        }
+        .description {
+          font-weight: 300;
+          margin-bottom: .3em;
+          display: none;
+        }
+      }
+      .date:hover {
+        color: lighten($primary, 8);
+      }
+      .details {
+        width: 62%;
+        float: right;
+        font-family: $bodyFont;
+        color: $primary;
+        .date-time {
+          font-weight: bold;
+        }
+      }
+    }
+    section:last-child {
+      border: none;
+    }
+    .view-all {
+      background-color: $secondary;
+      color: $primary;
+      @include span(full);
+      padding: 0 5%;
+      text-align: center;
+      text-decoration: none;
+      font-family: $bodyFont;
+      margin-bottom: 1em;
+    }
+    .view-all:hover {
+      color: darken($primary, 30%);
+    }
+  }
+    //LBRN Events Styles ------------>
+  .three-card-responsive, .two-card-responsive{
+    @include span(full);
+    margin-bottom: 2%;
+    padding-bottom: 2em;
+    section {
+      border-radius: 6px;
+      background-color: lighten($secondary, 25%);
+      @include span(90%);
+      margin:2% 5%;
+      padding-bottom: 2em;
+      position: relative;
+      img {
+        border-radius: 6px;
+        @include span(full);
+        width: 100%;
+      }
+      h2 {
+        font-size: 1.5em !important;
+        line-height: 1.2em !important;
+        text-transform: none !important;
+        clear:both;
+        padding: .5em;
+        color: $primary;
+        font-weight: 700;
+        font-family: $titleFont !important;
+      }
+      p {
+        @include span(95%);
+        padding: 2.5%;
+        color: $primary;
+        font-family: $bodyFont;
+        line-height: 1.25em;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        &.more {
+          @include span(full);
+          background-color: lighten($secondary, 15%);
+          text-align: center;
+          text-transform: capitalize;
+          padding-top: .5em;
+          padding-bottom: .5em;
+          position: absolute;
+          bottom:0;
+        }
+        &.more:hover {
+          color: lighten($primary, 20%);
+        }
+      }
+    }
+  }
+  #lbrnEventHeader {
+    background-color: lighten($secondary, 20%);
+    @include span(full);
+    h1 {
+      font-size: 2.4em;
+      line-height: 1.2em;
+      font-family: $titleFont;
+      color: $primary;
+      padding: 1.5em 5%;
+    }
+    .imagebox {
+      @include span(full);
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      img {@include span(full)}
+      #quickReference {
+        position: absolute;
+        bottom: -95%; left:-17px;
+        height:100%; width: 100%;
+        background-color: rgba(255,255,255,.6);
+        padding: 1em;
+        padding-left: 3em;
+        div {
+          display:block;
+          text-align: center;
+          margin-bottom: 1.5em;
+        }
+        p {
+          margin:1em;
+          margin-top:2em;
+          font-family: $bodyFont;
+          color: $primary;
+        }
+      }
+    }
+    div.caption{
+      @include span(full);
+      padding-left: 5%;
+      padding-top: 1.5em;
+      padding-bottom: 2em;
+      h1 {
+        font-size: 2.4em;
+        line-height: 1.2em;
+        font-family: $titleFont;
+        color: $primary;
+      }
+      p {
+        font-size: 1.2em;
+        font-family: $bodyFont;
+        color: $primary;
+        margin-top: .5em;
+      }
+      #date {
+        font-family: $openFont;
+        font-weight: 300;
+        font-size: 1.25em;
+        line-height: 1em;
+      }
+      button {
+        margin-top: 1em;
+        width: 95%;
+      }
+    }
+  }
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+    position: relative;
+    margin-bottom: 1.2em;
+    h2{
+      padding-left: .4em;
+      padding-right: 1.5em;
+    }
+  }
+  #eventWhenAndWhere, #eventLodgingAndExpenses {
+    section {
+      @include span(full);
+    }
+    .map-icon {
+      @include span(1);
+      margin-top: .5em;
+      font-size: 2em;
+    }
+    .map-address {
+      @include span(last 5);
+    }
+  }
+  #speakers {
+    @include clearfix;
+    section {
+      @include span(full);
+    }
+    h3 {
+      @include span(4);
+    }
+    p {
+      @include span(4);
+    }
+    img {
+      @include span(last 2);
+      margin-top: 1.2em;
+    }
+  }
+  .seminar-speaker {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    @include span(full);
+    img {
+      margin: auto;
+      display: block;
+    }
+    h3 {
+      margin-top: 1em;
+      @include span(full);
+    }
+    div {
+      @include span(full);
+      margin-top: 1em;
+      position: relative;
+      i {
+        @include span(1);
+        margin-left: 0;
+        text-align: center;
+        margin-top: .3em;
+      }
+      p {
+        @include span(last 5);
+        text-align: left;
+      }
+    }
+  }
+  .collapse {
+    height: 0;
+    overflow: hidden;
+  }
+  .expand {
+    height: inherit;
+    overflow: visible;
+  }
+  .event-section-head {
+    background-color: $secondary;
+  }
+  .collapseTrigger{
+    display: none;
+    position: absolute;
+    top: .1em;
+    right: .1em;
+  }
+  #lbrnEventSidebar {
+    display: none;
+  }
+  // LBRN Resources Styles ----------->
+  div.resources, div.research {
+    a {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    section {
+      background-color: unset;
+      &:hover {
+        transition: background-color .1s;
+        background-color: lighten($secondary, 20%);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+      }
+    }
+    img {
+      display: block;
+      max-width: 10em;
+      margin: 5% auto;
+      float: none;
+    }
+    h2 {
+      margin-top: 0 !important;
+      text-align: center;
+      font-size: 1em;
+      font-weight: bold;
+    }
+  }
+  //About Page Styles ------------->
+  section.cores {
+    @include span(full);
+    margin-top: 1em;
+    h2 {
+      margin-bottom: .5em;
+    }
+    ul {
+      @include span(full);
+      background-color: lighten($secondary, 10%);
+      li {
+        width: 33.33332%;
+        text-align: center;
+        float:left;
+        list-style: none;
+        padding: 1em 0;
+      }
+      li:hover {
+        background-color: lighten($secondary, 25%);
+        cursor: pointer;
+      }
+      li.active {
+        background-color: lighten($secondary, 20%);
+        &:hover {
+          cursor: default;
+        }
+      }
+    }
+    #core-swap {
+      background-color: lighten($secondary, 20%);
+      @include span(full);
+      h4 {
+        padding-left: 1.6em;
+        margin-top: 1em;
+        float: left;
+        line-height: 1.3;
+      }
+      button{
+        float: right;
+        font-size: 1em;
+        margin: 1em 5% 0 0;
+      }
+      p {
+        font-size: .8em;
+        font-weight: 300;
+        padding: 1em 2em;
+        line-height: 1.5;
+        clear: both;
+      }
+      img {
+        width: 100%;
+        padding: 1em;
+        box-sizing: border-box;
+        background-color: lighten($secondary, 20%);
+      }
+    }
+  }
+  section.directory {
+    @include span(full);
+    img {
+      @include span(2);
+    }
+    article.person {
+      @include span(full);
+      margin: 1em 0;
+    }
+    h4, h5, h6, ul {
+      font-family: $openFont;
+      @include span(last 4);
+      border: none;
+      line-height: 1.3;
+    }
+    ul {
+      margin-left: 0;
+    }
+    h4 {
+      font-weight: bold;
+      font-size: 1.3em;
+      padding-bottom: .2em;
+    }
+    h5 {
+      font-size: 1.2em;
+    }
+    h6 {
+      font-size: 1em;
+    }
+    ul li {
+      list-style: none;
+      border: none;
+    }
+  }
+  //People Styles ----------------->
+  .people{
+    h3 {
+        padding: .2em 0;
+      }
+    .icon-margin{
+      margin-top: .7em;
+    }
+    .icon-margin2{
+      margin-top: .4em;
+    }
+    i.collapseTrigger {
+      color: $secondary;
+      cursor: pointer;
+    }
+  }
+  nav#pi-filter{
+    background-color: unset;
+    margin-bottom:1em;
+    padding-left: 0;
+    p {
+      font-style: italic;
+      color: $secondary;
+      padding-bottom: .5em;
+      padding-left: .2em;
+      text-transform: uppercase;
+    }
+    ul {
+      overflow: hidden;
+      margin-left: 0;
+      li {
+        font-size: 1rem;
+        float: left;
+        display: block;
+        padding: .5em;
+        margin: 0 .2em;
+        color: $secondary;
+        border-radius: 5px;
+        border: 1px solid $secondary;
+        transition: all .1s;
+        &:hover {
+          background-color: darken($secondary, 10%);
+          color: white;
+          cursor:pointer;
+        }
+        &:active {
+          background-color: darken($secondary, 20%);
+        }
+      }
+      .on {
+        background-color:$secondary;
+        color: white;
+        &:hover {
+          background-color: darken($secondary, 10%);
+        }
+        &:active {
+          background-color: darken($secondary, 20%);
+        }
+      }
+    }
+  }
+  //Presentation Teplates Styles ----------------->
+  .presentation-templates{
+    section {
+      min-height: 0px !important;
+      text-align: center;
+      background-color: unset !important;
+      border-bottom: 10px solid lighten($secondary, 20%);
+    }
+    img {
+      float: none !important;
+      margin: 0 auto;
+      max-width: 20em;
+    }
+    h2 {
+        clear: both;
+        padding: .2em 0;
+        text-align: center;
+      }
+    button {
+      float: none !important;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  //Footer Styles ----------------->
+  footer {
+    @include span(full);
+    @include pad(5%);
+    background-color: $primary;
+    .layout {
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+    }
+    p {
+      margin-top: .5em;
+      float: left;
+      color: white;
+      line-height: 2em;
+      font-family: $bodyFont;
+      font-size: .75em;
+      width: 50%;
+      min-width: 15em;
+
+    }
+    span {
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+} //Small Query------------------------------------------
+@include susy-breakpoint($medium, $susySmall) {
+  // Main Styles!!
+  .slider {
+    height: 18em;
+  }
+} //Medium Query------------------------------------------
+@include susy-breakpoint($standard, $susy) {
+  // Main Styles!!
+  header {
+    height: 10em;
+    width: 100%;
+    padding: 0;
+    .layout {
+      @include container(90%);
+      position: relative;
+    }
+    img {
+      height: 8em;
+    }
+    h1 {
+      color: white;
+      font-family: $openFont;
+      font-weight: 700;
+      font-size: 2em;
+      display: block;
+      position: absolute;
+      bottom: .75em;
+      right: 0;
+      margin-left: 40%;
+      text-align: right;
+    }
+    #navBug {
+    display: none;
+    }
+  }
+  nav {
+    background-color: $secondary;
+    display: inline-block;
+    li {
+      width: auto;
+      float: left;
+      margin-right: .5em;
+      padding:0;
+      font-family: $bodyFont;
+      font-size: 1.2em;
+      border: none;
+      color: white;
+      a {
+        color: inherit;
+        padding: 1em .25em;
+        text-decoration: none;
+        display: block;
+      }
+      a:hover{
+        background-color: lighten($secondary, 10%);
+        color: $primary;
+      }
+    }
+  }
+  .slider {
+    display: block;
+    width: 100%;
+    height: 35em;
+  }
+  main div.content{
+    .col-split {
+      width: 50%;
+      padding: 0 2%;
+    }
+    .col-split-right {
+      width: 50%;
+      padding: 0 2%;
+      float:right;
+    }
+  }
+  //News Styles ------------------->
+  #newsContainer {
+    @include span(7);
+    @include prefix(5%);
+    padding-right: 0;
+  }
+  #newsPageContainer{
+    @include span(9);
+    padding-right: 0;
+  }
+  .news {
+    article {
+      &.spacers {
+        @include span(full);
+          margin-bottom: 1.5em;
+      }
+      .sideTitle {
+        @include span(8 at 5);
+        font-size: 2em;
+        line-height: 1em;
+        margin-top: 0;
+        padding-top: 0;
+      }
+      img {
+        @include span(4);
+      }
+      .summary {
+        margin-top: 0;
+        @include span(last 8);
+      }
+      .post-link {
+        @include span(last 8);
+      }
+      .post-date {
+        margin-bottom: .5em;
+        margin-top: 0;
+        @include span(last 8);
+      }
+    }
+  }
+  #newsSidebar {
+    display: block;
+    @include span(last 3);
+    ul {
+      margin-left: 0;
+      li {
+        border-radius: 6px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border: 1px solid white;
+        background-color: lighten($secondary, 22);
+        box-sizing: border-box;
+        list-style: none;
+        line-height: 1.3;
+        font-size: 1.2em;
+        font-weight: 400;
+        font-family: $titleFont;
+        color: $primary;
+        text-align: center;
+        padding: .5em;
+        &:hover{
+          transition: background-color .1s;
+          background-color: lighten($secondary, 17)
+        }
+      }
+      // a:nth-child(2n){
+      //   background-color: lighten($secondary, 22);
+      // }
+    }
+  }
+  //Events Styles ----------------->
+  #eventsContainer {
+    @include span(full);
+    background-color: white;
+  }
+  .events {
+    margin-top: 0;
+    @include span(last 5);
+    @include pad(5%);
+    padding-left: 0;
+    h2 {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    section {
+      width: 90%;
+      margin: 0 5%;
+      margin-bottom:1.5em;
+      padding-bottom: 1.5em;
+      .date {
+        width: 33%;
+        .date-day {
+          font-size: 400%;
+        }
+        .date-month {
+          font-size: 1.5em;
+        }
+      }
+      .details {
+        .title {
+          font-size: 1em;
+        }
+        .description {
+          display: block;
+        }
+      }
+    }
+  }
+  //LBRN Events Styles ------------>
+  .three-card-responsive, .two-card-responsive{
+    @include span(90%);
+    margin-left: 5%;
+    margin-right: 5%;
+
+    section {
+      margin-left: 0;
+      margin-right: 0;
+      min-height: 30em;
+      padding-bottom: 2em;
+      @include span(6);
+    }
+    section:nth-child(2n) {
+      @include span(last 6);
+    }
+  }
+  #lbrnEventHeader {
+    .imagebox {
+      @include span(last 6);
+    }
+    div.caption{
+      @include span(6);
+      min-height: 100%;
+      h1 {
+        font-size: 2.4em;
+        line-height: 1.2em;
+        font-family: $titleFont;
+        color: $primary;
+      }
+      p {
+        font-size: 1.2em;
+        font-family: $bodyFont;
+        color: $primary;
+        margin-top: .5em;
+      }
+    }
+  }
+  #matchHeight{
+    @include span(9);
+  }
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+    @include span(full);
+    overflow: hidden;
+    h2{
+      padding-left: 0;
+      background-color: white;
+    }
+  }
+  .collapseTrigger{
+    color: white;
+  }
+  .collapse {
+    height: inherit;
+  }
+  #lbrnEventSidebar {
+    display: block;
+    padding: 0;
+    margin: 0;
+    @include span(last 3);
+    background-color: $secondary;
+    height: 3000px;
+    position: relative;
+    ul {
+      @include span(full);
+      position: -webkit-sticky;
+      position: sticky;
+      padding-top: 1em;
+      top: 2em;
+      z-index: 1000;
+      li {
+        @include span(full);
+        list-style: none;
+        margin-bottom: 1em;
+        line-height: 1.3;
+      }
+      a {
+        @include span(full);
+
+        text-decoration: none;
+        color: $primary;
+        text-align: center;
+        text-transform: capitalize;
+      }
+    }
+    .active {
+      background-color: lighten($secondary, 15%);
+      font-weight: 400;
+    }
+  }
+  // LBRN Resources Styles ----------->
+  div.resources, div.research {
+    section {
+      min-height: 21em;
+    }
+    img {
+      max-width: 90%;
+    }
+  }
+  // People Styles ------------------->
+  .people{
+    i.collapseTrigger {
+      display: none;
+    }
+  }
+} // Standard Query ----------------------------------------
+@include breakpoint($intermediate) {
+  .three-card-responsive {
+    @include span(90%);
+    margin-left: 5%;
+    margin-right: 5%;
+    section {
+      // min-height: 40em;
+      margin-left: 0;
+      margin-right: 0;
+      @include span(4);
+    }
+    section:nth-child(2n) {
+      @include span(4);
+    }
+    section:nth-child(3n) {
+      @include span(last 4);
+    }
+  }
+  .caption {
+    h1 {
+      margin-top: 1.3em;
+    }
+    p {
+      line-height: 1.6em;
+    }
+  }
+  // Resource Styles
+  div.research{
+    max-width: 45em;
+    margin: auto;
+    float: unset;
+  }
+  div.resources {
+    section {
+      min-height: 21em;
+    }
+  }
+  nav li{
+    margin-right: .5em;
+    a {
+      padding: 1em;
+    }
+  }
+}// Intermediate Query ------------------------------------
+@include breakpoint($large) {
+  // Main Styles!!
+  .layout {
+    margin: 0;
+    @include container(85%);
+    padding: 0;
+  }
+  main div.content{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header {
+    padding: 0;
+    .layout {
+      @include container(85%);
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+  #newsPageContainer {
+    padding-right: 0;
+  }
+  .three-card-responsive {
+    margin: 0;
+    @include span(full);
+  }
+  div.resources {
+    section {
+      min-height: 23em;
+    }
+  }
+  nav {
+    padding: 0;
+
+  }
+  footer {
+    padding: 0;
+    @include span(full);
+  }
+} // large Query ----------------------------------------
+@include breakpoint($highDef) {
+  .layout {
+    @include container(80%);
+  }
+} // large Query ----------------------------------------
