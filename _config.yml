@@ -16,7 +16,7 @@
 title: Louisiana Biomedical Research Network
 description: LBRN is a collaborative network, organized to enhance the quality of biomedical research conducted throughout the state of Louisiana.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "new-jekyll-lbrn" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mjtheriot4
 #to be filled in later:
 email:
