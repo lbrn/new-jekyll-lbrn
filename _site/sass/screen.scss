@@ -176,6 +176,13 @@
     .bold {
       font-weight: 400;
     }
+    .buttons-centered{
+      margin: 1em 0;
+      text-align: center;
+      button {
+        margin-top: 0;
+      }
+    }
   }
   main div.content{
     @include span(full);

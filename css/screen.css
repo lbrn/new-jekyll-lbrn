@@ -206,6 +206,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     list-style: square; }
   .content .bold {
     font-weight: 400; }
+  .content .buttons-centered {
+    margin: 1em 0;
+    text-align: center; }
+  .content .buttons-centered button {
+    margin-top: 0; }
 
   main div.content {
     -moz-box-sizing: border-box;
