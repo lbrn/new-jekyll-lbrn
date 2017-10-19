@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spore Outer Structures&col; Contribution to Germination Heterogeneity
+title: Spore Outer Structures&colon; Contribution to Germination Heterogeneity
 author: Rebecca Giorno-McConnell
 school: Louisiana Tech University
 project-type: FullProject
