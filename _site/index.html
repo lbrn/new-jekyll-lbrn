@@ -5,6 +5,7 @@
     <title>LBRN Home</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="/css/slider.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -27,16 +28,30 @@
     <div class="layout">
       <!--REPLACE SLIDER-->
       <section class="slider">
-        <link rel="stylesheet" href="css/slider.css">
-<script type="text/javascript" src="/js/modernizr.custom.86080.js"></script>
-  <ul class="cb-slideshow">
-    <li><span>Image 01</span></li>
-    <li><span>Image 02</span></li>
-    <li><span>Image 03</span></li>
-    <li><span>Image 04</span></li>
-    <li><span>Image 05</span></li>
-    <li><span>Image 06</span></li>
-  </ul>
+        <div class="sliderWrap">
+  <div id="sliderNav">
+    <label for="slide-1-trigger"></label>
+    <label for="slide-2-trigger"></label>
+    <label for="slide-3-trigger"></label>
+    <label for="slide-4-trigger"></label>
+  </div>
+  <input id="slide-1-trigger" type="radio" name="slides" checked>
+  <section class="slide slide-one">
+    <h1>Headline One</h1>
+  </section>
+  <input id="slide-2-trigger" type="radio" name="slides">
+  <section class="slide slide-two">
+    <h1>Headline Two</h1>
+  </section>
+  <input id="slide-3-trigger" type="radio" name="slides">
+  <section class="slide slide-three">
+    <h1>Headline Three</h1>
+  </section>
+  <input id="slide-4-trigger" type="radio" name="slides">
+  <section class="slide slide-four">
+    <h1>Headline Four</h1>
+  </section>
+</div>
 
       </section>
       <section class="news" id="newsContainer">

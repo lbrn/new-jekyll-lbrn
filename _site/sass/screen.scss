@@ -146,7 +146,7 @@
   }
   .slider {
     display: none;
-    @include pad(5%);
+    // @include pad(5%);
     @include span(full);
     position: relative;
     // height: 12em;

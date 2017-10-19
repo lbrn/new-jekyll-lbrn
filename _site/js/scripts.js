@@ -2,6 +2,7 @@ $( document ).ready(function() {
   quickRef();
   coreSwap();
   piFilter();
+  slider();
 //Mobile Menu
   $("#navBug").click(function(){
       $('nav').slideToggle('fast');
@@ -112,4 +113,26 @@ function piFilter(){
     $(this).toggleClass('on');
     pilots.slideToggle('fast');
   });
+}
+function slider(){
+  var buttons = document.getElementsByTagName('input');
+  var nav = document.getElementById('sliderNav');
+  var i = 1;
+  slideInt();
+  function slideInt(){
+    var timer = setInterval(checkFunc, 5000);
+    nav.onmouseover = function(){
+      clearInterval(timer);
+    };
+    nav.onmouseout = function(){
+      timer = setInterval(checkFunc, 5000);
+    };
+  }
+  function checkFunc() {
+    if (i == 4){
+      i=0;
+    }
+    buttons[i].checked = true;
+    i++;
+  }
 }
