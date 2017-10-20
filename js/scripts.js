@@ -2,7 +2,9 @@ $( document ).ready(function() {
   quickRef();
   coreSwap();
   piFilter();
-  slider();
+  if(document.getElementById('sliderNav') != null){
+    slider();
+  }
 //Mobile Menu
   $("#navBug").click(function(){
       $('nav').slideToggle('fast');
@@ -114,11 +116,11 @@ function piFilter(){
     pilots.slideToggle('fast');
   });
 }
+// FOR THE SLIDER
 function slider(){
   var buttons = document.getElementsByTagName('input');
   var nav = document.getElementById('sliderNav');
   var i = 1;
-  slideInt();
   function slideInt(){
     var timer = setInterval(checkFunc, 5000);
     nav.onmouseover = function(){

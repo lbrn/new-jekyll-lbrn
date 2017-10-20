@@ -909,7 +909,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border: none; }
 
   .people h3 {
-    padding: .2em 0; }
+    padding: .2em 0;
+    margin-right: 1.4em !important; }
+  .people h2 {
+    margin-right: 1.4em !important; }
   .people .icon-margin {
     margin-top: .7em; }
   .people .icon-margin2 {
