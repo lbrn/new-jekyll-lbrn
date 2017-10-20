@@ -68,9 +68,18 @@ div#sliderNav label:hover {
   transition: left 0.65s ease-out;
 }
 .slide h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  color: white;
+  text-shadow: 0 0 10px black;
   opacity: 0;
   transform: translateY(100%);
   transition: transform 0.5s 0.5s, opacity 0.5s;
+}
+.slide a {
+  text-decoration: none;
+  color: white;
+  display: block;
 }
 [id^="slide"]:checked + .slide h1 {
   opacity: 1;
