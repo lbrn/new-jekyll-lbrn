@@ -32,8 +32,10 @@
       </section>
       <section class="news" id="newsContainer">
         <h2>NEWS</h2>
-        <!--Start of NEWS ITEM-->
-        {% for post in site.categories.news %}
+        {% for post in site.categories.featured %}
+          {% include news-list-item-featured.html %}
+        {% endfor %}
+        {% for post in site.categories.news limit:4 %}
           {% include news-list-item.html %}
         {% endfor %}
         <!--End of NEWS ITEM-->
@@ -44,7 +46,7 @@
       <aside class="events">
         <h2>EVENTS</h2>
           <!--Start of EVENT ITEM-->
-          {% for post in site.categories.events %}
+          {% for post in site.categories.events limit:7 %}
             {% include events-list-item.html %}
           {% endfor %}
 

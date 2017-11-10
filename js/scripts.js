@@ -4,7 +4,9 @@ $( document ).ready(function() {
   piFilter();
   if(document.getElementById('sliderNav') != null){
     slider();
+    console.log("Slider Happening");
   }
+  else{console.log("no slider on page");}
 //Mobile Menu
   $("#navBug").click(function(){
       $('nav').slideToggle('fast');
@@ -121,15 +123,15 @@ function slider(){
   var buttons = document.getElementsByTagName('input');
   var nav = document.getElementById('sliderNav');
   var i = 1;
-  function slideInt(){
-    var timer = setInterval(checkFunc, 5000);
-    nav.onmouseover = function(){
-      clearInterval(timer);
-    };
-    nav.onmouseout = function(){
-      timer = setInterval(checkFunc, 5000);
-    };
-  }
+  var timer = setInterval(checkFunc, 5000);
+  nav.onmouseover = function(){
+    clearInterval(timer);
+    console.log("STOPPED");
+  };
+  nav.onmouseout = function(){
+    timer = setInterval(checkFunc, 5000);
+    console.log("ON");
+  };
   function checkFunc() {
     if (i == 4){
       i=0;

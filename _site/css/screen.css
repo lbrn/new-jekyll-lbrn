@@ -50,6 +50,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .natural-link.natural-link:hover {
     color: #425ca2; }
 
+  table {
+    font-size: 12px !important;
+    font-family: "Open Sans", sans-serif; }
+
+  div.frame {
+    position: relative;
+    padding-bottom: 100%;
+    margin-bottom: 1em;
+    height: 0; }
+
+  div.frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
   body p {
     font-weight: 400; }
   body p.natural-link a {
@@ -142,8 +159,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   nav {
     display: none;
     background-color: #8ECB91;
-    padding-left: 5%;
-    padding-right: 5%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -151,26 +166,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0; }
-  nav li {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    max-width: 50%;
+  nav ul {
+    max-width: 100%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; }
+  nav li {
     font-family: "Ubuntu", sans-serif;
     text-align: center;
-    border-bottom: 1px solid white;
-    padding-top: 1em;
-    padding-bottom: 1em; }
-  nav li:after {
-    content: " ";
-    display: block;
-    clear: both; }
+    border-bottom: 1px solid white; }
   nav li a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 1em 0;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold; }
   nav li a:hover {
+    background-color: #7dc380;
+    transition: all .2s;
     color: white; }
   nav li:last-child {
     border: none; }
@@ -296,8 +309,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 2.5em;
     font-family: "Open Sans", sans-serif;
     color: #2C3D6C;
-    margin-top: 1em;
-    line-height: 0.5em; }
+    margin-top: .5em; }
+  .news article {
+    overflow: hidden;
+    margin-top: 1.75em; }
+  .news article.featured {
+    padding: .5em .5em .75em .5em;
+    background-color: #def0df;
+    border-radius: 3%; }
+  .news article.featured h3 {
+    color: #2C3D6C; }
   .news article img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -305,10 +326,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    border-radius: 6%; }
   .news article h3 {
-    margin-top: 1.25em;
-    margin-bottom: .25em;
+    margin-bottom: .3em;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -483,7 +504,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .events .view-all:hover {
     color: black; }
 
-  .three-card-responsive, .two-card-responsive {
+  .three-card-responsive, .two-card-responsive .four-card-responsive {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -493,7 +514,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 0;
     margin-bottom: 2%;
     padding-bottom: 2em; }
-  .three-card-responsive section, .two-card-responsive section {
+  .three-card-responsive section, .two-card-responsive .four-card-responsive section {
     border-radius: 6px;
     background-color: #e5f3e6;
     -moz-box-sizing: border-box;
@@ -505,7 +526,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin: 2% 5%;
     padding-bottom: 2em;
     position: relative; }
-  .three-card-responsive section img, .two-card-responsive section img {
+  .three-card-responsive section img, .two-card-responsive .four-card-responsive section img {
     border-radius: 6px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -515,7 +536,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0;
     width: 100%; }
-  .three-card-responsive section h2, .two-card-responsive section h2 {
+  .three-card-responsive section h2, .two-card-responsive .four-card-responsive section h2 {
     font-size: 1.5em !important;
     line-height: 1.2em !important;
     text-transform: none !important;
@@ -524,7 +545,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #2C3D6C;
     font-weight: 700;
     font-family: "Open Sans Condensed", sans-serif !important; }
-  .three-card-responsive section p, .two-card-responsive section p {
+  .three-card-responsive section p, .two-card-responsive .four-card-responsive section p {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -537,7 +558,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     line-height: 1.25em;
     hyphens: auto;
     -webkit-hyphens: auto; }
-  .three-card-responsive section p.more, .two-card-responsive section p.more {
+  .three-card-responsive section p.more, .two-card-responsive .four-card-responsive section p.more {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -552,7 +573,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-bottom: .5em;
     position: absolute;
     bottom: 0; }
-  .three-card-responsive section p.more:hover, .two-card-responsive section p.more:hover {
+  .three-card-responsive section p.more:hover, .two-card-responsive .four-card-responsive section p.more:hover {
     color: #4a66b4; }
 
   #lbrnEventHeader {
@@ -1004,7 +1025,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-weight: bold; } }
 @media (min-width: 414px) {
   .slider {
-    height: 18em; } }
+    height: 18em; }
+
+  nav ul.layout {
+    max-width: 90%; }
+
+  nav ul li a {
+    text-transform: capitalize;
+    font-weight: normal; } }
 @media (min-width: 667px) {
   header {
     height: 10em;
@@ -1212,7 +1240,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .events section .details .description {
     display: block; }
 
-  .three-card-responsive, .two-card-responsive {
+  .three-card-responsive, .two-card-responsive, .four-card-responsive {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1221,7 +1249,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 2.85714%;
     margin-left: 5%;
     margin-right: 5%; }
-  .three-card-responsive section, .two-card-responsive section {
+  .three-card-responsive section, .two-card-responsive section, .four-card-responsive section {
     margin-left: 0;
     margin-right: 0;
     min-height: 30em;
@@ -1232,7 +1260,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 48.57143%;
     float: left;
     margin-right: 2.85714%; }
-  .three-card-responsive section:nth-child(2n), .two-card-responsive section:nth-child(2n) {
+  .three-card-responsive section:nth-child(2n), .two-card-responsive section:nth-child(2n), .four-card-responsive section:nth-child(2n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1384,6 +1412,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 31.42857%;
+    float: right;
+    margin-right: 0; }
+
+  .four-card-responsive {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 90%;
+    float: left;
+    margin-right: 2.85714%;
+    margin-left: 5%;
+    margin-right: 5%; }
+  .four-card-responsive section {
+    margin-left: 0;
+    margin-right: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 22.85714%;
+    float: left;
+    margin-right: 2.85714%; }
+  .four-card-responsive section:nth-child(2n) {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 22.85714%;
+    float: left;
+    margin-right: 2.85714%; }
+  .four-card-responsive section:nth-child(3n) {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 22.85714%;
     float: right;
     margin-right: 0; }
 
