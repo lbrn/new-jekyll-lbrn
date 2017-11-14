@@ -175,7 +175,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: center;
     border-bottom: 1px solid white; }
   nav li.right {
-    float: right;
     margin-left: .5em; }
   nav li.right > a {
     padding: 1em .2em;
@@ -1060,7 +1059,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-weight: bold; } }
 @media (min-width: 414px) {
   .slider {
-    height: 18em; }
+    height: 0;
+    padding-bottom: 50%; }
 
   nav ul.layout {
     max-width: 90%; }
@@ -1113,11 +1113,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 1.2em;
     border: none;
     color: white; }
+  nav li.right {
+    float: right; }
 
   .slider {
     display: block;
     width: 100%;
-    height: 35em; }
+    height: 0;
+    padding-bottom: 50%; }
 
   main div.content .col-split {
     width: 50%;

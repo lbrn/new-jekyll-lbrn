@@ -149,7 +149,7 @@
       text-align: center;
       border-bottom: 1px solid white;
       &.right{
-        float:right;
+        // float:right;
         margin-left: .5em;
         &>a{
           padding: 1em .2em;
@@ -932,7 +932,8 @@
 @include susy-breakpoint($medium, $susySmall) {
   // Main Styles!!
   .slider {
-    height: 18em;
+    height: 0;
+    padding-bottom: 50%;
   }
   nav ul.layout {
     max-width: 90%;
@@ -983,12 +984,14 @@
       font-size: 1.2em;
       border: none;
       color: white;
+      &.right {float: right;}
     }
   }
   .slider {
     display: block;
     width: 100%;
-    height: 35em;
+    height: 0;
+    padding-bottom: 50%;
   }
   main div.content{
     .col-split {
