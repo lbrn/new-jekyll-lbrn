@@ -174,6 +174,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-family: "Ubuntu", sans-serif;
     text-align: center;
     border-bottom: 1px solid white; }
+  nav li.right {
+    float: right;
+    margin-left: .5em; }
+  nav li.right > a {
+    padding: 1em .2em;
+    display: inline-block; }
+  nav li.right > a:hover {
+    color: #2C3D6C;
+    transition: ALL .15s;
+    background-color: unset; }
+  nav li button {
+    border: 2px solid #2C3D6C;
+    border-radius: 25px;
+    color: white;
+    padding: .3em .7em;
+    margin: .4em;
+    font-size: 1em; }
+  nav li button a {
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    background-color: inherit; }
+  nav li button a:hover {
+    background-color: unset;
+    color: #8ECB91; }
+  nav li button:hover {
+    background-color: #2C3D6C; }
+  nav li a {
+    color: inherit;
+    padding: 1em .25em;
+    text-decoration: none;
+    display: block; }
+  nav li a:hover {
+    background-color: #b1dbb3;
+    color: #2C3D6C; }
   nav li a {
     color: white;
     text-decoration: none;
@@ -1078,14 +1113,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 1.2em;
     border: none;
     color: white; }
-  nav li a {
-    color: inherit;
-    padding: 1em .25em;
-    text-decoration: none;
-    display: block; }
-  nav li a:hover {
-    background-color: #b1dbb3;
-    color: #2C3D6C; }
 
   .slider {
     display: block;

@@ -148,7 +148,50 @@
       font-family: $bodyFont;
       text-align: center;
       border-bottom: 1px solid white;
-
+      &.right{
+        float:right;
+        margin-left: .5em;
+        &>a{
+          padding: 1em .2em;
+          display:inline-block;
+          &:hover{
+            color: $primary;
+            transition: ALL .15s;
+            background-color: unset;
+          }
+        }
+      }
+      button{
+        border: 2px solid $primary;
+        border-radius: 25px;
+        color:white;
+        padding:.3em .7em;
+        margin:.4em;
+        font-size: 1em;
+        a{
+          padding:0;
+          margin:0;
+          color: inherit;
+          background-color: inherit;
+          &:hover{
+            background-color:unset;
+            color: $secondary;
+          }
+        }
+        &:hover{
+          background-color: $primary;
+        }
+      }
+      a {
+        color: inherit;
+        padding: 1em .25em;
+        text-decoration: none;
+        display: block;
+      }
+      a:hover{
+        background-color: lighten($secondary, 10%);
+        color: $primary;
+      }
       a {
         color: white;
         text-decoration: none;
@@ -940,16 +983,6 @@
       font-size: 1.2em;
       border: none;
       color: white;
-      a {
-        color: inherit;
-        padding: 1em .25em;
-        text-decoration: none;
-        display: block;
-      }
-      a:hover{
-        background-color: lighten($secondary, 10%);
-        color: $primary;
-      }
     }
   }
   .slider {
