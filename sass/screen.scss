@@ -149,7 +149,7 @@
       text-align: center;
       border-bottom: 1px solid white;
       &.right{
-        float:right;
+        // float:right;
         margin-left: .5em;
         &>a{
           padding: 1em .2em;
@@ -983,6 +983,7 @@
       font-size: 1.2em;
       border: none;
       color: white;
+      &.right {float: right;}
     }
   }
   .slider {
