@@ -56,7 +56,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   div.frame {
     position: relative;
-    padding-bottom: 100%;
+    padding-bottom: 60%;
     margin-bottom: 1em;
     height: 0; }
 
@@ -66,6 +66,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     left: 0;
     width: 100%;
     height: 100%; }
+
+  .grads, .undergrads {
+    display: none; }
 
   body p {
     font-weight: 400; }
@@ -84,13 +87,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #5ab35e; }
 
   button {
-    padding: .5em 2em .5em 2em;
+    padding: .35em 1.2em;
     background-color: #8ECB91;
     color: #2C3D6C;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: "Ubuntu", sans-serif;
-    margin-top: 2em;
+    margin: auto;
+    margin-top: 1em;
     border: none;
     border-radius: 10px; }
   button .secondary-button {
@@ -175,7 +179,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: center;
     border-bottom: 1px solid white; }
   nav li.right {
-    margin-left: .5em; }
+    margin-left: .5em;
+    margin-right: 0; }
   nav li.right > a {
     padding: 1em .2em;
     display: inline-block; }
@@ -187,9 +192,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border: 2px solid #2C3D6C;
     border-radius: 25px;
     color: white;
-    padding: .3em .7em;
-    margin: .4em;
-    font-size: 1em; }
+    padding: .2em .7em;
+    margin: .955em 0;
+    font-size: .8em; }
   nav li button a {
     padding: 0;
     margin: 0;
@@ -238,7 +243,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-right: 5%; }
   .page-heading h1 {
     margin-top: .75em;
-    margin-bottom: .75em;
     float: left;
     font-size: 3em;
     font-family: "Open Sans", sans-serif;
@@ -271,7 +275,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #2C3D6C;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 2em; }
   main div.content h2 {
     font-size: 1.5em;
@@ -287,10 +291,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-left: 1em;
     clear: both;
     border-left: 8px solid #8ECB91; }
+  main div.content h3.small-text {
+    font-size: 1.2em;
+    border-left: none;
+    padding-left: 0;
+    text-align: center; }
   main div.content h4 {
     font-size: 1.1em;
     font-weight: bold;
     margin-top: .5em; }
+  main div.content p {
+    margin-top: 1em; }
+  main div.content p.small-text {
+    font-size: 1em; }
+  main div.content #faq p {
+    margin-top: .25em;
+    border-bottom: 1px #2C3D6C solid;
+    cursor: pointer; }
+  main div.content #faq p:hover {
+    color: #425ca2;
+    border-bottom: 1px #425ca2 solid; }
+  main div.content #faq ul {
+    border-bottom: 3px #2C3D6C solid;
+    margin-left: 0;
+    padding-left: 2.8em;
+    display: none; }
   main div.content .important {
     font-style: italic;
     background-color: #def0df;
@@ -623,8 +648,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 2.4em;
     line-height: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
-    color: #2C3D6C;
-    padding: 1.5em 5%; }
+    color: #2C3D6C; }
   #lbrnEventHeader .imagebox {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -829,6 +853,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #lbrnEventSidebar {
     display: none; }
 
+  #mobileChooseType {
+    position: fixed;
+    background-color: #8ECB91;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    opacity: .75;
+    text-align: center;
+    transition: all .3s ease-in-out; }
+  #mobileChooseType.down {
+    top: 0;
+    transition: top .3s ease-in-out; }
+  #mobileChooseType:hover {
+    opacity: 1;
+    transition: opacity .3s ease-in-out; }
+  #mobileChooseType div.chooseType {
+    min-height: 2.5em;
+    margin-top: .5em;
+    display: inline-block; }
+  #mobileChooseType div.chooseType p {
+    display: block;
+    margin: auto;
+    font-weight: 700; }
+  #mobileChooseType div.chooseType input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #2C3D6C;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: .25em; }
+  #mobileChooseType div.chooseType input:checked {
+    border: 6px solid #2C3D6C; }
+  #mobileChooseType div.chooseType input:hover {
+    color: #425ca2;
+    cursor: pointer; }
+  #mobileChooseType div.chooseType label {
+    padding: 0;
+    margin: .1em 0;
+    display: inline-block; }
+  #mobileChooseType div.chooseType label:hover {
+    color: #425ca2;
+    cursor: pointer; }
+
   div.resources a, div.research a {
     margin: 0;
     padding: 0;
@@ -841,6 +914,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px; }
+  div.resources section.no-hover:hover, div.research section.no-hover:hover {
+    background-color: unset; }
   div.resources img, div.research img {
     display: block;
     max-width: 10em;
@@ -1388,6 +1463,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     list-style: none;
     margin-bottom: 1em;
     line-height: 1.3; }
+  #lbrnEventSidebar ul li div.chooseType {
+    padding: 0 15%; }
+  #lbrnEventSidebar ul li div.chooseType p {
+    margin-top: 0;
+    text-align: center; }
+  #lbrnEventSidebar ul li div.chooseType input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #2C3D6C;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: .25em; }
+  #lbrnEventSidebar ul li div.chooseType input:checked {
+    border: 6px solid #2C3D6C; }
+  #lbrnEventSidebar ul li div.chooseType input:hover {
+    color: #425ca2;
+    cursor: pointer; }
+  #lbrnEventSidebar ul li div.chooseType label {
+    width: 75%;
+    padding: 0;
+    margin: .1em 0;
+    display: inline-block; }
+  #lbrnEventSidebar ul li div.chooseType label:hover {
+    color: #425ca2;
+    cursor: pointer; }
   #lbrnEventSidebar ul a {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1403,6 +1509,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #lbrnEventSidebar .active {
     background-color: #c2e3c4;
     font-weight: 400; }
+
+  #mobileChooseType {
+    display: none; }
 
   div.resources section, div.research section {
     min-height: 21em; }

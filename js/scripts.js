@@ -2,6 +2,8 @@ $( document ).ready(function() {
   quickRef();
   coreSwap();
   piFilter();
+  faqReveal();
+  selectTypeSrp();
   if(document.getElementById('sliderNav') != null){
     slider();
     console.log("Slider Happening");
@@ -139,4 +141,51 @@ function slider(){
     buttons[i].checked = true;
     i++;
   }
+}
+// FAQ for summer research program Page
+function faqReveal() {
+  var question = $('section#faq p');
+  question.click(function(e){
+    // $(this).next().fadeToggle();
+    $(this).next().slideToggle();
+  });
+  $(window).scroll(function(){
+    question.next().slideUp();
+  });
+}
+//hides irrelevant data on summer research program Page
+function selectTypeSrp(){
+  var grads = $('div.grads');
+  var faculty = $('div.faculty');
+  var undergrads = $('div.undergrads');
+  var chooseType = $('div.chooseType');
+  $('input').click(function(){
+    switch ($(this).val()) {
+      case 'faculty' :
+        grads.fadeOut();
+        faculty.fadeIn();
+        undergrads.fadeOut();
+        $('input[value=faculty]').prop('checked', true);
+        break;
+      case 'grad' :
+        grads.fadeIn();
+        faculty.fadeOut();
+        undergrads.fadeOut();
+        $('input[value=grad]').prop('checked', true);
+        break;
+      case 'undergrad' :
+        grads.fadeOut();
+        faculty.fadeOut();
+        undergrads.fadeIn();
+        $('input[value=undergrad]').prop('checked', true);
+    }
+  });
+  $(window).scroll(function(){
+    var chooseMenu = $('#mobileChooseType');
+    if ($(this).scrollTop() >= $(this).height()) {
+        chooseMenu.addClass('down');
+    } else {
+        chooseMenu.removeClass('down');
+    }
+  });
 }

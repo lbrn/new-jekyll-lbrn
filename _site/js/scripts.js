@@ -2,6 +2,8 @@ $( document ).ready(function() {
   quickRef();
   coreSwap();
   piFilter();
+  faqReveal();
+  selectTypeSrp();
   if(document.getElementById('sliderNav') != null){
     slider();
     console.log("Slider Happening");
@@ -10,21 +12,21 @@ $( document ).ready(function() {
 //Mobile Menu
   $("#navBug").click(function(){
       $('nav').slideToggle('fast');
-      if ($(this).attr("src") == "/images/menuOpen.png") {
-        $(this).attr("src", "/images/menuClosed.png");
+      if ($(this).attr("src") == "images/menuOpen.png") {
+        $(this).attr("src", "images/menuClosed.png");
       }
-      else {$(this).attr("src", "/images/menuOpen.png")}
+      else {$(this).attr("src", "images/menuOpen.png")}
   });
   $("body > div.layout").click(function(){
     if ($('#navBug').css('display') != 'none'){
       $('nav').slideUp('fast');
-      $('#navBug').attr("src", "/images/menuClosed.png");
+      $('#navBug').attr("src", "images/menuClosed.png");
     }
   });
   $(window).resize(function(){
     if ($('#navBug').css('display') == 'none'){
       $('nav').css('display','block');
-      $('#navBug').attr("src", "/images/menuClosed.png")
+      $('#navBug').attr("src", "images/menuClosed.png")
     }
     else {$('nav').css('display','none')}
     contentHeight = $('#matchHeight').css('height');
@@ -139,4 +141,51 @@ function slider(){
     buttons[i].checked = true;
     i++;
   }
+}
+// FAQ for summer research program Page
+function faqReveal() {
+  var question = $('section#faq p');
+  question.click(function(e){
+    // $(this).next().fadeToggle();
+    $(this).next().slideToggle();
+  });
+  $(window).scroll(function(){
+    question.next().slideUp();
+  });
+}
+//hides irrelevant data on summer research program Page
+function selectTypeSrp(){
+  var grads = $('div.grads');
+  var faculty = $('div.faculty');
+  var undergrads = $('div.undergrads');
+  var chooseType = $('div.chooseType');
+  $('input').click(function(){
+    switch ($(this).val()) {
+      case 'faculty' :
+        grads.fadeOut();
+        faculty.fadeIn();
+        undergrads.fadeOut();
+        $('input[value=faculty]').prop('checked', true);
+        break;
+      case 'grad' :
+        grads.fadeIn();
+        faculty.fadeOut();
+        undergrads.fadeOut();
+        $('input[value=grad]').prop('checked', true);
+        break;
+      case 'undergrad' :
+        grads.fadeOut();
+        faculty.fadeOut();
+        undergrads.fadeIn();
+        $('input[value=undergrad]').prop('checked', true);
+    }
+  });
+  $(window).scroll(function(){
+    var chooseMenu = $('#mobileChooseType');
+    if ($(this).scrollTop() >= $(this).height()) {
+        chooseMenu.addClass('down');
+    } else {
+        chooseMenu.removeClass('down');
+    }
+  });
 }

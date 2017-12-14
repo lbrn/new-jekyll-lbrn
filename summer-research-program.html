@@ -1,33 +1,367 @@
 ---
 layout: default
 title: LBRN Summer Research Program
+deadline: February 10, 2017
+appLink: https://redcap.lbrn.lsu.edu/surveys/?s=RMHDHXPA3H
 ---
+<aside id="lbrnEventSidebar">
+  <ul id="lbrnEventSidebarUl">
+    <li>
+      <div class="chooseType">
+        <p>Participant Type:</p>
+        <input type="radio" name="chooseType" value="faculty"  id="fac" checked>
+        <label for="fac" >Faculty</label>
 
-<p>Our Summer Research Program is a research based summer program for faculty, graduate students and undergraduate students attending a Louisiana college or university. The program will be held May 22 – July 28, 2017</p>
+        <input type="radio" name="chooseType" value="grad" id="gra">
+        <label for="gra">Grad</label>
 
-<p class="important">LSU Baton Rouge and Tulane University faculty, graduate students and undergraduate students are not eligible to apply.</p>
-<div class="four-card-responsive resources">
-  <section>
-    <h2>Experience</h2>
-    <img src="images/experience.svg" alt="experience">
-    <p>Our Summer Research Program gives you experience in real-world scientific experimentation.</p>
+        <input type="radio" name="chooseType" value="undergrad" id="und">
+        <label for="und">Undergrad</label>
+      </div>
+      <!-- <input type="radio" id="chooseType"> -->
+    </li>
+    <li class="active"><a href="#intro">About</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#application">Application</a></li>
+    <li><a href="#mentorship">Mentorship</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#resources">Other Resources</a></li>
+  </ul>
+</aside>
+<aside id="mobileChooseType">
+  <div class="chooseType">
+    <p>Participant Type:</p>
+    <input type="radio" name="chooseTypeMobile" value="faculty"  id="facM" checked>
+    <label for="facM" >Faculty</label>
+
+    <input type="radio" name="chooseTypeMobile" value="grad" id="graM">
+    <label for="graM">Grad</label>
+
+    <input type="radio" name="chooseTypeMobile" value="undergrad" id="undM">
+    <label for="undM">Undergrad</label>
+  </div>
+</aside>
+<div id="matchHeight">
+  <section id="intro">
+    <h2>About</h2>
+    <p>
+      The Louisiana Biomedical Research Network (LBRN) sponsors a summer research program in support of undergraduate students, graduate students and faculty from any Louisiana institute. We offer qualified participants the opportunity to work in established research laboratories at Louisiana State University, LSU Health Sciences Center in New Orleans, LSU Health Sciences Center in Shreveport, Tulane Medical Center, or Tulane National Primate Research Center. The goal of our program and funding is to support biomedical research through an increase in graduate school admissions in these scientific fields and make Louisiana researchers more competitive in obtaining federal funding for research.
+    </p>
+    <p>
+      The schedule for undergraduate students covers nine weeks during the summer; the 2016 summer program dates are May 23 – July 29, 2016 (tentative). The schedule for graduate students and faculty is more flexible. It is expected that an agreement be reached between the program participant (undergraduate student, graduate student or funded faculty) and the intended mentor. It is expected that the agreement to mentor an LBRN participant is a mutual one between the intended mentor and the funded participant.
+    </p>
+    <p class="important">LSU Baton Rouge and Tulane University faculty, graduate students and undergraduate students are not eligible to apply.</p>
+    <div class="four-card-responsive resources small-text">
+      <section class="no-hover">
+        <h3 class="small-text">Experience</h3>
+        <img src="images/experience.svg" alt="experience">
+        <p class="small-text">Our Summer Research Program gives you experience in real-world scientific experimentation.</p>
+      </section>
+      <section class="no-hover">
+        <h3 class="small-text">Mentorship</h3>
+        <img src="images/mentorship.svg" alt="mentorship">
+        <p class="small-text">Work with mentors to gain valuable insight and experience.</p>
+      </section>
+      <section class="no-hover">
+        <h3 class="small-text">Experiment</h3>
+        <img src="images/experimentation.svg" alt="experimentation">
+        <p class="small-text">Conduct your own experiments to get real results. Show off your discoveries!</p>
+      </section>
+      <section class="no-hover">
+        <h3 class="small-text">Collaborate</h3>
+        <img src="images/collaboration.svg" alt="collaboration">
+        <p class="small-text">Work with other students and graduate students about topics that interest you.</p>
+      </section>
+    </div>
+    <br>
+    <p>The Department of Biological Sciences at Louisiana State University, in conjunction with the National Institute of General Medical Sciences (NIGMS)'s IDeA Networks of Biomedical Research Excellence, and Louisiana Board of Regents, is hosting research opportunities for eligible faculty and students, both graduate and undergrad in the Biological and Computational Sciences. Those interested in working on projects at the interface between the biological and computational sciences are encouraged to apply to this program. Work will be done in established laboratories, with interaction among scientists and peers. Of special focus is providing research opportunities to faculty and students from primarily undergraduate institutes in the state of Louisiana.</p>
   </section>
-  <section>
+  <section id="requirements">
+    <h2>Requirements</h2>
+    <div class="faculty">
+      <h3>Faculty Requirements</h3>
+      <ul>
+        <li>Be a full time faculty in a College or University in the state of Louisiana (excluding LSU Baton Rouge & Tulane University).</li>
+        <li>Have research interests in the Biological or Computational Sciences.</li>
+        <li>Be interested in collaborating research projects.z</li>
+      </ul>
+    </div>
+    <div class="grads">
+      <h3>Graduate Student Requirements</h3>
+      <ul>
+        <li>Be enrolled in a graduate program in a College or University in the state of Louisiana (excluding LSU Baton Rouge & Tulane University)</li>
+        <li>Have at least a 3.0 GPA.</li>
+        <li>Consider pursuing a career in the Biological or Computational Sciences </li>
+      </ul>
+    </div>
+    <div class="undergrads">
+      <h3>Undergraduate Student Requirements</h3>
+      <ul>
+        <li>Be enrolled in a College or University in the state of Louisiana (excluding LSU Baton Rouge and Tulane University).</li>
+        <li>Be a science major with at least a 3.0 GPA.</li>
+        <li>Consider pursuing a career in the Biological or Computational Sciences.</li>
+        <li>Have completed appropriate science introductory courses.</li>
+        <li>If on Visa must be eligible to work </li>
+      </ul>
+      <p class="important">Find out more about the <a target="_blank" href="undergrad-scholarship-program.html">Undergraduate Scholarship Program Here.</a></p>
+    </div>
+    <p>
+      No prior laboratory research experience is needed for undergraduate students.
+    </p>
+    <p class="important">
+      Women & members of under-represented minorities are urged to apply. Please note that priority will be given to applicants from primarily undergraduate institutes in Louisiana.
+    </p>
+  </section>
+  <section id="application">
+    <h2>Application</h2>
+    <p>The application process form INCLUDES all documentation and submissions from within the online application forms - the pre-application form must be completed in order to receive an application form link via e-mail.</p>
+    <p class="important">
+      {{ page.deadline }}<br>
+      <br>
+      Note carefully the Application requirements. If these requirements are not met, the application is considered incomplete.
+    </p>
+    <h2>Application Instructions</h2>
+    <div class="faculty">
+      <h3>Faculty Application Must Include:</h3>
+      <ul>
+        <li>
+          <p>A brief proposal with:</p>
+          <ul>
+            <li>Cover Page</li>
+            <li>Proposed Budget</li>
+            <li>Budget Justification</li>
+            <li>Research Plan</li>
+            <li>Biosketch (PI and Mentors)</li>
+          </ul>
+        </li>
+        <li>Brief 1-2 page outline of your graduate research plan.</li>
+        <li>Collaboration agreement from prospective Mentor(s).</li>
+      </ul>
+      <p>All documents will be submitted (uploaded) within the online Application Form. A copy of the instructions available here. <a target="_blank" href="http://lbrn.lsu.edu/files/docs/2017%20LBRN%20SRP%20Faculty%20Instructions.pdf">2018 Faculty Application Instruction</a></p>
+      <p class="important">Please note the remaining documents are available within the application. You can begin the process now and update at anytime until the deadline.</p>
+      <p><a target="_blank" href="http://lbrn.lsu.edu/files/app/facultymentorlist.php">Faculty Mentor List</a> Mentors are Updating their information - check back frequently.</p>
+    </div>
+    <div class="grads">
+      <h3>Grad Student Application Must Include:</h3>
+      <ul>
+        <li>
+          <p>Statement of Interest, including:</p>
+          <ul>
+            <li>How this program will enhance your graduate research</li>
+            <li>What you plan to do with your science future</li>
+          </ul>
+        </li>
+        <li>Brief 1-2 page outline of your graduate research plan.</li>
+        <li>Two letters of recommendation: one from a member of your graduate committee, one from your mentor(s) of the laboratory that you plan to work in (on department or college letterhead). In addition to addressing your potential for success in this project, the letters should also address the impact that this project will have on your these or dissertation research. The letters should be submitted by your committee member and mentor(s) via the application form link that will be provided when you begin the application. Please send them the link provided within the online application.</li>
+        <li>An official copy of your current college or university transcript–to be sent by your college directly to (best to request one after you receive your Fall/Winter semester final grades and that it shows your courses for the Spring semester) **OR** submit an unofficial copy (PDF or JPEG) of your current college transcript.</li>
+      </ul>
+      <p>All documents will be submitted (uploaded) within the online Application Form. A copy of the instructions will be available here. <a target="_blank" href="http://lbrn.lsu.edu/files/docs/2017%20LBRN%20SRP%20GS%20Instructions.pdf">2018 Grad App Instruction</a></p>
+      <p class="important">Please note the remaining documents are available within the form. You can begin the process now and update at anytime until the deadline.</p>
+      <p><a target="_blank" href="http://lbrn.lsu.edu/files/app/gradmentorlist.php">Grad Mentor List</a> Mentors are Updating their information - check back frequently.</p>
+    </div>
+    <div class="undergrads">
+      <h3>Undergrad Student Application Must Include:</h3>
+      <ul>
+        <li>
+          <p>Statement of Interest. A 500 word statement should include:</p>
+          <ul>
+            <li>Why you should be chosen for this program</li>
+            <li>What life experiences you have had that could contribute to a laboratory group</li>
+            <li>What you plan to do with your science future</li>
+          </ul>
+        </li>
+        <li>Three letters of recommendation from college or university faculty members, two of whom are in science (on department or college letterhead), which should be submitted via the application form link that will be provided when you begin the application by the faculty members. Please send them the link provided within the online application.</li>
+        <li>An official copy of your current college or university transcript–to be sent by your college (best to request one after you receive your Fall/Winter semester final grades and so that it shows your courses for the Spring semester) **OR** upload an unofficial copy (PDF preferred) of your current college transcript.</li>
+      </ul>
+      <p>All documents will be submitted (uploaded) within the online Application Form.</p>
+      <p class="important">Please note the remaining documents are available within the form. You can begin the process now and update at anytime until the deadline.</p>
+      <p><a target="_blank" href="http://lbrn.lsu.edu/files/app/undermentorlist.php">Undergrad Mentor List</a> Mentors are Updating their information - check back frequently.</p>
+      <p>Find out more about the <a target="_blank" href="undergrad-scholarship-program.html">Undergraduate Scholarship Program Here.</a></p>
+    </div>
+    <p>You can follow our recruiting visits, etc. by following our program on Twitter or liking us on Facebook.</p>
+    <button type="button" name="apply"><a target="_blank" href="{{page.appLink}}">Apply Here!</a></button>
+  </section>
+  <section id="mentorship">
     <h2>Mentorship</h2>
-    <img src="images/mentorship.svg" alt="mentorship">
-    <p>Work with mentors to gain valuable insight and experience.</p>
+    <h3>Participant Expectations</h3>
+    <p>The LBRN program expects that our participants perform full time research for the period of funding. We do not allow for other jobs, teaching or classes or vacations to be scheduled during the funding period; fellowships (undergraduate students), stipends (graduate students), and summer salaries (faculty) are sufficient to enable the funded participant to focus 100% on the research project during the funding period. The student participant may become involved in a research project that is ongoing in the chosen laboratory, or design a project in collaboration with the intended mentor.</p>
+    <h3>Available Mentors</h3>
+    <div class="faculty">
+      <a target="_blank" href="http://lbrn.lsu.edu/files/app/facultymentorlist.php" target="_blank">Faculty Mentors</a>
+      <h2>Faculty Mentor Expectations</h2>
+      <p>As the mentor of a faculty participant in our program it is expected that you will enter in to a collaborative relationship on an agreed upon project. You may expect to receive scientific and professional collaboration from the funded researcher. Equipment ordered for the funded research, unless otherwise specified, will belong to the funded researcher and will be housed at their home institution upon completion of the program funding period. You may also expect to have input in the determination of the requested supplies and equipment, which are part of the application process for faculty in our program. Our faculty summer program culminates in a written progress report of the research project. It is expected that an LBRN funded faculty researcher will receive guidance from their research laboratory and mentor in preparing this work and that the finished product be a professional progress report.</p>
+    </div>
+    <div class="grads">
+      <a target="_blank" href="http://lbrn.lsu.edu/files/app/gradmentorlist.php" target="_blank">Graduate Student Mentors</a>
+      <h3>Graduate Mentor Expectations</h3>
+      <p>As the mentor of a faculty participant in our program it is expected that you will enter in to a collaborative relationship on an agreed upon project. You may expect to receive scientific and professional collaboration from the funded researcher. Equipment ordered for the funded research, unless otherwise specified, will belong to the funded researcher and will be housed at their home institution upon completion of the program funding period. You may also expect to have input in the determination of the requested supplies and equipment, which are part of the application process for faculty in our program. Our faculty summer program culminates in a written progress report of the research project. It is expected that an LBRN funded faculty researcher will receive guidance from their research laboratory and mentor in preparing this work and that the finished product be a professional progress report.</p>
+    </div>
+    <div class="undergrads">
+      <a target="_blank" href="http://lbrn.lsu.edu/files/app/undermentorlist.php" target="_blank">Undergraduate Student Mentors</a>
+      <h3>Undergraduate Mentor Expectations</h3>
+      <p>As the mentor of an undergraduate student in our program, it is expected that you will oversee the training of the student participant and monitor their progress while they are working on the agreed upon project in your laboratory. As a mentor you can expect serious and professional work from your LBRN funded researcher while they are working in your laboratory. In addition to a wages to the undergraduate participant, we offer a supply fee of up to $1,000 per student to the research laboratory to help defer the cost of supplies for the funded project. Our undergraduate summer program culminates in the Summer Undergraduate Research Forum (SURF) where our program participants, along with other undergraduate summer research students across the campus, are invited to present their research in the form of a poster. It is expected that an LBRN funded undergraduate will receive guidance from their research laboratory in preparing this presentation and that a portion of the supply fee will be set aside to produce the poster </p>
+    </div>
+    <button type="button" name="mentorApplication"><a target="_blank" href="https://redcap.lbrn.lsu.edu/surveys/?s=DLF3T7WYLL">Mentor Application</a></button>
   </section>
-  <section>
-    <h2>Experiment</h2>
-    <img src="images/experimentation.svg" alt="experimentation">
-    <p>Conduct your own experiments to get real results. Show off your discoveries!</p>
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <p>Who is eligible?</p>
+    <ul>
+      <li>Students who are attending a university or college in the state of Louisiana, except LSU Baton Rouge and Tulane students.</li>
+      <li>Students who are not graduating between January through August of 2017.</li>
+    </ul>
+
+    <p>What are the program dates?</p>
+    <ul>
+      <li>The 2017 Program will run from tentatively May 22 – July 28, 2017 for Undergraduate and Graduate student participants.</li>
+      <li>Dates for Faculty participants may be flexible, need to be stated in your proposal application.</li>
+      <li>Due to the limited availability of housing during the summer, adjustments cannot be made to the start and end dates of the program to accommodate students with other scheduling conflicts.</li>
+    </ul>
+
+    <p>Am I required to be on the LSU campus (or other research facility) for the full term?</p>
+    <ul>
+      <li>Yes. Ten weeks may sound like a long time, but it is a very short period in which to do any meaningful research. Undergraduates must attend the opening meetings and participate in the poster session on the final day. You will also be required to attend weekly seminar meetings.</li>
+    </ul>
+
+    <p>What hours do I work?</p>
+    <ul>
+      <li>Since the LSU LBRN Summer Research Program is probably an undergraduate’s first attempt at real scientific research, it is hard to explain the variability. You will be expected to work when the work needs to be done. Experiments don’t always run on the timescale we’d like them to. You must be willing to work some late nights and lots of weekends.</li>
+    </ul>
+
+    <p>Can I live off campus?</p>
+    <ul>
+      <li>Yes, you may live anywhere you would like; however, our program can only pay for housing within the proscribed Campus Apartments or Dorms for students working at one of our approved mentoring institutions per the application.</li>
+      <li>If you reside in the same city as the mentoring institution; for students who currently live at home or already have an apartment in the mentoring city, please stay there and we cannot reimburse rents.</li>
+    </ul>
+
+    <p>May I take classes or have another job during the summer program?</p>
+    <ul>
+      <li>No. Ten weeks may sound like a long time, but it is a very short period in which to do any meaningful research. You will be working with your group and may not have free time; therefore, we do not allow student researchers to take classes or hold an outside job. You must be willing to devote your entire attention to the program.</li>
+    </ul>
+
+    <p>From whom should I solicit Letters of Recommendation?</p>
+    <ul>
+      <li>Your recommendation letters are very important. They should all be from faculty members who know you quite well. If somebody can only say that you made an ““A”” in their class, you’ve wasted a letter because we can look at your transcripts and know that. Two of your letters need to be from science faculty members, and one of these may be from your proposed mentor. Recommendation letters have to be submitted through our application process. See the Summer Research Program Letters of Recommendation page for instructions and the link to provide to your faculty to LBRN@lsu.edu.</li>
+    </ul>
+
+    <p>How do I choose a mentor professor and a project?</p>
+    <ul>
+      <li>You are ultimately responsible for choosing your mentor and project. You will need to contact faculty members directly to ask about working with them. If you have any questions, please contact the LBRN office by email lbrn@lsu.edu.</li>
+      <li>There is a prospective mentor list for Undergraduate, Graduate and Faculty Researchers listed under: Summer Research Mentors, that page is also for those Faculty at research institutions who wish to mentor students. The list gets updated frequently through the end of year as we refresh the list, mentors have to sign back up each year so the list is current</li>
+      <li>When the mentor confirms to mentor you for the summer, this does not guarantee you being selected for the program, only available slot in his/her lab.</li>
+    </ul>
+
+    <p>What type of training will I receive?</p>
+    <ul>
+      <li>An individual research project will be assigned to you by your mentor (Undergraduates).</li>
+      <li>Training on and first-hand use of state-of-the-art laboratory instrumentation will be provided.</li>
+      <li>Group instruction will also be provided in general research issues and practices such as scientific ethics, chemical and radiation safety, laboratory notebook keeping, print and on-line scientific literature searches, presentation of research results, and scientific writing.</li>
+    </ul>
+
+    <p>What are some of the activities planned for the program?</p>
+    <ul>
+      <li>A welcome dinner</li>
+      <li>Tours to research facilities</li>
+      <li>A softball game and lunch</li>
+      <li>Weekly seminars by program mentors</li>
+      <li>A seminar presented by a representative of LSU Graduate School on tips and strategies for selecting and applying to Graduate Schools”</li>
+    </ul>
+
+    <p>What kind of financial support does the program provide?</p>
+    <ul>
+      <li>Undergraduate students will earn up to $4,000 for the whole summer.</li>
+      <li>Graduate students will earn up to $6,000 for the whole summer.</li>
+      <li>Faculty will depend on your proposed budget, which cannot exceed $19,000 total cost.</li>
+    </ul>
+
+    <p>How can I get an application and what is the deadline?</p>
+    <ul>
+      <li>Applications are available online.</li>
+      <li>The application deadline is Wednesday, February 10, 2017.</li>
+    </ul>
+
+    <p>Is housing available?</p>
+    <ul>
+      <li>The LBRN office can arrange for participants to stay at the LSU Campus Apartments if necessary. At these units you will live with other students (same gender) from one of our summer research programs. This is subject to change pending LSU Residential Housing arrangements.</li>
+      <li>The cost of housing will be covered by the LBRN Summer Undergraduate Research Program.</li>
+      <li>For students planning to do research outside of LSU campus, such as LSUHSC in New Orleans or Shreveport, Tulane Medical Center and Tulane National Primate Research Center housing will be arranged as long as you do not already live in the same city as these institutions. For additional information contact the LBRN office by email to LBRN@lsu.edu.</li>
+    </ul>
+
+    <p>Where does the program take place?</p>
+    <ul>
+      <li>Students are placed in LSU faculty laboratories.</li>
+      <li>Summer research opportunities may also be available at LSU Pennington Biomedical Research, LSUHSC in New Orleans or Shreveport, Tulane Medical Center and Tulane National Primate Research Center. For more information, contact the LBRN office by email to LBRN@lsu.edu.</li>
+    </ul>
+
+    <p>Why should I apply to the Program?</p>
+    <ul>
+      <li>To gain valuable research experience.</li>
+      <li>To prepare for a research career in the biomedical sciences.</li>
+      <li>To learn about opportunities available at the end of your undergraduate education.</li>
+      <li>To earn money over the summer.</li>
+    </ul>
+
+    <p>How can I check the status of my application?</p>
+    <ul>
+      <li>You can check by emailing lbrn at lsu.edu.</li>
+    </ul>
+
+    <p>When and how will I be notified of my acceptance into the LBRN program?</p>
+    <ul>
+      <li>Letters will be emailed by the end of April, 2017.</li>
+    </ul>
+
+    <p>Are meals provided during the summer?</p>
+    <ul>
+      <li>The program does not offer a summer meal program; students will have the use of a kitchen and will be responsible for their own groceries and meals.</li>
+      <li>LSU does have some meal programs for the summer that you can purchase.</li>
+    </ul>
+
+    <p>Can personal vehicles be parked on the campus and is there a charge for parking?</p>
+    <ul>
+      <li>Yes, you may park your personal vehicle on campus. Yes, there is a charge for parking. When you let us know if you are staying on or off campus we’ll let you know the cost for the parking permit.</li>
+    </ul>
   </section>
-  <section>
-    <h2>Collaborate</h2>
-    <img src="images/collaboration.svg" alt="collaboration">
-    <p>Work with other students and graduate students about topics that interest you.</p>
+  <section id="resources">
+    <h2>Resorces</h2>
+    <h3>Downloads</h3>
+    <ul>
+      <li><a target="_blank" href="downloads/2017-SRP-Brochure.pdf">brochure</a></li>
+      <li><a target="_blank" href="downloads/2017-SRP-Faculty.pdf">faculty flyer</a></li>
+      <li><a target="_blank" href="downloads/2017-SRP-Graduate.pdf">grad student flyer</a></li>
+      <li><a target="_blank" href="downloads/2017-SRP-Undergrad.pdf">undergrad student flyer</a></li>
+    </ul>
+    <h3>External Links</h3>
+    <ul>
+      <li><a href="http://reu.cct.lsu.edu/">Center for Computation and Technology REU Program</a></li>
+      <li><a href="http://www.institute.loni.org/lasigma/reu/apply/index.php">Louisiana Alliance for Simulation-Guided Materials Applications (LA-SiGMA) REU Program</a></li>
+      <li><a href="http://www.lsu.edu/physics/undergraduate-programs/reu.php">Physics and Astronomy REU Program</a></li>
+      <li><a href="http://www.medschool.lsuhsc.edu/genetics/summer_highschool_undergrad.aspx">LSUHSC-NO Summer Research Internship Opportunities</a></li>
+      <li><a href="http://www.tnprc.tulane.edu/training_summer.html">TNPRC Veterinary Fellowship Program for Veterinary Student</a></li>
+    </ul>
+    <h3>Contacts</h3>
+    <p><strong>Alexis White</strong><br />
+    <em>LBRN Program Administrator</em><br />
+    (225) 578-1848<br />
+    LSU Biological Sciences
+    131 Life Sciences Bldg<br />
+    Baton Rouge, LA 70803
+    <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#097;&#108;&#101;&#120;&#105;&#115;&#119;&#064;&#108;&#115;&#117;&#046;&#101;&#100;&#117;">&#097;&#108;&#101;&#120;&#105;&#115;&#119;&#064;&#108;&#115;&#117;&#046;&#101;&#100;&#117;</a></p>
+    </p><p>
+    <p><strong>Dr. Ramesh Subramanian</strong><br />
+    <em>LBRN Program Coordinator</em><br />
+    (225) 578-9619<br />
+    School of Veterinary Medicine
+    Baton Rouge, LA 70803
+    <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#114;&#097;&#109;&#106;&#105;&#064;&#108;&#115;&#117;&#046;&#101;&#100;&#117;">&#114;&#097;&#109;&#106;&#105;&#064;&#108;&#115;&#117;&#046;&#101;&#100;&#117;</a></p>
+    </p><p>
+    <p><strong>John I Quebedeaux Jr</strong><br />
+    <em>LBRN Computer Manager</em><br />
+    (225) 578-0062<br />
+    LSU Biological Sciences
+    437 Life Sciences Bldg<br />
+    Baton Rouge, LA 70803
+    <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#106;&#111;&#104;&#110;&#113;&#064;&#108;&#115;&#117;&#046;&#101;&#100;&#117;">&#106;&#111;&#104;&#110;&#113;&#064;&#108;&#115;&#117;&#046;&#101;&#100;&#117;</a></p>
+    </p><p>
   </section>
 </div>
-<br>
-<p>The Department of Biological Sciences at Louisiana State University, in conjunction with the National Institute of General Medical Sciences (NIGMS)'s IDeA Networks of Biomedical Research Excellence, and Louisiana Board of Regents, is hosting research opportunities for eligible faculty and students, both graduate and undergrad in the Biological and Computational Sciences. Those interested in working on projects at the interface between the biological and computational sciences are encouraged to apply to this program. Work will be done in established laboratories, with interaction among scientists and peers. Of special focus is providing research opportunities to faculty and students from primarily undergraduate institutes in the state of Louisiana.</p>
-<button type="button" name="learnHowToSignUp"><a href="#">Learn How To Sign Up</a></button>
