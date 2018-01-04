@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
     height: 100%; }
 
-  .grads, .undergrads {
+  .faculty .grads, .undergrads {
     display: none; }
 
   body p {
@@ -868,15 +868,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #mobileChooseType:hover {
     opacity: 1;
     transition: opacity .3s ease-in-out; }
-  #mobileChooseType div.chooseType {
+  #mobileChooseType div.chooseType div.chooseTypeInline {
     min-height: 2.5em;
     margin-top: .5em;
     display: inline-block; }
-  #mobileChooseType div.chooseType p {
+  #mobileChooseType div.chooseType div.chooseTypeInline p {
     display: block;
     margin: auto;
     font-weight: 700; }
-  #mobileChooseType div.chooseType input {
+  #mobileChooseType div.chooseType div.chooseTypeInline input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -889,16 +889,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 5px;
     position: relative;
     top: .25em; }
-  #mobileChooseType div.chooseType input:checked {
+  #mobileChooseType div.chooseType div.chooseTypeInline input:checked {
     border: 6px solid #2C3D6C; }
-  #mobileChooseType div.chooseType input:hover {
+  #mobileChooseType div.chooseType div.chooseTypeInline input:hover {
     color: #425ca2;
     cursor: pointer; }
-  #mobileChooseType div.chooseType label {
+  #mobileChooseType div.chooseType div.chooseTypeInline label {
     padding: 0;
     margin: .1em 0;
     display: inline-block; }
-  #mobileChooseType div.chooseType label:hover {
+  #mobileChooseType div.chooseType div.chooseTypeInline label:hover {
     color: #425ca2;
     cursor: pointer; }
 
@@ -1354,6 +1354,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 2.85714%;
     margin-left: 5%;
     margin-right: 5%; }
+  .three-card-responsive .strip, .two-card-responsive .strip, .four-card-responsive .strip {
+    min-height: unset;
+    margin: 0; }
+  .three-card-responsive .strip:hover, .two-card-responsive .strip:hover, .four-card-responsive .strip:hover {
+    background-color: none; }
   .three-card-responsive section, .two-card-responsive section, .four-card-responsive section {
     margin-left: 0;
     margin-right: 0;
@@ -1365,6 +1370,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 48.57143%;
     float: left;
     margin-right: 2.85714%; }
+  .three-card-responsive section .strip, .two-card-responsive section .strip, .four-card-responsive section .strip {
+    min-height: unset;
+    margin-bottom: 0; }
+  .three-card-responsive section .strip:hover, .two-card-responsive section .strip:hover, .four-card-responsive section .strip:hover {
+    background-color: none; }
   .three-card-responsive section:nth-child(2n), .two-card-responsive section:nth-child(2n), .four-card-responsive section:nth-child(2n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
