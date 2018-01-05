@@ -4,7 +4,7 @@ title: Molecular mechanisms of antioxidant on gene regulation in prostate cancer
 author: Xiaoping Yi
 school: SUBR
 project-type: PilotProject
-image: "yi.jpg"
+image: "PIs/yi.jpg"
 categories: project-investigator
 ---
 

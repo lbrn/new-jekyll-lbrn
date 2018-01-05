@@ -4,7 +4,7 @@ title: Identification of Stress Signaling Molecules in TIB-73 Mouse Hepatocytes
 author: Waneene Dorsey
 school: Grambling
 project-type: PilotProject
-image: "PIs/DorseyW.jpg"
+image: "PIs/dorsey.png"
 categories: project-investigator
 ---
 
