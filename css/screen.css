@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
     height: 100%; }
 
-  .faculty .grads, .undergrads {
+  .faculty, .grads, .undergrads {
     display: none; }
 
   body p {
@@ -253,8 +253,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .content li {
     font-weight: 300;
     list-style: square; }
+  .content ul {
+    margin-left: 2em; }
+  .content ul li {
+    list-style: circle; }
   .content .bold {
-    font-weight: 400; }
+    font-weight: 500; }
   .content .buttons-centered {
     margin: 1em 0;
     text-align: center; }
@@ -304,6 +308,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 1em; }
   main div.content p.small-text {
     font-size: 1em; }
+  main div.content p.sub-p {
+    margin-top: .25em; }
   main div.content #faq p {
     margin-top: .25em;
     border-bottom: 1px #2C3D6C solid;
@@ -340,6 +346,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0;
     padding: 0 5%; }
+  main div.content .accordianTrigger {
+    margin-top: .25em;
+    border-bottom: 1px #2C3D6C solid;
+    cursor: pointer; }
+  main div.content .accordianTrigger:hover {
+    color: #425ca2;
+    border-bottom: 1px #425ca2 solid; }
+  main div.content .accordianSection {
+    border-bottom: 3px #2C3D6C solid;
+    margin-left: 0;
+    padding-left: 2.8em;
+    display: none; }
 
   #newsContainer {
     padding-left: 5%;
@@ -853,30 +871,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #lbrnEventSidebar {
     display: none; }
 
+  div.chooseTypeInline {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  div.chooseTypeInline p {
+    width: 100%;
+    padding-bottom: 1em; }
+  div.chooseTypeInline div {
+    width: 30%;
+    height: 50px;
+    overflow: hidden;
+    background: #8ECB91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0em;
+    border-radius: 5px; }
+  div.chooseTypeInline div input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: none; }
+  div.chooseTypeInline div label {
+    cursor: pointer; }
+  div.chooseTypeInline div label:hover {
+    color: #4a66b4; }
+
   #mobileChooseType {
     position: fixed;
     background-color: #8ECB91;
     top: -20%;
     left: 0;
     width: 100%;
-    opacity: .75;
     text-align: center;
     transition: all .3s ease-in-out; }
   #mobileChooseType.down {
     top: 0;
     transition: top .3s ease-in-out; }
   #mobileChooseType:hover {
-    opacity: 1;
     transition: opacity .3s ease-in-out; }
-  #mobileChooseType div.chooseType div.chooseTypeInline {
+  #mobileChooseType div.chooseType {
     min-height: 2.5em;
     margin-top: .5em;
     display: inline-block; }
-  #mobileChooseType div.chooseType div.chooseTypeInline p {
+  #mobileChooseType div.chooseType p {
     display: block;
     margin: auto;
     font-weight: 700; }
-  #mobileChooseType div.chooseType div.chooseTypeInline input {
+  #mobileChooseType div.chooseType input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -889,16 +933,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 5px;
     position: relative;
     top: .25em; }
-  #mobileChooseType div.chooseType div.chooseTypeInline input:checked {
+  #mobileChooseType div.chooseType input:checked {
     border: 6px solid #2C3D6C; }
-  #mobileChooseType div.chooseType div.chooseTypeInline input:hover {
+  #mobileChooseType div.chooseType input:hover {
     color: #425ca2;
     cursor: pointer; }
-  #mobileChooseType div.chooseType div.chooseTypeInline label {
+  #mobileChooseType div.chooseType label {
     padding: 0;
     margin: .1em 0;
     display: inline-block; }
-  #mobileChooseType div.chooseType div.chooseTypeInline label:hover {
+  #mobileChooseType div.chooseType label:hover {
     color: #425ca2;
     cursor: pointer; }
 
@@ -1362,7 +1406,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .three-card-responsive section, .two-card-responsive section, .four-card-responsive section {
     margin-left: 0;
     margin-right: 0;
-    min-height: 30em;
+    min-height: 33em;
     padding-bottom: 2em;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1661,6 +1705,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0; }
+  .three-card-responsive section {
+    min-height: 32em; }
 
   div.resources section {
     min-height: 23em; }
@@ -1688,4 +1734,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .layout:after {
     content: " ";
     display: block;
-    clear: both; } }
+    clear: both; }
+
+  .three-card-responsive section {
+    min-height: 36em; } }
