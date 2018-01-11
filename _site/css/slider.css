@@ -57,7 +57,7 @@ div#sliderNav label:hover {
   top: 0;
   left: 100%;
   z-index: 10;
-  padding: 8em 1em 0;
+  /* padding: 8em 1em 0; */
   background-color: #120103;
   background-position: 50% 50%;
   background-size: cover;
@@ -74,7 +74,8 @@ div#sliderNav label:hover {
   color: white;
   text-shadow: 0 0 10px black;
   opacity: 0;
-  transform: translateY(100%);
+  padding-top: 20%;
+  transform: translateY(20%);
   transition: transform 0.5s 0.5s, opacity 0.5s;
 }
 .slide a {
