@@ -1,6 +1,6 @@
 <article class="person">
   <img src="images/people/{{post.image}}" alt="{{post.author}}">
   <h4>{{post.author}}</h4>
-  <a class="natural-link" href="{{post.url}}"><h5>{{post.title}}</h5></a>
+  <a class="natural-link" href="{{post.url | relative_url }}"><h5>{{post.title}}</h5></a>
   <h6 style="margin-top: .7em;">{{post.school}}</h6>
 </article>
