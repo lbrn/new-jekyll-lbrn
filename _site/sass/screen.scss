@@ -358,7 +358,6 @@
       display: none;
     }
   }
-
   //News Styles ------------------>
   #newsContainer {
     @include pad(5%);
@@ -683,7 +682,7 @@
     }
     .map-icon {
       @include span(1);
-      margin-top: .5em;
+      margin-top: .25em;
       font-size: 2em;
     }
     .map-address {
@@ -757,7 +756,7 @@
   }
   div.chooseTypeInline{
     width: 100%;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-around;
     p{
@@ -1445,7 +1444,9 @@
     }
   }
   // Summer Research Program Styles -------->
-
+  div.chooseTypeInline{
+    display: flex;
+  }
 } // Standard Query ----------------------------------------
 @include breakpoint($intermediate) {
   .three-card-responsive {
@@ -1519,6 +1520,9 @@
     padding-left: 0;
     padding-right: 0;
   }
+  #lbrnEventSidebar ul li div.chooseType label{
+    width: 82%;
+  }
   header {
     padding: 0;
     .layout {
@@ -1560,5 +1564,8 @@
     section{
       min-height: 36em;
     }
+  }
+  #lbrnEventSidebar ul li div.chooseType label{
+    width: 87%;
   }
 } // large Query ----------------------------------------

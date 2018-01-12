@@ -163,21 +163,21 @@ function selectTypeSrp(){
   $('input').click(function(){
     switch ($(this).val()) {
       case 'faculty' :
-        choose.fadeOut();
+        // choose.fadeOut();
         grads.fadeOut();
         faculty.fadeIn();
         undergrads.fadeOut();
         $('input[value=faculty]').prop('checked', true);
         break;
       case 'grad' :
-        choose.fadeOut();
+        // choose.fadeOut();
         grads.fadeIn();
         faculty.fadeOut();
         undergrads.fadeOut();
         $('input[value=grad]').prop('checked', true);
         break;
       case 'undergrad' :
-        choose.fadeOut();
+        // choose.fadeOut();
         grads.fadeOut();
         faculty.fadeOut();
         undergrads.fadeIn();

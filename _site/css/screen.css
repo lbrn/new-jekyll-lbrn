@@ -756,7 +756,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 13.7931%;
     float: left;
     margin-right: 3.44828%;
-    margin-top: .5em;
+    margin-top: .25em;
     font-size: 2em; }
   #eventWhenAndWhere .map-address, #eventLodgingAndExpenses .map-address {
     -moz-box-sizing: border-box;
@@ -874,7 +874,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   div.chooseTypeInline {
     width: 100%;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-around; }
   div.chooseTypeInline p {
@@ -1574,7 +1574,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 90%; }
 
   .people i.collapseTrigger {
-    display: none; } }
+    display: none; }
+
+  div.chooseTypeInline {
+    display: flex; } }
 @media (min-width: 860px) {
   .three-card-responsive {
     -moz-box-sizing: border-box;
@@ -1678,6 +1681,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-left: 0;
     padding-right: 0; }
 
+  #lbrnEventSidebar ul li div.chooseType label {
+    width: 82%; }
+
   header {
     padding: 0; }
   header .layout {
@@ -1738,4 +1744,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     clear: both; }
 
   .three-card-responsive section {
-    min-height: 36em; } }
+    min-height: 36em; }
+
+  #lbrnEventSidebar ul li div.chooseType label {
+    width: 87%; } }

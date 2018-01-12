@@ -78,6 +78,10 @@ div#sliderNav label:hover {
   transform: translateY(20%);
   transition: transform 0.5s 0.5s, opacity 0.5s;
 }
+h1.high{
+  padding-top: 10%;
+  transform: translateY(40%);
+}
 .slide a {
   text-decoration: none;
   color: white;
