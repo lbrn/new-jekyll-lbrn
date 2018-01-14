@@ -250,13 +250,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .content ul {
     margin-left: 2.8em; }
+  .content ul ul {
+    margin-left: 2em; }
+  .content ul ul li {
+    list-style: circle; }
   .content li {
     font-weight: 300;
     list-style: square; }
-  .content ul {
-    margin-left: 2em; }
-  .content ul li {
-    list-style: circle; }
   .content .bold {
     font-weight: 500; }
   .content .buttons-centered {
@@ -328,6 +328,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: .5em;
     margin-top: .25em;
     margin-bottom: .25em; }
+  main div.content img.fit {
+    max-width: 100%; }
   main div.content .col-split {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
