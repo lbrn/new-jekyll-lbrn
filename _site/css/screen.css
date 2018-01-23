@@ -186,7 +186,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: white;
     padding: .2em .7em;
     margin: .955em 0;
-    font-size: .8em; }
+    font-size: .8em;
+    float: none; }
   nav li a.button:hover {
     background-color: #2C3D6C;
     color: white; }

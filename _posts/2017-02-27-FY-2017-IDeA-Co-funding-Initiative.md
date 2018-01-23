@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FY 2017 IDeA Co-funding Initiative
-categories: news
+categories: archive
 featuredImageUrl:  "images/placeholderNewsImage.png"
 featuredImageUrlSquare:  "images/placeholderNewsImage.png"
 excerpt_separator: <!--more-->
