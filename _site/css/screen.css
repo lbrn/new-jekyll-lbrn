@@ -86,8 +86,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   body a:hover {
     color: #5ab35e; }
 
-  button {
-    padding: .35em 1.2em;
+  a.button {
+    padding: .2em 1.2em;
     background-color: #8ECB91;
     color: #2C3D6C;
     text-align: center;
@@ -96,24 +96,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin: auto;
     margin-top: 1em;
     border: none;
-    border-radius: 10px; }
-  button .secondary-button {
-    border: 1px solid #8ECB91;
-    background-color: white; }
-  button .secondary-button:hover {
-    background-color: #8ECB91; }
-  button a {
-    background-color: inherit;
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    width: 100%; }
-  button a:hover {
-    color: white; }
-
-  button:hover {
+    border-radius: 10px;
+    float: left; }
+  a.button:hover {
     background-color: #2C3D6C;
     color: white; }
+  a.button .secondary-button {
+    border: 1px solid #8ECB91;
+    background-color: white; }
+  a.button .secondary-button:hover {
+    background-color: #8ECB91; }
 
   .hidden {
     display: none; }
@@ -188,23 +180,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #2C3D6C;
     transition: ALL .15s;
     background-color: unset; }
-  nav li button {
+  nav li a.button {
     border: 2px solid #2C3D6C;
     border-radius: 25px;
     color: white;
     padding: .2em .7em;
     margin: .955em 0;
-    font-size: .8em; }
-  nav li button a {
-    padding: 0;
-    margin: 0;
-    color: inherit;
-    background-color: inherit; }
-  nav li button a:hover {
-    background-color: unset;
-    color: #8ECB91; }
-  nav li button:hover {
-    background-color: #2C3D6C; }
+    font-size: .8em;
+    float: none; }
+  nav li a.button:hover {
+    background-color: #2C3D6C;
+    color: white; }
   nav li a {
     color: inherit;
     padding: 1em .25em;
@@ -250,13 +236,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .content ul {
     margin-left: 2.8em; }
+  .content ul ul {
+    margin-left: 2em; }
+  .content ul ul li {
+    list-style: circle; }
   .content li {
     font-weight: 300;
     list-style: square; }
-  .content ul {
-    margin-left: 2em; }
-  .content ul li {
-    list-style: circle; }
   .content .bold {
     font-weight: 500; }
   .content .buttons-centered {
@@ -328,6 +314,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: .5em;
     margin-top: .25em;
     margin-bottom: .25em; }
+  main div.content img.fit {
+    max-width: 100%; }
   main div.content .col-split {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -730,8 +718,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-weight: 300;
     font-size: 1.25em;
     line-height: 1em; }
-  #lbrnEventHeader div.caption button {
+  #lbrnEventHeader div.caption .button {
     margin-top: 1em;
+    padding: .4em 0;
     width: 95%; }
 
   #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {

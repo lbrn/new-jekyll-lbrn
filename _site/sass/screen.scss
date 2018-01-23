@@ -71,8 +71,8 @@
       color: darken($secondary, 15);
     }
   }
-  button {
-    padding: .35em 1.2em;
+  a.button {
+    padding: .2em 1.2em;
     background-color: $secondary;
     color: $primary;
     text-align: center;
@@ -82,6 +82,11 @@
     margin-top: 1em;
     border: none;
     border-radius: 10px;
+    float: left;
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
     .secondary-button {
       border: 1px solid $secondary;
       background-color: white;
@@ -89,20 +94,6 @@
         background-color: $secondary;
       }
     }
-    a {
-      background-color: inherit;
-      color:inherit;
-      text-decoration: none;
-      display: block;
-      width: 100%;
-    }
-    a:hover {
-      color:white;
-    }
-  }
-  button:hover {
-    background-color: $primary;
-    color: white;
   }
   .hidden{
     display: none;
@@ -166,25 +157,17 @@
           }
         }
       }
-      button{
+      a.button{
         border: 2px solid $primary;
         border-radius: 25px;
         color: white;
         padding: .2em .7em;
         margin: .955em 0;
         font-size: .8em;
-        a{
-          padding:0;
-          margin:0;
-          color: inherit;
-          background-color: inherit;
-          &:hover{
-            background-color:unset;
-            color: $secondary;
-          }
-        }
+        float: none;
         &:hover{
           background-color: $primary;
+          color: white;
         }
       }
       a {
@@ -239,16 +222,16 @@
   .content {
     ul {
       margin-left: 2.8em;
+      ul{
+        margin-left: 2em;
+        li{
+          list-style: circle;
+        }
+      }
     }
     li {
       font-weight: 300;
       list-style: square;
-    }
-    ul{
-      margin-left: 2em;
-      li{
-        list-style: circle;
-      }
     }
     .bold {
       font-weight: 500;
@@ -331,8 +314,8 @@
       margin-top: .25em;
       margin-bottom: .25em;
     }
-    img {
-      // max-width: 100%;
+    img.fit {
+      max-width: 100%;
     }
     .col-split {
       @include span(full);
@@ -662,8 +645,9 @@
         font-size: 1.25em;
         line-height: 1em;
       }
-      button {
+      .button {
         margin-top: 1em;
+        padding: .4em 0;
         width: 95%;
       }
     }
