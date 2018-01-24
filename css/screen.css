@@ -37,6 +37,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 @media (min-width: 0) {
+  .no-float {
+    float: none !important; }
+
+  .clear {
+    clear: both; }
+
   .nudge {
     padding-top: 1em; }
 
