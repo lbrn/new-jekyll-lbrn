@@ -82,7 +82,8 @@
     margin-top: 1em;
     border: none;
     border-radius: 10px;
-    float: left;
+    // float: left;
+    display:inline-block; 
     &:hover {
       background-color: $primary;
       color: white;

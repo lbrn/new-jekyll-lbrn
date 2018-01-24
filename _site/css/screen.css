@@ -97,7 +97,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 1em;
     border: none;
     border-radius: 10px;
-    float: left; }
+    display: inline-block; }
   a.button:hover {
     background-color: #2C3D6C;
     color: white; }

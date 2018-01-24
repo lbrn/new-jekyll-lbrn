@@ -76,7 +76,7 @@ function coreSwap(){
     $('#core-swap>h4').text('Adiministrative Core');
     $('#core-swap>p').text(adminTxt);
     $('#core-swap>img').attr('src','images/admin-core.svg');
-    $('#core-swap>button').addClass('hidden');
+    $('#core-swap>a.button').addClass('hidden');
   });
   corelis.eq(1).click(function(){
     corelis.removeClass();
@@ -84,8 +84,8 @@ function coreSwap(){
     $('#core-swap>h4').text('Bioinformatics, Biostatistics, and Computational Biology Core');
     $('#core-swap>p').text(bbcTxt);
     $('#core-swap>img').attr('src','images/bbc-core.svg');
-    $('#core-swap>button').removeClass();
-    $('#core-swap>button>a').attr('href','bbc-core.html').text('BBC Core Services');
+    $('#core-swap>a.button').removeClass('hidden');
+    $('#core-swap>a.button').attr('href','bbc-core.html').text('BBC Core Services');
   });
   corelis.eq(2).click(function(){
     corelis.removeClass();
@@ -93,8 +93,8 @@ function coreSwap(){
     $('#core-swap>h4').text('Molecular and Cell Biology Resources Core');
     $('#core-swap>p').text(mcbrTxt);
     $('#core-swap>img').attr('src','images/mcbr-core.svg');
-    $('#core-swap>button').removeClass();
-    $('#core-swap>button>a').attr('href','mcbr-core.html').text('MCBR Core Services');
+    $('#core-swap>a.button').removeClass('hidden');
+    $('#core-swap>a.button').attr('href','mcbr-core.html').text('MCBR Core Services');
   });
 }
 function piFilter(){
