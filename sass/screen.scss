@@ -13,6 +13,12 @@
 //generalized styles------------------------------------------
 @include susy-breakpoint($small, $susySmall) {
   //Utility Classes
+  .no-float{
+    float: none !important;
+  }
+  .clear{
+    clear:both;
+  }
   .nudge {
     padding-top: 1em;
   }
@@ -82,7 +88,8 @@
     margin-top: 1em;
     border: none;
     border-radius: 10px;
-    float: left;
+    display: inline-block;
+    // float: left;
     &:hover {
       background-color: $primary;
       color: white;
