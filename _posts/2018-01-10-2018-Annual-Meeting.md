@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LBRN 16th Annual Meeting
-categories: featured
+categories: news
 featuredImageUrl: "images/postImages/annualMeeting.jpg"
 featuredImageUrlSquare: "images/postImages/annualMeeting-square.jpg"
 excerpt_separator: <!--more-->
