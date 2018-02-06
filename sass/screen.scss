@@ -427,10 +427,13 @@
         font-family: $bodyFont;
         color: $primary;
         @include span(full);
+        .pre {
+          font-weight: 500 !important;
+        }
       }
-      .post-date:before {
-        content: ""
-      }
+      // .post-date:before {
+      //   content: ""
+      // }
     }
     .view-all {
       @include span(full);

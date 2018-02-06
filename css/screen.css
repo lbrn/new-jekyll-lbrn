@@ -456,8 +456,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0; }
-  .news article .post-date:before {
-    content: ""; }
+  .news article .post-date .pre {
+    font-weight: 400 !important; }
   .news .view-all {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
