@@ -694,6 +694,8 @@
     }
     p {
       @include span(first 4);
+      margin-top: .25em;
+      line-height: 1.4;
     }
     img {
       @include span(last 2);

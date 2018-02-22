@@ -457,7 +457,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0; }
   .news article .post-date .pre {
-    font-weight: 400 !important; }
+    font-weight: 500 !important; }
   .news .view-all {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -786,7 +786,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
     width: 65.51724%;
     float: left;
-    margin-right: 3.44828%; }
+    margin-right: 3.44828%;
+    margin-top: .25em;
+    line-height: 1.4; }
   #speakers img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
