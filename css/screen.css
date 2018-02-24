@@ -524,27 +524,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .events section .date {
     width: 33%;
     float: left;
-    border-right: 1px solid #2C3D6C;
     font-family: "Ubuntu", sans-serif;
-    color: #2C3D6C; }
+    color: #2C3D6C;
+    border-right: 1px solid #2C3D6C; }
   .events section .date .date-day {
     font-weight: 500;
-    font-size: 400%;
+    font-size: 4em;
     text-align: center;
     border: none;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: .1em;
+    padding-bottom: 0;
     padding-left: 0; }
-  .events section .date .adjust {
-    margin-top: .25em; }
+  .events section .date .date-day.no-top {
+    padding-top: 0; }
   .events section .date .date-month {
     font-size: 1.2em;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    margin-top: 0; }
   .events section .details .title {
     font-size: 1.4em;
-    margin-bottom: .2em; }
+    margin-bottom: 0;
+    margin-top: 0; }
+  .events section .details .title.space {
+    margin-bottom: .75em; }
   .events section .details .description {
+    line-height: 1.2;
+    margin-top: 0;
     font-weight: 300;
-    margin-bottom: .3em;
     display: none; }
   .events section .date:hover {
     color: #384d89; }
@@ -554,6 +564,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-family: "Ubuntu", sans-serif;
     color: #2C3D6C; }
   .events section .details .date-time {
+    margin-top: 0;
     font-weight: bold; }
   .events section:last-child {
     border: none; }
@@ -779,7 +790,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 65.51724%;
     float: left;
     margin-right: 3.44828%;
-    clear: unset; }
+    clear: unset;
+    margin-top: .8em; }
   #speakers p {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

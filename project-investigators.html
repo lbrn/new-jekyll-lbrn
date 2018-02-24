@@ -14,13 +14,13 @@ title: Project Investigators
 </nav>
 <h2>Currently Funded</h2>
 <section class="directory">
-  {% for post in site.categories.project-investigator %}
-  <article class="person" data-pType="{{post.project-type}}">
-    <img src="images/people/{{post.image}}" alt="{{post.author}}">
-    <h4>{{post.author}}</h4>
-    <a class="natural-link" href="{{site.baseurl}}/{{post.url}}"><h5>{{post.title}}</h5></a>
-    <h6 style="margin-top: .6em;">{{post.school}}</h6>
-    <h6 style="margin-top: .6em;">{{post.project-type}}</h6>
+  {% for pi in site.project_investigators %}
+  <article class="person" data-pType="{{pi.project-type}}">
+    <img src="images/people/{{pi.image}}" alt="{{pi.author}}">
+    <h4>{{pi.author}}</h4>
+    <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a>
+    <h6 style="margin-top: .6em;">{{pi.school}}</h6>
+    <h6 style="margin-top: .6em;">{{pi.project-type}}</h6>
   </article>
   {% endfor %}
 </section>

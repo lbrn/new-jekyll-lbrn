@@ -53,7 +53,8 @@
       <aside class="events">
         <h2>EVENTS</h2>
           <!--Start of EVENT ITEM-->
-          {% for post in site.categories.events limit:7 %}
+          {% assign eventsR = site.events | reverse %}
+          {% for event in eventsR limit:3 %}
             {% include events-list-item.html %}
           {% endfor %}
 

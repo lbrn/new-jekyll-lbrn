@@ -51,7 +51,7 @@ title: People
     <h3 id="currentlyFunded">Currently Funded PIs</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapse">
-      {% for post in site.categories.project-investigator %}
+      {% for pi in site.project_investigators %}
         {% include directory-currentPi.html %}
       {% endfor %}
     </section>

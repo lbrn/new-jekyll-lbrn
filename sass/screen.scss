@@ -487,31 +487,45 @@
       .date {
         width: 33%;
         float: left;
-        border-right: 1px solid $primary;
         font-family: $bodyFont;
         color: $primary;
+        border-right: 1px solid $primary;
         .date-day {
           font-weight: 500;
-          font-size: 400%;
+          font-size: 4em;
           text-align: center;
           border: none;
+          line-height: 1;
+          margin-bottom: 0;
+          margin-top: 0;
+          padding-top: .1em;
+          padding-bottom: 0;
           padding-left: 0;
+          &.no-top{
+            padding-top: 0;
+          }
         }
-        .adjust {margin-top: .25em;}
+        // .adjust {margin-top: .25em;}
         .date-month {
           font-size: 1.2em;
           text-transform: uppercase;
           text-align: center;
+          margin-top: 0;
         }
       }
       .details {
         .title {
           font-size: 1.4em;
-          margin-bottom: .2em;
+          margin-bottom: 0;
+          margin-top: 0;
+        &.space{
+          margin-bottom: .75em;
+        }
         }
         .description {
+          line-height: 1.2;
+          margin-top: 0;
           font-weight: 300;
-          margin-bottom: .3em;
           display: none;
         }
       }
@@ -524,6 +538,7 @@
         font-family: $bodyFont;
         color: $primary;
         .date-time {
+          margin-top: 0;
           font-weight: bold;
         }
       }
@@ -691,6 +706,7 @@
     h3 {
       @include span(first 4);
       clear: unset;
+      margin-top: .8em;
     }
     p {
       @include span(first 4);
