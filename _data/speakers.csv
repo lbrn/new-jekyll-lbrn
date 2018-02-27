@@ -1,7 +1,5 @@
-name,university,intro,picture
-Dr. Ram Samudrala,University at Buffalo and The State University of New York Jacobs School of Medicine and Biomedical Sciences, Department of Biomedical Informatics and Professor and Chief-Division of Bioinformatics,images/speakers/samudrala.pdf
-Dr. Esteban Gershanik,Louisiana Department of Health and Hospitals Bureau of Health Informatics, Chief Information Officer and Director.,images/speakers/gershanik.pdf
-Dr. Timothy F. Kowalik,University of Massachusetts Medical School Department of Microbiology and Physiological Systems, Associate Professor,images/speakers/kowalik.pdf
-Dr. Rebecca M. Brotman,University of Maryland School of Medicine Epidemiology & Public Health, Associate Professor,images/speakers/brotman.pdf
-Dr. Christopher Mason,Cornell University Department of Physiology and Biophysics and Computational and Systems Biomedicine, Assistant Professor,images/speakers/Mason.pdf
-Dr. Shawn R. Campagna,University of Tennessee Knoxville Department of Chemistry, Associate Professor and Associate Department Head,images/speakers/campagna.pdf
+name,university,title1,title2,picture
+"Jake Chen, PhD","University of Alabama at Birmingham","Associate Director and Chief Bioinformatics Officer of the Informatics Institute","Professor, Departments of Genetics/Computer Science",images/speakers/2018/Chen.png
+"Jessica Kissinger, PhD",University of Georgia,Director of the Institute of Bioinformatics,"Professor, Department of Genetics",images/speakers/2018/Kissinger.png
+"Ben Busby, PhD",National Center for Biotechnology Information (NCBI/NIH),Chair of the Department of Bioinformatics and Data Science (FAES/NIH),Genomics Outreach Coordinator,images/speakers/2018/Busby.png
+"Morgan Langille, PhD",Dalhousie University,Canada Research Chair in Human Microbiomics,"Assistant Professor, Departments of Pharmacology/Microbiology & Immunology",images/speakers/2018/Langille.png

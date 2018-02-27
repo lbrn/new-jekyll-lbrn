@@ -5,6 +5,7 @@
     <title>LBRN Home</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/slider.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -22,7 +23,14 @@
         <li><a href="research.html">Research</a></li>
         <li><a href="resources.html">Resources</a></li>
         <li><a href="lbrn-events.html">Events</a></li>
-      </ul>
+        <li class="right">
+            <a class="button" href="newsletter.html">Newsletter</a>
+        </li>
+        <li class="right">
+            <a target="_blank" href="https://www.facebook.com/LouisianaBiomedicalResearchNetwork"><i class="fa fa-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/lbrn_inbre"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.youtube.com/user/LBRNINBRE/videos"><i class="fa fa-youtube-square"></i></a>
+        </li>
     </nav>
     <div class="layout">
       <!--REPLACE SLIDER-->
@@ -31,8 +39,10 @@
       </section>
       <section class="news" id="newsContainer">
         <h2>NEWS</h2>
-        <!--Start of NEWS ITEM-->
-        {% for post in site.categories.news %}
+        {% for post in site.categories.featured %}
+          {% include news-list-item-featured.html %}
+        {% endfor %}
+        {% for post in site.categories.news limit:4 %}
           {% include news-list-item.html %}
         {% endfor %}
         <!--End of NEWS ITEM-->
@@ -43,7 +53,8 @@
       <aside class="events">
         <h2>EVENTS</h2>
           <!--Start of EVENT ITEM-->
-          {% for post in site.categories.events %}
+          {% assign eventsR = site.events | reverse %}
+          {% for event in eventsR limit:3 %}
             {% include events-list-item.html %}
           {% endfor %}
 
@@ -52,12 +63,13 @@
     </div>
     <footer>
       <div class="layout">
-        <p>copyright &copy; LBRN 2017</p>
+        <p>copyright <a href="http://lbrn.lsu.edu:8080/lbrn/Login.jsp">&copy;</a> LBRN 2017</p>
         <p>Support from the National Institute of Health through the National institute of General Medical Science Grants
           <span>5&nbsp;P2O&nbsp;GM103424-15</span> and <span>3&nbsp;P2O&nbsp;GM103424-1551</span> are gratefully acknowledged.</p>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    {% include google-analytics.html %}
   </body>
 </html>

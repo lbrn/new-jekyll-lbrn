@@ -7,12 +7,18 @@
 
 //fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 
 //generalized styles------------------------------------------
 @include susy-breakpoint($small, $susySmall) {
   //Utility Classes
+  .no-float{
+    float: none !important;
+  }
+  .clear{
+    clear:both;
+  }
   .nudge {
     padding-top: 1em;
   }
@@ -26,6 +32,26 @@
     &.natural-link:hover {
       color: lighten($primary, 15);
     }
+  }
+  table {
+    font-size: 12px !important;
+    font-family: $openFont;
+  }
+  div.frame {
+  	position: relative;
+  	padding-bottom: 60%;
+    margin-bottom: 1em;
+  	height: 0;
+  }
+  div.frame iframe {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  }
+  .faculty, .grads, .undergrads{
+    display: none;
   }
   //Miscellaneous
   body {
@@ -51,16 +77,23 @@
       color: darken($secondary, 15);
     }
   }
-  button {
-    padding: .5em 2em .5em 2em;
+  a.button {
+    padding: .2em 1.2em;
     background-color: $secondary;
     color: $primary;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: $bodyFont;
-    margin-top: 2em;
+    margin:auto;
+    margin-top: 1em;
     border: none;
     border-radius: 10px;
+    // float: left;
+    display:inline-block;
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
     .secondary-button {
       border: 1px solid $secondary;
       background-color: white;
@@ -68,23 +101,9 @@
         background-color: $secondary;
       }
     }
-    a {
-      background-color: inherit;
-      color:inherit;
-      text-decoration: none;
-      display: block;
-      width: 100%;
-    }
-    a:hover {
-      color:white;
-    }
-  }
-  button:hover {
-    background-color: $primary;
-    color: white;
   }
   .hidden{
-    display: none;
+    display: none !important;
   }
   main.layout {
     min-height: 40em;
@@ -121,22 +140,64 @@
   nav {
     display: none;
     background-color: $secondary;
-    @include pad(5%);
     @include span(full);
-
+    ul{
+      max-width: 100%;
+      margin-left:auto;
+      margin-right:auto;
+    }
     li {
-      @include container(50%);
       font-family: $bodyFont;
       text-align: center;
       border-bottom: 1px solid white;
-      padding-top: 1em;
-      padding-bottom: 1em;
-
+      &.right{
+        // float:right;
+        margin-left: .5em;
+        margin-right: 0;
+        &>a{
+          padding: 1em .2em;
+          display:inline-block;
+          &:hover{
+            color: $primary;
+            transition: ALL .15s;
+            background-color: unset;
+          }
+        }
+      }
+      a.button{
+        border: 2px solid $primary;
+        border-radius: 25px;
+        color: white;
+        padding: .2em .7em;
+        margin: .955em 0;
+        font-size: .8em;
+        float: none;
+        &:hover{
+          background-color: $primary;
+          color: white;
+        }
+      }
+      a {
+        color: inherit;
+        padding: 1em .25em;
+        text-decoration: none;
+        display: block;
+      }
+      a:hover{
+        background-color: lighten($secondary, 10%);
+        color: $primary;
+      }
       a {
         color: white;
         text-decoration: none;
+        padding: 1em 0;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
       }
       a:hover {
+        background-color: darken($secondary, 5%);
+        transition: all .2s;
         color: white;
       }
     }
@@ -146,7 +207,7 @@
   }
   .slider {
     display: none;
-    @include pad(5%);
+    // @include pad(5%);
     @include span(full);
     position: relative;
     // height: 12em;
@@ -158,7 +219,7 @@
     padding-right:5%;
     h1 {
      margin-top: .75em;
-     margin-bottom: .75em;
+     // margin-bottom: .75em;
      float: left;
      font-size: 3em;
      font-family: $openFont;
@@ -168,13 +229,26 @@
   .content {
     ul {
       margin-left: 2.8em;
+      ul{
+        margin-left: 2em;
+        li{
+          list-style: circle;
+        }
+      }
     }
     li {
       font-weight: 300;
       list-style: square;
     }
     .bold {
-      font-weight: 400;
+      font-weight: 500;
+    }
+    .buttons-centered{
+      margin: 1em 0;
+      text-align: center;
+      button {
+        margin-top: 0;
+      }
     }
   }
   main div.content{
@@ -184,7 +258,7 @@
     line-height: 1.8em;
     color: $primary;
     @include pad(5%);
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 2em;
     h2 {
       font-size: 1.5em;
@@ -202,11 +276,43 @@
       padding-left: 1em;
       clear:both;
       border-left: 8px solid $secondary;
+      &.small-text{
+        font-size: 1.2em;
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+      }
     }
     h4 {
       font-size: 1.1em;
       font-weight: bold;
       margin-top: .5em;
+    }
+    p{
+      margin-top: 1em;
+      &.small-text{
+        font-size: 1em;
+      }
+      &.sub-p{
+        margin-top: .25em;
+      }
+    }
+    #faq{
+      p{
+        margin-top: .25em;
+        border-bottom: 1px $primary solid;
+        cursor: pointer;
+        &:hover{
+          color: lighten($primary, 15%);
+          border-bottom: 1px lighten($primary, 15%) solid;
+        }
+      }
+      ul{
+        border-bottom: 3px $primary solid;
+        margin-left: 0;
+        padding-left: 2.8em;
+        display: none;
+      }
     }
     .important {
       font-style: italic;
@@ -215,8 +321,8 @@
       margin-top: .25em;
       margin-bottom: .25em;
     }
-    img {
-      // max-width: 100%;
+    img.fit {
+      max-width: 100%;
     }
     .col-split {
       @include span(full);
@@ -225,6 +331,21 @@
     .col-split-right {
       @include span(full);
       padding: 0 5%;
+    }
+    .accordianTrigger{
+      margin-top: .25em;
+      border-bottom: 1px $primary solid;
+      cursor: pointer;
+      &:hover{
+        color: lighten($primary, 15%);
+        border-bottom: 1px lighten($primary, 15%) solid;
+      }
+    }
+    .accordianSection{
+      border-bottom: 3px $primary solid;
+      margin-left: 0;
+      padding-left: 2.8em;
+      display: none;
     }
   }
   //News Styles ------------------>
@@ -242,17 +363,26 @@
       font-size: 2.5em;
       font-family: $openFont;
       color: $primary;
-      margin-top: 1em;
-      line-height: .5em
+      margin-top: .5em;
 
     }
     article {
+      overflow: hidden;
+      margin-top: 1.75em;
+      &.featured{
+        padding: .5em .5em .75em .5em;
+        background-color: lighten($secondary, 23%);
+        border-radius: 3%;
+        h3 {
+          color: $primary;
+        }
+      }
       img {
         @include span(full);
+        border-radius: 6%;
       }
       h3 {
-        margin-top: 1.25em;
-        margin-bottom: .25em;
+        margin-bottom: .3em;
         @include span (full);
         font-family: $titleFont;
         color: $secondary;
@@ -297,10 +427,13 @@
         font-family: $bodyFont;
         color: $primary;
         @include span(full);
+        .pre {
+          font-weight: 500 !important;
+        }
       }
-      .post-date:before {
-        content: ""
-      }
+      // .post-date:before {
+      //   content: ""
+      // }
     }
     .view-all {
       @include span(full);
@@ -354,28 +487,45 @@
       .date {
         width: 33%;
         float: left;
-        border-right: 1px solid $primary;
         font-family: $bodyFont;
         color: $primary;
+        border-right: 1px solid $primary;
         .date-day {
           font-weight: 500;
-          font-size: 400%;
+          font-size: 4em;
           text-align: center;
+          border: none;
+          line-height: 1;
+          margin-bottom: 0;
+          margin-top: 0;
+          padding-top: .1em;
+          padding-bottom: 0;
+          padding-left: 0;
+          &.no-top{
+            padding-top: 0;
+          }
         }
+        // .adjust {margin-top: .25em;}
         .date-month {
           font-size: 1.2em;
           text-transform: uppercase;
           text-align: center;
+          margin-top: 0;
         }
       }
       .details {
         .title {
-          font-size: 1.2em;
-          margin-bottom: .2em;
+          font-size: 1.4em;
+          margin-bottom: 0;
+          margin-top: 0;
+        &.space{
+          margin-bottom: .75em;
+        }
         }
         .description {
+          line-height: 1.2;
+          margin-top: 0;
           font-weight: 300;
-          margin-bottom: .3em;
           display: none;
         }
       }
@@ -388,6 +538,7 @@
         font-family: $bodyFont;
         color: $primary;
         .date-time {
+          margin-top: 0;
           font-weight: bold;
         }
       }
@@ -410,7 +561,7 @@
     }
   }
     //LBRN Events Styles ------------>
-  .three-card-responsive, .two-card-responsive{
+  .three-card-responsive, .two-card-responsive .four-card-responsive{
     @include span(full);
     margin-bottom: 2%;
     padding-bottom: 2em;
@@ -468,7 +619,7 @@
       line-height: 1.2em;
       font-family: $titleFont;
       color: $primary;
-      padding: 1.5em 5%;
+      // padding: 1.5em 5%;
     }
     .imagebox {
       @include span(full);
@@ -519,8 +670,9 @@
         font-size: 1.25em;
         line-height: 1em;
       }
-      button {
+      .button {
         margin-top: 1em;
+        padding: .4em 0;
         width: 95%;
       }
     }
@@ -539,7 +691,7 @@
     }
     .map-icon {
       @include span(1);
-      margin-top: .5em;
+      margin-top: .25em;
       font-size: 2em;
     }
     .map-address {
@@ -552,10 +704,14 @@
       @include span(full);
     }
     h3 {
-      @include span(4);
+      @include span(first 4);
+      clear: unset;
+      margin-top: .8em;
     }
     p {
-      @include span(4);
+      @include span(first 4);
+      margin-top: .25em;
+      line-height: 1.4;
     }
     img {
       @include span(last 2);
@@ -610,6 +766,115 @@
   #lbrnEventSidebar {
     display: none;
   }
+  div.chooseTypeInline{
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    p{
+      width: 100%;
+      padding-bottom: 1em;
+    }
+    div{
+      width: 30%;
+      height: 50px;
+      overflow: hidden;
+      background: $secondary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // box-sizing: border-box;
+      padding-left: 0em;
+      border-radius: 5px;
+      input{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display:none;
+        // border-radius: 50%;
+        // width: 1.2em;
+        // height: 1.2em;
+        // border: 2px solid $primary;
+        // transition: 0.2s all linear;
+        // outline: none;
+        // position: relative;
+        // display: inline-block;
+        // cursor: pointer;
+        // &:hover{
+        //   color: lighten($primary, 20);
+        // }
+      }
+      label{
+        // width: 100%;
+        // display: inline-block;
+        // padding-left: .4em;
+        cursor: pointer;
+        &:hover{
+          color: lighten($primary, 20);
+        }
+      }
+    }
+  }
+  #mobileChooseType{
+    position: fixed;
+    background-color: $secondary;
+    top: -20%; left: 0;
+    width: 100%;
+    // opacity: .75;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    &.down{
+      top:0;
+      transition: top .3s ease-in-out;
+    }
+    &:hover{
+      // opacity: 1;
+      transition: opacity .3s ease-in-out;
+    }
+    div.chooseType{
+      min-height: 2.5em;
+      margin-top: .5em;
+      display: inline-block;
+      p{
+        display: block;
+        margin: auto;
+        font-weight: 700;
+        // margin-top: 0;
+        // margin-left: 2em;
+      }
+      input{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        border: 2px solid $primary;
+        transition: 0.2s all linear;
+        outline: none;
+        margin-right: 5px;
+        position: relative;
+        top: .25em;
+        &:checked {
+          border: 6px solid $primary;
+        }
+        &:hover{
+          color: lighten($primary, 15%);
+          cursor: pointer;
+        }
+      }
+      label{
+        // width: 75%;
+        padding: 0;
+        margin: .1em 0;
+        display: inline-block;
+        &:hover{
+          color: lighten($primary, 15%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
   // LBRN Resources Styles ----------->
   div.resources, div.research {
     a {
@@ -625,6 +890,9 @@
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
+      }
+      &.no-hover:hover{
+        background-color: unset;
       }
     }
     img {
@@ -677,7 +945,7 @@
         float: left;
         line-height: 1.3;
       }
-      button{
+      a{
         float: right;
         font-size: 1em;
         margin: 1em 5% 0 0;
@@ -735,7 +1003,9 @@
   .people{
     h3 {
         padding: .2em 0;
+        margin-right: 1.4em !important;
       }
+    h2{margin-right: 1.4em !important;}
     .icon-margin{
       margin-top: .7em;
     }
@@ -845,7 +1115,15 @@
 @include susy-breakpoint($medium, $susySmall) {
   // Main Styles!!
   .slider {
-    height: 18em;
+    height: 0;
+    padding-bottom: 50%;
+  }
+  nav ul.layout {
+    max-width: 90%;
+  }
+  nav ul li a {
+    text-transform: capitalize;
+    font-weight: normal;
   }
 } //Medium Query------------------------------------------
 @include susy-breakpoint($standard, $susy) {
@@ -889,22 +1167,14 @@
       font-size: 1.2em;
       border: none;
       color: white;
-      a {
-        color: inherit;
-        padding: 1em .25em;
-        text-decoration: none;
-        display: block;
-      }
-      a:hover{
-        background-color: lighten($secondary, 10%);
-        color: $primary;
-      }
+      &.right {float: right;}
     }
   }
   .slider {
     display: block;
     width: 100%;
-    height: 35em;
+    height: 0;
+    padding-bottom: 50%;
   }
   main div.content{
     .col-split {
@@ -1016,6 +1286,9 @@
         }
       }
       .details {
+        .title {
+          font-size: 1em;
+        }
         .description {
           display: block;
         }
@@ -1023,17 +1296,30 @@
     }
   }
   //LBRN Events Styles ------------>
-  .three-card-responsive, .two-card-responsive{
+  .three-card-responsive, .two-card-responsive, .four-card-responsive{
     @include span(90%);
     margin-left: 5%;
     margin-right: 5%;
-
+    .strip{
+      min-height: unset;
+      margin: 0;
+      &:hover{
+        background-color: none;
+      }
+    }
     section {
       margin-left: 0;
       margin-right: 0;
-      min-height: 30em;
+      min-height: 33em;
       padding-bottom: 2em;
       @include span(6);
+      .strip{
+        min-height: unset;
+        margin-bottom: 0;
+        &:hover{
+          background-color: none;
+        }
+      }
     }
     section:nth-child(2n) {
       @include span(last 6);
@@ -1097,7 +1383,46 @@
         list-style: none;
         margin-bottom: 1em;
         line-height: 1.3;
+        div.chooseType{
+          padding: 0 15%;
+          p{
+            margin-top: 0;
+            text-align: center;
+          }
+          input{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 50%;
+            width: 1em;
+            height: 1em;
+            border: 2px solid $primary;
+            transition: 0.2s all linear;
+            outline: none;
+            margin-right: 5px;
+            position: relative;
+            top: .25em;
+            &:checked {
+              border: 6px solid $primary;
+            }
+            &:hover{
+              color: lighten($primary, 15%);
+              cursor: pointer;
+            }
+          }
+          label{
+            width: 75%;
+            padding: 0;
+            margin: .1em 0;
+            display: inline-block;
+            &:hover{
+              color: lighten($primary, 15%);
+              cursor: pointer;
+            }
+          }
+        }
       }
+
       a {
         @include span(full);
 
@@ -1111,6 +1436,9 @@
       background-color: lighten($secondary, 15%);
       font-weight: 400;
     }
+  }
+  #mobileChooseType{
+    display: none;
   }
   // LBRN Resources Styles ----------->
   div.resources, div.research {
@@ -1126,6 +1454,10 @@
     i.collapseTrigger {
       display: none;
     }
+  }
+  // Summer Research Program Styles -------->
+  div.chooseTypeInline{
+    display: flex;
   }
 } // Standard Query ----------------------------------------
 @include breakpoint($intermediate) {
@@ -1144,6 +1476,23 @@
     }
     section:nth-child(3n) {
       @include span(last 4);
+    }
+  }
+  .four-card-responsive{
+    @include span(90%);
+    margin-left: 5%;
+    margin-right: 5%;
+    section {
+      // min-height: 40em;
+      margin-left: 0;
+      margin-right: 0;
+      @include span(3);
+    }
+    section:nth-child(2n) {
+      @include span(3);
+    }
+    section:nth-child(3n) {
+      @include span(last 3);
     }
   }
   .caption {
@@ -1183,6 +1532,9 @@
     padding-left: 0;
     padding-right: 0;
   }
+  #lbrnEventSidebar ul li div.chooseType label{
+    width: 82%;
+  }
   header {
     padding: 0;
     .layout {
@@ -1198,6 +1550,9 @@
   .three-card-responsive {
     margin: 0;
     @include span(full);
+    section{
+      min-height: 32em;
+    }
   }
   div.resources {
     section {
@@ -1216,5 +1571,13 @@
 @include breakpoint($highDef) {
   .layout {
     @include container(80%);
+  }
+  .three-card-responsive {
+    section{
+      min-height: 36em;
+    }
+  }
+  #lbrnEventSidebar ul li div.chooseType label{
+    width: 87%;
   }
 } // large Query ----------------------------------------

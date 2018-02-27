@@ -18,9 +18,11 @@ description: LBRN is a collaborative network, organized to enhance the quality o
 baseurl: "new-jekyll-lbrn" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mjtheriot4
-#to be filled in later:
-email:
-twitter_username:
+
+collections:
+  project_investigators:
+    output: true
+  events:
 # Build settings
 markdown: kramdown
 

@@ -22,6 +22,14 @@
         <li><a href="research.html">Research</a></li>
         <li><a href="resources.html">Resources</a></li>
         <li><a href="lbrn-events.html">Events</a></li>
+        <li class="right">
+            <a class="button" href="newsletter.html">Newsletter</a>
+        </li>
+        <li class="right">
+            <a target="_blank" href="https://www.facebook.com/LouisianaBiomedicalResearchNetwork"><i class="fa fa-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/lbrn_inbre"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.youtube.com/user/LBRNINBRE/videos"><i class="fa fa-youtube-square"></i></a>
+        </li>
       </ul>
     </nav>
     <main class="layout">
@@ -39,7 +47,7 @@
         <div class="caption">
           <h1>{{page.title}}</h1>
           <p id="date">{{page.eventDate}}</p>
-          <button type="button" name="registration"><a href="#eventRegistration">Register Here</a></button>
+          <a class="button" href="#eventRegistration">Register Here</a>
         </div>
       </section>
       <div class="content">
@@ -48,7 +56,7 @@
     </main>
     <footer>
       <div class="layout">
-        <p>copyright &copy; LBRN 2017</p>
+        <p>copyright <a href="http://lbrn.lsu.edu:8080/lbrn/Login.jsp">&copy;</a> LBRN 2017</p>
         <p>Support from the National Institute of Health through the National institute of General Medical Science Grants
           <span>5&nbsp;P2O&nbsp;GM103424-15</span> and <span>3&nbsp;P2O&nbsp;GM103424-1551</span> are gratefully acknowledged.</p>
       </div>
@@ -56,5 +64,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/scrollMenu.js"></script>
+    {% include google-analytics.html %}
   </body>
 </html>

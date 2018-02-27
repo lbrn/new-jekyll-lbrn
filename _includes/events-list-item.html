@@ -1,12 +1,12 @@
 <section>
-  <a href="/upcoming-events#{{post.date | date: '%d' }}{{post.date | date: '%b'}}">
+  <a href="{{ '/upcoming-events' | relative_url }}#{{event.date | date: '%d' }}{{event.date | date: '%b'}}">
     <div class="date">
-      <h3 class="date-day">{{post.date | date: '%d' }}</h3>
-      <h4 class="date-month">{{post.date | date: '%b'}}</h4>
+      <h3 class="date-day no-top">{{event.date | date: '%d' }}</h3>
+      <h4 class="date-month">{{event.date | date: '%b'}}</h4>
     </div>
   </a>
   <div class="details">
-    <p class="title">{{post.title}}</p>
-    <p class="date-time">{{post.startTime}} to {{post.endTime}}</p>
+    <p class="title space">{{event.title}}</p>
+    <p class="date-time">{{event.startTime}} to {{event.endTime}}</p>
   </div>
 </section>
