@@ -4,7 +4,7 @@ title: Mechanism Of Translation Initiation In Protozoan Parasite Giardia Lamblia
 author: Srinivas Garlapati
 school: University of Louisiana at Monroe, School of Sciences
 project-type: PilotProject
-image: "batra.jpg"
+image: "garlapati.jpg"
 categories: project-investigator
 ---
 

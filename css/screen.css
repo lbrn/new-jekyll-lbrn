@@ -40,6 +40,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .no-float {
     float: none !important; }
 
+  .float {
+    float: left;
+    width: 100%; }
+  .float img {
+    width: 100%; }
+
+  .callout {
+    box-sizing: border-box;
+    padding: 0 5%;
+    margin-top: 0 !important; }
+
   .clear {
     clear: both; }
 
@@ -1198,6 +1209,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-transform: capitalize;
     font-weight: normal; } }
 @media (min-width: 667px) {
+  .float {
+    width: 35%; }
+
   header {
     height: 10em;
     width: 100%;

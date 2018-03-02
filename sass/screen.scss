@@ -16,6 +16,18 @@
   .no-float{
     float: none !important;
   }
+  .float{
+    float:left;
+    width:100%;
+    img{
+      width:100%;
+    }
+  }
+  .callout{
+    box-sizing: border-box;
+    padding:0 5%;
+    margin-top: 0 !important;
+  }
   .clear{
     clear:both;
   }
@@ -1127,6 +1139,10 @@
   }
 } //Medium Query------------------------------------------
 @include susy-breakpoint($standard, $susy) {
+  // Utility
+  .float{
+    width: 35%;
+  }
   // Main Styles!!
   header {
     height: 10em;
