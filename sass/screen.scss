@@ -1114,9 +1114,7 @@
       line-height: 2em;
       font-family: $bodyFont;
       font-size: .75em;
-      width: 50%;
-      min-width: 15em;
-
+      width: 100%;
     }
     span {
       font-style: italic;
@@ -1534,6 +1532,15 @@
     margin-right: .5em;
     a {
       padding: 1em;
+    }
+  }
+  footer{
+    p{
+      width: 50%;
+      a{
+        font-weight: bold;
+        line-height: 3;
+      }
     }
   }
 }// Intermediate Query ------------------------------------
