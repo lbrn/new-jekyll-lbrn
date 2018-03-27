@@ -27,3 +27,6 @@ excerpt_separator: <!--more-->
 <p>Dr. Thomas has had sustained funding from prestigious national and international funding sources, including National Science Foundation: BAC Libraries from Diverse Crustacean Taxa Phylum Nematoda; Integrating Multidisciplinary Expertise Infrastructure for Resolving Relationships in a Major Branch of the Tree of Life; Accelerating the Molecular/ Morphological Inventory of Meiofauna; Marine Nematodes of Mexico’s Threatened Gulf of California.</p>
 
 <p>National Institutes of Health: The Rate and Molecular Spectrum of Spontaneous Mutations; Daphnia Functional Comparative Genomics Resource; Bioinformatics “Train the Trainer” T3; The Integration of Bioinformatics into the Undergraduate Curriculum Gulf of Mexico Research Initiative: Genomic Responses to the Deepwater Horizon event and development of high-throughput biological assays for oil spills</p>
+
+
+<!-- this is a test comment -->
