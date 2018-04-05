@@ -1192,8 +1192,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     line-height: 2em;
     font-family: "Ubuntu", sans-serif;
     font-size: .75em;
-    width: 50%;
-    min-width: 15em; }
+    width: 100%; }
   footer span {
     font-style: italic;
     font-weight: bold; } }
@@ -1684,7 +1683,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   nav li {
     margin-right: .5em; }
   nav li a {
-    padding: 1em; } }
+    padding: 1em; }
+
+  footer p {
+    width: 50%; }
+  footer p a {
+    font-weight: bold;
+    line-height: 3; } }
 @media (min-width: 1224px) {
   .layout {
     margin: 0;
