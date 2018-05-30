@@ -3,5 +3,8 @@ _site/
 .jekyll-metadata
 _config.yml
 _site/feed.xml
+<<<<<<< HEAD
 _site/feed.xml
 _site/feed.xml
+=======
+>>>>>>> gh-pages
