@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The 6th Annual Louisiana Conference on Computational Biology and Bioinformatics
-categories: featured
+categories: news
 featuredImageUrl: "images/postImages/6th_Bio_Save_the_Date_small.png"
 featuredImageUrlSquare: "images/postImages/6th_CCBB_thumbnail.png"
 excerpt_separator: <!--more-->

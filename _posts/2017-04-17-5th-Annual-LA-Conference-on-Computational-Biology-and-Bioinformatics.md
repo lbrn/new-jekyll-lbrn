@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5th Annual LA Conference on Computational Biology and Bioinformatics
-categories: news
+categories: archive
 featuredImageUrl: "images/gearhead.jpg"
 featuredImageUrlSquare: "images/gearhead-square.jpg"
 excerpt_separator: <!--more-->
