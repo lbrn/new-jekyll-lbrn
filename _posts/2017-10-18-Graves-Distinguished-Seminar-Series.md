@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dept. of Entomology Jerry B. Graves Distinguished Seminar Series
-categories: news
+categories: archive
 featuredImageUrl: "images/postImages/thomas.jpg"
 featuredImageUrlSquare: "images/postImages/placeholderNewsImage.png"
 excerpt_separator: <!--more-->
