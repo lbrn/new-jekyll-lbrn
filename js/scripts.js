@@ -75,7 +75,7 @@ function coreSwap(){
     $(this).addClass('active');
     $('#core-swap>h4').text('Adiministrative Core');
     $('#core-swap>p').text(adminTxt);
-    $('#core-swap>img').attr('src','images/admin-core.svg');
+    $('#core-swap>img').attr('src','images/admin-core_July_2018.png');
     $('#core-swap>a.button').addClass('hidden');
   });
   corelis.eq(1).click(function(){
@@ -83,7 +83,7 @@ function coreSwap(){
     $(this).addClass('active');
     $('#core-swap>h4').text('Bioinformatics, Biostatistics, and Computational Biology Core');
     $('#core-swap>p').text(bbcTxt);
-    $('#core-swap>img').attr('src','images/bbc-core.svg');
+    $('#core-swap>img').attr('src','images/bbc-core_July_2018.png');
     $('#core-swap>a.button').removeClass('hidden');
     $('#core-swap>a.button').attr('href','bbc-core.html').text('BBC Core Services');
   });
