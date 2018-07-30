@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: LSU Summer Undergraduate Research Forum
-categories: featured
+categories: news
 featuredImageUrl: images/surf.jpg
 featuredImageUrlSquare: images/surf.jpg
 excerpt_separator: <!--more-->
