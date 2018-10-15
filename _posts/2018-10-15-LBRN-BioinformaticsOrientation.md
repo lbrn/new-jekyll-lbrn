@@ -20,7 +20,7 @@ textOnUrl: LBRN - Pine Biotech Fall/Winter Bioinformatics Orientation and Course
 <ol>2. Video conference attendance<br>
 
 <p>You can join your meeting entitled LBRNCCT-Bioinformatics by entering the Meeting ID into the Viewme application <b>"LBRNCCT-Bioinformatics"</b>.
-Download Vibe client for free at <a href="https://vibe.ezuce.com/download/">https://vibe.ezuce.com/download/</a> no login account needed.</p>
+Download Vibe client for free at <a href="https://vibe.ezuce.com/download/">https://vibe.ezuce.com/download/</a> no login account needed.
  
 <p>Or by using WebRTC in Chrome or Firefox: <a href="https://vibe.ezuce.com/webrtc/?meetingID=2147516440">https://vibe.ezuce.com/webrtc/?meetingID=2147516440</a> (recommend downloading client for best experience, however if difficulty connecting with client due to your network restrictions, use WebRTC link)</p>
 
