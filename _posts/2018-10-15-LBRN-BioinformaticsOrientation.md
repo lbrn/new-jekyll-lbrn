@@ -7,8 +7,12 @@ featuredImageUrlSquare: images/postImages/2018-10-BioinfoamticsOrientation-thumb
 excerpt_separator: <!--more-->
 eventDate: October 22, 2018
 textOnUrl: LBRN - Pine Biotech Fall/Winter Bioinformatics Orientation and Courses
+link: https://redcap.lbrn.lsu.edu/surveys/?s=NY3K3P4LAA
 --- 
-<p>We are pleased to announce the CCT/LBRN - Pine Biotech Fall/Winter Bioinformatics course for LSU/LBRN Network institutions Students, Grad and Undergrad, PostDocs and Faculty members. In preparation for this Course we are planning to hold an Orientation session On Monday October 22nd, 2018 from 10am - 12 pm at LSU CCT. <!--more-->The session will also be streamed via Vibe (formerly ViewMe) Video conferencing software. The session will give an outline of the courses that will be offered during the Fall/Summer session, and timeline for the various modules and interactive sessions. Faculty/Students/post docs will have 1 week to then decide to register for the course by October 29th, 2018. LSUCCT will support 50 site licenses in total. Students, post docs and faculty are encouraged to attend this orientation session on Monday October 22nd, and avail this excellent opportunity to get trained in Bioinformatics.</p>
+<p>We are pleased to announce the CCT/LBRN - Pine Biotech Fall/Winter Bioinformatics course for LSU/LBRN Network institutions Students, Grad and Undergrad, PostDocs and Faculty members. In preparation for this Course we are planning to hold an Orientation session On Monday October 22nd, 2018 from 10am - 12 pm at LSU CCT.<!--more--></p>
+<p><a href="https://redcap.lbrn.lsu.edu/surveys/?s=NY3K3P4LAA">Opt-In for information on this link</a></p>
+
+<p>The session will also be streamed via Vibe (formerly ViewMe) Video conferencing software. The session will give an outline of the courses that will be offered during the Fall/Summer session, and timeline for the various modules and interactive sessions. Faculty/Students/post docs will have 1 week to then decide to register for the course by October 29th, 2018. LSUCCT will support 50 site licenses in total. Students, post docs and faculty are encouraged to attend this orientation session on Monday October 22nd, and avail this excellent opportunity to get trained in Bioinformatics.</p>
 
 <p>
 
