@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: LBRN/CCT - Pine Biotech Fall/Winter Bioinformatics Course
+title: LBRN/CCT - Pine Biotech Fall/Winter Bioinformatics Program
 categories: news
 featuredImageUrl: images/postImages/LBRN-FALL-Program-CCT.jpg
 featuredImageUrlSquare: images/postImages/LBRN-FALL-Program-CCT-thumb.jpg
@@ -9,23 +9,23 @@ textOnUrl: LBRN/CCT- Pine Biotech Fall/Winter Bioinformatics Course
 link: https://redcap.lbrn.lsu.edu/surveys/?s=HLK4LJYMMT
 --- 
 
-<p>We are pleased to announce the CCT/LBRN - Pine Biotech Fall/Winter Bioinformatics course for LSU/LBRN Network institutions Students, Grad and Undergrad, PostDocs and Faculty members. For registration and course schedule information:</p>
+<p>We are pleased to announce the CCT/LBRN - Pine Biotech Fall/Winter Bioinformatics Program for LSU/LBRN Network institutions Students, Grad and Undergrad, PostDocs and Faculty members. For registration and program schedule information:</p>
 ### Registration Deadline, Monday October 29, 2018.
 
 <!--more-->
 
-#### Registration: <a href="https://redcap.lbrn.lsu.edu/surveys/?s=HLK4LJYMMT">Course Registration</a>
+#### Registration: <a href="https://redcap.lbrn.lsu.edu/surveys/?s=HLK4LJYMMT">Program Registration</a>
 
 ### Orientation:
-<p>Orientation took place on October 22, 2018 describing the course is available here to review: <a href="https://www.youtube.com/embed/Webuf-8L63w">https://www.youtube.com/embed/Webuf-8L63w</a></p>
+<p>Orientation took place on October 22, 2018 describing the program is available here to review: <a href="https://www.youtube.com/embed/Webuf-8L63w">https://www.youtube.com/embed/Webuf-8L63w</a></p>
 
-<p>Pine Biotech link and course information: <a href="https://edu.t-bio.info/lbrn-fall-training-program/?fbclid=IwAR0KuPwmRN8HxH8g1-fRSKac8riK1_cyWtVUHYBuaDIpwKpZAbR7c0aL7CY">Louisiana Biomedical Research Network (LBRN) and Center for Computation and Technology (CCT) Bioinformatics Training Program</a></p>
+<p>Pine Biotech link and program information: <a href="https://edu.t-bio.info/lbrn-fall-training-program/?fbclid=IwAR0KuPwmRN8HxH8g1-fRSKac8riK1_cyWtVUHYBuaDIpwKpZAbR7c0aL7CY">Louisiana Biomedical Research Network (LBRN) and Center for Computation and Technology (CCT) Bioinformatics Training Program</a></p>
 
 ### Curriculum: The LBRN Fall/Winter Bioinformatics Training Program consists of 6 courses and 2 projects.
 
 <p>In this curriculum, analysis skills are developed in a project setting that combines insight into the typical problems addressed by a bioinformatician and exposure to the analysis logic, highlighted by a unique online research and learning environment, the T-BioInfo platform (see more at <a href="https://t-bio.info/">https://t-bio.info/</a>). The platform is a platform designed to be transparent and offers links to methods as well as downloadable code for some modules.</p>
 
-<p>The course sessions will be available via (formerly ViewMe) Video conferencing software and on-site at Conference room# 1034 at Center for Computation & Technology, LSU, 340 E Parker Blvd, Baton Rouge, LA 70803. Details will be given to course registrants as the sessions progress.</p>
+<p>The program sessions will be available via (formerly ViewMe) Video conferencing software and on-site at Conference room# 1034 at Center for Computation & Technology, LSU, 340 E Parker Blvd, Baton Rouge, LA 70803. Details will be given to program registrants as the sessions progress.</p>
 
 <table style="border-collapse: collapse; width: 99.9999%; height: 240px; margin-left: 30px;" border="1">
 <tbody>
