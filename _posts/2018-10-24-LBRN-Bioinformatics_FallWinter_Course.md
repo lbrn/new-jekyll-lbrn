@@ -25,12 +25,14 @@ link: https://redcap.lbrn.lsu.edu/surveys/?s=HLK4LJYMMT
 
 <p>In this curriculum, analysis skills are developed in a project setting that combines insight into the typical problems addressed by a bioinformatician and exposure to the analysis logic, highlighted by a unique online research and learning environment, the T-BioInfo platform (see more at <a href="https://t-bio.info/">https://t-bio.info/</a>). The platform is a platform designed to be transparent and offers links to methods as well as downloadable code for some modules.</p>
 
+<p>The course sessions will be available via (formerly ViewMe) Video conferencing software and on-site at Conference room# 1034 at Center for Computation & Technology, LSU, 340 E Parker Blvd, Baton Rouge, LA 70803. Details will be given to course registrants as the sessions progress.</p>
+
 <table style="border-collapse: collapse; width: 99.9999%; height: 240px; margin-left: 30px;" border="1">
 <tbody>
 <tr style="height: 24px;">
 <td style="width: 33.3333%; text-align: left; height: 24px;"><strong><u>Date</u></strong></td>
 <td style="width: 33.3333%; text-align: left; height: 24px;"><strong><u>Topic</u></strong></td>
-<td style="width: 33.3333%; text-align: left; height: 24px;"><strong><u>Duration</u></strong></td>
+<td style="width: 33.3333%; text-align: left; height: 24px;"><strong><u>Date/Time</u></strong></td>
 </tr>
 <tr style="height: 24px;">
 <td style="width: 33.3333%; height: 24px;">November 5, 2018</td>
@@ -38,7 +40,7 @@ link: https://redcap.lbrn.lsu.edu/surveys/?s=HLK4LJYMMT
 <td style="width: 33.3333%; height: 24px;">10:00 am CST to 12:00 pm CST</td>
 </tr>
 <tr style="height: 24px;">
-<td style="width: 33.3333%; height: 24px;">Novermer 9, 2018</td>
+<td style="width: 33.3333%; height: 24px;">November 9, 2018</td>
 <td style="width: 33.3333%; height: 24px;">Introduction to RNA Seq Course</td>
 <td style="width: 33.3333%; height: 24px;">10:00 am CST to 11:00 am CST</td>
 </tr>
