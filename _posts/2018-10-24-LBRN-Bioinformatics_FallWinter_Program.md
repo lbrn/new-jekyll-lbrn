@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: LBRN/CCT - Pine Biotech Fall/Winter Bioinformatics Program
-categories: archive
+categories: news
 featuredImageUrl: images/postImages/LBRN-FALL-Program-CCT.jpg
 featuredImageUrlSquare: images/postImages/LBRN-FALL-Program-CCT-thumb.jpg
 excerpt_separator: <!--more-->
