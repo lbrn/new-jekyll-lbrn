@@ -25,6 +25,12 @@ link: https://redcap.lbrn.lsu.edu/surveys/?s=HLK4LJYMMT
 
 <p>In this curriculum, analysis skills are developed in a project setting that combines insight into the typical problems addressed by a bioinformatician and exposure to the analysis logic, highlighted by a unique online research and learning environment, the T-BioInfo platform (see more at <a href="https://t-bio.info/">https://t-bio.info/</a>). The platform is a platform designed to be transparent and offers links to methods as well as downloadable code for some modules.</p>
 
+### Modules Overview
+
+<p>Program Modules descriptions: <a href="/downloads/LBRNCCT-2018-BioinformaticsProgram-modules-FALLWINTER-overview.pdf">LBRNCCT-2018-BioinformaticsProgram-modules-FALLWINTER-overview.pdf</a></p>
+
+### Program Sessions
+
 <p>The program sessions will be available via (formerly ViewMe) Video conferencing software and on-site at Conference room# 1034 at Center for Computation & Technology, LSU, 340 E Parker Blvd, Baton Rouge, LA 70808. Details will be given to program registrants as the sessions progress.</p>
 
 <table style="border-collapse: collapse; width: 99.9999%; height: 240px; margin-left: 30px;" border="1">
