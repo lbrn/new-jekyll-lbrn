@@ -5,7 +5,7 @@ categories: news
 featuredImageUrl: images/postImages/LBRN-FALL-Program-CCT.jpg
 featuredImageUrlSquare: images/postImages/LBRN-FALL-Program-CCT-thumb.jpg
 excerpt_separator: <!--more-->
-textOnUrl: LBRN/CCT- Pine Biotech Fall/Winter Bioinformatics Course
+textOnUrl: LBRN/CCT- Pine Biotech Fall/Winter Bioinformatics Program
 link: https://redcap.lbrn.lsu.edu/surveys/?s=HLK4LJYMMT
 --- 
 
