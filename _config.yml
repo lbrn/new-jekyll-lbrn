@@ -34,3 +34,4 @@ exclude:
 #Server settings
 port: 4000
 encoding: utf-8
+include: ['.htaccess']
