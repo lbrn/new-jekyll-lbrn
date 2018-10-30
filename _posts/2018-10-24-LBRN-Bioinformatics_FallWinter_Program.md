@@ -10,7 +10,7 @@ link: https://redcap.lbrn.lsu.edu/surveys/?s=HLK4LJYMMT
 --- 
 
 <p>We are pleased to announce the CCT/LBRN - Pine Biotech Fall/Winter Bioinformatics Program for LSU/LBRN Network institutions Students, Grad and Undergrad, PostDocs and Faculty members. For registration and program schedule information:</p>
-### Registration Deadline, Monday October 29, 2018.
+### Extended Registration Deadline, Thursday, November 1, 2018.
 
 <!--more-->
 

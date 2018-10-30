@@ -10,7 +10,7 @@ link: https://lbrn.lsu.edu/news/2018/10/24/LBRN-Bioinformatics_FallWinter_Progra
 --- 
 
 <p>Please see the following link for information on the LBRN/CCT Fall/Winter Bioinformatics Program:</p>
-### Registration Deadline, Monday October 29, 2018.
+### Extended Registration Deadline, Thursday, November 1, 2018.
 
 <!--more-->
 
