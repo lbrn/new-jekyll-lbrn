@@ -54,7 +54,7 @@
       <aside class="events">
         <h2>EVENTS</h2>
           <!--Start of EVENT ITEM-->
-          {% assign eventsR = site.events | reverse %}
+          {% assign eventsR = site.events %}
           {% for event in eventsR limit:3 %}
             {% include events-list-item.html %}
           {% endfor %}
