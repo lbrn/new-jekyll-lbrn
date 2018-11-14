@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: 17th LBRN Annual Meeting - Save the Date
-categories: news
+categories: featured
 featuredImageUrl: images/postImages/2019-Annual-Meeting-SaveDate.png
 featuredImageUrlSquare: images/postImages/2019-Annual-Meeting-SaveDate-thumb.png
 excerpt_separator: <!--more-->

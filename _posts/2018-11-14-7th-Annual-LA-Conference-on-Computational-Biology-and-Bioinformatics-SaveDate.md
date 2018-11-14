@@ -2,8 +2,8 @@
 layout: post
 title: 7th Annual LA Conference on Computational Biology and Bioinformatics - Save the Date
 categories: news
-featuredImageUrl: images/postImages/2019-7th-CCBB-STD.png
-featuredImageUrlSquare: images/postImages/2019-7th-CCBB-STD-thumb.png
+featuredImageUrl: images/postImages/7th-CCBB-SaveDate.png
+featuredImageUrlSquare: images/postImages/7th-CCBB-SaveDate-thumb.png
 excerpt_separator: <!--more-->
 eventDate: April 5-6, 2019
 textOnUrl: 7th Annual LA Conference on Computational Biology and Bioinformatics - Save the Date
