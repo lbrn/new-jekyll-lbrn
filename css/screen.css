@@ -751,10 +751,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: .4em 0;
     width: 95%; }
 
-  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventRegistration, #eventArchiveMedia {
     position: relative;
     margin-bottom: 1.2em; }
-  #eventSummary h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
+  #eventSummary h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
     padding-left: .4em;
     padding-right: 1.5em; }
 
@@ -1484,7 +1484,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-right: 2.85714%; }
 
-  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventRegistration, #eventArchiveMedia {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1493,7 +1493,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0;
     overflow: hidden; }
-  #eventSummary h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
+  #eventSummary h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
     padding-left: 0;
     background-color: white; }
 
