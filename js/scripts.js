@@ -83,7 +83,7 @@ function coreSwap(){
     $(this).addClass('active');
     $('#core-swap>h4').text('Bioinformatics, Biostatistics, and Computational Biology Core');
     $('#core-swap>p').text(bbcTxt);
-    $('#core-swap>img').attr('src','images/bbc-core_July_2018.png');
+    $('#core-swap>img').attr('src','images/bbc-core_Dec_2018.png');
     $('#core-swap>a.button').removeClass('hidden');
     $('#core-swap>a.button').attr('href','bbc-core.html').text('BBC Core Services');
   });
@@ -92,7 +92,7 @@ function coreSwap(){
     $(this).addClass('active');
     $('#core-swap>h4').text('Molecular and Cell Biology Resources Core');
     $('#core-swap>p').text(mcbrTxt);
-    $('#core-swap>img').attr('src','images/mcbr-core.svg');
+    $('#core-swap>img').attr('src','images/mcbr-core_Dec_2018.png');
     $('#core-swap>a.button').removeClass('hidden');
     $('#core-swap>a.button').attr('href','mcbr-core.html').text('MCBR Core Services');
   });
