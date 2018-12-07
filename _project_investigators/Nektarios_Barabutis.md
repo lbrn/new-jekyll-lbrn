@@ -4,6 +4,6 @@ title: Elucidation of the Mechanisms which are involved in the anti-inflammatory
 author: Barabutis Nektarios
 school: University of Louisiana at Monroe
 project-type: StartupProject
-image: "need.jpg"
+image: "NEED.jpg"
 categories: project-investigator
 ---
