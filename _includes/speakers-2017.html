@@ -1,0 +1,11 @@
+{% for speakers in site.data.speakers-2017 %}
+<section>
+  <a href="{{speakers.picture}}">
+    <img src="{{speakers.picture}}" alt="{{speakers.name}}">
+  </a>
+  <h3>{{speakers.name}}</h3>
+  <p>{{speakers.university}}</p>
+  <p>{{speakers.title1}}</p>
+  <p>{{speakers.title2}}</p>
+</section>
+{% endfor %}
