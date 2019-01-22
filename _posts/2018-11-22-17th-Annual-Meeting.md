@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: 17th LBRN Annual Meeting
-categories: featured
+categories: news
 featuredImageUrl: images/postImages/2019_LBRN_AM_Web_Flyerv2.png
 featuredImageUrlSquare: images/postImages/2019_LBRN_AM_Web_Flyerv2.png
 excerpt_separator: <!--more-->
