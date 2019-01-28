@@ -799,7 +799,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 65.51724%;
-    float: left;
+    float: right;
     margin-right: 3.44828%;
     clear: unset;
     margin-top: .8em; }
@@ -808,7 +808,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 65.51724%;
-    float: left;
+    float: right;
     margin-right: 3.44828%;
     margin-top: .25em;
     line-height: 1.4; }
@@ -816,9 +816,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 31.03448%;
-    float: right;
-    margin-right: 0;
+    width: 20%;
+    float: left;
+    margin-left: 0;
     margin-top: 1.2em; }
 
   .seminar-speaker {
