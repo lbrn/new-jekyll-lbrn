@@ -86,7 +86,7 @@ link: https://redcap.lbrn.lsu.edu/surveys/?s=HLK4LJYMMT
 <td style="width: 33.3333%; height: 24px;">10:00 am CST to 11:00 am CST</td>
 </tr>
 <tr style="height: 24px;">
-<td style="width: 33.3333%; height: 24px;">March 28, 2019</td>
+<td style="width: 33.3333%; height: 24px;">**March 22, 2019 (changed from March 28th)</td>
 <td style="width: 33.3333%; height: 24px;">Machine Learning Workshop</td>
 <td style="width: 33.3333%; height: 24px;">10:00 am CST to 12:00 am CST</td>
 </tr>
