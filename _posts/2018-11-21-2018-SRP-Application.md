@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LBRN Summer Research Program Application 2019
-categories: featured
+categories: news
 featuredImageUrl: "images/postImages/2019-SRP-post.png"
 featuredImageUrlSquare: "images/postImages/2019-SRP-post.png"
 excerpt_separator: <!--more-->

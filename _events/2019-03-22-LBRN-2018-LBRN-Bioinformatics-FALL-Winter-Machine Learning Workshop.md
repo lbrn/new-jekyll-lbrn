@@ -2,7 +2,7 @@
 layout: post
 title: LBRN/CCT Pine BioTech Fall/Winter Machine Learning Workshop
 categories: events
-eventDate: March 8, 2019
+eventDate: March 22, 2019
 startTime: 10:00am
 endTime: 12:00pm
 textOnUrl: LBRN Pine Biotech Fall/Winter Machine Learning Workshop
