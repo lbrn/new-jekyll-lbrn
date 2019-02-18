@@ -1,17 +1,9 @@
 {% for seminars in site.data.seminars %}
-<article class="seminar-speaker">
+<section>
+	<i class="fa fa-lg fa-calendar"></i><p>{{seminars.date}}, {{seminars.time}}</p>
   <img src="{{seminars.img}}" alt="{{seminars.name}}">
   <h3>{{seminars.name}}</h3>
   <h4>{{seminars.title}}</h4>
   <p>{{seminars.university}}</p>
-  <div>
-    <i class="fa fa-lg fa-calendar"></i><p>{{seminars.date}}</p>
-  </div>
-  <div>
-    <i class="fa fa-lg fa-clock-o"></i><p>{{seminars.time}}</p>
-  </div>
-  <!-- <div>
-    <i class="fa fa-lg fa-map-pin"></i><p>{{seminars.location}}</p>
-  </div> -->
-</article>
+</section>
 {% endfor %}

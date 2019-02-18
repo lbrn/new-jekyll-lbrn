@@ -689,7 +689,7 @@
       }
     }
   }
-  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
     position: relative;
     margin-bottom: 1.2em;
     h2{
@@ -1363,7 +1363,7 @@
   #matchHeight{
     @include span(9);
   }
-  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
     @include span(full);
     overflow: hidden;
     h2{

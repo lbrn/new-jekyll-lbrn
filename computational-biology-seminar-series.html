@@ -1,19 +1,20 @@
 ---
-layout: lbrn-event
+layout: lbrn-seminar
 title: LSU Computational Biology Seminar Series
 headerImage: images/comp-bio-event.jpg
 eventDate: see our <a class="natural-link" href="upcoming-events.html">Upcoming Events Page</a>
-eventTime: various; see <a class="natural-link" href="#eventParticipants">speakers</a> section
-eventLocation: <a target="_blank" href="https://goo.gl/maps/MM7z3du7qME2">Life Sciences Building Annex A101</a>
-eventDeadlines: various, see
+eventLocation: <a target="_blank" href="https://goo.gl/maps/a8aeZViC6un">LSU Digital Media Center</a>
+eventAddress: <a target="_blank" href="https://goo.gl/maps/a8aeZViC6un">340 E Parker Blvd, Baton Rouge, LA 70803</a>
 ---
 <aside id="lbrnEventSidebar">
   <ul id="lbrnEventSidebarUl">
-    <li class="active"><a href="#eventSummary">about</a></li>
-    <li><a href="#eventWhenAndWhere">when and where</a></li>
-    <li><a href="#eventParticipants">speakers</a></li>
+    <li class="active"><a href="#eventSummary">About</a></li>
+    <li><a href="#eventWhenAndWhere">When and Where</a></li>
+    <li><a href="#eventParticipants">Current Speakers</a></li>
+    <li><a href="#eventPastParticipants">Past Speakers</a></li>
   </ul>
 </aside>
+
 <div id="matchHeight">
   <section id="eventSummary">
     <i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
@@ -29,28 +30,44 @@ eventDeadlines: various, see
         <li>Encourages students in computational disciplines to consider careers in biological research.</li>
       </ul>
   </section>
+
   <section id="eventWhenAndWhere">
     <i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
     <h2 class="event-section-head">When &amp; Where</h2>
     <div class="collapse">
-      <h3>Address</h3>
+      <h3>Location</h3>
       <section>
-        <a target="_blank" href="https://goo.gl/maps/MM7z3du7qME2">
-          <i class="map-icon fa fa-5x fa-fw fa-map-marker" aria-hidden="true"></i>
-          <h4 class="map-address">386 S Campus Dr, Baton Rouge, LA 70802</h4>
+     <p> Talks are being held at the LSU Digital Media Center, at the Center for Computation and Technology
+      <a target="_blank" href="https://goo.gl/maps/a8aeZViC6un">LSU Digital Media Center</a></p>
+      <h3>Address:</h3>
+      <a target="_blank" href="https://goo.gl/maps/MM7z3du7qME2">
+          <p><i class="map-icon fa fa-5x fa-fw fa-map-marker" aria-hidden="true"></i>
+          <h4 class="map-address"><a target="_blank" href="https://goo.gl/maps/a8aeZViC6un">340 E Parker Blvd, Baton Rouge, LA 70803</a></h4></p>
         </a>
       </section>
-      <p style="clear: both"></p>
-      <!-- <h3>Directions and parking</h3>
-      <a href="https://goo.gl/maps/UqKZePvqqEH2"><p>Parking will be marked and available just outside annex.</p></a> -->
     </div>
   </section>
-  <section id="eventParticipants">
+  
+   <section id="eventParticipants">
     <i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
-    <h2 class="event-section-head">Speakers</h2>
+    <h2 class="event-section-head">Current Seminar Series Speakers</h2>
     <div class="collapse">
-      {% include seminars.html %}
+      <article id="speakers">
+       {% include CBSS-2019.html %}
+      </article>
     </div>
   </section>
+  
+     <section id="eventPastParticipants">
+    <i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
+    <h2 class="event-section-head">Past Seminar Series Speakers</h2>
+    <div class="collapse">
+      <article id="speakers">
+       {% include CBSS-2018.html %}
+      </article>
+    </div>
+  </section>
+
+
 
 </div>
