@@ -1,13 +1,19 @@
 - name: Dr. April Wright
-  date: February 28&#44; 2019
-  time: 4&colon;30 PM
+  date: February 27&#44; 2019
+  time: 4&colon;30 PM, DMC Theater
   university: Southeastern Louisiana University, Faculty
   title: Estimating phylogenetic trees from discrete morphological data- Modeling evolution to understand the past 
   img: images/seminar-speakers/wright.jpg
+  abstract: "Deep learning is an exciting new technology that powers things like self-driving cars and voice assistants.  The success of deep learning methods comes from that fact that they are exceptionally powerful at pattern recognition. These methods are starting to catch on in biology too, especially in genomics where we often want to detect patterns in DNA sequences.  In this talk I first provide a primer on deep learning methods.  The goal of this primer will be to give you a gentle introduction to how deep learning models are built and trained.  Then I will present some recent examples where colleagues and I used deep learning to make inferences in population genetics."
+  bio: "I am an adjunct professor in the Plant and Microbial Biology Department at the University of Minnesota. I am also a research scientist at Bayer Crop Sciences. At Bayer my work is focused on developing new methods to accelerate crop breeding, and in my faculty role I work on problems in deep learning and population genetics.  In both cases I use genomic technologies to create large amounts of data, and computational and statistical approaches to gain insights."
 
 - name: Dr. Lex Flagel
   date: April 8&#44; 2019
-  time: 4&colon;00 PM
+  time: 4&colon;30 PM, DMC Rm 1034
   university: University of Minnesota, Adjunct Professor, Department of Plant and Microbial Biology and Bayer Crop Sciences, Research Scientist
   title: An introduction to deep learning and its applications in evolutionary biology
   img: images/seminar-speakers/flagel.png
+  abstract: "Phylogenetic trees display the relationships between organisms, and if scaled to absolute time, can tell a reader how long lineages have been evolving independently of one another. These trees are crucial components of comparative biological studies, and are used in analyses of organismal function, ecology, and evolution. Comparative studies of organismal and population biology often require the use of phylogenies that have been scaled to absolute time. The most important source of information to perform this scaling is the fossil record. However, most phylogenetic trees are built with DNA sequence data, whereas most fossils are known from morphological data, such as the presence or absence of a skeletal feature in a group of organisms. 
+
+As fossils comprise our only direct observations of biodiversity, incorporating them into phylogenetic studies is imperative. In recent years, there have been many advances in how researchers understand the evolution of morphological traits, and how fossils can be included in phylogenetic analyses. In this talk, we will discuss models of morphological evolution, and what assumptions those models make about how morphological characters evolve. We will also discuss divergence time estimation, and how mechanistic models of diversification and fossil sampling can be used to incorporate morphological data into inference of dated phylogenies."
+  bio: "April Wright has been faculty at Southeastern Louisiana University since fall of 2017. Prior to this, she was a National Science Foundation Natural History Collections Postdoctoral Fellow with Drs. Tracy Heath (Iowa State University) and Corrie Moreau (The Field Museum). Her main research interest has always been the incorporation of fossil information into phylogenetic inference, though she also works on phylogenetic comparative methods, and use of phylogenetic trees to answer questions about evolution. When Dr. Wright is in the classroom, she enjoys teaching computational biology, evolution and systematics. Outside of work, Dr. Wright enjoys reading science fiction, running, and playing with her children and dogs."
