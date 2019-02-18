@@ -88,12 +88,12 @@ link: https://redcap.lbrn.lsu.edu/surveys/?s=HLK4LJYMMT
 <tr style="height: 24px;">
 <td style="width: 33.3333%; height: 24px;">**March 22, 2019 (changed from March 28th)</td>
 <td style="width: 33.3333%; height: 24px;">Machine Learning Workshop</td>
-<td style="width: 33.3333%; height: 24px;">10:00 am CST to 12:00 am CST</td>
+<td style="width: 33.3333%; height: 24px;">10:00 am CST to 12:00 pm CST</td>
 </tr>
 <tr style="height: 24px;">
 <td style="width: 33.3333%; height: 24px;">April 5-6, 2019</td>
 <td style="width: 33.3333%; height: 24px;">Bioinformatics Conference</td>
-<td style="width: 33.3333%; height: 24px;">TBA</td>
+<td style="width: 33.3333%; height: 24px;"><a href="https://lbrn.lsu.edu/conference-on-biology-and-bioinformatics.html">Conference Website for Registration and Participation</a></td>
 </tr>
 </tbody>
 </table>
