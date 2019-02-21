@@ -36,17 +36,12 @@
       <section id="lbrnEventHeader">
         <div class="imagebox">
           <img src="{{page.headerImage}}" alt="{{page.title}}">
-          <section id="quickReference">
-            <div><i class="fa fa-lg fa-info-circle"></i></div>
-            <p class="bold date"><i class="fa fa-lg fa-calendar"></i>  {{page.eventDate}}</p>
-            <p class="bold time"><i class="fa fa-lg fa-clock-o"></i>  {{page.eventTime}}</p>
-            <p class="bold location natural-link"><i class="fa fa-lg fa-map-pin"></i>  {{page.eventLocation}}</p>
-            <p class="bold deadlines"><i class="fa fa-lg fa-hourglass-half"></i>  {{page.eventDeadlines}}</p>
-          </section>
+         
         </div>
         <div class="caption">
           <h1>{{page.title}}</h1>
-          <p id="date">{{page.eventDate}}</p>
+          <p id="date">Event Date: {{page.eventDate}}</p>
+          <p>Location: {{page.eventLocation}}</p>
         </div>
       </section>
       <div class="content">
