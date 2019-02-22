@@ -332,6 +332,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     padding-left: 2.8em;
     display: none; }
+main div.content #speakerfaq p {
+    margin-top: .25em;
+    cursor: pointer; }
+  main div.content #speakerfaq p:hover {
+    color: #425ca2; }
+  main div.content #speakerfaq ul {
+    margin-left: 0;
+    padding-left: 2.8em;
+    display: none; }
+  
   main div.content .important {
     font-style: italic;
     background-color: #def0df;

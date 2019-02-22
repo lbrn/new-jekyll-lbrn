@@ -3,11 +3,17 @@
 <a href="{{speakers.aboutlink}}">
     <img src="{{speakers.img}}" alt="{{speakers.name}}">
   </a>
-  <p>{{speakers.date}}, {{speakers.time}}</p>
+  <p>{{speakers.date}}</p>
   <br>
-  <h3>{{speakers.name}}</h3>
-  <p>{{speakers.university}}<p>
+  <p>{{speakers.name}}</p>
+  <p>{{speakers.university}}</p>
   <p>{{speakers.title}}</p>
+  <div id="speakerfaq">
+  	<p>Abstract:
+  	<ul>{{speakers.abstract}}</ul></p>
+  	<p>Bio:</p>
+  	<ul>{{speakers.bio}}</ul>
+  </div>
 </section>
 <hr>
 {% endfor %}

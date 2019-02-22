@@ -1,9 +1,18 @@
 - name: Emily Jane McTavish
   date: February 21&#44; 2017
   time: 5&colon;00 PM
-  university: University of California, Merced
+  university: University of California, Merced, Assistant Professor, Life and Environmental Sciences
   title: Interrogating&#44; calibrating&#44; and integrating phylogenetic estimates
   img: images/seminar-speakers/mctavish.png
+  abstract: "In order to answer biological questions about organisms it is necessary to understand their evolutionary history. Recent technological developments are have made it possible to generate sequence data rapidly and inexpensively. These data are providing new opportunities for phylogenetic inference, but are also creating new computational challenges. I will present on-going work in addressing these challenges in three areas- Using phylogenetically explicit simulations of genomic read data to assess the effects of choices in variant-calling procedures on inference, Rapidly estimating posterior probabilities for time calibrated phylogenies with hundreds or thousands of tips, and Extending the Open Tree of Life using a git-based approach to data curation. Together, these developments reduce impediments to accessing and analyzing the phylogenetic information which is essential to biological research today."
+  bio: "Education - University of Texas, Austin, Texas, USA
+Ph.D, Ecology, Evolution and Behavior May 2013
+McGill University, Montreal, Quebec, Canada BS, Honours Biology April 2006
+
+Professional Appointments-
+University of California, Merced, Merced, CA, USA; Assistant Professor, Life and Environmental Sciences
+University of Kansas, Lawrence, Kansas, USA; Postdoctoral researcher, Open Tree of Life Project, Department of Ecology and Evolutionary Biology
+Heidelberg Institute for Theoretical Studies, Heidelberg, Germany; Humboldt Research Fellow, Scientific Computing Group"
 
 - name: Christopher M. Taylor
   date: March 29&#44; 2017
