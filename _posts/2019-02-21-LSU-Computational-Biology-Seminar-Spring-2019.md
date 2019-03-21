@@ -2,8 +2,8 @@
 layout: post
 title: LSU Computational Biology Seminar Series Spring 2019
 categories: news
-featuredImageUrl: images/postImages/placeholderNewsImage.png
-featuredImageUrlSquare: images/postImages/placeholderNewsImage.png
+featuredImageUrl: images/postImages/SeminarSeriesThumbnail.png
+featuredImageUrlSquare: images/postImages/SeminarSeriesThumbnail.png
 excerpt_separator: <!--more-->
 eventDate: February 27, 2019, April 8, 2019
 textOnUrl: LSU Computational Biology Seminar Series Spring 2019
