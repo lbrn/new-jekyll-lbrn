@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: 7th Annual LA Conference on Computational Biology and Bioinformatics, April 5-6, 2019
-categories: featured
+categories: news
 featuredImageUrl: images/2019-7thannual_ccbb-2019-02-26.png
 featuredImageUrlSquare: images/2019-7thannual_ccbb-2019-02-26.png
 excerpt_separator: <!--more-->

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Health Disparities Conference
-categories: news
+categories: featured
 featuredImageUrl: images/HDflyer.horiz.jpg
 featuredImageUrlSquare: images/HDflyer.vert.jpg
 excerpt_separator: <!--more-->
