@@ -207,7 +207,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   nav li a.button {
     border: 2px solid #2C3D6C;
     border-radius: 25px;
-    color: white;
+    /* color: white; */
+    /* color: red; */
     padding: .2em .7em;
     margin: .955em 0;
     font-size: .8em;
@@ -224,6 +225,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: #b1dbb3;
     color: #2C3D6C; }
   nav li a {
+    /* color: red; */
     color: white;
     text-decoration: none;
     padding: 1em 0;
@@ -704,7 +706,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0;
-    /* background-color: #c2e3c4; */
+    background-color: #c2e3c4;
     /* text-align: left; */
     text-align: center;
     text-transform: capitalize;
@@ -1036,8 +1038,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         /* border: 1px solid red;/* cust */
     margin: 5% auto;
     float: left;
-    padding-left: 5%;
+    /* padding-left: 5%; */
+    /* padding: 5%; */
+    margin-left: 5%;
     width: 50%;
+      border-radius: 6px;
 /* CUSTOMIZE COLLUMNS IN RESEARCH HERE */
   }
 div.research img{
@@ -1285,7 +1290,7 @@ div.research img{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    max-width: 90%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
     position: relative; }
@@ -1318,7 +1323,7 @@ div.research img{
     margin-right: .5em;
     padding: 0;
     font-family: "Ubuntu", sans-serif;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     border: none;
     color: white; }
   nav li.right {
@@ -1493,6 +1498,7 @@ div.research img{
   .three-card-responsive .strip, .two-card-responsive .strip, .four-card-responsive .strip {
     min-height: unset;
     margin: 0; }
+
   .three-card-responsive .strip:hover, .two-card-responsive .strip:hover, .four-card-responsive .strip:hover {
     background-color: none; }
   .three-card-responsive section, .two-card-responsive section, .four-card-responsive section {
@@ -1624,7 +1630,8 @@ div.research img{
     padding: 0 15%; }
   #lbrnEventSidebar ul li div.chooseType p {
     margin-top: 0;
-    text-align: center; }
+    text-align: center;
+  }
   #lbrnEventSidebar ul li div.chooseType input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1698,16 +1705,18 @@ div.research img{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 31.42857%;
+    width: 28.42857%;
     float: left;
     margin-right: 2.85714%; }
   .three-card-responsive section:nth-child(2n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 31.42857%;
+    width: 28.42857%;
     float: left;
-    margin-right: 2.85714%; }
+    margin-right: 2.85714%;
+    margin-left: 2.85714%;
+  }
   .three-card-responsive section:nth-child(3n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1777,7 +1786,7 @@ div.research img{
     font-weight: bold;
     line-height: 3; } }
 @media (min-width: 1224px) {
-  .layout {
+  /* .layout {
     margin: 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1785,7 +1794,16 @@ div.research img{
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0; }
+    padding: 0; } */
+    .layout {
+      margin: 0;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      max-width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0; }
   .layout:after {
     content: " ";
     display: block;
@@ -1806,7 +1824,9 @@ div.research img{
     box-sizing: border-box;
     max-width: 85%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    color:red;
+  }
   header .layout:after {
     content: " ";
     display: block;
@@ -1849,7 +1869,8 @@ div.research img{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    max-width: 50%;
+    max-width: 60%;
+    /* sized of content */
     margin-left: auto;
     margin-right: auto; }
   .layout:after {
@@ -2145,3 +2166,19 @@ div.resources h2 {
 .more{
   border-radius: 6px;
 }
+/* cust strip code */
+.strip section img{
+  max-width: 90%;
+  width: 90%;
+  min-height: unset;
+  float: none;
+}
+.strip section{
+  border: 1px solid red;
+  width: 31.42857%;
+}
+
+/* .layoutwider{
+  max-width: 80%;
+} */
+/* put this after the .three/four etc cards so that it applies afterwards */
