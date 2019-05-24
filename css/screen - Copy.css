@@ -640,8 +640,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 2%;
-    /* padding-bottom: 2em;  */
-  }
+    padding-bottom: 2em; }
   .three-card-responsive section,  .two-card-responsive section,  .four-card-responsive section {
     border-radius: 6px;
     background-color: #e5f3e6;
@@ -1498,10 +1497,7 @@ div.research img{
     margin-right: 5%; }
   .three-card-responsive .strip, .two-card-responsive .strip, .four-card-responsive .strip {
     min-height: unset;
-    margin-right: 2.85714%;
-    padding-bottom: unset;
-    /* margin: 0;  */
-  }
+    margin: 0; }
 
   .three-card-responsive .strip:hover, .two-card-responsive .strip:hover, .four-card-responsive .strip:hover {
     background-color: none; }
@@ -1509,7 +1505,7 @@ div.research img{
     margin-left: 0;
     margin-right: 0;
     min-height: 33em;
-    /* padding-bottom: 2em; */
+    padding-bottom: 2em;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1709,44 +1705,25 @@ div.research img{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 26.42857%;
+    width: 28.42857%;
     float: left;
-    /* margin-right: 2.85714%;  */
-      margin-right: 5.71428%;
-  }
+    margin-right: 2.85714%; }
   .three-card-responsive section:nth-child(2n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 26.42857%;
+    width: 28.42857%;
     float: left;
-    /* margin-right: 2.85714%; */
-    /* margin-left: 2.85714%; */
-          margin-right: 5.71428%;
+    margin-right: 2.85714%;
+    margin-left: 2.85714%;
   }
-  /* .three-card-responsive section:nth-child(3n) {
+  .three-card-responsive section:nth-child(3n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 31.42857%;
-   float: right;
-    margin-right: 0;
-      margin-right: 2.85714%;
-  } */
-
-    .three-card-responsive .strip:nth-child(2n){
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 30.42857%;
-      float: left;
-      /* margin-right: 5.71428%; */
-      margin-right: 2.85714%;
-      /* margin-left: 2.85714%; */
-       min-height: unset;
-      /* margin: 0; */
-      /* custom center strip */
-    }
+    float: right;
+    margin-right: 0; }
 
   .four-card-responsive {
     -moz-box-sizing: border-box;
@@ -2197,12 +2174,11 @@ div.resources h2 {
   float: none;
 }
 .strip section{
-  /* border: 1px solid red; */
-  width: 30.42857%;
-
+  border: 1px solid red;
+  width: 31.42857%;
 }
 
-.layoutwider{
+/* .layoutwider{
   max-width: 80%;
-}
+} */
 /* put this after the .three/four etc cards so that it applies afterwards */
