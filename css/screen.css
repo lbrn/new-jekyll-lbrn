@@ -682,6 +682,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     /* commented out for two card responsive stuff */
     font-family: "Open Sans Condensed", sans-serif !important; }
   .three-card-responsive section p, /* .two-card-responsive section p, */ .four-card-responsive section p {
+
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -690,6 +691,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 3.44828%;
     font-size: 0.8em;
     margin-left: 3.44828%;
+    /* color: red; */
+
     /* custom text size paragraph */
         /* border: 1px solid red !important;/* cust */
     margin-top: 0.25em !important;
@@ -698,7 +701,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-family: "Ubuntu", sans-serif;
     line-height: 1.25em;
     hyphens: auto;
-    -webkit-hyphens: auto; }
+    -webkit-hyphens: auto;
+  }
   .three-card-responsive section p.more,/* .two-card-responsive section p.more, */ .four-card-responsive section p.more {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1023,6 +1027,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   div.resources section, div.research section {
     background-color: unset;
+    -moz-transition:background-color .2s ease-in;
+    -o-transition:background-color .2s ease-in;
+    -webkit-transition:background-color .2x ease-in;
+    /* background-color */
     /* Background color for green*/
   }
   div.resources section:hover, div.research section:hover {
@@ -2188,6 +2196,8 @@ div.resources h2 {
 }
 .more{
   border-radius: 6px;
+  padding:2.5%;
+  margin-top:unset !important;
 }
 /* cust strip code */
 .strip section img{
@@ -2202,7 +2212,106 @@ div.resources h2 {
 
 }
 
+.h2teststyle{
+  font-size: 0.95em;
+  line-height: 1.2em !important;
+  text-transform: none !important;
+  clear: both;
+  padding: 5%;
+  color: #2C3D6C;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+line-height: 1.25em;
+hyphens: auto;
+}
+
+.boldtest{
+    font-size: 1.5em;
+    color: #2C3D6C;
+    margin-top: 0 !important;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2em ;
+    text-transform: none ;
+    clear: both;
+    padding: .5em;
+    vertical-align: baseline;
+    border: 0;
+    margin:0;
+    font-family: "Open Sans Condensed", sans-serif !important;
+}
+
+.greentest{
+  text-decoration: none;
+color: #8ECB91;
+margin: 0;
+padding: 0;
+border: 0;
+font: inherit;
+    font-size: inherit;
+font-size: 100%;
+vertical-align: baseline;
+list-style: square;
+}
+
+.paratest{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 95%;
+  float: left;
+  margin-right: 3.44828%;
+  font-size: 0.8em;
+  margin-left: 3.44828%;
+
+  margin-top: 0.25em !important;
+  padding: 2.5%;
+  color: #2C3D6C !important;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.25em;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
 .layoutwider{
   max-width: 80%;
+}
+
+.viewmore{
+  /* margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-decoration: none;
+color: #8ECB91;
+border: 0;
+font: inherit;
+    font-size: inherit;
+font-size: 100%;
+vertical-align: baseline; */
+
+box-sizing: border-box;
+width: 100%;
+float: left;
+margin-left: 0;
+margin-right: 0;
+background-color: #c2e3c4;
+text-align: center;
+text-transform: capitalize;
+padding-top: .5em;
+padding-bottom: .5em;
+position: absolute;
+bottom: 0;
+font-size: 0.8em;
+/* margin-top: unset !important; */
+/* padding: 2.5%; */
+    /* padding-top: 2.5%; */
+    /* padding-bottom: 2.5%; */
+    padding: 0;
+color: #2C3D6C;
+font-family: "Ubuntu", sans-serif;
+line-height: 1.25em;
+hyphens: auto;
+border-radius: 6px;
+font-weight: 400;
 }
 /* put this after the .three/four etc cards so that it applies afterwards */
