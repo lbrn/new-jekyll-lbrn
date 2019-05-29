@@ -2315,3 +2315,10 @@ border-radius: 6px;
 font-weight: 400;
 }
 /* put this after the .three/four etc cards so that it applies afterwards */
+
+.vid{
+  height: 6em;
+  width: 90%;
+  padding: 5%;
+  padding-top: 10%;
+}
