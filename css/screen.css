@@ -672,6 +672,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%; }
   .three-card-responsive section h2,  .two-card-responsive section h2, .four-card-responsive section h2 {
     /* font-size: 1.0em !important; */
+    /* margin-top: unset; */
     font-size: 1.0em;
     line-height: 1.2em !important;
     text-transform: none !important;
@@ -2234,7 +2235,7 @@ hyphens: auto;
     line-height: 1.2em ;
     text-transform: none ;
     clear: both;
-    padding: .5em;
+    padding: 1.5%;
     vertical-align: baseline;
     border: 0;
     margin:0;
@@ -2260,12 +2261,13 @@ list-style: square;
   box-sizing: border-box;
   width: 95%;
   float: left;
-  margin-right: 3.44828%;
+  /* margin-right: 3.44828%; */
   font-size: 0.8em;
-  margin-left: 3.44828%;
+  /* margin-left: 3.44828%; */
 
-  margin-top: 0.25em !important;
-  padding: 2.5%;
+  margin-top: unset !important;
+  /* padding: 2.5%; */
+  padding: 1.5%;
   color: #2C3D6C !important;
   font-family: "Ubuntu", sans-serif;
   line-height: 1.25em;
@@ -2321,4 +2323,36 @@ font-weight: 400;
   width: 90%;
   padding: 5%;
   padding-top: 10%;
+  padding-bottom: unset;
+}
+.vidsection{
+  /* height: 10em; */
+  background-color: #e5f3e6;
+  border-radius: 6px;
+  display: block;
+  overflow:hidden;
+  /* margin: 5%; */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.vidhori{
+  /* height: 6em; */
+  width: 25%;
+  padding: 2.5%;
+  /* padding-top: 5%; */
+  /* padding-bottom: unset; */
+/* display:block; */
+float:left;
+border-radius: 6px;
+}
+.vidtext{
+  display: inline-block;
+  /* float:right; */
+  /* border: 1px red solid; */
+  /* width: 100%; */
+  width: 70%;
+  margin-top: 1.5%;
+}
+.videoblocks{
+  min-height: unset;
 }
