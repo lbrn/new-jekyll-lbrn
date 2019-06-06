@@ -17,7 +17,7 @@ ol, ul {
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 8; }
 
 caption, th, td {
   text-align: left;
@@ -75,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #425ca2; }
 
   table {
-    font-size: 12px !important;
+    font-size: 18px !important;
     font-family: "Open Sans", sans-serif; }
 
   div.frame {

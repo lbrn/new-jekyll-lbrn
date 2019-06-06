@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: 2nd LBRN-LONI Scientific Computing Bootcamp
-categories: featured
+categories: news
 featuredImageUrl: images/2019_LBRN_LONI_Scientific_Computing_Bootcamp_Flyer.png
 featuredImageUrlSquare: images/2019_LBRN_LONI_Scientific_Computing_Bootcamp_Flyer.png
 excerpt_separator: <!--more-->
