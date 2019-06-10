@@ -60,7 +60,13 @@ The entire summer program will be delivered remotely including all sessions and 
 
 ### Registration deadline: June 24, 2019
 
-#### Registration: <a href="https://redcap.lbrn.lsu.edu/surveys/?s=KKFPYDY33F">Program Registration Click Here</a>
+ <section id="eventRegistration">
+    <i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
+    <h2 class="event-section-head">Registration</h2>
+    <div class= "collapse">
+     <a href="https://redcap.lbrn.lsu.edu/surveys/?s=KKFPYDY33F">Program Registration Click Here</a>
+    </div>
+  </section>
 
 For more information, please contact: <A HREF="mailto:ramji@lsu.edu">ramji@lsu.edu</A>
 
