@@ -30,8 +30,9 @@ $( document ).ready(function() {
       $('#navBug').attr("src", "images/menuClosed.png")
     }
     else {$('nav').css('display','none')}
-    contentHeight = $('#matchHeight').css('height');
-    $('#lbrnEventSidebar').css('height', contentHeight);
+    // contentHeight = $('#matchHeight').css('height');
+    // $('#lbrnEventSidebar').css('height', contentHeight);
+    // height issue 2
   });
   //collapsable sections
   $('.collapse').siblings('h3, h2, i').click(function() {
@@ -44,10 +45,11 @@ $( document ).ready(function() {
       $(this).siblings('.collapseTrigger').toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
     }
   });
-  $(window).scroll(function() {
-    contentHeight = $('#matchHeight').css('height');
-    $('#lbrnEventSidebar').css('height', contentHeight);
-  });
+  // $(window).scroll(function() {
+  //   contentHeight = $('#matchHeight').css('height');
+  //   $('#lbrnEventSidebar').css('height', contentHeight);
+  // });
+  // Height issue source
 });
 
 //F U N C T I O N S//
@@ -104,6 +106,12 @@ function piFilter(){
   var shares = $('article[data-ptype="SharedInstrumentProject"]');
   var pilots = $('article[data-ptype="PilotProject"]');
 
+  var te = $('article[data-ptype="TestElement"]');
+  var oe1 = $('article[data-ptype="Old Section 1"]');
+  var oe2 = $('article[data-ptype="Old Section 2"]');
+  var oe3 = $('article[data-ptype="Old Section 3"]');
+
+
   $("#pi-fp").click(function(){
     $(this).toggleClass('on');
     fulls.slideToggle('fast');
@@ -119,6 +127,27 @@ function piFilter(){
   $("#pi-pp").click(function(){
     $(this).toggleClass('on');
     pilots.slideToggle('fast');
+  });
+  $("#pi-te").click(function(){
+    $(this).toggleClass('on');
+    te.slideToggle('fast');
+        console.log('dog');
+  });
+
+  $("#pi-os1").click(function(){
+    $(this).toggleClass('on');
+    oe1.slideToggle('fast');
+        console.log('dog');
+  });
+  $("#pi-os2").click(function(){
+    $(this).toggleClass('on');
+    oe2.slideToggle('fast');
+        console.log('dog');
+  });
+  $("#pi-os3").click(function(){
+    $(this).toggleClass('on');
+    oe3.slideToggle('fast');
+        console.log('dog');
   });
 }
 // FOR THE SLIDER

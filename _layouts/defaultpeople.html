@@ -3,17 +3,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>LBRN Home</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>{{page.title}}</title>
     <link rel="stylesheet" href="css/screen.css">
-    <link rel="stylesheet" href="css/slider.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Louisiana Biomedical Research Network" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://lbrn.lsu.edu/" />
-	<meta property="og:image" content="https://lbrn.lsu.edu/images/placeholderNewsImage.png" />
-	<meta property="og:image:alt" content="Louisiana Biomedical Research Network Square Logo Image depicting a high resoulution microscope, DNA helix, and image of the state of Louisiana with LBRN initials underneath." />
-      {% include consent.html %}
   </head>
   <body>
     <header>
@@ -38,46 +31,34 @@
             <a target="_blank" href="https://twitter.com/lbrn_inbre" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
             <a target="_blank" href="https://www.youtube.com/user/LBRNINBRE/videos" aria-label="Youtube"><i class="fa fa-youtube-square"></i></a>
         </li>
+      </ul>
     </nav>
-    <div class="layout">
-      <!--REPLACE SLIDER-->
-      <section class="slider">
-        {% include slider.html %}
-      </section>
-      <aside class="events">
-        <h2>EVENTS</h2>
-          <!--Start of EVENT ITEM-->
-          {% assign eventsR = site.events %}
-          {% for event in eventsR limit:2 %}
-            {% include events-list-item.html %}
-          {% endfor %}
 
-            <a class="view-all" href="upcoming-events.html">View all events</a>
-      </aside>
-      <section class="news" id="newsContainer">
-        <h2>NEWS</h2>
-        {% for post in site.categories.featured %}
-          {% include news-list-item-featured.html %}
-        {% endfor %}
-        {% for post in site.categories.news limit:4 %}
-          {% include news-list-item.html %}
-        {% endfor %}
-        <!--End of NEWS ITEM-->
-        <article class="view-all">
-          <a class="view-all" href="news.html">News Archives</a>
-        </article>
-      </section>
-      <aside class="events">
-        <h2>PLACEHOLDER</h2>
-          <!--Start of EVENT ITEM-->
-          {% assign eventsR = site.events %}
-          {% for event in eventsR limit:2 %}
-            {% include events-list-item.html %}
-          {% endfor %}
+    <aside id="lbrnEventSidebar">
+      <ul>
+        <div id="lbrnEventSidebarUl">
+          <li class="active"><a href="#lbrnAdminCore">Admin Core</a></li>
+          <li><a href="#lbrnBbcCore">BBC Core</a></li>
+          <li><a href="#lbrnMcbrCore">MCBR Core</a></li>
+          <li><a href="#currentlyFunded">Currently Funded PIs</a></li>
+          <li><a href="#previouslyFunded">Previously Funded PIs</a></li>
+          <li><a href="#partnerInstitutes">Partner Institutes</a></li>
+          <li><a href="#LbrnEAC">LBRN EAC</a></li>
+          <li><a href="#LbrnSteering">LBRN Steering Committee</a></li>
+          <li><a href="#">top</a></li>
+        </div>
+        <!-- <li><a href="#">top</a></li> -->
+      </ul>
+    </aside>
 
-            <a class="view-all" href="upcoming-events.html">View all events</a>
-      </aside>
-    </div>
+    <section class="page-heading layout">
+      <h1>{{page.title}}</h1>
+    </section>
+    <main class="layout">
+      <div class="content">
+        {{content}}
+      </div>
+    </main>
     <footer>
       <div class="layout">
         <p>
@@ -86,13 +67,12 @@
           <a href="https://www.lsu.edu/accessibility" class="bold">Accessibility Statement</a>
         </p>
         <p>Support from the National Institute of Health through the National institute of General Medical Science Grant
-          <span>5&nbsp;P2O&nbsp;GM103424-17</span> is gratefully acknowledged..</p>
+          <span>5&nbsp;P2O&nbsp;GM103424-17</span> is gratefully acknowledged.</p>
       </div>
-
-
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scrollMenu.js"></script>
     {% include google-analytics.html %}
   </body>
 </html>

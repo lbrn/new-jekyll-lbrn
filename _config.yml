@@ -21,7 +21,9 @@ github_username: johnqlsu
 
 collections:
   project_investigators:
-    output: true
+    output:
+  old_pi:
+    output:
   events:
 # Build settings
 markdown: kramdown
