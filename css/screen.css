@@ -1171,7 +1171,7 @@ div.research img{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 70%;
+    width: 65%;
     float: right;
     margin-right: 0;
     border: none;
@@ -1184,10 +1184,10 @@ div.research img{
     }
   section.directory h4 {
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 0.8em !important;
     padding-bottom: .2em; }
   section.directory h5 {
-    font-size: 0.8em; }
+    font-size: 0.7em; }
   section.directory h6 {
     font-size: 0.6em; }
   section.directory ul li {
@@ -1221,24 +1221,27 @@ div.research img{
     overflow: hidden;
     margin-left: 0; }
   nav#pi-filter ul li {
-    font-size: 1rem;
+    font-size: 0.85rem;
     float: left;
     display: block;
-    padding: .5em;
+    padding: .25em;
     margin: 0 .2em;
     color: #8ECB91;
     border-radius: 5px;
     border: 1px solid #8ECB91;
     transition: all .1s; }
   nav#pi-filter ul li:hover {
-    background-color: #6bbb6f;
+    /* background-color: #6bbb6f; */
+    background-color: #8ECB91;
     color: white;
     cursor: pointer; }
   nav#pi-filter ul li:active {
     background-color: #4da651; }
   nav#pi-filter ul .on {
     background-color: #8ECB91;
-    color: white; }
+    color: white;
+    /* color:#2C3D6C; */
+  }
   nav#pi-filter ul .on:hover {
     background-color: #6bbb6f; }
   nav#pi-filter ul .on:active {
@@ -2611,9 +2614,27 @@ font-size: 0.8em;
     -moz-transition:all .2s ease-in;
     -o-transition:all .2s ease-in;
     -webkit-transition:all .2x ease-in;
-    color: red;
+    /* color: red; */
+    color: white;
     background-color: #e5f3e6;
     border-radius: 6px;
+}
+
+.Twitterf{
+  /* position: static;
+    visibility: visible;
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+    border: medium none;
+    max-width: 100%;
+    min-width: 180px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 200px;
+    height: 6238px; */
+    margin: 10%;
+
 }
 
 /* #lbrnEventSidebar2 .active {
