@@ -109,7 +109,7 @@ function piFilter(){
   var te = $('article[data-ptype="TestElement"]');
   var oe1 = $('article[data-ptype="Old Section 1"]');
   var oe2 = $('article[data-ptype="Old Section 2"]');
-  var oe3 = $('article[data-ptype="Old Section 3"]');
+  var oe3 = document.getElementsByClassName('butest'), i;
 
 
   $("#pi-fp").click(function(){
@@ -145,9 +145,22 @@ function piFilter(){
         console.log('dog');
   });
   $("#pi-os3").click(function(){
-    $(this).toggleClass('on');
-    oe3.slideToggle('fast');
-        console.log('dog');
+    for(var i=0; i < oe3.length; i++)
+        {
+        // oe3[i].style.display ='none';
+          if (oe3[i].style.display == "none")
+            {
+              oe3[i].style.display = "block";
+            }
+            else
+            {
+              oe3[i].style.display = "none";
+            }
+        }
+
+    // $(this).toggleClass('on');
+    // oe3.slideToggle('fast');
+        // console.log('dog');
   });
 }
 // FOR THE SLIDER

@@ -44,11 +44,12 @@ title: People
     <li class="on" id="pi-sip">Shared Instrument Project</li>
     <li class="on" id="pi-pp">Pilot Project</li>
     <li class="on" id="pi-te"> Test Element</li>
+    <li class="on" id="pi-os3">Old Section 3</li>
   </ul>
 </nav>
 
 
-<section class="directory">
+<!-- <section class="directory">
   {% for pi in site.project_investigators %}
   <article class="person" data-pType="{{pi.project-type}}">
     <img src="images/people/{{pi.image}}" alt="{{pi.author}}">
@@ -58,18 +59,20 @@ title: People
     <h6 style="margin-top: .6em;">{{pi.project-type}}</h6>
   </article>
   {% endfor %}
-</section>
+</section> -->
 
 <div class="people" id="matchHeight">
-  <h2>LBRN Core Personnel</h2>
-  <div class="relative">
-    <h3 id="lbrnAdminCore">Admin Core</h3>
-    <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
-    <section class="directory collapse">
-      {% for people in site.data.LBRN-adminCore %}
-        {% include directory.html %}
-      {% endfor %}
-    </section>
+  <div class="butest">
+    <h2>LBRN Core Personnel</h2>
+    <div class="relative">
+      <h3 id="lbrnAdminCore">Admin Core</h3>
+      <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
+      <section class="directory collapse">
+        {% for people in site.data.LBRN-adminCore %}
+          {% include directory.html %}
+        {% endfor %}
+      </section>
+    </div>
   </div>
   <div class="relative">
     <h3 id="lbrnBbcCore">BBC Core</h3>
