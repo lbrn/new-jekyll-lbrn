@@ -1216,7 +1216,9 @@ div.research img{
     color: #8ECB91;
     padding-bottom: .5em;
     padding-left: .2em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 1.0em;
+  }
   nav#pi-filter ul {
     overflow: hidden;
     margin-left: 0; }
@@ -1224,8 +1226,8 @@ div.research img{
     font-size: 0.85rem;
     float: left;
     display: block;
-    padding: .25em;
-    margin: 0 .2em;
+    padding: .1em;
+    /* margin: 0 .2em; */
     color: #8ECB91;
     border-radius: 5px;
     border: 1px solid #8ECB91;
@@ -2634,6 +2636,12 @@ font-size: 0.8em;
     min-height: 200px;
     height: 6238px; */
     margin: 10%;
+
+}
+
+.peoplesort{
+  margin: 1%;
+  min-width: 20%;
 
 }
 

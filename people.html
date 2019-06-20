@@ -36,16 +36,24 @@ title: People
 </aside>
 
 <div class="testdiv content ">
+
+      <h2>LBRN Core Personnel</h2>
 <nav id="pi-filter">
   <p>Filters:</p>
   <ul>
-    <li class="on" id="pi-fp">Full Project</li>
-    <li class="on" id="pi-sp">Startup Project</li>
-    <li class="on" id="pi-sip">Shared Instrument Project</li>
-    <li class="on" id="pi-pp">Pilot Project</li>
-    <li class="on" id="pi-te"> Test Element</li>
-    <li class="on" id="pi-os3">Old Section 3</li>
+    <li class="on peoplesort" id="pi-ac">Admin Core</li>
+    <li class="on peoplesort" id="pi-bc">BBC Core</li>
+    <li class="on peoplesort" id="pi-mc">MCBR Core</li>
+    <li class="on peoplesort" id="pi-crp">Current PIs</li>
   </ul>
+  <ul>
+    <li class="on peoplesort" id="pi-ppi">Previous PIs</li>
+    <li class="on peoplesort" id="pi-pai">Partner Institues</li>
+    <li class="on peoplesort" id="pi-le">LBRN EAC</li>
+    <li class="on peoplesort" id="pi-lsc">LBRN Steering Committee</li>
+  </ul>
+
+
 </nav>
 
 
@@ -62,8 +70,7 @@ title: People
 </section> -->
 
 <div class="people" id="matchHeight">
-  <div class="butest">
-    <h2>LBRN Core Personnel</h2>
+  <div class="Adcore">
     <div class="relative">
       <h3 id="lbrnAdminCore">Admin Core</h3>
       <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
@@ -74,7 +81,7 @@ title: People
       </section>
     </div>
   </div>
-  <div class="relative">
+  <div class="relative BBcore">
     <h3 id="lbrnBbcCore">BBC Core</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapse">
@@ -83,7 +90,7 @@ title: People
       {% endfor %}
     </section>
   </div>
-  <div class="relative">
+  <div class="relative MCcore">
     <h3 id="lbrnMcbrCore">MCBR Core</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapse">
@@ -93,7 +100,7 @@ title: People
     </section>
   </div>
   <h2>Project Investigators</h2>
-  <div class="relative">
+  <div class="relative CRP">
     <h3 id="currentlyFunded">Currently Funded PIs</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapse">
@@ -102,7 +109,7 @@ title: People
       {% endfor %}
     </section>
   </div>
-  <div class="relative">
+  <div class="relative PrevPPi">
     <h3 id="previouslyFunded">Previously Funded PIs</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapse">
@@ -111,7 +118,7 @@ title: People
       {% endfor %}
     </section>
   </div>
-  <div class="relative">
+  <div class="relative Parti">
     <h2 id="partnerInstitutes">Partner Institutes</h2>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin2" aria-hidden="true"></i>
     <section class="directory collapse">
@@ -121,7 +128,7 @@ title: People
     </section>
   </div>
   <h2>Committee Members</h2>
-  <div class="relative">
+  <div class="relative LBRNe">
     <h3 id="LbrnEAC">LBRN External Advisory Committee</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapse">
@@ -130,7 +137,7 @@ title: People
       {% endfor %}
     </section>
   </div>
-  <div class="relative">
+  <div class="relative LBRNsc">
     <h3 id="LbrnSteering">LBRN Steering Committee</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapse">

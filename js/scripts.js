@@ -106,6 +106,14 @@ function piFilter(){
   var shares = $('article[data-ptype="SharedInstrumentProject"]');
   var pilots = $('article[data-ptype="PilotProject"]');
 
+  var ac = document.getElementsByClassName('Adcore'), i;
+  var bc = document.getElementsByClassName('BBcore'), i;
+  var mc = document.getElementsByClassName('MCcore'), i;
+  var crp = document.getElementsByClassName('CRP'), i;
+  var ppi = document.getElementsByClassName('PrevPPi'), i;
+  var pai = document.getElementsByClassName('Parti'), i;
+  var le = document.getElementsByClassName('LBRNe'), i;
+  var lsc = document.getElementsByClassName('LBRNsc'), i;
   var te = $('article[data-ptype="TestElement"]');
   var oe1 = $('article[data-ptype="Old Section 1"]');
   var oe2 = $('article[data-ptype="Old Section 2"]');
@@ -144,25 +152,170 @@ function piFilter(){
     oe2.slideToggle('fast');
         console.log('dog');
   });
-  $("#pi-os3").click(function(){
-    for(var i=0; i < oe3.length; i++)
+  $("#pi-ac").click(function(){
+            console.log('dog');
+    for(var i=0; i < ac.length; i++)
         {
-        // oe3[i].style.display ='none';
-          if (oe3[i].style.display == "none")
+        // ac[i].style.display ='none';
+          if (ac[i].style.display == "none")
             {
-              oe3[i].style.display = "block";
+              ac[i].style.display = "block";
             }
             else
             {
-              oe3[i].style.display = "none";
+              ac[i].style.display = "none";
             }
         }
 
-    // $(this).toggleClass('on');
-    // oe3.slideToggle('fast');
+    $(this).toggleClass('on');
+    // ac.slideToggle('fast');
         // console.log('dog');
   });
-}
+$("#pi-bc").click(function(){
+  console.log('dog');
+  for(var i=0; i < bc.length; i++)
+      {
+      // bc[i].style.display ='none';
+        if (bc[i].style.display == "none")
+          {
+            bc[i].style.display = "block";
+          }
+          else
+          {
+            bc[i].style.display = "none";
+          }
+      }
+
+  $(this).toggleClass('on');
+  // bc.slideToggle('fast');
+      // console.log('dog');
+});
+
+
+  $("#pi-lsc").click(function(){
+    console.log('dog');
+    for(var i=0; i < lsc.length; i++)
+        {
+        // lsc[i].style.display ='none';
+          if (lsc[i].style.display == "none")
+            {
+              lsc[i].style.display = "block";
+            }
+            else
+            {
+              lsc[i].style.display = "none";
+            }
+        }
+
+    $(this).toggleClass('on');
+    // lsc.slideToggle('fast');
+        // console.log('dog');
+  });
+
+  $("#pi-le").click(function(){
+    console.log('dog');
+    for(var i=0; i < le.length; i++)
+        {
+        // le[i].style.display ='none';
+          if (le[i].style.display == "none")
+            {
+              le[i].style.display = "block";
+            }
+            else
+            {
+              le[i].style.display = "none";
+            }
+        }
+
+    $(this).toggleClass('on');
+    // le.slideToggle('fast');
+        // console.log('dog');
+  });
+
+  $("#pi-pai").click(function(){
+    console.log('dog');
+    for(var i=0; i < pai.length; i++)
+        {
+        // pai[i].style.display ='none';
+          if (pai[i].style.display == "none")
+            {
+              pai[i].style.display = "block";
+            }
+            else
+            {
+              pai[i].style.display = "none";
+            }
+        }
+
+    $(this).toggleClass('on');
+    // pai.slideToggle('fast');
+        // console.log('dog');
+  });
+
+  $("#pi-ppi").click(function(){
+    console.log('dog');
+    for(var i=0; i < ppi.length; i++)
+        {
+        // ppi[i].style.display ='none';
+          if (ppi[i].style.display == "none")
+            {
+              ppi[i].style.display = "block";
+            }
+            else
+            {
+              ppi[i].style.display = "none";
+            }
+        }
+
+    $(this).toggleClass('on');
+    // ppi.slideToggle('fast');
+        // console.log('dog');
+  });
+
+  $("#pi-crp").click(function(){
+    console.log('dog');
+    for(var i=0; i < crp.length; i++)
+        {
+        // crp[i].style.display ='none';
+          if (crp[i].style.display == "none")
+            {
+              crp[i].style.display = "block";
+            }
+            else
+            {
+              crp[i].style.display = "none";
+            }
+        }
+
+    $(this).toggleClass('on');
+    // crp.slideToggle('fast');
+        // console.log('dog');
+  });
+
+  $("#pi-mc").click(function(){
+    console.log('dog');
+    for(var i=0; i < mc.length; i++)
+        {
+        // mc[i].style.display ='none';
+          if (mc[i].style.display == "none")
+            {
+              mc[i].style.display = "block";
+            }
+            else
+            {
+              mc[i].style.display = "none";
+            }
+        }
+
+    $(this).toggleClass('on');
+    // mc.slideToggle('fast');
+        // console.log('dog');
+  });
+
+
+
+}//end
+
 // FOR THE SLIDER
 function slider(){
   var buttons = document.getElementsByTagName('input');
