@@ -24,16 +24,16 @@ $( document ).ready(function() {
       $('#navBug').attr("src", "images/menuClosed.png");
     }
   });
-  $(window).resize(function(){
-    if ($('#navBug').css('display') == 'none'){
-      $('nav').css('display','block');
-      $('#navBug').attr("src", "images/menuClosed.png")
-    }
-    else {$('nav').css('display','none')}
-    // contentHeight = $('#matchHeight').css('height');
-    // $('#lbrnEventSidebar').css('height', contentHeight);
-    // height issue 2
-  });
+  // $(window).resize(function(){
+  //   if ($('#navBug').css('display') == 'none'){
+  //     $('nav').css('display','block');
+  //     $('#navBug').attr("src", "images/menuClosed.png")
+  //   }
+  //   else {$('nav').css('display','none')}
+  //   // contentHeight = $('#matchHeight').css('height');
+  //   // $('#lbrnEventSidebar').css('height', contentHeight);
+  //   // height issue 2
+  // });
   //collapsable sections
   $('.collapse').siblings('h3, h2, i').click(function() {
     console.log('fired');
@@ -118,6 +118,10 @@ function piFilter(){
   var oe1 = $('article[data-ptype="Old Section 1"]');
   var oe2 = $('article[data-ptype="Old Section 2"]');
   var oe3 = document.getElementsByClassName('butest'), i;
+  var pitrack = 2;
+  var pielement = document.getElementsByClassName('pielement'), i;
+  var cmtrack = 2;
+  var cmelement = document.getElementsByClassName('cmelement'), i;
 
 
   $("#pi-fp").click(function(){
@@ -139,21 +143,21 @@ function piFilter(){
   $("#pi-te").click(function(){
     $(this).toggleClass('on');
     te.slideToggle('fast');
-        console.log('dog');
+        // console.log('dog');
   });
 
   $("#pi-os1").click(function(){
     $(this).toggleClass('on');
     oe1.slideToggle('fast');
-        console.log('dog');
+        // console.log('dog');
   });
   $("#pi-os2").click(function(){
     $(this).toggleClass('on');
     oe2.slideToggle('fast');
-        console.log('dog');
+        // console.log('dog');
   });
   $("#pi-ac").click(function(){
-            console.log('dog');
+            // console.log('dog');
     for(var i=0; i < ac.length; i++)
         {
         // ac[i].style.display ='none';
@@ -172,7 +176,7 @@ function piFilter(){
         // console.log('dog');
   });
 $("#pi-bc").click(function(){
-  console.log('dog');
+  // console.log('dog');
   for(var i=0; i < bc.length; i++)
       {
       // bc[i].style.display ='none';
@@ -193,47 +197,53 @@ $("#pi-bc").click(function(){
 
 
   $("#pi-lsc").click(function(){
-    console.log('dog');
+    // console.log('dog');
     for(var i=0; i < lsc.length; i++)
         {
         // lsc[i].style.display ='none';
           if (lsc[i].style.display == "none")
             {
               lsc[i].style.display = "block";
+              cmtrack++;
             }
             else
             {
               lsc[i].style.display = "none";
+              cmtrack--;
             }
         }
 
     $(this).toggleClass('on');
+        hidetitle(cmelement, cmtrack);
     // lsc.slideToggle('fast');
         // console.log('dog');
   });
 
   $("#pi-le").click(function(){
-    console.log('dog');
+    // console.log('dog');
     for(var i=0; i < le.length; i++)
         {
         // le[i].style.display ='none';
           if (le[i].style.display == "none")
             {
               le[i].style.display = "block";
+              cmtrack++;
             }
             else
             {
               le[i].style.display = "none";
+              cmtrack--;
             }
         }
 
     $(this).toggleClass('on');
+        hidetitle(cmelement, cmtrack);
     // le.slideToggle('fast');
         // console.log('dog');
   });
 
   $("#pi-pai").click(function(){
-    console.log('dog');
+    // console.log('dog');
     for(var i=0; i < pai.length; i++)
         {
         // pai[i].style.display ='none';
@@ -252,48 +262,67 @@ $("#pi-bc").click(function(){
         // console.log('dog');
   });
 
-  $("#pi-ppi").click(function(){
-    console.log('dog');
-    for(var i=0; i < ppi.length; i++)
-        {
-        // ppi[i].style.display ='none';
-          if (ppi[i].style.display == "none")
-            {
-              ppi[i].style.display = "block";
-            }
-            else
-            {
-              ppi[i].style.display = "none";
-            }
-        }
-
-    $(this).toggleClass('on');
-    // ppi.slideToggle('fast');
-        // console.log('dog');
-  });
-
   $("#pi-crp").click(function(){
-    console.log('dog');
+    // console.log('dog');
     for(var i=0; i < crp.length; i++)
         {
         // crp[i].style.display ='none';
           if (crp[i].style.display == "none")
             {
               crp[i].style.display = "block";
+              pitrack++;
+              // console.log(pitrack);
             }
             else
             {
               crp[i].style.display = "none";
+              pitrack--;
+              // console.log(pitrack);
             }
         }
 
     $(this).toggleClass('on');
+    hidetitle(pielement, pitrack);
+    // if(pitrack == 0){
+    //   console.log("trigger hide");
+    // } else if (pitrack== 2){
+    //     hidetitle(pielement);
+    // }
     // crp.slideToggle('fast');
         // console.log('dog');
   });
 
+  $("#pi-ppi").click(function(){
+    // console.log('dog');
+    for(var i=0; i < ppi.length; i++)
+        {
+        // ppi[i].style.display ='none';
+          if (ppi[i].style.display == "none")
+            {
+              ppi[i].style.display = "block";
+              pitrack++;
+              // console.log(pitrack);
+            }
+            else
+            {
+              ppi[i].style.display = "none";
+              pitrack--;
+              // console.log(pitrack);
+            }
+        }
+
+    $(this).toggleClass('on');
+    // if(pitrack == 0){
+    hidetitle(pielement, pitrack);
+  // } else if (pitrack== 2){
+  //     hidetitle(pielement);
+  // }
+    // ppi.slideToggle('fast');
+        // console.log('dog');
+  });
+
   $("#pi-mc").click(function(){
-    console.log('dog');
+    // console.log('dog');
     for(var i=0; i < mc.length; i++)
         {
         // mc[i].style.display ='none';
@@ -312,10 +341,36 @@ $("#pi-bc").click(function(){
         // console.log('dog');
   });
 
+// if(pitrack == 0){
+//   console.log("trigger hide");
+// }
 
 
 }//end
+function hidetitle(hidethis, trackthis){
+// console.log(trackthis);
+// console.log("track this:");
+  if(trackthis == 0)
+  {
+    for(var i=0; i < hidethis.length; i++){
+      if (hidethis[i].style.display != "none")
+        {
+          hidethis[i].style.display = "none";
+        }
+    }
+          // console.log("trigger hide");
+  } else {
+    console.log("trigger show");
+    for(var i=0; i < hidethis.length; i++)
+    {
+      if (hidethis[i].style.display == "none")
+        {
+          hidethis[i].style.display = "block";
+        }
+    }//end for
+  }
 
+}
 // FOR THE SLIDER
 function slider(){
   var buttons = document.getElementsByTagName('input');

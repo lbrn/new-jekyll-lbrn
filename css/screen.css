@@ -35,8 +35,30 @@ a img {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
-
+/* End at 1295ish */
 @media (min-width: 0) {
+  .Twitterf{
+    width: unset;
+    margin: 10%;
+    border: 1px solid red;
+  }
+
+  .vidhori{
+    height: 5em;
+    width: 85%;
+    padding: 7.5%;
+  float:left;
+  border-radius: 6px;
+  }
+
+  .vidtext{
+    display: inline-block;
+    width: 70%;
+    margin-top: 1.5%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+  }
+
   .no-float {
     float: none !important; }
 
@@ -307,7 +329,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     line-height: 1.5em;
     text-transform: uppercase; }
   main div.content h3 {
-    font-size: 1.25em;
+    /* font-size: 1.25em; */
+      font-size: .95em;
     margin: .25em 0;
     margin-top: 1.2em;
     padding-left: 1em;
@@ -1158,7 +1181,7 @@ div.research img{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 45%;
+    width: 95%;
     float: left;
     margin: 2.5%;
     /* margin-left: 0; */
@@ -1291,8 +1314,19 @@ div.research img{
     width: 100%; }
   footer span {
     font-style: italic;
-    font-weight: bold; } }
+    font-weight: bold; }
+
+    .Twitterf{
+      width: unset;
+      margin: 10%;
+      border: 1px solid red;
+    }
+
+  }
 @media (min-width: 414px) {
+
+
+
   .slider {
     height: 0;
     padding-bottom: 50%; }
@@ -1304,6 +1338,22 @@ div.research img{
     text-transform: capitalize;
     font-weight: normal; } }
 @media (min-width: 667px) {
+  .vidhori{
+    width: 20%;
+    padding: 2.5%;
+  }
+  .vidtext{
+    padding: unset;
+  }
+section.directory article.person{
+  width: 45%;
+}
+  .Twitterf{
+      width: 100%;
+      margin: 10%;
+      border: 1px solid blue;
+  }
+
   .float {
     width: 35%; }
 
@@ -1863,6 +1913,9 @@ div.research img{
     font-weight: bold;
     line-height: 3; } }
 @media (min-width: 1224px) {
+
+
+
   /* .layout {
     margin: 0;
     -moz-box-sizing: border-box;
@@ -2384,24 +2437,18 @@ font-weight: 400;
   margin-bottom: 4%;
 
 }
-.vidhori{
+/* .vidhori{
   height: 5em;
   width: 20%;
   padding: 2.5%;
-  /* padding-top: 5%; */
-  /* padding-bottom: unset; */
-/* display:block; */
 float:left;
 border-radius: 6px;
-}
-.vidtext{
+} */
+/* .vidtext{
   display: inline-block;
-  /* float:right; */
-  /* border: 1px red solid; */
-  /* width: 100%; */
   width: 70%;
   margin-top: 1.5%;
-}
+} */
 .videoblocks{
   min-height: unset;
 }
@@ -2611,7 +2658,8 @@ font-size: 0.8em;
   text-decoration: none;
   color: #2C3D6C;
   text-align: center;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+}
   #lbrnEventSidebar2 ul li :hover {
     -moz-transition:all .2s ease-in;
     -o-transition:all .2s ease-in;
@@ -2620,24 +2668,32 @@ font-size: 0.8em;
     color: white;
     background-color: #e5f3e6;
     border-radius: 6px;
+    color: #5ab35e;
 }
 
-.Twitterf{
-  /* position: static;
-    visibility: visible;
-    display: inline-block;
-    width: 100%;
-    padding: 0px;
-    border: medium none;
-    max-width: 100%;
-    min-width: 180px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    min-height: 200px;
-    height: 6238px; */
+
+  /* .Twitterf{
+    width: unset;
     margin: 10%;
+    border: 1px solid red;
+  } */
+  /* .Twitterf{ */
+    /* position: static;
+      visibility: visible;
+      display: inline-block; */
+      /* width: 100%; */
+      /* padding: 0px; */
+      /* border: medium none; */
+      /* max-width: 100%; */
+      /* min-width: 180px; */
+      /* margin-top: 0px; */
+      /* margin-bottom: 0px; */
+      /* min-height: 200px; */
+      /* height: 6238px; */
+      /* margin: 10%; */
+      /* border: 1px solid blue; */
+  /* } */
 
-}
 
 .peoplesort{
   margin: 1%;
