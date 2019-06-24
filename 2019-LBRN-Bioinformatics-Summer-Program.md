@@ -6,7 +6,7 @@ eventDate: July 1 & 22, August 9, 2019
 eventTime:  10:00a-1:00p
 eventLocation: Remote Sessions
 eventAddress: 
-eventDeadlines: June 24, 2019
+eventDeadlines: June 27, 2019 (extended)
 ---
 <p>The Louisiana Biomedical Research Network (LBRN) is happy to announce registration for the second Summer Bioinformatics Training Program. The Summer Bioinformatics Training Program will focus on transcriptomics data and will support an independent or team project with workshops, online materials and a hackathon. The topics we will cover include finding and evaluating Next Generation Sequencing data, data acquisition, quality control, processing, differential analysis and interpretation. For registration and program schedule information:</p>
 
@@ -58,7 +58,7 @@ eventDeadlines: June 24, 2019
 The entire summer program will be delivered remotely including all sessions and review workshops. The program costs will be covered by LBRN for LBRN PUI campuses for faculty, postdoctoral fellows and students. Limited number of applicants will be accepted on a first come first serve basis. All supported registrations subject to approval. Interested parties need to register at the following website as soon as possible.
 
 
-### Registration deadline: June 24, 2019
+### Registration deadline: June 27, 2019 (extended)
 
  <section id="eventRegistration">
     <i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
