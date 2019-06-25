@@ -40,7 +40,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .Twitterf{
     width: unset;
     margin: 10%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .vidhori{
@@ -263,7 +263,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border: none; }
 
   .slider {
-    display: none;
+    /* display: none; */
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -678,8 +678,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         /* border: 1px solid red;/* cust EFFECTS  */
     /* width: 10%; */
     float: left;
-    margin-right: 3.44828%;
-    margin: 2% 5%;
+    margin-right: 2.9%;
+    /* margin: 2% 5%; */
     padding-bottom: 2em;
     position: relative; }
   .three-card-responsive section img, .two-card-responsive section img,  .four-card-responsive section img {
@@ -713,7 +713,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
     width: 95%;
     float: left;
-    margin-right: 3.44828%;
+    /* margin-right: 3.44828%; */
+    margin-right: 2.9%;
     font-size: 0.8em;
     margin-left: 3.44828%;
     /* color: red; */
@@ -1231,6 +1232,7 @@ div.research img{
     cursor: pointer; }
 
   nav#pi-filter {
+    display: block;
     background-color: unset;
     margin-bottom: 1em;
     padding-left: 0; }
@@ -1338,6 +1340,11 @@ div.research img{
     text-transform: capitalize;
     font-weight: normal; } }
 @media (min-width: 667px) {
+
+.three-card-responsive section {
+      margin-right: 3.44828%;
+}
+
   .vidhori{
     width: 20%;
     padding: 2.5%;
@@ -1351,7 +1358,7 @@ section.directory article.person{
   .Twitterf{
       width: 100%;
       margin: 10%;
-      border: 1px solid blue;
+      /* border: 1px solid blue; */
   }
 
   .float {
@@ -2671,28 +2678,6 @@ font-size: 0.8em;
     color: #5ab35e;
 }
 
-
-  /* .Twitterf{
-    width: unset;
-    margin: 10%;
-    border: 1px solid red;
-  } */
-  /* .Twitterf{ */
-    /* position: static;
-      visibility: visible;
-      display: inline-block; */
-      /* width: 100%; */
-      /* padding: 0px; */
-      /* border: medium none; */
-      /* max-width: 100%; */
-      /* min-width: 180px; */
-      /* margin-top: 0px; */
-      /* margin-bottom: 0px; */
-      /* min-height: 200px; */
-      /* height: 6238px; */
-      /* margin: 10%; */
-      /* border: 1px solid blue; */
-  /* } */
 
 
 .peoplesort{

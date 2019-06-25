@@ -12,7 +12,7 @@ $( document ).ready(function() {
   else{console.log("no slider on page");}
 //Mobile Menu
   $("#navBug").click(function(){
-      $('nav').slideToggle('fast');
+      $('#navtog').slideToggle('fast');
       if ($(this).attr("src") == "images/menuOpen.png") {
         $(this).attr("src", "images/menuClosed.png");
       }
@@ -20,21 +20,27 @@ $( document ).ready(function() {
   });
   $("body > div.layout").click(function(){
     if ($('#navBug').css('display') != 'none'){
-      $('nav').slideUp('fast');
+      $('#navtog').slideUp('fast');
       $('#navBug').attr("src", "images/menuClosed.png");
     }
   });
-  // $(window).resize(function(){
-  //   if ($('#navBug').css('display') == 'none'){
-  //     $('nav').css('display','block');
-  //     $('#navBug').attr("src", "images/menuClosed.png")
-  //   }
-  //   else {$('nav').css('display','none')}
-  //   // contentHeight = $('#matchHeight').css('height');
-  //   // $('#lbrnEventSidebar').css('height', contentHeight);
-  //   // height issue 2
-  // });
-  //collapsable sections
+  $(window).resize(function(){
+    // var pifilters = document.getElementById('pi-filter');
+
+    if ($('#navBug').css('display') == 'none'){
+      $('#navtog').css('display','block');
+      $('#navBug').attr("src", "images/menuClosed.png")
+    }
+    else {
+      $('#navtog').css('display','none')
+    }
+    //this hides it immediately when the window resizes. I've turned this off for now
+
+    // contentHeight = $('#matchHeight').css('height');
+    // $('#lbrnEventSidebar').css('height', contentHeight);
+    // height issue 2
+  });
+  // collapsable sections
   $('.collapse').siblings('h3, h2, i').click(function() {
     console.log('fired');
     $(this).siblings('.collapse').toggleClass('expand');

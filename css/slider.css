@@ -70,7 +70,7 @@ div#sliderNav label:hover {
   z-index: 100;
   transition: left 0.65s ease-out;
 }
-.slide h1 {
+/* .slide h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 3em;
   color: white;
@@ -79,7 +79,7 @@ div#sliderNav label:hover {
   padding-top: 20%;
   transform: translateY(20%);
   transition: transform 0.5s 0.5s, opacity 0.5s;
-}
+} */
 h1.high{
   padding-top: 10%;
   transform: translateY(40%);
@@ -93,4 +93,21 @@ h1.high{
   opacity: 1;
   transform: translateY(0);
   transition: all 0.5s 0.5s;
+}
+@media (min-width: 0px) {
+  .slide h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 10px black;
+    opacity: 0;
+    padding-top: 20%;
+    transform: translateY(20%);
+    transition: transform 0.5s 0.5s, opacity 0.5s;
+  }
+}
+@media (min-width: 667px) {
+  .slide h1{
+    font-size: 3em;
+  }
 }
