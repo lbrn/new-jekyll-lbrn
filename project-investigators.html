@@ -15,7 +15,8 @@ title: Previous Project Investigators
 </nav>
 <h2>Previous Project Investigators</h2>
 <section class="directory">
-  {% for pi in site.old_pi %}
+  <!--  old pi in site.old_pi //you can't comment these lines of code out in full. it causes errors -->
+  {% for pi in site.project_investigators %}
   <article class="person" data-pType="{{pi.project-type}}">
     <img src="images/people/{{pi.image}}" alt="{{pi.author}}">
     <h4>{{pi.author}}</h4>
