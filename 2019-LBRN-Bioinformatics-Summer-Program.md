@@ -32,6 +32,11 @@ eventDeadlines: June 27, 2019 (extended)
 <td>10:00 am to 1:00 pm CST</td>
 </tr>
 <tr>
+<td>July 8, 2019</td>
+<td>Additional Session</td>
+<td>10:00 am to 11:00 am CST</td>
+</tr>
+<tr>
 <td>July 22, 2019</td>
 <td>Review Session</td>
 <td>10:00 am to 1:00 pm CST</td>
