@@ -1,7 +1,6 @@
 _site/
 .sass-cache/
 .jekyll-metadata
-_config.yml
 _site/feed.xml
 <<<<<<< HEAD
 =======
