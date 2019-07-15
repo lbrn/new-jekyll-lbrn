@@ -1,0 +1,340 @@
+@charset "UTF-8";
+#hero_header {
+	position: relative;
+}
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #202020;
+	font-size: 11pt;
+	line-height: 18pt;
+	margin-left: 0px;
+}
+h1 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16pt;
+	color: #555555;
+	font-weight: bold;
+}
+h2 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 15pt;
+}
+h3 {
+	font-size: 12pt;
+}
+h4 {
+	font-size: 9pt;
+	font-weight: bolder;
+}
+h5 {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16pt;
+    color: #555555;
+    font-weight: bold;
+}
+#bio_core {
+	background-color: #384B62;
+	color: #FFFFFF;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#com_core {
+	background-color: #A2C858;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-bottom: 3%;
+	padding-left: 5%;
+}
+#drp_core {
+	background-color: #0695B0;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-bottom: 3%;
+	padding-left: 5%;
+}
+#undergrad_core {
+	background-color: #F39802;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-bottom: 3%;
+	padding-left: 5%;
+}
+#cor_row {
+	max-width: 100%;
+}
+#intro_block {
+	margin-top: 40px;
+	margin-bottom: 49px;
+	margin-right: 0%;
+}
+#logo_home {
+	width: 30%;
+	height: 30%;
+}
+#centered_intro {
+    text-align: center;
+    margin-left: 68px;
+    margin-right: 68px;
+}
+#centered_introhead {
+	margin-left: 68px;
+	margin-right: 68px;
+	text-align: center;
+	font-size: 22px;
+}
+#rounded_button {
+	border-radius: 13px;
+	margin-top: 9px;
+	font-size: 8pt;
+	letter-spacing: 1px;
+	padding-top: 8px;
+	padding-bottom: 6px;
+	padding-right: 14px;
+	padding-left: 14px;
+}
+#home_2col {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#calendar_row {
+	margin-left: -30px;
+	margin-right: -30px;
+	color: #FFFFFF;
+	padding-bottom: 6px;
+	background-color: #0695B0;
+}
+#newsletter_row {
+	background-color: #A2C858;
+	padding-left: 0px;
+	margin-left: -30px;
+	margin-right: -30px;
+	color: #FFFFFF;
+	padding-bottom: 30px;
+	text-align: center;
+	padding-top: 35px;
+}
+#footer_links_row {
+}
+#footer {
+    margin: auto;
+	margin-left: -30px;
+	margin-right: -30px;
+	background-color: #0695B0;
+	padding-top: 6px;
+}
+#footer_tiny {
+	color: #a8dae3;
+	font-size: 10px;
+	padding-left: 1px;
+	text-align: center;
+	min-height: 30px;
+}
+#social {
+	margin-right: 5px;
+	margin-bottom: 2px;
+	margin-top: 5px;
+}
+#main_content {
+	margin-left: -30px;
+	margin-right: -65px;
+}
+#main_content_editable {
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 45px;
+    font-size: 15px;
+    line-height: 28px;
+}
+#hero_thin {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: -20px;
+	margin-right: 0px;
+	background-repeat: repeat-x;
+	max-width: none;
+}
+#editable_area {
+	padding-right: 0px;
+	margin-right: 57px;
+	left: -17px;
+}
+#main_content_subnav {
+	font-size: 13px;
+	line-height: 15px;
+	position: absolute;
+	top: -55px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #888888;
+}#subhead_large {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.container-fluid #main_content #editable_area {
+    margin-right: 23px;
+    margin-left: 17px;
+}
+#social {
+	margin-bottom: auto;
+	margin-top: 8px;
+	text-align: right;
+}
+#social_med {
+}
+#calendar_button {
+	padding-top: 7px;
+	margin-top: 14px;
+	margin-bottom: 7px;
+}
+#subhead_large {
+}
+#sub {
+}
+#sub {
+}
+.directory_headshot {
+	max-width: 150px;
+	margin-top: 30px;
+}
+.directory_name {
+	font-size: 15px;
+	line-height: 17px;
+	margin-top: 18px;
+	font-weight: bold;
+}
+.directory_title {
+	font-size: 11px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+.directory_info {
+	font-size: 13px;
+	line-height: 17px;
+}
+#footer_links_medium {
+}
+.seminar_headshot {
+	width: 150px;
+	float: left;
+	margin-right: 12px;
+}
+#footer_grey_container {
+    margin: auto;
+    background-color: #A2C858;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    margin-left: -30px;
+    margin-right: -30px;
+    text-align: center;
+    margin-top: auto;
+}
+#social_feeds {
+	margin-left: -50px;
+}
+#facebook_feed {
+	padding-left: 0px;
+}
+.googleCalendar{
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.footer_4column {
+    margin: auto;
+    width: 90%;
+    margin-left: 70px;
+    margin-right: 70px;
+    max-width: 1200px;
+    text-align: left;
+}
+.hero_thin_bkgdimage {
+	background-image: url(../images/hero_interior_thin01.jpg);
+	background-repeat: repeat-x;
+	height: 125px;
+	margin-left: -30px;
+	margin-right: -30px;
+}
+.hero_thin_bkgdimage2 {
+	background-image: url(../images/hero_interior_thin02.jpg);
+	background-repeat: repeat-x;
+	height: 125px;
+	margin-left: -30px;
+	margin-right: -30px;
+}
+.hero_thin_bkgdimage3 {
+	background-image: url(../images/hero_interior_thin03.jpg);
+	background-repeat: repeat-x;
+	height: 125px;
+	margin-left: -30px;
+	margin-right: -30px;
+}
+.hero_thin_bkgdimage4 {
+	background-image: url(../images/hero_interior_thin04.jpg);
+	background-repeat: repeat-x;
+	height: 125px;
+	margin-left: -30px;
+	margin-right: -30px;
+}
+.hero_thin_bkgdimage5 {
+	background-image: url(../images/hero_interior_thin05.jpg);
+	background-repeat: repeat-x;
+	height: 125px;
+	margin-left: -30px;
+	margin-right: -30px;
+}
+#home_clear {
+    margin: auto;
+    float: none;
+}
+#universities {
+	float: right;
+}
+.home_core_head {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.icon {
+	margin-bottom: 25px;
+	margin-top: -7px;
+}
+.carousel_head {
+	font-size: 31px;
+	background-color: #A2C858;
+	display: inline;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: #000000;
+	text-shadow: 0 0;
+}

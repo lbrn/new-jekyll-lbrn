@@ -26,6 +26,20 @@ collections:
   old_pi:
     output:
   events:
+  admin_core:
+    output:
+  bbc_core:
+    output:
+  committee-members:
+    output:
+  LBRN_Steering_Committee:
+    output:
+  MCBR_core:
+    output:
+  partner_Institutes:
+    output:
+  previous_pis:
+    outpit:
 # Build settings
 markdown: kramdown
 

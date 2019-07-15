@@ -21,7 +21,46 @@ title: People
 <aside id="lbrnEventSidebar2">
   <ul>
     <div id="lbrnEventSidebarUl">
+      <p>
+        <!-- <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Link with href
+        </a> -->
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Filters
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+          <li class="on peoplesort" id="pi-ac">Admin Core</li>
+          <li class="on peoplesort" id="pi-bc">BBC Core</li>
+          <li class="on peoplesort" id="pi-mc">MCBR Core</li>
+          <li class="on peoplesort" id="pi-crp">Current PIs</li>
+          <li class="on peoplesort" id="pi-ppi">Previous PIs</li>
+          <li class="on peoplesort" id="pi-pai">Partner Institues</li>
+          <li class="on peoplesort" id="pi-le">LBRN EAC</li>
+          <li class="on peoplesort" id="pi-lsc">LBRN Steering Committee</li>
+        <!-- <div class="card card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div> -->
+      </div>
+      <!-- <div class="btn-group">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+            Filters
+          </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <ul>
+            <li class="on peoplesort" id="pi-ac">Admin Core</li>
+            <li class="on peoplesort" id="pi-bc">BBC Core</li>
+            <li class="on peoplesort" id="pi-mc">MCBR Core</li>
+            <li class="on peoplesort" id="pi-crp">Current PIs</li>
+            <li class="on peoplesort" id="pi-ppi">Previous PIs</li>
+            <li class="on peoplesort" id="pi-pai">Partner Institues</li>
+            <li class="on peoplesort" id="pi-le">LBRN EAC</li>
+            <li class="on peoplesort" id="pi-lsc">LBRN Steering Committee</li>
+          </ul>
+        </div>
+      </div> -->
       <li class="active"><a href="#lbrnAdminCore">Admin Core</a></li>
+      <li class="on peoplesort piac2" id="piac">X</li>
       <li><a href="#lbrnBbcCore">BBC Core</a></li>
       <li><a href="#lbrnMcbrCore">MCBR Core</a></li>
       <li><a href="#currentlyFunded">Currently Funded PIs</a></li>
@@ -39,18 +78,21 @@ title: People
 
       <h2>LBRN Core Personnel</h2>
 <nav id="pi-filter">
+<!-- <nav> -->
   <p>Filters:</p>
   <ul>
-    <li class="on peoplesort" id="pi-ac">Admin Core</li>
-    <li class="on peoplesort" id="pi-bc">BBC Core</li>
-    <li class="on peoplesort" id="pi-mc">MCBR Core</li>
-    <li class="on peoplesort" id="pi-crp">Current PIs</li>
+    <!-- <li id="piac">Admin Core</li> -->
+    <!-- <li id="piac">Admin Core</li> -->
+    <!-- <li class="on peoplesort" id="piac">Admin Core</li> -->
+    <li class="on peoplesort" id="pibc">BBC Core</li>
+    <li class="on peoplesort" id="pimc">MCBR Core</li>
+    <li class="on peoplesort" id="picrp">Current PIs</li>
   </ul>
   <ul>
-    <li class="on peoplesort" id="pi-ppi">Previous PIs</li>
-    <li class="on peoplesort" id="pi-pai">Partner Institues</li>
-    <li class="on peoplesort" id="pi-le">LBRN EAC</li>
-    <li class="on peoplesort" id="pi-lsc">LBRN Steering Committee</li>
+    <li class="on peoplesort" id="pippi">Previous PIs</li>
+    <li class="on peoplesort" id="pipai">Partner Institues</li>
+    <li class="on peoplesort" id="pile">LBRN EAC</li>
+    <li class="on peoplesort" id="pilsc">LBRN Steering Committee</li>
   </ul>
 
 
@@ -74,9 +116,32 @@ title: People
     <div class="relative">
       <h3 id="lbrnAdminCore">Admin Core</h3>
       <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
-      <section class="directory collapse">
-        {% for people in site.data.LBRN-adminCore %}
+      <section class="directory collapsenobs">
+        {% for people in site.admin_core %}
+        <!-- site.admin_core site.data.LBRN-adminCore -->
           {% include directory.html %}
+        {% endfor %}
+
+        <!-- <article class="person">
+          <img src="images/people/{{people.image}}" alt="{{people.name}}">
+          <h4>{{people.name}}</h4>
+          <h5>{{people.position}}</h5>
+          <h6>{{people.school}}</h6>
+          <ul>
+            <li>{{people.city}}, {{people.state}}, {{people.zip}}</li>
+            <li>{{people.email}}</li>
+            <li>{{people.phone}}</li>
+          </ul>
+        </article>
+ -->
+        {% for pi in site.admin_core %}
+        <article class="person" data-pType="{{pi.project-type}}">
+          <img src="images/people/{{pi.image}}" alt="{{pi.author}}">
+          <h4>{{pi.author}}</h4>
+          <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a>
+          <h6 style="margin-top: .6em;">{{pi.school}}</h6>
+          <h6 style="margin-top: .6em;">{{pi.project-type}}</h6>
+        </article>
         {% endfor %}
       </section>
     </div>
@@ -84,55 +149,107 @@ title: People
   <div class="relative BBcore">
     <h3 id="lbrnBbcCore">BBC Core</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
-    <section class="directory collapse">
-      {% for people in site.data.LBRN-BBC-Core %}
+    <section class="directory collapsenobs">
+      <!-- site.data.LBRN-BBC-Core -->
+      {% for people in site.bbc_core %}
         {% include directory.html %}
       {% endfor %}
+        <!--
+        <article class="person">
+          <img src="images/people/{{bbcpeople.image}}" alt="{{bbcpeople.name}}">
+          <h4>{{bbcpeople.name}}</h4>
+          <h5>{{bbcpeople.position}}</h5>
+          <h6>{{bbcpeople.school}}</h6>
+          <ul>
+            <li>{{bbcpeople.city}}, {{bbcpeople.state}}, {{bbcpeople.zip}}</li>
+            <li>{{bbcpeople.email}}</li>
+            <li>{{bbcpeople.phone}}</li>
+          </ul>
+        </article> -->
+
+
+
+
     </section>
   </div>
   <div class="relative MCcore">
     <h3 id="lbrnMcbrCore">MCBR Core</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
-    <section class="directory collapse">
-      {% for people in site.data.LBRN-MCBR-Core %}
+    <section class="directory collapsenobs">
+      {% for people in site.MCBR_core %}
         {% include directory.html %}
       {% endfor %}
+      <!-- {% for MCBRpeople in site.data.LBRN-MCBR-Core %}
+        {% include directory.html %}site.data.LBRN-MCBR-Core
+        <article class="person">
+          <img src="images/people/{{MCBRpeople.image}}" alt="{{MCBRpeople.name}}">
+          <h4>{{MCBRpeople.name}}</h4>
+          <h5>{{MCBRpeople.position}}</h5>
+          <h6>{{MCBRpeople.school}}</h6>
+          <ul>
+            <li>{{MCBRpeople.city}}, {{MCBRpeople.state}}, {{MCBRpeople.zip}}</li>
+            <li>{{MCBRpeople.email}}</li>
+            <li>{{MCBRpeople.phone}}</li>
+          </ul>
+        </article>
+      {% endfor %} -->
     </section>
   </div>
   <h2 class="pielement">Project Investigators</h2>
   <div class="relative CRP">
     <h3 id="currentlyFunded">Currently Funded PIs</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
-    <section class="directory collapse">
+    <section class="directory collapsenobs">
       {% for pi in site.project_investigators %}
         {% include directory-currentPi.html %}
       {% endfor %}
+      <!-- {% for CFPpeople in site.project_investigators %}
+        {% include directory.html %}
+        <article class="person">
+          <img src="images/people/{{CFPpeople.image}}" alt="{{CFPpeople.name}}">
+          <h4>{{CFPpeople.author}}</h4>
+          <h5>{{CFPpeople.title}}</h5>
+          <h6>{{CFPpeople.school}}</h6>
+
+        </article>
+      {% endfor %} -->
     </section>
   </div>
   <div class="relative PrevPPi">
     <h3 id="previouslyFunded">Previously Funded PIs</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
-    <section class="directory collapse">
-      {% for people in site.data.previousPI %}
+    <section class="directory collapsenobs">
+      {% for people in site.previous_pis %}
         {% include directory-pi.html %}
       {% endfor %}
+      <!-- {% for PFPpeople in site.data.previousPI %}site.data.previousPI
+        {% include directory.html %}
+        <article class="person">
+          <img src="images/people/{{PFPpeople.image}}" alt="{{PFPpeople.name}}">
+          <h4>{{PFPpeople.author}}</h4>
+          <h5>{{PFPpeople.title}}</h5>
+          <h6>{{PFPpeople.school}}</h6>
+        </article>
+      {% endfor %} -->
     </section>
   </div>
   <div class="relative Parti">
     <h2 id="partnerInstitutes">Partner Institutes</h2>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin2" aria-hidden="true"></i>
-    <section class="directory collapse">
-      {% for people in site.data.Partner-Institutes %}
+    <section class="directory collapsenobs">
+      {% for people in site.partner_Institutes %}
         {% include directory-partner-institutes.html %}
       {% endfor %}
+
     </section>
   </div>
   <h2 class="cmelement">Committee Members</h2>
   <div class="relative LBRNe">
     <h3 id="LbrnEAC">LBRN External Advisory Committee</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
-    <section class="directory collapse">
-      {% for people in site.data.LBRN-EAC %}
+    <section class="directory collapsenobs">
+      <!-- site.data.LBRN-EAC -->
+      {% for people in site.committee-members %}
         {% include directory-committee-members.html %}
       {% endfor %}
     </section>
@@ -140,8 +257,9 @@ title: People
   <div class="relative LBRNsc">
     <h3 id="LbrnSteering">LBRN Steering Committee</h3>
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
-    <section class="directory collapse">
-      {% for people in site.data.LBRN-Steering-Committee %}
+    <section class="directory collapsenobs">
+      <!-- site.data.LBRN-Steering-Committee -->
+      {% for people in site.LBRN_Steering_Committee %}
         {% include directory-committee-members.html %}
       {% endfor %}
     </section>

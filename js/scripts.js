@@ -41,9 +41,9 @@ $( document ).ready(function() {
     // height issue 2
   });
   // collapsable sections
-  $('.collapse').siblings('h3, h2, i').click(function() {
+  $('.collapsenobs').siblings('h3, h2, i').click(function() {
     console.log('fired');
-    $(this).siblings('.collapse').toggleClass('expand');
+    $(this).siblings('.collapsenobs').toggleClass('expand');
     if ($(this).hasClass('fa')){
       $(this).toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
     }
@@ -129,41 +129,44 @@ function piFilter(){
   var cmtrack = 2;
   var cmelement = document.getElementsByClassName('cmelement'), i;
 
+$('.piac').click(function() {
+        console.log('dog2');
+});
 
-  $("#pi-fp").click(function(){
+  $('#pifp').click(function(){
     $(this).toggleClass('on');
     fulls.slideToggle('fast');
   });
-  $("#pi-sp").click(function(){
+  $("#pisp").click(function(){
     $(this).toggleClass('on');
     starts.slideToggle('fast');
   });
-  $("#pi-sip").click(function(){
+  $("#pisip").click(function(){
     $(this).toggleClass('on');
     shares.slideToggle('fast');
   });
-  $("#pi-pp").click(function(){
+  $("#pipp").click(function(){
     $(this).toggleClass('on');
     pilots.slideToggle('fast');
   });
-  $("#pi-te").click(function(){
+  $("#pite").click(function(){
     $(this).toggleClass('on');
     te.slideToggle('fast');
-        // console.log('dog');
+        console.log('dog');
   });
 
-  $("#pi-os1").click(function(){
+  $("#pios1").click(function(){
     $(this).toggleClass('on');
     oe1.slideToggle('fast');
-        // console.log('dog');
+        console.log('dog');
   });
-  $("#pi-os2").click(function(){
+  $("#pios2").click(function(){
     $(this).toggleClass('on');
     oe2.slideToggle('fast');
-        // console.log('dog');
+        console.log('dog');
   });
-  $("#pi-ac").click(function(){
-            // console.log('dog');
+  $('#piac').click(function(){
+            console.log('dog');
     for(var i=0; i < ac.length; i++)
         {
         // ac[i].style.display ='none';
@@ -181,7 +184,7 @@ function piFilter(){
     // ac.slideToggle('fast');
         // console.log('dog');
   });
-$("#pi-bc").click(function(){
+$("#pibc").click(function(){
   // console.log('dog');
   for(var i=0; i < bc.length; i++)
       {
@@ -202,7 +205,7 @@ $("#pi-bc").click(function(){
 });
 
 
-  $("#pi-lsc").click(function(){
+  $("#pilsc").click(function(){
     // console.log('dog');
     for(var i=0; i < lsc.length; i++)
         {
@@ -225,7 +228,7 @@ $("#pi-bc").click(function(){
         // console.log('dog');
   });
 
-  $("#pi-le").click(function(){
+  $("#pile").click(function(){
     // console.log('dog');
     for(var i=0; i < le.length; i++)
         {
@@ -248,7 +251,7 @@ $("#pi-bc").click(function(){
         // console.log('dog');
   });
 
-  $("#pi-pai").click(function(){
+  $("#pipai").click(function(){
     // console.log('dog');
     for(var i=0; i < pai.length; i++)
         {
@@ -268,7 +271,7 @@ $("#pi-bc").click(function(){
         // console.log('dog');
   });
 
-  $("#pi-crp").click(function(){
+  $("#picrp").click(function(){
     // console.log('dog');
     for(var i=0; i < crp.length; i++)
         {
@@ -298,7 +301,7 @@ $("#pi-bc").click(function(){
         // console.log('dog');
   });
 
-  $("#pi-ppi").click(function(){
+  $("#pippi").click(function(){
     // console.log('dog');
     for(var i=0; i < ppi.length; i++)
         {
@@ -327,7 +330,7 @@ $("#pi-bc").click(function(){
         // console.log('dog');
   });
 
-  $("#pi-mc").click(function(){
+  $("#pimc").click(function(){
     // console.log('dog');
     for(var i=0; i < mc.length; i++)
         {
