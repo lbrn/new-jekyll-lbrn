@@ -1,4 +1,4 @@
-<article class="person">
+<!-- <article class="person">
   <img src="images/people/{{people.image}}" alt="{{people.name}}">
   <h4>{{people.name}}</h4>
   <h5>{{people.position}}</h5>
@@ -8,4 +8,11 @@
     <li>{{people.email}}</li>
     <li>{{people.phone}}</li>
   </ul>
+</article> -->
+<article class="person" data-pType="{{people.project-type}}">
+  <img src="images/people/{{people.image}}" alt="{{people.author}}">
+  <h4>{{people.author}}</h4>
+  <a class="natural-link" href="{{people.url | relative_url }}"><h5>{{people.title}}</h5></a>
+  <h6 style="margin-top: .6em;">{{people.school}}</h6>
+  <h6 style="margin-top: .6em;">{{people.project-type}}</h6>
 </article>

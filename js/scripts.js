@@ -12,7 +12,7 @@ $( document ).ready(function() {
   else{console.log("no slider on page");}
 //Mobile Menu
   $("#navBug").click(function(){
-      $('#navtog').slideToggle('fast');
+      $('#').slideToggle('fast');
       if ($(this).attr("src") == "images/menuOpen.png") {
         $(this).attr("src", "images/menuClosed.png");
       }

@@ -86,7 +86,17 @@ title: People
 </div> -->
 
 
-
+<!-- <section class="directory">
+  {% for pi in site.project_investigators %}
+  <article class="person" data-pType="{{pi.project-type}}">
+    <img src="images/people/{{pi.image}}" alt="{{pi.author}}">
+    <h4>{{pi.author}}</h4>
+    <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a>
+    <h6 style="margin-top: .6em;">{{pi.school}}</h6>
+    <h6 style="margin-top: .6em;">{{pi.project-type}}</h6>
+  </article>
+  {% endfor %}
+</section> -->
 
 <div class="people" id="matchHeight">
   <div class="Adcore">
@@ -98,6 +108,28 @@ title: People
         <!-- site.admin_core site.data.LBRN-adminCore -->
           {% include directory.html %}
         {% endfor %}
+
+        <!-- <article class="person">
+          <img src="images/people/{{people.image}}" alt="{{people.name}}">
+          <h4>{{people.name}}</h4>
+          <h5>{{people.position}}</h5>
+          <h6>{{people.school}}</h6>
+          <ul>
+            <li>{{people.city}}, {{people.state}}, {{people.zip}}</li>
+            <li>{{people.email}}</li>
+            <li>{{people.phone}}</li>
+          </ul>
+        </article>
+ -->
+        <!-- {% for pi in site.admin_core %}
+        <article class="person" data-pType="{{pi.project-type}}">
+          <img src="images/people/{{pi.image}}" alt="{{pi.author}}">
+          <h4>{{pi.author}}</h4>
+          <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a>
+          <h6 style="margin-top: .6em;">{{pi.school}}</h6>
+          <h6 style="margin-top: .6em;">{{pi.project-type}}</h6>
+        </article>
+        {% endfor %} -->
       </section>
     </div>
   </div>
@@ -109,6 +141,22 @@ title: People
       {% for people in site.bbc_core %}
         {% include directory.html %}
       {% endfor %}
+        <!--
+        <article class="person">
+          <img src="images/people/{{bbcpeople.image}}" alt="{{bbcpeople.name}}">
+          <h4>{{bbcpeople.name}}</h4>
+          <h5>{{bbcpeople.position}}</h5>
+          <h6>{{bbcpeople.school}}</h6>
+          <ul>
+            <li>{{bbcpeople.city}}, {{bbcpeople.state}}, {{bbcpeople.zip}}</li>
+            <li>{{bbcpeople.email}}</li>
+            <li>{{bbcpeople.phone}}</li>
+          </ul>
+        </article> -->
+
+
+
+
     </section>
   </div>
   <div class="relative MCcore">
@@ -118,7 +166,20 @@ title: People
       {% for people in site.MCBR_core %}
         {% include directory.html %}
       {% endfor %}
-
+      <!-- {% for MCBRpeople in site.data.LBRN-MCBR-Core %}
+        {% include directory.html %}site.data.LBRN-MCBR-Core
+        <article class="person">
+          <img src="images/people/{{MCBRpeople.image}}" alt="{{MCBRpeople.name}}">
+          <h4>{{MCBRpeople.name}}</h4>
+          <h5>{{MCBRpeople.position}}</h5>
+          <h6>{{MCBRpeople.school}}</h6>
+          <ul>
+            <li>{{MCBRpeople.city}}, {{MCBRpeople.state}}, {{MCBRpeople.zip}}</li>
+            <li>{{MCBRpeople.email}}</li>
+            <li>{{MCBRpeople.phone}}</li>
+          </ul>
+        </article>
+      {% endfor %} -->
     </section>
   </div>
   <h2 class="pielement">Project Investigators</h2>
@@ -129,7 +190,16 @@ title: People
       {% for pi in site.project_investigators %}
         {% include directory-currentPi.html %}
       {% endfor %}
+      <!-- {% for CFPpeople in site.project_investigators %}
+        {% include directory.html %}
+        <article class="person">
+          <img src="images/people/{{CFPpeople.image}}" alt="{{CFPpeople.name}}">
+          <h4>{{CFPpeople.author}}</h4>
+          <h5>{{CFPpeople.title}}</h5>
+          <h6>{{CFPpeople.school}}</h6>
 
+        </article>
+      {% endfor %} -->
     </section>
   </div>
   <div class="relative PrevPPi">
@@ -139,7 +209,15 @@ title: People
       {% for people in site.previous_pis %}
         {% include directory-pi.html %}
       {% endfor %}
-
+      <!-- {% for PFPpeople in site.data.previousPI %}site.data.previousPI
+        {% include directory.html %}
+        <article class="person">
+          <img src="images/people/{{PFPpeople.image}}" alt="{{PFPpeople.name}}">
+          <h4>{{PFPpeople.author}}</h4>
+          <h5>{{PFPpeople.title}}</h5>
+          <h6>{{PFPpeople.school}}</h6>
+        </article>
+      {% endfor %} -->
     </section>
   </div>
   <div class="relative Parti">
