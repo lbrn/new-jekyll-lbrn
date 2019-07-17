@@ -108,6 +108,11 @@
         {% for post in site.categories.featured %}
           {% include news-list-item-featured.html %}
         {% endfor %}
+
+        {% for post in site.posts limit:4 %}
+          {% include news-list-item.html %}
+        {% endfor %}
+
         {% for post in site.categories.news limit:4 %}
           {% include news-list-item.html %}
         {% endfor %}

@@ -2936,7 +2936,7 @@ font-size: 0.8em;
   text-align: center;
   list-style: none;
   border-radius: 6px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .carousel-indicators li {
   display: inline-block;
