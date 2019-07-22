@@ -2,7 +2,7 @@
 layout: post
 title: LBRN/CCT Pine BioTech Summer Review Session
 categories: events
-eventDate: July 22, 2019
+eventDate: July 29, 2019
 startTime: 10:00am
 endTime: 1:00pm
 textOnUrl: LBRN Pine Biotech Summer Review Session
