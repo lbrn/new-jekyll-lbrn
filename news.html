@@ -2,6 +2,20 @@
 layout: default
 title: News Archive
 ---
+<button id="newsSidebarButton" class="btn newSidebarButton secondary" type="button" data-toggle="collapse" data-target="#newsSidebarmobile" aria-expanded="false" aria-controls="collapseExample">
+  <h1>Articles</h1>
+</button>
+      <div id="newsSidebarmobile" class="navdropdown collapse">
+        <ul>
+          {% for post in site.categories.featured %}
+            <a href="#{{post.date}}"><li>{{post.title}}</li></a>
+          {% endfor %}
+          {% for post in site.categories.news %}
+            <a href="#{{post.date}}"><li>{{post.title}}</li></a>
+          {% endfor %}
+        </ul>
+      </div>
+
       <section class="news" id="newsPageContainer">
         {% for post in site.categories.featured %}
           {% include news-full-list-item.html %}
@@ -21,21 +35,3 @@ title: News Archive
           {% endfor %}
         </ul>
       </aside>
-
-      <!-- TEST ZONE -->
-
-      <section class="news" id="newsPageContainer">
-        {% for post in site.categories.featured %}
-          {% include news-full-list-item.html %}
-        {% endfor %}
-        {% for post in site.categories.news %}
-          {% include news-full-list-item.html %}
-        {% endfor %}
-        <!--Start of NEWS ITEM-->
-      </section>
-      <h2>EVENTS</h2>
-        <!--Start of EVENT ITEM-->
-        {% assign eventsR = site.events %}
-        {% for event in eventsR limit:2 %}
-          {% include events-list-item.html %}
-        {% endfor %}

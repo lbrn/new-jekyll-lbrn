@@ -30,7 +30,7 @@
         <a href="index.html"><img src="images/webLogo.png" alt="LBRN Logo"></a>
         <h1>Louisiana&nbsp;Biomedical Research&nbsp;Network</h1>
         <button id="navBug" class="btn" type="button" data-toggle="collapse" data-target="#navdropdownsmall" aria-expanded="false" aria-controls="collapseExample">
-          <img src="images/menuClosed.png" alt="Menu Bug">
+          <img src="images/menuClosed.png" alt="Menu Bug" id="navButton">
         </button>
         <!-- <a href="#"><img id="navBug" src="images/menuClosed.png" alt="Menu Bug"></a> -->
       </div>
@@ -105,6 +105,12 @@
       </aside>
       <section class="news" id="newsContainer">
         <h2>NEWS</h2>
+
+        {% assign newsR = site.news %}
+          {% for post in newsR %}
+          {% include news-list-item-featured.html %}
+        {% endfor %}
+
         {% for post in site.categories.featured %}
           {% include news-list-item-featured.html %}
         {% endfor %}
@@ -117,15 +123,15 @@
           {% include news-list-item.html %}
         {% endfor %}
         <!--End of NEWS ITEM-->
-        <article class="view-all">
+        <div class="view-all">
           <a class="view-all" href="news.html">News Archives</a>
-        </article>
+        </div>
       </section>
       <aside class="events">
         <h2>Twitter</h2>
           <!--Start of EVENT ITEM-->
           <div class="Twitterf">
-            <a class="twitter-timeline" href="https://twitter.com/botinthewoods?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by botinthewoods</a>
+            <a class="twitter-timeline" href="https://twitter.com/lbrn_inbre?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by LBRN Inbre</a>
               <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
            <div>
             <!-- <a class="view-all" href="upcoming-events.html">View all events</a> -->

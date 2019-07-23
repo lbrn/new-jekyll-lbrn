@@ -11,13 +11,17 @@ $( document ).ready(function() {
   }
   else{console.log("no slider on page");}
 //Mobile Menu
-  $("#navBug").click(function(){
-      $('#').slideToggle('fast');
-      if ($(this).attr("src") == "images/menuOpen.png") {
+  $('#navButton').click(function(){
+      // $('.navdropdown').slideToggle('fast');
+      if ($(this).attr("src") == "images/menuOpen.png")
+      {
         $(this).attr("src", "images/menuClosed.png");
       }
       else {$(this).attr("src", "images/menuOpen.png")}
   });
+
+
+
   $("body > div.layout").click(function(){
     if ($('#navBug').css('display') != 'none'){
       $('#navtog').slideUp('fast');
@@ -111,6 +115,7 @@ function piFilter(){
   var starts = $('article[data-ptype="StartupProject"]');
   var shares = $('article[data-ptype="SharedInstrumentProject"]');
   var pilots = $('article[data-ptype="PilotProject"]');
+  var translproj = $('article[data-ptype="TranslationalProject"]');
 
   var ac = document.getElementsByClassName('Adcore'), i;
   var bc = document.getElementsByClassName('BBcore'), i;
@@ -133,28 +138,32 @@ $('.piac').click(function() {
         console.log('dog2');
 });
 
-  $('#pifp').click(function(){
+  $('.pifp').click(function(){
     $(this).toggleClass('on');
     fulls.slideToggle('fast');
   });
-  $("#pisp").click(function(){
+  $(".pisp").click(function(){
     $(this).toggleClass('on');
     starts.slideToggle('fast');
   });
-  $("#pisip").click(function(){
+  $(".pisip").click(function(){
     $(this).toggleClass('on');
     shares.slideToggle('fast');
   });
-  $("#pipp").click(function(){
+  $(".pipp").click(function(){
     $(this).toggleClass('on');
     pilots.slideToggle('fast');
   });
-  $("#pite").click(function(){
+  $(".pite").click(function(){
     $(this).toggleClass('on');
     te.slideToggle('fast');
         console.log('dog');
   });
-
+  $(".pitp").click(function(){
+    $(this).toggleClass('on');
+    translproj.slideToggle('fast');
+        console.log('dog');
+  });
   $("#pios1").click(function(){
     $(this).toggleClass('on');
     oe1.slideToggle('fast');
@@ -165,7 +174,7 @@ $('.piac').click(function() {
     oe2.slideToggle('fast');
         console.log('dog');
   });
-  $('#piac').click(function(){
+  $('.piac').click(function(){
             console.log('dog');
     for(var i=0; i < ac.length; i++)
         {
@@ -184,7 +193,7 @@ $('.piac').click(function() {
     // ac.slideToggle('fast');
         // console.log('dog');
   });
-$("#pibc").click(function(){
+$(".pibc").click(function(){
   // console.log('dog');
   for(var i=0; i < bc.length; i++)
       {
@@ -205,7 +214,7 @@ $("#pibc").click(function(){
 });
 
 
-  $("#pilsc").click(function(){
+  $(".pilsc").click(function(){
     // console.log('dog');
     for(var i=0; i < lsc.length; i++)
         {
@@ -228,7 +237,7 @@ $("#pibc").click(function(){
         // console.log('dog');
   });
 
-  $("#pile").click(function(){
+  $(".pile").click(function(){
     // console.log('dog');
     for(var i=0; i < le.length; i++)
         {
@@ -251,7 +260,7 @@ $("#pibc").click(function(){
         // console.log('dog');
   });
 
-  $("#pipai").click(function(){
+  $(".pipai").click(function(){
     // console.log('dog');
     for(var i=0; i < pai.length; i++)
         {
@@ -271,7 +280,7 @@ $("#pibc").click(function(){
         // console.log('dog');
   });
 
-  $("#picrp").click(function(){
+  $(".picrp").click(function(){
     // console.log('dog');
     for(var i=0; i < crp.length; i++)
         {
@@ -301,7 +310,7 @@ $("#pibc").click(function(){
         // console.log('dog');
   });
 
-  $("#pippi").click(function(){
+  $(".pippi").click(function(){
     // console.log('dog');
     for(var i=0; i < ppi.length; i++)
         {
@@ -330,7 +339,7 @@ $("#pibc").click(function(){
         // console.log('dog');
   });
 
-  $("#pimc").click(function(){
+  $(".pimc").click(function(){
     // console.log('dog');
     for(var i=0; i < mc.length; i++)
         {
@@ -465,3 +474,10 @@ function accordian() {
     $(this).siblings('section.accordianSection').slideToggle();
   });
 }
+
+function dropdowntest(){
+  $('.mobilefilter').on('show.bs.dropdown', function () {
+  // do something…
+    console.log("dog1");
+  });
+} //end

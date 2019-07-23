@@ -3,20 +3,63 @@ layout: default
 title: Previous Project Investigators
 ---
 
-<nav id="pi-filter">
+<aside id="lbrnEventSidebar3">
+  <ul>
+    <div id="lbrnEventSidebarUl">
+      <p>
+        <button class="btn mobilefilter dropdown-toggle" type="button" data-toggle="collapse" data-target="#filterex" aria-expanded="false" aria-controls="collapseExample">
+          Filters
+        </button>
+      </p>
+      <div class="collapse mobilefilter" id="filterex">
+        <li class="on pifp">Full Project</li>
+        <li class="on pisp">Startup Project</li>
+        <li class="on pisip">Shared Instrument Project</li>
+        <li class="on pipp">Pilot Project</li>
+        <li class="on pitp">Translational Project</li>
+          <li class="on peoplesort pilsc" id="pilsc">LBRN Steering Committee</li>
+      </div>
+    </div>
+  </ul>
+</aside>
+
+<aside id="lbrnEventSidebar2">
+  <ul>
+      <div id="lbrnEventSidebarUl">
+
+            <li class="on pifp">Full Project</li>
+            <li class="on pisp">Startup Project</li>
+            <li class="on pisip">Shared Instrument Project</li>
+            <li class="on pipp">Pilot Project</li>
+            <li class="on pitp">Translational Project</li>
+
+    </div>
+    <li><a href="#">top</a></li>
+  </ul>
+</aside>
+
+
+<div class="testdiv content ">
+
+<!-- <nav id="pi-filter">
   <p>Filters:</p>
   <ul>
-    <li class="on" id="pi-os1">Old Section 1</li>
-    <li class="on" id="pi-os2">Old Section 2</li>
-    <li class="on" id="pi-os3">Old Section 3</li>
-    <!-- <li class="on" id="pi-pp">Pilot Project</li>
-    <li class="on" id="pi-te"> Test Element</li> -->
-  </ul>
-</nav>
+      <li class="on" id="pifp">Full Project</li>
+      <li class="on" id="pisp">Startup Project</li>
+      <li class="on" id="pisip">Shared Instrument Project</li>
+      <li class="on" id="pipp">Pilot Project</li>
+      <li class="on" id="pitp">Translational Project</li>
+    </ul>
+</nav> -->
 <h2>Previous Project Investigators</h2>
 <section class="directory">
-  <!--  old pi in site.old_pi //you can't comment these lines of code out in full. it causes errors -->
-  {% for pi in site.admin_core %}
+{% for pi in site.project_investigators %}
+  {% include prev_pi.html %}
+{% endfor %}
+</section>
+<section class="directory" style="display: none;">
+  <!--   //you can't comment these lines of code out in full. it causes errors -->
+  {% for pi in site.project_investigators %}
   <article class="person" data-pType="{{pi.project-type}}">
     <img src="images/people/{{pi.image}}" alt="{{pi.author}}">
     <h4>{{pi.author}}</h4>
@@ -26,4 +69,5 @@ title: Previous Project Investigators
   </article>
   {% endfor %}
 </section>
+</div>
 <section class="directory">
