@@ -37,6 +37,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 /* End at 1295ish */
 @media (min-width: 0) {
+  .peoplewrap{
+    min-height: 8em;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    height: 15em;
+    /* background-color: red; */
+    display: block;
+  }
 
   #newsSidebarButton{
     display:block;
@@ -1462,6 +1470,10 @@ div.research img{
   }
   /* end 0 */
 @media (min-width: 414px) {
+  .peoplewrap{
+    height: 11em;
+  }
+
   .mobilesidebar{
     display: none !important;
   }
@@ -2232,6 +2244,8 @@ section.directory article.person{
   div.chooseTypeInline {
     display: flex; } }
 @media (min-width: 860px) {
+
+
   main div.content h3.small-text{
     font-size: 0.9em;
   }
@@ -2239,8 +2253,19 @@ section.directory article.person {
   width: 40%;
   margin: 5%;
   overflow: visible;
-  height: 15em;
+  /* height: 15em; */
+  min-height: 8em;
 }
+/* section.directory article.person:nth-child(even) {
+
+  float: right;
+
+}
+section.directory article.person:nth-child(odd) {
+
+  float: left;
+} */
+
   .three-card-responsive {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2442,6 +2467,12 @@ section.directory article.person {
     margin-left: 0;
     margin-right: 0; } }
 @media (min-width: 1500px) {
+
+  section.directory article.person {
+    min-height: 8em;
+    height: unset;
+    margin-bottom: auto;
+}
   .layout {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

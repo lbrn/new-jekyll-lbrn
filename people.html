@@ -153,9 +153,16 @@ title: People
       <h3 id="lbrnAdminCore">Admin Core</h3>
       <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
       <section class="directory collapsenobs">
+
         {% for people in site.admin_core %}
-        <!-- site.admin_core site.data.LBRN-adminCore -->
-          {% include directory.html %}
+          {% assign loopindex = forloop.index | modulo: 2 %}
+          {% if loopindex == 1 %}
+            <div>
+            {% include directory.html %}
+          {% else %}
+              {% include directory.html %}
+            </div>
+          {% endif %}
         {% endfor %}
       </section>
     </div>
@@ -166,7 +173,14 @@ title: People
     <section class="directory collapsenobs">
       <!-- site.data.LBRN-BBC-Core -->
       {% for people in site.bbc_core %}
-        {% include directory.html %}
+        {% assign loopindex = forloop.index | modulo: 2 %}
+        {% if loopindex == 1 %}
+          <div class="peoplewrap">
+          {% include directory.html %}
+        {% else %}
+            {% include directory.html %}
+          </div>
+        {% endif %}
       {% endfor %}
     </section>
   </div>
@@ -175,8 +189,15 @@ title: People
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapsenobs">
       {% for people in site.MCBR_core %}
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      {% if loopindex == 1 %}
+        <div class="peoplewrap">
         {% include directory.html %}
-      {% endfor %}
+      {% else %}
+          {% include directory.html %}
+        </div>
+      {% endif %}
+    {% endfor %}
 
     </section>
   </div>
@@ -186,7 +207,15 @@ title: People
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapsenobs">
       {% for pi in site.project_investigators %}
-        {% include directory-currentPi.html %}
+
+        {% assign loopindex = forloop.index | modulo: 2 %}
+        {% if loopindex == 1 %}
+          <div class="peoplewrap">
+                  {% include directory-currentPi.html %}
+        {% else %}
+                    {% include directory-currentPi.html %}
+          </div>
+        {% endif %}
       {% endfor %}
 
     </section>
@@ -196,7 +225,14 @@ title: People
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapsenobs">
       {% for people in site.previous_pis %}
-        {% include directory-pi.html %}
+        {% assign loopindex = forloop.index | modulo: 2 %}
+        {% if loopindex == 1 %}
+          <div class="peoplewrap">
+          {% include directory-pi.html %}
+        {% else %}
+            {% include directory-pi.html %}
+          </div>
+        {% endif %}
       {% endfor %}
 
     </section>
@@ -206,8 +242,18 @@ title: People
     <i class="collapseTrigger fa fa-2x fa-chevron-right icon-margin2" aria-hidden="true"></i>
     <section class="directory collapsenobs">
       {% for people in site.partner_Institutes %}
-        {% include directory-partner-institutes.html %}
-      {% endfor %}
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      {% if loopindex == 1 %}
+        <div class="peoplewrap">
+        {% include directory-partner-institutes.html  %}
+      {% else %}
+          {% include directory-partner-institutes.html  %}
+        </div>
+      {% endif %}
+    {% endfor %}
+
+         <!-- include directory-partner-institutes.html  -->
+
 
     </section>
   </div>
@@ -218,8 +264,18 @@ title: People
     <section class="directory collapsenobs">
       <!-- site.data.LBRN-EAC -->
       {% for people in site.committee-members %}
-        {% include directory-committee-members.html %}
-      {% endfor %}
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      {% if loopindex == 1 %}
+        <div class="peoplewrap">
+        {% include directory-committee-members.html  %}
+      {% else %}
+          {% include directory-committee-members.html  %}
+        </div>
+      {% endif %}
+    {% endfor %}
+
+      <!-- directory-committee-members.html  -->
+
     </section>
   </div>
   <div class="relative LBRNsc">
@@ -228,8 +284,16 @@ title: People
     <section class="directory collapsenobs">
       <!-- site.data.LBRN-Steering-Committee -->
       {% for people in site.LBRN_Steering_Committee %}
-        {% include directory-committee-members.html %}
-      {% endfor %}
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      {% if loopindex == 1 %}
+        <div class="peoplewrap">
+        {% include directory-committee-members.html  %}
+      {% else %}
+          {% include directory-committee-members.html  %}
+        </div>
+      {% endif %}
+    {% endfor %}
+    
     </section>
   </div>
 </div>
