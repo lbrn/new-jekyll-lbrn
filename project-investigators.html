@@ -53,11 +53,12 @@ title: Project Investigators
 </nav> -->
 <h2>Previous Project Investigators</h2>
 <section class="directory">
-{% for pi in site.project_investigators %}
+{% for pi in site.project_investigators  %}
   {% include prev_pi.html %}
 {% endfor %}
 </section>
-<section class="directory" style="display: none;">
+<section class="directory" >
+
   <!--   //you can't comment these lines of code out in full. it causes errors -->
   {% for pi in site.project_investigators %}
   <article class="person" data-pType="{{pi.project-type}}">

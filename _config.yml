@@ -24,7 +24,7 @@ collections:
   news:
     output:
   project_investigators:
-    output:
+    output: true
   old_pi:
     output:
   events:
@@ -42,6 +42,9 @@ collections:
     output:
   previous_pis:
     output:
+  pi_data:
+    output: true
+
 # Build settings
 markdown: kramdown
 
