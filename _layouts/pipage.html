@@ -59,30 +59,7 @@
       </ul>
     </div>
 
-    <!-- <header>
-      <div class="layout">
-        <a href="{{site.baseurl}}/index.html"><img src="{{site.baseurl}}/images/webLogo.png" alt="LBRN Logo"></a>
-        <h1>Louisiana&nbsp;Biomedical Research&nbsp;Network</h1>
-        <a href="#"><img id="navBug" src="{{site.baseurl}}/images/menuClosed.png" alt="Menu Bug"></a>
-      </div>
-    </header>
-    <nav id="navtog">
-      <ul class="layout">
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/people.html">People</a></li>
-        <li><a href="/research.html">Research</a></li>
-        <li><a href="/resources.html">Resources</a></li>
-        <li><a href="/lbrn-events.html">Events</a></li>
-        <li class="right">
-            <a class="button" href="newsletter.html">Newsletter</a>
-        </li>
-        <li class="right">
-            <a target="_blank" href="https://www.facebook.com/LouisianaBiomedicalResearchNetwork" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
-            <a target="_blank" href="https://twitter.com/lbrn_inbre" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-            <a target="_blank" href="https://www.youtube.com/user/LBRNINBRE/videos" aria-label="Youtube"><i class="fa fa-youtube-square"></i></a>
-        </li>
-      </ul>
-    </nav> -->
+
     <main class="layout">
       <section id="lbrnEventHeader">
         {% if page.featuredImageUrl %}
@@ -101,9 +78,71 @@
         {% endif %}
       </section>
       <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->
-      <div class="content" >
-        {{content}}
+      <div class="content">
+
+
+<!-- if == title -->
+
+
+        {% for pi in site.pi_data %}
+          {% if pi.name == page.person %}
+            <div class="page">
+              <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.name | replace:' ', '+' }}" class="pubmed-link btn btn-primary">Link to Pubmed Publications</a>
+              <h2 class="page-title" style="margin-bottom: 0">{{ pi.name }}</h2>
+              {{ pi.origin }}
+              <hr>
+              <div class="pi">
+                <div class="row">
+                  <div class="span6">
+                    <h4>Project Title</h4>
+                    <p class="project-title">{{ pi.project_title }}</p>
+                    <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a>
+                    <br>
+
+                    {% if pi.mentors.size > 1 %}
+                      <h4>Mentors</h4>
+                    {% else %}
+                    	{% if pi.mentors.size == 1 %}
+                    		<h4>Mentor</h4>
+                    	{% endif %}
+                    {% endif %}
+
+                    {% for mentor in pi.mentors %}
+                      <p>{{ mentor.name }}<br>{{mentor.origin}}</p>
+                    {% endfor %}
+                    <br>
+
+                    {% if pi.funding.size > 0 %}
+                      <h4>Funding Periods</h4>
+                    {% else %}
+                      <h4>Funding Period</h4>
+                    {% endif %}
+
+                    {% for funding in pi.funding %}
+                      <p>{{ funding.name }} ({{funding.period}})</p>
+                    {% endfor %}
+                  </div>
+                  <div class="span6">
+                    <img src="/images/people/{{ pi.image }}" alt="{{pi.author}}" class="img-polaroid">
+                  </div>
+                </div>
+
+                <h4>Abstract</h4>
+                <p class="long-text">
+                  {{ pi.abstract | newline_to_br }}
+                </p>
+                <p class="long-text">
+                  {{ pi.descrip | newline_to_br }}
+                </p>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+
       </div>
+<div style="display:none;">
+
+</div>
     </main>
     <footer>
       <div class="layout">

@@ -8,6 +8,12 @@ title: About LBRN
   {% endif %}
 {% endfor %}
 
+{% for pi in site.pi_data %}
+  {% if pi.name == 'Thomas Huckaba' %}
+    {% include directory_pidata.html %}
+  {% endif %}
+{% endfor %}
+
 <!-- <ul>
 {% for pihash in site.data.pis %}
   {% assign pis = pihash[1] %}
@@ -22,7 +28,7 @@ title: About LBRN
 </ul> -->
 
 
-{% for pi in site.data.pis %}
+{% for pi in site.pi_data %}
   {% if pi.name == page.person %}
     <div class="page">
       <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.name | replace:' ', '+' }}" class="pubmed-link btn btn-primary">Link to Pubmed Publications</a>
@@ -34,6 +40,7 @@ title: About LBRN
           <div class="span6">
             <h4>Project Title</h4>
             <p class="project-title">{{ pi.project_title }}</p>
+            <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a>
             <br>
 
             {% if pi.mentors.size > 1 %}
