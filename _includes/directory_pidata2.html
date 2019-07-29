@@ -1,0 +1,18 @@
+<article class="person" data-pType="{{pi.project-type}}">
+  <img src="images/people/{{pi.image}}" alt="{{pi.author}}">
+  <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{ pi.title }} </h5></a>
+  <h6 style="margin-top: .6em;">School: {{pi.school}}</h6>
+  <p class="project-title">Name: {{ pi.name }}</p>
+    <p class="project-title">Title: {{ pi.abstract_title }}</p>
+
+  <p class="project-title">{{ pi.project_title }}</p>
+  <br>
+
+</article>
+<article class="person" data-pType="{{pi.project-type}}">
+  <img src="images/people/{{pi.image}}" alt="{{pi.author}}">
+  <h4>{{pi.author}}</h4>
+  <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a>
+  <h6 style="margin-top: .6em;">{{pi.school}}</h6>
+  <h6 style="margin-top: .6em;">{{pi.project-type}}</h6>
+</article>

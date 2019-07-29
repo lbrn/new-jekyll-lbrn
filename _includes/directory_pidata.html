@@ -1,73 +1,10 @@
 <article class="person" data-pType="{{pi.project-type}}">
-
-  <a class="natural-link" href="{{ pi.url | relative_url }}"><h5>{{ pi.title }} d</h5></a>
-  <p class="project-title">{{ pi.name }}</p>
-    <p class="project-title">{{ pi.title }}</p>
-  <p class="project-title">{{ pi.project_title }}</p>
+  <img src="images/people/{{pi.image}}" alt="{{pi.author}}">
+  <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{ pi.title }} </h5></a>
+  <h6 style="margin-top: .6em;">School: {{pi.school}}</h6>
+  <p class="project-title">Name: {{ pi.author }}</p>
+    <p class="project-title">Title: {{ pi.title }}</p>
+  <p class="project-title"> project_title: {{ pi.project_title }}</p>
   <br>
 
-  {% if pi.mentors.size > 1 %}
-  <h4>Mentors</h4>
-  {% else %}
-  {% if pi.mentors.size == 1 %}
-  <h4>Mentor</h4>
-  {% endif %}
-  {% endif %}
-
-  {% for mentor in pi.mentors %}
-  <p>{{ mentor.name }}<br>{{mentor.origin}}</p>
-  {% endfor %}
-  <br>
 </article>
-
-<!-- {% for pi in site.pi_data %}
-  {% if pi.name == page.person %}
-    <div class="page">
-      <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.name | replace:' ', '+' }}" class="pubmed-link btn btn-primary">Link to Pubmed Publications</a>
-      <h2 class="page-title" style="margin-bottom: 0">{{ pi.name }}</h2>
-      {{ pi.origin }}
-      <hr>
-      <div class="pi">
-        <div class="row">
-          <div class="span6">
-            <h4>Project Title</h4>
-            <p class="project-title">{{ pi.project_title }}</p>
-            <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a>
-            <br>
-
-            {% if pi.mentors.size > 1 %}
-              <h4>Mentors</h4>
-            {% else %}
-            	{% if pi.mentors.size == 1 %}
-            		<h4>Mentor</h4>
-            	{% endif %}
-            {% endif %}
-
-            {% for mentor in pi.mentors %}
-              <p>{{ mentor.name }}<br>{{mentor.origin}}</p>
-            {% endfor %}
-            <br>
-
-            {% if pi.funding.size > 1 %}
-              <h4>Funding Periods</h4>
-            {% else %}
-              <h4>Funding Period</h4>
-            {% endif %}
-
-            {% for funding in pi.funding %}
-              <p>{{ funding.name }} ({{funding.period}})</p>
-            {% endfor %}
-          </div>
-          <div class="span6">
-            <img src="{{ site.baseurl }}files/images/pi-photos/full/{{ pi.image }}" class="img-polaroid">
-          </div>
-        </div>
-
-        <h4>Abstract</h4>
-        <p class="long-text">
-          {{ pi.abstract | newline_to_br }}
-        </p>
-      </div>
-    </div>
-  {% endif %}
-{% endfor %} -->

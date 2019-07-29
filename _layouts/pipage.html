@@ -79,16 +79,12 @@
       </section>
       <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->
       <div class="content">
-
-
-<!-- if == title -->
-
-
+        {{content}}
         {% for pi in site.pi_data %}
-          {% if pi.name == page.person %}
+          {% if pi.author == page.author %}
             <div class="page">
-              <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.name | replace:' ', '+' }}" class="pubmed-link btn btn-primary">Link to Pubmed Publications</a>
-              <h2 class="page-title" style="margin-bottom: 0">{{ pi.name }}</h2>
+              <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.author | replace:' ', '+' }}" class="pubmed-link btn btn-primary">Link to Pubmed Publications</a>
+              <h2 class="page-title" style="margin-bottom: 0">{{ pi.author }}</h2>
               {{ pi.origin }}
               <hr>
               <div class="pi">
@@ -138,11 +134,9 @@
             </div>
           {% endif %}
         {% endfor %}
-
       </div>
-<div style="display:none;">
 
-</div>
+
     </main>
     <footer>
       <div class="layout">

@@ -2,15 +2,17 @@
 layout: default
 title: About LBRN
 ---
-{% for pi in site.data.pis %}
-  {% if pi.name == 'Thomas Huckaba' %}
+
+FOLDER
+{% for pi in site.pi_data %}
+  {% if pi.author == 'Thomas Huckaba' %}
     {% include directory_pidata.html %}
   {% endif %}
 {% endfor %}
-
-{% for pi in site.pi_data %}
+DATA LIST
+{% for pi in site.data.pis %}
   {% if pi.name == 'Thomas Huckaba' %}
-    {% include directory_pidata.html %}
+    {% include directory_pidata2.html %}
   {% endif %}
 {% endfor %}
 
