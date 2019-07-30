@@ -49,6 +49,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width:80%;
     padding:5%;
   }
+  .profilepage h5{
+    font-size: 1.25em;
+  }
+  .caption h1{
+    margin-top: .5em;
+    margin-bottom: 0;
+  }
 
   .peoplewrap{
     min-height: 8em;
@@ -899,7 +906,10 @@ main div.content h3:enabled {
     font-size: 2.4em;
     line-height: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
-    color: #2C3D6C; }
+    color: #2C3D6C;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
   #lbrnEventHeader .imagebox {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2244,7 +2254,7 @@ section.directory article.person{
     display: none; }
 
 /*  div.resources section,*/ div.research section {
-    min-height: 20em; }
+    min-height: 25em; }
     div.resources section/* , div.research section */ {
       min-height: 21em;
      }
@@ -2482,7 +2492,7 @@ section.directory article.person:nth-child(odd) {
 @media (min-width: 1500px) {
 
   section.directory article.person {
-    min-height: 8em;
+    min-height: 10em;
     height: unset;
     margin-bottom: auto;
 }
@@ -2787,8 +2797,8 @@ div.resources h2 {
 }
 .more{
   border-radius: 6px;
-  padding:2.5%;
-  margin-top:unset !important;
+  /* padding:2.5%; */
+  /* margin-top:unset !important; */
 }
 /* cust strip code */
 .strip section img{
@@ -2798,9 +2808,13 @@ div.resources h2 {
   float: none;
 }
 
-
-.h2teststyle{
-  font-size: 0.95em;
+.research resrow{
+  margin-bottom: 5%;
+  height: 100%;
+  width: 100%;
+}
+.research h5{
+  font-size: 0.8em;
   line-height: 1.2em !important;
   text-transform: none !important;
   clear: both;
