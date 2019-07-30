@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Identification And Characterization Of Kola Acuminate (Bizzy Nut)-Specific Biomarkers For Prostate Cancer Prevention
 author: Kinesha Harris

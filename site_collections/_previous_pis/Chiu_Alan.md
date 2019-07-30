@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Adaptive Coupled Neural System Model For Hippocampal Function Restoration
 author: Alan Chiu

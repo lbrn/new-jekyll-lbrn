@@ -228,9 +228,9 @@ title: People
         {% assign loopindex = forloop.index | modulo: 2 %}
         {% if loopindex == 1 %}
           <div class="peoplewrap">
-          {% include directory-pi.html %}
+          {% include directory-pi-page.html %}
         {% else %}
-            {% include directory-pi.html %}
+            {% include directory-pi-page.html %}
           </div>
         {% endif %}
       {% endfor %}
@@ -293,7 +293,7 @@ title: People
         </div>
       {% endif %}
     {% endfor %}
-    
+
     </section>
   </div>
 </div>

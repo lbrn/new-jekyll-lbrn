@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Role Of Extracellular Domain IV Of HER2 Protein In Cell Signaling
 author: Seetharama D Satyanarayanajois

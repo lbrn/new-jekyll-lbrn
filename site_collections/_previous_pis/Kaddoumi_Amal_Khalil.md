@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Targeting Beta Amyloid Clearance As Therapeutic Approach For Alzheimer's Disease
 author: Amal Khalil Kaddoumi

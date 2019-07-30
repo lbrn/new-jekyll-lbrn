@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Spore Outer Structures&colon; Contribution to Germination Heterogeneity
 author: Rebecca Giorno-McConnell

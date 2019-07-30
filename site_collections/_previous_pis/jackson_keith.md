@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Role Of Heme Oxygenase In The Renal Control Of Hypertension
 author: Keith Jackson

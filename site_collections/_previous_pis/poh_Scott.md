@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Targeting of Macrophages in Inflammation With Thermosensitive Biopolymers
 author: Scott Poh

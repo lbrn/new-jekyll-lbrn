@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Epigenetic Effects Of Ceramide Glycosylation And Drug-Resistant Cancer Stem Cell
 author: Yong-Yu Liu

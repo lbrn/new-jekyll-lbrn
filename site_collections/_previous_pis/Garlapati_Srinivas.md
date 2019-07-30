@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Mechanism Of Translation Initiation In Protozoan Parasite Giardia Lamblia
 author: Srinivas Garlapati

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Rule-Based Data Mining For Knowledge Discovery In Alzheimer's Disease Using Microarray Databases
 author: Prerna Sethi Dua

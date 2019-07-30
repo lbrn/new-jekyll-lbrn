@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Hdacs Regulate Inflammatory Responses Against Microbial Toxins &amp; Cse Exposure
 author: Kui Chen

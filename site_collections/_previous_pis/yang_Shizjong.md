@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: Molecular Dynamics Simulation On The Interaction Between Domain I Of GK And Extracellular Domain IV Of UL20
 author: Shizhong Yang

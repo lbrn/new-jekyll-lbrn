@@ -41,9 +41,8 @@ collections:
   partner_Institutes:
     output:
   previous_pis:
-    output:
-  pi_data:
     output: true
+
 
 # Build settings
 markdown: kramdown

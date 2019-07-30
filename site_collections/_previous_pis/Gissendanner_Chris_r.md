@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pidatapage
 title:
 project: NR4A Regulation Of Organ Morphogenesis
 author: Chris R. Gissendanner
