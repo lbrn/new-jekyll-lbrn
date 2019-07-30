@@ -89,7 +89,7 @@
               <hr>
               <div class="pi">
                 <div class="row">
-                  <div class="span6">
+                  <div class="span6 profiletxt">
                     <h4>Project Title</h4>
                     <p class="project-title">{{ pi.project_title }}</p>
                     <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a>
@@ -118,7 +118,7 @@
                       <p>{{ funding.name }} ({{funding.period}})</p>
                     {% endfor %}
                   </div>
-                  <div class="span6">
+                  <div class="profileimg">
                     <img src="/images/people/{{ pi.image }}" alt="{{pi.author}}" class="img-polaroid">
                   </div>
                 </div>

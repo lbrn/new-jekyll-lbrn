@@ -36,10 +36,20 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 /* End at 1295ish */
-.img-polaroid{
-  width: 5em;
-}
+
 @media (min-width: 0) {
+  .img-polaroid{
+    width: 90%;
+    margin: 5%;
+  }
+  .profileimg{
+    width: 20%;
+  }
+  .profiletxt{
+    width:80%;
+    padding:5%;
+  }
+
   .peoplewrap{
     min-height: 8em;
     margin-bottom: 2%;
