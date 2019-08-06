@@ -192,9 +192,9 @@ title: People
       {% assign loopindex = forloop.index | modulo: 2 %}
       {% if loopindex == 1 %}
         <div class="peoplewrap">
-        {% include directory.html %}
+        {% include directorymcbr.html %}
       {% else %}
-          {% include directory.html %}
+          {% include directorymcbr.html %}
         </div>
       {% endif %}
     {% endfor %}

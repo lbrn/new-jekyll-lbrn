@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Development of Factor Xllla Allosteric Inhibitors as a Paradigm-Shifting Treatment for Venous Thromboembolism
 author: Rami Al-Horani
 school: Xavier University of Louisiana

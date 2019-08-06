@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Assistant Director
 author: Nayong Kim
 school: LSU - Baton Rouge
