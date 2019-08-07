@@ -13,11 +13,11 @@ $( document ).ready(function() {
 //Mobile Menu
   $('#navButton').click(function(){
       // $('.navdropdown').slideToggle('fast');
-      if ($(this).attr("src") == "images/menuOpen.png")
+      if ($(this).attr("src") == "/images/menuOpen.png")
       {
-        $(this).attr("src", "images/menuClosed.png");
+        $(this).attr("src", "/images/menuClosed.png");
       }
-      else {$(this).attr("src", "images/menuOpen.png")}
+      else {$(this).attr("src", "/images/menuOpen.png")}
   });
 
 
@@ -25,7 +25,7 @@ $( document ).ready(function() {
   $("body > div.layout").click(function(){
     if ($('#navBug').css('display') != 'none'){
       $('#navtog').slideUp('fast');
-      $('#navBug').attr("src", "images/menuClosed.png");
+      $('#navBug').attr("src", "/images/menuClosed.png");
     }
   });
   $(window).resize(function(){
@@ -33,7 +33,7 @@ $( document ).ready(function() {
 
     if ($('#navBug').css('display') == 'none'){
       $('#navtog').css('display','block');
-      $('#navBug').attr("src", "images/menuClosed.png")
+      $('#navBug').attr("src", "/images/menuClosed.png")
     }
     else {
       $('#navtog').css('display','none')
