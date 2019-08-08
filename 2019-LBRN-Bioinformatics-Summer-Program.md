@@ -42,7 +42,7 @@ eventDeadlines: June 27, 2019 (extended)
 <td>10:00 am to 1:00 pm CST</td>
 </tr>
 <tr>
-<td>August 9, 2019</td>
+<td>(Postponed, Date to be Determined)</td>
 <td>Hackathon</td>
 <td>10:00 am to 1:00 pm CST</td>
 </tr>
