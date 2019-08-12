@@ -17,7 +17,7 @@ title: People
           <li class="on peoplesort pimc" id="pimc">MCBR Core</li>
           <li class="on peoplesort picrp" id="picrp">Current PIs</li>
           <li class="on peoplesort pippi" id="pippi">Previous PIs</li>
-          <li class="on peoplesort pipai" id="pipai">Partner Institues</li>
+          <!-- <li class="on peoplesort pipai" id="pipai">Partner Institues</li> -->
           <li class="on peoplesort pile" id="pile">LBRN EAC</li>
           <li class="on peoplesort pilsc" id="pilsc">LBRN Steering Committee</li>
       </div>
@@ -88,7 +88,7 @@ title: People
             <li   class=" pippi dot-indicators">  </li>
           </div>
         </div>
-
+<!--
               <div class="sidebar-holder">
                 <div class="dot-text-holder">
                     <li><a href="#partnerInstitutes">Partner Institutes</a>
@@ -97,7 +97,7 @@ title: People
                 <div class="dot-holder">
                   <li  class="pipai dot-indicators">  </li>
                 </div>
-              </div>
+              </div> -->
 
               <div class="sidebar-holder">
                 <div class="dot-text-holder">
@@ -126,23 +126,6 @@ title: People
 <div class="testdiv content ">
 
       <h2>LBRN Core Personnel</h2>
-<!-- <div id="pi-filter" class="navbar">
-  <p>Filters:</p>
-  <ul>
-    <li class="on peoplesort" id="piac">Admin Core</li>
-    <li class="on peoplesort" id="pibc">BBC Core</li>
-    <li class="on peoplesort" id="pimc">MCBR Core</li>
-    <li class="on peoplesort" id="picrp">Current PIs</li>
-  </ul>
-  <ul>
-    <li class="on peoplesort" id="pippi">Previous PIs</li>
-    <li class="on peoplesort" id="pipai">Partner Institues</li>
-    <li class="on peoplesort" id="pile">LBRN EAC</li>
-    <li class="on peoplesort" id="pilsc">LBRN Steering Committee</li>
-  </ul>
-
-
-</div> -->
 
 
 
@@ -206,7 +189,7 @@ title: People
     <h3 id="currentlyFunded">Currently Funded PIs</h3>
     <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapsenobs">
-      {% for pi in site.project_investigators %}
+      {% for people in site.project_investigators %}
 
         {% assign loopindex = forloop.index | modulo: 2 %}
         {% if loopindex == 1 %}
@@ -237,7 +220,9 @@ title: People
 
     </section>
   </div>
-  <div class="relative Parti">
+
+  <!-- Obeselete -->
+  <div class="relative Parti" style="display: none;">
     <h2 id="partnerInstitutes">Partner Institutes</h2>
     <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin2" aria-hidden="true"></i>
     <section class="directory collapsenobs">
@@ -251,9 +236,6 @@ title: People
         </div>
       {% endif %}
     {% endfor %}
-
-         <!-- include directory-partner-institutes.html  -->
-
 
     </section>
   </div>

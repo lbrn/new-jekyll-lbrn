@@ -38,6 +38,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+
+  .testslide{
+    background-color: red;
+     /* opacity: 0.5; */
+  }
   .pubmed-link{
     background-color: #d4ebd5;
     color: #fff;
@@ -193,7 +198,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: #120103;
     color: #fff;
     text-align: center;
   }
@@ -2491,7 +2495,10 @@ section.directory article.person:nth-child(odd) {
     line-height: 3; } }
 @media (min-width: 1224px) {
 
-
+  .slide {
+width:95%;
+  float:right;
+}
 
   /* .layout {
     margin: 0;
@@ -2574,6 +2581,11 @@ section.directory article.person:nth-child(odd) {
     margin-left: 0;
     margin-right: 0; } }
 @media (min-width: 1500px) {
+  .slide {
+width:95%;
+  float:right;
+}
+
 
   section.directory article.person {
     min-height: 10em;
@@ -2584,7 +2596,8 @@ section.directory article.person:nth-child(odd) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    max-width: 80%;
+    /* max-width: 80%; */
+    max-width: 1200px;
     /* sized of content */
     margin-left: auto;
     margin-right: auto; }
