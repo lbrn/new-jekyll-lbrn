@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Detecting Race-Relevant Molecular Biomarkers with Clinical Utilities Using Multi- Omics Data Across Tumor Types
 author: Kun (Karen) Zhang
 school: Xavier University of Louisiana

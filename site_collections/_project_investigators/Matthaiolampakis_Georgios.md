@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Combinatorial treatment of miRNAs and novel palatinate against lung cancer
 author: Georgios Matthaiolampakis
 school: University of Louisiana at Monroe

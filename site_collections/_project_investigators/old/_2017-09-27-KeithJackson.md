@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Role Of Heme Oxygenase In The Renal Control Of Hypertension
 author: Keith Jackson
 school: University of Louisiana at Monroe

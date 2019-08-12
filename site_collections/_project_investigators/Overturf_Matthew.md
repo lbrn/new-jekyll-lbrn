@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: The Effects of Environmental Contaminants on the Development of Neurobehavioral Disorders
 author: Matthew Overturf
 school: University of Louisiana at Monroe

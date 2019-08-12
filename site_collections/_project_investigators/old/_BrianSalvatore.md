@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Design and Synthesis of Novel Polyphenol Cancer Therapeutics, Maximizing ADMET Properties and the Regulation of Cell-Signaling Cross-Talk
 author: Brian Salvatore
 school: Louisiana State University, Shreveport

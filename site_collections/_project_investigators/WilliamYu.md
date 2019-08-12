@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Medical Imaging by Enhanced Fluorescent Nanoclusters
 author: William Yu
 school: Louisiana State University, Shreveport

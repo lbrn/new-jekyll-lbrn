@@ -92,8 +92,8 @@
 
         {% for pi in site.data.pis %}
           {% if pi.name == page.author %}
+          <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.author | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
             <div class="page">
-              <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.author | replace:' ', '+' }}" class="pubmed-link btn btn-primary">Link to Pubmed Publications</a>
               <h2 class="page-title" >{{ pi.author }}</h2>
               {{ pi.origin }}
               <hr>
@@ -132,14 +132,15 @@
                     <img src="/images/people/{{ pi.image }}" alt="{{pi.author}}" class="img-polaroid">
                   </div>
                 </div>
-
                 <h5>Abstract</h5>
-                <p class="long-text">
-                  {{ pi.abstract | newline_to_br }}
-                </p>
-                <p class="long-text">
-                  {{ pi.descrip | newline_to_br }}
-                </p>
+                <div class="abstractp">
+                  <p class="long-text">
+                    {{ pi.abstract | newline_to_br }}
+                  </p>
+                  <p class="long-text">
+                    {{ pi.descrip | newline_to_br }}
+                  </p>
+                </div>
               </div>
             </div>
           {% endif %}

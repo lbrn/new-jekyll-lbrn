@@ -38,6 +38,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+  .pubmed-link{
+    background-color: #d4ebd5;
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .pubmed-link:hover{
+    background-color: #8ECB91;
+    color: #fff;
+  }
+
+  .abstractp{
+    padding-left: 10%;
+  }
+  .abstractp p{
+    font-family: "PT Serif script";
+    font-weight: 500;
+  }
+.pubmed_div{
+  width:100%;
+  height: 2em;
+}
+.pubmed-link{
+  float:right;
+
+}
+
   .img-polaroid{
     width: 90%;
     margin: 5%;
@@ -413,7 +453,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0;
-    position: relative; }
+    position: relative;
+    margin-bottom: 2em;
+  }
 
   .page-heading {
     padding-left: 5%;
@@ -1127,7 +1169,7 @@ main div.content h3:enabled {
   .event-section-head {
     background-color: #8ECB91; }
 
-  .collapseTrigger {
+  .collapsetstyle {
     display: none;
     position: absolute;
     top: .1em;
@@ -1211,6 +1253,27 @@ main div.content h3:enabled {
     color: #425ca2;
     cursor: pointer; }
 
+    .resources h5{
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 95%;
+      float: left;
+      /* margin-right: 3.44828%; */
+      font-size: 0.8em;
+      /* margin-left: 3.44828%; */
+
+      margin-top: unset !important;
+      /* padding: 2.5%; */
+      padding: 1.5%;
+      color: #2C3D6C !important;
+      font-family: "Ubuntu", sans-serif;
+      line-height: 1.25em;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      font-weight: 400;
+    }
+
   div.resources a, div.research a {
     margin: 0;
     padding: 0;
@@ -1243,6 +1306,7 @@ main div.content h3:enabled {
     margin-left: 10%;
     width: 80%;
       border-radius: 6px;
+      padding-right: 2.5%;
 /* CUSTOMIZE COLLUMNS IN RESEARCH HERE */
   }
 div.research img{
@@ -1394,7 +1458,7 @@ div.research img{
     margin-top: .7em; }
   .people .icon-margin2 {
     margin-top: .4em; }
-  .people i.collapseTrigger {
+  .people i.collapsetstyle {
     color: #8ECB91;
     cursor: pointer; }
 
@@ -1545,7 +1609,7 @@ div.research img{
       box-sizing: border-box;
       /* width: 22.85714%; */
       width: 20%;
-      float: left;
+      float: right;
       margin-right: 0;
       /* background-color: #8ECB91; */
       /* height: 3000px; */
@@ -1713,7 +1777,7 @@ div.research img{
     box-sizing: border-box;
     /* width: 22.85714%; */
     width: 20%;
-    float: left;
+    float: right;
     margin-right: 0;
     /* background-color: #8ECB91; */
     /* height: 3000px; */
@@ -2155,7 +2219,7 @@ section.directory article.person{
       background-color: unset;
 }
 
-  .collapseTrigger {
+  .collapsetstyle {
     color: white; }
 
   .collapsenobs {
@@ -2281,7 +2345,7 @@ section.directory article.person{
   /* div.resources img, div.research img {
     max-width: 90%; } */
 
-  .people i.collapseTrigger {
+  .people i.collapsetstyle {
     display: none; }
 
   div.chooseTypeInline {
@@ -2813,7 +2877,8 @@ section.directory article.person:nth-child(odd) {
 
 div.resources h2 {
   font-size: 1.2em !important;
-  word-break: break-all;
+  /* word-break: break-all; */
+  word-break: normal;
 }
 .more{
   border-radius: 6px;
@@ -2877,25 +2942,7 @@ vertical-align: baseline;
 list-style: square;
 }
 
-.paratest{
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 95%;
-  float: left;
-  /* margin-right: 3.44828%; */
-  font-size: 0.6em;
-  /* margin-left: 3.44828%; */
 
-  margin-top: unset !important;
-  /* padding: 2.5%; */
-  padding: 1.5%;
-  color: #2C3D6C !important;
-  font-family: "Ubuntu", sans-serif;
-  line-height: 1.25em;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-}
 
 .layoutwider{
   max-width: 80%;

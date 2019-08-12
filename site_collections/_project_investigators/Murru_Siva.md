@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Design and synthesis of heterocyclic compounds and their metal-complexes for evaluation of anti-cancer and anti-microbial activity
 author: Siva Murru
 school: University of Louisiana at Monroe

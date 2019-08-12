@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Rational Design of Selective Small-Molecules as Potential IMPDH Inhibitors
 author: Jean Fotie
 school: SELU

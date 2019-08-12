@@ -52,7 +52,7 @@ $( document ).ready(function() {
       $(this).toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
     }
     else {
-      $(this).siblings('.collapseTrigger').toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
+      $(this).siblings('.collapsenobs').toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
     }
   });
   // $(window).scroll(function() {

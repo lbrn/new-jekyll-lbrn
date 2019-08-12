@@ -25,13 +25,13 @@
 
     <div id="navdropdownsmall" class="navdropdown collapse">
       <ul class="layout">
-        <li><a href="about.html">About</a></li>
-        <li><a href="people.html">People</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="lbrn-events.html">Events</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/people.html">People</a></li>
+        <li><a href="/research.html">Research</a></li>
+        <li><a href="/resources.html">Resources</a></li>
+        <li><a href="/lbrn-events.html">Events</a></li>
         <li class="right">
-            <a class="button" href="newsletter.html">Newsletter</a>
+            <a class="button" href="/newsletter.html">Newsletter</a>
         </li>
         <li class="right">
             <a target="_blank" href="https://www.facebook.com/LouisianaBiomedicalResearchNetwork" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
@@ -82,8 +82,10 @@
 
         {% for pi in site.project_investigators %}
           {% if pi.author == page.author %}
+          <div class="pubmed_div">
+            <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.author | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
+          </div>
             <div class="page">
-              <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.author | replace:' ', '+' }}" class="pubmed-link btn btn-primary">Link to Pubmed Publications</a>
               {{ pi.origin }}
               <hr>
               <div class="pi">
@@ -96,7 +98,9 @@
                     <p class="long-text">
                       {{ pi.descrip | newline_to_br }}
                     </p>
-                    {{content}}
+                    <div class="abstractp">
+                      {{content}}
+                    </div>
                   </div>
                   <div class="profileimg">
                     <img src="/images/people/{{ pi.image }}" alt="{{pi.author}}" class="img-polaroid">

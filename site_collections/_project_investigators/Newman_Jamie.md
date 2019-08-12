@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: The Role of Mediator in Maintaining and Differentiating Human Mesenchymal Stem Ce
 author: Jamie Newman
 school: Louisiana Tech University

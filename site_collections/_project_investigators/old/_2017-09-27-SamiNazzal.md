@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Cytotoxicity Of Tocotrienol Nanoemulsions Loaded With Paclitaxel/Gemcitabine Pufa
 author: Sami Nazzal
 school: University of Louisiana at Monroe

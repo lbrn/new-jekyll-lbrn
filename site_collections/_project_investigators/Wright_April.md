@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Implementing a Dirichlet process for modeling complex biological data
 author: April Wright
 school: Southeastern Louisiana University

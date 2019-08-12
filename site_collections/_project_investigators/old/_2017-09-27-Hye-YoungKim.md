@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Large-scale atomistic simulation for novel self-assembled drug delivery vehicles
 author: Hye-Young Kim
 school: Southeastern Louisiana University

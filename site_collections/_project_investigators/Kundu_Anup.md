@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Formulation of a targeted nanoparticle system for the treatment of breast cancer
 author: Anup Kundu
 school: Xavier University of Louisiana

@@ -51,24 +51,12 @@ title: Project Investigators
       <li class="on" id="pitp">Translational Project</li>
     </ul>
 </nav> -->
-<h2>Previous Project Investigators</h2>
+<h2>Project Investigators</h2>
 <section class="directory">
 {% for pi in site.project_investigators  %}
   {% include current_pi.html %}
 {% endfor %}
 </section>
-<section class="directory" >
 
-  <!--   //you can't comment these lines of code out in full. it causes errors -->
-  {% for pi in site.project_investigators %}
-  <article class="person" data-pType="{{pi.project-type}}">
-    <img src="images/people/{{pi.image}}" alt="{{pi.author}}">
-    <h4>{{pi.author}}</h4>
-    <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a>
-    <h6 style="margin-top: .6em;">{{pi.school}}</h6>
-    <h6 style="margin-top: .6em;">{{pi.project-type}}</h6>
-  </article>
-  {% endfor %}
-</section>
 </div>
 <section class="directory">

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Understanding the Role of the Conformational Changes in the Kinesin-5 on Processivity and Inhibition
 author: Joseph Chaney
 school: Xavier University of Louisiana

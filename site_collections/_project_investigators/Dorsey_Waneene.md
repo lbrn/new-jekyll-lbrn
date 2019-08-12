@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Role and Regulation of Autophagy during Pentachlorophenol Exposure
 author: Waneene Dorsey
 school: Grambling State University

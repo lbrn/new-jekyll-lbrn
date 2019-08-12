@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Instrumentation in Support of a New 3D Printing Lab
 author: David Mills
 school: LA Tech

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Mechanisms underlying nonalcoholic fatty liver disease
 author: Paul Kim
 school: Grambling State University

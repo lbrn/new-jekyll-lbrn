@@ -23,19 +23,21 @@ eventDeadlines: ALL DEADLINES January 11th, 2019 (extended)
   <div id="matchHeight">
 
   	<section id="eventSummary">
-      	<i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
+      	<i class="collapsetstyle fa fa-2x fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#eventAbout" aria-expanded="false"></i>
       	<h2 class="event-section-head">About</h2>
-      	<div class="collapse">
+      	<div id="eventAbout" class="collapse show">
         		<p>Each year the LBRN program has an annual meeting in which program participants, committee members and administrators meet to review individual research accomplishments and to discuss the overall program activity. Summer research faculty and graduate and undergraduate students are encouraged to present their LBRN sponsored research, and talks are scheduled to highlight sponsored research projects from partnered campuses across the state.</p>
         		<p>Oral Presenters: INBRE Full Project PIs, Pilot Project PIs, Summer Graduate Students, and invited guests.</p>
         		<p>Poster Sessions: Pilot, Translational, and Startup Project PIs, 2018 LBRN Summer Faculty, and Graduate Students are required to submit an abstract to participate in the poster session. LBRN Undergraduate Summer students are also invited to participate. Poster abstract submission form will be sent after your registration.</p>
       	</div>
     	</section>
     	  <section id="eventParticipants">
-      <i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
+          <i class="collapsetstyle fa fa-2x fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#speakers" aria-expanded="false"></i>
+
       <h2 class="event-section-head">Keynote Speakers</h2>
-      <div class="collapse">
-        <article id="speakers">
+      <div id="speakers" class="collapse show">
+        <article>
+        <!-- <article id="speakers"> -->
           {% include AM-speakers-2019.html %}
         </article>
       </div>
@@ -43,9 +45,10 @@ eventDeadlines: ALL DEADLINES January 11th, 2019 (extended)
 
 
   	<section id="eventWhenAndWhere">
-      	<i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
+      <i class="collapsetstyle fa fa-2x fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#whenwhere" aria-expanded="false"></i>
+
       	<h2 class="event-section-head">When &amp; Where</h2>
-      	<div class="collapse">
+      	<div id="whenwhere"class="collapse show">
       		<p>This year's meeting is being held on January 18-19th in Baton Rouge, Louisiana at the LSU Digital Media Center at the Center for Computation and Technology and LSU Emerging Technology Center.</p>
         		<div class="frame">
         			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.0109155425766!2d-91.17456108487629!3d30.40743218175172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626a6e00af1a36b%3A0xc0e913a5a5b2ff7a!2sDigital+Media+Center!5e0!3m2!1sen!2sus!4v1515700981964" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -72,9 +75,10 @@ eventDeadlines: ALL DEADLINES January 11th, 2019 (extended)
 
 
   	<section id="eventLodgingAndExpenses">
-     		<i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
+      <i class="collapsetstyle fa fa-2x fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#lodgingexp" aria-expanded="false"></i>
+
   		<h2 class="event-section-head">Lodging &amp; Expenses</h2>
-      	<div class="collapse">
+      	<div id ="lodgingexp" class="collapse show">
   			<p>Confirm your participation in the LBRN 17th Annual Meeting by registering. Registration is required to participate in the program, obtain hotel lodging if needed, provide meeting space, materials, food and beverage at all the planned functions. Hotel reservation information and abstract submission forms for the Poster and Oral presentations will be provided with your online event registration. We look forward to your participation at the meeting!</p>
         		<p>Lodging arrangements have been made at the nearby <a href="https://www.marriott.com/hotels/travel/btrch-courtyard-baton-rouge-acadian-centre-lsu-area/">Courtyard Baton Rouge Acadian Centre/LSU Area</a> at a special group rate. Hotel Reservation is indicated with your online event registration. Do not book your hotel. Please register for the conference and select if you require a room. Use the link in your confirmation email to reserve a room.</p>
         		<p>If for any reason that you need to cancel your registration or if you have any questions, please contact Ms. Alexis White, alexisw@lsu.edu</p>
@@ -129,9 +133,9 @@ eventDeadlines: ALL DEADLINES January 11th, 2019 (extended)
     	</section>
 
   	<section id="eventPresentations">
-      	<i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
+      <i class="collapsetstyle fa fa-2x fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#posterpres" aria-expanded="false"></i>
       	<h2 class="event-section-head">Presentations</h2>
-      	<div class="collapse">
+      	<div class="collapse show" id="posterpres">
   			<h3>Poster Presentations</h3>
         		<p>INBRE Full Project PIs and Pilot Project PIs, 2018 LBRN Summer Faculty, Graduate and Undergraduate Students, INBRE funded students, and other biomedical researchers in the state are required or invited (as appropriate) to submit an abstract to participate in the LBRN Poster Session beginning on Friday, January 18, 2019.</p>
         		<ul>
@@ -192,14 +196,14 @@ eventDeadlines: ALL DEADLINES January 11th, 2019 (extended)
   	</section>
 
      <section id="eventRegistration">
-  		<i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
+       <i class="collapsetstyle fa fa-2x fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#reg" aria-expanded="false"></i>
   		<h2 class="event-section-head">Registration</h2>
-  		<div class= "collapse">
+  		<div class= "collapse show" id="reg">
   			<ul><a class="button" href="https://redcap.lbrn.lsu.edu/surveys/?s=L479HCDF8E">Registration Link</a></ul>
       	</div>
   	</section>
   <!--	<section id="eventArchiveMedia">
-  		<i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
+  		<i class="collapsetstyle fa fa-2x fa-chevron-right" aria-hidden="true"></i>
     		<h2 class="event-section-head">Previous Meetings</h2>
     		<h3><a href="/annual-meetings-2018.html">2018 LBRN Annual Meeting<a/></h3>
   	</section>

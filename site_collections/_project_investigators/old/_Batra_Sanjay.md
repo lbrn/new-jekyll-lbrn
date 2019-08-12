@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Hdacs Regulate Inflammatory Responses Against Microbial Toxins &amp; Cse Exposure
 author: Sanjay Batra
 school: Southern University and A&amp;M College, Department of Environmental Toxicology

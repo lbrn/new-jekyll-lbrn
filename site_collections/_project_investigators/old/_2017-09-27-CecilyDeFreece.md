@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Characterizing inhibitors of the mutagenic retrotransposon LINE I endonuclease
 author: Cecily DeFreece
 school: Xavier University

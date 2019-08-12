@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pipage
 title: Mechanistic Analysis Of Kifsa Mutations That Cause Hereditary Spastic Paraplegia
 author: Thomas Huckaba
 school: Xavier University of Louisiana, Department of Biology
