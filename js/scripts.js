@@ -232,7 +232,7 @@ $(".pibc").click(function(){
         }
 
     $(this).toggleClass('on');
-        hidetitle(cmelement, cmtrack);
+        // hidetitle(cmelement, cmtrack);
     // lsc.slideToggle('fast');
         // console.log('dog');
   });
@@ -255,7 +255,7 @@ $(".pibc").click(function(){
         }
 
     $(this).toggleClass('on');
-        hidetitle(cmelement, cmtrack);
+        // hidetitle(cmelement, cmtrack);
     // le.slideToggle('fast');
         // console.log('dog');
   });
@@ -300,7 +300,7 @@ $(".pibc").click(function(){
         }
 
     $(this).toggleClass('on');
-    hidetitle(pielement, pitrack);
+    // hidetitle(pielement, pitrack);
     // if(pitrack == 0){
     //   console.log("trigger hide");
     // } else if (pitrack== 2){
@@ -331,7 +331,7 @@ $(".pibc").click(function(){
 
     $(this).toggleClass('on');
     // if(pitrack == 0){
-    hidetitle(pielement, pitrack);
+    // hidetitle(pielement, pitrack);
   // } else if (pitrack== 2){
   //     hidetitle(pielement);
   // }

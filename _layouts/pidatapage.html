@@ -94,15 +94,17 @@
           {% if pi.name == page.author %}
           <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.author | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
             <div class="page">
-              <h2 class="page-title" >{{ pi.author }}</h2>
-              {{ pi.origin }}
+              <!-- <h2 class="page-title" >{{ page.author }}</h2> -->
+              <p>
+                {{ pi.origin }}
+              </p>
               <hr>
               <div class="pi">
                 <div class="row">
                   <div class="span6 profiletxt">
                     <h5>Project Title</h5>
                     <p class="project-title">{{ pi.project_title }}</p>
-                    <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a>
+                    <!-- <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a> -->
                     <br>
 
                     {% if pi.mentors.size > 1 %}
@@ -114,7 +116,7 @@
                     {% endif %}
 
                     {% for mentor in pi.mentors %}
-                      <p>{{ mentor.name }}<br>{{mentor.origin}}</p>
+                      <p>{{ mentor.name }}, {{mentor.origin}}</p>
                     {% endfor %}
                     <br>
 
@@ -132,6 +134,7 @@
                     <img src="/images/people/{{ pi.image }}" alt="{{pi.author}}" class="img-polaroid">
                   </div>
                 </div>
+                <br>
                 <h5>Abstract</h5>
                 <div class="abstractp">
                   <p class="long-text">

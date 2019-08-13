@@ -116,7 +116,9 @@
         {% endfor %}
 
         {% for post in site.posts limit:4 %}
-          {% include news-list-item.html %}
+          {% if site.categories == news %}
+            {% include news-list-item.html %}
+          {% endif %}
         {% endfor %}
 
         {% for post in site.categories.news limit:4 %}
