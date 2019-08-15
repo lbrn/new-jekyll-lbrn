@@ -107,7 +107,8 @@
         <h2>NEWS</h2>
 
         {% assign newsR = site.news %}
-          {% for post in newsR %}
+
+        {% for post in newsR %}
           {% include news-list-item-featured.html %}
         {% endfor %}
 

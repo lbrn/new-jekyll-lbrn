@@ -51,11 +51,29 @@ title: Project Investigators
       <li class="on" id="pitp">Translational Project</li>
     </ul>
 </nav> -->
-<h2>Project Investigators</h2>
+<!-- <h2>Project Investigators</h2> -->
 <section class="directory">
-{% for pi in site.project_investigators  %}
-  {% include current_pi.html %}
-{% endfor %}
+  {% assign count = 0 %}
+
+  {% for pi in site.project_investigators  %}
+      {% if pi.active == true %}
+        {% assign count = count | plus: 1 %}
+          {% assign modcount = count | modulo: 2 %}
+
+            {% if modcount == 1  %}
+            <div class="peoplewrap">
+                {% include current_pi.html %}
+              {% else %}
+                {% include current_pi.html %}
+            </div>
+            {% endif %}
+
+
+
+      {% endif %}
+  {% endfor %}
+
+
 </section>
 
 </div>

@@ -1,0 +1,111 @@
+---
+layout: default
+title: Modified About/Test Environment
+---
+
+<html lang="en">
+
+<div class="relative">
+  <h3 id="previouslyFunded" class="pippi dropdown-toggle">Previously Funded PIs</h3>
+  <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
+  <section class="directory collapsenobs PrevPPi">
+    {% assign count = 0 %}
+
+    {% for people in site.project_investigators %}
+        {% if people.active == false %}
+          {% assign count = count | plus: 1 %}
+            {% assign modcount = count | modulo: 2 %}
+
+              {% if modcount == 1  %}
+              <div class="peoplewrap">
+                {% include directory-pi-page.html %}
+                {% else %}
+                {% include directory-pi-page.html %}
+              </div>
+              {% endif %}
+
+
+
+        {% endif %}
+    {% endfor %}
+
+
+
+
+
+
+  </section>
+</div>
+<br>
+end test1
+<br>
+
+<h2>Mission Statement</h2>
+<p>Louisiana Biomedical Research Network (LBRN) was established in September 2001 with Biomedical Research Infrastructure Networks (BRIN) funding by the National Institutes of Health (NIH), through the National Center for Research Resources (NCRR) Grant P20RR016456, the LBRN is committed to raising the research competitiveness of Louisiana researchers. IDeA Networks of Biomedical Research Excellence (INBRE) is the second phase of the BRIN Program when LBRN initially started. Currently, LBRN is in the third phase with continued funding by the National Institute of General Medical Sciences (NIGMS) Grant 8P20GM103424 and the Louisiana Board of Regents Support Fund.</p>
+<h2>Goals</h2>
+<ul>
+  <li>Maintain and expand the previously established state-wide infrastructure and intellectual research network supporting interdisciplinary biomedical research.</li>
+  <li>Expand and improve the critical mass of biomedical investigators at primary PUI campuses through the support of mentored research, and enhanced communication.</li>
+  <li>Increase student interest in biomedical research careers throughout Louisiana by providing summer research opportunities to all institutions within the State.</li>
+  <li>Evaluate, assess and continuously monitor the progress within LBRN through detailed tracking of research accomplishments, the development of human resources, and productive collaborations among participating institutions.</li>
+</ul>
+<img src="images/campus-map.svg" alt="a map of campuses in Louisiana">
+<div class="col-split-right">
+  <h3>Flagship Campus</h3>
+  <ul>
+    <li><a href="http://www.lsu.edu">Louisiana State University (LSU)</a></li>
+  </ul>
+</div>
+<div class="col-split">
+  <h3>PUI Campuses</h3>
+  <ul>
+    <li><a href="http://www.gram.edu/">Grambling State University </a></li>
+    <li><a href="http://www.lsus.edu/">Louisiana State University-Shreveport (LSU-S) </a></li>
+    <li><a href="http://www.latech.edu">Louisiana Tech University (LA Tech) </a></li>
+    <li><a href="http://www.selu.edu/">Southeastern Louisiana University </a></li>
+    <li><a href="http://www.subr.edu/">Southern University and A&amp;M College (SUBR) </a></li>
+    <li><a href="http://www.ulm.edu/">University of Louisiana at Monroe (ULM) </a></li>
+    <li><a href="http://www.xula.edu/">Xavier University of Louisiana (XULA)</a></li>
+  </ul>
+  <h3>Mentor Campuses</h3>
+  <ul>
+    <li><a href="http://www.lsuhsc.edu/">LSU Health Sciences Center-New Orleans (LSUHSC-NO) </a></li>
+    <li><a href="http://www.lsuhscshreveport.edu/">LSU Health Sciences Center-Shreveport (LSUHSC-S) </a></li>
+    <li><a href="http://www.pbrc.edu/">Pennington Biomedical Research Center (PBRC) </a></li>
+    <li><a href="http://www.tuhc.com/">Tulane Medical Center </a></li>
+    <li><a href="http://www.tnprc.tulane.edu/">Tulane National Primate Research Center (TNPRC)</a></li>
+    <li><a href="http://www.tulane.edu/">Tulane University</a></li>
+  </ul>
+</div>
+<div class="col-split">
+  <h3>Summer Research Campuses</h3>
+  <ul>
+    <li><a href="http://www.mybrcc.edu/">Baton Rouge Community College </a></li>
+    <li><a href="http://www.centenary.edu/">Centenary College </a></li>
+    <li><a href="http://www.dillard.edu/">Dillard University </a></li>
+    <li><a href="http://www.lacollege.edu/">Louisiana College </a></li>
+    <li><a href="http://www.lsua.edu/">Louisiana State University-Alexandria </a></li>
+    <li><a href="http://www.mcneese.edu/">McNeese State University </a></li>
+    <li><a href="http://www.nicholls.edu/">Nicholls State University </a></li>
+    <li><a href="http://www.nsula.edu/">Northwestern State University </a></li>
+    <li><a href="http://www.franu.edu/">Franciscan Missionaries of Our Lady University, formerly called Our Lady of the Lake College </a></li>
+    <li><a href="http://www.suno.edu/">Southern University at New Orleans </a></li>
+    <li><a href="http://www.susla.edu/">Southern University at Shreveport </a></li>
+    <li><a href="http://www.louisiana.edu/">University of Louisiana at Lafayette </a></li>
+    <li><a href="http://www.uno.edu/">University of New Orleans </a></li>
+  </ul>
+</div>
+<section class="cores">
+  <h2>Cores</h2>
+  <ul>
+    <li class="active">Admin</li>
+    <li>BBC</li>
+    <li>MCBR</li>
+  </ul>
+  <section id="core-swap">
+    <h4>Administrative Core</h4>
+    <a class="button hidden" title="Core Services" href="bbc-core.html">BBC Core Services</a>
+    <p>The Administrative Core (AC) of the Louisiana Biomedical Research Network (LBRN) provides the project with its overall leadership, day-to-day management, evaluations of all of its component parts, and communication with NIH staff. The AC is led by the Principal Investigator in close consultation with the Program Coordinator, as well as the Steering Committee and External Advisory Committee.</p>
+    <img src="images/admin-core_July_2018.png" alt="network of core administrators">
+  </section>
+</section>

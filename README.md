@@ -64,3 +64,10 @@ Other less major notes:
 -For the People profile's pages, the html pages are generated and use the layout in the layout: category on the page.  There are two layouts used for these pages:
   --pipage , for profiles from the previous iteration of this site. They only have the title and abstract.
   --Pidatapage , for profiles with more extensive info. The older version of the site from the mid-2000s has a data file which contains info such as mentors, etc. In the future all profiles will use this.
+
+
+  -Combined the current/previous PI folders into one folder; and all profiles have an active: true or false tag
+-(Note that current PI profiles have less info atm and need to be updated)
+-Fixed repeat title on Project Investigator page
+-Updated Project investigator page with the same true/false code, set to True
+The Current/previous PI sections all have a block of code now, which contains       {% if (variable).active == true %}  which controls which group it displays, followed by some nested loops that put every 2 profiles in a div for display purposes. Updating which section is shown should be as simple as changing true/false 

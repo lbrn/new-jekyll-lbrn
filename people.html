@@ -185,17 +185,26 @@ title: People
     <h3 id="currentlyFunded" class="picrp dropdown-toggle" >Currently Funded PIs</h3>
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs CRP">
-      {% for people in site.project_investigators %}
+      {% assign count = 0 %}
 
-        {% assign loopindex = forloop.index | modulo: 2 %}
-        {% if loopindex == 1 %}
-          <div class="peoplewrap">
+      {% for people in site.project_investigators %}
+          {% if people.active == true %}
+            {% assign count = count | plus: 1 %}
+              {% assign modcount = count | modulo: 2 %}
+
+                {% if modcount == 1  %}
+                <div class="peoplewrap">
                   {% include directory-currentPi.html %}
-        {% else %}
-                    {% include directory-currentPi.html %}
-          </div>
-        {% endif %}
+                  {% else %}
+                  {% include directory-currentPi.html %}
+                </div>
+                {% endif %}
+
+
+
+          {% endif %}
       {% endfor %}
+
 
     </section>
   </div>
@@ -203,15 +212,25 @@ title: People
     <h3 id="previouslyFunded" class="pippi dropdown-toggle">Previously Funded PIs</h3>
     <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
     <section class="directory collapsenobs PrevPPi">
-      {% for people in site.previous_pis %}
-        {% assign loopindex = forloop.index | modulo: 2 %}
-        {% if loopindex == 1 %}
-          <div class="peoplewrap">
-          {% include directory-pi-page.html %}
-        {% else %}
-            {% include directory-pi-page.html %}
-          </div>
-        {% endif %}
+
+      {% assign count = 0 %}
+
+      {% for people in site.project_investigators %}
+          {% if people.active == false %}
+            {% assign count = count | plus: 1 %}
+              {% assign modcount = count | modulo: 2 %}
+
+                {% if modcount == 1  %}
+                <div class="peoplewrap">
+                  {% include directory-pi-page.html %}
+                  {% else %}
+                  {% include directory-pi-page.html %}
+                </div>
+                {% endif %}
+
+
+
+          {% endif %}
       {% endfor %}
 
     </section>
