@@ -95,23 +95,23 @@
           <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.author | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
             <div class="page">
               <!-- <h2 class="page-title" >{{ page.author }}</h2> -->
-              <p>
+              <p id="uni">
                 {{ pi.origin }}
               </p>
               <hr>
               <div class="pi">
                 <div class="row">
-                  <div class="span6 profiletxt">
-                    <h5>Project Title</h5>
+                  <div class="span6 profile-txt">
+                    <h2>Project Title</h2>
                     <p class="project-title">{{ pi.project_title }}</p>
                     <!-- <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a> -->
                     <br>
 
                     {% if pi.mentors.size > 1 %}
-                      <h5>Mentors</h5>
+                      <h2>Mentors</h2>
                     {% else %}
                     	{% if pi.mentors.size == 1 %}
-                    	<h5>Mentor</h5>
+                    	<h2>Mentor</h2>
                     	{% endif %}
                     {% endif %}
 
@@ -121,9 +121,9 @@
                     <br>
 
                     {% if pi.funding.size > 0 %}
-                      <h5>Funding Periods</h5>
+                      <h2>Funding Periods</h2>
                     {% else %}
-                      <h5>Funding Period</h5>
+                      <h2>Funding Period</h2>
                     {% endif %}
 
                     {% for funding in pi.funding %}
@@ -133,9 +133,11 @@
                   <div class="profileimg">
                     <img src="/images/people/{{ pi.image }}" alt="{{pi.author}}" class="img-polaroid">
                   </div>
+                  <div class="profile-txt">
+                  <h2 class="profile">Abstract</h2>
+                </div>
                 </div>
                 <br>
-                <h5>Abstract</h5>
                 <div class="abstractp">
                   <p class="long-text">
                     {{ pi.abstract | newline_to_br }}
