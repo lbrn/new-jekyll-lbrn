@@ -3,12 +3,14 @@ layout: default
 title: People
 ---
 
-<aside id="lbrnEventSidebar3">
+<!-- <aside id="lbrnEventSidebar3">
   <ul>
     <div id="lbrnEventSidebarUl">
       <p>
         <button class="btn mobilefilter dropdown-toggle" type="button" data-toggle="collapse" data-target="#filterex" aria-expanded="false" aria-controls="collapseExample">
           Filters
+          <div class="caret dropdown-toggle">
+          </div>
         </button>
       </p>
       <div class="collapse mobilefilter" id="filterex">
@@ -17,13 +19,13 @@ title: People
           <li class="on peoplesort pimc" id="pimc">MCBR Core</li>
           <li class="on peoplesort picrp" id="picrp">Current PIs</li>
           <li class="on peoplesort pippi" id="pippi">Previous PIs</li>
-          <!-- <li class="on peoplesort pipai" id="pipai">Partner Institues</li> -->
+          <li class="on peoplesort pipai" id="pipai">Partner Institues</li>
           <li class="on peoplesort pile" id="pile">LBRN EAC</li>
           <li class="on peoplesort pilsc" id="pilsc">LBRN Steering Committee</li>
       </div>
     </div>
   </ul>
-</aside>
+</aside> -->
 
 <aside id="lbrnEventSidebar2">
       <div id="lbrnEventSidebarUl">
@@ -131,7 +133,9 @@ title: People
 
 <div class="people" id="matchHeight">
     <div class="relative">
-      <h3 id="lbrnAdminCore" class="piac dropdown-toggle">Admin Core</h3>
+      <h3 id="lbrnAdminCore" class="piac ptitle" aria-expanded="true">Admin Core
+        <div class="caret dropdown-toggle">
+        </div></h3>
       <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin"></i> -->
       <section class="directory collapsenobs Adcore">
 
@@ -148,7 +152,8 @@ title: People
       </section>
     </div>
   <div class="relative">
-    <h3 id="lbrnBbcCore" class="pibc dropdown-toggle">BBC Core</h3>
+    <h3 id="lbrnBbcCore" class="pibc ptitle">BBC Core
+            <div class="caret dropdown-toggle"></h3>
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs BBcore">
       <!-- site.data.LBRN-BBC-Core -->
@@ -165,8 +170,9 @@ title: People
     </section>
   </div>
   <div class="relative">
-    <h3 id="lbrnMcbrCore" class="pimc dropdown-toggle">MCBR Core</h3>
-    <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
+    <h3 id="lbrnMcbrCore" class="pimc ptitle">MCBR Core
+            <div class="caret dropdown-toggle"></h3>
+    <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs MCcore">
       {% for people in site.MCBR_core %}
       {% assign loopindex = forloop.index | modulo: 2 %}
@@ -183,7 +189,9 @@ title: People
   </div>
   <h2 class="pielement">Project Investigators</h2>
   <div class="relative">
-    <h3 id="currentlyFunded" class="picrp dropdown-toggle" >Currently Funded PIs</h3>
+    <h3 id="currentlyFunded" class="picrp ptitle" >Currently Funded PIs
+            <div class="caret dropdown-toggle">
+            </h3>
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs CRP">
       {% assign count = 0 %}
@@ -210,8 +218,10 @@ title: People
     </section>
   </div>
   <div class="relative">
-    <h3 id="previouslyFunded" class="pippi dropdown-toggle">Previously Funded PIs</h3>
-    <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
+    <h3 id="previouslyFunded" class="pippi ptitle">Previously Funded PIs
+        <div class="caret dropdown-toggle">
+    </h3>
+    <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs PrevPPi">
 
       {% assign count = 0 %}
@@ -240,7 +250,7 @@ title: People
   <!-- Obeselete -->
   <div class="relative Parti" style="display: none;">
     <h2 id="partnerInstitutes dropdown-toggle">Partner Institutes</h2>
-    <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin2" aria-hidden="true"></i>
+    <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin2" aria-hidden="true"></i> -->
     <section class="directory collapsenobs">
       {% for people in site.partner_Institutes %}
       {% assign loopindex = forloop.index | modulo: 2 %}
@@ -257,7 +267,9 @@ title: People
   </div>
   <h2 class="cmelement">Committee Members</h2>
   <div class="relative">
-    <h3 id="LbrnEAC" class="pile dropdown-toggle">LBRN External Advisory Committee</h3>
+    <h3 id="LbrnEAC" class="pile ptitle">LBRN External Advisory Committee
+              <div class="caret dropdown-toggle">
+    </h3>
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs LBRNe">
       <!-- site.data.LBRN-EAC -->
@@ -277,7 +289,9 @@ title: People
     </section>
   </div>
   <div class="relative">
-    <h3 id="LbrnSteering" class="pilsc dropdown-toggle">LBRN Steering Committee</h3>
+    <h3 id="LbrnSteering" class="pilsc ptitle">LBRN Steering Committee
+        <div class="caret dropdown-toggle">
+    </h3>
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs LBRNsc">
       <!-- site.data.LBRN-Steering-Committee -->

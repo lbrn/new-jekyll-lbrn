@@ -70,4 +70,6 @@ Other less major notes:
 -(Note that current PI profiles have less info atm and need to be updated)
 -Fixed repeat title on Project Investigator page
 -Updated Project investigator page with the same true/false code, set to True
-The Current/previous PI sections all have a block of code now, which contains       {% if (variable).active == true %}  which controls which group it displays, followed by some nested loops that put every 2 profiles in a div for display purposes. Updating which section is shown should be as simple as changing true/false 
+The Current/previous PI sections all have a block of code now, which contains       {% if (variable).active == true %}  which controls which group it displays, followed by some nested loops that put every 2 profiles in a div for display purposes. Updating which section is shown should be as simple as changing true/false
+
+-The titles on the people page that toggle section visibility are controlled via a combo of javascript and css. The javascript is partially old code adapted to the new site, including using bootstrap. Clicking on the title hides the section containing the profiles associated with it (identified by a class that's coded to respond when clicked, e.g. .piac), and adds the "on" class to the title. Adding the class to the title also triggers some css that flips the arrow/caret section (.on .caret{css here}).

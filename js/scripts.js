@@ -134,9 +134,10 @@ function piFilter(){
   var cmtrack = 2;
   var cmelement = document.getElementsByClassName('cmelement'), i;
 
-$('.piac').click(function() {
-        console.log('dog2');
-});
+  // var buttons = document.querySelectorAll('.piac');
+// $('.piac').click(function() {
+//         console.log('dog2');
+// });
 
   $('.pifp').click(function(){
     $(this).toggleClass('on');
@@ -175,7 +176,9 @@ $('.piac').click(function() {
         console.log('dog');
   });
   $('.piac').click(function(){
-            console.log('dog');
+    //     buttons.setAttribute('aria-disabled', false);
+        // buttons[1].setAttribute('aria-disabled', true);
+
     for(var i=0; i < ac.length; i++)
         {
         // ac[i].style.display ='none';

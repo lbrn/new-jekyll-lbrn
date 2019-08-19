@@ -38,6 +38,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+
+.people {
+  width: 100%;
+}
+.ptitle{
+  width: 85%;
+}
+.caret {
+float: right;
+padding-right: 0.2em;
+transition: all 0.5s;
+}
+
+.on .caret{
+  transform:rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  /* color: green; */
+  transition: all 0.5s;
+}
+
+
   .content_tweek{
     height: 80%;
     width: 80% !important;
@@ -1198,7 +1220,7 @@ main div.content h3:enabled {
   }
 
   .expand {
-    height: inherit;
+    height: inherit !important;
     overflow: visible; }
 
   .event-section-head {
@@ -1642,6 +1664,10 @@ div.research img{
       /* color:red !important; */
   }
 
+  #lbrnEventSidebar2 {
+
+    display: none;
+  }
   }
   /* end 0 */
 @media (min-width: 414px) {
@@ -2449,6 +2475,9 @@ section.directory article.person{
   div.chooseTypeInline {
     display: flex; } }
 @media (min-width: 860px) {
+  .ptitle {
+    width: 70%;
+}
 
 
   main div.content h3.small-text{
