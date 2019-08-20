@@ -38,6 +38,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+#eventSummary p{
+  margin-top: .5em;
+  font-size: 0.85em;
+}
+
+  .vidtext h2{
+      font-size: 0.8em;
+      color: #2C3D6C;
+      margin-top: 0 !important;
+      text-align: left;
+      font-weight: bold;
+      line-height: 1.2em ;
+      text-transform: none ;
+      clear: both;
+      padding: 1.5%;
+      vertical-align: baseline;
+      border: 0;
+      margin:0;
+      font-family: "Open Sans Condensed", sans-serif !important;
+  }
+
 
 .people {
   width: 100%;
@@ -143,7 +164,10 @@ transition: all 0.5s;
   }
   .profile-txt{
     width:80%;
-    padding:1%;
+    /* padding:1%; */
+    padding-left: 1%;
+
+padding-top: 1%;
     /* font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.2;
@@ -162,7 +186,7 @@ transition: all 0.5s;
   .peoplewrap{
     min-height: 8em;
     margin-bottom: 2%;
-    margin-top: 2%;
+    /* margin-top: 2%; */
     height: 15em;
     /* background-color: red; */
     display: block;
@@ -477,26 +501,30 @@ transition: all 0.5s;
   .navdropdown li a.button:hover {
     background-color: #2C3D6C;
     color: white; }
-  .navdropdown li a {
-    color: inherit;
-    padding: 1em .25em;
-    text-decoration: none;
-    display: block; }
   .navdropdown li a:hover {
     background-color: #b1dbb3;
-    color: #2C3D6C; }
-  .navdropdown li a {
-    /* color: red; */
+    /* color: #2C3D6C; */
     color: white;
+  }
+    .navdropdown li a {
+      /* color: inherit; */
+      color: #FCF59E;
+      padding: 1em .25em;
+      text-decoration: none;
+      display: block;
+    /* color: red; */
+    /* color: white; */
     text-decoration: none;
     padding: 1em 0;
     display: block;
     text-transform: uppercase;
     font-weight: bold; }
-  .navdropdown li a:hover {
+  .navdropdown ul li a:hover {
     background-color: #7dc380;
     transition: all .2s;
-    color: white; }
+    color: white !important;
+    /* font-size:500; */
+  }
   .navdropdown li:last-child {
     border: none; }
 
@@ -734,8 +762,10 @@ main div.content h3:enabled {
     padding-left: 0;
     font-size: 1.75em;
     border: none; }
-  .news article h3:hover {
-    color: #49a54e; }
+  .news article h3:hover
+  {
+    /* color: #49a54e; */
+   }
   .news article .summary {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -970,7 +1000,8 @@ main div.content h3:enabled {
 
     /* custom text size paragraph */
         /* border: 1px solid red !important;/* cust */
-    margin-top: 0.25em !important;
+    /* margin-top: 0.25em !important; */
+    margin-top: unset !important;
     padding: 2.5%;
     color: #2C3D6C;
     font-family: "Ubuntu", sans-serif;
@@ -1807,7 +1838,7 @@ div.research img{
   .slide a {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    color: white;
+    color: #FCF59E;
     text-shadow: 0 0 10px black;
     /* opacity: 0; */
     padding-top: 20%;
@@ -1846,6 +1877,11 @@ div.research img{
     }
   }  /* end 0 */
 @media (min-width: 667px) {
+
+.events{
+  padding-bottom: 1.7em;
+}
+
   .peoplewrap{
     /* height: 11em; */
     min-height: 12em;
@@ -3020,6 +3056,7 @@ div.resources h2 {
   font-size: 1.2em !important;
   /* word-break: break-all; */
   word-break: normal;
+  margin-bottom: unset;
 }
 .more{
   border-radius: 6px;
@@ -3055,23 +3092,7 @@ line-height: 1.25em;
 hyphens: auto;
 }
 
-.boldtest{
-    font-size: 0.9em!important;
-    color: #2C3D6C;
-    margin-top: 0 !important;
-    text-align: left;
-    font-weight: bold;
-    line-height: 1.2em ;
-    text-transform: none ;
-    clear: both;
-    padding: 1.5%;
-    vertical-align: baseline;
-    border: 0;
-    margin:0;
-    font-family: "Open Sans Condensed", sans-serif !important;
-}
-
-.greentest{
+/* .greentest{
   text-decoration: none;
 color: #8ECB91;
 margin: 0;
@@ -3082,7 +3103,7 @@ font: inherit;
 font-size: 100%;
 vertical-align: baseline;
 list-style: square;
-}
+} */
 
 
 
