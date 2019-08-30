@@ -133,16 +133,17 @@ title: People
 
 <div class="people" id="matchHeight">
     <div class="relative">
-      <h3 id="lbrnAdminCore" class="piac ptitle" aria-expanded="true">Admin Core
-        <div class="caret dropdown-toggle">
-        </div></h3>
+      <h3 id="lbrnAdminCore" class="piac ptitle" aria-expanded="true">
+        Admin Core
+        <div class="caret dropdown-toggle"></div>
+      </h3>
       <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin"></i> -->
       <section class="directory collapsenobs Adcore">
 
         {% for people in site.admin_core %}
           {% assign loopindex = forloop.index | modulo: 2 %}
           {% if loopindex == 1 %}
-            <div>
+          <div class="peoplewrap">
             {% include directory.html %}
           {% else %}
               {% include directory.html %}
@@ -152,8 +153,10 @@ title: People
       </section>
     </div>
   <div class="relative">
-    <h3 id="lbrnBbcCore" class="pibc ptitle">BBC Core
-            <div class="caret dropdown-toggle"></h3>
+    <h3 id="lbrnBbcCore" class="pibc ptitle">
+      BBC Core
+      <div class="caret dropdown-toggle">
+    </h3>
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs BBcore">
       <!-- site.data.LBRN-BBC-Core -->
@@ -170,8 +173,10 @@ title: People
     </section>
   </div>
   <div class="relative">
-    <h3 id="lbrnMcbrCore" class="pimc ptitle">MCBR Core
-            <div class="caret dropdown-toggle"></h3>
+    <h3 id="lbrnMcbrCore" class="pimc ptitle">
+      MCBR Core
+      <div class="caret dropdown-toggle"></div>
+    </h3>
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs MCcore">
       {% for people in site.MCBR_core %}
@@ -190,7 +195,7 @@ title: People
   <h2 class="pielement">Project Investigators</h2>
   <div class="relative">
     <h3 id="currentlyFunded" class="picrp ptitle" >Currently Funded PIs
-            <div class="caret dropdown-toggle">
+            <div class="caret dropdown-toggle"></div>
             </h3>
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs CRP">
@@ -219,7 +224,7 @@ title: People
   </div>
   <div class="relative">
     <h3 id="previouslyFunded" class="pippi ptitle">Previously Funded PIs
-        <div class="caret dropdown-toggle">
+        <div class="caret dropdown-toggle"></div>
     </h3>
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs PrevPPi">
@@ -290,7 +295,7 @@ title: People
   </div>
   <div class="relative">
     <h3 id="LbrnSteering" class="pilsc ptitle">LBRN Steering Committee
-        <div class="caret dropdown-toggle">
+        <div class="caret dropdown-toggle"></div>
     </h3>
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs LBRNsc">

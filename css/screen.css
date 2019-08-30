@@ -38,6 +38,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+
+
+  .person{
+    -moz-transition:background-color .2s ease-in;
+    -o-transition:background-color .2s ease-in;
+    -webkit-transition:background-color .2x ease-in;
+    width: 45%;
+    display: block;
+        border-radius: 6px;
+        word-wrap: break-word;
+  }
+
 #eventSummary p{
   margin-top: .5em;
   font-size: 0.85em;
@@ -64,20 +76,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
 }
 .ptitle{
-  width: 85%;
+  width: 100%;
+  height: 2em;
+  display: inline-block;
+}
+
+.ptitle h3{
+  width:25%;
+  margin-right:0.5em;
+  float: left;
+  margin:unset !important;
+  /* margin-bottom:unset; */
 }
 .caret {
-float: right;
+
+/* float: right; */
 padding-right: 0.2em;
 transition: all 0.5s;
+float:left;
 }
 
 .on .caret{
-  transform:rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
+  transform:rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
   /* color: green; */
   transition: all 0.5s;
+  float:left;
 }
 
 
@@ -185,9 +210,9 @@ padding-top: 1%;
 
   .peoplewrap{
     min-height: 8em;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
     /* margin-top: 2%; */
-    height: 15em;
+    /* height: 10em; */
     /* background-color: red; */
     display: block;
   }
@@ -478,7 +503,9 @@ padding-top: 1%;
   .navdropdown li {
     font-family: "Ubuntu", sans-serif;
     text-align: center;
-    border-bottom: 1px solid white; }
+    border-bottom: 1px solid white;
+    font-size: 1.2em;
+  }
   .navdropdown li.right {
     margin-left: .5em;
     margin-right: 0; }
@@ -508,12 +535,12 @@ padding-top: 1%;
   }
     .navdropdown li a {
       /* color: inherit; */
-      color: #FCF59E;
+      /* color: #FCF59E; */
       padding: 1em .25em;
       text-decoration: none;
       display: block;
     /* color: red; */
-    /* color: white; */
+    color: white;
     text-decoration: none;
     padding: 1em 0;
     display: block;
@@ -1705,7 +1732,8 @@ div.research img{
 
   .peoplewrap{
     /* height: 11em; */
-    min-height: 15em;
+    /* min-height: 15em; */
+/* display: inline-block; */
   }
 
   .mobilesidebar{
@@ -1722,7 +1750,9 @@ div.research img{
 
   .navdropdown ul li a {
     text-transform: capitalize;
-    font-weight: normal; }
+    font-weight: normal;
+    /* font-size: 1.4em; */
+  }
 
     .strip section{
     /* width: 30%; */
@@ -1878,13 +1908,16 @@ div.research img{
   }  /* end 0 */
 @media (min-width: 667px) {
 
+
 .events{
   padding-bottom: 1.7em;
 }
 
   .peoplewrap{
     /* height: 11em; */
-    min-height: 12em;
+    /* min-height: 12em; */
+    display: block;
+
   }
 
   .profileimg{
@@ -2511,9 +2544,13 @@ section.directory article.person{
   div.chooseTypeInline {
     display: flex; } }
 @media (min-width: 860px) {
-  .ptitle {
+  .peoplewrap{
+    display:inline-block;
+  }
+
+  /* .ptitle {
     width: 70%;
-}
+} */
 
 
   main div.content h3.small-text{
@@ -2653,6 +2690,9 @@ section.directory article.person:nth-child(odd) {
     font-weight: bold;
     line-height: 3; } }
 @media (min-width: 1224px) {
+  .navdropdown li{
+    font-size:1.3em;
+  }
 
   .slide {
 width:95%;
