@@ -22,7 +22,7 @@
       </div>
     </header> -->
     <header>
-      <div class="layout">
+      <div class="layout datalayout">
         <a href="{{site.baseurl}}/index.html"><img src="{{site.baseurl}}/images/webLogo.png" alt="LBRN Logo"></a>
         <h1>Louisiana&nbsp;Biomedical Research&nbsp;Network</h1>
         <button id="navBug" class="btn" type="button" data-toggle="collapse" data-target="#navdropdownsmall" aria-expanded="false" aria-controls="collapseExample">
@@ -70,7 +70,7 @@
     </div>
 
 
-    <main class="layout">
+    <main class="layout datalayout">
       <section id="lbrnEventHeader">
         {% if page.featuredImageUrl %}
         <div class="imagebox">
@@ -84,7 +84,7 @@
           <!-- <p>{{page.date | date:" %B, %-d %Y"}}</p> -->
         </div>
         {% else %}
-          <h1>{{page.author}}</h1>
+          <h1 class="pititle">{{page.author}}</h1>
         {% endif %}
       </section>
       <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->

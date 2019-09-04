@@ -39,6 +39,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @media (min-width: 0) {
 
+  .datalayout{
+    width: 100%;
+    /* max-width: unset !important; */
+    /* margin: unset; */
+    /* padding-left: 10%; */
+  }
+  .profilepage .pi .row{
+    margin-left: unset;
+    margin-right: unset;
+  }
+.datalayout #lbrnEventHeader, .datalayout .content {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: unset;
+
+  /* width: 80% !important; */
+}
+
+.datalayout #lbrnEventHeader h1, .datalayout .content{
+  /* max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: intial; */
+}
 
   .person{
     -moz-transition:background-color .2s ease-in;
@@ -190,7 +214,7 @@ float:left;
   .profile-txt{
     width:80%;
     /* padding:1%; */
-    padding-left: 1%;
+    /* padding-left: 1%; */
 
 padding-top: 1%;
     /* font-size: 1.4rem;
@@ -1065,7 +1089,9 @@ main div.content h3:enabled {
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    padding-left: 4%;
+  }
   #lbrnEventHeader h1 {
     font-size: 2.4em;
     line-height: 1.2em;
@@ -1730,6 +1756,7 @@ div.research img{
   /* end 0 */
 @media (min-width: 414px) {
 
+
   .peoplewrap{
     /* height: 11em; */
     /* min-height: 15em; */
@@ -1750,7 +1777,8 @@ div.research img{
 
   .navdropdown ul li a {
     text-transform: capitalize;
-    font-weight: normal;
+    /* font-weight: normal; */
+    font-weight: 500;
     /* font-size: 1.4em; */
   }
 
@@ -2690,6 +2718,9 @@ section.directory article.person:nth-child(odd) {
     font-weight: bold;
     line-height: 3; } }
 @media (min-width: 1224px) {
+  #lbrnEventHeader{
+    padding-left: unset;
+  }
   .navdropdown li{
     font-size:1.3em;
   }
@@ -2792,7 +2823,7 @@ width:95%;
 
 
   section.directory article.person {
-    min-height: 10em;
+    min-height: 8em;
     height: unset;
     margin-bottom: auto;
 }
