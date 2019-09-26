@@ -9,7 +9,7 @@ textOnUrl: LBRN Precision FDA
 link: /documents/LBRN_Precision_FDA.pdf
 eventDate: October 3, 2019
 --- 
-Reproducible Bioinformatics - Learn about BioCompute Objects and PrecisionFDA. The Louisiana Biomedical Research Network (LBRN) and George Washington University Hive's lab is organizing a special webinar to introduce BCOs and share details about this challenge. The webinar will be on October 3, 2019 at 3pm. <!--more-->
+Reproducible Bioinformatics- Learn about BioCompute Objects and PrecisionFDA. The Louisiana Biomedical Research Network (LBRN) and George Washington University Hive's lab is organizing a special webinar to introduce BCOs and share details about this challenge. The webinar will be on October 3, 2019 at 3pm. <!--more-->
 
 Bioinformatics is a dynamic and growing field, developing into an essential part of biomedical research that is transformed by large genomic and other high-throughput datasets. As a result, federal research support requires a robust and reproducible bioinformatics analysis. Regulatory agencies like the FDA are actively working on standardizing bioinformatics analysis submission in their review process. In order to encourage special attention to robust and reproducible biomedical research using OMICS data, the FDA has recently launched [Precision FDA](https://precision.fda.gov). 
 
