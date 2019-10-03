@@ -5,7 +5,7 @@ author: Siva Murru
 school: University of Louisiana at Monroe
 active: true
 project-type: StartupProject
-image: "PIs/Siva.jpg"
+image: "murru.jpeg"
 categories: project-investigator
 ---
 
