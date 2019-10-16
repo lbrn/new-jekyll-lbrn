@@ -1,0 +1,38 @@
+ <!-- for pi in site.data.LBRNProjects_DATA_LABELS  -->
+ {% for pi in site.data.LBRNProjects_DATA_LABELS  %}
+ <!-- if id = true; -->
+  {% if pi.university != nil and pi.university != "University" %}
+  {% assign x = pi.firstname | append: ' ' | append: pi.lastname %}
+  <!-- <p>x: {{x}}</p> -->
+    {% if x  == page.author %}
+      <section>
+        <p>ID: {{pi.﻿id}}</p>
+        <h3>Name: {{pi.lastname}}, {{pi.firstname}}</h3>
+        <p>Uni: {{pi.university}}</p>
+        <!-- <p>Mentor</p>
+        <p>{{pi.firstname}}</p>
+        <p>{{pi.lastname}}</p> -->
+        <p>{{pi.projectemail}}</p>
+        <p>{{pi.university}}</p>
+        <p>{{pi.currentproject}}</p>
+        <p>{{pi.projectdates}}</p>
+        <p>{{pi.projectmentors}}</p>
+        <p>{{pi.mentoremails}}</p>
+        <p>{{pi.projectstart}}</p>
+        <p>{{pi.projectend}}</p>
+        <p>{{pi.projtitle}}</p>
+        <!-- <p>{{pi.procabstract}}</p> -->
+        <!-- <p>{{pi.projabstractformatted}}</p> -->
+        <p>{{pi.lbrnid}}</p>
+        <p>{{pi.complete}}</p>
+        <!-- <p>{{pi.absupdate}}</p> -->
+        <p>{{pi.titleupd}}</p>
+        <p>{{pi.titlecorrect}}</p>
+        <p>{{pi.photo}}</p>
+        <p>{{pi.completion}}</p>
+
+        =========================
+      </section>
+    {% endif %}
+  {% endif %}
+{% endfor %}
