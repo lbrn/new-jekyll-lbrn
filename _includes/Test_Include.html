@@ -4,7 +4,7 @@
   {% if pi.university != nil and pi.university != "University" %}
   {% assign x = pi.firstname | append: ' ' | append: pi.lastname %}
   <!-- <p>x: {{x}}</p> -->
-    {% if x  == page.author %}
+    {% if x  == page.person %}
       <section>
         <p>ID: {{pi.﻿id}}</p>
         <h3>Name: {{pi.lastname}}, {{pi.firstname}}</h3>

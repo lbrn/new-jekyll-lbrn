@@ -42,6 +42,8 @@ collections:
     output:
   previous_pis:
     output: true
+  pis:
+    output: true
 
 
 # Build settings
