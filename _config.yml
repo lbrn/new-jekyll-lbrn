@@ -28,10 +28,9 @@ markdown: kramdown
 
 plugins:
   - jekyll-feed
-exclude:
-  # - Gemfile
-  # - Gemfile.lock
 #Server settings
 port: 4000
 encoding: utf-8
+exclude:
+   - .jekyll-cache
 include: ['.htaccess']
