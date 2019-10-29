@@ -1,8 +1,14 @@
-<article class="person">
-  <img src="images/people/al-horani.jpg" alt=" {{people.lastname}}, {{people.firstname}}'s portrait photo.">
+<article class="person" >
+  <img src="images/people/{{people.lastname}}.jpg" alt=" {{people.lastname}}, {{people.firstname}}'s portrait photo.">
   <!-- <img src="images/people/{{people.photo}}" alt="{{people.author}}'s portrait photo."> -->
   <h4>{{people.firstname}} {{people.lastname}}</h4>
-  <a class="natural-link" href="/pis/al-horani_rami.html"><h5>title: {{people.title}}</h5></a>
+  <a class="natural-link" href="/pis/{{people.lastname}}_{{people.firstname}}.html"><h5>{{people.projtitle}}</h5></a>
   <!-- <a class="natural-link" href="{{people.url | relative_url }}"><h5>title: {{people.title}}</h5></a> -->
   <h6 style="margin-top: .7em;">{{people.university}}</h6>
 </article>
+<!-- <article class="person">
+  --- <br>
+  layout: pidatapage_new <br>
+  person: {{people.firstname}} {{people.lastname}} <br>
+  --- <br>
+</article> -->

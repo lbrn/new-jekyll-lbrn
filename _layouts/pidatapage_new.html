@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{page.author}}</title>
+    <title>{{page.person}}</title>
     <link rel="stylesheet" href="{{site.baseurl}}/css/screen.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -87,59 +87,16 @@
           <h1 class="pititle">{{page.person}}</h1>
         {% endif %}
       </section>
-      hey
-      <article id="speakers" style = "display: none;">
-        {{page.person}}
-        {% include Test_Include.html %}
-      </article>
-    <article id="speakers" style="display: none;">
-      <!-- for pi in site.data.LBRNProjects_DATA_LABELS  -->
-      {% for pi in site.data.LBRNProjects_DATA_LABELS  %}
-      <!-- if id = true; -->
-       {% if pi.university != nil and pi.university != "University" %}
-       {% assign x = pi.firstname | append: ' ' | append: pi.lastname %}
-       <!-- <p>x: {{x}}</p> -->
-         {% if x  == page.person %}
-           <section>
-             <!-- <p>ID: {{pi.﻿id}}</p> -->
-             <h3>Name: {{pi.lastname}}, {{pi.firstname}}</h3>
-             <p>Uni: {{pi.university}}</p>
-             <!-- <p>Mentor</p>
-             <p>{{pi.firstname}}</p>
-             <p>{{pi.lastname}}</p> -->
-             <p>{{pi.projectemail}}</p>
-             <p>{{pi.university}}</p>
-             <p>{{pi.currentproject}}</p>
-             <p>{{pi.projectdates}}</p>
-             <p>{{pi.projectmentors}}</p>
-             <p>{{pi.mentoremails}}</p>
-             <p>{{pi.projectstart}}</p>
-             <p>{{pi.projectend}}</p>
-             <p>{{pi.projtitle}}</p>
-             <!-- <p>{{pi.procabstract}}</p> -->
-             <!-- <p>{{pi.projabstractformatted}}</p> -->
-             <p>{{pi.lbrnid}}</p>
-             <p>{{pi.complete}}</p>
-             <!-- <p>{{pi.absupdate}}</p> -->
-             <p>{{pi.titleupd}}</p>
-             <p>{{pi.titlecorrect}}</p>
-             <p>{{pi.photo}}</p>
-             <p>{{pi.completion}}</p>
 
-             =========================
-           </section>
-         {% endif %}
-       {% endif %}
-     {% endfor %}
-     </article>
       <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->
       <div class="content profilepage">
+
 
         {% for pi in site.data.LBRNProjects_DATA_LABELS  %}
         {% assign x = pi.firstname | append: ' ' | append: pi.lastname %}
         <!-- <p>x: {{x}}</p> -->
           {% if x  == page.person %}
-          <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.author | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
+          <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ page.person | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
             <div class="page">
               <!-- <h2 class="page-title" >{{ page.author }}</h2> -->
               <p id="uni">
@@ -155,17 +112,23 @@
                     <br>
                     <!-- <h2>mentors: {{pi.mentors}}</h2> -->
                     {% if pi.mentors.size > 1 %}
-                      <h2>Mentors</h2>
+                      <!-- <h2>Mentors</h2> -->
                     {% else %}
                     	{% if pi.mentors.size == 1 %}
-                    	<h2>Mentor</h2>
+                    	<!-- <h2>Mentor</h2> -->
                     	{% endif %}
                     {% endif %}
 
+                    {% if pi.mentors != nil %}
+                      {% if pi.mentors contains "," %}
+                      <h2>Mentors</h2>
+                      {%else %}
+                      <h2>Mentor</h2>
+                      {%endif%}
 
-                      <p>{{ pi.mentors }}, (mentor origin){{mentor.origin}}</p>
-
-                    <br>
+                      <p>{{ pi.mentors | replace: "), ", ")  <br>"  }}</p>
+                      <br>
+                    {% endif %}
 
 
                     {% if pi.funding.size > 0 %}
@@ -173,7 +136,7 @@
                     {% else %}
                       <h2>Funding Period</h2>
                     {% endif %}
-                    <p>{{pi.projectstart}} - {{pi.projectend}} </p>
+                    <p>{{pi.projectdates | replace: "), ", ")  <br>"  }}</p>
                     {% for funding in pi.funding %}
                       <p>{{ funding.name }} ({{funding.period}})</p>
                     {% endfor %}
