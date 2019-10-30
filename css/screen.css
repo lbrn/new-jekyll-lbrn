@@ -17,7 +17,7 @@ ol, ul {
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 8; }
 
 caption, th, td {
   text-align: left;
@@ -403,7 +403,7 @@ padding-top: 1%;
     color: #425ca2; }
 
   table {
-    font-size: 12px !important;
+    font-size: 18px !important;
     font-family: "Open Sans", sans-serif; }
 
   div.frame {
