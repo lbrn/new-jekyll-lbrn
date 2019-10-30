@@ -4,6 +4,7 @@ uploads/
 .jekyll-metadata
 _config.yml
 _site/feed.xml
+.jekyll-cache
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
