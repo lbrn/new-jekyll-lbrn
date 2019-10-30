@@ -2,6 +2,7 @@ _site/
 .sass-cache/
 .jekyll-metadata
 _site/feed.xml
+.jekyll-cache
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD

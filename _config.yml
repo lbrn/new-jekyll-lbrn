@@ -52,6 +52,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 exclude:
+  - .jekyll-cache
   # - Gemfile
   # - Gemfile.lock
 #Server settings
