@@ -100,14 +100,19 @@
             <div class="page">
               <!-- <h2 class="page-title" >{{ page.author }}</h2> -->
               <p id="uni">
-                {{ pi.university }}
+                {{ pi.university  }}
               </p>
               <hr>
               <div class="pi">
                 <div class="row">
                   <div class="span6 profile-txt">
                     <h2>Project Title</h2>
-                    <p class="project-title">{{ pi.projtitle }}</p>
+                    {% if pi.titleu != nil %}
+                    <p class="project-title">{{ pi.titleu }}</p>
+                      {% else %}
+                      <p class="project-title">{{ pi.projtitle }}</p>
+                    {% endif %}
+
                     <!-- <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a> -->
                     <br>
                     <!-- <h2>mentors: {{pi.mentors}}</h2> -->
@@ -143,7 +148,7 @@
                   </div>
                   <div class="profileimg">
                          <!-- <p>"/images/people/{{ pi.lastname }}.jpg"</p> -->
-                    <img src="/images/people/{{ pi.lastname }}.jpg" alt="{{x}}" class="img-polaroid">
+                    <img src="/images/people/{{ pi.firstname | slice: 0}}{{ pi.lastname }}.jpg" alt="{{x}}" class="img-polaroid">
                   </div>
                   <div class="profile-txt">
                   <h2 class="profile">Abstract</h2>

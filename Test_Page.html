@@ -71,6 +71,37 @@ test2
 </div> -->
 <br>
 
+
+<p>
+  date: {{ site.time }}
+</p>
+
+<article style = "display: none;">
+  <ul>
+    <!-- {% capture now %}{{'now' | date: '%y' | plus: 0 %}}{% endcapture %} -->
+    <p>date: {{site.time}}</p>
+    <!-- {{ now }} -->
+      {% assign sorted = (site.events | sort: 'eventDate') | reverse %}
+      {% for event in sorted limit:2 %}
+      {% include events-list-item.html %}
+
+      <!-- if date <= now -->
+          <!-- {{event.date}} -->
+          <!-- <li>{{ event.title }}</li> -->
+      {% endfor %}
+  </ul>
+</article>
+  {% assign eventsR = site.events %}
+      {% capture date %}{{eventsR.eventDate | date: '%s' | plus: 0 %}}{% endcapture %}
+        {% if date > now %}
+        <article style = "display: none;">
+          {% for event in eventsR limit:2 %}
+            {% include events-list-item.html %}
+          {% endfor %}
+        </article>
+        {% endif %}
+
+
 <article id="speakers" style = "display: none;">
   {{page.person}}
   {% include Test_Include.html %}

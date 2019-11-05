@@ -96,6 +96,15 @@ title: People
                   <li  class="pipai dot-indicators">  </li>
                 </div>
               </div> -->
+              <div class="sidebar-holder">
+                <div class="dot-text-holder">
+                  <li><a href="#LbrnSteering">LBRN Steering Committee</a>
+                  </li>
+                </div>
+                <!-- <div class="dot-holder">
+                  <li   class="pilsc dot-indicators">  </li>
+                </div> -->
+              </div>
 
               <div class="sidebar-holder">
                 <div class="dot-text-holder">
@@ -107,15 +116,6 @@ title: People
                 </div> -->
               </div>
 
-              <div class="sidebar-holder">
-                <div class="dot-text-holder">
-                    <li><a href="#LbrnSteering">LBRN Steering Committee</a>
-                  </li>
-                </div>
-                <!-- <div class="dot-holder">
-                  <li   class="pilsc dot-indicators">  </li>
-                </div> -->
-              </div>
 
             </ul>
           </div>
@@ -294,6 +294,26 @@ title: People
 
     </section>
   </div>
+  <div class="relative">
+    <h3 id="LbrnSteering" class="pilsc ptitle">LBRN Steering Committee
+      <div class="caret dropdown-toggle"></div>
+    </h3>
+    <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
+    <section class="directory collapsenobs LBRNsc">
+      <!-- site.data.LBRN-Steering-Committee -->
+      {% for people in site.LBRN_Steering_Committee %}
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      {% if loopindex == 1 %}
+      <div class="peoplewrap">
+        {% include directory-committee-members.html  %}
+        {% else %}
+        {% include directory-committee-members.html  %}
+      </div>
+      {% endif %}
+      {% endfor %}
+
+    </section>
+  </div>
   <h2 class="cmelement">Committee Members</h2>
   <div class="relative">
     <h3 id="LbrnEAC" class="pile ptitle">LBRN External Advisory Committee
@@ -302,40 +322,50 @@ title: People
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs LBRNe">
       <!-- site.data.LBRN-EAC -->
+      {% if people.category != "Former EAC Members"%}
       {% for people in site.committee-members %}
       {% assign loopindex = forloop.index | modulo: 2 %}
-      {% if loopindex == 1 %}
+
+        {% if loopindex == 1 %}
         <div class="peoplewrap">
-        {% include directory-committee-members.html  %}
-      {% else %}
+
+          {% include directory-committee-members.html  %}
+        {% else %}
+
+
           {% include directory-committee-members.html  %}
         </div>
-      {% endif %}
+        {% endif %}
+
     {% endfor %}
+    {% endif %}
+
+    <!-- ADD IF = CATEGORY Former -->
+    <!-- seperate them -->
+
+    <h3>Former EAC Members</h3>
+
+    {% for people in site.committee-members %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+
+    {% if people.category == "Former EAC Members"%}
+    {% if loopindex == 1 %}
+    <div class="peoplewrap">
+      {% include directory-committee-members.html  %}
+      {% else %}
+      {% include directory-committee-members.html  %}
+    </div>
+    {% endif %}
+      <!-- <p>Category: {{people.category}}</p> -->
+    {% endif %}
+
+  {% endfor %}
+
 
       <!-- directory-committee-members.html  -->
 
     </section>
-  </div>
-  <div class="relative">
-    <h3 id="LbrnSteering" class="pilsc ptitle">LBRN Steering Committee
-        <div class="caret dropdown-toggle"></div>
-    </h3>
-    <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
-    <section class="directory collapsenobs LBRNsc">
-      <!-- site.data.LBRN-Steering-Committee -->
-      {% for people in site.LBRN_Steering_Committee %}
-      {% assign loopindex = forloop.index | modulo: 2 %}
-      {% if loopindex == 1 %}
-        <div class="peoplewrap">
-        {% include directory-committee-members.html  %}
-      {% else %}
-          {% include directory-committee-members.html  %}
-        </div>
-      {% endif %}
-    {% endfor %}
 
-    </section>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

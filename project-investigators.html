@@ -58,7 +58,7 @@ title: Project Investigators
     </ul>
 </nav> -->
 <!-- <h2>Project Investigators</h2> -->
-<section class="directory">
+<section class="directory" style = "display: none;">
   {% assign count = 0 %}
 
   {% for pi in site.project_investigators  %}
@@ -77,6 +77,30 @@ title: Project Investigators
 
 
       {% endif %}
+  {% endfor %}
+
+
+</section>
+<section class="directory" >
+  {% assign count = 0 %}
+
+  {% for people in site.data.LBRNProjects_DATA_LABELS %}
+    {% if people.university != nil and people.university != "University" %}
+        {% assign count = count | plus: 1 %}
+          {% assign modcount = count | modulo: 2 %}
+
+            {% if modcount == 1  %}
+            <div class="peoplewrap">
+              <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
+                {% include ndirectory-currentPi.html %}
+              {% else %}
+                {% include ndirectory-currentPi.html %}
+              <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
+
+            </div>
+            {% endif %}
+      {% endif %}
+
   {% endfor %}
 
 

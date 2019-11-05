@@ -96,10 +96,11 @@
       <aside class="events">
         <h2>EVENTS</h2>
           <!--Start of EVENT ITEM-->
-          {% assign eventsR = site.events %}
-          {% for event in eventsR limit:2 %}
-            {% include events-list-item.html %}
-          {% endfor %}
+          {% assign sorted = (site.events | sort: 'eventDate') | reverse %}
+            {% for event in sorted limit:2 %}
+              {% include events-list-item.html %}
+            {% endfor %}
+
 
             <a class="view-all" href="upcoming-events.html">View all events</a>
             <h2 STYLE="line-height: 1.2;">Twitter</h2>
