@@ -3,8 +3,8 @@ layout: default
 title: Upcoming Events
 ---
 <section class="events" id="eventsContainer">
-  STILL BROKEN
-  {% assign sorted = (site.events | sort: 'eventDate') | reverse %}
+
+
     {% for event in sorted %}
       {% include events-list-item-long.html %}
     {% endfor %}
