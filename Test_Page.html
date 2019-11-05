@@ -77,43 +77,7 @@ test2
   {% include Test_Include.html %}
 </article>
 <article id="speakers" style = "display: none;">
-  <!-- for pi in site.data.LBRNProjects_DATA_LABELS  -->
-  {% for people in site.data.LBRNProjects_DATA_LABELS %}
-  {% if people.university != nil and people.university != "University" %}
-  {% assign x = people.firstname | append: ' ' | append: people.lastname %}
-  <!-- <p>x: {{x}}</p> -->
-  {% if x  == page.person %}
-  <section>
-    <h3>Name: {{people.lastname}}, {{people.firstname}}</h3>
-    <!-- <p>ID: {{people.﻿id}}</p> -->
-    <p>Uni: {{people.university}}</p>
-    <!-- <p>Mentor</p>
-    <p>{{people.firstname}}</p>
-    <p>{{people.lastname}}</p> -->
-    <p>{{people.projectemail}}</p>
-    <p>{{people.university}}</p>
-    <p>{{people.currentproject}}</p>
-    <p>Need: {{people.projectdates}}</p>
-    <p>Need: {{people.mentors}}</p>
-    <p>Misc: {{people.mentoremails}}</p>
-    <p>{{people.projectstart}}</p>
-    <p>{{people.projectend}}</p>
-    <p>{{people.projtitle}}</p>
-    <!-- <p>{{people.procabstract}}</p> -->
-    <!-- <p>{{people.projabstractformatted}}</p> -->
-    <p>{{people.lbrnid}}</p>
-    <p>{{people.complete}}</p>
-    <!-- <p>{{people.absupdate}}</p> -->
-    <p>{{people.titleupd}}</p>
-    <p>{{people.titlecorrect}}</p>
-    <p>{{people.photo}}</p>
-    <p>{{people.completion}}</p>
 
-    =========================
-  </section>
-  {% endif %}
-  {% endif %}
-  {% endfor %}
 </article>
 end test1
 <br>
