@@ -71,13 +71,100 @@ test2
 </div> -->
 <br>
 
+{% assign loopindex = 0 | modulo: 2 %}
+
+{% for people in site.committee-members %}
+
+  {%  assign loop2 = loopindex | modulo: 2 %}
+
+  {% if people.category != "Former EAC Members"%}
+
+    {% if loopindex == 0 %}
+
+    <p>begin: {{loopindex}}: {{people.author}}</p>
+
+    {% else %}
+    <p>2nd: {{loopindex}}: {{people.author}}</p>
+
+    {% endif %}
+
+    {% assign loopindex = loopindex | plus: 1  | modulo: 2 %}
+  {% endif %}
+
+{% endfor %}
+<br>
+<p>
+  date: {{ site.time }}
+</p>
+
+<article style = "display: none;">
+  <ul>
+    <!-- {% capture now %}{{'now' | date: '%y' | plus: 0 %}}{% endcapture %} -->
+    <p>date: {{site.time}}</p>
+    <!-- {{ now }} -->
+      {% assign sorted = (site.events | sort: 'eventDate') | reverse %}
+      {% for event in sorted limit:2 %}
+      {% include events-list-item.html %}
+
+      <!-- if date <= now -->
+          <!-- {{event.date}} -->
+          <!-- <li>{{ event.title }}</li> -->
+      {% endfor %}
+  </ul>
+</article>
+  {% assign eventsR = site.events %}
+      {% capture date %}{{eventsR.eventDate | date: '%s' | plus: 0 %}}{% endcapture %}
+        {% if date > now %}
+        <article style = "display: none;">
+          {% for event in eventsR limit:2 %}
+            {% include events-list-item.html %}
+          {% endfor %}
+        </article>
+        {% endif %}
+
 
 <article id="speakers" style = "display: none;">
   {{page.person}}
   {% include Test_Include.html %}
 </article>
 <article id="speakers" style = "display: none;">
+  <!-- for pi in site.data.LBRNProjects_DATA_LABELS  -->
+  {% for people in site.data.LBRNProjects_DATA_LABELS %}
+  {% if people.university != nil and people.university != "University" %}
+  {% assign x = people.firstname | append: ' ' | append: people.lastname %}
+  <!-- <p>x: {{x}}</p> -->
+  {% if x  == page.person %}
+  <section>
+    <h3>Name: {{people.lastname}}, {{people.firstname}}</h3>
+    <!-- <p>ID: {{people.﻿id}}</p> -->
+    <p>Uni: {{people.university}}</p>
+    <!-- <p>Mentor</p>
+    <p>{{people.firstname}}</p>
+    <p>{{people.lastname}}</p> -->
+    <p>{{people.projectemail}}</p>
+    <p>{{people.university}}</p>
+    <p>{{people.currentproject}}</p>
+    <p>Need: {{people.projectdates}}</p>
+    <p>Need: {{people.mentors}}</p>
+    <p>Misc: {{people.mentoremails}}</p>
+    <p>{{people.projectstart}}</p>
+    <p>{{people.projectend}}</p>
+    <p>{{people.projtitle}}</p>
+    <!-- <p>{{people.procabstract}}</p> -->
+    <!-- <p>{{people.projabstractformatted}}</p> -->
+    <p>{{people.lbrnid}}</p>
+    <p>{{people.complete}}</p>
+    <!-- <p>{{people.absupdate}}</p> -->
+    <p>{{people.titleupd}}</p>
+    <p>{{people.titlecorrect}}</p>
+    <p>{{people.photo}}</p>
+    <p>{{people.completion}}</p>
 
+    =========================
+  </section>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
 </article>
 end test1
 <br>

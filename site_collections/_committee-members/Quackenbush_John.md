@@ -6,7 +6,7 @@ author: John Quackenbush
 school: "Harvard School of Public Health"
 project-type: TestElement
 image: "quackenbush.jpg"
-category: none
+category: Former EAC Members
 email:
 phone:
 zip:

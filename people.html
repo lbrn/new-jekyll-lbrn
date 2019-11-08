@@ -322,44 +322,66 @@ title: People
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs LBRNe">
       <!-- site.data.LBRN-EAC -->
-      {% if people.category != "Former EAC Members"%}
+
+      {% assign loopindex = 0 | modulo: 2 %}
+
       {% for people in site.committee-members %}
-      {% assign loopindex = forloop.index | modulo: 2 %}
 
-        {% if loopindex == 1 %}
-        <div class="peoplewrap">
+        {%  assign loop2 = loopindex | modulo: 2 %}
 
-          {% include directory-committee-members.html  %}
-        {% else %}
+        {% if people.category != "Former EAC Members"%}
 
+          {% if loopindex == 0 %}
+
+          <div class="peoplewrap">
+
+            {% include directory-committee-members.html  %}
+
+          {% else %}
 
           {% include directory-committee-members.html  %}
         </div>
+
+          {% endif %}
+
+          {% assign loopindex = loopindex | plus: 1  | modulo: 2 %}
         {% endif %}
 
-    {% endfor %}
-    {% endif %}
+      {% endfor %}
+
+
+
 
     <!-- ADD IF = CATEGORY Former -->
     <!-- seperate them -->
 
     <h3>Former EAC Members</h3>
 
+    {% assign loopindex = 0 | modulo: 2 %}
+
     {% for people in site.committee-members %}
-    {% assign loopindex = forloop.index | modulo: 2 %}
 
-    {% if people.category == "Former EAC Members"%}
-    {% if loopindex == 1 %}
-    <div class="peoplewrap">
-      {% include directory-committee-members.html  %}
-      {% else %}
-      {% include directory-committee-members.html  %}
-    </div>
-    {% endif %}
-      <!-- <p>Category: {{people.category}}</p> -->
-    {% endif %}
+      {%  assign loop2 = loopindex | modulo: 2 %}
 
-  {% endfor %}
+      {% if people.category == "Former EAC Members"%}
+
+        {% if loopindex == 0 %}
+
+        <div class="peoplewrap">
+
+          {% include directory-committee-members.html  %}
+
+        {% else %}
+
+        {% include directory-committee-members.html  %}
+      </div>
+
+        {% endif %}
+
+        {% assign loopindex = loopindex | plus: 1  | modulo: 2 %}
+      {% endif %}
+
+    {% endfor %}
 
 
       <!-- directory-committee-members.html  -->

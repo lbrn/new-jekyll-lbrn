@@ -38,6 +38,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+  .LBRNe article {
+    min-height: 5em;
+padding-bottom: 1em;
+  }
+
+  .summer{
+    width: 74%;
+  }
 
   .datalayout{
     width: 100%;

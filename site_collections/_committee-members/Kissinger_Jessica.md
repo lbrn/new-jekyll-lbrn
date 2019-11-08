@@ -6,7 +6,7 @@ author: Jessica Kissinger
 school: "University of Georgia"
 project-type: TestElement
 image: "kissinger.jpg"
-category: none
+category: Former EAC Members
 email:
 phone:
 zip:

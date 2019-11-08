@@ -6,7 +6,7 @@ author: Richard Hart
 school: "The Ohio State University"
 project-type: TestElement
 image: "hart.jpg"
-category: none
+category: Former EAC Members
 email:
 phone:
 zip:
