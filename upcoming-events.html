@@ -4,8 +4,10 @@ title: Upcoming Events
 ---
 <section class="events" id="eventsContainer">
 
-  {% assign sorted = (site.events | sort: 'eventDate') | reverse %}
-    {% for event in sorted %}
+   <!-- assign sorted = (site.events | sort: 'eventDate') | reverse -->
+     <!-- for event in sorted -->
+    {% for event in site.events %}
+
       {% include events-list-item-long.html %}
     {% endfor %}
 </section>

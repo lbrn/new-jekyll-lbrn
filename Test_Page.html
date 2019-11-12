@@ -94,7 +94,7 @@ test2
 {% endfor %}
 <br>
 <p>
-  date: {{ site.time }}
+  date:  site.time
 </p>
 
 <article style = "display: none;">
@@ -102,14 +102,14 @@ test2
     <!-- {% capture now %}{{'now' | date: '%y' | plus: 0 %}}{% endcapture %} -->
     <p>date: {{site.time}}</p>
     <!-- {{ now }} -->
-      {% assign sorted = (site.events | sort: 'eventDate') | reverse %}
-      {% for event in sorted limit:2 %}
-      {% include events-list-item.html %}
+       assign sorted = (site.events | sort: 'eventDate') | reverse
+       for event in sorted limit:2
+       include events-list-item.html
 
       <!-- if date <= now -->
           <!-- {{event.date}} -->
           <!-- <li>{{ event.title }}</li> -->
-      {% endfor %}
+       endfor 
   </ul>
 </article>
   {% assign eventsR = site.events %}
