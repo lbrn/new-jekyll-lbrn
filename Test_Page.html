@@ -94,13 +94,13 @@ test2
 {% endfor %}
 <br>
 <p>
-  date:  site.time
+  date:  sitedottime
 </p>
 
 <article style = "display: none;">
   <ul>
     <!-- {% capture now %}{{'now' | date: '%y' | plus: 0 %}}{% endcapture %} -->
-    <p>date: {{site.time}}</p>
+    <p>date: site.time</p>
     <!-- {{ now }} -->
        assign sorted = (site.events | sort: 'eventDate') | reverse
        for event in sorted limit:2
@@ -109,11 +109,13 @@ test2
       <!-- if date <= now -->
           <!-- {{event.date}} -->
           <!-- <li>{{ event.title }}</li> -->
-       endfor 
+       endfor
   </ul>
 </article>
   {% assign eventsR = site.events %}
-      {% capture date %}{{eventsR.eventDate | date: '%s' | plus: 0 %}}{% endcapture %}
+      {% capture date %}{% endcapture %}
+      <!-- eventsR.eventDate | date: '%s' | plus: 0  -->
+
         {% if date > now %}
         <article style = "display: none;">
           {% for event in eventsR limit:2 %}
@@ -129,42 +131,7 @@ test2
 </article>
 <article id="speakers" style = "display: none;">
   <!-- for pi in site.data.LBRNProjects_DATA_LABELS  -->
-  {% for people in site.data.LBRNProjects_DATA_LABELS %}
-  {% if people.university != nil and people.university != "University" %}
-  {% assign x = people.firstname | append: ' ' | append: people.lastname %}
-  <!-- <p>x: {{x}}</p> -->
-  {% if x  == page.person %}
-  <section>
-    <h3>Name: {{people.lastname}}, {{people.firstname}}</h3>
-    <!-- <p>ID: {{people.﻿id}}</p> -->
-    <p>Uni: {{people.university}}</p>
-    <!-- <p>Mentor</p>
-    <p>{{people.firstname}}</p>
-    <p>{{people.lastname}}</p> -->
-    <p>{{people.projectemail}}</p>
-    <p>{{people.university}}</p>
-    <p>{{people.currentproject}}</p>
-    <p>Need: {{people.projectdates}}</p>
-    <p>Need: {{people.mentors}}</p>
-    <p>Misc: {{people.mentoremails}}</p>
-    <p>{{people.projectstart}}</p>
-    <p>{{people.projectend}}</p>
-    <p>{{people.projtitle}}</p>
-    <!-- <p>{{people.procabstract}}</p> -->
-    <!-- <p>{{people.projabstractformatted}}</p> -->
-    <p>{{people.lbrnid}}</p>
-    <p>{{people.complete}}</p>
-    <!-- <p>{{people.absupdate}}</p> -->
-    <p>{{people.titleupd}}</p>
-    <p>{{people.titlecorrect}}</p>
-    <p>{{people.photo}}</p>
-    <p>{{people.completion}}</p>
 
-    =========================
-  </section>
-  {% endif %}
-  {% endif %}
-  {% endfor %}
 </article>
 end test1
 <br>
