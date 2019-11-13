@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+mtitle:
 author: Chris Beachy
 school: Southeastern Louisiana University,Louisiana State University Dept. of Biological Science
 project-type: TestElement

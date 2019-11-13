@@ -1,21 +1,22 @@
 ---
 layout: post
-title: Associate Director, University of Louisiana at Monroe
-author: Srinivas Garlapati
-school: Louisiana State University Dept. of Biological Science
+mtitle: Associate Director
+author: David Burk
+school: Louisiana State University Dept. of Biological Science PBRC
 project-type: TestElement
-image: "garlapati.jpg"
+image: "burk.jpg"
 categories: project-investigator
-email: garlapati@ulm.edu
-phone: (318) 342-3304
+email: david.burk@pbrc.edu
+phone: (225) 578-8246
 zip: 70803
 city: Baton Rouge
 state: Louisiana
 ---
 <!-- name,position,school,city,state,zip,email,phone,image
-
-
-,,,Baton Rouge,Louisiana,70803,,(318) 342-3304,garlapati.jpg
+Young-Hwan Lee,,,,yhlee@lsu.edu,,
+David Burk,Associate Director,Louisiana State University Dept. of Biological Science PBRC,Baton Rouge,Louisiana,70803,david.burk@pbrc.edu,(225) 578-8246,burk.jpg
+Vladimir Chouljenko,Associate Director,Louisiana State University SVM,Baton Rouge,Louisiana,70803,vchoul1@lsu.edu,(225) 578-9659,chouljenko.jpg
+Srinivas Garlapati,University of Louisiana at Monroe,Louisiana State University Dept. of Biological Science,Baton Rouge,Louisiana,70803,garlapati@ulm.edu,(318) 342-3304,garlapati.jpg
 Elahe Mahdavian,LSU - Shreveport,Louisiana State University Dept. of Biological Science,Baton Rouge,Louisiana,70803,elahe.mahdavian@lsus.edu,(318) 797-5227,mahdavian.jpg
 Rebecca Giorno-McConnell,Louisiana Tech University,Louisiana State University Dept. of Biological Science,Baton Rouge,Louisiana,70803,rgiorno@latech.edu,(318) 257-3665,giorno.jpg
 Chris Beachy,Southeastern Louisiana University,Louisiana State University Dept. of Biological Science,Baton Rouge,Louisiana,70803,christopher.beachy@southeastern.edu,(985) 549-3740,beachy.jpg

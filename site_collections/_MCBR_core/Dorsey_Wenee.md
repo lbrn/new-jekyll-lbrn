@@ -1,10 +1,10 @@
 ---
 layout: post
-title:
+mtitle:
 author: Weneene Dorsey
 school: Grambling State University,Louisiana State University Dept. of Biological Science
 project-type: TestElement
-image: "dorsey.jpg"
+image: "wdorsey.jpg"
 categories: project-investigator
 email: dorseywc@gram.edu
 phone: (318) 274-2399

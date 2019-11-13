@@ -4,6 +4,10 @@
   {% if people.author != "none" %}
   <h4>{{people.author}}</h4>
   {% endif %}
+  {% if people.mtitle != nil %}
+  <h5>{{people.mtitle}}</h5>
+  {% endif %}
+
   <h5 style="margin-top: .6em;">{{people.school}}</h5>
   <h6 style="margin-top: .6em; display: none;">{{people.project-type}}</h6>
   <ul>
