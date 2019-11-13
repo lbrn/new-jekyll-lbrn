@@ -38,6 +38,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+  #lbrnEventSidebarUl .mobilefilter {
+  }
+  .mobilefilter{
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  .mobilefilter li{
+    border-radius: 6px;
+    background-color: white;
+    margin-top: 5%;
+    list-style: none;
+
+  }
   .npi{
     height: 15em!important;
   }
@@ -400,7 +413,8 @@ padding-top: 1%;
     clear: both; }
 
   .nudge {
-    padding-top: 1em; }
+    /* padding-top: 1em;  */
+  }
 
   .relative {
     position: relative;
