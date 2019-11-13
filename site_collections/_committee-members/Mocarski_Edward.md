@@ -6,7 +6,7 @@ author: Edward Mocarski
 school: "Emory University"
 project-type: TestElement
 image: "mocarski.jpg"
-category: none
+category: Former EAC Members
 email:
 phone:
 zip:

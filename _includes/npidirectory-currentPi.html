@@ -1,7 +1,9 @@
-<article class="person" >
+<article class="person npi" >
   <img src="images/people/PIs/{{ people.firstname | slice: 0}}{{ people.lastname }}.jpg" alt=" {{people.lastname}}, {{people.firstname}}'s portrait photo.">
   <!-- <img src="images/people/{{people.photo}}" alt="{{people.author}}'s portrait photo."> -->
   <h4>{{people.firstname}} {{people.lastname}}</h4>
+  <h6 style="margin-top: .7em;">{{people.university}}</h6>
+  <h6>{{people.currentproject}}</h6>
   {% if pi.titleu != nil %}
   <!-- <p class="project-title">{{ pi.titleu }}</p> -->
   <a class="natural-link" href="/pis/{{people.lastname}}_{{people.firstname}}.html"><h5>{{people.titleu}}</h5></a>
@@ -9,8 +11,8 @@
     <a class="natural-link" href="/pis/{{people.lastname}}_{{people.firstname}}.html"><h5>{{people.projtitle}}</h5></a>
     <!-- <p class="project-title">{{ pi.projtitle }}</p> -->
   {% endif %}
+
   <!-- <a class="natural-link" href="{{people.url | relative_url }}"><h5>title: {{people.title}}</h5></a> -->
-  <h6 style="margin-top: .7em;">{{people.university}}</h6>
 </article>
 <!-- <article class="person">
   --- <br>

@@ -38,6 +38,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+  .npi{
+    height: 15em!important;
+  }
   .LBRNe article {
     min-height: 5em;
 padding-bottom: 1em;
@@ -2580,6 +2583,7 @@ section.directory article.person{
   div.chooseTypeInline {
     display: flex; } }
 @media (min-width: 860px) {
+
   .peoplewrap{
     display:inline-block;
   }
@@ -2726,6 +2730,9 @@ section.directory article.person:nth-child(odd) {
     font-weight: bold;
     line-height: 3; } }
 @media (min-width: 1224px) {
+  .npi{
+    height: 10em!important;
+  }
   #lbrnEventHeader{
     padding-left: unset;
   }

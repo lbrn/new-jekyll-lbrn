@@ -90,14 +90,14 @@ title: Project Investigators
           {% assign modcount = count | modulo: 2 %}
 
             {% if modcount == 1  %}
-            <div class="peoplewrap">
+
               <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
-                {% include ndirectory-currentPi.html %}
+                {% include npidirectory-currentPi.html %}
               {% else %}
-                {% include ndirectory-currentPi.html %}
+                {% include npidirectory-currentPi.html %}
               <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
 
-            </div>
+
             {% endif %}
       {% endif %}
 

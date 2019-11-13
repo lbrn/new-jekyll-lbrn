@@ -111,11 +111,15 @@ function coreSwap(){
 }
 function piFilter(){
   // var buttons = $('nav#pi-filter ul li');
-  var fulls = $('article[data-ptype="FullProject"]');
-  var starts = $('article[data-ptype="StartupProject"]');
-  var shares = $('article[data-ptype="SharedInstrumentProject"]');
-  var pilots = $('article[data-ptype="PilotProject"]');
-  var translproj = $('article[data-ptype="TranslationalProject"]');
+  // var fulls = $('article[data-ptype="FullProject"]');
+  var fulls = $("article:has(h6:contains('Full'))");
+  // var starts = $('article[data-ptype="StartupProject"]');
+  var starts = $("article:has(h6:contains('Startup'))");
+  // var shares = $('article[data-ptype="SharedInstrumentProject"]');
+  var shares = $("article:has(h6:contains('Shared Instrument'))");
+  var pilots = $("article:has(h6:contains('Pilot'))");
+  var translproj = $("article:has(h6:contains('Translational'))");
+  // var translproj = $('article[data-ptype="TranslationalProject"]');
 
   var ac = document.getElementsByClassName('Adcore'), i;
   var bc = document.getElementsByClassName('BBcore'), i;
@@ -154,6 +158,7 @@ function piFilter(){
   $(".pipp").click(function(){
     $(this).toggleClass('on');
     pilots.slideToggle('fast');
+    console.log("dog");
   });
   $(".pite").click(function(){
     $(this).toggleClass('on');
