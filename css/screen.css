@@ -2602,7 +2602,10 @@ section.directory article.person{
   }
 section.directory article.person {
   width: 40%;
-  margin: 5%;
+  margin-left: 5%;
+  margin-right: 2.5%;
+  margin-top: 1%;
+
   overflow: visible;
   /* height: 15em; */
   min-height: 8em;
