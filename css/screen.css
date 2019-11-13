@@ -1310,7 +1310,7 @@ main div.content h3:enabled {
     text-align: left; }
 
   .collapsenobs {
-    height: 0;
+    /* height: 0; */
     overflow: hidden;
   }
 
@@ -1946,6 +1946,10 @@ div.research img{
     }
   }  /* end 0 */
 @media (min-width: 667px) {
+  .collapsenobs {
+    /* height: 0; */
+    overflow: hidden;
+  }
 
 
 .events{
