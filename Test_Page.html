@@ -97,11 +97,11 @@ test2
   date:  sitedottime
 </p>
 
-<article style = "display: none;">
+<article >
   <ul>
     <p>Test time: {{ site.time | date: "%Y %m %d" }}</p>
 
-    <p>date: site.time</p>
+    <p>date: {{ site.time }}</p>
     <!-- {{ now }} -->
        assign sorted = (site.events | sort: 'eventDate') | reverse
        for event in sorted limit:2
