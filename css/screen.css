@@ -1605,12 +1605,18 @@ div.research img{
     }
   section.directory h4 {
     font-weight: bold;
-    font-size: 0.8em !important;
-    padding-bottom: .2em; }
+    font-size: 0.9em !important;
+    /* padding-bottom: .2em;  */
+  }
   section.directory h5 {
-    font-size: 0.7em; }
+    font-size: 0.7em;
+    padding-bottom: 0.5em;
+
+    }
   section.directory h6 {
-    font-size: 0.6em; }
+    font-size: 0.6em;
+    font-weight: 600;
+  }
   section.directory ul li {
     list-style: none;
     border: none; }

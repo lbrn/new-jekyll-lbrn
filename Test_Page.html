@@ -3,119 +3,88 @@ layout: default
 title: Modified About/Test Environment
 ---
 
-<div>
-
-dog2
-<article id="speakers">
-  {% include Test_Include.html %}
-</article>
-</div>
-<br>
-test2
-<br>
-<html lang="en">
-<button class="testdd btn arrowdrop" type="button" data-toggle="collapse" data-target="#ddt" aria-expanded="false" aria-controls="ddt">Dropdown Example
-  <div class="caret dropdown-toggle">
-  </div>
-</button>
-
-<button class="testdd">
-  <div class="bork">
-    dog
-  </div>
-
-</button>
-
-<div id="ddt" class="dropdown collapse">
-    <li><a href="#">HTML</a></li>
-  </div>
-
-<div class="dropdown">
-  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" data-target="dropdowntest" aria-expanded="false" aria-controls="dropdowntest">Dropdown Example<span class="caret"></span></button>
-  <ul class="dropdown-menu" id="dropdowntest">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
-</div>
-<!-- <div class="relative">
-  <h3 id="previouslyFunded" class="pippi dropdown-toggle">Previously Funded PIs</h3>
-  <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i>
-  <section class="directory collapsenobs PrevPPi">
-    {% assign count = 0 %}
-
-    {% for people in site.project_investigators %}
-        {% if people.active == false %}
-          {% assign count = count | plus: 1 %}
-            {% assign modcount = count | modulo: 2 %}
-
-              {% if modcount == 1  %}
-              <div class="peoplewrap">
-                {% include directory-pi-page.html %}
-                {% else %}
-                {% include directory-pi-page.html %}
-              </div>
-              {% endif %}
-
-
-
-        {% endif %}
-    {% endfor %}
+<p>Site. time: {{site.time}}</p>
+<p>site.time date: {{ site.time | date: "%Y %m %d" }}</p>
 
 
 
 
-
-
-  </section>
-</div> -->
-<br>
-
-{% assign loopindex = 0 | modulo: 2 %}
-
-{% for people in site.committee-members %}
-
-  {%  assign loop2 = loopindex | modulo: 2 %}
-
-  {% if people.category != "Former EAC Members"%}
-
-    {% if loopindex == 0 %}
-
-    <p>begin: {{loopindex}}: {{people.author}}</p>
-
-    {% else %}
-    <p>2nd: {{loopindex}}: {{people.author}}</p>
-
-    {% endif %}
-
-    {% assign loopindex = loopindex | plus: 1  | modulo: 2 %}
-  {% endif %}
-
-{% endfor %}
-<br>
-<p>
-  date:  sitedottime
-</p>
-
-<article >
+<article style = "display: none;">
   <ul>
-    <p>Test time: {{ site.time | date: "%Y %m %d" }}</p>
 
     <p>date: {{ site.time }}</p>
     <!-- {{ now }} -->
-       assign sorted = (site.events | sort: 'eventDate') | reverse
-       for event in sorted limit:2
-       include events-list-item.html
+      {% assign sorted = site.events | sort: 'eventDate'| reverse %}
+      {% for event in sorted limit:4 %}
+       {% include events-list-item.html %}
 
       <!-- if date <= now -->
-          <!-- {{event.date}} -->
-          <!-- <li>{{ event.title }}</li> -->
-       endfor
+          {{event.date}}
+          <li>{{ event.title }}</li>
+       {% endfor %}
   </ul>
 </article>
+========================================================
+<p>CAPTURE DATE</p>
+{% assign sitedate2 = site.time | date: '%s' | minus:86400 | plus: 0 %}
+
+<p>Test: {{sitedate2}}</p>
+
+
+{% for people in site.events2 %}
+
+
+    {{event.date}}
+
+{% endfor %}
+
+
+{% assign eventsR = site.events %}
+  {% for event in site.events  %}
+        {% capture eventdate %}{{event.date | date: '%s'}} {% endcapture %}
+        {% capture sitedate%} {{site.time | date: '%s' | minus:86400 | plus: 0 }}{% endcapture %}
+        {% assign eventdate2 = event.date | date: '%s' | minus:86400 | plus: 0 %}
+
+
+
+          <article>
+            {% assign combo_num = sitedate | minus:eventdate %}
+            <p>sitedate mins: {{combo_num}}</p>
+            <p> SiteDate: {{sitedate}} == {{site.time}}</p>
+            <p> EventDate: {{eventdate}} == {{event.date}}</p>
+            {% include events-list-item.html %}
+          </article>
+          {% if eventdate2 <= sitedate2 %}
+        {% endif %}
+
+  {% endfor %}
+<p>end capture date</p>
+========================================================
+<article style = "display: none;">
+
+
+
+{% assign eventsR = site.events %}
+    {% capture eventdate %}{{event.date | date: '%s' | plus: 0 }} {% endcapture %}
+    {% capture sitedate%} {{site.time | date: '%s' | plus: 0 }}{% endcapture %}
+
+      {% if sitedate != date %}
+      <article>
+
+        {% for event in eventsR limit:2 %}
+          <p>  {{sitedate}} >= {{eventdate}} , {{event.date}} </p>
+          {% include events-list-item.html %}
+        {% endfor %}
+
+      </article>
+      {% endif %}
+
+      <!-- =============================================== -->
+    </article>
+
   {% assign eventsR = site.events %}
       {% capture date %}{% endcapture %}
-      <!-- eventsR.eventDate | date: '%s' | plus: 0  -->
+
 
         {% if date > now %}
         <article style = "display: none;">
@@ -126,83 +95,28 @@ test2
         {% endif %}
 
 
-<article id="speakers" style = "display: none;">
-  {{page.person}}
-  {% include Test_Include.html %}
-</article>
-<article id="speakers" style = "display: none;">
-  <!-- for pi in site.data.LBRNProjects_DATA_LABELS  -->
+        <div style="display:none;">
+          {% assign loopindex = 0 | modulo: 2 %}
 
-</article>
-end test1
+          {% for people in site.committee-members %}
+
+          {%  assign loop2 = loopindex | modulo: 2 %}
+
+          {% if people.category != "Former EAC Members"%}
+
+          {% if loopindex == 0 %}
+
+          <p>begin: {{loopindex}}: {{people.author}}</p>
+
+          {% else %}
+          <p>2nd: {{loopindex}}: {{people.author}}</p>
+
+          {% endif %}
+
+          {% assign loopindex = loopindex | plus: 1  | modulo: 2 %}
+          {% endif %}
+
+          {% endfor %}
+        </div>
+
 <br>
-
-<h2>Mission Statement</h2>
-<p>Louisiana Biomedical Research Network (LBRN) was established in September 2001 with Biomedical Research Infrastructure Networks (BRIN) funding by the National Institutes of Health (NIH), through the National Center for Research Resources (NCRR) Grant P20RR016456, the LBRN is committed to raising the research competitiveness of Louisiana researchers. IDeA Networks of Biomedical Research Excellence (INBRE) is the second phase of the BRIN Program when LBRN initially started. Currently, LBRN is in the third phase with continued funding by the National Institute of General Medical Sciences (NIGMS) Grant 8P20GM103424 and the Louisiana Board of Regents Support Fund.</p>
-<h2>Goals</h2>
-<ul>
-  <li>Maintain and expand the previously established state-wide infrastructure and intellectual research network supporting interdisciplinary biomedical research.</li>
-  <li>Expand and improve the critical mass of biomedical investigators at primary PUI campuses through the support of mentored research, and enhanced communication.</li>
-  <li>Increase student interest in biomedical research careers throughout Louisiana by providing summer research opportunities to all institutions within the State.</li>
-  <li>Evaluate, assess and continuously monitor the progress within LBRN through detailed tracking of research accomplishments, the development of human resources, and productive collaborations among participating institutions.</li>
-</ul>
-<img src="images/campus-map.svg" alt="a map of campuses in Louisiana">
-<div class="col-split-right">
-  <h3>Flagship Campus</h3>
-  <ul>
-    <li><a href="http://www.lsu.edu">Louisiana State University (LSU)</a></li>
-  </ul>
-</div>
-<div class="col-split">
-  <h3>PUI Campuses</h3>
-  <ul>
-    <li><a href="http://www.gram.edu/">Grambling State University </a></li>
-    <li><a href="http://www.lsus.edu/">Louisiana State University-Shreveport (LSU-S) </a></li>
-    <li><a href="http://www.latech.edu">Louisiana Tech University (LA Tech) </a></li>
-    <li><a href="http://www.selu.edu/">Southeastern Louisiana University </a></li>
-    <li><a href="http://www.subr.edu/">Southern University and A&amp;M College (SUBR) </a></li>
-    <li><a href="http://www.ulm.edu/">University of Louisiana at Monroe (ULM) </a></li>
-    <li><a href="http://www.xula.edu/">Xavier University of Louisiana (XULA)</a></li>
-  </ul>
-  <h3>Mentor Campuses</h3>
-  <ul>
-    <li><a href="http://www.lsuhsc.edu/">LSU Health Sciences Center-New Orleans (LSUHSC-NO) </a></li>
-    <li><a href="http://www.lsuhscshreveport.edu/">LSU Health Sciences Center-Shreveport (LSUHSC-S) </a></li>
-    <li><a href="http://www.pbrc.edu/">Pennington Biomedical Research Center (PBRC) </a></li>
-    <li><a href="http://www.tuhc.com/">Tulane Medical Center </a></li>
-    <li><a href="http://www.tnprc.tulane.edu/">Tulane National Primate Research Center (TNPRC)</a></li>
-    <li><a href="http://www.tulane.edu/">Tulane University</a></li>
-  </ul>
-</div>
-<div class="col-split">
-  <h3>Summer Research Campuses</h3>
-  <ul>
-    <li><a href="http://www.mybrcc.edu/">Baton Rouge Community College </a></li>
-    <li><a href="http://www.centenary.edu/">Centenary College </a></li>
-    <li><a href="http://www.dillard.edu/">Dillard University </a></li>
-    <li><a href="http://www.lacollege.edu/">Louisiana College </a></li>
-    <li><a href="http://www.lsua.edu/">Louisiana State University-Alexandria </a></li>
-    <li><a href="http://www.mcneese.edu/">McNeese State University </a></li>
-    <li><a href="http://www.nicholls.edu/">Nicholls State University </a></li>
-    <li><a href="http://www.nsula.edu/">Northwestern State University </a></li>
-    <li><a href="http://www.franu.edu/">Franciscan Missionaries of Our Lady University, formerly called Our Lady of the Lake College </a></li>
-    <li><a href="http://www.suno.edu/">Southern University at New Orleans </a></li>
-    <li><a href="http://www.susla.edu/">Southern University at Shreveport </a></li>
-    <li><a href="http://www.louisiana.edu/">University of Louisiana at Lafayette </a></li>
-    <li><a href="http://www.uno.edu/">University of New Orleans </a></li>
-  </ul>
-</div>
-<section class="cores">
-  <h2>Cores</h2>
-  <ul>
-    <li class="active">Admin</li>
-    <li>BBC</li>
-    <li>MCBR</li>
-  </ul>
-  <section id="core-swap">
-    <h4>Administrative Core</h4>
-    <a class="button hidden" title="Core Services" href="bbc-core.html">BBC Core Services</a>
-    <p>The Administrative Core (AC) of the Louisiana Biomedical Research Network (LBRN) provides the project with its overall leadership, day-to-day management, evaluations of all of its component parts, and communication with NIH staff. The AC is led by the Principal Investigator in close consultation with the Program Coordinator, as well as the Steering Committee and External Advisory Committee.</p>
-    <img src="images/admin-core_July_2018.png" alt="network of core administrators">
-  </section>
-</section>
