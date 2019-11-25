@@ -148,11 +148,14 @@
                          <!-- <p>"/images/people/{{ pi.lastname }}.jpg"</p> -->
                     <img src="/images/people/PIs/{{ pi.firstname | slice: 0}}{{ pi.lastname }}.jpg" alt="{{x}}" class="img-polaroid">
                   </div>
+                  {% if pi.abstract != null %}
                   <div class="profile-txt">
+                    <br>
                   <h2 class="profile">Abstract</h2>
                 </div>
+                {% endif %}
                 </div>
-                <br>
+                
                 <div class="abstractp">
                   <p class="long-text">
                     {{ pi.abstract | newline_to_br }}
