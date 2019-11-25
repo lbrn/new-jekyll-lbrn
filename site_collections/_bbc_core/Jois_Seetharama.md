@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Professor
-author: Seetharama Jois
+author: Seetharama Satyanarayanajois
 school: University of Louisiana at Monroe
 project-type: TestElement
 image: "BBC-Core/BBC-Seetharama-Jois.jpg"
