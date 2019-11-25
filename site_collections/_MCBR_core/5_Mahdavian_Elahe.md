@@ -1,6 +1,6 @@
 ---
 layout: post
-mtitle: Associate Director, University of Louisiana at Monroe
+title: Associate Director, University of Louisiana at Monroe
 author: Elahe Mahdavian
 school: LSU - Shreveport, Louisiana State University Dept. of Biological Science
 project-type: TestElement

@@ -1,6 +1,6 @@
 ---
 layout: post
-mtitle: MCBR Director
+title: MCBR Director
 author: Young-Hwan Lee
 school: Louisiana State University Dept. of Biological Science
 project-type: TestElement

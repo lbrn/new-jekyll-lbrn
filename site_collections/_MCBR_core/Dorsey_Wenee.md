@@ -1,6 +1,6 @@
 ---
 layout: post
-mtitle:
+title:
 author: Weneene Dorsey
 school: Grambling State University,Louisiana State University Dept. of Biological Science
 project-type: TestElement

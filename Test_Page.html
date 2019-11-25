@@ -31,8 +31,9 @@ title: Modified About/Test Environment
 <p>Test: {{sitedate2}}</p>
 
 
-{% for people in site.events2 %}
+{% for event in site.events2 %}
 
+{% include events-list-item.html %}
 
     {{event.date}}
 

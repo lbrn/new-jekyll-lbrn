@@ -1,6 +1,6 @@
 ---
 layout: post
-mtitle: Associate Director
+title: Associate Director
 author: David Burk
 school: Louisiana State University Dept. of Biological Science PBRC
 project-type: TestElement

@@ -1,6 +1,6 @@
 ---
 layout: post
-mtitle: Associate Director
+title: Associate Director
 author: Vladimir Chouljenko
 school: Louisiana State University SVM
 project-type: TestElement

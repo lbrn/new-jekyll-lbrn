@@ -1,6 +1,6 @@
 ---
 layout: post
-mtitle:
+title:
 author: Rebecca Giorno-McConnell
 school: Louisiana Tech University,Louisiana State University Dept. of Biological Science
 project-type: TestElement

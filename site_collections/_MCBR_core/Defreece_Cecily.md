@@ -1,6 +1,6 @@
 ---
 layout: post
-mtitle:
+title:
 author: Cecily Defreece
 school: Xavier University of Louisiana,Louisiana State University Dept. of Biological Science
 project-type: TestElement

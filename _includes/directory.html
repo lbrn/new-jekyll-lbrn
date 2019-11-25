@@ -4,8 +4,9 @@
   {% if people.author != "none" %}
   <h4>{{people.author}}</h4>
   {% endif %}
-
+  {% unless people.title contains '_' %}
   <h5>{{people.title}}</h5>
+  {% endunless %}
   <!-- <a class="natural-link" href="{{people.url | relative_url }}"><h5>{{people.title}}</h5></a> -->
   <h6 style="margin-top: .6em;">{{people.school}}</h6>
   <h6 style="margin-top: .6em; display: none;">{{people.project-type}}</h6>
