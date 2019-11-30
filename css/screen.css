@@ -156,7 +156,7 @@ float:left;
 
   .content_tweek{
     height: 80%;
-    width: 80% !important;
+    /* width: 80% !important; */
     padding-left: 5%;
     padding-right: 5%;
     /* border: 1px solid red; */
@@ -1334,13 +1334,26 @@ main div.content h3:enabled {
     overflow: visible; }
 
   .event-section-head {
-    background-color: #8ECB91; }
+    background-color: #8ECB91;
+    width: 80%;
+
+    display: inline-block;
+
+    height: 2em;
+
+    position: unset;
+  }
 
   .collapsetstyle {
     display: none;
     position: absolute;
     top: .1em;
-    right: .1em; }
+    right: .1em;
+    width: 100%;
+    height: 2em;
+
+    position: static;
+   }
 
   #lbrnEventSidebar {
     display: none; }
@@ -1787,6 +1800,11 @@ div.research img{
   }
   /* end 0 */
 @media (min-width: 414px) {
+
+  .content_tweek{
+    width: 80% !important;
+
+  }
 
 
   .peoplewrap{
