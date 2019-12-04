@@ -2,7 +2,7 @@
 layout: post
 title:
 author: Rebecca Giorno-McConnell
-school: Louisiana Tech University,Louisiana State University Dept. of Biological Science
+school: Louisiana Tech University
 project-type: TestElement
 image: "giorno.jpg"
 categories: project-investigator

@@ -2,7 +2,7 @@
 layout: post
 title:
 author: Weneene Dorsey
-school: Grambling State University,Louisiana State University Dept. of Biological Science
+school: Grambling State University
 project-type: TestElement
 image: "wdorsey.jpg"
 categories: project-investigator

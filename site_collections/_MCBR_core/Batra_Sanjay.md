@@ -2,7 +2,7 @@
 layout: post
 title:
 author: Sanjay Batra
-school: Southern University,Louisiana State University Dept. of Biological Science
+school: Southern University
 project-type: TestElement
 image: "batra.jpg"
 categories: project-investigator

@@ -2,7 +2,7 @@
 layout: post
 title:
 author: Cecily Defreece
-school: Xavier University of Louisiana,Louisiana State University Dept. of Biological Science
+school: Xavier University of Louisiana
 project-type: TestElement
 image: "defreece.jpg"
 categories: project-investigator

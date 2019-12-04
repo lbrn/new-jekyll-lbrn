@@ -2,7 +2,7 @@
 layout: post
 title:
 author: Chris Beachy
-school: Southeastern Louisiana University,Louisiana State University Dept. of Biological Science
+school: Southeastern Louisiana University
 project-type: TestElement
 image: "beachy.jpg"
 categories: project-investigator
