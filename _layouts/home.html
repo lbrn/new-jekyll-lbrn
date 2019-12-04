@@ -95,11 +95,26 @@
       </section>
       <aside class="events">
         <h2>EVENTS</h2>
-          <!--Start of EVENT ITEM-->
-          <!-- assign sorted = (site.events | sort: 'eventDate') | reverse  -->
-            {% for event in site.events limit:2 %}
-              {% include events-list-item.html %}
-            {% endfor %}
+
+        {% assign eventsR = site.events %}
+          {% for event in site.events %}
+          {% capture eventdate %}{{event.date | date: '%s'}} {% endcapture %}
+          {% capture sitedate%} {{site.time | date: '%s' | minus:86400 | plus: 0 }}{% endcapture %}
+          <!-- converts string to number -->
+          {% assign sitedateconverted = site.time | date: '%s' | minus:86400 | plus: 0 %}
+          {% assign eventdateconverted = event.date | date: '%s' | plus: 0 %}
+
+
+
+          {% if eventdateconverted >= sitedateconverted %}
+                    {% include events-list-item.html %}
+                {% endif %}
+
+          {% endfor %}
+
+             <!-- for event in site.events limit:2
+               include events-list-item.html
+             endfor  -->
 
 
             <a class="view-all" href="upcoming-events.html">View all events</a>
