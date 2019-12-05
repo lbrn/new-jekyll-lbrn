@@ -38,6 +38,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+  .socialMedia{
+    display:none;
+  }
   #lbrnEventSidebarUl .mobilefilter {
   }
   .mobilefilter{
@@ -1994,6 +1997,7 @@ div.research img{
     }
   }  /* end 0 */
 @media (min-width: 667px) {
+
   .collapsetstyle{
     display:none !important;
   }
@@ -2206,20 +2210,16 @@ section.directory article.person{
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 2em;
-    display: block;
+
     position: absolute;
     bottom: .75em;
     right: 0;
     margin-left: 40%;
     text-align: right; }
   header #navBug {
-    display: none; }
-    #navdropdownsmall{
-      display: none;
-    }
-    .navdropdownbig{
-      display: block;
-    }
+    /* display: none;  */
+  }
+
   .navdropdown {
     background-color: #8ECB91;
     }
@@ -2652,6 +2652,22 @@ section.directory article.person{
   div.chooseTypeInline {
     display: flex; } }
 @media (min-width: 860px) {
+  header h1{
+        display: block;
+  }
+  header #navBug {
+    display: none;
+  }
+
+  #navdropdownsmall{
+    display: none;
+  }
+  .navdropdownbig{
+    display: block;
+  }
+  .socialMedia{
+    display:block;
+  }
 
   .peoplewrap{
     display:inline-block;
@@ -2794,7 +2810,8 @@ section.directory article.person:nth-child(odd) {
   .navdropdown li {
     margin-right: .5em; }
   .navdropdown li a {
-    padding: 1em; }
+    /* padding: 1em;  */
+  }
 
   footer p {
     width: 50%; }
