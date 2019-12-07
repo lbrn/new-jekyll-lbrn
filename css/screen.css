@@ -40,6 +40,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 0) {
   .socialMedia{
     display:none;
+    margin-right:unset;
+      /* padding-right:0.5em; */
   }
   #lbrnEventSidebarUl .mobilefilter {
   }
@@ -567,9 +569,15 @@ float:left;
     border-bottom: 1px solid white;
     font-size: 1.2em;
   }
+
+  div.navdropdown li.socialMedia {
+    /* margin-left: .5em; */
+    margin-right: 0.5em;
+  }
   .navdropdown li.right {
-    margin-left: .5em;
-    margin-right: 0; }
+    /* margin-left: .5em; */
+    margin-right: unset;
+  }
   .navdropdown li.right > a {
     padding: 1em .2em;
     display: inline-block; }
@@ -1812,6 +1820,9 @@ div.research img{
   }
   /* end 0 */
 @media (min-width: 414px) {
+  .navdropdownbig{
+    display: block;
+  }
 
   .content_tweek{
     width: 80% !important;
@@ -1840,7 +1851,7 @@ div.research img{
   .navdropdown ul li a {
     text-transform: capitalize;
     /* font-weight: normal; */
-    font-weight: 500;
+    font-weight: 400;
     /* font-size: 1.4em; */
   }
 
@@ -1997,6 +2008,7 @@ div.research img{
     }
   }  /* end 0 */
 @media (min-width: 667px) {
+
 
   .collapsetstyle{
     display:none !important;
@@ -2217,7 +2229,7 @@ section.directory article.person{
     margin-left: 40%;
     text-align: right; }
   header #navBug {
-    /* display: none;  */
+    display: none;
   }
 
   .navdropdown {
@@ -2650,23 +2662,35 @@ section.directory article.person{
     display: none; }
 
   div.chooseTypeInline {
-    display: flex; } }
+    display: flex; }
+    header h1{
+      display: block;
+    }
+    .navdropdownbig{
+      font-size: 0.85em;
+
+    }
+  }/* end of min-iwdth section*/
 @media (min-width: 860px) {
-  header h1{
-        display: block;
-  }
   header #navBug {
-    display: none;
+    /* display: none; */
   }
 
   #navdropdownsmall{
     display: none;
   }
   .navdropdownbig{
-    display: block;
+    /* display: block; */
+    font-weight: 400;
+    font-size:1.0em;
   }
-  .socialMedia{
+  .socialMedia {
     display:block;
+    padding-right:0.5em;
+  }
+  nav li.socialMedia {
+    /* display:block; */
+    margin-right:0.5em;
   }
 
   .peoplewrap{
