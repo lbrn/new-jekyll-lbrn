@@ -1,8 +1,8 @@
 ---
 layout: post
-title:
+title: Associate Professor
 author: Sanjay Batra
-school: Southern University
+school: Southern University, College of Sciences and Engineering - Environmental Toxicology
 project-type: TestElement
 image: "batra.jpg"
 categories: project-investigator

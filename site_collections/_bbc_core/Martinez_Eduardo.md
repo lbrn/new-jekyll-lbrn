@@ -2,7 +2,7 @@
 layout: post
 title: Assistant Professor
 author: Eduardo Martinez
-school: Southern University
+school: Southern University, College of Sciences and Engineering - Biology
 project-type: TestElement
 image: "BBC-Core/martinez.jpg"
 categories: project-investigator

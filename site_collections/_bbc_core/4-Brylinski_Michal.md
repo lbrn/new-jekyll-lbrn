@@ -2,7 +2,7 @@
 layout: post
 title: Associate Director
 author: Michal Brylinski
-school: LSU - Baton Rouge
+school: Louisiana State University, Biological Sciences
 project-type: TestElement
 image: "BBC-Core/BBC-Michal-Brylinski.jpg"
 categories: project-investigator

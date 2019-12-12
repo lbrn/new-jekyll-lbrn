@@ -2,7 +2,7 @@
 layout: post
 title: Grant Administrator
 author: Alexis White
-school: Louisiana State University Dept. of Biological Science
+school: Louisiana State University, School of Veterinary Medicine
 project-type: TestElement
 image: "White_Alexis.jpg"
 categories: project-investigator

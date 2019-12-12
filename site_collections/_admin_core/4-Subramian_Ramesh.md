@@ -2,7 +2,7 @@
 layout: post
 title: Program Coordinator
 author: Ramesh Subramanian
-school: Louisiana State University School of Veterinary Medicine
+school: Louisiana State University, School of Veterinary Medicine
 project-type: TestElement
 image: "Admin_Ramesh_Subramanian.jpg"
 categories: project-investigator
