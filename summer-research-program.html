@@ -15,7 +15,7 @@ appLink: https://redcap.lbrn.lsu.edu/surveys/?s=PELNYNMDDL
     </li>
     <li class="active"><a href="#intro">About</a></li>
     <li><a href="#requirements">Requirements</a></li>
-    <li><a href="#application">Application</a></li>
+    <li><a href="#application">Application Link</a></li>
     <li><a href="#mentorship">Mentorship</a></li>
     <li><a href="#scholarship">Scholarship Program</a></li>
     <li><a href="#faq">FAQ</a></li>
@@ -106,8 +106,14 @@ appLink: https://redcap.lbrn.lsu.edu/surveys/?s=PELNYNMDDL
     </section>
     <section id="requirements">
       <h2>Requirements</h2>
+       <p>The application process form INCLUDES all documentation and submissions from within the online application forms - the pre-application form must be completed in order to receive an application form link via e-mail.</p>
+        <p class="important">
+        Deadline: {{ page.deadline }}<br>
+        <br>
+        Note carefully the Application requirements. If these requirements are not met, the application is considered incomplete.
+      </p>
       <div class="chooseTypeInline">
-        <p>Select a Participant Type to view requirements:</p>
+        <p>Select a Participant Type to view information for your participation type:</p>
         <div>
         <input type="radio" name="chooseTypeInline" value="faculty"  id="facI1">
         <label for="facI1" >Faculty</label>
@@ -155,32 +161,6 @@ appLink: https://redcap.lbrn.lsu.edu/surveys/?s=PELNYNMDDL
         Women & members of under-represented minorities are urged to apply. Please note that priority will be given to applicants from primarily undergraduate institutes in Louisiana.
       </p>
     </section>
-     <section id="application">
-		
-      <h2>Application</h2>
-      <p>The application process form INCLUDES all documentation and submissions from within the online application forms - the pre-application form must be completed in order to receive an application form link via e-mail.</p>
-      <p class="important">
-        Deadline: {{ page.deadline }}<br>
-        <br>
-        Note carefully the Application requirements. If these requirements are not met, the application is considered incomplete.
-      </p>
-      <h2>Application Instructions</h2>
-      <div class="chooseTypeInline">
-        <p>Select a Participant Type to view instructions:</p>
-        <div>
-        <input type="radio" name="chooseTypeInline" value="faculty"  id="facI2">
-        <label for="facI2" >Faculty</label>
-        </div>
-        <div>
-        <input type="radio" name="chooseTypeInline" value="grad" id="graI2">
-        <label for="graI2">Grad</label>
-        </div>
-        <div>
-        <input type="radio" name="chooseTypeInline" value="undergrad" id="undI2">
-        <label for="undI2">Undergrad</label>
-        </div>
-      </div>
-
       <div class="faculty">
         <h3>Faculty Application Must Include:</h3>
         <ul>
@@ -241,47 +221,35 @@ appLink: https://redcap.lbrn.lsu.edu/surveys/?s=PELNYNMDDL
         <p class="important">Find out more about the <a href="#scholarship">Undergraduate Scholarship Program Here.</a></p>
       </div>
       <p>You can follow our recruiting visits, etc. by following our program on Twitter or liking us on Facebook.</p>
+     </section> 
      
-     <p><a class="button" title="apply" target="_blank" href="{{page.appLink}}">LBRN Summer Research Application Link</a></p>
- 
-    </section>
+     <section id="application">
+     <h2>Application</h2>
+    	<p><a class="button" title="apply" target="_blank" href="{{page.appLink}}">LBRN Summer Research Application Link</a></p>
+ 	</section>
 	
     <section id="mentorship">
       <br><h2>Mentorship</h2>
       <h3>Participant Expectations</h3>
       <p>The LBRN program expects that our participants perform full time research for the period of funding. We do not allow for other jobs, teaching or classes or vacations to be scheduled during the funding period; fellowships (undergraduate students), stipends (graduate students), and summer salaries (faculty) are sufficient to enable the funded participant to focus 100% on the research project during the funding period. The student participant may become involved in a research project that is ongoing in the chosen laboratory, or design a project in collaboration with the intended mentor.</p>
       <h3>Available Mentors</h3>
-      <div class="chooseTypeInline">
-        <p>Choose a Participant Type:</p>
-        <div>
-        <input type="radio" name="chooseTypeInline" value="faculty"  id="facI3">
-        <label for="facI3" >Faculty</label>
-        </div>
-        <div>
-        <input type="radio" name="chooseTypeInline" value="grad" id="graI3">
-        <label for="graI3">Grad</label>
-        </div>
-        <div>
-        <input type="radio" name="chooseTypeInline" value="undergrad" id="undI3">
-        <label for="undI3">Undergrad</label>
-        </div>
-      </div>
-  <br>    <div class="faculty">
+     
+     <div class="faculty">
         <a target="_blank" href="https://app.lbrn.lsu.edu/facultymentorlist.php" target="_blank">Faculty Mentors</a>
         <h2>Faculty Mentor Expectations</h2>
         <p>As the mentor of a faculty participant in our program it is expected that you will enter in to a collaborative relationship on an agreed upon project. You may expect to receive scientific and professional collaboration from the funded researcher. Equipment ordered for the funded research, unless otherwise specified, will belong to the funded researcher and will be housed at their home institution upon completion of the program funding period. You may also expect to have input in the determination of the requested supplies and equipment, which are part of the application process for faculty in our program. Our faculty summer program culminates in a written progress report of the research project. It is expected that an LBRN funded faculty researcher will receive guidance from their research laboratory and mentor in preparing this work and that the finished product be a professional progress report.</p>
       </div>
-   <br>   <div class="grads">
-        <br><a target="_blank" href="https://app.lbrn.lsu.edu/gradmentorlist.php" target="_blank">Graduate Student Mentors</a>
+     <div class="grads">
+        <a target="_blank" href="https://app.lbrn.lsu.edu/gradmentorlist.php" target="_blank">Graduate Student Mentors</a>
         <h3>Graduate Mentor Expectations</h3>
         <p>As the mentor of a faculty participant in our program it is expected that you will enter in to a collaborative relationship on an agreed upon project. You may expect to receive scientific and professional collaboration from the funded researcher. Equipment ordered for the funded research, unless otherwise specified, will belong to the funded researcher and will be housed at their home institution upon completion of the program funding period. You may also expect to have input in the determination of the requested supplies and equipment, which are part of the application process for faculty in our program. Our faculty summer program culminates in a written progress report of the research project. It is expected that an LBRN funded faculty researcher will receive guidance from their research laboratory and mentor in preparing this work and that the finished product be a professional progress report.</p>
       </div>
-  <br>    <div class="undergrads">
-        <br><a target="_blank" href="https://app.lbrn.lsu.edu/undermentorlist.php" target="_blank">Undergraduate Student Mentors</a>
+      <div class="undergrads">
+        <a target="_blank" href="https://app.lbrn.lsu.edu/undermentorlist.php" target="_blank">Undergraduate Student Mentors</a>
         <h3>Undergraduate Mentor Expectations</h3>
         <p>As the mentor of an undergraduate student in our program, it is expected that you will oversee the training of the student participant and monitor their progress while they are working on the agreed upon project in your laboratory. As a mentor you can expect serious and professional work from your LBRN funded researcher while they are working in your laboratory. In addition to a wages to the undergraduate participant, we offer a supply fee of up to $1,000 per student to the research laboratory to help defer the cost of supplies for the funded project. Our undergraduate summer program culminates in the Summer Undergraduate Research Forum (SURF) where our program participants, along with other undergraduate summer research students across the campus, are invited to present their research in the form of a poster. It is expected that an LBRN funded undergraduate will receive guidance from their research laboratory in preparing this presentation and that a portion of the supply fee will be set aside to produce the poster </p>
       </div>
-      <br><a class="button" title="mentorApplication" target="_blank" href="https://redcap.lbrn.lsu.edu/surveys/?s=DLF3T7WYLL">Mentor Application</a>
+      <a class="button" title="mentorApplication" target="_blank" href="https://redcap.lbrn.lsu.edu/surveys/?s=DLF3T7WYLL">Mentor Application</a>
     </section>
     <br>
     <section id="scholarship">
@@ -299,8 +267,7 @@ appLink: https://redcap.lbrn.lsu.edu/surveys/?s=PELNYNMDDL
   	<p><b>Option 2</b>: Academic year extension on home PUI campus. </p>
 
   	<p>Students will need to identify an appropriate research mentor on their campus and outline a potential project for the following academic year. Ideally this project would involve studying a question related to and/or using technologies similar to their summer research experience. This option allows students from PUI campuses that are not geographically close to a research campus the option for extending their research experience.  </p>
-
-
+  	
   	<h3>Scholarship Program Application</h3>
 
   	<p>Participants who are eligible will automatically receive an application link near or after the end of their participation in the current summer research program. Eligibility will depend on the mentor who agrees to continue the program with the eligible student and meeting the requirements as outlined above.</p>
