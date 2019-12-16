@@ -3584,3 +3584,28 @@ display: block;
 /* #lbrnEventSidebar2 .active {
   background-color: #c2e3c4;
   font-weight: 400; } */
+
+  .dropdown-item_cust {
+      display: block;
+      width: 100%;
+      clear: both;
+      font-weight: 400;
+      color:
+  #7F7F7F;
+  background:
+      white;
+      border: 0;
+      font-size: 22px;
+      font-family: BebasKai;
+      text-align: center;
+      padding: 0.5rem;
+  }
+  .dropdown-menu2 {
+    color:blue;
+
+  }
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+    top:4em;
+
+  }
