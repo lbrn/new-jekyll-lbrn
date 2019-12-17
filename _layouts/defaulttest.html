@@ -3,21 +3,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{page.title}} {{page.author}}</title>
-    <link rel="stylesheet" href="{{site.baseurl}}/css/screen.css">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-
-
     <header>
       <div class="layout">
-        <a href="{{site.baseurl}}/index.html"><img src="{{site.baseurl}}/images/webLogo.png" alt="LBRN Logo"></a>
+        <a href="index.html"><img src="images/webLogo.png" alt="LBRN Logo"></a>
         <h1>Louisiana&nbsp;Biomedical Research&nbsp;Network</h1>
         <button id="navBug" class="btn" type="button" data-toggle="collapse" data-target="#navdropdownsmall" aria-expanded="false" aria-controls="collapseExample">
-          <img src="/images/menuClosed.png" alt="Menu Bug" id="navButton">
+          <img src="images/menuClosed.png" alt="Menu Bug" id="navButton">
         </button>
         <!-- <a href="#"><img id="navBug" src="images/menuClosed.png" alt="Menu Bug"></a> -->
       </div>
@@ -32,7 +30,6 @@
         <li><a href="resources.html">Resources</a></li>
         <li><a href="lbrn-events.html">Events</a></li>
         <li><a href="education.html">Education</a></li>
-
         <li class="right">
             <a class="button" href="newsletter.html">Newsletter</a>
         </li>
@@ -46,13 +43,25 @@
 
     <div class="navdropdownbig navdropdown">
       <ul class="layout">
-        <li><a href="about.html">About</a></li>
+
+
+        <li id="about"><a href="about.html" class="dogtest">About</a></li>
+        <div class="dropdown">
+
+          <div class="dropdown-menu dropdown-menu dogtest2" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item_cust navLink" href="index.html#AboutEvents">
+            Events
+            <a class="dropdown-item_cust navLink" href="index.html#AboutContact">
+            Contact Us
+            </a>
+          </div>
+        </div>
+
         <li><a href="people.html">People</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="resources.html">Resources</a></li>
         <li><a href="lbrn-events.html">Events</a></li>
         <li><a href="education.html">Education</a></li>
-
         <li class="right">
             <a class="button" href="newsletter.html">Newsletter</a>
         </li>
@@ -63,18 +72,10 @@
         </li>
       </ul>
     </div>
+    <section class="page-heading layout">
+      <h1>{{page.title}}</h1>
+    </section>
     <main class="layout">
-      <section id="lbrnEventHeader">
-        <div class="imagebox">
-          <img src="{{page.headerImage}}" alt="{{page.title}}">
-
-        </div>
-        <div class="caption">
-          <h1>{{page.title}}</h1>
-          <p id="date">Event Date: {{page.eventDate}}</p>
-          <p>Location: {{page.eventLocation}}</p>
-        </div>
-      </section>
       <div class="content">
         {{content}}
       </div>
@@ -90,9 +91,11 @@
           <span>5&nbsp;P2O&nbsp;GM103424-17</span> is gratefully acknowledged.</p>
       </div>
     </footer>
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/scripts.js"></script>
-    <script type="text/javascript" src="/js/scrollMenu.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scrollMenu.js"></script>
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

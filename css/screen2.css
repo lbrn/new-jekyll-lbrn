@@ -51,7 +51,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 0 5%;
     margin-top: 0 !important;
 	}
-    
+
   .calloutright {
     box-sizing: border-box;
     padding: 0 5%;
@@ -341,7 +341,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     padding-left: 2.8em;
     display: none; }
-  
+
   main div.content .important {
     font-style: italic;
     background-color: #def0df;
@@ -1793,7 +1793,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   #lbrnEventSidebar ul li div.chooseType label {
     width: 87%; } }
-    
+
 
 @charset "UTF-8";
 /* code from https://cdnjs.cloudflare.com/ */
@@ -2063,6 +2063,3 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .cc-floating.cc-theme-edgeless .cc-btn+.cc-btn {
 	margin-left: 0
 }
-
-
-
