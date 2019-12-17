@@ -2,7 +2,7 @@
 layout: post
 title: Associate Director
 author: Urska Cvek
-school: LSU - Shreveport
+school: Louisiana State University, Shreveport
 project-type: TestElement
 image: "BBC-Core/BBC-Urska-Cvek.jpg"
 categories: project-investigator

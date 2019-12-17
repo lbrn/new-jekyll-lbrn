@@ -2,7 +2,7 @@
 layout: pipage
 title: Assistant Director
 author: Nayong Kim
-school: LSU - Baton Rouge
+school: Louisiana State University, Center for Computation and Technology
 project-type: TestElement
 image: "BBC-Core/BBC-Nayong-Kim.jpg"
 categories: project-investigator

@@ -2,7 +2,7 @@
 layout: post
 title: Principal Investigator
 author: K Gus Kousoulas
-school: Louisiana State University School of Veterinary Medicine
+school: Louisiana State University, School of Veterinary Medicine
 project-type: TestElement
 image: "Kousoulas_Konstantin_LSU9425sm.jpg"
 categories: project-investigator

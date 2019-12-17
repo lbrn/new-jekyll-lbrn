@@ -2,7 +2,7 @@
 layout: post
 title: Senior Postdoctoral Fellow
 author: Lyndon Coghill
-school: LSU - Baton Rouge
+school: Louisiana State University, Center for Computation and Technology
 project-type: TestElement
 image: "BBC-Core/coghill.png"
 categories: project-investigator
