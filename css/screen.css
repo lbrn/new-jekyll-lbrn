@@ -2832,7 +2832,7 @@ section.directory article.person:nth-child(odd) {
     }
 
   .navdropdown li {
-    margin-right: .5em; }
+    margin-right: 1.2em; }
   .navdropdown li a {
     /* padding: 1em;  */
   }
