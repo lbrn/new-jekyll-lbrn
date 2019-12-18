@@ -3590,20 +3590,25 @@ display: block;
       width: 100%;
       clear: both;
       font-weight: 400;
-      color:
-  #7F7F7F;
-  background:
-      white;
+      color:  #7F7F7F;
+      background: white;
       border: 0;
       font-size: 22px;
-      font-family: BebasKai;
+      /* font-family: BebasKai; */
+      font-family: "Ubuntu", sans-serif;
       text-align: center;
       padding: 0.5rem;
   }
   #about:hover ~ .dropdown div{
+  /* #about:hover ~ .dropdown div{ */
     display: inline-block;
     /* background-color:red; */
-        top:4em;
+        top:4.55em;
+        padding:unset;
+        margin:unset;
+  }
+  .layout .dropdown div a {
+    display:block!important;
   }
   .dropdown-menu2 {
     color:blue;
