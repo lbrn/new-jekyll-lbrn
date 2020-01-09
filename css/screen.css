@@ -1081,7 +1081,7 @@ main div.content h3:enabled {
     font-weight: 700;
     /* commented out for two card responsive stuff */
     font-family: "Open Sans Condensed", sans-serif !important; }
-  .three-card-responsive section p, /* .two-card-responsive section p, */ .four-card-responsive section p {
+  .three-card-responsive section p,  .two-card-responsive section p,  .four-card-responsive section p {
 
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1105,7 +1105,7 @@ main div.content h3:enabled {
     hyphens: auto;
     -webkit-hyphens: auto;
   }
-  .three-card-responsive section p.more,/* .two-card-responsive section p.more, */ .four-card-responsive section p.more {
+  .three-card-responsive section p.more, .two-card-responsive section p.more,  .four-card-responsive section p.more {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1123,7 +1123,7 @@ main div.content h3:enabled {
     bottom: 0;
     margin-bottom: unset;
   }
-  .three-card-responsive section p.more:hover,/* .two-card-responsive section p.more:hover, */.four-card-responsive section p.more:hover {
+  .three-card-responsive section p.more:hover, .two-card-responsive section p.more:hover, .four-card-responsive section p.more:hover {
     color: #4a66b4; }
 
   #lbrnEventHeader {
