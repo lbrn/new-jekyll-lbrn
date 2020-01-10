@@ -6,9 +6,85 @@ title: Modified About/Test Environment
 <p>Site. time: {{site.time}}</p>
 <p>site.time date: {{ site.time | date: "%Y %m %d" }}</p>
 
+<style>
 
+.bar {background-color: green;
+margin-bottom:10em; }
+.navdropdown ul li ul li{
+  margin-right:unset;
+  width:100%;
+}
+.navdropdown ul li ul{
+  max-width:5em;
+  /* background: white; */
+  /* display: block; */
+  /* color: #2C3D6C; */
+}
+.navdropdown ul li ul li a{
+  /* max-width:5em; */
+  background: white;
+  /* display: block; */
+  color: #2C3D6C;
+}
+.bar a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  /* background: blue; */
+  display: inline-block;
+}
+/* .header2 li {display: inline-block;} */
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+/* ul li:hover ul {display: block;} */
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+  margin-right:unset;
+}
+ul li ul li {
+  /* background: white; */
+  display: block;
+  color: #2C3D6C;
+}
+ul li ul li a {display:block !important;}
+ul li ul li:hover {background: #666;}
+</style>
+<div class="bar">
+  <!-- <a href="#">Useless Link</a> -->
+  <ul class="header2";>
+    <li>
+      <a href="#" class="ab">Dropdown Link</a>
+      <ul >
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="header3";>
+    <li>
+      <a href="#" class="ab">Dropdown Link2</a>
+      <ul >
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
 
-
+<br>
 <!-- <div class="dropdown">
   <button id="dropdownMenu1" data-toggle="dropdown">
     My account
@@ -22,6 +98,7 @@ title: Modified About/Test Environment
     <li><a class="dropdown-item" href="#">Log out</a></li>
   </ul>
 </div> -->
+
 <div id="item1">
 </div>
 <div class="dogtest">
@@ -30,9 +107,9 @@ dog
 <div id="item2">
 </div>
 <br>
-        <li id="about"><a href="about.html" class="dogtest">About</a></li>
-        <li id="about"><a href="about.html" class="dogtest">About</a></li>
-        <div class="dropdown">
+        <!-- <li id="about"><a href="about.html" class="dogtest">About</a></li> -->
+        <div id="about" class="dropdown">
+          <li ><a href="about.html" class="dogtest">About</a></li>
 
           <div class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item_cust navLink" href="index.html#AboutEvents">
