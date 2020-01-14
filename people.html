@@ -348,8 +348,9 @@ title: People
         {% endif %}
 
       {% endfor %}
-
-
+      {% if loopindex == 1%}
+        </div>
+      {%endif%}
 
 
     <!-- ADD IF = CATEGORY Former -->
@@ -358,7 +359,6 @@ title: People
     <h3>Former EAC Members</h3>
 
     {% assign loopindex = 0 | modulo: 2 %}
-
     {% for people in site.committee-members %}
 
       {%  assign loop2 = loopindex | modulo: 2 %}
@@ -382,7 +382,6 @@ title: People
       {% endif %}
 
     {% endfor %}
-
 
       <!-- directory-committee-members.html  -->
 

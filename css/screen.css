@@ -271,6 +271,7 @@ float:left;
 
 
   .peoplewrap{
+    width: 100%;
     min-height: 8em;
     /* margin-bottom: 2%; */
     /* margin-top: 2%; */
@@ -1831,6 +1832,7 @@ div.research img{
 
 
   .peoplewrap{
+    width: 100%;
     /* height: 11em; */
     /* min-height: 15em; */
 /* display: inline-block; */
@@ -2028,6 +2030,7 @@ div.research img{
 }
 
   .peoplewrap{
+    width: 100%;
     /* height: 11em; */
     /* min-height: 12em; */
     display: block;
@@ -2697,6 +2700,7 @@ section.directory article.person{
 
   .peoplewrap{
     display:inline-block;
+    width: 100%;
   }
 
   /* .ptitle {
