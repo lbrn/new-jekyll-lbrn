@@ -145,38 +145,46 @@ function piFilter(){
 
   $('.pifp').click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     fulls.slideToggle('fast');
   });
   $(".pisp").click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     starts.slideToggle('fast');
   });
   $(".pisip").click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     shares.slideToggle('fast');
   });
   $(".pipp").click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     pilots.slideToggle('fast');
     console.log("dog");
   });
   $(".pite").click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     te.slideToggle('fast');
         console.log('dog');
   });
   $(".pitp").click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     translproj.slideToggle('fast');
         console.log('dog');
   });
   $("#pios1").click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     oe1.slideToggle('fast');
         console.log('dog');
   });
   $("#pios2").click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     oe2.slideToggle('fast');
         console.log('dog');
   });
@@ -186,7 +194,7 @@ function piFilter(){
 
     for(var i=0; i < ac.length; i++)
         {
-        // ac[i].style.display ='none';
+
           if (ac[i].style.display == "none")
             {
               ac[i].style.display = "block";

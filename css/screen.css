@@ -37,6 +37,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 /* End at 1295ish */
 
+.filters .active{
+  font-weight:bold;
+  color: #5ab35e!important;
+}
 @media (min-width: 0) {
   .socialMedia{
     display:none;
