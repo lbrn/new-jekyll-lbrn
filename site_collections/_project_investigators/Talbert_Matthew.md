@@ -3,7 +3,7 @@ layout: pipage
 title: Diet induced obesity in flies&colon; a genomic search for modifiers of pathogenesis
 author: Matthew Talbert
 school: University of Louisiana at Monroe
-active: true
+active: false
 project-type: FullProject
 image: "talbert.jpg"
 categories: project-investigator

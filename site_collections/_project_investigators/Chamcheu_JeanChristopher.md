@@ -3,7 +3,7 @@ layout: pipage
 title: Validation of the role of PI3K/AKT/mTOR Signaling in psoriasis and its targeting by fisetin
 author: Jean Christopher Chamcheu
 school: University of Louisiana at Monroe
-active: true
+active: false
 project-type: PilotProject
 image: "chamcheu.jpg"
 categories: project-investigator

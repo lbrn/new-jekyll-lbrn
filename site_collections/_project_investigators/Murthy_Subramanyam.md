@@ -3,7 +3,7 @@ layout: pipage
 title: DPP4 Inhibitors in Combating the Effects of Homocysteine and Cholesterol
 author: Subramanyam Murthy
 school: Southern University and A&amp;M College
-active: true
+active: false
 project-type: FullProject
 image: "murthy.jpg"
 categories: project-investigator
