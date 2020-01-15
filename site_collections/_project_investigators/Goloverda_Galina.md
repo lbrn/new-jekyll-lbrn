@@ -6,6 +6,6 @@ author: Galina Goloverda
 school: Xavier University of Louisiana
 active: false
 project-type: PilotProject
-image: "GGoloverda.jpg"
+image: "ggoloverda.jpg"
 categories: project-investigator
 ---
