@@ -38,6 +38,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+  #lbrnEventSidebar2 .active {
+    color: #c2e3c4;
+    font-weight: 400;
+  }
+
   #lbrnEventSidebarUl .mobilefilter {
   }
   .mobilefilter{
@@ -266,6 +271,7 @@ float:left;
 
 
   .peoplewrap{
+        width: 100%;
     min-height: 8em;
     /* margin-bottom: 2%; */
     /* margin-top: 2%; */
@@ -1817,6 +1823,7 @@ div.research img{
 
 
   .peoplewrap{
+        width: 100%;
     /* height: 11em; */
     /* min-height: 15em; */
 /* display: inline-block; */
@@ -2012,6 +2019,7 @@ div.research img{
 }
 
   .peoplewrap{
+        width: 100%;
     /* height: 11em; */
     /* min-height: 12em; */
     display: block;
@@ -2654,6 +2662,7 @@ section.directory article.person{
 @media (min-width: 860px) {
 
   .peoplewrap{
+        width: 100%;
     display:inline-block;
   }
 
