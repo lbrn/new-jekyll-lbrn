@@ -91,10 +91,10 @@
       <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->
       <div class="content profilepage">
 
+        {{page.person }}
 
         {% for pi in site.data.LBRNProjects_DATA_LABELS  %}
         {% assign x = pi.firstname | append: ' ' | append: pi.lastname %}
-        <!-- <p>x: {{x}}</p> -->
           {% if x  == page.person %}
           <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ page.person | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
             <div class="page">

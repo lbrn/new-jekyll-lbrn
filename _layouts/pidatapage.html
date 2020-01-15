@@ -92,7 +92,7 @@
 
         {% for pi in site.data.pis %}
           {% if pi.name == page.author %}
-          <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.author | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
+          <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.name | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
             <div class="page">
               <!-- <h2 class="page-title" >{{ page.author }}</h2> -->
               <p id="uni">
