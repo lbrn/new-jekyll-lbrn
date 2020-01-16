@@ -39,7 +39,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @media (min-width: 0) {
   #lbrnEventSidebar2 .active {
-    color: #c2e3c4!important;
+    /* color: #c2e3c4!important; */
     font-weight: 400!important;
   }
 
@@ -3552,5 +3552,5 @@ display: block;
 }
 #lbrnEventSidebar2 .active {
   background-color: #c2e3c4!important;
-  font-weight: 400  !important; 
+  font-weight: 400  !important;
 }

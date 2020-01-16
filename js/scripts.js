@@ -119,6 +119,8 @@ function piFilter(){
   var shares = $("article:has(h6:contains('Shared Instrument'))");
   var pilots = $("article:has(h6:contains('Pilot'))");
   var translproj = $("article:has(h6:contains('Translational'))");
+  var collab = $("article:has(h6:contains('Collaborative'))");
+
   // var translproj = $('article[data-ptype="TranslationalProject"]');
 
   var ac = document.getElementsByClassName('Adcore'), i;
@@ -126,6 +128,7 @@ function piFilter(){
   var mc = document.getElementsByClassName('MCcore'), i;
   var crp = document.getElementsByClassName('CRP'), i;
   var ppi = document.getElementsByClassName('PrevPPi'), i;
+  var coll = document.getElementsByClassName('Collaborative'), i;
   var pai = document.getElementsByClassName('Parti'), i;
   var le = document.getElementsByClassName('LBRNe'), i;
   var lsc = document.getElementsByClassName('LBRNsc'), i;
@@ -138,10 +141,7 @@ function piFilter(){
   var cmtrack = 2;
   var cmelement = document.getElementsByClassName('cmelement'), i;
 
-  // var buttons = document.querySelectorAll('.piac');
-// $('.piac').click(function() {
-//         console.log('dog2');
-// });
+
 
   $('.pifp').click(function(){
     $(this).toggleClass('on');
@@ -157,8 +157,12 @@ function piFilter(){
   $(".pisip").click(function(){
     $(this).toggleClass('on');
     $(this).toggleClass('active');
-
     shares.slideToggle('fast');
+  });
+  $(".piicp").click(function(){
+    $(this).toggleClass('on');
+    $(this).toggleClass('active');
+    collab.slideToggle('fast');
   });
   $(".pipp").click(function(){
     $(this).toggleClass('on');
@@ -356,6 +360,26 @@ $(".pibc").click(function(){
     // ppi.slideToggle('fast');
         // console.log('dog');
   });
+  $(".piicp").click(function(){
+    // console.log('dog');
+    for(var i=0; i < ppi.length; i++)
+        {
+        // ppi[i].style.display ='none';
+          if (ppi[i].style.display == "none")
+            {
+              ppi[i].style.display = "block";
+              pitrack++;
+              // console.log(pitrack);
+            }
+            else
+            {
+              ppi[i].style.display = "none";
+              pitrack--;
+            }
+        }
+
+    $(this).toggleClass('on');
+  });
 
   $(".pimc").click(function(){
     // console.log('dog');
@@ -377,9 +401,7 @@ $(".pibc").click(function(){
         // console.log('dog');
   });
 
-// if(pitrack == 0){
-//   console.log("trigger hide");
-// }
+
 
 
 }//end
