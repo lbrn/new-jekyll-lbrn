@@ -129,11 +129,13 @@
                     {% if pi.mentors != nil %}
                       {% if pi.mentors contains "," %}
                       <h2>Mentors</h2>
+                      {% elsif pi.mentors contains "Collaborator:" %}
+                      <h2> Collaborator </h2>
                       {%else %}
                       <h2>Mentor</h2>
                       {%endif%}
 
-                      <p>{{ pi.mentors | replace: "), ", ")  <br>"  }}</p>
+                      <p>{{ pi.mentors | replace: "), ", ")  <br>" | replace: "Collaborator:", "" }}</p>
                       <br>
                     {% endif %}
 
@@ -143,7 +145,7 @@
                     {% else %}
                       <h2>Funding Period</h2>
                     {% endif %}
-                    <p>{{pi.projectdates | replace: "), ", ")  <br>"  }}</p>
+                    <p>{{pi.projectdates | replace: "), ", ")  <br>" }}</p>
                     {% for funding in pi.funding %}
                       <p>{{ funding.name }} ({{funding.period}})</p>
                     {% endfor %}

@@ -39,8 +39,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @media (min-width: 0) {
   #lbrnEventSidebar2 .active {
-    color: #c2e3c4;
-    font-weight: 400;
+    color: #c2e3c4!important;
+    font-weight: 400!important;
   }
 
   #lbrnEventSidebarUl .mobilefilter {
@@ -2640,8 +2640,9 @@ section.directory article.person{
     text-align: center;
     text-transform: capitalize; }
   #lbrnEventSidebar .active {
-    background-color: #c2e3c4;
-    font-weight: 400; }
+    background-color: #c2e3c4!important;
+    font-weight: 400!important;
+  }
 
   #mobileChooseType {
     display: none; }
@@ -3549,6 +3550,7 @@ display: block;
   width:100%;
   /* border: 2px solid red; */
 }
-/* #lbrnEventSidebar2 .active {
-  background-color: #c2e3c4;
-  font-weight: 400; } */
+#lbrnEventSidebar2 .active {
+  background-color: #c2e3c4!important;
+  font-weight: 400  !important; 
+}
