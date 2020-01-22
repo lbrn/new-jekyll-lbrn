@@ -38,6 +38,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+
+
   #lbrnEventSidebar2 .active {
     /* color: #c2e3c4!important; */
     font-weight: 400!important;
@@ -1812,6 +1814,66 @@ div.research img{
 
     display: none;
   }
+  #core-list{
+    text-align: center;
+
+  }
+  #core-list div{
+    height:10em;
+  	width: 40%;
+  	margin-left: 30%;
+
+  }
+  #core-list .triblock{
+
+    display: inline-block;
+    width: 30%;
+    margin-left: unset;
+  }
+  #core-list h1{
+    font-size: 17pt;
+  }
+  #core-list h2{
+    font-size: 13pt;
+  }
+  #core-list ul{
+    background-color: unset;
+  }
+  #core-list .vertline{
+    height:2em;
+	border: #8ECB91;
+	border-style: none dotted none none;
+	height: 2em;
+	width: 50%;
+
+  }
+  #core-list .horiline{
+    /* height:2em; */
+  border: #8ECB91;
+  border-style: none none dotted none;
+  /* height: 2em; */
+  width: 100%;
+
+  }
+  #core-list span{
+    border: #8ECB91;
+    border-style:dotted none none none;
+    height: unset;
+    width: 100%;
+    display: block;
+
+  }
+  #core-list ul li{
+    width: unset;
+    padding: unset;
+    float: none;
+    height:1.5em;
+  }
+  #core-list li{
+    font-size: 11pt;
+    list-style: none;
+  }
+
   }
   /* end 0 */
 @media (min-width: 414px) {
