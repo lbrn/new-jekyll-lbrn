@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Professor
-author: Weneene Dorsey
+author: Waneene Dorsey
 school: Grambling State University, Biological Sciences
 project-type: TestElement
 image: "wdorsey.jpg"
