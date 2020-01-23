@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grants Coordinator and Developer
-author: Gabreielle Broussard
+author: Gabrielle Broussard
 school: Louisiana State University, School of Veterinary Medicine
 project-type: TestElement
 image: "Broussard_Gabrielle.jpg"
