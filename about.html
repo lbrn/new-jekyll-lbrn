@@ -61,16 +61,17 @@ title: About LBRN
 </div>
 <section class="cores">
   <h2>Cores</h2>
-  <ul>
-    <li class="active">Admin</li>
-    <li>BBC</li>
-    <li>MCBR</li>
+  <ul id="myBtnContainer">
+    <li class="btn active" onclick="filterSelection('admin')">Admin</li>
+    <li class="btn" onclick="filterSelection('bbc')">BBC</li>
+    <li class="btn" onclick="filterSelection('mcbr')">MCBR</li>
   </ul>
+
   <section id="core-swap">
+    <div class="filterDiv admin show">
     <h3>Administrative Core</h3>
     <a class="button hidden" title="Core Services" href="bbc-core.html">BBC Core Services</a>
     <p>The Administrative Core (AC) of the Louisiana Biomedical Research Network (LBRN) provides the project with its overall leadership, day-to-day management, evaluation of all of its component parts, and communication with NIH staff. The AC is led by the Principal Investigator in close consultation with the Program Coordinator, as well as the Steering Committee and External Advisory Committee.</p>
-    <img src="images/admin-core_July_2018.png" alt="network of core administrators">
     <div id="core-list" style="display:none;">
       <div class="block">
         <h1>K Gus Kousoulas</h1>
@@ -145,6 +146,173 @@ title: About LBRN
 
       <!-- end core list -->
     </div>
+    <img src="images/admin-core_July_2018.png" alt="network of core administrators">
+  </div>
+<!-- end admin -->
+
+<div class="filterDiv bbc show">
+<h3>Bioinformatics, Biostatistics, and Computational Biology Core</h3>
+<a class="button hidden" title="Core Services" href="bbc-core.html">BBC Core Services</a>
+<p>The Bioinformatics, Biostatistics, and Computational Biology Core (BBCC) of the Louisiana Biomedical Research Network (LBRN) serves to train and support project investigators and their teams across Louisiana, and to lead and support translational research activities at the frontiers of biomedical science. Its team uses both established and custom computational tools, operating at computational scales ranging from the mundane to analyses engaging many hundreds of compute cores.</p>
+<div id="core-list" style="display:none;">
+  <div class="block">
+    <h1>K Gus Kousoulas</h1>
+    <h2>(Principal Investigator)</h2>
+    <span></span>
+    <ul>
+      <li>Louisiana State University</li>
+      <li>School of Veterinary Medicine</li>
+      <li>Baton Rouge LA 70803</li>
+      <li class="bold">vtgusk@lsu.edu</li>
+      <li class="bold">(225) 578-5833</li>
+    </ul>
+  </div>
+  <span class="vertline"></span>
+  <div class="block">
+    <h1>K Gus Kousoulas</h1>
+    <h2>(Principal Investigator)</h2>
+    <span></span>
+    <ul>
+      <li>Louisiana State University</li>
+      <li>School of Veterinary Medicine</li>
+      <li>Baton Rouge LA 70803</li>
+      <li class="bold">vtgusk@lsu.edu</li>
+      <li class="bold">(225) 578-5833</li>
+
+  </div>
+  <span class="vertline"></span>
+  <span class="horiline"></span>
+
+  <div class="triblock">
+    <span class="vertline"></span>
+    <h1>K Gus Kousoulas</h1>
+    <h2>(Principal Investigator)</h2>
+    <span></span>
+    <ul>
+      <li>Louisiana State University</li>
+      <li>School of Veterinary Medicine</li>
+      <li>Baton Rouge LA 70803</li>
+      <li class="bold">vtgusk@lsu.edu</li>
+      <li class="bold">(225) 578-5833</li>
+
+  </div>
+  <div class="triblock">
+    <span class="vertline"></span>
+
+    <h1>K Gus Kousoulas</h1>
+    <h2>(Principal Investigator)</h2>
+    <span></span>
+    <ul>
+      <li>Louisiana State University</li>
+      <li>School of Veterinary Medicine</li>
+      <li>Baton Rouge LA 70803</li>
+      <li class="bold">vtgusk@lsu.edu</li>
+      <li class="bold">(225) 578-5833</li>
+
+  </div>
+  <div class="triblock">
+    <span class="vertline"></span>
+
+    <h1>K Gus Kousoulas</h1>
+    <h2>(Principal Investigator)</h2>
+    <span></span>
+    <ul>
+      <li>Louisiana State University</li>
+      <li>School of Veterinary Medicine</li>
+      <li>Baton Rouge LA 70803</li>
+      <li class="bold">vtgusk@lsu.edu</li>
+      <li class="bold">(225) 578-5833</li>
+
+  </div>
+
+
+  <!-- end core list -->
+</div>
+<img src="images/bbc-core_Dec_2019.png" alt="network of core administrators">
+</div>
+<!-- end bbc -->
+<div class="filterDiv mcbr show">
+<h3>Molecular and Cell Biology Resources Core</h3>
+<a class="button hidden" title="Core Services" href="mcbr-core.html">Molecular and Cell Biology Resources Core</a>
+<p>Molecular and cell biology provide an essential linkage among important basic fields of biomedical science, such as genetics, developmental biology, structural biology, immunology, neurobiology, and cancer biology. The MCBRC takes advantage of existing highly organized, centralized services and equipment facilities located primarily at the LSU flagship institution in Baton Rouge, effectively uniting these units toward the common goal of supporting biomedical research performed by PUI investigators. The MCBRC will provide technical and logistical support, enabling the ready exchange of information, ideas, technology, and research capabilities among PUI investigators. MCBRC will ensure that PUI researchers have full access to state-of-the-art equipment and modern research techniques and services.</p>
+
+<div id="core-list" style="display:none;">
+  <div class="block">
+    <h1>K Gus Kousoulas</h1>
+    <h2>(Principal Investigator)</h2>
+    <span></span>
+    <ul>
+      <li>Louisiana State University</li>
+      <li>School of Veterinary Medicine</li>
+      <li>Baton Rouge LA 70803</li>
+      <li class="bold">vtgusk@lsu.edu</li>
+      <li class="bold">(225) 578-5833</li>
+    </ul>
+  </div>
+  <span class="vertline"></span>
+  <div class="block">
+    <h1>K Gus Kousoulas</h1>
+    <h2>(Principal Investigator)</h2>
+    <span></span>
+    <ul>
+      <li>Louisiana State University</li>
+      <li>School of Veterinary Medicine</li>
+      <li>Baton Rouge LA 70803</li>
+      <li class="bold">vtgusk@lsu.edu</li>
+      <li class="bold">(225) 578-5833</li>
+
+  </div>
+  <span class="vertline"></span>
+  <span class="horiline"></span>
+
+  <div class="triblock">
+    <span class="vertline"></span>
+    <h1>K Gus Kousoulas</h1>
+    <h2>(Principal Investigator)</h2>
+    <span></span>
+    <ul>
+      <li>Louisiana State University</li>
+      <li>School of Veterinary Medicine</li>
+      <li>Baton Rouge LA 70803</li>
+      <li class="bold">vtgusk@lsu.edu</li>
+      <li class="bold">(225) 578-5833</li>
+
+  </div>
+  <div class="triblock">
+    <span class="vertline"></span>
+
+    <h1>K Gus Kousoulas</h1>
+    <h2>(Principal Investigator)</h2>
+    <span></span>
+    <ul>
+      <li>Louisiana State University</li>
+      <li>School of Veterinary Medicine</li>
+      <li>Baton Rouge LA 70803</li>
+      <li class="bold">vtgusk@lsu.edu</li>
+      <li class="bold">(225) 578-5833</li>
+
+  </div>
+  <div class="triblock">
+    <span class="vertline"></span>
+
+    <h1>K Gus Kousoulas</h1>
+    <h2>(Principal Investigator)</h2>
+    <span></span>
+    <ul>
+      <li>Louisiana State University</li>
+      <li>School of Veterinary Medicine</li>
+      <li>Baton Rouge LA 70803</li>
+      <li class="bold">vtgusk@lsu.edu</li>
+      <li class="bold">(225) 578-5833</li>
+
+  </div>
+
+
+  <!-- end core list -->
+</div>
+<img src="images/mcbr-core_Jan_2020.png" alt="network of core administrators">
+</div>
+<!-- end mcbr -->
   </section>
 </section>
 

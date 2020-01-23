@@ -1814,6 +1814,26 @@ div.research img{
 
     display: none;
   }
+  .filterDiv {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+
+  .btn:hover {
+
+  }
+
+  .btn.active {
+    /* background-color: #666; */
+    /* color: white; */
+  }
   #core-list{
     text-align: center;
 

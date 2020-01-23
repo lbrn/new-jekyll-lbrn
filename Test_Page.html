@@ -2,10 +2,61 @@
 layout: default
 title: Modified About/Test Environment
 ---
+<style>
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
 
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
 <p>Site. time: {{site.time}}</p>
 <p>site.time date: {{ site.time | date: "%Y %m %d" }}</p>
 
+<h2>Filter DIV Elements</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('admin')"> admin</button>
+  <button class="btn" onclick="filterSelection('bbc')"> bbc</button>
+  <button class="btn" onclick="filterSelection('mcbr')"> mcbr</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv admin">BMW</div>
+  <div class="filterDiv bbc">Orange</div>
+  <div class="filterDiv mcbr">Volvo</div>
+</div>
 
 
 
