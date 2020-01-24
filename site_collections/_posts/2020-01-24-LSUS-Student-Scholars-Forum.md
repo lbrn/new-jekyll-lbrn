@@ -25,5 +25,5 @@ This event has generated considerable regional interest, and over the years we h
 <p><b>Texas:</b>  Jarvis Christian College, Sam Houston State University, St. Mary’s University, Stephen F. Austin State University, Texas A & M University Texarkana, Texas Tech University, Texas Woman’s University, University of the Incarnate Word, University of May Hardin-Baylor, University of Texas, University of Texas Dallas, University of Texas El Paso, University of Texas –Texas Medical Center Houston, University of Texas at Tyler</p>
 <p><b>Other:</b> Kansas State University, North Carolina Central University</p>
 
-For more information contact: [Dr. Sanjay Menon, LSU Shreveport Dean of Graduate Studies](mailto:sanjay.menon@lsus.edu?subject=Student Scholars Forum)
+For more information to go the [5th Annual LSUS Regional Student Scholars Forum Website](https://www.lsus.edu/offices-and-services/sponsored-research/student-scholars-forum).
 
