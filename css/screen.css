@@ -1834,14 +1834,20 @@ div.research img{
     /* background-color: #666; */
     /* color: white; */
   }
+  /* #bbc-core-list{
+    text-align: center;
+  } */
   #core-list{
     text-align: center;
 
   }
   #core-list div{
-    height:10em;
   	width: 40%;
   	margin-left: 30%;
+
+  }
+  .admin-core-list div{
+    height:10em;
 
   }
   #core-list .triblock{
@@ -1849,6 +1855,43 @@ div.research img{
     display: inline-block;
     width: 30%;
     margin-left: unset;
+  }
+  #core-list .quintblock{
+
+    display: inline-block;
+    width: 19%;
+    margin-left: unset;
+  }
+  #core-list .quintblock h1{
+    font-size:14pt;
+    /* color: red; */
+  }
+  #core-list .quintblock h2{
+    font-size:11pt;
+    /* color: red; */
+
+  }
+  /* .quintblock h1{
+    font-size: 14pt!important;
+  } */
+  /* .quintblock h2{
+    font-size: 11pt!important;
+  } */
+  #core-list .sevenblock{
+
+    display: inline-block;
+    width: 13%;
+    margin-left: unset;
+
+  }
+  #core-list .sevenblock h1{
+    font-size:12pt;
+    /* color: red; */
+  }
+  #core-list .sevenblock h2{
+    font-size:11pt;
+    /* color: red; */
+
   }
   #core-list h1{
     font-size: 17pt;
@@ -1874,6 +1917,11 @@ div.research img{
   /* height: 2em; */
   width: 100%;
 
+  }
+   .bbc-core-list  .horiline{
+    width:80%!important;
+    margin-left:10%;
+    margin-right:10%;
   }
   #core-list span{
     border: #8ECB91;
