@@ -13,7 +13,370 @@ title: About LBRN
   <li>Increase student interest in biomedical research careers throughout Louisiana by providing summer research opportunities to all institutions within the State.</li>
   <li>Evaluate, assess and continuously monitor the progress within LBRN through detailed tracking of research accomplishments, the development of human resources, and productive collaborations among participating institutions.</li>
 </ul>
-<img src="images/campus-map.svg" alt="a map of campuses in Louisiana">
+
+
+<!-- BG img assigned by swingboy tag, rest of the content hovered over it via absolute -->
+<style media="screen">
+
+/* Swinging boy image */
+
+.swingboy{
+  /* background:url(../images/campus-map.svg); */
+  /* height: 10vh; */
+  /* min-height: 500px; */
+background-position:top;
+background-size: cover;
+background-repeat: no-repeat;
+position:relative;
+
+}
+/* Swinging boy text overlay css */
+.swingboy .bgholder{
+  height: 3em;
+  width:50%;
+position:relative;
+display:inline-block;
+}
+.swingboy .bg{
+  background-color:white;
+  width:100%;
+  height:100%;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 1;
+  border:solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.swingboy h1{
+  margin-top:12%;
+  font-family: roundedMplus1cLight;
+  color:#157262;
+  z-index: 3;
+  position: relative;
+}
+.swingboy ul{
+  padding-left: unset;
+  position: relative;
+}
+.swingboy .bgholder:nth-child(even) .bg{
+  opacity: 0.7;
+
+}
+.swingboy .bgholder:nth-child(even) li {
+  font-family: roundedMplus1cLight;
+  color: #212529;
+}
+.swingboy li{
+  padding-left: 0.5em;
+  list-style: none;
+  font-size: 25pt;
+  font-family: roundedMplus1cExtraBold;
+  color:#157262;
+  z-index: 2;
+  position: absolute;
+  height:100%;
+}
+.mapcontainer{
+  top: 0;
+position: absolute;
+width:100%;
+height:100%;
+}
+.mapcontainer a div{
+  opacity: 0.5;
+  border-top: solid 1.5px #2C3D6C;
+  border-bottom: solid 1.5px #2C3D6C;
+
+}
+.sus {
+  height: 4%;
+  width: 6%;
+  margin-top: 3%;
+  margin-left: 9%;
+  position:absolute;
+}
+.lsuhsc-s {
+height: 4%;
+width: 13%;
+margin-top: 6.5%;
+margin-left: 15%;
+position: absolute;
+}
+.la-tech{
+  height: 4%;
+  /* background-color:
+  red; */
+  width: 11%;
+  margin-top: 5%;
+  margin-left: 37%;
+  position: absolute;
+}
+.ulm{
+  height: 4%;
+
+  width: 7%;
+  margin-top: 16%;
+  margin-left: 43%;
+  position: absolute;
+}
+.lsu-s{
+  height: 4%;
+
+  width: 8%;
+  margin-top: 20%;
+  margin-left: 11%;
+  position: absolute;
+}
+.grambling{
+  height: 4%;
+  width: 13%;
+  margin-top: 20.5%;
+  margin-left: 25%;
+  position: absolute;
+}
+.nsu{
+  height: 4%;
+  width: 6%;
+  margin-top: 35%;
+  margin-left: 19%;
+  position: absolute;
+}
+.centenary{
+  height: 4%;
+  /* background-color:
+  red; */
+  width: 13%;
+  margin-top: 24%;
+  margin-left: 8%;
+  position: absolute;
+}
+.lacollege{
+  height: 4%;
+  /* background-color:
+  red; */
+  width: 14%;
+  margin-top: 31%;
+  margin-left: 34%;
+  position: absolute;
+}
+.lsu-a{
+  height: 4%;
+  width: 9%;
+  margin-top: 46%;
+  margin-left: 29%;
+  position: absolute;
+}
+.mcneese{
+  height: 4%;
+  width: 11%;
+  margin-top: 52%;
+  margin-left: 19%;
+  position: absolute;
+}
+.ololc{
+  height: 4%;
+  width: 9%;
+  margin-top: 37%;
+  margin-left: 51%;
+  position: absolute;
+}
+.subr{
+  height: 4%;
+  width: 8%;
+  margin-top: 41%;
+  margin-left: 49%;
+  position: absolute;
+}
+.brcc{
+  height: 4%;
+  width: 8%;
+  margin-top: 44.5%;
+  margin-left: 50%;
+  position: absolute;
+}
+.lsu{
+  height: 4%;
+  /* background-color:
+  red; */
+  width: 9%;
+  margin-top: 46%;
+  margin-left: 29%;
+  position: absolute;
+}
+
+.ull{
+  height: 4%;
+  width: 6%;
+  margin-top: 63%;
+  margin-left: 36%;
+  position: absolute;
+}
+.selu{
+  height: 4%;
+  width: 8%;
+  margin-top: 44%;
+  margin-left: 65%;
+  position: absolute;
+}
+.pbrc{
+  height: 4%;
+  width: 7%;
+  margin-top: 59%;
+  margin-left: 50%;
+  position: absolute;
+}
+.tnprc{
+  height: 4%;
+  width: 9%;
+  margin-top: 48%;
+  margin-left: 70%;
+  position: absolute
+}
+.uno{
+  height: 4%;
+  width: 6%;
+  margin-top: 54%;
+  margin-left: 74%;
+  position: absolute;
+}
+.suno{
+  height: 4%;
+  width: 8%;
+  margin-top: 54%;
+  margin-left: 82%;
+  position: absolute;
+}
+.dillard{
+  height: 4%;
+  /* background-color:
+  red; */
+  width: 9%;
+  margin-top: 57%;
+  margin-left: 76%;
+  position: absolute;
+}
+.lsuhsc{
+  height: 4%;
+  width: 10%;
+  margin-top: 62.5%;
+  margin-left: 75%;
+  position: absolute;
+}
+.nicholls{
+  height: 4%;
+  width: 11%;
+  margin-top: 70.5%;
+  margin-left: 50%;
+  position: absolute;
+}
+.tulane{
+  height: 4%;
+  width: 9%;
+  margin-top: 67%;
+  margin-left: 67%;
+  position: absolute;
+}
+.xavier{
+  height: 4%;
+  /* background-color:
+  red; */
+  width: 9%;
+  margin-top: 70.5%;
+  margin-left: 66%;
+  position: absolute;
+}
+</style>
+<div class="swingboy">
+
+<!-- <img src="images/campus-map.svg" alt="a map of campuses in Louisiana"> -->
+</div>
+
+    <div class="swingboy">
+      <img src="images/campus-map.svg" alt="a map of campuses in Louisiana">
+      <div class="mapcontainer">
+            <a class="" href="http://www.susla.edu/">
+              <div class="sus"></div>
+            </a>
+            <a class="" href="http://www.lsuhscshreveport.edu/">
+              <div class="lsuhsc-s"></div>
+            </a>
+            <a class="" href="http://www.latech.edu/">
+              <div class="la-tech"></div>
+            </a>
+            <a class="" href="http://www.ulm.edu/">
+              <div class="ulm"></div>
+            </a>
+            <a class="" href="http://www.lsus.edu/">
+              <div class="lsu-s"></div>
+            </a>
+            <a class="" href="http://www.lsu.edu/">
+              <div class="lsu"></div>
+            </a>
+            <a class="" href="http://www.gram.edu/">
+              <div class="grambling"></div>
+            </a>
+            <a class="" href="http://www.nsula.edu/">
+              <div class="nsu"></div>
+            </a>
+            <a class="" href="http://www.centenary.edu/">
+              <div class="centenary"></div>
+            </a>
+            <a class="" href="http://www.lacollege.edu/">
+              <div class="lacollege"></div>
+            </a>
+            <a class="" href="http://www.lsua.edu/">
+              <div class="lsu-a"></div>
+            </a>
+            <a class="" href="http://www.mcneese.edu/">
+              <div class="mcneese"></div>
+            </a>
+            <a class="" href="http://www.louisiana.edu/">
+              <div class="ull"></div>
+            </a>
+            <a class="" href="http://www.franu.edu/">
+              <div class="ololc"></div>
+            </a>
+            <a class="" href="http://www.subr.edu/">
+              <div class="subr"></div>
+            </a>
+            <a class="" href="http://www.mybrcc.edu/">
+              <div class="brcc"></div>
+            </a>
+            <a class="" href="http://www.pbrc.edu/">
+              <div class="pbrc"></div>
+            </a>
+            <a class="" href="http://www.nicholls.edu/">
+              <div class="nicholls"></div>
+            </a>
+            <a class="" href="http://www.selu.edu/">
+              <div class="selu"></div>
+            </a>
+            <a class="" href="http://www.tnprc.tulane.edu/">
+              <div class="tnprc"></div>
+            </a>
+            <a class="" href="http://www.uno.edu/">
+              <div class="uno"></div>
+            </a>
+            <a class="" href="http://www.suno.edu/">
+              <div class="suno"></div>
+            </a>
+            <a class="" href="http://www.dillard.edu/">
+              <div class="dillard"></div>
+            </a>
+            <a class="" href="http://www.lsuhsc.edu/">
+              <div class="lsuhsc"></div>
+            </a>
+            <a class="" href="http://www.tulane.edu/">
+              <div class="tulane"></div>
+            </a>
+            <a class="" href="http://www.xula.edu/">
+              <div class="xavier"></div>
+            </a>
+      </div>
+    </div>
+
 <div class="col-split-right">
   <h3>Flagship Campus</h3>
   <ul>
