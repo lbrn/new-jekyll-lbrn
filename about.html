@@ -15,12 +15,12 @@ title: About LBRN
 </ul>
 
 
-<!-- BG img assigned by swingboy tag, rest of the content hovered over it via absolute -->
+<!-- BG img assigned by campusmap tag, rest of the content hovered over it via absolute -->
 <style media="screen">
 
 /* Swinging boy image */
 
-.swingboy{
+.campusmap{
   /* background:url(../images/campus-map.svg); */
   /* height: 10vh; */
   /* min-height: 500px; */
@@ -31,13 +31,13 @@ position:relative;
 
 }
 /* Swinging boy text overlay css */
-.swingboy .bgholder{
+.campusmap .bgholder{
   height: 3em;
   width:50%;
 position:relative;
 display:inline-block;
 }
-.swingboy .bg{
+.campusmap .bg{
   background-color:white;
   width:100%;
   height:100%;
@@ -49,26 +49,26 @@ display:inline-block;
   border-color: black;
 }
 
-.swingboy h1{
+.campusmap h1{
   margin-top:12%;
   font-family: roundedMplus1cLight;
   color:#157262;
   z-index: 3;
   position: relative;
 }
-.swingboy ul{
+.campusmap ul{
   padding-left: unset;
   position: relative;
 }
-.swingboy .bgholder:nth-child(even) .bg{
+.campusmap .bgholder:nth-child(even) .bg{
   opacity: 0.7;
 
 }
-.swingboy .bgholder:nth-child(even) li {
+.campusmap .bgholder:nth-child(even) li {
   font-family: roundedMplus1cLight;
   color: #212529;
 }
-.swingboy li{
+.campusmap li{
   padding-left: 0.5em;
   list-style: none;
   font-size: 25pt;
@@ -88,7 +88,12 @@ height:100%;
   opacity: 0.5;
   border-top: solid 1.5px #2C3D6C;
   border-bottom: solid 1.5px #2C3D6C;
-
+}
+.mapcontainer a div:hover{
+background-color:#8ECB91;
+-moz-transition:all .2s ease-in;
+-o-transition:all .2s ease-in;
+-webkit-transition:all .2x ease-in;
 }
 .sus {
   height: 4%;
@@ -288,90 +293,86 @@ position: absolute;
   position: absolute;
 }
 </style>
-<div class="swingboy">
 
-<!-- <img src="images/campus-map.svg" alt="a map of campuses in Louisiana"> -->
-</div>
-
-    <div class="swingboy">
+    <div class="campusmap">
       <img src="images/campus-map.svg" alt="a map of campuses in Louisiana">
       <div class="mapcontainer">
-            <a class="" href="http://www.susla.edu/">
+            <a class="" href="http://www.susla.edu/" title="Southern University at Shreveport">
               <div class="sus"></div>
             </a>
-            <a class="" href="http://www.lsuhscshreveport.edu/">
+            <a class="" href="http://www.lsuhscshreveport.edu/" title="LSU Health Sciences Center-Shreveport (LSUHSC-S)">
               <div class="lsuhsc-s"></div>
             </a>
-            <a class="" href="http://www.latech.edu/">
+            <a class="" href="http://www.latech.edu/" title="Louisiana Tech University (LA Tech)">
               <div class="la-tech"></div>
             </a>
-            <a class="" href="http://www.ulm.edu/">
+            <a class="" href="http://www.ulm.edu/" title="University of Louisiana at Monroe (ULM)">
               <div class="ulm"></div>
             </a>
-            <a class="" href="http://www.lsus.edu/">
+            <a class="" href="http://www.lsus.edu/" title="Louisiana State University-Shreveport (LSU-S)">
               <div class="lsu-s"></div>
             </a>
-            <a class="" href="http://www.lsu.edu/">
+            <a class="" href="http://www.lsu.edu/" title="Louisiana State University (LSU)">
               <div class="lsu"></div>
             </a>
-            <a class="" href="http://www.gram.edu/">
+            <a class="" href="http://www.gram.edu/" title="Grambling State University">
               <div class="grambling"></div>
             </a>
-            <a class="" href="http://www.nsula.edu/">
+            <a class="" href="http://www.nsula.edu/" title="Northwestern State University">
               <div class="nsu"></div>
             </a>
-            <a class="" href="http://www.centenary.edu/">
+            <a class="" href="http://www.centenary.edu/" title="Centenary College">
               <div class="centenary"></div>
             </a>
-            <a class="" href="http://www.lacollege.edu/">
+            <a class="" href="http://www.lacollege.edu/" title="Louisiana College">
               <div class="lacollege"></div>
             </a>
-            <a class="" href="http://www.lsua.edu/">
+            <a class="" href="http://www.lsua.edu/" title="Louisiana State University-Alexandria">
               <div class="lsu-a"></div>
             </a>
-            <a class="" href="http://www.mcneese.edu/">
+            <a class="" href="http://www.mcneese.edu/" title="McNeese State University">
               <div class="mcneese"></div>
             </a>
-            <a class="" href="http://www.louisiana.edu/">
+            <a class="" href="http://www.louisiana.edu/" title="University of Louisiana at Lafayette">
               <div class="ull"></div>
             </a>
-            <a class="" href="http://www.franu.edu/">
+            <a class="" href="http://www.franu.edu/" title="Franciscan Missionaries of Our Lady University, formerly called Our Lady of the Lake College">
               <div class="ololc"></div>
             </a>
-            <a class="" href="http://www.subr.edu/">
+            <a class="" href="http://www.subr.edu/" title="Southern University and A&M College (SUBR)">
               <div class="subr"></div>
             </a>
-            <a class="" href="http://www.mybrcc.edu/">
+            <a class="" href="http://www.mybrcc.edu/" title="Baton Rouge Community College">
               <div class="brcc"></div>
             </a>
-            <a class="" href="http://www.pbrc.edu/">
+            <a class="" href="http://www.pbrc.edu/" title="Pennington Biomedical Research Center (PBRC)">
               <div class="pbrc"></div>
             </a>
-            <a class="" href="http://www.nicholls.edu/">
+            <a class="" href="http://www.nicholls.edu/" title="Nicholls State University">
               <div class="nicholls"></div>
             </a>
-            <a class="" href="http://www.selu.edu/">
+            <a class="" href="http://www.selu.edu/" title="Southeastern Louisiana University">
               <div class="selu"></div>
             </a>
-            <a class="" href="http://www.tnprc.tulane.edu/">
+            <a class="" href="http://www.tnprc.tulane.edu/" title="Tulane National Primate Research Center (TNPRC)">
               <div class="tnprc"></div>
             </a>
-            <a class="" href="http://www.uno.edu/">
+            <a class="" href="http://www.uno.edu/" title="University of New Orleans">
               <div class="uno"></div>
             </a>
-            <a class="" href="http://www.suno.edu/">
+            <a class="" href="http://www.suno.edu/" title="Southern University at New Orleans">
               <div class="suno"></div>
             </a>
-            <a class="" href="http://www.dillard.edu/">
+            <a class="" href="http://www.dillard.edu/" title="Dillard University">
               <div class="dillard"></div>
             </a>
-            <a class="" href="http://www.lsuhsc.edu/">
+            <a class="" href="http://www.lsuhsc.edu/" title="LSU Health Sciences Center-New Orleans (LSUHSC-NO)">
               <div class="lsuhsc"></div>
             </a>
-            <a class="" href="http://www.tulane.edu/">
+            <a class="" href="http://www.tulane.edu/" title="Tulane University">
               <div class="tulane"></div>
             </a>
-            <a class="" href="http://www.xula.edu/">
+            <a class="" href="http://www.xula.edu/" title="Xavier University of Louisiana (XULA)">
               <div class="xavier"></div>
             </a>
       </div>
