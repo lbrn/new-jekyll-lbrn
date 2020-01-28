@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: 18th LBRN Annual Meeting
-categories: featured
+categories: news
 featuredImageUrl: images/postImages/2020_AM_banner.png
 featuredImageUrlSquare: images/postImages/2020_AM_banner.png
 excerpt_separator: <!--more-->
