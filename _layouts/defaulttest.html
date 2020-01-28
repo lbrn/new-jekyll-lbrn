@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="layout">
+        <a href="index.html"><img src="images/webLogo.png" alt="LBRN Logo"></a>
+        <h1>Louisiana&nbsp;Biomedical Research&nbsp;Network</h1>
+        <button id="navBug" class="btn" type="button" data-toggle="collapse" data-target="#navdropdownsmall" aria-expanded="false" aria-controls="collapseExample">
+          <img src="images/menuClosed.png" alt="Menu Bug" id="navButton">
+        </button>
+        <!-- <a href="#"><img id="navBug" src="images/menuClosed.png" alt="Menu Bug"></a> -->
+      </div>
+    </header>
+
+
+    <div id="navdropdownsmall" class="navdropdown collapse">
+      <ul class="layout">
+        <li><a href="about.html">About</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="lbrn-events.html">Events</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li class="right">
+            <a class="button" href="newsletter.html">Newsletter</a>
+        </li>
+        <li class="right">
+            <a target="_blank" href="https://www.facebook.com/LouisianaBiomedicalResearchNetwork" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/lbrn_inbre" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.youtube.com/user/LBRNINBRE/videos" aria-label="Youtube"><i class="fa fa-youtube-square"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navdropdownbig navdropdown">
+
+      <ul class="layout">
+
+        <ul >
+          <li>
+            <!-- <a href="#" >Dropdown Link</a> -->
+            <a href="about.html">About</a>
+            <ul >
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul >
+          <li>
+            <a href="people.html">People</a>
+            <!-- <a href="#" class="ab">Dropdown Link2</a> -->
+            <ul >
+              <li><a href="#">Link 4</a></li>
+              <li><a href="#">Link 5</a></li>
+              <li><a href="#">Link 6</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+
+        <li><a href="research.html">Research</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="lbrn-events.html">Events</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li class="right">
+            <a class="button" href="newsletter.html">Newsletter</a>
+        </li>
+        <li class="right socialMedia">
+            <a target="_blank" href="https://www.facebook.com/LouisianaBiomedicalResearchNetwork" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/lbrn_inbre" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.youtube.com/user/LBRNINBRE/videos" aria-label="Youtube"><i class="fa fa-youtube-square"></i></a>
+        </li>
+      </ul>
+    </div>
+    <section class="page-heading layout">
+      <h1>{{page.title}}</h1>
+    </section>
+    <main class="layout">
+      <div class="content">
+        {{content}}
+      </div>
+    </main>
+    <footer>
+      <div class="layout">
+        <p>
+          copyright <a href="https://lbrn.lsu.edu:8443/lbrn/Login.jsp">&copy;</a> LBRN {{ 'now' | date: "%Y" }}<br>
+          <a href="https://www.lsu.edu/feedback" class="bold">Provide Website Feedback</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://www.lsu.edu/accessibility" class="bold">Accessibility Statement</a>
+        </p>
+        <p>Support from the National Institute of Health through the National institute of General Medical Science Grant
+          <span>5&nbsp;P2O&nbsp;GM103424-17</span> is gratefully acknowledged.</p>
+      </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scrollMenu.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    {% include google-analytics.html %}
+  </body>
+</html>
