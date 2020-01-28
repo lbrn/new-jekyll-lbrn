@@ -498,20 +498,23 @@
   active: true
   origin: Louisiana Tech University
   image: newman.jpg
-  project_title: The role of mediator in maintaining and differentiating human mesenchymal stem cells
-  abstract: |
-    The maintenance of healthy cell state is required to prevent a number of human diseases, including developmental defects, autoimmune disease, and cancer.  Small changes in the ability of a cell to properly regulate transcription and gene expression can result in large phenotypic changes.  As medicine looks to novel therapies  to  treat  human  disease,  adult  stem  cells  and  their  therapeutic  potential  are  being  heavily investigated.  The interest in stem cells is in their inherent cellular properties of self-renewal and their ability to be directed toward a number of terminally differentiated cell fates.  To optimize the use of these cells in the clinic, it is first important that we gain a better understanding of what maintains their cell state as a healthy, multipotent cell, and what is necessary for them to properly differentiate down a specific lineage.
-
-    Regulation of gene expression relies on a coordinated interaction of environmental stimuli, internal signaling cascades, transcription factors, chromatin modifiers, microRNAs (miRNAs), and the transcriptional machinery.   Here we propose exploring the role of a large multisubunit protein complex in maintaining the unique properties of mesenchymal stem cells (MSCs), a population of adult stem cells found in human bone marrow, adipose tissue, and umbilical cord blood, recently identified to have tremendous therapeutic potential. Earlier work in this field demonstrated a critical role for Mediator in maintaining embryonic stem cell state by facilitating long-range cell-type specific interactions that promoted gene expression profiles necessary to maintain the pluripotency of embryonic stem cells (Kagey et al. 2010). The goal of the project proposed here is to determine the role that specific Mediator subunits have in adult mesenchymal stem cell state.  Specifically we are interested in identifying the genes regulated by Mediator, how expression of those genes is altered following the loss of specific Mediator subunits, how these changes in gene expression affect cell fate commitments, and finally how we can use this information to better understand the use of MSCs in clinical settings.  The growing interest in adult stem cells and their use in the clinic demands more in-depth study of the mechanisms that control their distinct cell properties.
+  project_title: Comparing Treatment of Adipose Stem Cells for the Differentiation of Clinically Relevant Cells
+  abstract: Human adipose-derived stem cells are the easiest adult stem cells to access, harvest, and isolate, providing the largest supply of autologous stem cells for clinical application1–4. As stem cells, hASCs have the ability to self-renew, differentiate, and suppress inflammation. These cells are being used along with other components of the stromal vascular fraction (SVF) to treat autoimmune conditions, inflammatory diseases, and specific injuries. In clinical trials, these cells are being isolated and expanded to treat a similar set of health conditions with a more targeted interest in regeneration. In addition to these on-going clinical studies there is also research being performed to generate tissue patches that can aid in the repair of significant injury to tissue including heart and skeletal muscle. With the interest in using isolated stem cells in cell-based treatments and in areas of tissue engineering and regenerative medicine it is critical that we find efficient and clinically relevant methods for maintaining and differentiating stem cells. To accomplish this, the proposed project brings together an interdisciplinary, university-industry collaborative team consisting of investigators from Biological Sciences and Biomedical Engineering at Louisiana Tech University, Medicine at Tulane University, and LaCell LLC, a Louisiana based biotechnology company that focuses on promoting a wider usage of primary human stromal/stem cell cultures as a more reliable, clinically relevant stem cell source.
 
   mentors:
     -
       name: Bruce Bunell
       origin: Tulane University
+    -
+      name: Jeff Gimbel
+      origin: Tulane University
   funding:
     -
       name: Full Project
       period: May 1, 2015 - April 30, 2018
+    -
+      name: Translational
+      period: May 1, 2019  April 1, 2020
 
 -
   name: Adarsh Radadia
@@ -747,6 +750,24 @@
       period: May 1, 2016 – April 30, 2019
   abstract: |
     Super small metal particles (<2nm, thereinafter referred as nanoclusters) represent an emerging new type of alternative fluorescent probes due to their excellent biocompatibility, tunable emission, large Stokes shift, and long fluorescence lifetime. However, the low quantum yield being the most serious weakness limits their practical applications. The goal of this project is to develop a hybridized hierarchical nanostructure which contains metal particles of 20–50nm (thereinafter referred as nanoparticles) and small metal nanoclusters to greatly enhance the fluorescence emission of the small metal nanoclusters by coupling surface plasmon resonance of the big metal nanoparticles. This project focuses on increasing the fluorescence quantum yield of metal nanoclusters for bioimaging applications by utilizing metal surface plasmon resonances through controlling the morphology and size of the big metal nanoparticles, as well as the distance between the nanoparticles and the nanoclusters. This study investigates the mechanism of fluorescence coupling with surface plasmon resonance, establishes a basic theoretical understanding for solving the low quantum yield issue of metal nanoclusters. The research outcomes will help to develop efficient targeting fluorescent nanoprobes for imaging and diagnosis of tumors for medical application.
+
+-
+  name: Urska Cvek
+  active: true
+  origin: Louisiana State University, Shreveport, Department of Chemistry and Physics
+  image: BBC-Core/BBC-Urska-Cvek.jpg
+  project_title: Design and application of mobile app to improve detection of undiagnosed and pre- diabetes
+  mentors:
+    -
+      name: Jerry McLarty
+      origin: Feist-Weiller Cancer Center, Shreveport
+    -
+  funding:
+    -
+      name: Full Project
+      period: May 1, 2016 – April 30, 2019
+  abstract: |
+    The goal of this research is to design, implement and in the long-term evaluate the application of mobile technology to  improve detection of undiagnosed diabetes and pre-diabetes. Specifically, we would like to develop this app that is an innovation on the current available set of apps. We believe that the addition of an app on smart phones in outpatient settings to the current standard practice will lead to improved diagnosis of diabetes and pre-diabetes in these patients.
 
 -
   name: Waneene Dorsey

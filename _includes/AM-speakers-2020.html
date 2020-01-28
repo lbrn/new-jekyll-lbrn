@@ -1,0 +1,12 @@
+{% for speakers in site.data.AM-speakers-2020 %}
+<section>
+  <a href="{{speakers.pdf}}" target="_blank" alt="Speaker's associated PDF">
+    <img src="{{speakers.picture}}" alt="{{speakers.name}} 's PDF thumbnail'">
+  </a>
+	<h3>{{speakers.title2}}</h3>
+	<p>{{speakers.name}}</p>
+	<p>{{speakers.university}}</p>
+	<p>{{speakers.title1}}</p>
+
+</section>
+{% endfor %}

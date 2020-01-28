@@ -1,5 +1,5 @@
 <article class="person npi" >
-  <img src="images/people/PIs/{{ people.firstname | slice: 0}}{{ people.lastname }}.jpg" alt=" {{people.lastname}}, {{people.firstname}}'s portrait photo.">
+  <img src="images/people/PIs/{{ people.firstname | slice: 0}}{{ people.lastname }}.jpg?v1.0" alt=" {{people.lastname}}, {{people.firstname}}'s portrait photo.">
   <!-- <img src="images/people/{{people.photo}}" alt="{{people.author}}'s portrait photo."> -->
   <h4>{{people.firstname}} {{people.lastname}}</h4>
   <h5 >{{people.university}}</h5>
@@ -7,23 +7,4 @@
 
   <a class="natural-link" href="/pis/{{people.lastname}}_{{people.firstname}}.html"><h5>{{people.titleu}}</h5></a>
 
-
-  <!-- <a class="natural-link" href="{{people.url | relative_url }}"><h5>title: {{people.title}}</h5></a> -->
 </article>
-<!-- <article class="person">
-  --- <br>
-  layout: pidatapage_new <br>
-  person: {{people.firstname}} {{people.lastname}} <br>
-  --- <br>
-
-
-        Name
-
-        University
-
-        Type of Project
-
-        Title of Project
-
-
-</article> -->

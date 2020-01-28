@@ -96,10 +96,10 @@
       <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->
       <div class="content profilepage">
 
+        {{page.person }}
 
         {% for pi in site.data.LBRNProjects_DATA_LABELS  %}
         {% assign x = pi.firstname | append: ' ' | append: pi.lastname %}
-        <!-- <p>x: {{x}}</p> -->
           {% if x  == page.person %}
           <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ page.person | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
             <div class="page">
@@ -134,11 +134,13 @@
                     {% if pi.mentors != nil %}
                       {% if pi.mentors contains "," %}
                       <h2>Mentors</h2>
+                      {% elsif pi.mentors contains "Collaborator:" %}
+                      <h2> Collaborator </h2>
                       {%else %}
                       <h2>Mentor</h2>
                       {%endif%}
 
-                      <p>{{ pi.mentors | replace: "), ", ")  <br>"  }}</p>
+                      <p>{{ pi.mentors | replace: "), ", ")  <br>" | replace: "Collaborator:", "" }}</p>
                       <br>
                     {% endif %}
 
@@ -148,14 +150,14 @@
                     {% else %}
                       <h2>Funding Period</h2>
                     {% endif %}
-                    <p>{{pi.projectdates | replace: "), ", ")  <br>"  }}</p>
+                    <p>{{pi.projectdates | replace: "), ", ")  <br>" }}</p>
                     {% for funding in pi.funding %}
                       <p>{{ funding.name }} ({{funding.period}})</p>
                     {% endfor %}
                   </div>
                   <div class="profileimg">
                          <!-- <p>"/images/people/{{ pi.lastname }}.jpg"</p> -->
-                    <img src="/images/people/PIs/{{ pi.firstname | slice: 0}}{{ pi.lastname }}.jpg" alt="{{x}}" class="img-polaroid">
+                    <img src="/images/people/PIs/{{ pi.firstname | slice: 0}}{{ pi.lastname }}.jpg?v1.0" alt="{{x}}" class="img-polaroid">
                   </div>
                   {% if pi.abstract != null %}
                   <div class="profile-txt">
@@ -184,12 +186,12 @@
     <footer>
       <div class="layout">
         <p>
-          copyright <a href="https://lbrn.lsu.edu:8080/lbrn/Login.jsp">&copy;</a> LBRN {{ 'now' | date: "%Y" }}<br>
+          copyright &copy; LBRN {{ 'now' | date: "%Y" }}<br>
           <a href="https://www.lsu.edu/feedback" class="bold">Provide Website Feedback</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="https://www.lsu.edu/accessibility" class="bold">Accessibility Statement</a>
         </p>
         <p>Support from the National Institute of Health through the National institute of General Medical Science Grant
-          <span>5&nbsp;P2O&nbsp;GM103424-17</span> is gratefully acknowledged.</p>
+          <span>5&nbsp;P2O&nbsp;GM103424-18</span> is gratefully acknowledged.</p>
       </div>
     </footer>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

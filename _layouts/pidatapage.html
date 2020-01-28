@@ -92,7 +92,7 @@
 
         {% for pi in site.data.pis %}
           {% if pi.name == page.author %}
-          <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.author | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
+          <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.name | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
             <div class="page">
               <!-- <h2 class="page-title" >{{ page.author }}</h2> -->
               <p id="uni">
@@ -131,7 +131,7 @@
                     {% endfor %}
                   </div>
                   <div class="profileimg">
-                    <img src="/images/people/{{ pi.image }}" alt="{{pi.author}}" class="img-polaroid">
+                    <img src="/images/people/{{ pi.image }}/?v1.0" alt="{{pi.author}}" class="img-polaroid">
                   </div>
                   <div class="profile-txt">
                   <h2 class="profile">Abstract</h2>
@@ -157,12 +157,12 @@
     <footer>
       <div class="layout">
         <p>
-          copyright <a href="https://lbrn.lsu.edu:8080/lbrn/Login.jsp">&copy;</a> LBRN {{ 'now' | date: "%Y" }}<br>
+          copyright &copy; LBRN {{ 'now' | date: "%Y" }}<br>
           <a href="https://www.lsu.edu/feedback" class="bold">Provide Website Feedback</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="https://www.lsu.edu/accessibility" class="bold">Accessibility Statement</a>
         </p>
         <p>Support from the National Institute of Health through the National institute of General Medical Science Grant
-          <span>5&nbsp;P2O&nbsp;GM103424-17</span> is gratefully acknowledged.</p>
+          <span>5&nbsp;P2O&nbsp;GM103424-18</span> is gratefully acknowledged.</p>
       </div>
     </footer>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

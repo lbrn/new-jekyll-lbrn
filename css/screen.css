@@ -42,11 +42,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #5ab35e!important;
 }
 @media (min-width: 0) {
+
   .socialMedia{
     display:none;
     margin-right:unset;
       /* padding-right:0.5em; */
   }
+
+
+  #lbrnEventSidebar2 .active {
+    /* color: #c2e3c4!important; */
+    font-weight: 400!important;
+  }
+
   #lbrnEventSidebarUl .mobilefilter {
   }
   .mobilefilter{
@@ -275,7 +283,7 @@ float:left;
 
 
   .peoplewrap{
-    width: 100%;
+        width: 100%;
     min-height: 8em;
     /* margin-bottom: 2%; */
     /* margin-top: 2%; */
@@ -1822,6 +1830,134 @@ div.research img{
 
     display: none;
   }
+  .filterDiv {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+
+  .btn:hover {
+
+  }
+
+  .btn.active {
+    /* background-color: #666; */
+    /* color: white; */
+  }
+  /* #bbc-core-list{
+    text-align: center;
+  } */
+  #core-list{
+    text-align: center;
+
+  }
+  #core-list div{
+  	width: 40%;
+  	margin-left: 30%;
+
+  }
+  .admin-core-list div{
+    height:10em;
+
+  }
+  #core-list .triblock{
+
+    display: inline-block;
+    width: 30%;
+    margin-left: unset;
+  }
+  #core-list .quintblock{
+
+    display: inline-block;
+    width: 19%;
+    margin-left: unset;
+  }
+  #core-list .quintblock h1{
+    font-size:14pt;
+    /* color: red; */
+  }
+  #core-list .quintblock h2{
+    font-size:11pt;
+    /* color: red; */
+
+  }
+  /* .quintblock h1{
+    font-size: 14pt!important;
+  } */
+  /* .quintblock h2{
+    font-size: 11pt!important;
+  } */
+  #core-list .sevenblock{
+
+    display: inline-block;
+    width: 13%;
+    margin-left: unset;
+
+  }
+  #core-list .sevenblock h1{
+    font-size:12pt;
+    /* color: red; */
+  }
+  #core-list .sevenblock h2{
+    font-size:11pt;
+    /* color: red; */
+
+  }
+  #core-list h1{
+    font-size: 17pt;
+  }
+  #core-list h2{
+    font-size: 13pt;
+  }
+  #core-list ul{
+    background-color: unset;
+  }
+  #core-list .vertline{
+    height:2em;
+	border: #8ECB91;
+	border-style: none dotted none none;
+	height: 2em;
+	width: 50%;
+
+  }
+  #core-list .horiline{
+    /* height:2em; */
+  border: #8ECB91;
+  border-style: none none dotted none;
+  /* height: 2em; */
+  width: 100%;
+
+  }
+   .bbc-core-list  .horiline{
+    width:80%!important;
+    margin-left:10%;
+    margin-right:10%;
+  }
+  #core-list span{
+    border: #8ECB91;
+    border-style:dotted none none none;
+    height: unset;
+    width: 100%;
+    display: block;
+
+  }
+  #core-list ul li{
+    width: unset;
+    padding: unset;
+    float: none;
+    height:1.5em;
+  }
+  #core-list li{
+    font-size: 11pt;
+    list-style: none;
+  }
+
   }
   /* end 0 */
 @media (min-width: 414px) {
@@ -1836,7 +1972,7 @@ div.research img{
 
 
   .peoplewrap{
-    width: 100%;
+        width: 100%;
     /* height: 11em; */
     /* min-height: 15em; */
 /* display: inline-block; */
@@ -2034,7 +2170,7 @@ div.research img{
 }
 
   .peoplewrap{
-    width: 100%;
+        width: 100%;
     /* height: 11em; */
     /* min-height: 12em; */
     display: block;
@@ -2653,8 +2789,9 @@ section.directory article.person{
     text-align: center;
     text-transform: capitalize; }
   #lbrnEventSidebar .active {
-    background-color: #c2e3c4;
-    font-weight: 400; }
+    background-color: #c2e3c4!important;
+    font-weight: 400!important;
+  }
 
   #mobileChooseType {
     display: none; }
@@ -2703,6 +2840,7 @@ section.directory article.person{
   }
 
   .peoplewrap{
+        width: 100%;
     display:inline-block;
     width: 100%;
   }
@@ -3375,6 +3513,7 @@ font-weight: 400;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 4%;
+  display: none;
 
 }
 /* .vidhori{
@@ -3591,9 +3730,10 @@ display: block;
   width:100%;
   /* border: 2px solid red; */
 }
-/* #lbrnEventSidebar2 .active {
-  background-color: #c2e3c4;
-  font-weight: 400; } */
+#lbrnEventSidebar2 .active {
+  background-color: #c2e3c4!important;
+  font-weight: 400  !important;
+}
 
   .dropdown-item_cust {
       display: block;
