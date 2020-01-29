@@ -10,6 +10,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+
+    <!-- <style>
+
+    .bar {background-color: green;
+    margin-bottom:10em; }
+    .navdropdown ul li ul li{
+      margin-right:unset;
+      width:100%;
+    }
+    .navdropdown ul li ul{
+      max-width:5em;
+    }
+    .navdropdown ul li ul li a{
+      background: white;
+      color: #2C3D6C;
+    }
+    .bar a{
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      display:inline-block;
+    }
+    ul {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+    ul li{
+      display: inline-block;
+    }
+    ul li:hover {background: #555;}
+    ul li:hover ul {display: block;}
+    ul li ul {
+      position: absolute;
+      width: 200px;
+      display: none;
+      margin-right:unset;
+    }
+    ul li ul li {
+      display: block;
+      color: #2C3D6C;
+    }
+    ul li ul li a {display:block !important;}
+    ul li ul li:hover {background: #666;}
+    </style> -->
+
     <header>
       <div class="layout">
         <a href="index.html"><img src="images/webLogo.png" alt="LBRN Logo"></a>
@@ -24,11 +71,13 @@
 
     <div id="navdropdownsmall" class="navdropdown collapse">
       <ul class="layout">
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">About</a>
+        </li>
         <li><a href="people.html">People</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="resources.html">Resources</a></li>
         <li><a href="lbrn-events.html">Events</a></li>
+        <li><a href="education.html">Education</a></li>
         <li class="right">
             <a class="button" href="newsletter.html">Newsletter</a>
         </li>
@@ -40,99 +89,24 @@
       </ul>
     </div>
 
-    <style>
-    .bar {background-color: green;
-    margin-bottom:10em; }
-    .navdropdown ul li ul li{
-      margin-right:unset;
-      width:100%;
-    }
-    .navdropdown ul li ul{
-      max-width:5em;
-    }
-    .navdropdown ul li ul li a{
-      background: white;
-      color: #2C3D6C;
-      font-size: 13pt;
-      margin: unset;
-      padding: unset;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
-    }
-    .bar a{
-      text-decoration: none;
-      color: white;
-      font-size: 20px;
-      padding: 15px;
-      display:inline-block;
-    }
-
-    .navdropdownbig ul li{
-      display: inline-block;
-    }
-
-    .navdropdownbig ul li:hover ul {display: block;}
-    .navdropdownbig ul li ul {
-      position: absolute;
-      /* width: 200px; */
-      display: none;
-      /* this display shows the  */
-      margin-right:unset;
-    }
-    .navdropdownbig ul li ul li {
-      display: block;
-      color: #2C3D6C;
-      width: 6em;
-      border-bottom: 1px solid #2C3D6C;
-    }
-    .navdropdownbig ul li ul li:last-child {
-      border-bottom: 1px solid #2C3D6C;
-    }
-
-    .navdropdownbig ul li ul li a {display:block !important;}
-    </style>
-
     <div class="navdropdownbig navdropdown">
       <ul class="layout">
         <li><a href="about.html">About</a>
-          <ul>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="#">Registration</a></li>
-          </ul>
+          <!-- <ul >
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul> -->
         </li>
-        <li><a href="people.html">People</a>
-          <ul>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="#">Registration</a></li>
-          </ul>
-        </li>
-        <li><a href="research.html">Research</a>
-          <ul>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="#">Registration</a></li>
-          </ul>
-        </li>
-        <li><a href="resources.html">Resources</a>
-          <ul>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="#">Registration</a></li>
-          </ul>
-        </li>
-        <li><a href="lbrn-events.html">Events</a>
-          <ul>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="#">Registration</a></li>
-          </ul>
-        </li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="lbrn-events.html">Events</a></li>
+        <li><a href="education.html">Education</a></li>
         <li class="right">
             <a class="button" href="newsletter.html">Newsletter</a>
         </li>
-        <li class="right">
+        <li class="right socialMedia">
             <a target="_blank" href="https://www.facebook.com/LouisianaBiomedicalResearchNetwork" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
             <a target="_blank" href="https://twitter.com/lbrn_inbre" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
             <a target="_blank" href="https://www.youtube.com/user/LBRNINBRE/videos" aria-label="Youtube"><i class="fa fa-youtube-square"></i></a>
