@@ -14,7 +14,7 @@
       <div class="layout">
         <a href="index.html"><img src="images/webLogo.png" alt="LBRN Logo"></a>
         <h1>Louisiana&nbsp;Biomedical Research&nbsp;Network</h1>
-        <button id="navBug" class="btn" type="button" data-toggle="collapse" data-target="#navdropdownsmall" aria-expanded="false" aria-controls="collapseExample">
+        <button id="navBug" class="btn" type="button" data-toggle="collapse" data-target=".navdropdownbig" aria-expanded="false" aria-controls="collapseExample">
           <img src="images/menuClosed.png" alt="Menu Bug" id="navButton">
         </button>
         <!-- <a href="#"><img id="navBug" src="images/menuClosed.png" alt="Menu Bug"></a> -->
@@ -22,7 +22,7 @@
     </header>
 
 
-    <div id="navdropdownsmall" class="navdropdown collapse">
+    <!-- <div id="navdropdownsmall" class="navdropdown collapse">
       <ul class="layout">
         <li><a href="about.html">About</a></li>
         <li><a href="people.html">People</a></li>
@@ -38,7 +38,7 @@
             <a target="_blank" href="https://www.youtube.com/user/LBRNINBRE/videos" aria-label="Youtube"><i class="fa fa-youtube-square"></i></a>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <style>
     .bar {background-color: green;
@@ -90,6 +90,12 @@
     }
 
     .navdropdownbig ul li ul li a {display:block !important;}
+    @media (max-width: 600px) {
+    .navdropdownbig ul li {
+  	   /* display: inline-block; */
+  	   width: 100%;
+     }
+    }
     </style>
 
     <div class="navdropdownbig navdropdown">
@@ -119,7 +125,7 @@
           <ul>
             <li><a href="#">Research</a></li>
             <li><a href="#">Map</a></li>
-            <li><a href="#">Registration</a></li>
+            <li><a href="video-repository.html">Video Repo</a></li>
           </ul>
         </li>
         <li><a href="lbrn-events.html">Events</a>

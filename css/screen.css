@@ -110,7 +110,7 @@ padding-bottom: 1em;
   font-size: 0.85em;
 }
 
-  .vidtext h2{
+  .vidsection div h2{
       font-size: 0.8em;
       color: #2C3D6C;
       margin-top: 0 !important;
@@ -124,6 +124,12 @@ padding-bottom: 1em;
       border: 0;
       margin:0;
       font-family: "Open Sans Condensed", sans-serif !important;
+  }
+  .vidsection div{
+    display: inline-block;
+    width: 70%;
+    margin-top: 1.5%;
+    padding: unset;
   }
 
 
@@ -3464,7 +3470,17 @@ font-weight: 400;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 4%;
-  display: none;
+  /* display: none; */
+
+}
+.vidsection iframe{
+height: 5em;
+width: 85%;
+padding: 7.5%;
+float: left;
+border-radius: 6px;
+width: 20%;
+padding: 2.5%;
 
 }
 /* .vidhori{
