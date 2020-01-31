@@ -38,6 +38,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* End at 1295ish */
 
 @media (min-width: 0) {
+  .socialMedia{
+    display:none;
+    margin-right:unset;
+      /* padding-right:0.5em; */
+  }
 
 
   #lbrnEventSidebar2 .active {
@@ -2140,6 +2145,7 @@ div.research img{
     .navdropdown ul li ul li{
       margin-right:unset;
       width:100%;
+
     }
     .navdropdown ul li ul{
       max-width:5em;
@@ -2172,6 +2178,7 @@ div.research img{
       display: none;
       /* this display shows the  */
       margin-right:unset;
+      z-index: 1000;
     }
     .navdropdownbig ul li ul li {
       display: block;
@@ -2851,6 +2858,9 @@ section.directory article.person{
   div.chooseTypeInline {
     display: flex; } }
 @media (min-width: 860px) {
+  .socialMedia{
+    display:block;
+  }
 
   .peoplewrap{
         width: 100%;
