@@ -2135,8 +2135,62 @@ div.research img{
       border-top: 1px solid #2C3D6C;
       /* font-weight: 300; */
     }
+    .bar {background-color: green;
+    margin-bottom:10em; }
+    .navdropdown ul li ul li{
+      margin-right:unset;
+      width:100%;
+    }
+    .navdropdown ul li ul{
+      max-width:5em;
+    }
+    .navdropdown ul li ul li a{
+      background: white;
+      color: #2C3D6C;
+      font-size: 13pt;
+      margin: unset;
+      padding: unset;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+    .bar a{
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      display:inline-block;
+    }
+
+    .navdropdownbig ul li{
+      display: inline-block;
+      width:100%;
+    }
+
+    .navdropdownbig ul li:hover ul {display: block;}
+    .navdropdownbig ul li ul {
+      position: absolute;
+      display: none;
+      /* this display shows the  */
+      margin-right:unset;
+    }
+    .navdropdownbig ul li ul li {
+      display: block;
+      color: #2C3D6C;
+      width: 6em;
+      border-bottom: 1px solid #2C3D6C;
+    }
+    .navdropdownbig ul li ul li:last-child {
+      border-bottom: 1px solid #2C3D6C;
+    }
+
+    .navdropdownbig ul li ul li a {display:block !important;}
   }  /* end 0 */
 @media (min-width: 667px) {
+  .navdropdownbig ul li {
+     /* display: inline-block; */
+     width: unset;
+   }
+
   .collapsetstyle{
     display:none !important;
   }

@@ -4,9 +4,9 @@ title: About LBRN
 ---
 <html lang="en">
 <div class="about">
-<h2 >Mission Statement</h2>
+<h2 id="aboutMissionStatement" >Mission Statement</h2>
 <p>Louisiana Biomedical Research Network (LBRN) was established in September 2001 with Biomedical Research Infrastructure Networks (BRIN) funding by the National Institutes of Health (NIH), through the National Center for Research Resources (NCRR) Grant P20RR016456, the LBRN is committed to raising the research competitiveness of Louisiana researchers. IDeA Networks of Biomedical Research Excellence (INBRE) is the second phase of the BRIN Program when LBRN initially started. Currently, LBRN is in the third phase with continued funding by the National Institute of General Medical Sciences (NIGMS) Grant 8P20GM103424 and the Louisiana Board of Regents Support Fund.</p>
-<h2>Goals</h2>
+<h2 id="aboutGoals">Goals</h2>
 <ul>
   <li>Maintain and expand the previously established state-wide infrastructure and intellectual research network supporting interdisciplinary biomedical research.</li>
   <li>Expand and improve the critical mass of biomedical investigators at primary PUI campuses through the support of mentored research, and enhanced communication.</li>
@@ -20,7 +20,7 @@ title: About LBRN
 
 /* Swinging boy image */
 
-.campusmap{
+#campusmap{
   /* background:url(../images/campus-map.svg); */
   /* height: 10vh; */
   /* min-height: 500px; */
@@ -31,13 +31,13 @@ position:relative;
 
 }
 /* Swinging boy text overlay css */
-.campusmap .bgholder{
+#campusmap .bgholder{
   height: 3em;
   width:50%;
 position:relative;
 display:inline-block;
 }
-.campusmap .bg{
+#campusmap .bg{
   background-color:white;
   width:100%;
   height:100%;
@@ -49,26 +49,26 @@ display:inline-block;
   border-color: black;
 }
 
-.campusmap h1{
+#campusmap h1{
   margin-top:12%;
   font-family: roundedMplus1cLight;
   color:#157262;
   z-index: 3;
   position: relative;
 }
-.campusmap ul{
+#campusmap ul{
   padding-left: unset;
   position: relative;
 }
-.campusmap .bgholder:nth-child(even) .bg{
+#campusmap .bgholder:nth-child(even) .bg{
   opacity: 0.7;
 
 }
-.campusmap .bgholder:nth-child(even) li {
+#campusmap .bgholder:nth-child(even) li {
   font-family: roundedMplus1cLight;
   color: #212529;
 }
-.campusmap li{
+#campusmap li{
   padding-left: 0.5em;
   list-style: none;
   font-size: 25pt;
@@ -294,7 +294,7 @@ position: absolute;
 }
 </style>
 
-    <div class="campusmap">
+    <div id="campusmap">
       <img src="images/campus-map.svg" alt="a map of campuses in Louisiana">
       <div class="mapcontainer">
             <a class="" href="http://www.susla.edu/" title="Southern University at Shreveport">
@@ -424,7 +424,7 @@ position: absolute;
   </ul>
 </div>
 <section class="cores">
-  <h2>Cores</h2>
+  <h2 id="aboutCores">Cores</h2>
   <ul id="myBtnContainer">
     <li class="btn active" onclick="filterSelection('admin')">Admin</li>
     <li class="btn" onclick="filterSelection('bbc')">BBC</li>
