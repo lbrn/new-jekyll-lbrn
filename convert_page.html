@@ -2,9 +2,6 @@
 layout: default
 title: cvs to yml converter page
 ---
-<p>
-  convert
-</p>
 
 <style>
   .conversion {
@@ -15,44 +12,55 @@ title: cvs to yml converter page
 </style>
 
 
-<section class="directory collapsenobs CRP" >
+<section class="directory collapsenobs CRP">
 
   {% for people in site.data.LBRNProjects_DATA_LABELS %}
-    {% if people.university != nil and people.university != "University" %}
-    {% assign personname = people.firstname | append: ' ' | append: people.lastname %}
-                 <!-- include ndirectory-currentPi.html  -->
-                 <section class="conversion">
-                   <code>
-                   -
-                   <br>
-                       &nbsp; name: {{personname}}
-                       <br>
-                       &nbsp; active:
-                       <br>
-                       &nbsp; origin: {{people.university}}
-                       <br>
-                   <!-- <img src="/images/people/PIs/{{ people.firstname | slice: 0}}{{ people.lastname }}.jpg" alt="{{x}}" class="img-polaroid"> -->
-                       &nbsp; image: {{ people.firstname | slice: 0}}{{ people.lastname }}.jpg
-                       <br>
-                       &nbsp; project_title: {{people.titleu}}
-                       <br>
-                       &nbsp; funding:
-                       <br>
-                       &nbsp; &nbsp; -
-                       <br>
-                       &nbsp; &nbsp; &nbsp; name: {{people.projectdates}}
-                       <br>
-                       &nbsp; &nbsp; &nbsp; period:
-                       <br>
-                       &nbsp; abstract: |
-                       <br>
+  {% if people.university != nil and people.university != "University" %}
+  {% assign personname = people.firstname | append: ' ' | append: people.lastname %}
+  <!-- include ndirectory-currentPi.html  -->
+  <section class="conversion">
+    <code>
+      -
+      <br>
+      &nbsp; name: {{personname}}
+      <br>
+      &nbsp; active:
+      <br>
+      &nbsp; origin: {{people.university}}
+      <br>
+      <!-- <img src="/images/people/PIs/{{ people.firstname | slice: 0}}{{ people.lastname }}.jpg" alt="{{x}}" class="img-polaroid"> -->
+      &nbsp; image: {{ people.firstname | slice: 0}}{{ people.lastname }}.jpg
+      <br>
+      &nbsp; project_title: {{people.titleu}}
 
-                       &nbsp; &nbsp; &nbsp; {{ people.abstract }}
-                 </code>
-                 </section>
-                 <br>
+      <br>
+      &nbsp; mentors:
+      <br>
+      {% assign mentors = people.mentors | split: "), " %}
+      {% for mentor in mentors %}
+      &nbsp; &nbsp; -
+      <br>
+      &nbsp; &nbsp; &nbsp; name: {{mentor | remove: ")" | replace: "(", "<br> &nbsp; &nbsp; &nbsp; origin: " }}
+      <br>
+      {% endfor %}
+      &nbsp; funding:
+      <br>
+      {% assign funds = people.projectdates | split: "), " %}
+      {% for section in funds %}
+      &nbsp; &nbsp; -
+      <br>
+      &nbsp; &nbsp; &nbsp; name: {{section | remove: ")" | replace: "(", "<br> &nbsp; &nbsp; &nbsp; period: " }}
+      <br>
+      {% endfor %}
 
-            {% endif %}
+      &nbsp; abstract: |
+      <br>
+
+      &nbsp; &nbsp; &nbsp; {{ people.abstract }}
+    </code>
+  </section>
+
+  {% endif %}
 
   {% endfor %}
 
