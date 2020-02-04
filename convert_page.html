@@ -24,7 +24,7 @@ title: cvs to yml converter page
       <br>
       &nbsp; name: {{personname}}
       <br>
-      &nbsp; active:
+      &nbsp; active: true
       <br>
       &nbsp; origin: {{people.university}}
       <br>
@@ -36,22 +36,30 @@ title: cvs to yml converter page
       <br>
       &nbsp; mentors:
       <br>
-      {% assign mentors = people.mentors | split: "), " %}
-      {% for mentor in mentors %}
-      &nbsp; &nbsp; -
+      {% if people.mentors contains "Collaborator:" %}
+      &nbsp; collaborator: {{people.mentors | remove: "Collaborator: "}}
       <br>
-      &nbsp; &nbsp; &nbsp; name: {{mentor | remove: ")" | replace: "(", "<br> &nbsp; &nbsp; &nbsp; origin: " }}
-      <br>
-      {% endfor %}
-      &nbsp; funding:
-      <br>
-      {% assign funds = people.projectdates | split: "), " %}
-      {% for section in funds %}
-      &nbsp; &nbsp; -
-      <br>
-      &nbsp; &nbsp; &nbsp; name: {{section | remove: ")" | replace: "(", "<br> &nbsp; &nbsp; &nbsp; period: " }}
-      <br>
-      {% endfor %}
+
+      {% else %}
+        {% assign mentors = people.mentors | split: "), " %}
+          {% for mentor in mentors %}
+            &nbsp; &nbsp; -
+            <br>
+            &nbsp; &nbsp; &nbsp; name: {{mentor | remove: ")" | replace: "(", "<br> &nbsp; &nbsp; &nbsp; origin: " }}
+            <br>
+            {% endfor %}
+            &nbsp; funding:
+            <br>
+            {% assign funds = people.projectdates | split: "), " %}
+            {% for section in funds %}
+            &nbsp; &nbsp; -
+            <br>
+            &nbsp; &nbsp; &nbsp; name: {{section | remove: ")" | replace: "(", "<br> &nbsp; &nbsp; &nbsp; period: " }}
+            <br>
+          {% endfor %}
+      {% endif %}
+
+
 
       &nbsp; abstract: |
       <br>
@@ -63,91 +71,8 @@ title: cvs to yml converter page
   {% endif %}
 
   {% endfor %}
+  -
 
-  <!-- {{ people.abstract | newline_to_br }} -->
   <br>
 
 </section>
-
-<!-- <div class="content profilepage">
-
-  {{page.person }}
-
-  {% for pi in site.data.LBRNProjects_DATA_LABELS  %}
-  {% assign x = pi.firstname | append: ' ' | append: pi.lastname %}
-    {% if x  == page.person %}
-    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ page.person | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
-      <div class="page">
-        <p id="uni">
-          {{ pi.university  }}
-        </p>
-        <hr>
-        <div class="pi">
-          <div class="row">
-            <div class="mobileimg">
-              <img src="/images/people/PIs/{{ pi.firstname | slice: 0}}{{ pi.lastname }}.jpg" alt="{{x}}" class="img-polaroid">
-            </div>
-            <div class="span6 profile-txt">
-              <h2>Project Title</h2>
-
-              <p class="project-title">{{ pi.titleu }}</p>
-
-
-              <br>
-              <h2>mentors: {{pi.mentors}}</h2>
-              {% if pi.mentors.size > 1 %}
-                <h2>Mentors</h2>
-              {% else %}
-                {% if pi.mentors.size == 1 %}
-                <h2>Mentor</h2>
-                {% endif %}
-              {% endif %}
-
-              {% if pi.mentors != nil %}
-                {% if pi.mentors contains "," %}
-                <h2>Mentors</h2>
-                {% elsif pi.mentors contains "Collaborator:" %}
-                <h2> Collaborator </h2>
-                {%else %}
-                <h2>Mentor</h2>
-                {%endif%}
-
-                <p>{{ pi.mentors | replace: "), ", ")  <br>" | replace: "Collaborator:", "" }}</p>
-                <br>
-              {% endif %}
-
-
-              {% if pi.funding.size > 0 %}
-                <h2>Funding Periods</h2>
-              {% else %}
-                <h2>Funding Period</h2>
-              {% endif %}
-              <p>{{pi.projectdates | replace: "), ", ")  <br>" }}</p>
-              {% for funding in pi.funding %}
-                <p>{{ funding.name }} ({{funding.period}})</p>
-              {% endfor %}
-            </div>
-            <div class="profileimg">
-              <img src="/images/people/PIs/{{ pi.firstname | slice: 0}}{{ pi.lastname }}.jpg" alt="{{x}}" class="img-polaroid">
-            </div>
-            {% if pi.abstract != null %}
-            <div class="profile-txt">
-              <br>
-            <h2 class="profile">Abstract</h2>
-          </div>
-          {% endif %}
-          </div>
-          <br>
-          <div class="abstractp">
-            <p class="long-text">
-              {{ pi.abstract | newline_to_br }}
-            </p>
-            <p class="long-text">
-              {{ pi.descrip | newline_to_br }}
-            </p>
-          </div>
-        </div>
-      </div>
-    {% endif %}
-  {% endfor %}
-</div> -->
