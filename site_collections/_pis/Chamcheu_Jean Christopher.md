@@ -1,5 +1,5 @@
 ---
-layout: pidatapage_test
+layout: pidatapage_new
 title:
 project: Validation of the role of PI3K/AKT/mTOR Signaling in psoriasis and its targeting by fisetin
 person: Jean Christopher Chamcheu
