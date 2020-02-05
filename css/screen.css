@@ -2151,13 +2151,16 @@ div.research img{
       max-width:5em;
     }
     .navdropdown ul li ul li a{
-      background: white;
+      background-color: #d4ebd5;
       color: #2C3D6C;
-      font-size: 13pt;
+      font-size: 1rem;
+      font-weight:400;
       margin: unset;
       padding: unset;
       padding-top: 0.5em;
       padding-bottom: 0.5em;
+      text-align: left;
+      padding-left: 0.4em;
     }
     .bar a{
       text-decoration: none;
@@ -2184,7 +2187,7 @@ div.research img{
       display: block;
       color: #2C3D6C;
       width: 6em;
-      border-bottom: 1px solid #2C3D6C;
+      /* border-bottom: 1px solid #2C3D6C; */
     }
     .navdropdownbig ul li ul li:last-child {
       border-bottom: 1px solid #2C3D6C;
