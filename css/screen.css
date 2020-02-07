@@ -1221,10 +1221,10 @@ main div.content h3:enabled {
     padding: .4em 0;
     width: 95%; }
 
-  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
+  #eventSummary, #eventMediaLink, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
     position: relative;
     margin-bottom: 1.2em; }
-  #eventSummary h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2, #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
+  #eventSummary h2, #eventMediaLink h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2, #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
     padding-left: 1em;
     /* padding-right: 1.5em; */
     margin-top:unset;
@@ -1232,7 +1232,7 @@ main div.content h3:enabled {
     cursor: pointer;
   }
 
-  #eventSummary h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover{
+  #eventSummary h2:hover,  #eventMediaLink h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover{
     background-color: #e5f3e6;
     /* cursor: pointer; */
     border-radius: 10px;
@@ -2709,7 +2709,7 @@ section.directory article.person{
     float: left;
     margin-right: 2.85714%; }
 
-  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
+  #eventSummary, #eventMediaLink, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -2718,13 +2718,13 @@ section.directory article.person{
     margin-left: 0;
     margin-right: 0;
     overflow: hidden; }
-  #eventSummary h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2,  #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
+  #eventSummary h2, #eventMediaLink h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2,  #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
     padding-left: 0;
     background-color: white;
     cursor: auto;
   }
 
-    #eventSummary h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover{
+    #eventSummary h2:hover,  #eventMediaLink h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover{
       background-color: unset;
 }
 
