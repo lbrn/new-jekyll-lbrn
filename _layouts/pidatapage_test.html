@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{page.author}}</title>
+    <title>{{page.person}}</title>
     <link rel="stylesheet" href="{{site.baseurl}}/css/screen.css{% include style.html %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -29,7 +29,7 @@
           <!-- <p>{{page.date | date:" %B, %-d %Y"}}</p> -->
         </div>
         {% else %}
-          <h1 class="pititle">{{page.author}}</h1>
+          <h1 class="pititle">{{page.person}}</h1>
         {% endif %}
       </section>
       <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->
@@ -39,7 +39,7 @@
           {% if pi.name == page.person%}
           <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.name | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
             <div class="page">
-              <!-- <h2 class="page-title" >{{ page.author }}</h2> -->
+              <!-- <h2 class="page-title" >{{ page.person }}</h2> -->
               <p id="uni">
                 {{ pi.origin }}
               </p>
@@ -76,7 +76,7 @@
                     {% endfor %}
                   </div>
                   <div class="profileimg">
-                    <img src="/images/people/PIs/{{ pi.image }}/?v1.0" alt="{{pi.author}}" class="img-polaroid">
+                    <img src="/images/people/PIs/{{ pi.image }}/?v1.0" alt="{{pi.person}}" class="img-polaroid">
                   </div>
                   <div class="profile-txt">
                   <h2 class="profile">Abstract</h2>

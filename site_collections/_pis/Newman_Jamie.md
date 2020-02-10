@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_test
 title: The Role of Mediator in Maintaining and Differentiating Human Mesenchymal Stem Ce
 project: The Role of Mediator in Maintaining and Differentiating Human Mesenchymal Stem Ce
 author: Jamie Newman
