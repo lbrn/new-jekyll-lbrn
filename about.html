@@ -4,9 +4,9 @@ title: About LBRN
 ---
 <html lang="en">
 <div class="about">
-<h2 >Mission Statement</h2>
+<h2 id="aboutMissionStatement" >Mission Statement</h2>
 <p>Louisiana Biomedical Research Network (LBRN) was established in September 2001 with Biomedical Research Infrastructure Networks (BRIN) funding by the National Institutes of Health (NIH), through the National Center for Research Resources (NCRR) Grant P20RR016456, the LBRN is committed to raising the research competitiveness of Louisiana researchers. IDeA Networks of Biomedical Research Excellence (INBRE) is the second phase of the BRIN Program when LBRN initially started. Currently, LBRN is in the third phase with continued funding by the National Institute of General Medical Sciences (NIGMS) Grant 8P20GM103424 and the Louisiana Board of Regents Support Fund.</p>
-<h2>Goals</h2>
+<h2 id="aboutGoals">Goals</h2>
 <ul>
   <li>Maintain and expand the previously established state-wide infrastructure and intellectual research network supporting interdisciplinary biomedical research.</li>
   <li>Expand and improve the critical mass of biomedical investigators at primary PUI campuses through the support of mentored research, and enhanced communication.</li>
@@ -20,7 +20,7 @@ title: About LBRN
 
 /* Swinging boy image */
 
-.campusmap{
+#campusmap{
   /* background:url(../images/campus-map.svg); */
   /* height: 10vh; */
   /* min-height: 500px; */
@@ -31,13 +31,13 @@ position:relative;
 
 }
 /* Swinging boy text overlay css */
-.campusmap .bgholder{
+#campusmap .bgholder{
   height: 3em;
   width:50%;
 position:relative;
 display:inline-block;
 }
-.campusmap .bg{
+#campusmap .bg{
   background-color:white;
   width:100%;
   height:100%;
@@ -49,26 +49,26 @@ display:inline-block;
   border-color: black;
 }
 
-.campusmap h1{
+#campusmap h1{
   margin-top:12%;
   font-family: roundedMplus1cLight;
   color:#157262;
   z-index: 3;
   position: relative;
 }
-.campusmap ul{
+#campusmap ul{
   padding-left: unset;
   position: relative;
 }
-.campusmap .bgholder:nth-child(even) .bg{
+#campusmap .bgholder:nth-child(even) .bg{
   opacity: 0.7;
 
 }
-.campusmap .bgholder:nth-child(even) li {
+#campusmap .bgholder:nth-child(even) li {
   font-family: roundedMplus1cLight;
   color: #212529;
 }
-.campusmap li{
+#campusmap li{
   padding-left: 0.5em;
   list-style: none;
   font-size: 25pt;
@@ -294,25 +294,25 @@ position: absolute;
 }
 </style>
 
-    <div class="campusmap">
+    <div id="campusmap">
       <img src="images/campus-map.svg" alt="a map of campuses in Louisiana">
       <div class="mapcontainer">
             <a class="" href="http://www.susla.edu/" title="Southern University at Shreveport">
               <div class="sus"></div>
             </a>
-            <a class="" href="http://www.lsuhscshreveport.edu/" title="LSU Health Sciences Center-Shreveport (LSUHSC-S)">
+            <a class="" href="http://www.lsuhscshreveport.edu/" title="LSU Health Sciences Center-Shreveport">
               <div class="lsuhsc-s"></div>
             </a>
-            <a class="" href="http://www.latech.edu/" title="Louisiana Tech University (LA Tech)">
+            <a class="" href="http://www.latech.edu/" title="Louisiana Tech University">
               <div class="la-tech"></div>
             </a>
-            <a class="" href="http://www.ulm.edu/" title="University of Louisiana at Monroe (ULM)">
+            <a class="" href="http://www.ulm.edu/" title="University of Louisiana at Monroe">
               <div class="ulm"></div>
             </a>
-            <a class="" href="http://www.lsus.edu/" title="Louisiana State University-Shreveport (LSU-S)">
+            <a class="" href="http://www.lsus.edu/" title="Louisiana State University-Shreveport">
               <div class="lsu-s"></div>
             </a>
-            <a class="" href="http://www.lsu.edu/" title="Louisiana State University (LSU)">
+            <a class="" href="http://www.lsu.edu/" title="Louisiana State University">
               <div class="lsu"></div>
             </a>
             <a class="" href="http://www.gram.edu/" title="Grambling State University">
@@ -339,13 +339,13 @@ position: absolute;
             <a class="" href="http://www.franu.edu/" title="Franciscan Missionaries of Our Lady University, formerly called Our Lady of the Lake College">
               <div class="ololc"></div>
             </a>
-            <a class="" href="http://www.subr.edu/" title="Southern University and A&M College (SUBR)">
+            <a class="" href="http://www.subr.edu/" title="Southern University and A&M College">
               <div class="subr"></div>
             </a>
             <a class="" href="http://www.mybrcc.edu/" title="Baton Rouge Community College">
               <div class="brcc"></div>
             </a>
-            <a class="" href="http://www.pbrc.edu/" title="Pennington Biomedical Research Center (PBRC)">
+            <a class="" href="http://www.pbrc.edu/" title="Pennington Biomedical Research Center">
               <div class="pbrc"></div>
             </a>
             <a class="" href="http://www.nicholls.edu/" title="Nicholls State University">
@@ -354,7 +354,7 @@ position: absolute;
             <a class="" href="http://www.selu.edu/" title="Southeastern Louisiana University">
               <div class="selu"></div>
             </a>
-            <a class="" href="http://www.tnprc.tulane.edu/" title="Tulane National Primate Research Center (TNPRC)">
+            <a class="" href="http://www.tnprc.tulane.edu/" title="Tulane National Primate Research Center">
               <div class="tnprc"></div>
             </a>
             <a class="" href="http://www.uno.edu/" title="University of New Orleans">
@@ -366,13 +366,13 @@ position: absolute;
             <a class="" href="http://www.dillard.edu/" title="Dillard University">
               <div class="dillard"></div>
             </a>
-            <a class="" href="http://www.lsuhsc.edu/" title="LSU Health Sciences Center-New Orleans (LSUHSC-NO)">
+            <a class="" href="http://www.lsuhsc.edu/" title="LSU Health Sciences Center-New Orleans">
               <div class="lsuhsc"></div>
             </a>
             <a class="" href="http://www.tulane.edu/" title="Tulane University">
               <div class="tulane"></div>
             </a>
-            <a class="" href="http://www.xula.edu/" title="Xavier University of Louisiana (XULA)">
+            <a class="" href="http://www.xula.edu/" title="Xavier University of Louisiana">
               <div class="xavier"></div>
             </a>
       </div>
@@ -424,7 +424,7 @@ position: absolute;
   </ul>
 </div>
 <section class="cores">
-  <h2>Cores</h2>
+  <h2 id="aboutCores">Cores</h2>
   <ul id="myBtnContainer">
     <li class="btn active" onclick="filterSelection('admin')">Admin</li>
     <li class="btn" onclick="filterSelection('bbc')">BBC</li>
@@ -436,7 +436,7 @@ position: absolute;
     <h3>Administrative Core</h3>
     <a class="button hidden" title="Core Services" href="bbc-core.html">BBC Core Services</a>
     <p>The Administrative Core (AC) of the Louisiana Biomedical Research Network (LBRN) provides the project with its overall leadership, day-to-day management, evaluation of all of its component parts, and communication with NIH staff. The AC is led by the Principal Investigator in close consultation with the Program Coordinator, as well as the Steering Committee and External Advisory Committee.</p>
-    <div id="core-list"  class="admin-core-list" style="">
+    <div id="core-list"  class="admin-core-list" style=" display:none;">
       <div class="block">
         <h1>K Gus Kousoulas</h1>
         <h2>(Principal Investigator)</h2>
@@ -518,7 +518,7 @@ position: absolute;
 <h3>Bioinformatics, Biostatistics, and Computational Biology Core</h3>
 <a class="button hidden" title="Core Services" href="bbc-core.html">BBC Core Services</a>
 <p>The Bioinformatics, Biostatistics, and Computational Biology Core (BBCC) of the Louisiana Biomedical Research Network (LBRN) serves to train and support project investigators and their teams across Louisiana, and to lead and support translational research activities at the frontiers of biomedical science. Its team uses both established and custom computational tools, operating at computational scales ranging from the mundane to analyses engaging many hundreds of compute cores.</p>
-<div id="core-list" class="bbc-core-list" style="">
+<div id="core-list" class="bbc-core-list" style=" display:none;">
   <div class="block">
     <h1>Christopher Taylor</h1>
     <h2>BBC Core Director</h2>
@@ -655,7 +655,7 @@ position: absolute;
 <a class="button hidden" title="Core Services" href="mcbr-core.html">Molecular and Cell Biology Resources Core</a>
 <p>Molecular and cell biology provide an essential linkage among important basic fields of biomedical science, such as genetics, developmental biology, structural biology, immunology, neurobiology, and cancer biology. The MCBRC takes advantage of existing highly organized, centralized services and equipment facilities located primarily at the LSU flagship institution in Baton Rouge, effectively uniting these units toward the common goal of supporting biomedical research performed by PUI investigators. The MCBRC will provide technical and logistical support, enabling the ready exchange of information, ideas, technology, and research capabilities among PUI investigators. MCBRC will ensure that PUI researchers have full access to state-of-the-art equipment and modern research techniques and services.</p>
 
-<div id="core-list" class="mcbr-core-list" >
+<div id="core-list" class="mcbr-core-list" style=" display:none;">
   <div class="block">
     <h1>Christopher Taylor</h1>
     <h2>BBC Core Director</h2>

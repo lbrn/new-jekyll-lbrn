@@ -15,7 +15,7 @@
 
 
 
-    <main class="layout">
+    <main class="layout datalayout">
       <section id="lbrnEventHeader">
         {% if page.featuredImageUrl %}
         <div class="imagebox">
@@ -24,52 +24,77 @@
         </div>
         <div class="caption">
           <!-- this h1 should contain the blog post title -->
-          <h1 class="post">{{page.author}}</h1>
+          <h1 class="post">{{pi.title}}</h1>
           <!-- this is p is the post-date of the news item -->
           <!-- <p>{{page.date | date:" %B, %-d %Y"}}</p> -->
         </div>
         {% else %}
-          <h1>{{page.author}}</h1>
+          <h1 class="pititle">{{page.author}}</h1>
         {% endif %}
       </section>
       <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->
       <div class="content profilepage">
 
-        {% for pi in site.project_investigators %}
-          {% if pi.author == page.author %}
-          <div class="pubmed_div">
-            <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.author | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
-          </div>
+        {% for pi in site.data.pis_edit %}
+          {% if pi.name == page.person%}
+          <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.name | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
             <div class="page">
-              <p>
+              <!-- <h2 class="page-title" >{{ page.author }}</h2> -->
+              <p id="uni">
                 {{ pi.origin }}
               </p>
               <hr>
               <div class="pi">
                 <div class="row">
-                  <div class="span6  profile-txt">
-                    <h2>Abstract</h2>
-                    <p class="long-text">
-                      {{ pi.abstract | newline_to_br }}
-                    </p>
-                    <p class="long-text">
-                      {{ pi.descrip | newline_to_br }}
-                    </p>
-                    <div class="abstractp">
-                      {{content}}
-                    </div>
+                  <div class="span6 profile-txt">
+                    <h2>Project Title</h2>
+                    <p class="project-title">{{ pi.project_title }}</p>
+                    <!-- <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a> -->
+                    <br>
+
+                    {% if pi.mentors.size > 1 %}
+                      <h2>Mentors</h2>
+                    {% else %}
+                    	{% if pi.mentors.size == 1 %}
+                    	<h2>Mentor</h2>
+                    	{% endif %}
+                    {% endif %}
+
+                    {% for mentor in pi.mentors %}
+                      <p>{{ mentor.name }}, {{mentor.origin}}</p>
+                    {% endfor %}
+                    <br>
+
+                    {% if pi.funding.size > 0 %}
+                      <h2>Funding Periods</h2>
+                    {% else %}
+                      <h2>Funding Period</h2>
+                    {% endif %}
+
+                    {% for funding in pi.funding %}
+                      <p>{{ funding.name }} ({{funding.period}})</p>
+                    {% endfor %}
                   </div>
                   <div class="profileimg">
-                    <img src="/images/people/{{ pi.image }}?v1.0" alt="{{pi.author}}" class="img-polaroid">
+                    <img src="/images/people/PIs/{{ pi.image }}/?v1.0" alt="{{pi.author}}" class="img-polaroid">
                   </div>
+                  <div class="profile-txt">
+                  <h2 class="profile">Abstract</h2>
                 </div>
-
-
+                </div>
+                <br>
+                <div class="abstractp">
+                  <p class="long-text">
+                    {{ pi.abstract | newline_to_br }}
+                  </p>
+                  <p class="long-text">
+                    {{ pi.descrip | newline_to_br }}
+                  </p>
+                </div>
               </div>
             </div>
           {% endif %}
         {% endfor %}
-
       </div>
 
 
