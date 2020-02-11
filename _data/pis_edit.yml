@@ -18,7 +18,7 @@
       period: May 1, 2018 - April 30, 2019
   abstract: |
       Venous thromboembolism (VTE) remains a major public health crisis. VTE is the third most common cardiovascular disease and annually affects about 1 million people in the US. VTE is responsible for more than 100,000 annual deaths in the US. Furthermore, a 2-way link between VTE and cancer has also been confirmed. Patients with cancer have at least 4-fold increased risk for VTE in comparison with patients without cancer. Nevertheless, clinically used anticoagulants are plagued with a number of drawbacks including the life-threatening risk of internal bleeding. New approaches to safely prevent and/or treat VTE are highly clinically significant. Factor XIIIa (FXIIIa) is a transglutaminase procoagulant that is different from all other physiologic procoagulants which are serine proteases. This unique biochemical aspect of FXIIIa has been under investigation in the context of VTE mechanism. Venous thrombi from FXIII-deficient mice were found to be significantly smaller in size. Various studies also suggested that specific FXIIIa polymorphism provides a moderate protection against VTE and that heterozygous FXIII-deficient mice do not show signs of excessive bleeding. Therefore, FXIIIa may serve as a potential therapeutic target to develop a new effective treatment for VTE that does not significantly increase the bleeding risk. In vitro experiments show that treating normal human blood with a transglutaminase active site inhibitor dose-dependently increases RBC extrusion from contracting clots and reduces clot size. Yet, it remains unclear whether FXIIIa inhibition is a viable approach for anticoagulation in vivo. At present, these studies are hindered, in part, by the lack of specific FXIIIa inhibitors. In fact, very few FXIIIa inhibitors have been reported thus far, most of which are not selective as they target the thiol-containing active site. Thus, I have proposed sulfonated glycosaminoglycan (GAG) mimetics as a platform to discover and subsequently rationally design FXIIIa inhibitors. These GAG mimetics are projected to potently and selectively inhibit FXIIIa through allosteric modulation, a mechanism often exploited by nature to achieve specific regulation. In preliminary studies, I discovered two sulfonated GAG mimetics that inhibit FXIIIa with micromolar potencies. Not only that, but these two molecules also inhibited FXIIIa-mediated polymerization of fibrin(ogen) which is one of the physiologic functions of human FXIIIa. Molecular modeling studies projected a plausible binding site for these molecules on FXIIIa. Therefore, in this proposal, I specifically aim to use a multidisciplinary approach to further establish the principles of effective and selective inhibition of FXIIIa by sulfonated GAG mimetics. I will synthesize an advanced library of sulfonated GAG mimetics and evaluate their biochemical, biophysical, and biological aspects to determine their anticoagulant potentials. The long-term goal of research in this area is to develop potent and specific inhibitors of FXIIIa so as to 1) enhance our understanding of FXIIIa contribution to the whole coagulation physiology and pathology and 2) investigate an alternative approach to modulate FXIIIa through allostery so as to pave the way to a novel and transforming potent and safe anticoagulant therapy to prevent and/or treat thrombotic disorders.
-- 
+-
   name: Daniel Barnes
   active: true
   origin: Southeastern Louisiana University
@@ -251,16 +251,6 @@
   abstract: |
       Cancer is one of the most difficult ailments and it became leading causes of death around the world. Anticancer agents that target DNA are generally the most effective agents in clinical use, but they are extremely toxic. Consequently, much effort has been put into finding robust anti-cancer agents that are more selective and less toxic. Along those lines, we recently obtained some interesting preliminary results on anticancer activity of our heterocyclic compounds. Currently we are planning on synthesizing new set of nitrogen heterocycles with different substitution patterns, and evaluate them for anticancer activity. Based on the preliminary results and the rationality of pyrazole moiety with known bioactive molecules, we will design and synthesize a new library of heterocycles with unique substitution patterns and evaluate for anticancer activity using variety of biological assays. The long-term goal of this project is to find novel anticancer agents for lung cancer therapy. In addition to that, we will be developing several synthetic approaches that will ultimately provide new chemical tools for the diverse range of synthetic chemists and biomedical researchers in academia and industry.
 -
-  name: Jamie Newman
-  active: true
-  origin: Louisiana Tech University
-  image: JNewman.jpg
-  project_title: Comparing Treatment of Adipose Stem Cells for the Differentiation of Clinically Relevant Cells
-  mentors:
-  funding:
-  abstract: |
-
--
   name: Barabutis Nektarios
   active: true
   origin: University of Louisiana at Monroe
@@ -409,7 +399,7 @@
   name: Jamie Newman
   active: true
   origin: Louisiana Tech University
-  image: newman.jpg
+  image: JNewman.jpg
   project_title: Comparing Treatment of Adipose Stem Cells for the Differentiation of Clinically Relevant Cells
   mentors:
     -

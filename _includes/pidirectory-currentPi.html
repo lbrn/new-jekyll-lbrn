@@ -1,0 +1,12 @@
+<article class="person npi" >
+  <img src="images/people/PIs/{{ people.image }}?v1.0" alt="{{people.name}}'s portrait photo.">
+  <!-- <img src="images/people/{{people.photo}}" alt="{{people.author}}'s portrait photo."> -->
+  <h4>{{people.name}}</h4>
+  <h5 >{{people.origin}}</h5>
+  {% assign projectNum =  people.funding.size | minus: 1 %}
+
+  <h6>{{people.funding[projectNum].name}}</h6>
+
+  <a class="natural-link" href="/pis/{{people.name | replace: " ", "_"}}.html"><h5>{{people.project_title}}</h5></a>
+<p>links current broken, last name needs to go first</p>
+</article>

@@ -38,7 +38,7 @@ title: Project Investigators
             <li class="on pipp">Pilot Project</li>
             <li class="on pitp">Translational Project</li>
             <li class="on piicp">INBRE COBRE Collaborative Project</li>
-            
+
         </ul>
     </div>
     <!-- <li><a href="#">top</a></li> -->
@@ -54,22 +54,20 @@ title: Project Investigators
 <section class="directory" >
   {% assign count = 0 %}
 
-  {% for people in site.data.LBRNProjects_DATA_LABELS %}
-    {% if people.university != nil and people.university != "University" %}
+  {% for people in site.data.pis_edit %}
         {% assign count = count | plus: 1 %}
           {% assign modcount = count | modulo: 2 %}
 
             {% if modcount == 1  %}
 
               <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
-                {% include npidirectory-currentPi.html %}
+                {% include pidirectory-currentPi.html %}
               {% else %}
-                {% include npidirectory-currentPi.html %}
+                {% include pidirectory-currentPi.html %}
               <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
 
 
             {% endif %}
-      {% endif %}
 
   {% endfor %}
 
