@@ -6,7 +6,24 @@
   {% assign projectNum =  people.funding.size | minus: 1 %}
 
   <h6>{{people.funding[projectNum].name}}</h6>
+  {% assign url_name = people.name | split: " " %}
 
-  <a class="natural-link" href="/pis/{{people.name | replace: " ", "_"}}.html"><h5>{{people.project_title}}</h5></a>
-<p>links current broken, last name needs to go first</p>
+  <h5>
+
+    {% assign url_full = "" %}
+    {% assign num = url_name | size | minus: 1 %}
+
+    {% assign url_full = url_full | append: url_name[num] | append: "_"  %}
+
+    {% assign num2 = num | minus: 1 %}
+    {% for i in (0..num2) %}
+      {% if i == 0 and num2 == 1 %}
+        {% assign url_full = url_full | append: url_name[i] | append: "_"  %}
+      {% else %}
+        {% assign url_full = url_full | append: url_name[i] %}
+      {% endif%}
+    {% endfor %}
+</h5>
+
+  <a class="natural-link" href="/pis/{{url_full}}.html"><h5>{{people.project_title}}</h5></a>
 </article>
