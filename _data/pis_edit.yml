@@ -840,7 +840,6 @@
   active: false
   image: SMurthy.jpg
   origin: Southern University and A&M College
-  image: murthy.jpg
   project_title: DPP4 inhibitors in combating the effects of homocysteine and cholesterol
   mentors:
     -
@@ -919,7 +918,7 @@
   name: Seetharama D Satyanarayanajois
   active: false
   origin: University of Louisiana at Monroe, College of Pharmacy
-  image: SSatyanarayanajois.png
+  image: SSatyanarayanajois.jpg
   project_title: Role of Extracellular Domain IV of HER2 Protein in Cell Signaling
   mentors:
     -
@@ -1085,7 +1084,7 @@
   name: Scott Poh
   active: false
   origin: Louisiana Tech University
-  image: NEED.jpg
+  image: SPoh.jpg
   project_title: Targeting of Macrophages in Inflammation With Thermosensitive Biopolymers
   funding:
     -
