@@ -623,12 +623,9 @@ float:left;
     color: white; }
   .navdropdown li a:hover {
     background-color: #b1dbb3;
-    /* color: #2C3D6C; */
     color: white;
   }
     .navdropdown li a {
-      /* color: inherit; */
-      /* color: #FCF59E; */
       padding: 1em .25em;
       text-decoration: none;
       display: block;
@@ -642,8 +639,12 @@ float:left;
   .navdropdown ul li a:hover {
     background-color: #7dc380;
     transition: all .2s;
-    color: white !important;
-    /* font-size:500; */
+    color: white;
+  }
+
+  .navdropdown ul li ul li a:hover{
+    background-color: #d4ebd5;
+    color: #2C3D6C;
   }
   .navdropdown li:last-child {
     border: none; }
@@ -2170,7 +2171,8 @@ div.research img{
       max-width:5em;
     }
     .navdropdown ul li ul li a{
-      background-color: #d4ebd5;
+      background-color: #8ECB91;
+      /* background-color: #d4ebd5; */
       color: #2C3D6C;
       font-size: 1rem;
       font-weight:400;
