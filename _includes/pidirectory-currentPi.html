@@ -1,11 +1,21 @@
 <article class="person npi" >
   <img src="images/people/PIs/{{ people.image }}?v1.0" alt="{{people.name}}'s portrait photo.">
-  <!-- <img src="images/people/{{people.photo}}" alt="{{people.author}}'s portrait photo."> -->
   <h4>{{people.name}}</h4>
   <h5 >{{people.origin}}</h5>
   {% assign projectNum =  people.funding.size | minus: 1 %}
-
+  {% if
+  people.funding[projectNum].name contains "Full"
+  or people.funding[projectNum].name contains "Startup"
+  or people.funding[projectNum].name contains "Shared Instrument"
+  or people.funding[projectNum].name contains "Pilot"
+  or people.funding[projectNum].name contains "Translational"
+  or people.funding[projectNum].name contains "Collaborative"
+  %}
   <h6>{{people.funding[projectNum].name}}</h6>
+  {% else%}
+  <h6>Other?</h6>
+  {%endif%}
+
   {% assign url_name = people.name | split: " " %}
 
   <h5>

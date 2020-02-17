@@ -55,20 +55,16 @@ title: Project Investigators
   {% assign count = 0 %}
 
   {% for people in site.data.pis_edit %}
+        {% if people.active %}
         {% assign count = count | plus: 1 %}
           {% assign modcount = count | modulo: 2 %}
 
             {% if modcount == 1  %}
-
-              <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
                 {% include pidirectory-currentPi.html %}
               {% else %}
                 {% include pidirectory-currentPi.html %}
-              <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
-
-
             {% endif %}
-
+            {%endif%}
   {% endfor %}
 
 

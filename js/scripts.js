@@ -170,6 +170,7 @@ function piFilter(){
   var pilots = $("article:has(h6:contains('Pilot'))");
   var translproj = $("article:has(h6:contains('Translational'))");
   var collab = $("article:has(h6:contains('Collaborative'))");
+  var collab = $("article:has(h6:contains('Other'))");
 
   // var translproj = $('article[data-ptype="TranslationalProject"]');
 
@@ -192,7 +193,11 @@ function piFilter(){
   var cmelement = document.getElementsByClassName('cmelement'), i;
 
 
-
+  $('.pio').click(function(){
+    $(this).toggleClass('on');
+    $(this).toggleClass('active');
+    fulls.slideToggle('fast');
+  });
   $('.pifp').click(function(){
     $(this).toggleClass('on');
     $(this).toggleClass('active');
@@ -229,7 +234,6 @@ function piFilter(){
   $(".pitp").click(function(){
     $(this).toggleClass('active');
     $(this).toggleClass('on');
-    $(this).toggleClass('active');
     translproj.slideToggle('fast');
         console.log('dog');
   });
