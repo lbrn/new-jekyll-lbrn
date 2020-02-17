@@ -1882,7 +1882,7 @@ div.research img{
 
   }
   #core-list .triblock{
-
+    height:100%;
     display: inline-block;
     width: 30%;
     margin-left: unset;
