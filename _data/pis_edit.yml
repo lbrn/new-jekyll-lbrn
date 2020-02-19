@@ -458,9 +458,9 @@
 -
   name: Kui Chen
   active: false
-  origin: Louisiana State University in Shreveport, Department of Chemistry &amp; Physics
+  origin: "Southern University and A&amp;M College, Department of Biological Science"
   image: KChen.jpg
-  project_title: Nanosensors for Reactive Oxygen Species and their Roles in Carcinogenesis
+  project_title: Hdacs Regulate Inflammatory Responses Against Microbial Toxins &amp; Cse Exposure
   mentors:
     -
       name: Marcia E. Newcomer, Ph.D.
@@ -503,7 +503,7 @@
   name: Cecily DeFreece
   image: CDefreece.jpg
   active: false
-  origin: Xavier University
+  origin: Xavier University, Department of Biology
   project_title: Characterizing inhibitors of the mutagenic retrotransposon LINE1 endonuclease
   abstract: |
     There is compelling evidence that the endonuclease (EN) encoded by the retrotransposon Long interspersed element 1 (LINE1) is a powerful causative agent of genetic instability. Expression of the LINE1 EN has been demonstrated to induce DNA double strand breaks (DSBs), damage that is known to be mutagenic and induce diseases such as cancer. In addition, the increased mobilization and expression of LINE1 elements has been observed in germ line, and in some somatic and tumor tissues. However, no studies have shown direct evidence that LINE1-induced DNA DSBs contribute to the induction or progression of diseases because there is currently no tool to specifically limit LINE1 EN activity in cells. Traditional techniques such as RNA knockdown are not feasible due to the large number of LINE1 elements and the location of some of the elements near or in coding regions of the genome. The best tool for deciphering the role of LINE1 EN in genetic instability and disease would be a potent and specific inhibitor of its activity, but no such inhibitor has been discovered yet. In our laboratory, we have been working on screening small molecules from a NIH library. Structural analogs of a promising molecule were made, and we have thus far identified three candidates that inhibit the activity of the lINE1 EN in vitro, have limited cellular toxicity and are able to reduce LINE1 mobilization in HeLa cells. However, further characterization in different types of cells needs to be done before the general use of these inhibitors in the study of LINE1 induced disease in animals.
@@ -573,7 +573,7 @@
 
 -
   name: Rebecca Giorno-McConnell
-  origin: Louisiana Tech University
+  origin: Louisiana Tech University, Biological Sciences & Center for Biomedical Engineering and Rehabilitation Sciences
   image: RGiorno.jpg
   active: false
   project_title: "Spore outer structures: Contribution to germination heterogeneity"
@@ -599,7 +599,7 @@
 -
   name: Chris R. Gissendanner
   active: false
-  origin: ULM College of Pharmacy, Department of Basic Pharmaceutical Sciences
+  origin: University of Louisiana at Monroe, College of Pharmacy, Department of Basic Pharmaceutical Sciences
   image: CGissendanner.jpg
   project_title: NR4A Regulation of Organ Morphogenesis
   mentors:
@@ -670,12 +670,12 @@
   name: Keith Jackson
   active: false
   image: KJackson.jpg
-  origin: University of Louisiana at Monroe
+  origin: University of Louisiana at Monroe, College of Pharmacy, School of Basic Pharmaceutical and Toxicological Sciences
   mentors:
     -
       name: Joseph Francis
       origin: LSU Vet School
-  project_title: Role of heme oxygenase in the renal control of hypertension
+  project_title: Role Of Heme Oxygenase In The Renal Control Of Hypertension
   abstract: |
     The proposed studies in this LBRN proposal will investigate the renal functional significance of the heme-heme oxygenase (HO)-carbon monoxide (CO) system during recurrent insulin-induced hypoglycemia (RIIH). HO catalyzes the conversion of heme to iron, biliverdin and CO. Biliverdin is rapidly reduced to bilirubin, which is a major antioxidant in mammalian systems. CO inhibits vascular smooth muscle cell growth and apoptosis, relaxes vascular smooth muscle, and promotes diuresis. Two major HO isozymes have been identified: HO-1 is an inducible heat shock protein (HSP32), while HO-2 is constitutive.
 
@@ -718,7 +718,7 @@
   name: Hye-Young Kim
   active: false
   image: HKim.jpg
-  origin: Southeastern Louisiana University
+  origin: Southeastern Louisiana University, Department of Chemistry and Physics
   mentors:
     -
       name: Jacqueline Stephens
@@ -751,10 +751,10 @@
 
 -
   name: Elahe Mahdavian
-  active: false
+  active: true
   origin: Louisiana State University in Shreveport, Department of Computer Science
   image: EMahdavian.jpg
-  project_title: Development of Novel Anti-Cancer Agents
+  project_title: Development Of Novel Anti-Cancer Agents
   mentors:
     -
       name: Christopher Kevil, Ph.D.
