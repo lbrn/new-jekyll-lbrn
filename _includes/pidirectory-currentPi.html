@@ -35,5 +35,5 @@
     {% endfor %}
 </h5>
 
-  <a class="natural-link" href="/pis/{{url_full}}.html"><h5>{{people.project_title}}</h5></a>
+  <a class="natural-link" href="/pis/{{url_full | remove: "." }}.html"><h5>{{people.project_title}}</h5></a>
 </article>
