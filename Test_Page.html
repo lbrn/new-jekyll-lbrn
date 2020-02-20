@@ -1,11 +1,80 @@
 ---
-layout: default
+layout: defaulttest2
 title: Modified About/Test Environment
 ---
 
+
+<style>
+  .pubmed-link{
+    background-color: #d4ebd5;
+    color: #2C3D6C;
+    display: inline-block;
+    font-weight: 400;
+    /* color: #212529; */
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    float:right;
+  }
+  .pubmed-link:hover{
+    background-color: #8ECB91;
+    color: #fff;
+  }
+
+</style>
 <p>Site. time: {{site.time}}</p>
 <p>site.time date: {{ site.time | date: "%Y %m %d" }}</p>
 
+{% for pi in site.data.pis_full %}
+  {{pi.name}}
+{% endfor %}
+<div class="bar">
+  <!-- <a href="#">Useless Link</a> -->
+  <ul class="header2";>
+    <li>
+      <a href="#" class="ab">Dropdown Link</a>
+      <ul >
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="header3";>
+    <li>
+      <a href="#" class="ab">Dropdown Link2</a>
+      <ul >
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<br>
+<h2>Filter DIV Elements</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('admin')"> admin</button>
+  <button class="btn" onclick="filterSelection('bbc')"> bbc</button>
+  <button class="btn" onclick="filterSelection('mcbr')"> mcbr</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv admin">BMW</div>
+  <div class="filterDiv bbc">Orange</div>
+  <div class="filterDiv mcbr">Volvo</div>
+</div>
 
 
 
@@ -22,122 +91,64 @@ title: Modified About/Test Environment
           {{event.date}}
           <li>{{ event.title }}</li>
        {% endfor %}
+<!-- <div class="dropdown">
+  <button id="dropdownMenu1" data-toggle="dropdown">
+    My account
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">My cart</a></li>
+    <li><a class="dropdown-item" href="#">My orders</a></li>
+    <li><a class="dropdown-item" href="#">My details</a></li>
+    <li role="separator" class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Log out</a></li>
   </ul>
-</article>
-========================================================
-<p>CAPTURE DATE</p>
+</div> -->
 
+<div id="item1">
+</div>
+<div class="dogtest">
+dog
+</div>
+<div id="item2">
+</div>
+<br>
+        <!-- <li id="about"><a href="about.html" class="dogtest">About</a></li> -->
+        <div id="about" class="dropdown">
+          <li ><a href="about.html" class="dogtest">About</a></li>
 
-<p>Test: {{sitedate2}}</p>
-
-
-{% for event in site.events2 %}
-
-{% include events-list-item.html %}
-
-    {{event.date}}
-
-{% endfor %}
-
-
-{% assign eventsR = site.events %}
-  {% for event in site.events  %}
-  {% capture eventdate %}{{event.date | date: '%s'}} {% endcapture %}
-  {% capture sitedate%} {{site.time | date: '%s' | minus:86400 | plus: 0 }}{% endcapture %}
-  <!-- converts string to number -->
-  {% assign sitedateconverted = site.time | date: '%s' | minus:86400 | plus: 0 %}
-  {% assign eventdateconverted = event.date | date: '%s' | plus: 0 %}
-
-
-
-  {% if eventdateconverted >= sitedateconverted %}
-          <article>
-            {% assign combo_num = sitedate | minus:eventdate %}
-            <p>sitedate mins: {{combo_num}}</p>
-            <p> SiteDate: {{sitedate}} == {{site.time}}</p>
-            <p> EventDate: {{eventdate}} == {{event.date}}</p>
-            {% include events-list-item.html %}
-          </article>
-        {% else %}
-        {% endif %}
-
-  {% endfor %}
-  'dump.liquid'
-<script type="text/javascript">
- console.log("Dumping");
- console.log({{ eventdate2 }});
- console.log({{ sitedate2 }});
- console.log( ({{eventdate}} - {{ sitedate }} ) );
-</script>
-<p>end capture date</p>
-========================================================
-<article style = "display: none;">
-  {% for people in site.MCBR_core %}
-  {% assign loopindex = forloop.index | modulo: 2 %}
-  {% if loopindex == 1 %}
-    <div class="peoplewrap">
-    {% include directory.html %}
-  {% else %}
-      {% include directory.html %}
-    </div>
-  {% endif %}
-{% endfor %}
-
-
-
-{% assign eventsR = site.events %}
-    {% capture eventdate %}{{event.date | date: '%s' | plus: 0 }} {% endcapture %}
-    {% capture sitedate%} {{site.time | date: '%s' | plus: 0 }}{% endcapture %}
-
-      {% if sitedate != date %}
-      <article>
-
-        {% for event in eventsR limit:2 %}
-          <p>  {{sitedate}} >= {{eventdate}} , {{event.date}} </p>
-          {% include events-list-item.html %}
-        {% endfor %}
-
-      </article>
-      {% endif %}
-
-      <!-- =============================================== -->
-    </article>
-
-  {% assign eventsR = site.events %}
-      {% capture date %}{% endcapture %}
-
-
-        {% if date > now %}
-        <article style = "display: none;">
-          {% for event in eventsR limit:2 %}
-            {% include events-list-item.html %}
-          {% endfor %}
-        </article>
-        {% endif %}
-
-
-        <div style="display:none;">
-          {% assign loopindex = 0 | modulo: 2 %}
-
-          {% for people in site.committee-members %}
-
-          {%  assign loop2 = loopindex | modulo: 2 %}
-
-          {% if people.category != "Former EAC Members"%}
-
-          {% if loopindex == 0 %}
-
-          <p>begin: {{loopindex}}: {{people.author}}</p>
-
-          {% else %}
-          <p>2nd: {{loopindex}}: {{people.author}}</p>
-
-          {% endif %}
-
-          {% assign loopindex = loopindex | plus: 1  | modulo: 2 %}
-          {% endif %}
-
-          {% endfor %}
+          <div class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item_cust navLink" href="index.html#AboutEvents">
+            Events
+            <a class="dropdown-item_cust navLink" href="index.html#AboutContact">
+            Contact Us
+            </a>
+          </div>
         </div>
+
+<span class="dogtest">Hover over me!</span>
+<div class="dogtest2">I will show on hover</div>
+
+<div class="dropdown">
+<!-- <div class="nav-item dropdown col-4 noPad row"> -->
+  <a class="Headerbutton-cust text-center col-12 navLink" href="index.html#AboutBanner" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false" style="height: 100%;">
+    About Us
+    <!-- add this line in for the active element for text-only broswers -->
+    <!-- <span class="sr-only">(current)</span> -->
+  </a>
+  <div class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item_cust navLink" href="index.html#AboutEvents">
+    Events
+    <!-- add this line in for the active element for text-only broswers -->
+      <!-- <span class="sr-only">(current)</span></a> -->
+    <a class="dropdown-item_cust navLink" href="index.html#AboutContact">
+    Contact Us
+    <!-- add this line in for the active element for text-only broswers -->
+      <!-- <span class="sr-only">(current)</span> -->
+    </a>
+  </div>
+</div>
+
+
 
 <br>

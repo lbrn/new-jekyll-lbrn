@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Professor
-author: Seetharama Satyanarayanajois
+author: Seetharama D. Jois
 school: University of Louisiana at Monroe, College of Pharmacy - School of Basic Pharmaceutical and Toxicological Sciences
 project-type: TestElement
 image: "BBC-Core/BBC-Seetharama-Jois.jpg"

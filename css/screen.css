@@ -37,7 +37,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 /* End at 1295ish */
 
+.filters .active{
+  font-weight:bold;
+  color: #5ab35e!important;
+}
 @media (min-width: 0) {
+  .socialMedia{
+    display:none;
+    margin-right:unset;
+      /* padding-right:0.5em; */
+  }
+
+  .socialMedia{
+    display:none;
+    margin-right:unset;
+      /* padding-right:0.5em; */
+  }
 
 
   #lbrnEventSidebar2 .active {
@@ -110,7 +125,7 @@ padding-bottom: 1em;
   font-size: 0.85em;
 }
 
-  .vidtext h2{
+  .vidsection div h2{
       font-size: 0.8em;
       color: #2C3D6C;
       margin-top: 0 !important;
@@ -124,6 +139,12 @@ padding-bottom: 1em;
       border: 0;
       margin:0;
       font-family: "Open Sans Condensed", sans-serif !important;
+  }
+  .vidsection div{
+    display: inline-block;
+    width: 70%;
+    margin-top: 1.5%;
+    padding: unset;
   }
 
 
@@ -572,9 +593,15 @@ float:left;
     border-bottom: 1px solid white;
     font-size: 1.2em;
   }
+
+  div.navdropdown li.socialMedia {
+    /* margin-left: .5em; */
+    margin-right: 0.5em;
+  }
   .navdropdown li.right {
-    margin-left: .5em;
-    margin-right: 0; }
+    /* margin-left: .5em; */
+    margin-right: unset;
+  }
   .navdropdown li.right > a {
     padding: 1em .2em;
     display: inline-block; }
@@ -596,12 +623,9 @@ float:left;
     color: white; }
   .navdropdown li a:hover {
     background-color: #b1dbb3;
-    /* color: #2C3D6C; */
     color: white;
   }
     .navdropdown li a {
-      /* color: inherit; */
-      /* color: #FCF59E; */
       padding: 1em .25em;
       text-decoration: none;
       display: block;
@@ -615,12 +639,19 @@ float:left;
   .navdropdown ul li a:hover {
     background-color: #7dc380;
     transition: all .2s;
-    color: white !important;
-    /* font-size:500; */
+    color: white;
+  }
+
+  .navdropdown ul li ul li a:hover{
+    background-color: #d4ebd5;
+    color: #2C3D6C;
   }
   .navdropdown li:last-child {
     border: none; }
-
+  .mediapage p{
+    font-size: 16pt;
+    font-weight: 300;
+  }
   .slider {
     /* display: none; */
     -moz-box-sizing: border-box;
@@ -1078,7 +1109,7 @@ main div.content h3:enabled {
     font-weight: 700;
     /* commented out for two card responsive stuff */
     font-family: "Open Sans Condensed", sans-serif !important; }
-  .three-card-responsive section p, /* .two-card-responsive section p, */ .four-card-responsive section p {
+  .three-card-responsive section p,  .two-card-responsive section p,  .four-card-responsive section p {
 
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1102,7 +1133,7 @@ main div.content h3:enabled {
     hyphens: auto;
     -webkit-hyphens: auto;
   }
-  .three-card-responsive section p.more,/* .two-card-responsive section p.more, */ .four-card-responsive section p.more {
+  .three-card-responsive section p.more, .two-card-responsive section p.more,  .four-card-responsive section p.more {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1120,7 +1151,7 @@ main div.content h3:enabled {
     bottom: 0;
     margin-bottom: unset;
   }
-  .three-card-responsive section p.more:hover,/* .two-card-responsive section p.more:hover, */.four-card-responsive section p.more:hover {
+  .three-card-responsive section p.more:hover, .two-card-responsive section p.more:hover, .four-card-responsive section p.more:hover {
     color: #4a66b4; }
 
   #lbrnEventHeader {
@@ -1210,10 +1241,10 @@ main div.content h3:enabled {
     padding: .4em 0;
     width: 95%; }
 
-  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
+  #eventSummary, #eventMediaLink, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
     position: relative;
     margin-bottom: 1.2em; }
-  #eventSummary h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2, #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
+  #eventSummary h2, #eventMediaLink h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2, #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
     padding-left: 1em;
     /* padding-right: 1.5em; */
     margin-top:unset;
@@ -1221,7 +1252,7 @@ main div.content h3:enabled {
     cursor: pointer;
   }
 
-  #eventSummary h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover{
+  #eventSummary h2:hover,  #eventMediaLink h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover{
     background-color: #e5f3e6;
     /* cursor: pointer; */
     border-radius: 10px;
@@ -1814,21 +1845,84 @@ div.research img{
 
     display: none;
   }
+  .filterDiv {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+
+  .btn:hover {
+
+  }
+
+  .btn.active {
+    /* background-color: #666; */
+    /* color: white; */
+  }
+  /* #bbc-core-list{
+    text-align: center;
+  } */
   #core-list{
     text-align: center;
 
   }
   #core-list div{
-    height:10em;
   	width: 40%;
   	margin-left: 30%;
 
   }
-  #core-list .triblock{
+  .admin-core-list div{
+    height:10em;
 
+  }
+  #core-list .triblock{
+    height:100%;
     display: inline-block;
     width: 30%;
     margin-left: unset;
+  }
+  #core-list .quintblock{
+
+    display: inline-block;
+    width: 19%;
+    margin-left: unset;
+  }
+  #core-list .quintblock h1{
+    font-size:14pt;
+    /* color: red; */
+  }
+  #core-list .quintblock h2{
+    font-size:11pt;
+    /* color: red; */
+
+  }
+  /* .quintblock h1{
+    font-size: 14pt!important;
+  } */
+  /* .quintblock h2{
+    font-size: 11pt!important;
+  } */
+  #core-list .sevenblock{
+
+    display: inline-block;
+    width: 13%;
+    margin-left: unset;
+
+  }
+  #core-list .sevenblock h1{
+    font-size:12pt;
+    /* color: red; */
+  }
+  #core-list .sevenblock h2{
+    font-size:11pt;
+    /* color: red; */
+
   }
   #core-list h1{
     font-size: 17pt;
@@ -1855,6 +1949,11 @@ div.research img{
   width: 100%;
 
   }
+   .bbc-core-list  .horiline{
+    width:80%!important;
+    margin-left:10%;
+    margin-right:10%;
+  }
   #core-list span{
     border: #8ECB91;
     border-style:dotted none none none;
@@ -1877,6 +1976,9 @@ div.research img{
   }
   /* end 0 */
 @media (min-width: 414px) {
+  .navdropdownbig{
+    display: block;
+  }
 
   .content_tweek{
     width: 80% !important;
@@ -1906,7 +2008,7 @@ div.research img{
   .navdropdown ul li a {
     text-transform: capitalize;
     /* font-weight: normal; */
-    font-weight: 500;
+    font-weight: 400;
     /* font-size: 1.4em; */
   }
 
@@ -2061,8 +2163,65 @@ div.research img{
       border-top: 1px solid #2C3D6C;
       /* font-weight: 300; */
     }
+    .bar {background-color: green;
+    margin-bottom:10em; }
+    .navdropdown ul li ul li{
+      margin-right:unset;
+      width:100%;
+
+    }
+    .navdropdown ul li ul{
+      max-width:5em;
+    }
+    .navdropdown ul li ul li a{
+      background-color: #8ECB91;
+      /* background-color: #d4ebd5; */
+      color: #2C3D6C;
+      font-size: 1rem;
+      font-weight:300;
+      margin: unset;
+      padding: unset;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      text-align: left;
+      padding-left: 0.7em;
+    }
+    .bar a{
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      display:inline-block;
+    }
+
+    .navdropdownbig ul li{
+      display: inline-block;
+      width:100%;
+    }
+
+    .navdropdownbig ul li:hover ul {display: block;}
+    .navdropdownbig ul li ul {
+      position: absolute;
+      display: none;
+      /* this display shows the  */
+      margin-right:unset;
+      z-index: 1000;
+    }
+    .navdropdownbig ul li ul li {
+      display: block;
+      color: #2C3D6C;
+      width: 9em;
+    }
+
+
+    .navdropdownbig ul li ul li a {display:block !important;}
   }  /* end 0 */
 @media (min-width: 667px) {
+  .navdropdownbig ul li {
+     /* display: inline-block; */
+     width: unset;
+   }
+
   .collapsetstyle{
     display:none !important;
   }
@@ -2165,6 +2324,8 @@ div.research img{
     font-weight: 300;
     font-size: 0.8em;
   }
+
+
   #lbrnEventSidebar3 {
     display:none;
     padding: 0;
@@ -2276,7 +2437,7 @@ section.directory article.person{
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 2em;
-    display: block;
+
     position: absolute;
     bottom: .75em;
     right: 0;
@@ -2288,7 +2449,7 @@ section.directory article.person{
       display: none;
     }
     .navdropdownbig{
-      display: block;
+      display: block!important;
     }
   .navdropdown {
     background-color: #8ECB91;
@@ -2571,7 +2732,7 @@ section.directory article.person{
     float: left;
     margin-right: 2.85714%; }
 
-  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
+  #eventSummary, #eventMediaLink, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -2580,13 +2741,13 @@ section.directory article.person{
     margin-left: 0;
     margin-right: 0;
     overflow: hidden; }
-  #eventSummary h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2,  #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
+  #eventSummary h2, #eventMediaLink h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2,  #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
     padding-left: 0;
     background-color: white;
     cursor: auto;
   }
 
-    #eventSummary h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover{
+    #eventSummary h2:hover,  #eventMediaLink h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover{
       background-color: unset;
 }
 
@@ -2710,7 +2871,7 @@ section.directory article.person{
     display: none; }
 
 /*  div.resources section,*/ div.research section {
-    min-height: 25em; }
+    min-height: 20em; }
     div.resources section/* , div.research section */ {
       min-height: 21em;
      }
@@ -2721,12 +2882,24 @@ section.directory article.person{
     display: none; }
 
   div.chooseTypeInline {
-    display: flex; } }
+    display: flex; }
+    header h1{
+      display: block;
+    }
+    .navdropdownbig{
+      font-size: 0.85em;
+
+    }
+  }/* end of min-iwdth section*/
 @media (min-width: 860px) {
+  .socialMedia{
+    display:block;
+  }
 
   .peoplewrap{
         width: 100%;
     display:inline-block;
+    width: 100%;
   }
 
   /* .ptitle {
@@ -2864,9 +3037,10 @@ section.directory article.person:nth-child(odd) {
     }
 
   .navdropdown li {
-    margin-right: .5em; }
+    margin-right: 1.2em; }
   .navdropdown li a {
-    padding: 1em; }
+    /* padding: 1em;  */
+  }
 
   footer p {
     width: 50%; }
@@ -3396,7 +3570,17 @@ font-weight: 400;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 4%;
-  display: none;
+  /* display: none; */
+
+}
+.vidsection img{
+height: 5em;
+width: 85%;
+padding: 7.5%;
+float: left;
+border-radius: 6px;
+width: 20%;
+padding: 2.5%;
 
 }
 /* .vidhori{
@@ -3617,3 +3801,67 @@ display: block;
   background-color: #c2e3c4!important;
   font-weight: 400  !important;
 }
+
+  .dropdown-item_cust {
+      display: block;
+      width: 100%;
+      clear: both;
+      font-weight: 400;
+      color:  #7F7F7F;
+      background: white;
+      border: 0;
+      font-size: 22px;
+      /* font-family: BebasKai; */
+      font-family: "Ubuntu", sans-serif;
+      text-align: center;
+      padding: 0.5rem;
+  }
+  #about:hover ~ .dropdown div{
+  /* #about:hover ~ .dropdown div{ */
+    display: inline-block;
+    /* background-color:red; */
+        top:4.55em;
+        padding:unset;
+        margin:unset;
+  }
+  .layout .dropdown div a {
+    display:block!important;
+  }
+  .dropdown-menu2 {
+    color:blue;
+
+  }
+  .dropdown a:hover>.dropdown-menu {
+    display: block;
+    top:4em;
+
+  }
+  /* .dogtest:hover + .dogtest2{
+    display:block;
+    background-color:green;
+  } */
+  .dogtest2 {
+  /* background-color: yellow; */
+  padding: 20px;
+  display: none;
+}
+div[id^='item'] {
+    background: red;
+    width: 50px;
+    height: 100px;
+    float: left;
+    margin-right: 5px;
+}
+.dogtest{
+  display: none;
+  }
+
+div[id^='item']:hover + .dogtest{
+  background: blue;
+  display: block;
+}
+   /* .dropdown:hover>.dropdown-menu {
+      display: block;
+      top:4em;
+
+    } */

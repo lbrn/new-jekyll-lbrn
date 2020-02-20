@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   quickRef();
-  coreSwap();
+  // coreSwap();
   piFilter();
   faqReveal();
   selectTypeSrp();
@@ -77,38 +77,88 @@ function quickRef(){
     }
   });
 }
-function coreSwap(){
-  var corelis    = $('section.cores>ul>li');
-  var adminTxt   = "The Administrative Core (AC) of the Louisiana Biomedical Research Network (LBRN) provides the project with its overall leadership, day-to-day management, evaluations of all of its component parts, and communication with NIH staff. The AC is led by the Principal Investigator in close consultation with the Program Coordinator, as well as the Steering Committee and External Advisory Committee."
-  var bbcTxt     = "The Bioinformatics, Biostatistics, and Computational Biology Core (BBCC) of the Louisiana Biomedical Research Network (LBRN) serves to train and support project investigators and their teams across Louisiana, and to lead and support translational research activities at the frontiers of biomedical science. Its team uses both established and custom computational tools, operating at computational scales ranging from the mundane to analyses engaging many hundreds of compute cores."
-  var mcbrTxt    = "Molecular and cell biology provide an essential linkage among important basic fields of biomedical science, such as genetics, developmental biology, structural biology, immunology, neurobiology, and cancer biology. The MCBRC takes advantage of existing highly organized, centralized services and equipment facilities located primarily at the LSU flagship institution in Baton Rouge, effectively uniting these units toward the common goal of supporting biomedical research performed by PUI investigators. The MCBRC will provide technical and logistical support, enabling the ready exchange of information, ideas, technology, and research capabilities among PUI investigators. MCBRC will ensure that PUI researchers have full access to state-of-the-art equipment and modern research techniques and services."
-  corelis.eq(0).click(function(){
-    corelis.removeClass();
-    $(this).addClass('active');
-    $('#core-swap>h4').text('Adiministrative Core');
-    $('#core-swap>p').text(adminTxt);
-    $('#core-swap>img').attr('src','images/admin-core_July_2018.png');
-    $('#core-swap>a.button').addClass('hidden');
-  });
-  corelis.eq(1).click(function(){
-    corelis.removeClass();
-    $(this).addClass('active');
-    $('#core-swap>h4').text('Bioinformatics, Biostatistics, and Computational Biology Core');
-    $('#core-swap>p').text(bbcTxt);
-    $('#core-swap>img').attr('src','images/bbc-core_Dec_2019.png');
-    $('#core-swap>a.button').removeClass('hidden');
-    $('#core-swap>a.button').attr('href','bbc-core.html').text('BBC Core Services');
-  });
-  corelis.eq(2).click(function(){
-    corelis.removeClass();
-    $(this).addClass('active');
-    $('#core-swap>h4').text('Molecular and Cell Biology Resources Core');
-    $('#core-swap>p').text(mcbrTxt);
-    $('#core-swap>img').attr('src','images/mcbr-core_Jan_2020.png');
-    $('#core-swap>a.button').removeClass('hidden');
-    $('#core-swap>a.button').attr('href','mcbr-core.html').text('MCBR Core Services');
+
+// ===========================
+
+filterSelection("admin")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
   });
 }
+// end
+}
+// ===========================
+// function coreSwap(){
+//   var corelis    = $('section.cores>ul>li');
+//   var adminTxt   = "The Administrative Core (AC) of the Louisiana Biomedical Research Network (LBRN) provides the project with its overall leadership, day-to-day management, evaluations of all of its component parts, and communication with NIH staff. The AC is led by the Principal Investigator in close consultation with the Program Coordinator, as well as the Steering Committee and External Advisory Committee."
+//   var bbcTxt     = "The Bioinformatics, Biostatistics, and Computational Biology Core (BBCC) of the Louisiana Biomedical Research Network (LBRN) serves to train and support project investigators and their teams across Louisiana, and to lead and support translational research activities at the frontiers of biomedical science. Its team uses both established and custom computational tools, operating at computational scales ranging from the mundane to analyses engaging many hundreds of compute cores."
+//   var mcbrTxt    = "Molecular and cell biology provide an essential linkage among important basic fields of biomedical science, such as genetics, developmental biology, structural biology, immunology, neurobiology, and cancer biology. The MCBRC takes advantage of existing highly organized, centralized services and equipment facilities located primarily at the LSU flagship institution in Baton Rouge, effectively uniting these units toward the common goal of supporting biomedical research performed by PUI investigators. The MCBRC will provide technical and logistical support, enabling the ready exchange of information, ideas, technology, and research capabilities among PUI investigators. MCBRC will ensure that PUI researchers have full access to state-of-the-art equipment and modern research techniques and services."
+//   corelis.eq(0).click(function(){
+//     corelis.removeClass();
+//     $(this).addClass('active');
+//     $('#core-swap>h4').text('Adiministrative Core');
+//     $('#core-swap>p').text(adminTxt);
+//     $('#core-swap>img').attr('src','images/admin-core_July_2018.png');
+//     $('#core-swap>a.button').addClass('hidden');
+//   });
+//   corelis.eq(1).click(function(){
+//     corelis.removeClass();
+//     $(this).addClass('active');
+//     $('#core-swap>h4').text('Bioinformatics, Biostatistics, and Computational Biology Core');
+//     $('#core-swap>p').text(bbcTxt);
+//     $('#core-swap>img').attr('src','images/bbc-core_Dec_2019.png');
+//     $('#core-swap>a.button').removeClass('hidden');
+//     $('#core-swap>a.button').attr('href','bbc-core.html').text('BBC Core Services');
+//   });
+//   corelis.eq(2).click(function(){
+//     corelis.removeClass();
+//     $(this).addClass('active');
+//     $('#core-swap>h4').text('Molecular and Cell Biology Resources Core');
+//     $('#core-swap>p').text(mcbrTxt);
+//     $('#core-swap>img').attr('src','images/mcbr-core_Jan_2020.png');
+//     $('#core-swap>a.button').removeClass('hidden');
+//     $('#core-swap>a.button').attr('href','mcbr-core.html').text('MCBR Core Services');
+//   });
+// }
+
+
 function piFilter(){
   // var buttons = $('nav#pi-filter ul li');
   // var fulls = $('article[data-ptype="FullProject"]');
@@ -142,7 +192,11 @@ function piFilter(){
   var cmelement = document.getElementsByClassName('cmelement'), i;
 
 
-
+  $('.pio').click(function(){
+    $(this).toggleClass('on');
+    $(this).toggleClass('active');
+    fulls.slideToggle('fast');
+  });
   $('.pifp').click(function(){
     $(this).toggleClass('on');
     $(this).toggleClass('active');
@@ -185,12 +239,14 @@ function piFilter(){
   $("#pios1").click(function(){
     $(this).toggleClass('active');
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     oe1.slideToggle('fast');
         console.log('dog');
   });
   $("#pios2").click(function(){
     $(this).toggleClass('active');
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     oe2.slideToggle('fast');
         console.log('dog');
   });
@@ -200,7 +256,7 @@ function piFilter(){
 
     for(var i=0; i < ac.length; i++)
         {
-        // ac[i].style.display ='none';
+
           if (ac[i].style.display == "none")
             {
               ac[i].style.display = "block";

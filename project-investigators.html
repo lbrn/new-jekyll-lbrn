@@ -11,7 +11,7 @@ title: Project Investigators
           Filters
         </button>
       </p>
-      <div class="collapse mobilefilter" id="filterex">
+      <div class="collapse mobilefilter filters" id="filterex">
         <li class="on pifp">Full Project</li>
         <li class="on pisp">Startup Project</li>
         <li class="on pisip">Shared Instrument Project</li>
@@ -31,14 +31,14 @@ title: Project Investigators
             <li>Filter</li>
           </div>
         </div>
-        <ul>
+        <ul class=" filters">
             <li class="on pifp">Full Project</li>
             <li class="on pisp">Startup Project</li>
             <li class="on pisip">Shared Instrument Project</li>
             <li class="on pipp">Pilot Project</li>
             <li class="on pitp">Translational Project</li>
             <li class="on piicp">INBRE COBRE Collaborative Project</li>
-            
+
         </ul>
     </div>
     <!-- <li><a href="#">top</a></li> -->
@@ -54,23 +54,17 @@ title: Project Investigators
 <section class="directory" >
   {% assign count = 0 %}
 
-  {% for people in site.data.LBRNProjects_DATA_LABELS %}
-    {% if people.university != nil and people.university != "University" %}
+  {% for people in site.data.pis_full %}
+        {% if people.active %}
         {% assign count = count | plus: 1 %}
           {% assign modcount = count | modulo: 2 %}
 
             {% if modcount == 1  %}
-
-              <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
-                {% include npidirectory-currentPi.html %}
+                {% include pidirectory-currentPi.html %}
               {% else %}
-                {% include npidirectory-currentPi.html %}
-              <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
-
-
+                {% include pidirectory-currentPi.html %}
             {% endif %}
-      {% endif %}
-
+            {%endif%}
   {% endfor %}
 
 
