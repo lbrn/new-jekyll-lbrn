@@ -1,5 +1,5 @@
 ---
-layout: pidatapage_test
+layout: pidatapage_full
 title: Medical Imaging by Enhanced Fluorescent Nanoclusters
 author: Urska Cvek
 person: Urska Cvek

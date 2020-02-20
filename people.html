@@ -150,7 +150,7 @@ title: People
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs CRP" >
       {% assign count = 0 %}
-          {% for people in site.data.pis_edit %}
+          {% for people in site.data.pis_full %}
             {% if people.active == true %}
                 {% assign count = count | plus: 1 %}
                   {% assign modcount = count | modulo: 2 %}
@@ -177,7 +177,7 @@ title: People
     <section class="directory collapsenobs PrevPPi">
 
       {% assign count = 0 %}
-          {% for people in site.data.pis_edit %}
+          {% for people in site.data.pis_full %}
             {% if people.active == false %}
                 {% assign count = count | plus: 1 %}
                   {% assign modcount = count | modulo: 2 %}

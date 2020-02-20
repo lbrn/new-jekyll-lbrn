@@ -52,6 +52,13 @@
   project_title: Role of mTOR and its targeting by fisetin for treating psoriasis
   mentors:
   collaborator: Sonika Patial
+  funding:
+    -
+      name: Pilot Project
+      period: 05-01-2018 to 04-30-2019
+    -
+      name: INBRE COBRE Collaborative Project
+      period: 08-01-2019 to 04-30-2020
   abstract: |
       The primary objective of this proposal is to validate the critical role of the mTOR and secondary signaling in skin inflammation with emphasis on psoriasis pathogenesis and to test fisetin, a common natural dietary ingredient for its management. Psoriasis is a chronic and currently incurable inflammatory skin disease that affects an estimated 3% of the world population3, 4,5 with > 8 million afflicted individuals in the US alone3, 4. Psoriasis etiology is incompletely understood, but involves disruption of multiple cell systems impinging on the dynamic interaction amid immune cells and the skin, featuring epidermal hyperplasia, immune cell infiltration, immune-mediators orchestration and skin barrier dysfunction3, 4. The past several decades have recorded a skyrocketing increase in new psoriasis cases, associated with significant decline in patients’ quality of life and an increased risk of arthritis and cardiovascular diseases6. Being multifactorial, curative treatments for mild/moderate psoriasis have proved frustrating and still remain elusive, thus it is unlikely that hitting a single target will effectively control the disease. Thus, there remains a dire need to develop novel and effective mechanisms and target-based strategies for long-term patient benefits. Our preliminary data suggest that amongst multiple signaling networks implicated in psoriasis, the phospho-inositol- 3 Kinase (PI3K)/protein kinase B(Akt)/mammalian target of Rapamycin (mTOR) and MAPK pathways, which regulate cell growth and angiogenesis, are clinically relevant targets that cooperatively promote psoriasis7, 8. We observed that PI3K/Akt/mTOR signaling is hyperactivated in both human psoriatic and imiquimod (IMQ)-induced murine psoriasis-like skin lesions compared to unaffected tissues7, 8. Likewise, our pilot studies on competitive binding, Kd’s and in-silico docking analyses identified fisetin as a potent dual mTOR kinase inhibitor that physically interacts and competitively binds mTOR and p70S6K1 with binding energies of -7 to -10.5Kcal/mol9. In addition, fisetin alone or in combination with activating agents, induced differentiation in normal human epidermal keratinocytes (NHEKs) and inhibited 1) NHEK proliferation, 2) PI3K/Akt/mTOR activation, 3) mTOR activity, 4) secretion of pro-inflammatory cytokines by NHEKs, peripheral blood mononuclear cells (PBMCs) and a CD4+T activated 3 dimensional (3D) Full-Thickness Reconstituted Human Skin equivalent model of Psoriasis (FTRHSP). Based on these observations, we posit that “PI3K/Akt/mTOR and MAPK networks are critical in psoriasis pathogenesis and, fisetin will inhibit the activation of these pathways, suppress proliferation, inflammation and neo-vascularization, and concomitantly induce differentiation to efficiently alleviate psoriasiform disease”.
 -
@@ -112,7 +119,7 @@
   abstract: |
       Giardia lamblia is a flagellated protozoan parasite that causes gastrointestinal disease giardiasis in humans and is responsible for major waterborne outbreaks of diarrhea in the United States. Metronidazole (Flagyl) has been the drug of choice for treating giardiasis, however adverse side effects and development of drug resistance strains have necessitated search for new drugs. Translation machinery of Giardia is significantly different from mammals and yeast and hence could serve as a potential drug target. The long-term goal of this project is to understand the mechanism of translation initiation of Giardia.Giardia mRNAs have very short 5'UTRs (0 - 6 nts) and lacks some key translation initiation factors. In mammals and yeast, translation initiation factor eIF4G forms a trimeric complex eIF4F by binding with two proteins, a 5' cap-binding protein eIF4E and RNA helicase eIF4A. Initiation factor eIF4G is a key player in binding pre-initiation complexes to 5' end of mRNA by interacting with eIF3. Homology searches of Giardia genome database have identified homologues for eIF4E and eIF4A but not eIF4G. Therefore, it is not clear as to how pre-initiation complexes are recruited to the mRNA in the absence of eIF4G. Since GleIF4E2 (cap-binding homolog of eIF4E) and GleIF4A (RNA helicase homolog of eIF4A) bind in close proximity to the initiation codon due to short 5'UTRs, we hypothesized that GleIF4E2 and GleIF4A could directly interact with the components of the pre-initiation complex and facilitate its binding to the initiation codon. This hypothesis was supported by our preliminary studies using yeast two hybrid assays that have identified two novel protein-protein interactions; (a) interaction of GleIF4E2 with GleIF2β, a subunit of GleIF2 and (b) interaction of GleIF4A with GleIF3i, a subunit of GleIF3 complex. Both GleIF2 and GleIF3 are key components of pre-initiation complex. These results suggest that the recruitment of pre-initiation complexes to the 5'end of the mRNA may follow a different pathway compared to that of mammals and yeast. The short-term goal is to assess the role of these novel protein-protein interactions in translation initiation of Giardia. In addition, we will examine the composition of GleIF3 complex of Giardia as homologues of several key subunits required for translation initiation in mammals and yeast could not be identified in Giardia genome database. Specific aim #1: To validate protein-protein interactions identified by yeast two-hybrid assays. To validate the interactions observed between the two pairs of proteins in yeast two-hybrid assays, we will use proximity-dependent biotin ligation assays, co-immunoprecipiation (Co-IP) assays and proximity dependent ligation (PLA) assays. Specific aim #2: To investigate the role of protein-protein interactions between GleIF4E2 and GleIF2β in translation initiation. Computational methods (SWISS-MODEL and ZDOCK) will be used to identify amino acid residues of GleIF4E2 involved in interaction with GleIF2β. Site-directed mutagenesis will be performed to alter predicted amino acids to alanine. The mutated GleIF4E2 will be checked for its interaction with GleIF2β using yeast two-hybrid assay. Alternatively, a genetic screen of randomly mutagenized clones of GleIF4E2 will be performed to identify mutants that lack the ability to interact with GleIF2. These mutants will be then further confirmed for their lack of interactions using proximity dependent biotin ligation assay, co-immunoprecipitation assays and PLA assay. The GleIF4E2 mutants that failed to interact with GleIF2β will be overepxressed to test their effect on translation of a reporter gene in Giardia. Specific aim #3: To investigate the role of protein-protein interactions between GleIF4A and GleIF3i in translation initiation. Similar to specific aim #2, to identify amino acids residues of GleIF4A involved in binding to GleIF4A, site-direct mutagenesis and genetic screen of randomly mutagenized clones will be used. The mutants that fail to interact with GleIF3i will be overexpressed to test their effect on translation of a reporter gene in Giardia. In addition, we will determine whether GleIF3i stimulate the ATPase and helicase activity of GleIF4A in vitro. Specific aim #4: To characterize the components of GleIF3 complex from Giardia lamblia. We will affinity purify the GleIF3 complexes from Giardia cells using PTP tagged GleIF3 subunits and identify the components by mass spectrometry. In addition we will perform yeast two hybrid assays to determine the binary interactions between six subunits identified by homology searches of Giardia genome database.
 -
-  name: Seetharama Satyanarayanajois
+  name: Seetharama D. Jois
   active: true
   origin: University of Louisiana at Monroe
   image: SSatyanarayanajois.jpg
@@ -283,6 +290,10 @@
   image: SPatial.jpg
   project_title: Role of mTOR and its targeting by fisetin for treating psoriasis
   mentors:
+  funding:
+    -
+      name: INBRE COBRE Collaborative Project
+      period: 08-01-2019 to 04-30-2020
   collaborator: Jean Christopher Chamcheu
   abstract: |
       The primary objective of this proposal is to validate the critical role of the mTOR and secondary signaling in skin inflammation with emphasis on psoriasis pathogenesis and to test fisetin, a common natural dietary ingredient for its management. Psoriasis is a chronic and currently incurable inflammatory skin disease that affects an estimated 3% of the world population3, 4,5 with > 8 million afflicted individuals in the US alone3, 4. Psoriasis etiology is incompletely understood, but involves disruption of multiple cell systems impinging on the dynamic interaction amid immune cells and the skin, featuring epidermal hyperplasia, immune cell infiltration, immune-mediators orchestration and skin barrier dysfunction3, 4. The past several decades have recorded a skyrocketing increase in new psoriasis cases, associated with significant decline in patients’ quality of life and an increased risk of arthritis and cardiovascular diseases6. Being multifactorial, curative treatments for mild/moderate psoriasis have proved frustrating and still remain elusive, thus it is unlikely that hitting a single target will effectively control the disease. Thus, there remains a dire need to develop novel and effective mechanisms and target-based strategies for long-term patient benefits. Our preliminary data suggest that amongst multiple signaling networks implicated in psoriasis, the phospho-inositol- 3 Kinase (PI3K)/protein kinase B(Akt)/mammalian target of Rapamycin (mTOR) and MAPK pathways, which regulate cell growth and angiogenesis, are clinically relevant targets that cooperatively promote psoriasis7, 8. We observed that PI3K/Akt/mTOR signaling is hyperactivated in both human psoriatic and imiquimod (IMQ)-induced murine psoriasis-like skin lesions compared to unaffected tissues7, 8. Likewise, our pilot studies on competitive binding, Kd’s and in-silico docking analyses identified fisetin as a potent dual mTOR kinase inhibitor that physically interacts and competitively binds mTOR and p70S6K1 with binding energies of -7 to -10.5Kcal/mol9. In addition, fisetin alone or in combination with activating agents, induced differentiation in normal human epidermal keratinocytes (NHEKs) and inhibited 1) NHEK proliferation, 2) PI3K/Akt/mTOR activation, 3) mTOR activity, 4) secretion of pro-inflammatory cytokines by NHEKs, peripheral blood mononuclear cells (PBMCs) and a CD4+T activated 3 dimensional (3D) Full-Thickness Reconstituted Human Skin equivalent model of Psoriasis (FTRHSP). Based on these observations, we posit that “PI3K/Akt/mTOR and MAPK networks are critical in psoriasis pathogenesis and, fisetin will inhibit the activation of these pathways, suppress proliferation, inflammation and neo-vascularization, and concomitantly induce differentiation to efficiently alleviate psoriasiform disease”.
@@ -751,7 +762,7 @@
 
 -
   name: Elahe Mahdavian
-  active: true
+  active: false
   origin: Louisiana State University in Shreveport, Department of Computer Science
   image: EMahdavian.jpg
   project_title: Development Of Novel Anti-Cancer Agents
@@ -857,7 +868,7 @@
   name: Sami Nazzal
   active: false
   image: SNazzal.jpg
-  origin: University of Louisiana at Monroe
+  origin: University of Louisiana at Monroe, School of Pharmacy
   mentors:
     -
       name: James Cardelli
@@ -895,7 +906,7 @@
   name: Brian Salvatore
   active: false
   image: BSalvatore.jpg
-  origin: Louisiana State University, Shreveport
+  origin: Louisiana State University, Shreveport, Department of Chemistry and Physics
   mentors:
     -
       name: Shile Huang
@@ -915,32 +926,9 @@
       period: May 1, 2015 - April 30, 2018
 
 -
-  name: Seetharama D Satyanarayanajois
-  active: false
-  origin: University of Louisiana at Monroe, College of Pharmacy
-  image: SSatyanarayanajois.jpg
-  project_title: Role of Extracellular Domain IV of HER2 Protein in Cell Signaling
-  mentors:
-    -
-      name: Marcia Newcomer, Ph.D.
-      origin: Department of Biological Sciences, Louisiana State University
-    -
-      name: Maria da Graça H.Vicente, Ph.D.
-      origin: Department of Chemistry, Louisiana State University
-  funding:
-    -
-      name: Project R11
-      period: May 1, 2011 - April 30, 2015
-    -
-      name: Pilot Project
-      period: Jan 2, 2008 – April 30, 2011
-  abstract: |
-    The long-term objective of this research project is to understand the role of extracellular domains of proteins in protein-protein interactions for cell signaling. The short-term objective of this project is to understand the role of domain IV of human epidermal growth factor receptor 2 (HER2) extracellular domain in protein-protein interaction with other epidermal growth factor receptors (EGFRs) in signaling for cell growth. Our hypothesis is that protein-protein interaction surfaces have small core regions which are hydrophobic in nature and protein-protein interactions can be modulated by small molecules that interact with core regions to modulate the signaling for cell growth. As a model system we will investigate protein-protein interactions on EGFR extracellular domains. In particular, we will investigate the interaction of HER2 protein with other EGFRs (EGFR/HER1, HER3). Protein-protein interactions are critical for many biological processes. The interfaces of these protein-protein interactions may have cavities or flat surfaces that are dominated by non-covalent interactions. Analyses of the structures and sequences using bioinformatics approaches have revealed that, although the interacting surfaces are large (700 to 3,000), there are core regions in the surface that facilitate high-affinity interactions. These core regions are dominated by amino acids such as tyrosine, phenylalanine. Thus, small molecules that are targeted to these core regions can be used to modulate protein-protein interactions and may have clinical significance. The protein HER2 is known to interact with other EGFRs to form dimers/heteromers. HER2-mediated heterodimerization leads to signals for cell growth. Deregulation of the signaling pathway via HER2 is known to occur in some tumor cells. HER2 interaction with HER3 and EGFR is known to be dominant in HER2-overexpressing tumors. Blockade of the interaction of HER2 with other receptors ultimately leads to control of cell growth. The extracellular domain of EGFRs consists of four domains, of which domain II and domain IV are known to be involved in the dimerization process. Crystal structures of the extracellular domains of EGFR and HER2-4 are available. The homodimer of the crystal structure of EGFR extracellular domain has been elucidated. However, it lacks domain IV and, thus, the importance of domain IV in dimerization is not understood. Hence, these proteins will serve as good models to understand protein-protein interaction for cell signaling. Furthermore, blocking of domain IV of HER2 protein has clinical significance and, hence, the results from the proposed research can be applicable as â€œtranslational research. The studies presented here can be extended to other protein-protein interactions of biological importance. In the preliminary studies we have carried out, we have shown that a small hydrophobic molecule binds to domain IV of HER2 protein and also inhibits HER2-HER3 interaction in surface plasmon resonance experiments. In the proposed research project, our goal is to understand the importance of domain IV of HER2 in protein-protein interactions and the core region that is critical for dimerization and its modulation for cell signaling.
-
--
   name: Prerna Sethi Dua
   active: false
-  origin: Department of Health Information Management
+  origin: Louisiana Tech University, Department of Health Information Management
   university: Louisiana Tech University
   image: PSethi.jpg
   project_title: Rule-based Data Mining for Knowledge Discovery in Alzheimer’s Disease using Microarray Databases
@@ -962,7 +950,36 @@
     Microarray gene expression analysis, an important component in the design of in-silico molecular medicine methods, has made possible to monitor the expression level of thousands of genes under different samples (conditions) at the same time. The analysis can yield novel information regarding cellular mechanisms, regulatory functions of genes, functions of genes and proteins, gene network structure, and pathways, and can relate the risk of being affected by diseases to gene expression profiles which are characteristics for phenomenon such as Alzheimer’s Disease (AD). Particularly in AD where the effective diagnosis includes annotation, early detection, distinction, and prediction, data mining and statistical approaches offer the promise for precise, accurate, and functionally robust analysis of gene and protein expression data. In this proposal we will investigate into the miRNA expressions of AD patients and age-matched controls by designing and developing algorithms to discover correlated and co-regulated sets of miRNA patterns that have a biologically significant role in the progression of Alzheimer’s. Our approach lies in the design and development of computationally efficient algorithms for dimensionality and noise reduction followed by supervised classification of gene expression data using the theory of association rules and clustering with the biological characterization of sets of genes discovered. We hypothesize that rank-based associations for unsupervised clustering can provide biologically significant correlations among co-regulated miRNA profiles with a higher specificity and sensitivity. The proposed approach will have the following algorithmic components as specific aims: a) Design algorithms for dimensionality reduction of gene expression data using the statistical indicators of “housekeeping” genes as the underlying factor of control, b) Design and develop algorithms for finding correlations in subspaces of high dimensional gene, protein expression data using theory of association rules, c) Design and develop metrics for clustering to synopsize the high dimensional gene correlations for better biological interpretation, d)Perform validation for evaluation for the discovered sets of genes for their biological significance, and e) Develop an open-source tool-kit, by incorporating the developed algorithms.
 
     We will objectively achieve the aims of the Computational and Structural Biology core of LA-INBRE by fostering new collaborations across the State and extensively leveraging the computational resources made available through the Data Mining laboratory in the College and LONI for the design and development of algorithms.
-
+-
+  name: Lidiya Dubytska
+  active: false
+  origin: Southern University and A&amp;M College
+  university: Southern University and A&amp;M College
+  image: LDubytska.jpg
+  project_title: Legionella pneumophilia T4SS (lvh) system and its role in virulence
+  mentors:
+  funding:
+  abstract:
+-
+  name: Galina Goloverda
+  active: false
+  origin: Xavier University of Louisiana
+  university: Xavier University of Louisiana
+  image: GGoloverda.jpg
+  project_title: Toward development of a novel cancer diagnostic tool
+  mentors:
+  funding:
+  abstract:
+-
+  name: Marjan Trutschl
+  active: false
+  origin: Louisiana State University, Shreveport
+  university: Louisiana State University, Shreveport
+  image: MTrutschl.jpg
+  project_title: Computational Modeling of Blood Metabolomics Biomarkers Addressing Racial Disparity
+  mentors:
+  funding:
+  abstract:
 -
   name: Maureen Shuh
   active: false
@@ -1083,7 +1100,7 @@
 -
   name: Scott Poh
   active: false
-  origin: Louisiana Tech University
+  origin: Louisiana Tech University, Center for Biomedical Engineering and Rehabilitation Sciences
   image: SPoh.jpg
   project_title: Targeting of Macrophages in Inflammation With Thermosensitive Biopolymers
   funding:

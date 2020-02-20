@@ -1,5 +1,5 @@
 ---
-layout: pipage
+layout: pidatapage_full
 title: Molecular mechanisms of antioxidant on gene regulation in prostate cancer cells
 author: Xiaoping Yi
 school: Southern University and A&M College

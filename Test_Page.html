@@ -34,7 +34,7 @@ title: Modified About/Test Environment
 <p>Site. time: {{site.time}}</p>
 <p>site.time date: {{ site.time | date: "%Y %m %d" }}</p>
 
-{% for pi in site.data.pis_edit %}
+{% for pi in site.data.pis_full %}
   {{pi.name}}
 {% endfor %}
 <div class="bar">

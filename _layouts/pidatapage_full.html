@@ -35,7 +35,7 @@
       <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->
       <div class="content profilepage">
 
-        {% for pi in site.data.pis_edit %}
+        {% for pi in site.data.pis_full %}
           {% if pi.name == page.person%}
           <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.name | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
             <div class="page">

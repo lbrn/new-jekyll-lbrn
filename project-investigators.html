@@ -54,7 +54,7 @@ title: Project Investigators
 <section class="directory" >
   {% assign count = 0 %}
 
-  {% for people in site.data.pis_edit %}
+  {% for people in site.data.pis_full %}
         {% if people.active %}
         {% assign count = count | plus: 1 %}
           {% assign modcount = count | modulo: 2 %}

@@ -6,7 +6,7 @@ school: Louisiana State University, Biological Sciences
 project-type: TestElement
 image: "lee.jpg"
 categories: project-investigator
-email: eduardo_martinez@subr.edu
+email: yhlee@lsu.edu
 phone: (225) 578-0522
 zip: 70803
 city: Baton Rouge

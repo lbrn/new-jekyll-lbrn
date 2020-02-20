@@ -170,7 +170,6 @@ function piFilter(){
   var pilots = $("article:has(h6:contains('Pilot'))");
   var translproj = $("article:has(h6:contains('Translational'))");
   var collab = $("article:has(h6:contains('Collaborative'))");
-  var collab = $("article:has(h6:contains('Other'))");
 
   // var translproj = $('article[data-ptype="TranslationalProject"]');
 

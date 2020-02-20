@@ -1,5 +1,5 @@
 ---
-layout: pidatapage_test
+layout: pidatapage_full
 title:
 person: Sonika Patial
 school:
