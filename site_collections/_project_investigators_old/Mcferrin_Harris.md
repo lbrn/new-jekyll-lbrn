@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Inhibition Of Hsv-1 Associated Ocular Neovascularization By Antiangiogenic Agents
 author: Harris McFerrin

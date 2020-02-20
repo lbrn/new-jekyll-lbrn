@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Rational Design of Selective Small-Molecules as Potential IMPDH Inhibitors
 author: Jean Fotie

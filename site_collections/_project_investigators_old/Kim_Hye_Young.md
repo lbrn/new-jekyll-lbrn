@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Large-scale atomistic simulation for novel self-assembled drug delivery vehicles
 author: Hye-Young Kim

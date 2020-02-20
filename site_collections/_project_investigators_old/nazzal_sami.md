@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Cytotoxicity Of Tocotrienol Nanoemulsions Loaded With Paclitaxel/Gemcitabine Pufa
 author: Sami Nazzal

@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Modeling Protein-Substrate Interactions In The Lipoxygenase Family Using Computational Approaches
 author: Shuju Bai

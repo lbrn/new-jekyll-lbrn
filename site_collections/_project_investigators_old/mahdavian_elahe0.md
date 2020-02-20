@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Development Of Novel Anti-Cancer Agents
 author: Elahe Mahdavian

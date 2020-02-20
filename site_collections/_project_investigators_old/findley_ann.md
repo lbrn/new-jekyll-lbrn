@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Acquisition Of Real-Time Pcr And Gel Documentation Systems For Ulm Biology
 author: Ann Findley

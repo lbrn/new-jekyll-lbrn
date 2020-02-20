@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Mechanistic Analysis Of Kifsa Mutations That Cause Hereditary Spastic Paraplegia
 author: Thomas Huckaba

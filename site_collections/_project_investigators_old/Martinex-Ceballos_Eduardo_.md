@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Regulation Of Mouse ES Cell Differentiation Into Neurons By Hoxa1
 author: Eduardo Martinez-Ceballos

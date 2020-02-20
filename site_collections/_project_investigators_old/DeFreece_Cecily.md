@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Characterizing inhibitors of the mutagenic retrotransposon LINE I endonuclease
 author: Cecily DeFreece

@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Enhancement Of MicroRNA Research Through Bioinformatics Tool Development
 author: Kun Zhang

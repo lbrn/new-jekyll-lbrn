@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Point-Of-Care Microelectronic Diagnostics For Early Phase Rickettsial Infections
 author: Adarsh Radadia

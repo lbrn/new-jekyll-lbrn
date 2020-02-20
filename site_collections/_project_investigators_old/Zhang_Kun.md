@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title: Detecting Race-Relevant Molecular Biomarkers with Clinical Utilities Using Multi- Omics Data Across Tumor Types
 project: Enhancement Of MicroRNA Research Through Bioinformatics Tool Development
 author: Kun (Karen) Zhang

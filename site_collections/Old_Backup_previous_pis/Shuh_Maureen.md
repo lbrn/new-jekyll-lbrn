@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: The Molecular Mechanisms Of Adult T Cell Leukemia Induction By HTLV-I Tax
 author: Maureen Shuh

@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Newly Discovered Neural Receptor's Role In A_1-42 Pathogenesis Of Alzheimer's Disease
 author: Teresa Murray
