@@ -1584,6 +1584,10 @@ div.research img{
   section.cores ul li:hover {
     background-color: #e5f3e6;
     cursor: pointer; }
+    section.cores #core-swap ul li:hover {
+      background-color: unset;
+      cursor: auto;
+    }
   section.cores ul li.active {
     background-color: #d4ebd5; }
   section.cores ul li.active:hover {
@@ -1949,11 +1953,19 @@ div.research img{
   width: 100%;
 
   }
-   .bbc-core-list  .horiline{
-    width:80%!important;
-    margin-left:10%;
-    margin-right:10%;
+  #core-list .horiline-l{
+  border: #8ECB91;
+  border-style: none none dotted none;
+  margin-right:50%;
+  width: 50%;
   }
+  #core-list .horiline-r{
+  border: #8ECB91;
+  border-style: none none dotted none;
+  margin-left:50%;
+  width: 50%;
+  }
+
   #core-list span{
     border: #8ECB91;
     border-style:dotted none none none;
