@@ -258,10 +258,10 @@
   abstract: |
       Cancer is one of the most difficult ailments and it became leading causes of death around the world. Anticancer agents that target DNA are generally the most effective agents in clinical use, but they are extremely toxic. Consequently, much effort has been put into finding robust anti-cancer agents that are more selective and less toxic. Along those lines, we recently obtained some interesting preliminary results on anticancer activity of our heterocyclic compounds. Currently we are planning on synthesizing new set of nitrogen heterocycles with different substitution patterns, and evaluate them for anticancer activity. Based on the preliminary results and the rationality of pyrazole moiety with known bioactive molecules, we will design and synthesize a new library of heterocycles with unique substitution patterns and evaluate for anticancer activity using variety of biological assays. The long-term goal of this project is to find novel anticancer agents for lung cancer therapy. In addition to that, we will be developing several synthetic approaches that will ultimately provide new chemical tools for the diverse range of synthetic chemists and biomedical researchers in academia and industry.
 -
-  name: Barabutis Nektarios
+  name: Nektarios Barabutis
   active: true
   origin: University of Louisiana at Monroe
-  image: BNektarios.jpg
+  image: NBarabutis.jpg
   project_title: Elucidation of the Mechanisms which are involved in the anti-inflammatory action of Hsp90 inhibitors in the vasculature
   mentors:
   funding:
