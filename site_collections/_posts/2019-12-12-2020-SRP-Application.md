@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LBRN Summer Research Program Application 2020
-categories: featured
+categories: news
 featuredImageUrl: "images/postImages/LBRN Summer Research 2020 Flyer.png"
 featuredImageUrlSquare: "images/postImages/LBRN Summer Research 2020 Flyer.png"
 excerpt_separator: <!--more-->
