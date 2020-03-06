@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 8th Annual LA Conference on Computational Biology and Bioinformatics, April 3-4, 2020
-categories: news
+categories: featured
 featuredImageUrl: images/2020_8thannual_ccbb_2020-02-07.png
 featuredImageUrlSquare: images/2020_8thannual_ccbb_2020-02-07.png
 excerpt_separator: <!--more-->
