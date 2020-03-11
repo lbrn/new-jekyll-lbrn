@@ -1881,6 +1881,15 @@ div.research img{
   	margin-left: 30%;
 
   }
+  #core-list .container{
+    width:100%;
+    margin:unset;
+    padding: unset;
+  }
+  #core-list .container .row{
+    width:100%;
+    margin:unset;
+  }
   .admin-core-list div{
     height:10em;
 
@@ -1894,7 +1903,7 @@ div.research img{
   #core-list .quintblock{
 
     display: inline-block;
-    width: 19%;
+    width: 20%;
     margin-left: unset;
   }
   #core-list .quintblock h1{
@@ -1915,7 +1924,7 @@ div.research img{
   #core-list .sevenblock{
 
     display: inline-block;
-    width: 13%;
+    width: 14.28%;
     margin-left: unset;
 
   }
