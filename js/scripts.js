@@ -4,6 +4,7 @@ $( document ).ready(function() {
   piFilter();
   faqReveal();
   selectTypeSrp();
+  selectTypeMnt();
   accordian();
   if(document.getElementById('sliderNav') != null){
     slider();
@@ -518,6 +519,52 @@ function faqReveal() {
     question.next().slideUp();
   });
 }
+//hides irrelevant data on summer research program Page
+function selectTypeMnt(){
+  var gradmentor = $('div.gradmentor');
+  var facultymentor = $('div.facultymentor');
+  var undergradmentor = $('div.undergradmentor');
+  var choose = $('div.chooseTypeInline');
+  $('input').click(function(){
+    switch ($(this).val()) {
+      case 'facultymentor' :
+        // choose.fadeOut();
+        gradmentor.fadeOut();
+        facultymentor.fadeIn();
+        undergradmentor.fadeOut();
+        $('input[value=facultymentor]').prop('checked', true);
+        break;
+      case 'gradmentor' :
+        // choose.fadeOut();
+        gradmentor.fadeIn();
+        facultymentor.fadeOut();
+        undergradmentor.fadeOut();
+        $('input[value=gradmentor]').prop('checked', true);
+        break;
+      case 'undergradmentor' :
+        // choose.fadeOut();
+        gradmentor.fadeOut();
+        facultymentor.fadeOut();
+        undergradmentor.fadeIn();
+        $('input[value=undergradmentor]').prop('checked', true);
+        break;
+      default :
+        choose.fadeIn();
+        // grads.fadeOut();
+        // faculty.fadeOut();
+        // undergrads.fadeOut();
+    }
+  });
+  $(window).scroll(function(){
+    var chooseMenu = $('#mobileChooseType');
+    if ($(this).scrollTop() >= $(this).height()) {
+        chooseMenu.addClass('down');
+    } else {
+        chooseMenu.removeClass('down');
+    }
+  });
+}
+
 //hides irrelevant data on summer research program Page
 function selectTypeSrp(){
   var grads = $('div.grads');

@@ -485,6 +485,10 @@ float:left;
   .faculty, .grads, .undergrads {
     display: none; }
 
+  .facultymentor, .gradmentor, .undergradmentor {
+    display: none; }
+
+
   body p {
     font-weight: 400; }
   body p.natural-link a {
