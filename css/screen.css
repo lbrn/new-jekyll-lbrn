@@ -1874,11 +1874,14 @@ div.research img{
   } */
   #core-list{
     text-align: center;
-
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
   }
   #core-list div{
-  	width: 40%;
-  	margin-left: 30%;
+  	/* width: 40%;
+  	margin-left: 30%; */
 
   }
   #core-list .container{
@@ -1891,12 +1894,19 @@ div.research img{
     margin:unset;
   }
   .admin-core-list div{
-    height:10em;
+    /* height:10em; */
 
   }
+  #core-list .container{
+    flex-direction: row;
+    display:flex;
+    max-width: 100%;
+  }
   #core-list .triblock{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
     height:100%;
-    display: inline-block;
     width: 30%;
     margin-left: unset;
   }
@@ -1914,6 +1924,10 @@ div.research img{
     font-size:11pt;
     /* color: red; */
 
+  }
+  #core-list .quintblock h1:nth-of-type(2){
+    /* color: red; */
+    height: 2em;
   }
   /* .quintblock h1{
     font-size: 14pt!important;
@@ -1987,7 +2001,8 @@ div.research img{
     width: unset;
     padding: unset;
     float: none;
-    height:1.5em;
+    height: unset;
+    line-height: 1.5;
   }
   #core-list li{
     font-size: 11pt;
