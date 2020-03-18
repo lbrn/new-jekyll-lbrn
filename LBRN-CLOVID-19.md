@@ -8,7 +8,7 @@ textOnUrl: LBRN Coronavirus (COVID-19) Information
 
 To our all our partners, faculty, and students. As you know, the current situation in Louisiana is currently fluid with regards to the Coronavirus (COVID-19). <!--more-->
 
-LBRN is based at Louisiana State University in Baton Rouge with administrative staff at LSU School of Veterinary Medicine and the LSU Center for Computation & Technology. We have already shifted to working remotely and continue to handle the day to day activities of the grant. Any announcements regarding our activities will come out as needed. If you have any questions, please do not hesitate to drop us a note at [LBRN E-mail (lbrn@.lsu.edu)](lbrn@.lsu.edu) if you are not already in touch with us directly.
+LBRN is based at Louisiana State University in Baton Rouge with administrative staff at LSU School of Veterinary Medicine and the LSU Center for Computation & Technology. We have already shifted to working remotely and continue to handle the day to day activities of the grant. Any announcements regarding our activities will come out as needed. If you have any questions, please do not hesitate to drop us a note at [LBRN E-mail](mailto:lbrn@.lsu.edu) if you are not already in touch with us directly.
 
 For Coronavirus (COVID-19) information please check your local administrative websites accordingly. You can also check on information here:
 
