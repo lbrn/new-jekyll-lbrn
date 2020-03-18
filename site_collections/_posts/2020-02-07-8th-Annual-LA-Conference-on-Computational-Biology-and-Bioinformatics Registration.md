@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cancelled- 8th Annual LA Conference on Computational Biology and Bioinformatics, April 3-4, 2020
-categories: featured
+categories: news
 featuredImageUrl: images/2020_8thannual_ccbb_cancelled.png
 featuredImageUrlSquare: images/2020_8thannual_ccbb_cancelled.png
 excerpt_separator: <!--more-->
