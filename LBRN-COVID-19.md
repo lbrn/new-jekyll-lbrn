@@ -14,7 +14,7 @@ For Coronavirus (COVID-19) information please check your local administrative we
 
   •  [NIH Coronavirus (COVID-19) Information - subscribe for updates](https://www.nih.gov/health-information/coronavirus)  
   •  [CDC Coronavirus (COVID-19) Information](https://www.cdc.gov/coronavirus/2019-ncov/index.html)  
-  •  [Louisiana Department of Health Coronavirus (COVID-19) Information](http://ldh.la.gov/coronavirus/) *Note: updated twice daily with latest case information*  
+  •  [Louisiana Department of Health Coronavirus (COVID-19) Information](http://ldh.la.gov/coronavirus/)  
   •  [LSU Coronavirus Updates and Information](https://www.lsu.edu/coronavirus/index.php)  
   •  [LSU School of Veterinary Medicine Coronavirus Updates](https://lsu.edu/vetmed/disaster_preparedness/coronavirus_updates.php)  
 
