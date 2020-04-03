@@ -42,6 +42,301 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #5ab35e!important;
 }
 @media (min-width: 0) {
+
+      #campusmap {
+        /* background:url(../images/campus-map.svg); */
+        /* height: 10vh; */
+        /* min-height: 500px; */
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+
+      }
+
+      /* Swinging boy text overlay css */
+      #campusmap .bgholder {
+        height: 3em;
+        width: 50%;
+        position: relative;
+        display: inline-block;
+      }
+
+      #campusmap .bg {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.5;
+        z-index: 1;
+        border: solid;
+        border-width: 1px;
+        border-color: black;
+      }
+
+      #campusmap h1 {
+        margin-top: 12%;
+        font-family: roundedMplus1cLight;
+        color: #157262;
+        z-index: 3;
+        position: relative;
+      }
+
+      #campusmap ul {
+        padding-left: unset;
+        position: relative;
+      }
+
+      #campusmap .bgholder:nth-child(even) .bg {
+        opacity: 0.7;
+
+      }
+
+      #campusmap .bgholder:nth-child(even) li {
+        font-family: roundedMplus1cLight;
+        color: #212529;
+      }
+
+      #campusmap li {
+        padding-left: 0.5em;
+        list-style: none;
+        font-size: 25pt;
+        font-family: roundedMplus1cExtraBold;
+        color: #157262;
+        z-index: 2;
+        position: absolute;
+        height: 100%;
+      }
+
+      .mapcontainer {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .mapcontainer a div {
+        opacity: 0.5;
+        border-top: solid 1.5px #2C3D6C;
+        border-bottom: solid 1.5px #2C3D6C;
+      }
+
+      .mapcontainer a div:hover {
+        background-color: #8ECB91;
+        -moz-transition: all .2s ease-in;
+        -o-transition: all .2s ease-in;
+        -webkit-transition: all .2x ease-in;
+      }
+
+      .mapcontainer .sus {
+        height: 4%;
+        width: 6%;
+        margin-top: 3%;
+        margin-left: 9%;
+        position: absolute;
+      }
+
+      .mapcontainer .lsuhsc-s {
+        height: 4%;
+        width: 13%;
+        margin-top: 6.5%;
+        margin-left: 15%;
+        position: absolute;
+      }
+
+      .mapcontainer .la-tech {
+        height: 4%;
+        width: 11%;
+        margin-top: 5%;
+        margin-left: 37%;
+        position: absolute;
+      }
+
+    .mapcontainer   .ulm {
+        height: 4%;
+
+        width: 7%;
+        margin-top: 16%;
+        margin-left: 43%;
+        position: absolute;
+      }
+
+      .mapcontainer .lsu-s {
+        height: 4%;
+
+        width: 8%;
+        margin-top: 20%;
+        margin-left: 11%;
+        position: absolute;
+      }
+
+    .mapcontainer   .grambling {
+        height: 4%;
+        width: 13%;
+        margin-top: 20.5%;
+        margin-left: 25%;
+        position: absolute;
+      }
+
+    .mapcontainer   .nsu {
+        height: 4%;
+        width: 6%;
+        margin-top: 35%;
+        margin-left: 19%;
+        position: absolute;
+      }
+
+  .mapcontainer     .centenary {
+        height: 4%;
+        width: 13%;
+        margin-top: 24%;
+        margin-left: 8%;
+        position: absolute;
+      }
+
+    .mapcontainer   .lacollege {
+        height: 4%;
+        width: 14%;
+        margin-top: 31%;
+        margin-left: 34%;
+        position: absolute;
+      }
+
+    .mapcontainer   .lsu-a {
+        height: 4%;
+        width: 9%;
+        margin-top: 46%;
+        margin-left: 29%;
+        position: absolute;
+      }
+
+    .mapcontainer   .mcneese {
+        height: 4%;
+        width: 11%;
+        margin-top: 52%;
+        margin-left: 19%;
+        position: absolute;
+      }
+
+    .mapcontainer   .ololc {
+        height: 4%;
+        width: 9%;
+        margin-top: 37%;
+        margin-left: 51%;
+        position: absolute;
+      }
+
+    .mapcontainer   .subr {
+        height: 4%;
+        width: 8%;
+        margin-top: 41%;
+        margin-left: 49%;
+        position: absolute;
+      }
+
+      .mapcontainer .brcc {
+        height: 4%;
+        width: 8%;
+        margin-top: 44.5%;
+        margin-left: 50%;
+        position: absolute;
+      }
+
+    .mapcontainer   .lsu {
+        height: 4%;
+        width: 9%;
+        margin-top: 46%;
+        margin-left: 29%;
+        position: absolute;
+      }
+
+    .mapcontainer   .ull {
+        height: 4%;
+        width: 6%;
+        margin-top: 63%;
+        margin-left: 36%;
+        position: absolute;
+      }
+
+    .mapcontainer   .selu {
+        height: 4%;
+        width: 8%;
+        margin-top: 44%;
+        margin-left: 65%;
+        position: absolute;
+      }
+
+    .mapcontainer   .pbrc {
+        height: 4%;
+        width: 7%;
+        margin-top: 59%;
+        margin-left: 50%;
+        position: absolute;
+      }
+
+    .mapcontainer   .tnprc {
+        height: 4%;
+        width: 9%;
+        margin-top: 48%;
+        margin-left: 70%;
+        position: absolute
+      }
+
+    .mapcontainer   .uno {
+        height: 4%;
+        width: 6%;
+        margin-top: 54%;
+        margin-left: 74%;
+        position: absolute;
+      }
+
+    .mapcontainer   .suno {
+        height: 4%;
+        width: 8%;
+        margin-top: 54%;
+        margin-left: 82%;
+        position: absolute;
+      }
+
+    .mapcontainer   .dillard {
+        height: 4%;
+        width: 9%;
+        margin-top: 57%;
+        margin-left: 76%;
+        position: absolute;
+      }
+
+    .mapcontainer   .lsuhsc {
+        height: 4%;
+        width: 10%;
+        margin-top: 62.5%;
+        margin-left: 75%;
+        position: absolute;
+      }
+
+    .mapcontainer   .nicholls {
+        height: 4%;
+        width: 11%;
+        margin-top: 70.5%;
+        margin-left: 50%;
+        position: absolute;
+      }
+
+    .mapcontainer   .tulane {
+        height: 4%;
+        width: 9%;
+        margin-top: 67%;
+        margin-left: 67%;
+        position: absolute;
+      }
+
+    .mapcontainer   .xavier {
+        height: 4%;
+        width: 9%;
+        margin-top: 70.5%;
+        margin-left: 66%;
+        position: absolute;
+      }
   .socialMedia{
     display:none;
     margin-right:unset;
@@ -1588,6 +1883,10 @@ div.research img{
   section.cores ul li:hover {
     background-color: #e5f3e6;
     cursor: pointer; }
+    section.cores #core-swap ul li:hover {
+      background-color: unset;
+      cursor: auto;
+    }
   section.cores ul li.active {
     background-color: #d4ebd5; }
   section.cores ul li.active:hover {
@@ -1874,27 +2173,48 @@ div.research img{
   } */
   #core-list{
     text-align: center;
-
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
   }
   #core-list div{
-  	width: 40%;
-  	margin-left: 30%;
+  	/* width: 40%;
+  	margin-left: 30%; */
 
+  }
+  #core-list .container{
+    width:100%;
+    margin:unset;
+    padding: unset;
+  }
+  #core-list .container .row{
+    width:100%;
+    margin:unset;
   }
   .admin-core-list div{
-    height:10em;
+    /* height:10em; */
 
   }
+  #core-list .container{
+    flex-direction: row;
+    display:inline-flex;
+    max-width: 100%;
+    flex-wrap:wrap;
+  }
   #core-list .triblock{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
     height:100%;
-    display: inline-block;
     width: 30%;
     margin-left: unset;
   }
   #core-list .quintblock{
 
-    display: inline-block;
-    width: 19%;
+    display: inline-flex;
+    flex-direction: column;
+    width: 20%;
     margin-left: unset;
   }
   #core-list .quintblock h1{
@@ -1906,6 +2226,10 @@ div.research img{
     /* color: red; */
 
   }
+  #core-list .quintblock h1:nth-of-type(2){
+    /* color: red; */
+    height: 2em;
+  }
   /* .quintblock h1{
     font-size: 14pt!important;
   } */
@@ -1914,20 +2238,45 @@ div.research img{
   } */
   #core-list .sevenblock{
 
-    display: inline-block;
-    width: 13%;
+    display: inline-flex;
+    flex-direction: column;
+    /* width: 14.28%; */
     margin-left: unset;
+    /* test */
 
+  }
+  /* MOVE THE NEXT 2 TO SMALL */
+  #core-list .sevenblock{
+    border: #8ECB91;
+    border-style: dotted none none none;
+    width:50%;
+  }
+  #core-list .sevenblock .horiline{
+    display:none;
+  }
+  #core-list .sevenblock .horiline-r{
+    display:none;
+  }
+  #core-list .sevenblock .horiline-l{
+    display:none;
+  }
+  #core-list .sevenblock:nth-of-type(odd){
+    border: #8ECB91;
+    border-right-style:dotted;
+    border-top-style:dotted;
   }
   #core-list .sevenblock h1{
     font-size:12pt;
-    /* color: red; */
+    margin-bottom:0;
+  }
+  /* end */
+
+  /* #core-list .sevenblock h1{
+    font-size:12pt;
   }
   #core-list .sevenblock h2{
     font-size:11pt;
-    /* color: red; */
-
-  }
+  } */
   #core-list h1{
     font-size: 17pt;
   }
@@ -1938,6 +2287,7 @@ div.research img{
     background-color: unset;
   }
   #core-list .vertline{
+    flex: 1 1 2em;
     height:2em;
 	border: #8ECB91;
 	border-style: none dotted none none;
@@ -1953,11 +2303,19 @@ div.research img{
   width: 100%;
 
   }
-   .bbc-core-list  .horiline{
-    width:80%!important;
-    margin-left:10%;
-    margin-right:10%;
+  #core-list .horiline-l{
+  border: #8ECB91;
+  border-style: none none dotted none;
+  margin-right:50%;
+  width: 50%;
   }
+  #core-list .horiline-r{
+  border: #8ECB91;
+  border-style: none none dotted none;
+  margin-left:50%;
+  width: 50%;
+  }
+
   #core-list span{
     border: #8ECB91;
     border-style:dotted none none none;
@@ -1970,7 +2328,8 @@ div.research img{
     width: unset;
     padding: unset;
     float: none;
-    height:1.5em;
+    height: unset;
+    line-height: 1.5;
   }
   #core-list li{
     font-size: 11pt;
@@ -1980,6 +2339,7 @@ div.research img{
   }
   /* end 0 */
 @media (min-width: 414px) {
+
   .navdropdownbig{
     display: block;
   }
@@ -2221,6 +2581,30 @@ div.research img{
     .navdropdownbig ul li ul li a {display:block !important;}
   }  /* end 0 */
 @media (min-width: 667px) {
+  #core-list .sevenblock{
+    border: none;
+     width: 14.28%;
+
+  }
+  #core-list .sevenblock .horiline{
+    display:block;
+  }
+  #core-list .sevenblock .horiline-r{
+  display:block;
+  }
+  #core-list .sevenblock .horiline-l{
+  display:block;
+  }
+  #core-list .sevenblock:nth-of-type(odd){
+    border: none;
+  }
+  #core-list .sevenblock h1{
+    font-size:12pt;
+    margin-bottom:0;
+  }
+  #core-list .sevenblock h2{
+    font-size:11pt;
+  }
   .navdropdownbig ul li {
      /* display: inline-block; */
      width: unset;
