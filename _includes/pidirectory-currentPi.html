@@ -4,14 +4,14 @@
   <h5 >{{people.origin}}</h5>
   {% assign projectNum =  people.funding.size | minus: 1 %}
   {% if
-  people.funding[projectNum].name contains "Full"
-  or people.funding[projectNum].name contains "Startup"
-  or people.funding[projectNum].name contains "Shared Instrument"
-  or people.funding[projectNum].name contains "Pilot"
-  or people.funding[projectNum].name contains "Translational"
-  or people.funding[projectNum].name contains "Collaborative"
+  people.funding[0].name contains "Full"
+  or people.funding[0].name contains "Startup"
+  or people.funding[0].name contains "Shared Instrument"
+  or people.funding[0].name contains "Pilot"
+  or people.funding[0].name contains "Translational"
+  or people.funding[0].name contains "Collaborative"
   %}
-  <h6>{{people.funding[projectNum].name}}</h6>
+  <h6>{{people.funding[0].name}}</h6>
   {% else%}
   <!-- <h6>Placeholder</h6> -->
   {%endif%}

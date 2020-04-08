@@ -4,7 +4,7 @@
   <h4>{{people.name}}</h4>
   <h5 >{{people.origin}}</h5>
   {% assign projectNum =  people.funding.size | minus: 1 %}
-  <h6>{{people.funding[projectNum].name}}</h6>
+  <h6>{{people.funding[0].name}}</h6>
 
   {% assign url_name = people.name | split: " " %}
   {% assign url_full = "" %}
