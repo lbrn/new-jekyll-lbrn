@@ -2218,8 +2218,7 @@ div.research img{
     margin-left: unset;
   }
   #core-list .quintblock h1{
-    font-size:14pt;
-    /* color: red; */
+    font-size:11pt;
   }
   #core-list .quintblock h2{
     font-size:11pt;
@@ -2230,12 +2229,6 @@ div.research img{
     /* color: red; */
     height: 2em;
   }
-  /* .quintblock h1{
-    font-size: 14pt!important;
-  } */
-  /* .quintblock h2{
-    font-size: 11pt!important;
-  } */
   #core-list .sevenblock{
 
     display: inline-flex;
@@ -2248,7 +2241,7 @@ div.research img{
   /* MOVE THE NEXT 2 TO SMALL */
   #core-list .sevenblock{
     border: #8ECB91;
-    border-style: dotted none none none;
+    border-style: solid none none none;
     width:50%;
   }
   #core-list .sevenblock .horiline{
@@ -2262,8 +2255,8 @@ div.research img{
   }
   #core-list .sevenblock:nth-of-type(odd){
     border: #8ECB91;
-    border-right-style:dotted;
-    border-top-style:dotted;
+    border-right-style:solid;
+    border-top-style:solid;
   }
   #core-list .sevenblock h1{
     font-size:12pt;
@@ -2278,19 +2271,23 @@ div.research img{
     font-size:11pt;
   } */
   #core-list h1{
-    font-size: 17pt;
+    font-size: 15pt;
+    margin-bottom: 0;
   }
   #core-list h2{
-    font-size: 13pt;
+    font-size: 11pt;
+    margin-top: 1px;
+    margin-bottom: 1px;
   }
   #core-list ul{
     background-color: unset;
+    margin-bottom: 0;
   }
   #core-list .vertline{
     flex: 1 1 2em;
-    height:2em;
+    /* height:2em; */
 	border: #8ECB91;
-	border-style: none dotted none none;
+	border-style: none solid none none;
 	height: 2em;
 	width: 50%;
 
@@ -2298,27 +2295,27 @@ div.research img{
   #core-list .horiline{
     /* height:2em; */
   border: #8ECB91;
-  border-style: none none dotted none;
+  border-style: none none solid none;
   /* height: 2em; */
   width: 100%;
 
   }
   #core-list .horiline-l{
   border: #8ECB91;
-  border-style: none none dotted none;
+  border-style: none none solid none;
   margin-right:50%;
   width: 50%;
   }
   #core-list .horiline-r{
   border: #8ECB91;
-  border-style: none none dotted none;
-  margin-left:50%;
-  width: 50%;
+  border-style: none none solid none;
+  margin-left: 47.5%;
+  width: 52.5%;
   }
 
   #core-list span{
     border: #8ECB91;
-    border-style:dotted none none none;
+    border-style:solid none none none;
     height: unset;
     width: 100%;
     display: block;
@@ -2332,7 +2329,7 @@ div.research img{
     line-height: 1.5;
   }
   #core-list li{
-    font-size: 11pt;
+    font-size: 9pt;
     list-style: none;
   }
 
@@ -2581,6 +2578,24 @@ div.research img{
     .navdropdownbig ul li ul li a {display:block !important;}
   }  /* end 0 */
 @media (min-width: 667px) {
+  #core-list .horiline-r{
+    margin-left: 49.1%;
+    width: 50.9%;
+  }
+  #core-list .quintblock h1{
+    font-size:14pt;
+  }
+  #core-list li{
+    font-size: 11pt;
+  }
+  #core-list h1{
+    font-size: 17pt;
+    /* color:red; */
+  }
+  #core-list h2{
+    font-size: 13pt;
+  }
+
   #core-list .sevenblock{
     border: none;
      width: 14.28%;
