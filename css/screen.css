@@ -2630,6 +2630,9 @@ div.research img{
     .navdropdownbig ul li ul li a {display:block !important;}
   }  /* end 0 */
 @media (min-width: 667px) {
+  #core-list .sevenblock:nth-of-type(even){
+    border-top-style:none;
+  }
   #core-list .horiline-r{
     margin-left: 48.5%;
     width: 51.5%;
