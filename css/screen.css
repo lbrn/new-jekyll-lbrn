@@ -2228,10 +2228,10 @@ div.research img{
     /* color: red; */
 
   }
-  #core-list .quintblock h1:nth-of-type(2){
+  /* #core-list .quintblock h1:nth-of-type(2){ */
     /* color: red; */
-    height: 2em;
-  }
+    /* height: 2em;
+  } */
   #core-list .sevenblock{
 
     display: inline-flex;
@@ -2356,6 +2356,13 @@ div.research img{
     flex: 1 1 2em;
     margin-right:50%;
     width: 50%;
+  }
+  #core-list .vertline.left{
+    border-style: none solid none none;
+    flex: 1 1 2em;
+    margin-right: 0%;
+    width: 50%;
+    margin-left: 0%;
   }
   #core-list .horiline.bot{
     border-style: none  none solid none;
