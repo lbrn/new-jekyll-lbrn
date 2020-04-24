@@ -27,6 +27,4 @@ The topics that are covered in  this lecture are:
 
 This is a followup lecture to last week's seminar. The entire seminar series is here: [PBS and LBRN Seminar series related to coronaviruses and COVID-19](https://lbrn.lsu.edu/LBRN-SARS-2-CoV-Kousoulas.html)
 
-This lecture is now concluded, forthcoming will be the recorded video. Thanks to all who attended.
-
 For Louisiana COVID-19 information you can visit our [LBRN COVID-19 Page](/LBRN-COVID-19.html)
