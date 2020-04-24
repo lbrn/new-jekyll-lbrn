@@ -42,6 +42,84 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #5ab35e!important;
 }
 @media (min-width: 0) {
+  .research #lbrnEventSidebar2 {
+    float: left;
+  }
+  .currentresearch.featured{
+    background-color: #DEF0DF;
+  }
+
+  .currentresearch {
+    width:100%;
+    /* height:200px; */
+    display:flex;
+  }
+  .currentresearch .text{
+    font-size: 12pt;
+    width:80%;
+    /* margin:0; */
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+  .currentresearch .text span{
+    line-height: normal;
+    font-size: 9pt;
+  }
+  .currentresearch .text h1{
+    font-size:2em;
+  }
+  .currentresearch .text p{
+    line-height: normal;
+    margin:0;
+  }
+  .currentresearch img{
+    margin:0;
+    width:20%;
+    height:auto;
+
+  }
+  .fundingop{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .fundingop img{
+    margin:0;
+    flex: 1 1 20%;
+    height:auto;
+    order:99;
+  }
+  .fundingop .text{
+    flex: 1 1 80%;
+    font-size: 12pt;
+    display:flex;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+  .services{
+    display:flex;
+    background-color: #DEF0DF;
+    flex-direction: column;
+  }
+  .services .service {
+    display: flex;
+  }
+  .service img{
+    margin:0;
+    flex: 1 1 20%;
+    height:auto;
+    /* order:99; */
+  }
+  .service .text{
+    flex: 1 1 80%;
+    font-size: 12pt;
+    display:flex;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
   #core-list .horiline-r{
     margin-left: 46.5%;
 
@@ -2388,7 +2466,26 @@ div.research img{
     font-size: 9pt;
     list-style: none;
   }
-
+  .header{
+    width: 100%;
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .header .hero{
+    width:100%;
+    background-image: url(../images/slider/3.jpg);
+    height:10em;
+    background-position: center;
+    background-size: cover;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+  }
   }
   /* end 0 */
 @media (min-width: 414px) {
