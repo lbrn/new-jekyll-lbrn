@@ -52,7 +52,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   }
   .research #lbrnEventSidebar2{
-    background-color: #DEF0DF;
+    /* background-color: #DEF0DF; */
+    background-color: #8ECB91;
     /* margin-left:-6%; */
     width:20%;
   }
@@ -65,9 +66,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-top:0.5em;
     padding-bottom:0.5em;
     margin:0;
+    line-height: 1.5em;
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2x ease-in;
+  }
+  #lbrnEventSidebar2 div li a {
+    color:#2C3D6C;
+
+  }
+  #lbrnEventSidebar2 div li:hover a {
+    color:#5ab35e;
+    text-decoration: none;
+
   }
   .research #lbrnEventSidebar2 ul a {
     text-align: left;
@@ -2750,9 +2761,10 @@ div.research img{
       font-weight: 300;
       /* font-size: 1.2em; */
       font-size: 0.8em;
-        /* border-bottom: 1px solid #2C3D6C; */
+        border-bottom: 1px solid #2C3D6C80;
         cursor: pointer;
         text-align: center;
+
     }
 
     #lbrnEventSidebar2 ul {
@@ -2771,8 +2783,8 @@ div.research img{
       z-index: 1000;
       padding-left: 5%;
       padding-right: 5%;
-      border-bottom: 1px solid #2C3D6C;
-      border-top: 1px solid #2C3D6C;
+      /* border-bottom: 1px solid #2C3D6C; */
+      border-top: 1px solid #2C3D6C80;
       margin-bottom: unset;
     }
     #lbrnEventSidebar2 ul div {
