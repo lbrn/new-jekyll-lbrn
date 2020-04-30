@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: LBRN Impromptu online seminar by Dr. Kousoulas on the molecular and cell biology of coronaviruses and especially SARS-2 CoV
-categories: featured
+categories: news
 featuredImageUrlSquare: images/nelfinavir-SARS-2 CoV S protein.jpg
 excerpt_separator: <!--more-->
 textOnUrl: LBRN Impromptu online seminar by Dr. Kousoulas on the molecular and cell biology of coronaviruses and especially SARS-2 CoV
