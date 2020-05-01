@@ -58,7 +58,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width:20%;
   }
   .research #lbrnEventSidebar2 ul{
+    margin: 0;
     padding:0;
+  }
+  .research #lbrnEventSidebar2 div ul li{
+    border-bottom: 1px solid #2C3D6C80;
   }
   .research #lbrnEventSidebar2 div li {
     text-align: left;
@@ -70,6 +74,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2x ease-in;
+    /* border-bottom: 1px solid #2C3D6C80; */
+
   }
   #lbrnEventSidebar2 div li a {
     color:#2C3D6C;
@@ -141,6 +147,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: #c2e2c4;
     margin: 20px 0 20px 0;
     align-self: center;
+    flex: 0 1 200px;
   }
   .currentresearch .text{
     font-size: 12pt;
@@ -218,13 +225,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     /* padding: .5em .5em .75em .5em; */
     background-color: #def0df;
     border-radius: 3%;
+    padding-bottom: 1.5em;
+}
   }
   .services .service:nth-of-type(even){
     background-color: #c2e2c4;
   }
   .services .service{
     display: flex;
-    padding-top:.5em;
+    /* padding-top:.5em; */
     padding-left:.5em;
     padding-right: .5em;
 
@@ -243,8 +252,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     flex: 1 1 100%;
     font-size: 12pt;
     display:flex;
-    display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     align-content: flex-start;
     line-height: normal;
     border-top:2px solid #2C3D6C;
@@ -2761,9 +2770,9 @@ div.research img{
       font-weight: 300;
       /* font-size: 1.2em; */
       font-size: 0.8em;
-        border-bottom: 1px solid #2C3D6C80;
-        cursor: pointer;
-        text-align: center;
+      border-bottom: 1px solid #2C3D6C80;
+      cursor: pointer;
+      text-align: center;
 
     }
 
@@ -2907,7 +2916,7 @@ div.research img{
   }
 
   .service .text{
-    flex: 1 1 95%;
+    flex: 1 1 70%;
   }
 
   .fundingop img{
