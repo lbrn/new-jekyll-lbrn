@@ -218,15 +218,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     /* padding: .5em .5em .75em .5em; */
     background-color: #def0df;
     border-radius: 3%;
-    padding-bottom: 1.5em;
-}
   }
   .services .service:nth-of-type(even){
     background-color: #c2e2c4;
   }
   .services .service{
     display: flex;
-    /* padding-top:.5em; */
+    padding-top:.5em;
     padding-left:.5em;
     padding-right: .5em;
 
@@ -2909,7 +2907,7 @@ div.research img{
   }
 
   .service .text{
-    flex: 1 1 70%;
+    flex: 1 1 95%;
   }
 
   .fundingop img{
