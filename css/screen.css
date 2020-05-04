@@ -128,7 +128,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .currentresearch.featured{
     padding: .5em .5em .75em .5em;
     background-color: #def0df;
-    border-radius: 3%;
+    border-radius: 10px;
   }
 
   .currentresearch {
@@ -145,10 +145,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width:200px;
     text-align: center;
     background-color: #c2e2c4;
+    color:
     margin: 20px 0 20px 0;
     align-self: center;
-    flex: 0 1 200px;
+    color: #2C3D6C;
+    margin-top:1em;
   }
+
+
+.research a.btn:hover {
+  background-color: #8ECB91;
+    color:white;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2x ease-in;
+}
+
   .currentresearch .text{
     font-size: 12pt;
     /* width:70%; */
@@ -213,6 +225,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   .fundingop a.btn{
     background-color:#DEF0DF;
+    color: #2C3D6C;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2x ease-in;
+  }
+  .fundingop a.btn:hover {
+    background-color: #8ECB91;
+      color:white;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2x ease-in;
   }
   .research .fundingop:nth-of-type(3){
     border-top: none;
@@ -222,15 +245,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .services{
     display:flex;
     flex-direction: column;
-    /* padding: .5em .5em .75em .5em; */
     background-color: #def0df;
-    border-radius: 3%;
-    padding-bottom: 1.5em;
+    border-radius: 10px;
+    padding-bottom: 0.7em;
 }
-  }
+
   .services .service:nth-of-type(even){
     background-color: #c2e2c4;
   }
+  .services .service:nth-of-type(even) .btn{
+    background-color: #8ECB91;
+  }
+  .services .service:nth-of-type(even) .btn:hover{
+    background-color: #def0df;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2x ease-in;
+  }
+
   .services .service{
     display: flex;
     /* padding-top:.5em; */
@@ -249,6 +281,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .service .text{
     padding-top: .5em;
+    margin-top:.5em;
     flex: 1 1 100%;
     font-size: 12pt;
     display:flex;
@@ -266,9 +299,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color:#2C3D6C;
     flex:1 1 100%;
     display:flex;
+    margin-bottom:1em;
     -moz-transition: all .2s ease-in;
 -o-transition: all .2s ease-in;
 -webkit-transition: all .2x ease-in;
+  }
+  .service p a{
+    text-decoration: underline;
+    display: inline;
   }
   .service a:hover{
     color:#5ab35e;
@@ -288,6 +326,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: #c2e2c4;
     margin-left: auto;
     margin-right: auto;
+    flex: 0 1 200px;
+    text-align: center;
+    /* float:left; */
   }
   #core-list .horiline-r{
     margin-left: 46.5%;
@@ -2904,6 +2945,7 @@ div.research img{
     .navdropdownbig ul li ul li a {display:block !important;}
   }  /* end 0 */
 @media (min-width: 667px) {
+
   .research .content .content{
     width:80%;
     padding-left:5%;
@@ -2911,13 +2953,23 @@ div.research img{
   .services .service{
     padding-left: 0;
   }
+  .services a.btn{
+    margin-left: 0;
+    margin-right: auto;
+    float:left;
+    text-align: left;
+  }
   .service img{
     flex: 1 1 5%;
+    padding-top:1em;
   }
 
   .service .text{
     flex: 1 1 70%;
+    margin-top:0;
+    padding-top:1em;
   }
+
 
   .fundingop img{
     flex: 1 1 30%;
