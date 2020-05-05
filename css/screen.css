@@ -170,6 +170,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     align-content: flex-start;
     flex: 1 1 100%;
   }
+
   .currentresearch .text span{
     line-height: normal;
     font-size: 16px;
@@ -182,6 +183,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .currentresearch .text p{
     line-height: normal;
     margin:0;
+    margin-bottom: .75em;
   }
   .currentresearch img{
     margin:0;
