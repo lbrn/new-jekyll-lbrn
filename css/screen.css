@@ -3884,7 +3884,8 @@ section.directory article.person:nth-child(odd) {
     width: 50%; }
   footer p a {
     font-weight: bold;
-    line-height: 3; } }
+    line-height: 3; }
+  }
 @media (min-width: 1224px) {
   .research #lbrnEventSidebar2{
     width:175px;
@@ -3983,7 +3984,8 @@ width:95%;
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+  }
 @media (min-width: 1500px) {
   .profileimg{
     width: 15%;
@@ -4024,7 +4026,8 @@ width:95%;
   }
 
   #lbrnEventSidebar ul li div.chooseType label {
-    width: 87%; } }
+    width: 87%; }
+  }
 
 
 @charset "UTF-8";
