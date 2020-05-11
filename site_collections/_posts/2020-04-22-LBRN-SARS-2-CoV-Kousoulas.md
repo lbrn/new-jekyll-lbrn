@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: PBS and LBRN Seminar Genomics of COVID-19; Analysis of Viral Genome Sequences - Follow up Lecture
-categories: featured
+categories: news
 featuredImageUrlSquare: images/2020-04-23-LBRN-SARS-2-CoV-Kousoulas.png
 excerpt_separator: <!--more-->
 textOnUrl: PBS and LBRN Seminar Genomics of COVID-19; Analysis of Viral Genome Sequences - Follow up Lecture
