@@ -9,7 +9,7 @@ eventDate:
 textOnUrl:
 link:
 ---
-<h2>Lectures on Informatics</h2><p>The BBC Core provides access to introductory lecture series on Bioinformatics, Biostatistics, and Computational Biology topics.
+<h2>Lectures on Informatics</h2><p>The BBC Core provides access to introductory lecture series on Bioinformatics, Biostatistics, and Computational Biology topics. 
 <h3>The initial lecture series covered:</h3>
                 <p><a href="http://metagenomics.lsuhsc.edu/lectures/introinformatics/">An Introduction to Computers and Informatics in the Health Sciences<a/> and
                 <br>
