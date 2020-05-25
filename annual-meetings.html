@@ -11,12 +11,13 @@ eventDeadlines: Friday, January 3, 2020
 <aside id="lbrnEventSidebar2">
   <ul id="lbrnEventSidebarUl">
     <li class="active"><a href="#eventSummary">about</a></li>
+   <li><a href="#eventParticipants">speakers</a></li>
     <li><a href="#eventWhenAndWhere">when and where</a></li>
     <li><a href="#eventLodgingAndExpenses">lodging and expenses</a></li>
     <li><a href="#eventPresentations">presentations</a></li>
     <li><a href="#eventRegistration">registration</a></li>
-<!--    <li><a href="#eventArchiveMedia">archived meetings</a></li>
--->
+    <li><a href="#eventArchiveMedia">previous meetings</a></li>
+    <!-- <li><a href="#eventMediaLink">Event Media</a></li> -->
   </ul>
 </aside>
 <div class="content_tweek">
@@ -32,26 +33,32 @@ eventDeadlines: Friday, January 3, 2020
           <p>Each year the LBRN program has an annual meeting in which program participants, committee members and administrators meet to review individual research accomplishments and to discuss the overall program activity. Summer research faculty and graduate and undergraduate students are encouraged to present their LBRN sponsored research, and talks are scheduled to highlight sponsored research projects from partnered campuses across the state.</p>
           <p>Oral Presenters: INBRE Translational Project PIs, Full Project PIs, Pilot Project PIs, Summer Graduate Students, and invited guests.</p>
           <p>Poster Sessions: Pilot, Translational, and Startup Project PIs, 2019 LBRN Summer Faculty, and Graduate Students are required to submit an abstract to participate in the poster session. LBRN Undergraduate Summer students are also invited to participate. Poster abstract submission form will be sent after your registration. </p>
+
+            <section id="eventParticipants">
+     <i class="collapsetstyle fa fa-2x fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#eventSpeakers" aria-expanded="false"></i>
+     <h2 class="event-section-head">Keynote Speakers</h2>
+    <div class="collapse show" id="eventSpeakers">
+      <article id="speakers">
+        {% include AM-speakers-2020.html %}
+      </article>
+    </div>
+  </section>
+
+     	<h3>Program</h3>
+    		<section class="important" style="overflow: hidden;">
+        2020 Annual Meeting Program<a href="downloads/2020-lbrn-annual-meeting-program.pdf" class="float callout"><img src="images/2020-lbrn-annual-meeting-program.png" alt="2020 LBRN Annual Meeting Program"></a>
+     		 </section>
         <h3>Agenda</h3>
     		<section class="important" style="overflow: hidden;">
         2020 Annual Meeting Agenda (updated January 14, 2020)<a href="downloads/2020-lbrn-annual-meeting-agenda-2020.01.14b.pdf" class="float callout"><img src="images/2020-lbrn-annual-meeting-agenda-2020.01.14b.png" alt="2020 LBRN Annual Meeting Agenda (updated 2020.01.14)"></a>
      		 </section>
+
+
       	</div>
     	</section>
-    	  <section id="eventParticipants">
-          <i class="collapsetstyle fa fa-2x fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#speakers" aria-expanded="false"></i>
 
 
-<!--  	  <section id="eventParticipants">
-    <i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i>
-    <h2 class="event-section-head">Keynote Speakers</h2>
-    <div class="collapse">
-      <article id="speakers">
-        {% include AM-speakers-2019.html %}
-      </article>
-    </div>
-  </section>
--->
+
 	<section id="eventWhenAndWhere">
     <i class="collapsetstyle fa fa-2x fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#eventWhen" aria-expanded="false"></i>
 
@@ -219,24 +226,23 @@ Address how does this fit within the overall time line for the project.</p></ul>
    <section id="eventRegistration">
      <i class="collapsetstyle fa fa-2x fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#reg" aria-expanded="false"></i>
 
-		<!-- <i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i> -->
-    <!-- <i class="fa fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#reg" aria-expanded="false"> -->
 		<h2 class="event-section-head">Registration</h2>
-  <!-- </i> -->
 
 		<div class= "collapse show" id="reg">
 			<ul><a class="button" href="https://redcap.lbrn.lsu.edu/surveys/?s=CCXLFPJYEL">Registration Link</a></ul>
     	</div>
 	</section>
 <section id="eventArchiveMedia">
-		<!-- <i class="collapseTrigger fa fa-2x fa-chevron-right" aria-hidden="true"></i> -->
-    <!-- <i class="fa fa-chevron-right" aria-hidden="true" data-toggle="collapse" data-target="#expenses" aria-expanded="false"> -->
       <h2 class="event-section-head">Previous Meetings</h2>
-    <!-- </i> -->
+
 
   		<h3><a href="/annual-meetings-2019.html">2019 LBRN Annual Meeting<a/></h3>
   		<h3><a href="/annual-meetings-2018.html">2018 LBRN Annual Meeting<a/></h3>
-	</section>
+</section>
+<!-- <section id="eventMediaLink">
+    <h2 class="event-section-head">Event Media</h2>
+    <h3><a href="Media-Template.html">{{page.title}} Event Media Page</a></h3>
+</section> -->
 
 </div>
 </div>

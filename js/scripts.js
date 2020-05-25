@@ -1,9 +1,10 @@
 $( document ).ready(function() {
   quickRef();
-  coreSwap();
+  // coreSwap();
   piFilter();
   faqReveal();
   selectTypeSrp();
+  selectTypeMnt();
   accordian();
   if(document.getElementById('sliderNav') != null){
     slider();
@@ -77,38 +78,88 @@ function quickRef(){
     }
   });
 }
-function coreSwap(){
-  var corelis    = $('section.cores>ul>li');
-  var adminTxt   = "The Administrative Core (AC) of the Louisiana Biomedical Research Network (LBRN) provides the project with its overall leadership, day-to-day management, evaluations of all of its component parts, and communication with NIH staff. The AC is led by the Principal Investigator in close consultation with the Program Coordinator, as well as the Steering Committee and External Advisory Committee."
-  var bbcTxt     = "The Bioinformatics, Biostatistics, and Computational Biology Core (BBCC) of the Louisiana Biomedical Research Network (LBRN) serves to train and support project investigators and their teams across Louisiana, and to lead and support translational research activities at the frontiers of biomedical science. Its team uses both established and custom computational tools, operating at computational scales ranging from the mundane to analyses engaging many hundreds of compute cores."
-  var mcbrTxt    = "Molecular and cell biology provide an essential linkage among important basic fields of biomedical science, such as genetics, developmental biology, structural biology, immunology, neurobiology, and cancer biology. The MCBRC takes advantage of existing highly organized, centralized services and equipment facilities located primarily at the LSU flagship institution in Baton Rouge, effectively uniting these units toward the common goal of supporting biomedical research performed by PUI investigators. The MCBRC will provide technical and logistical support, enabling the ready exchange of information, ideas, technology, and research capabilities among PUI investigators. MCBRC will ensure that PUI researchers have full access to state-of-the-art equipment and modern research techniques and services."
-  corelis.eq(0).click(function(){
-    corelis.removeClass();
-    $(this).addClass('active');
-    $('#core-swap>h4').text('Adiministrative Core');
-    $('#core-swap>p').text(adminTxt);
-    $('#core-swap>img').attr('src','images/admin-core_July_2018.png');
-    $('#core-swap>a.button').addClass('hidden');
-  });
-  corelis.eq(1).click(function(){
-    corelis.removeClass();
-    $(this).addClass('active');
-    $('#core-swap>h4').text('Bioinformatics, Biostatistics, and Computational Biology Core');
-    $('#core-swap>p').text(bbcTxt);
-    $('#core-swap>img').attr('src','images/bbc-core_Dec_2019.png');
-    $('#core-swap>a.button').removeClass('hidden');
-    $('#core-swap>a.button').attr('href','bbc-core.html').text('BBC Core Services');
-  });
-  corelis.eq(2).click(function(){
-    corelis.removeClass();
-    $(this).addClass('active');
-    $('#core-swap>h4').text('Molecular and Cell Biology Resources Core');
-    $('#core-swap>p').text(mcbrTxt);
-    $('#core-swap>img').attr('src','images/mcbr-core_Jan_2020.png');
-    $('#core-swap>a.button').removeClass('hidden');
-    $('#core-swap>a.button').attr('href','mcbr-core.html').text('MCBR Core Services');
+
+// ===========================
+
+filterSelection("admin")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
   });
 }
+// end
+}
+// ===========================
+// function coreSwap(){
+//   var corelis    = $('section.cores>ul>li');
+//   var adminTxt   = "The Administrative Core (AC) of the Louisiana Biomedical Research Network (LBRN) provides the project with its overall leadership, day-to-day management, evaluations of all of its component parts, and communication with NIH staff. The AC is led by the Principal Investigator in close consultation with the Program Coordinator, as well as the Steering Committee and External Advisory Committee."
+//   var bbcTxt     = "The Bioinformatics, Biostatistics, and Computational Biology Core (BBCC) of the Louisiana Biomedical Research Network (LBRN) serves to train and support project investigators and their teams across Louisiana, and to lead and support translational research activities at the frontiers of biomedical science. Its team uses both established and custom computational tools, operating at computational scales ranging from the mundane to analyses engaging many hundreds of compute cores."
+//   var mcbrTxt    = "Molecular and cell biology provide an essential linkage among important basic fields of biomedical science, such as genetics, developmental biology, structural biology, immunology, neurobiology, and cancer biology. The MCBRC takes advantage of existing highly organized, centralized services and equipment facilities located primarily at the LSU flagship institution in Baton Rouge, effectively uniting these units toward the common goal of supporting biomedical research performed by PUI investigators. The MCBRC will provide technical and logistical support, enabling the ready exchange of information, ideas, technology, and research capabilities among PUI investigators. MCBRC will ensure that PUI researchers have full access to state-of-the-art equipment and modern research techniques and services."
+//   corelis.eq(0).click(function(){
+//     corelis.removeClass();
+//     $(this).addClass('active');
+//     $('#core-swap>h4').text('Adiministrative Core');
+//     $('#core-swap>p').text(adminTxt);
+//     $('#core-swap>img').attr('src','images/admin-core_July_2018.png');
+//     $('#core-swap>a.button').addClass('hidden');
+//   });
+//   corelis.eq(1).click(function(){
+//     corelis.removeClass();
+//     $(this).addClass('active');
+//     $('#core-swap>h4').text('Bioinformatics, Biostatistics, and Computational Biology Core');
+//     $('#core-swap>p').text(bbcTxt);
+//     $('#core-swap>img').attr('src','images/bbc-core_Dec_2019.png');
+//     $('#core-swap>a.button').removeClass('hidden');
+//     $('#core-swap>a.button').attr('href','bbc-core.html').text('BBC Core Services');
+//   });
+//   corelis.eq(2).click(function(){
+//     corelis.removeClass();
+//     $(this).addClass('active');
+//     $('#core-swap>h4').text('Molecular and Cell Biology Resources Core');
+//     $('#core-swap>p').text(mcbrTxt);
+//     $('#core-swap>img').attr('src','images/mcbr-core_Jan_2020.png');
+//     $('#core-swap>a.button').removeClass('hidden');
+//     $('#core-swap>a.button').attr('href','mcbr-core.html').text('MCBR Core Services');
+//   });
+// }
+
+
 function piFilter(){
   // var buttons = $('nav#pi-filter ul li');
   // var fulls = $('article[data-ptype="FullProject"]');
@@ -119,6 +170,8 @@ function piFilter(){
   var shares = $("article:has(h6:contains('Shared Instrument'))");
   var pilots = $("article:has(h6:contains('Pilot'))");
   var translproj = $("article:has(h6:contains('Translational'))");
+  var collab = $("article:has(h6:contains('Collaborative'))");
+
   // var translproj = $('article[data-ptype="TranslationalProject"]');
 
   var ac = document.getElementsByClassName('Adcore'), i;
@@ -126,6 +179,7 @@ function piFilter(){
   var mc = document.getElementsByClassName('MCcore'), i;
   var crp = document.getElementsByClassName('CRP'), i;
   var ppi = document.getElementsByClassName('PrevPPi'), i;
+  var coll = document.getElementsByClassName('Collaborative'), i;
   var pai = document.getElementsByClassName('Parti'), i;
   var le = document.getElementsByClassName('LBRNe'), i;
   var lsc = document.getElementsByClassName('LBRNsc'), i;
@@ -138,45 +192,62 @@ function piFilter(){
   var cmtrack = 2;
   var cmelement = document.getElementsByClassName('cmelement'), i;
 
-  // var buttons = document.querySelectorAll('.piac');
-// $('.piac').click(function() {
-//         console.log('dog2');
-// });
 
+  $('.pio').click(function(){
+    $(this).toggleClass('on');
+    $(this).toggleClass('active');
+    fulls.slideToggle('fast');
+  });
   $('.pifp').click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     fulls.slideToggle('fast');
   });
   $(".pisp").click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
+
     starts.slideToggle('fast');
   });
   $(".pisip").click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     shares.slideToggle('fast');
+  });
+  $(".piicp").click(function(){
+    $(this).toggleClass('on');
+    $(this).toggleClass('active');
+    collab.slideToggle('fast');
   });
   $(".pipp").click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     pilots.slideToggle('fast');
     console.log("dog");
   });
   $(".pite").click(function(){
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     te.slideToggle('fast');
         console.log('dog');
   });
   $(".pitp").click(function(){
+    $(this).toggleClass('active');
     $(this).toggleClass('on');
     translproj.slideToggle('fast');
         console.log('dog');
   });
   $("#pios1").click(function(){
+    $(this).toggleClass('active');
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     oe1.slideToggle('fast');
         console.log('dog');
   });
   $("#pios2").click(function(){
+    $(this).toggleClass('active');
     $(this).toggleClass('on');
+    $(this).toggleClass('active');
     oe2.slideToggle('fast');
         console.log('dog');
   });
@@ -186,7 +257,7 @@ function piFilter(){
 
     for(var i=0; i < ac.length; i++)
         {
-        // ac[i].style.display ='none';
+
           if (ac[i].style.display == "none")
             {
               ac[i].style.display = "block";
@@ -346,6 +417,26 @@ $(".pibc").click(function(){
     // ppi.slideToggle('fast');
         // console.log('dog');
   });
+  $(".piicp").click(function(){
+    // console.log('dog');
+    for(var i=0; i < ppi.length; i++)
+        {
+        // ppi[i].style.display ='none';
+          if (ppi[i].style.display == "none")
+            {
+              ppi[i].style.display = "block";
+              pitrack++;
+              // console.log(pitrack);
+            }
+            else
+            {
+              ppi[i].style.display = "none";
+              pitrack--;
+            }
+        }
+
+    $(this).toggleClass('on');
+  });
 
   $(".pimc").click(function(){
     // console.log('dog');
@@ -367,9 +458,7 @@ $(".pibc").click(function(){
         // console.log('dog');
   });
 
-// if(pitrack == 0){
-//   console.log("trigger hide");
-// }
+
 
 
 }//end
@@ -430,6 +519,52 @@ function faqReveal() {
     question.next().slideUp();
   });
 }
+//hides irrelevant data on summer research program Page
+function selectTypeMnt(){
+  var gradmentor = $('div.gradmentor');
+  var facultymentor = $('div.facultymentor');
+  var undergradmentor = $('div.undergradmentor');
+  var choose = $('div.chooseTypeInline');
+  $('input').click(function(){
+    switch ($(this).val()) {
+      case 'facultymentor' :
+        // choose.fadeOut();
+        gradmentor.fadeOut();
+        facultymentor.fadeIn();
+        undergradmentor.fadeOut();
+        $('input[value=facultymentor]').prop('checked', true);
+        break;
+      case 'gradmentor' :
+        // choose.fadeOut();
+        gradmentor.fadeIn();
+        facultymentor.fadeOut();
+        undergradmentor.fadeOut();
+        $('input[value=gradmentor]').prop('checked', true);
+        break;
+      case 'undergradmentor' :
+        // choose.fadeOut();
+        gradmentor.fadeOut();
+        facultymentor.fadeOut();
+        undergradmentor.fadeIn();
+        $('input[value=undergradmentor]').prop('checked', true);
+        break;
+      default :
+        choose.fadeIn();
+        // grads.fadeOut();
+        // faculty.fadeOut();
+        // undergrads.fadeOut();
+    }
+  });
+  $(window).scroll(function(){
+    var chooseMenu = $('#mobileChooseType');
+    if ($(this).scrollTop() >= $(this).height()) {
+        chooseMenu.addClass('down');
+    } else {
+        chooseMenu.removeClass('down');
+    }
+  });
+}
+
 //hides irrelevant data on summer research program Page
 function selectTypeSrp(){
   var grads = $('div.grads');

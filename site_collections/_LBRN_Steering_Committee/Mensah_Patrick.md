@@ -5,7 +5,7 @@ project: Enhancement Of MicroRNA Research Through Bioinformatics Tool Developmen
 author: Patrick Mensah
 school: "Southern University and A&M College Department of Mechanical Engineering"
 project-type: TestElement
-image: "NEED.jpg"
+image: "PMensah.jpg"
 category: none
 email:
 phone:

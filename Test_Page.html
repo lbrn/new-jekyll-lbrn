@@ -1,65 +1,42 @@
 ---
-layout: defaulttest
+layout: defaulttest2
 title: Modified About/Test Environment
 ---
 
+
+<style>
+  .pubmed-link{
+    background-color: #d4ebd5;
+    color: #2C3D6C;
+    display: inline-block;
+    font-weight: 400;
+    /* color: #212529; */
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    float:right;
+  }
+  .pubmed-link:hover{
+    background-color: #8ECB91;
+    color: #fff;
+  }
+
+</style>
 <p>Site. time: {{site.time}}</p>
 <p>site.time date: {{ site.time | date: "%Y %m %d" }}</p>
 
-<style>
-
-.bar {background-color: green;
-margin-bottom:10em; }
-.navdropdown ul li ul li{
-  margin-right:unset;
-  width:100%;
-}
-.navdropdown ul li ul{
-  max-width:5em;
-  /* background: white; */
-  /* display: block; */
-  /* color: #2C3D6C; */
-}
-.navdropdown ul li ul li a{
-  /* max-width:5em; */
-  background: white;
-  /* display: block; */
-  color: #2C3D6C;
-}
-.bar a{
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  padding: 15px;
-  display:inline-block;
-}
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-ul li{
-  /* background: blue; */
-  display: inline-block;
-}
-/* .header2 li {display: inline-block;} */
-ul li:hover {background: #555;}
-ul li:hover ul {display: block;}
-/* ul li:hover ul {display: block;} */
-ul li ul {
-  position: absolute;
-  width: 200px;
-  display: none;
-  margin-right:unset;
-}
-ul li ul li {
-  /* background: white; */
-  display: block;
-  color: #2C3D6C;
-}
-ul li ul li a {display:block !important;}
-ul li ul li:hover {background: #666;}
-</style>
+{% for pi in site.data.pis_full %}
+  {{pi.name}}
+{% endfor %}
 <div class="bar">
   <!-- <a href="#">Useless Link</a> -->
   <ul class="header2";>
@@ -85,6 +62,35 @@ ul li ul li:hover {background: #666;}
 </div>
 
 <br>
+<h2>Filter DIV Elements</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('admin')"> admin</button>
+  <button class="btn" onclick="filterSelection('bbc')"> bbc</button>
+  <button class="btn" onclick="filterSelection('mcbr')"> mcbr</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv admin">BMW</div>
+  <div class="filterDiv bbc">Orange</div>
+  <div class="filterDiv mcbr">Volvo</div>
+</div>
+
+
+
+<article style = "display: none;">
+  <ul>
+
+    <p>date: {{ site.time }}</p>
+    <!-- {{ now }} -->
+      {% assign sorted = site.events | sort: 'eventDate'| reverse %}
+      {% for event in sorted limit:4 %}
+       {% include events-list-item.html %}
+
+      <!-- if date <= now -->
+          {{event.date}}
+          <li>{{ event.title }}</li>
+       {% endfor %}
 <!-- <div class="dropdown">
   <button id="dropdownMenu1" data-toggle="dropdown">
     My account

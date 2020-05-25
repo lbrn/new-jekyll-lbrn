@@ -11,12 +11,13 @@ title: Project Investigators
           Filters
         </button>
       </p>
-      <div class="collapse mobilefilter" id="filterex">
+      <div class="collapse mobilefilter filters" id="filterex">
         <li class="on pifp">Full Project</li>
         <li class="on pisp">Startup Project</li>
         <li class="on pisip">Shared Instrument Project</li>
         <li class="on pipp">Pilot Project</li>
         <li class="on pitp">Translational Project</li>
+        <li class="on piicp">INBRE COBRE Collaborative Project</li>
           <li class="on peoplesort pilsc" id="pilsc">LBRN Steering Committee</li>
       </div>
     </div>
@@ -30,12 +31,14 @@ title: Project Investigators
             <li>Filter</li>
           </div>
         </div>
-        <ul>
+        <ul class=" filters">
             <li class="on pifp">Full Project</li>
             <li class="on pisp">Startup Project</li>
             <li class="on pisip">Shared Instrument Project</li>
             <li class="on pipp">Pilot Project</li>
             <li class="on pitp">Translational Project</li>
+            <li class="on piicp">INBRE COBRE Collaborative Project</li>
+
         </ul>
     </div>
     <!-- <li><a href="#">top</a></li> -->
@@ -47,60 +50,21 @@ title: Project Investigators
 
 <div class="content_tweek content ">
 
-<!-- <nav id="pi-filter">
-  <p>Filters:</p>
-  <ul>
-      <li class="on" id="pifp">Full Project</li>
-      <li class="on" id="pisp">Startup Project</li>
-      <li class="on" id="pisip">Shared Instrument Project</li>
-      <li class="on" id="pipp">Pilot Project</li>
-      <li class="on" id="pitp">Translational Project</li>
-    </ul>
-</nav> -->
-<!-- <h2>Project Investigators</h2> -->
-<!-- <section class="directory" style = "display: none;">
-  {% assign count = 0 %}
 
-  {% for pi in site.project_investigators  %}
-      {% if pi.active == true %}
-        {% assign count = count | plus: 1 %}
-          {% assign modcount = count | modulo: 2 %}
-
-            {% if modcount == 1  %}
-            <div class="peoplewrap">
-                {% include current_pi.html %}
-              {% else %}
-                {% include current_pi.html %}
-            </div>
-            {% endif %}
-
-
-
-      {% endif %}
-  {% endfor %}
-
-
-</section> -->
 <section class="directory" >
   {% assign count = 0 %}
 
-  {% for people in site.data.LBRNProjects_DATA_LABELS %}
-    {% if people.university != nil and people.university != "University" %}
+  {% for people in site.data.pis_full %}
+        {% if people.active %}
         {% assign count = count | plus: 1 %}
           {% assign modcount = count | modulo: 2 %}
 
             {% if modcount == 1  %}
-
-              <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
-                {% include npidirectory-currentPi.html %}
+                {% include pidirectory-currentPi.html %}
               {% else %}
-                {% include npidirectory-currentPi.html %}
-              <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
-
-
+                {% include pidirectory-currentPi.html %}
             {% endif %}
-      {% endif %}
-
+            {%endif%}
   {% endfor %}
 
 

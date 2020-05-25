@@ -92,6 +92,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 100%; }
 
   .faculty, .grads, .undergrads {
+     display: none; }
+  
+  .facultymentor, .gradmentor, .undergradmentor {
     display: none; }
 
   body p {

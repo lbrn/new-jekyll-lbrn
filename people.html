@@ -3,29 +3,7 @@ layout: default
 title: People
 ---
 
-<!-- <aside id="lbrnEventSidebar3">
-  <ul>
-    <div id="lbrnEventSidebarUl">
-      <p>
-        <button class="btn mobilefilter dropdown-toggle" type="button" data-toggle="collapse" data-target="#filterex" aria-expanded="false" aria-controls="collapseExample">
-          Filters
-          <div class="caret dropdown-toggle">
-          </div>
-        </button>
-      </p>
-      <div class="collapse mobilefilter" id="filterex">
-          <li class="on peoplesort piac" id="piac">Admin Core</li>
-          <li class="on peoplesort pibc" id="pibc">BBC Core</li>
-          <li class="on peoplesort pimc" id="pimc">MCBR Core</li>
-          <li class="on peoplesort picrp" id="picrp">Current PIs</li>
-          <li class="on peoplesort pippi" id="pippi">Previous PIs</li>
-          <li class="on peoplesort pipai" id="pipai">Partner Institues</li>
-          <li class="on peoplesort pile" id="pile">LBRN EAC</li>
-          <li class="on peoplesort pilsc" id="pilsc">LBRN Steering Committee</li>
-      </div>
-    </div>
-  </ul>
-</aside> -->
+
 
 <aside id="lbrnEventSidebar2">
       <div id="lbrnEventSidebarUl">
@@ -41,9 +19,6 @@ title: People
           <div class="dot-text-holder">
             <li class="active"><a href="#lbrnAdminCore">Admin Core</a></li>
           </div>
-          <!-- <div class="dot-holder">
-            <li  class=" piac dot-indicators">  </li>
-          </div> -->
         </div>
 
         <div class="sidebar-holder">
@@ -52,9 +27,6 @@ title: People
               <a href="#lbrnBbcCore">BBC Core</a>
             </li>
           </div>
-          <!-- <div class="dot-holder">
-            <li class=" pibc dot-indicators">  </li>
-          </div> -->
         </div>
 
         <div class="sidebar-holder">
@@ -62,9 +34,6 @@ title: People
             <li><a href="#lbrnMcbrCore">MCBR Core</a>
             </li>
           </div>
-          <!-- <div class="dot-holder">
-            <li  class="pimc dot-indicators">  </li>
-          </div> -->
         </div>
 
         <div class="sidebar-holder">
@@ -72,9 +41,7 @@ title: People
             <li><a href="#currentlyFunded">Currently Funded PIs</a>
             </li>
           </div>
-          <!-- <div class="dot-holder">
-          <li   class="picrp dot-indicators">  </li>
-          </div> -->
+
         </div>
 
         <div class="sidebar-holder">
@@ -82,28 +49,14 @@ title: People
             <li><a href="#previouslyFunded">Previously Funded PIs</a>
             </li>
           </div>
-          <!-- <div class="dot-holder">
-            <li   class=" pippi dot-indicators">  </li>
-          </div> -->
+
         </div>
-<!--
-              <div class="sidebar-holder">
-                <div class="dot-text-holder">
-                    <li><a href="#partnerInstitutes">Partner Institutes</a>
-                  </li>
-                  </div>
-                <div class="dot-holder">
-                  <li  class="pipai dot-indicators">  </li>
-                </div>
-              </div> -->
+
               <div class="sidebar-holder">
                 <div class="dot-text-holder">
                   <li><a href="#LbrnSteering">LBRN Steering Committee</a>
                   </li>
                 </div>
-                <!-- <div class="dot-holder">
-                  <li   class="pilsc dot-indicators">  </li>
-                </div> -->
               </div>
 
               <div class="sidebar-holder">
@@ -111,9 +64,6 @@ title: People
                   <li><a href="#LbrnEAC">LBRN EAC</a>
                   </li>
                 </div>
-                <!-- <div class="dot-holder">
-                  <li   class="pile dot-indicators">  </li>
-                </div> -->
               </div>
 
 
@@ -126,7 +76,7 @@ title: People
 
 <div class="content_tweek content ">
 
-      <h2>LBRN Core Personnel</h2>
+      <h2 id="peopleCore">LBRN Core Personnel</h2>
 
 
 
@@ -192,7 +142,7 @@ title: People
 
     </section>
   </div>
-  <h2 class="pielement">Project Investigators</h2>
+  <h2 class="pielement" id="peoplePI">Project Investigators</h2>
   <div class="relative">
     <h3 id="currentlyFunded" class="picrp ptitle" >Currently Funded PIs
             <div class="caret dropdown-toggle"></div>
@@ -200,57 +150,55 @@ title: People
     <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
     <section class="directory collapsenobs CRP" >
       {% assign count = 0 %}
+          {% for people in site.data.pis_full %}
+            {% if people.active == true %}
+                {% assign count = count | plus: 1 %}
+                  {% assign modcount = count | modulo: 2 %}
+                    {% if modcount == 1  %}
+                    <div class="peoplewrap">
+                        {% include n-directory-currentPi.html %}
+                      {% else %}
+                        {% include n-directory-currentPi.html %}
+                    </div>
+                    {% endif %}
 
-      {% for people in site.data.LBRNProjects_DATA_LABELS %}
-        {% if people.university != nil and people.university != "University" %}
-            {% assign count = count | plus: 1 %}
-              {% assign modcount = count | modulo: 2 %}
-
-                {% if modcount == 1  %}
-                <div class="peoplewrap">
-                  <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
-                    {% include ndirectory-currentPi.html %}
-                  {% else %}
-                    {% include ndirectory-currentPi.html %}
-                  <!-- <h4>Name: {{people.lastname}}, {{people.firstname}}</h4> -->
-
-                </div>
-                {% endif %}
-          {% endif %}
-
-      {% endfor %}
+                    {% endif %}
+          {% endfor %}
 
 
     </section>
-    <!-- <section class="directory collapsenobs CRP" style= "display: none;">
-      {% assign count = 0 %}
 
-      {% for people in site.project_investigators %}
-          {% if people.active == true %}
-            {% assign count = count | plus: 1 %}
-              {% assign modcount = count | modulo: 2 %}
-
-                {% if modcount == 1  %}
-                <div class="peoplewrap">
-                  {% include directory-currentPi.html %}
-                  {% else %}
-                  {% include directory-currentPi.html %}
-                </div>
-                {% endif %}
-
-
-
-          {% endif %}
-      {% endfor %}
-
-
-    </section> -->
   </div>
   <div class="relative">
     <h3 id="previouslyFunded" class="pippi ptitle">Previously Funded PIs
         <div class="caret dropdown-toggle"></div>
     </h3>
-    <!-- <i class="collapsetstyle fa fa-2x fa-chevron-right icon-margin" aria-hidden="true"></i> -->
+
+    <section class="directory collapsenobs PrevPPi">
+
+      {% assign count = 0 %}
+          {% for people in site.data.pis_full %}
+            {% if people.active == false %}
+                {% assign count = count | plus: 1 %}
+                  {% assign modcount = count | modulo: 2 %}
+                    {% if modcount == 1  %}
+                    <div class="peoplewrap">
+                        {% include n-directory-PrevPi.html %}
+                      {% else %}
+                        {% include n-directory-PrevPi.html %}
+                    </div>
+                    {% endif %}
+
+                    {% endif %}
+          {% endfor %}
+
+    </section>
+  </div>
+  <!-- <div class="relative">
+    <h3 id="previouslyFunded" class="pippi ptitle">Previously Funded PIs
+        <div class="caret dropdown-toggle"></div>
+    </h3>
+
     <section class="directory collapsenobs PrevPPi">
 
       {% assign count = 0 %}
@@ -274,7 +222,7 @@ title: People
       {% endfor %}
 
     </section>
-  </div>
+  </div> -->
 
   <!-- Obeselete -->
   <div class="relative Parti" style="display: none;">
@@ -348,6 +296,9 @@ title: People
         {% endif %}
 
       {% endfor %}
+      {% if loopindex == 1%}
+  </div>
+{%endif%}
 
 
 
@@ -358,7 +309,6 @@ title: People
     <h3>Former EAC Members</h3>
 
     {% assign loopindex = 0 | modulo: 2 %}
-
     {% for people in site.committee-members %}
 
       {%  assign loop2 = loopindex | modulo: 2 %}
@@ -382,6 +332,9 @@ title: People
       {% endif %}
 
     {% endfor %}
+    {% if loopindex == 1%}
+  </div>
+{%endif%}
 
 
       <!-- directory-committee-members.html  -->

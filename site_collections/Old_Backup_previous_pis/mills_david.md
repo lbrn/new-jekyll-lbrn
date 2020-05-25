@@ -1,5 +1,5 @@
 ---
-layout: pidatapage
+layout: pidatapage_full
 title:
 project: Instrumentation in Support of a New 3D Printing Lab
 author: David Mills

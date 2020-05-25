@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.author}}</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/screen.css{% include style.html %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Louisiana Biomedical Research Network" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://lbrn.lsu.edu/" />
+	<meta property="og:image" content="https://lbrn.lsu.edu/images/LBRN_logo_wname.png" />
+	<meta property="og:image:alt" content="Louisiana Biomedical Research Network Square Logo Image depicting a high resoulution microscope, DNA helix, and image of the state of Louisiana with LBRN initials underneath." />
+  </head>
+  <body>
+
+    {% include dropdown_nested.html %}
+
+
+
+    <main class="layout datalayout">
+      <section id="lbrnEventHeader">
+        {% if page.featuredImageUrl %}
+        <div class="imagebox">
+          <!-- DYNAMIC:this image will have to be inserted into the src attribute. I used the Page title for the alt attribute -->
+          <img src="{{site.baseurl}}/{{page.featuredImageUrl}}" alt="{{page.title}}">
+        </div>
+        <div class="caption">
+          <!-- this h1 should contain the blog post title -->
+          <h1 class="post">{{pi.title}}</h1>
+          <!-- this is p is the post-date of the news item -->
+          <!-- <p>{{page.date | date:" %B, %-d %Y"}}</p> -->
+        </div>
+        {% else %}
+          <h1 class="pititle">{{page.author}}</h1>
+        {% endif %}
+      </section>
+      <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->
+      <div class="content profilepage">
+
+        {% for pi in site.data.pis %}
+          {% if pi.name == page.author %}
+          <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term={{ pi.name | replace:' ', '+' }}" class="pubmed-link">Link to Pubmed Publications</a>
+            <div class="page">
+              <!-- <h2 class="page-title" >{{ page.author }}</h2> -->
+              <p id="uni">
+                {{ pi.origin }}
+              </p>
+              <hr>
+              <div class="pi">
+                <div class="row">
+                  <div class="span6 profile-txt">
+                    <h2>Project Title</h2>
+                    <p class="project-title">{{ pi.project_title }}</p>
+                    <!-- <a class="natural-link" href="{{pi.url | relative_url }}"><h5>{{pi.title}}</h5></a> -->
+                    <br>
+
+                    {% if pi.mentors.size > 1 %}
+                      <h2>Mentors</h2>
+                    {% else %}
+                    	{% if pi.mentors.size == 1 %}
+                    	<h2>Mentor</h2>
+                    	{% endif %}
+                    {% endif %}
+
+                    {% for mentor in pi.mentors %}
+                      <p>{{ mentor.name }}, {{mentor.origin}}</p>
+                    {% endfor %}
+                    <br>
+
+                    {% if pi.funding.size > 0 %}
+                      <h2>Funding Periods</h2>
+                    {% else %}
+                      <h2>Funding Period</h2>
+                    {% endif %}
+
+                    {% for funding in pi.funding %}
+                      <p>{{ funding.name }} ({{funding.period}})</p>
+                    {% endfor %}
+                  </div>
+                  <div class="profileimg">
+                    <img src="/images/people/{{ pi.image }}/?v1.0" alt="{{pi.author}}" class="img-polaroid">
+                  </div>
+                  <div class="profile-txt">
+                  <h2 class="profile">Abstract</h2>
+                </div>
+                </div>
+                <br>
+                <div class="abstractp">
+                  <p class="long-text">
+                    {{ pi.abstract | newline_to_br }}
+                  </p>
+                  <p class="long-text">
+                    {{ pi.descrip | newline_to_br }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+
+    </main>
+	{% include footer.html %}
+    {% include scriptfooter.html %}
+    {% include google-analytics.html %}
+  </body>
+</html>
