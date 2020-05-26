@@ -9,17 +9,23 @@
       <h4 class="date-month">{{event.date | date: '%b'}}</h4>
     </div>
     {% else %}
-    <h3 class="date">
-    {{event.categories}} Placeholder info
-    </h3>
+    <div class="date">
+      <h3 class="date-day no-top notice">{{event.categories}}</h3>
+    </div>
     {% endif %}
   </a>
   <div class="details">
 
-    <p class="title space">{{event.title}}</p>
-    {% if event.startTime != nil }
+    {% if event.categories contains "events" %}
+      <p class="title space">{{event.title}}</p>
+      {% if event.startTime != nil }
+      {% else %}
+      <p class="date-time">{{event.startTime}} to {{event.endTime}}</p>
+      {% endif %}
     {% else %}
-    <p class="date-time">{{event.startTime}} to {{event.endTime}}</p>
+    <p class="date-time space">{{event.title}}</p>
+    <p class="title">{{event.description}}</p>
     {% endif %}
+
   </div>
 </section>

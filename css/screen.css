@@ -1309,6 +1309,8 @@ main div.content h3:enabled {
     padding-left: 0; }
   .events section .date .date-day.no-top {
     padding-top: 0; }
+  .events section .date .date-day.notice {
+    font-size: 150%;}
   .events section .date .date-month {
     font-size: 1.2em;
     text-transform: uppercase;
@@ -1320,6 +1322,8 @@ main div.content h3:enabled {
     margin-top: 0; }
   .events section .details .title.space {
     margin-bottom: .75em; }
+    .events section .details .date-time.space {
+      margin-bottom: .75em; }
   .events section .details .description {
     line-height: 1.2;
     margin-top: 0;
