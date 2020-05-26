@@ -186,7 +186,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   .currentresearch img{
     margin:0;
-    /* width:30%; */
+    width:100%;
     height:auto;
     flex: 1 1 100%;
   }
@@ -205,6 +205,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .fundingop img{
     margin:0;
     flex: 1 1 100%;
+    width:100%;
     height:auto;
     /* order:99; */
   }
@@ -2966,7 +2967,7 @@ div.research img{
   }
 
   .service .text{
-    flex: 1 1 70%;
+    flex: 0 1 70%;
     margin-top:0;
     padding-top:1em;
   }
@@ -2974,6 +2975,7 @@ div.research img{
 
   .fundingop img{
     flex: 1 1 30%;
+    width:30%;
     order:99;
   }
 
@@ -2993,6 +2995,7 @@ div.research img{
     }
   .currentresearch img{
     flex: 1 1 30%;
+    width:30%;
     }
     .currentresearch{
       text-align: left;
