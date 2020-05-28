@@ -1,12 +1,31 @@
 <section>
   <a href="{{ '/upcoming-events.html' | relative_url }}#{{event.date | date: '%d' }}{{event.date | date: '%b'}}">
+
+
+    {% if event.categories contains "events" %}
+
     <div class="date">
       <h3 class="date-day no-top">{{event.date | date: '%d' }}</h3>
       <h4 class="date-month">{{event.date | date: '%b'}}</h4>
     </div>
+    {% else %}
+    <div class="date">
+      <h3 class="date-day no-top notice">{{event.categories}}</h3>
+    </div>
+    {% endif %}
   </a>
   <div class="details">
-    <p class="title space">{{event.title}}</p>
-    <p class="date-time">{{event.startTime}} to {{event.endTime}}</p>
+
+    {% if event.categories contains "events" %}
+      <p class="title space">{{event.title}}</p>
+      {% if event.startTime != nil }
+      {% else %}
+      <p class="date-time">{{event.startTime}} to {{event.endTime}}</p>
+      {% endif %}
+    {% else %}
+    <p class="date-time space">{{event.title}}</p>
+    <p class="title">{{event.description}}</p>
+    {% endif %}
+
   </div>
 </section>
