@@ -116,11 +116,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-left: 20px;
 
   }
-  .research h1{
-    font-size: 22pt;
+  main.research div.content h1{
+    font-size: 24pt;
 	  margin: 20px 0 20px 0;
   }
-
+  main.research div.content h2{
+    font-size: 18pt;
+	  /* margin: 20px 0 20px 0; */
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+  }
 
   .research #lbrnEventSidebar2 {
     float: left;
@@ -138,7 +143,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     flex-wrap:wrap;
     text-align: center;
   }
-  .currentresearch h1{
+  .currentresearch h2{
     margin-top:0;
   }
   .research a.btn{
@@ -176,7 +181,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-weight: lighter;
     font-style: italic;
   }
-  .currentresearch .text h1{
+  .currentresearch .text h2{
     font-size:2em;
   }
   .currentresearch .text p{
@@ -218,7 +223,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     align-content: flex-start;
     line-height: normal;
   }
-  .fundingop h1{
+  .fundingop h2{
     margin-top:10px;
     margin-bottom:10px;
   }
@@ -2971,7 +2976,7 @@ div.research img{
   }
 
   .service .text{
-    flex: 0 1 70%;
+    flex: 1 1 70%;
     margin-top:0;
     padding-top:1em;
   }
