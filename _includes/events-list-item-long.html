@@ -1,4 +1,10 @@
 <section id="{{event.date | date: '%d' }}{{event.date | date: '%b'}}">
+  {% if event.link != nil %}
+  <a href="{{event.link}}">
+    {% else %}
+
+  {% endif %}
+
   <div class="date">
     <h3 class="date-day adjust"> {{event.date | date: '%d' }}</h3>
     <h4 class="date-month">{{event.date | date: '%b'}}</h4>
@@ -6,6 +12,17 @@
   <div class="details">
     <p class="title">{{event.title}}</p>
     <p class="description">{{event.description}}</p>
+    {% if event.startTime != nil }
+
     <p class="date-time">{{event.startTime}} to {{event.endTime}}</p>
+    {% else %}
+    
+    {% endif %}
+
   </div>
+  {% if event.link != nil %}
+  </a>
+  {% else %}
+
+  {% endif %}
 </section>
