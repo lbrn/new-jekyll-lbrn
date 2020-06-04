@@ -3005,6 +3005,7 @@ div.research img{
   .currentresearch img{
     flex: 1 1 30%;
     width:30%;
+    height:100%;
     }
     .currentresearch{
       text-align: left;
