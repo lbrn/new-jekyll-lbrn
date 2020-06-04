@@ -6,4 +6,5 @@ eventDate: June 8, 2020
 startTime:
 endTime:
 description: The LBRN Virtual Summer Program will be kicking off at various LBRN partner campuses.
+link: /virtual-summer-research-program.html
 ---
