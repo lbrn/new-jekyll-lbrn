@@ -4,73 +4,73 @@ title: cvs to yml converter page
 ---
 
 <style>
-  .conversion {
+  .conversion leftb
     color: red;
     font-size: 9pt;
     word-break: unset;
-  }
+  rightb
 </style>
 
 
 <section class="directory collapsenobs CRP">
 
-  {% for people in site.data.LBRNProjects_DATA_LABELS %}
-  {% if people.university != nil and people.university != "University" %}
-  {% assign personname = people.firstname | append: ' ' | append: people.lastname %}
+  leftb% for people in site.data.LBRNProjects_DATA_LABELS %rightb
+  leftb% if people.university != nil and people.university != "University" %rightb
+  leftb% assign personname = people.firstname | append: ' ' | append: people.lastname %rightb
   <!-- include ndirectory-currentPi.html  -->
   <section class="conversion">
     <code>
       -
       <br>
-      &nbsp; name: {{personname}}
+      &nbsp; name: leftbleftbpersonnamerightbrightb
       <br>
       &nbsp; active: true
       <br>
-      &nbsp; origin: {{people.university}}
+      &nbsp; origin: leftbleftbpeople.universityrightbrightb
       <br>
-      <!-- <img src="/images/people/PIs/{{ people.firstname | slice: 0}}{{ people.lastname }}.jpg" alt="{{x}}" class="img-polaroid"> -->
-      &nbsp; image: {{ people.firstname | slice: 0}}{{ people.lastname }}.jpg
+      <!-- <img src="/images/people/PIs/leftbleftb people.firstname | slice: 0rightbrightbleftbleftb people.lastname rightbrightb.jpg" alt="leftbleftbxrightbrightb" class="img-polaroid"> -->
+      &nbsp; image: leftbleftb people.firstname | slice: 0rightbrightbleftbleftb people.lastname rightbrightb.jpg
       <br>
-      &nbsp; project_title: {{people.titleu}}
+      &nbsp; project_title: leftbleftbpeople.titleurightbrightb
 
       <br>
       &nbsp; mentors:
       <br>
-      {% if people.mentors contains "Collaborator:" %}
-      &nbsp; collaborator: {{people.mentors | remove: "Collaborator: "}}
+      leftb% if people.mentors contains "Collaborator:" %rightb
+      &nbsp; collaborator: leftbleftbpeople.mentors | remove: "Collaborator: "rightbrightb
       <br>
 
-      {% else %}
-        {% assign mentors = people.mentors | split: "), " %}
-          {% for mentor in mentors %}
+      leftb% else %rightb
+        leftb% assign mentors = people.mentors | split: "), " %rightb
+          leftb% for mentor in mentors %rightb
             &nbsp; &nbsp; -
             <br>
-            &nbsp; &nbsp; &nbsp; name: {{mentor | remove: ")" | replace: "(", "<br> &nbsp; &nbsp; &nbsp; origin: " }}
+            &nbsp; &nbsp; &nbsp; name: leftbleftbmentor | remove: ")" | replace: "(", "<br> &nbsp; &nbsp; &nbsp; origin: " rightbrightb
             <br>
-            {% endfor %}
+            leftb% endfor %rightb
             &nbsp; funding:
             <br>
-            {% assign funds = people.projectdates | split: "), " %}
-            {% for section in funds %}
+            leftb% assign funds = people.projectdates | split: "), " %rightb
+            leftb% for section in funds %rightb
             &nbsp; &nbsp; -
             <br>
-            &nbsp; &nbsp; &nbsp; name: {{section | remove: ")" | replace: "(", "<br> &nbsp; &nbsp; &nbsp; period: " }}
+            &nbsp; &nbsp; &nbsp; name: leftbleftbsection | remove: ")" | replace: "(", "<br> &nbsp; &nbsp; &nbsp; period: " rightbrightb
             <br>
-          {% endfor %}
-      {% endif %}
+          leftb% endfor %rightb
+      leftb% endif %rightb
 
 
 
       &nbsp; abstract: |
       <br>
 
-      &nbsp; &nbsp; &nbsp; {{ people.abstract }}
+      &nbsp; &nbsp; &nbsp; leftbleftb people.abstract rightbrightb
     </code>
   </section>
 
-  {% endif %}
+  leftb% endif %rightb
 
-  {% endfor %}
+  leftb% endfor %rightb
   -
 
   <br>
