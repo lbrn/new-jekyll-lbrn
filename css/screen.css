@@ -1284,14 +1284,22 @@ main div.content h3:enabled {
     text-align: center;
     line-height: .5em; }
   .events section {
+    padding-top: 15px;
     float: left;
     width: 70%;
     margin: 0 15%;
     border-bottom: 1px solid #2C3D6C;
     margin-bottom: 4%;
-    padding-bottom: 4%; }
+    padding-bottom: 4%;
+    border-radius: 7px;
+    transition: all .3s ease-in-out;
+  }
+  .events section:hover{
+    background-color: #def0df;
+    transition: all .3s ease-in-out;
+  }
   .events section .date {
-    width: 33%;
+    width: 48%;
     float: left;
     font-family: "Ubuntu", sans-serif;
     color: #2C3D6C;
@@ -1332,7 +1340,7 @@ main div.content h3:enabled {
   .events section .date:hover {
     color: #384d89; }
   .events section .details {
-    width: 62%;
+    width: 48%;
     float: right;
     font-family: "Ubuntu", sans-serif;
     color: #2C3D6C; }
@@ -2343,6 +2351,12 @@ div.research img{
   }
   /* end 0 */
 @media (min-width: 414px) {
+  .events section .details {
+    width: 50%;
+  }
+  .events section .date {
+
+  }
 
   .navdropdownbig{
     display: block;
@@ -3021,7 +3035,7 @@ section.directory article.person{
     margin-bottom: 1.5em;
     padding-bottom: 1em; }
   .events section .date {
-    width: 33%; }
+    width: 48%; }
   .events section .date .date-day {
     font-size: 400%; }
   .events section .date .date-month {
@@ -3281,6 +3295,13 @@ section.directory article.person{
     }
   }/* end of min-iwdth section*/
 @media (min-width: 860px) {
+  .events section .details {
+    width:50%;
+  }
+  .events section .date {
+    width:45%;
+  }
+
   .socialMedia{
     display:block;
   }
