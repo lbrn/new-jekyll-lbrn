@@ -21,6 +21,24 @@ title: Upcoming Events
     {% endfor %}
      <!-- for event in site.events
 
+
        include events-list-item-long.html
      endfor  -->
+     <h1>Previous events</h1>
+     
+     {% assign eventsR = site.events %}
+       {% for event in site.events %}
+       {% capture eventdate %}{{event.date | date: '%s'}} {% endcapture %}
+       {% capture sitedate%} {{site.time | date: '%s' | minus:86400 | plus: 0 }}{% endcapture %}
+       <!-- converts string to number -->
+       {% assign sitedateconverted = site.time | date: '%s' | minus:86400 | plus: 0 %}
+       {% assign eventdateconverted = event.date | date: '%s' | plus: 0 %}
+
+
+
+       {% if eventdateconverted >= sitedateconverted %}
+             {% endif %}
+             {% include events-list-item-long.html %}
+
+       {% endfor %}
 </section>
