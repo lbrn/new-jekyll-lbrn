@@ -252,7 +252,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .services{
     display:flex;
     flex-direction: column;
-    background-color: #def0df;
+    /* background-color: #c2e2c4; */
+background-color: #def0df;
     border-radius: 10px;
     padding-bottom: 0.7em;
 }
@@ -270,6 +271,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -webkit-transition: all .2x ease-in;
   }
 
+
+  /* .services .service .btn{
+    background-color: #8ECB91;
+  }
+  .services .service .btn:hover{
+    background-color: #def0df;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2x ease-in; */
+  /* } */
   .services .service{
     display: flex;
     /* padding-top:.5em; */
@@ -296,7 +307,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     flex-wrap: wrap;
     align-content: flex-start;
     line-height: normal;
-    border-top:2px solid #2C3D6C;
+    /* border-top:2px solid #2C3D6C; */
   }
   .service:nth-of-type(1) .text{
     border-top:0px;
@@ -328,6 +339,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   .service p{
     margin-top:10px;
+    font-family: "PT Serif script";
+line-height: 1.4;
   }
   .services a.btn{
     background-color: #c2e2c4;
