@@ -3268,8 +3268,8 @@ section.directory article.person{
 }
   .Twitterf{
       width: 100%;
-      margin: 10%;
-      /* border: 1px solid blue; */
+      padding:10%;
+      margin:0;
   }
 
   .float {
@@ -3481,9 +3481,9 @@ section.directory article.person{
     width: 30%;
     float: right;
     margin-right: 0;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-left: 0; }
+    padding-right:0;
+    padding-left:0;
+  }
   .events h2 {
     margin-top: 1em;
     margin-bottom: 1em; }

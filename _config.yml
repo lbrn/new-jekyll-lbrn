@@ -28,7 +28,6 @@ collections:
   old_pi:
     output:
   events:
-  events2:
   admin_core:
     output:
   bbc_core:
