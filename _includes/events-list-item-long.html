@@ -4,10 +4,14 @@
     {% else %}
 
   {% endif %}
+  {% if event.categories contains "events" %}
+
+
 
   <div class="date">
-    <h3 class="date-day adjust"> {{event.date | date: '%d' }}</h3>
-    <h4 class="date-month">{{event.date | date: '%b'}}</h4>
+    <h3 class="date-day adjust"> {{event.date | date: '%d' }} {{event.date | date: '%b'}}</h3>
+    <!-- <h4 class="date-month">{{event.date | date: '%b'}}</h4> -->
+    <h4 class="date-month"> {{event.date | date: '%Y'}}</h4>
   </div>
   <div class="details">
     <p class="title">{{event.title}}</p>
@@ -16,10 +20,16 @@
 
     <p class="date-time">{{event.startTime}} to {{event.endTime}}</p>
     {% else %}
-    
+
     {% endif %}
 
   </div>
+  {% else %}
+  <div class="notice details">
+    <p class="title">{{event.title}}</p>
+    <p class="description">{{event.description}}</p>
+  </div>
+  {% endif %}
   {% if event.link != nil %}
   </a>
   {% else %}
