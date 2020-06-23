@@ -13,7 +13,8 @@ LBRN is based at Louisiana State University in Baton Rouge with administrative s
 For Coronavirus (COVID-19) information please check your local administrative websites accordingly. You can also check on information here:
 
   •  [NIH Coronavirus (COVID-19) Information - subscribe for updates](https://www.nih.gov/health-information/coronavirus)  
-  •  [CDC Coronavirus (COVID-19) Information](https://www.cdc.gov/coronavirus/2019-ncov/index.html)  
+  •  [CDC Coronavirus (COVID-19) Information](https://www.cdc.gov/coronavirus/2019-ncov/index.html)
+  •  [Louisiana Governor COVID Information](https://coronavirus.la.gov)
   •  [Louisiana Department of Health Coronavirus (COVID-19) Information](http://ldh.la.gov/coronavirus/)  
   •  [LSU Coronavirus Updates and Information](https://www.lsu.edu/coronavirus/index.php)  
   •  [LSU School of Veterinary Medicine Coronavirus Updates](https://lsu.edu/vetmed/disaster_preparedness/coronavirus_updates.php)  
