@@ -1167,6 +1167,10 @@ float:left;
     margin-left: 0;
     margin-right: 0;
     position: relative; }
+    header.research {
+      background-image: url("../images/slider/3.jpg");
+
+    }
   header img {
     float: left;
     margin: 1em 0;
