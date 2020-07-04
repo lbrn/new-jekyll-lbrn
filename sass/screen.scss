@@ -437,7 +437,7 @@ padding-bottom: 1em;
       vertical-align: baseline;
       border: 0;
       margin:0;
-      font-family: "Open Sans Condensed", sans-serif !important;
+      font-family: $titleFont !important;
   }
   .vidsection div{
     display: inline-block;
@@ -490,9 +490,9 @@ float:left;
   }
 
   .carousel-caption h1{
-    background-color: rgba(142, 203, 145, 0.7);
+    background-color: $carbg;
     border-radius: 6px;
-    border: 2px solid rgba(142, 203, 145, 0.7);
+    border: 2px solid $carbg;
   }
 
   .profilepage {
@@ -514,7 +514,7 @@ float:left;
      /* opacity: 0.5; */
   }
   .pubmed-link{
-    background-color: #d4ebd5;
+    background-color: $sexta;
     color: $primary;
     display: inline-block;
     font-weight: 400;
@@ -623,7 +623,7 @@ float:left;
     line-height: 1.3;
     font-size: 1.5em;
     font-weight: 700;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: $titleFont;
     color: $primary;
     text-align: center;
     padding: .5em;
@@ -663,7 +663,7 @@ float:left;
       line-height: 1.3;
       font-size: 1.2em;
       font-weight: 400;
-      font-family: "Open Sans Condensed", sans-serif;
+      font-family: $titleFont;
       color: $primary;
       text-align: center;
       padding: .5em;
@@ -694,7 +694,7 @@ float:left;
     color: white;
   } */
   .slide a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $openFont;
     font-size: 1.5em !important;
     color: white;
     text-shadow: 0 0 10px black;
@@ -810,7 +810,7 @@ float:left;
     color: $primary;
     text-align: center;
     font-size: 1.1em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     margin: auto;
     margin-top: 1em;
     border: none;
@@ -891,7 +891,7 @@ float:left;
     margin-left: auto;
     margin-right: auto; }
   .navdropdown li {
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     text-align: center;
     border-bottom: 1px solid white;
     font-size: 1.2em;
@@ -932,7 +932,6 @@ float:left;
       padding: 1em .25em;
       text-decoration: none;
       display: block;
-    /* color: red; */
     color: white;
     text-decoration: none;
     padding: 1em 0;
@@ -946,8 +945,8 @@ float:left;
   }
 
   .navdropdown ul li ul li a:hover{
-    background-color: #d4ebd5;
-    color: $primary;
+    background-color: $sexta;
+    color: $secondary;
   }
   .navdropdown li:last-child {
     border: none; }
@@ -1004,23 +1003,18 @@ float:left;
     float: left;
     margin-left: 0;
     margin-right: 0;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     font-size: 1.2em;
     line-height: 1.8em;
-    /* color: red; */
-    /* cust */
+
     color: $primary;
     padding-left: 5%;
     padding-right: 5%;
-    /* padding-top: 1em; */
     padding-bottom: 2em; }
   main div.content h2 {
-    /* font-size: 1.5em; */
     margin-top: .5em;
     font-family: "Open Sans", sans-serif;
     color: $primary;
-    /* cust */
-    /* color: red; */
     line-height: 1.5em;
     /* text-transform: uppercase;  */
   }
@@ -1037,7 +1031,7 @@ main div.content h3:hover {
   cursor: pointer;
 }
 main div.content h3:enabled {
-  background-color: #d4ebd5;
+  background-color: $sexta;
 }
 
   main div.content h3.small-text {
@@ -1179,7 +1173,7 @@ main div.content h3:enabled {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: $titleFont;
     color: $secondary;
     font-weight: 700;
     font-size: 2em;
@@ -1204,12 +1198,12 @@ main div.content h3:enabled {
     margin-top: 1em;
     font-size: 1em;
     line-height: 1.2em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     color: $primary; }
   .news article .post-link {
     color: $secondary;
     font-size: 1em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     float: right;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -1220,7 +1214,7 @@ main div.content h3:enabled {
   .news article .post-date {
     font-weight: 700;
     margin-top: 1.5em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     color: $primary;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1246,7 +1240,7 @@ main div.content h3:enabled {
   .news .view-all a {
     text-align: center;
     padding: 0;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     color: white;
     text-decoration: none; }
   .news .view-all a:hover {
@@ -1306,7 +1300,7 @@ main div.content h3:enabled {
   .events section .date {
     width: 48%;
     float: left;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     color: $primary;
     border-right: 1px solid $primary; }
   .events section .date .date-day {
@@ -1347,7 +1341,7 @@ main div.content h3:enabled {
   .events section .details {
     width: 48%;
     float: right;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     color: $primary; }
     .events section .details.notice{
       float: none;
@@ -1379,7 +1373,7 @@ main div.content h3:enabled {
     padding: 0 5%;
     text-align: center;
     text-decoration: none;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     margin-bottom: 1em; }
   .events .view-all:hover {
     color: #5ab35e; }
@@ -1436,7 +1430,7 @@ main div.content h3:enabled {
     color: $primary;
     font-weight: 700;
     /* commented out for two card responsive stuff */
-    font-family: "Open Sans Condensed", sans-serif !important; }
+    font-family: $titleFont !important; }
   .three-card-responsive section p,  .two-card-responsive section p,  .four-card-responsive section p {
 
     -moz-box-sizing: border-box;
@@ -1451,7 +1445,7 @@ main div.content h3:enabled {
     margin-top: unset !important;
     padding: 2.5%;
     color: $primary;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     line-height: 1.25em;
     hyphens: auto;
     -webkit-hyphens: auto;
@@ -1478,7 +1472,7 @@ main div.content h3:enabled {
     color: #4a66b4; }
 
   #lbrnEventHeader {
-    background-color: #d4ebd5;
+    background-color: $sexta;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1491,7 +1485,7 @@ main div.content h3:enabled {
   #lbrnEventHeader h1 {
     font-size: 2.4em;
     line-height: 1.2em;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: $titleFont;
     color: $primary;
     margin-top: .5em;
     margin-bottom: .5em;
@@ -1531,7 +1525,7 @@ main div.content h3:enabled {
   #lbrnEventHeader .imagebox #quickReference p {
     margin: 1em;
     margin-top: 2em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     color: $primary; }
   #lbrnEventHeader div.caption {
     -moz-box-sizing: border-box;
@@ -1547,11 +1541,11 @@ main div.content h3:enabled {
   #lbrnEventHeader div.caption h1 {
     font-size: 2.4em;
     line-height: 1.2em;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: $titleFont;
     color: $primary; }
   #lbrnEventHeader div.caption p {
     font-size: 1.2em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     color: $primary;
     margin-top: .5em; }
   #lbrnEventHeader div.caption #date {
@@ -1818,7 +1812,7 @@ main div.content h3:enabled {
       /* padding: 2.5%; */
       padding: 1.5%;
       color: $primary !important;
-      font-family: "Ubuntu", sans-serif;
+      font-family: $bodyFont;
       line-height: 1.25em;
       hyphens: auto;
       -webkit-hyphens: auto;
@@ -1840,7 +1834,7 @@ main div.content h3:enabled {
   }
   div.resources section:hover, div.research section:hover {
     transition: background-color .1s;
-    background-color: #d4ebd5;
+    background-color: $sexta;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px; }
@@ -1912,11 +1906,11 @@ div.research img{
       cursor: auto;
     }
   section.cores ul li.active {
-    background-color: #d4ebd5; }
+    background-color: $sexta; }
   section.cores ul li.active:hover {
     cursor: default; }
   section.cores #core-swap {
-    background-color: #d4ebd5;
+    background-color: $sexta;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1943,7 +1937,7 @@ div.research img{
     width: 100%;
     padding: 1em;
     box-sizing: border-box;
-    background-color: #d4ebd5; }
+    background-color: $sexta; }
 
   section.directory {
     -moz-box-sizing: border-box;
@@ -2070,7 +2064,7 @@ div.research img{
     min-height: 0px !important;
     text-align: center;
     background-color: unset !important;
-    border-bottom: 10px solid #d4ebd5; }
+    border-bottom: 10px solid $sexta; }
   .presentation-templates img {
     float: none !important;
     margin: 0 auto;
@@ -2103,7 +2097,7 @@ div.research img{
     float: left;
     color: white;
     line-height: 2em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     font-size: .75em;
     width: 100%; }
   footer span {
@@ -2151,7 +2145,7 @@ div.research img{
     font-size: 0.7em;
     line-height: 1.3;
     font-weight: 400;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
   }
   .videorepo a {
     text-decoration: none;
@@ -2164,7 +2158,7 @@ div.research img{
   font-size: 100%;
   vertical-align: baseline;
   list-style: square;
-      font-family: "Ubuntu", sans-serif;
+      font-family: $bodyFont;
       /* color:red !important; */
   }
 
@@ -2504,7 +2498,7 @@ div.research img{
       margin-bottom: unset;
     }
     #lbrnEventSidebar2 ul div {
-      font-family: "Ubuntu", sans-serif;
+      font-family: $bodyFont;
       font-size: 1.0em;
       line-height: 1.2em;
       color: $primary;
@@ -2518,9 +2512,9 @@ div.research img{
     background-color: red;
   }
   .slide a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $openFont;
     font-size: 1em;
-    color: #FCF59E;
+    color: $cartext;
     text-shadow: 0 0 10px black;
     /* opacity: 0; */
     padding-top: 20%;
@@ -2569,8 +2563,7 @@ div.research img{
     }
     .navdropdown ul li ul li a{
       background-color: $secondary;
-      /* background-color: #d4ebd5; */
-      color: $primary;
+      color: $primaryheader;
       font-size: 1rem;
       font-weight:300;
       margin: unset;
@@ -2878,7 +2871,7 @@ section.directory article.person{
     float: left;
     margin-right: .5em;
     padding: 0;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     /* font-size: 1.2em; */
     border: none;
     color: white; }
@@ -3010,7 +3003,7 @@ section.directory article.person{
     line-height: 1.3;
     font-size: 1.2em;
     font-weight: 400;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: $titleFont;
     color: $primary;
     text-align: center;
     padding: .5em; }
@@ -3133,11 +3126,11 @@ section.directory article.person{
   #lbrnEventHeader div.caption h1 {
     font-size: 2.4em;
     line-height: 1.2em;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: $titleFont;
     color: $primary; }
   #lbrnEventHeader div.caption p {
     font-size: 1.2em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     color: $primary;
     margin-top: .5em; }
 
@@ -3212,7 +3205,7 @@ section.directory article.person{
 
   }
   #lbrnEventSidebar ul div {
-    font-family: "Ubuntu", sans-serif;
+    font-family: $bodyFont;
     font-size: 1.0em;
     line-height: 1.2em;
     color: $primary;
@@ -3915,7 +3908,7 @@ div.resources h2 {
   padding: 5%;
   color: $primary;
   font-weight: 400;
-  font-family: "Ubuntu", sans-serif;
+  font-family: $bodyFont;
 line-height: 1.25em;
 hyphens: auto;
 }
@@ -3970,7 +3963,7 @@ font-size: 0.8em;
     /* padding-bottom: 2.5%; */
     padding: 0;
 color: $primary;
-font-family: "Ubuntu", sans-serif;
+font-family: $bodyFont;
 line-height: 1.25em;
 hyphens: auto;
 border-radius: 6px;
@@ -4029,20 +4022,12 @@ border-radius: 6px;
   -webkit-transition:background-color .2x ease-in;
   width: 45%;
   display: block;
-  /* margin-left: 2.5%; */
-  /* margin-right: 2.5%; */
-  /* margin: 2.5%; */
-  /* 1155 instead */
-  /* padding: 2.5%; */
 
-  /* color: red; */
-      /* overflow: hidden;  */
       border-radius: 6px;
-      /* background-color:$secondary; */
-      /* background-color: #d4ebd5; */
+
 }
 .person:hover {
-background-color: #d4ebd5;
+background-color: $sexta;
   /* background-color: $quadiary; */
 }
 
@@ -4236,7 +4221,7 @@ display: block;
       border: 0;
       font-size: 22px;
       /* font-family: BebasKai; */
-      font-family: "Ubuntu", sans-serif;
+      font-family: $bodyFont;
       text-align: center;
       padding: 0.5rem;
   }

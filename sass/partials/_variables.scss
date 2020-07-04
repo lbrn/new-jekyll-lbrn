@@ -1,17 +1,25 @@
-//colors
+//colors - normal
 // $primary: #2C3D6C;
 // $secondary: #8ECB91;
 //$tertiary: #7dc380;
 //$quadiary: #c2e3c4;
 //$pentia: #def0df;
 //$sexta: #d4ebd5;
+//$carbg: rgba(142, 203, 145, 0.7);
+//$cartext: #FCF59E;
 
+//Colors - BLM
 $primary: #656565;
 $secondary: #181818;
 $tertiary: #2f2f2f;
 $quadiary: #dedede;
 $pentia: #bbbbbb;
+$sexta: #ebebeb;
+$carbg: rgba(0, 0, 0, 0.7);
+$cartext: white;
 
+// $primaryheader: $primary;
+$primaryheader: #ffffff;
 //fonts
 $titleFont: 'Open Sans Condensed', sans-serif;
 $bodyFont:'Ubuntu', sans-serif;

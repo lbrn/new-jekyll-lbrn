@@ -493,9 +493,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   .carousel-caption h1 {
-    background-color: rgba(142, 203, 145, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
-    border: 2px solid rgba(142, 203, 145, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.7);
   }
 
   .profilepage {
@@ -519,7 +519,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   .pubmed-link {
-    background-color: #d4ebd5;
+    background-color: #ebebeb;
     color: #656565;
     display: inline-block;
     font-weight: 400;
@@ -995,7 +995,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 1em 0.25em;
     text-decoration: none;
     display: block;
-    /* color: red; */
     color: white;
     text-decoration: none;
     padding: 1em 0;
@@ -1011,8 +1010,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   .navdropdown ul li ul li a:hover {
-    background-color: #d4ebd5;
-    color: #656565;
+    background-color: #ebebeb;
+    color: #181818;
   }
 
   .navdropdown li:last-child {
@@ -1088,22 +1087,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-family: "Ubuntu", sans-serif;
     font-size: 1.2em;
     line-height: 1.8em;
-    /* color: red; */
-    /* cust */
     color: #656565;
     padding-left: 5%;
     padding-right: 5%;
-    /* padding-top: 1em; */
     padding-bottom: 2em;
   }
 
   main div.content h2 {
-    /* font-size: 1.5em; */
     margin-top: 0.5em;
     font-family: "Open Sans", sans-serif;
     color: #656565;
-    /* cust */
-    /* color: red; */
     line-height: 1.5em;
     /* text-transform: uppercase;  */
   }
@@ -1123,7 +1116,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   main div.content h3:enabled {
-    background-color: #d4ebd5;
+    background-color: #ebebeb;
   }
 
   main div.content h3.small-text {
@@ -1643,7 +1636,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   #lbrnEventHeader {
-    background-color: #d4ebd5;
+    background-color: #ebebeb;
     box-sizing: border-box;
     width: 100%;
     float: left;
@@ -2049,7 +2042,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   div.resources section:hover, div.research section:hover {
     transition: background-color 0.1s;
-    background-color: #d4ebd5;
+    background-color: #ebebeb;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -2133,7 +2126,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   section.cores ul li.active {
-    background-color: #d4ebd5;
+    background-color: #ebebeb;
   }
 
   section.cores ul li.active:hover {
@@ -2141,7 +2134,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   section.cores #core-swap {
-    background-color: #d4ebd5;
+    background-color: #ebebeb;
     box-sizing: border-box;
     width: 100%;
     float: left;
@@ -2174,7 +2167,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
     padding: 1em;
     box-sizing: border-box;
-    background-color: #d4ebd5;
+    background-color: #ebebeb;
   }
 
   section.directory {
@@ -2327,7 +2320,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     min-height: 0px !important;
     text-align: center;
     background-color: unset !important;
-    border-bottom: 10px solid #d4ebd5;
+    border-bottom: 10px solid #ebebeb;
   }
 
   .presentation-templates img {
@@ -2795,7 +2788,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .slide a {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
-    color: #FCF59E;
+    color: white;
     text-shadow: 0 0 10px black;
     /* opacity: 0; */
     padding-top: 20%;
@@ -2847,8 +2840,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .navdropdown ul li ul li a {
     background-color: #181818;
-    /* background-color: #d4ebd5; */
-    color: #656565;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 300;
     margin: unset;
@@ -4420,20 +4412,11 @@ border-radius: 6px;
   -webkit-transition: background-color 0.2x ease-in;
   width: 45%;
   display: block;
-  /* margin-left: 2.5%; */
-  /* margin-right: 2.5%; */
-  /* margin: 2.5%; */
-  /* 1155 instead */
-  /* padding: 2.5%; */
-  /* color: red; */
-  /* overflow: hidden;  */
   border-radius: 6px;
-  /* background-color:$secondary; */
-  /* background-color: #d4ebd5; */
 }
 
 .person:hover {
-  background-color: #d4ebd5;
+  background-color: #ebebeb;
   /* background-color: $quadiary; */
 }
 
