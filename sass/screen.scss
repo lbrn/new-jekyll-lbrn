@@ -2527,21 +2527,20 @@ div.research img{
 
     #lbrnEventSidebar3 {
       display:inline;
-      /* background-color:; */
+
       padding: 0;
       margin: 0;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      /* width: 22.85714%; */
+
       width: 100%;
       float: left;
       margin-right: 0;
-      /* background-color: $secondary; */
-      /* height: 3000px; */
+
       height: auto;
       position: relative;
-      /* color: red; */
+
       position: -webkit-sticky;
       position: sticky;
       top: 0em;
@@ -2549,7 +2548,7 @@ div.research img{
       text-decoration: none;
       border-bottom: 1px solid $primary;
       border-top: 1px solid $primary;
-      /* font-weight: 300; */
+
     }
     .bar {background-color: green;
     margin-bottom:10em; }
