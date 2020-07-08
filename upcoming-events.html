@@ -1,26 +1,13 @@
 ---
 layout: default
-title: Upcoming Events
+title: All Events
 ---
 <section class="events" id="eventsContainer">
 
-  {% assign eventsR = site.events %}
-    {% for event in site.events %}
-    {% capture eventdate %}{{event.date | date: '%s'}} {% endcapture %}
-    {% capture sitedate%} {{site.time | date: '%s' | minus:86400 | plus: 0 }}{% endcapture %}
-    <!-- converts string to number -->
-    {% assign sitedateconverted = site.time | date: '%s' | minus:86400 | plus: 0 %}
-    {% assign eventdateconverted = event.date | date: '%s' | plus: 0 %}
+  {% assign eventsRev = site.events | reverse %}
 
+  {% for event in eventsRev %}
+    {% include events-list-item-long.html %}
+  {% endfor %}
 
-
-    {% if eventdateconverted >= sitedateconverted %}
-              {% include events-list-item-long.html %}
-          {% endif %}
-
-    {% endfor %}
-     <!-- for event in site.events
-
-       include events-list-item-long.html
-     endfor  -->
 </section>
