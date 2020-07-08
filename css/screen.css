@@ -2781,6 +2781,7 @@ div.research img{
     /* font-weight: normal; */
     font-weight: 400;
     /* font-size: 1.4em; */
+    line-height: 17px;
   }
 
     .strip section{
@@ -3045,6 +3046,7 @@ div.research img{
   .header h1{
     font-size: 2.5rem;
     /* padding-left: 0px; */
+
   }
   #core-list .sevenblock:nth-of-type(even){
     border-top-style:none;
@@ -3318,10 +3320,11 @@ section.directory article.person{
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 2em;
-
     position: absolute;
     bottom: .75em;
     right: 0;
+    margin-bottom: 0;
+    line-height: 40px;
     margin-left: 40%;
     text-align: right; }
   header #navBug {
@@ -3776,6 +3779,7 @@ section.directory article.person{
   }
   .events section .date {
     width:45%;
+  }
   #core-list .horiline-r{
     margin-left: 49%;
   }
@@ -3934,7 +3938,8 @@ section.directory article.person:nth-child(odd) {
     width: 50%; }
   footer p a {
     font-weight: bold;
-    line-height: 3; } }
+    line-height: 3; }
+  }
 @media (min-width: 1224px) {
   .npi{
     height: 10em!important;
