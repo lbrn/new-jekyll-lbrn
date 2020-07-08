@@ -1599,14 +1599,23 @@ main div.content h3:enabled {
     text-align: center;
     line-height: .5em; }
   .events section {
+    padding-top: 15px;
     float: left;
     width: 70%;
     margin: 0 15%;
     border-bottom: 1px solid #2C3D6C;
     margin-bottom: 4%;
-    padding-bottom: 4%; }
+    padding-bottom: 4%;
+    transition: all .3s ease-in-out;
+  }
+  .events section:hover{
+    border-radius: 7px;
+    /* background-color: #8ECB91; */
+    background-color: #def0df;
+    transition: all .3s ease-in-out;
+  }
   .events section .date {
-    width: 33%;
+    width: 48%;
     float: left;
     font-family: "Ubuntu", sans-serif;
     color: #2C3D6C;
@@ -1647,17 +1656,29 @@ main div.content h3:enabled {
   .events section .date:hover {
     color: #384d89; }
   .events section .details {
-    width: 62%;
+    width: 48%;
     float: right;
     font-family: "Ubuntu", sans-serif;
     color: #2C3D6C; }
+    .events section .details.notice{
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+    .events section a:hover{
+      text-decoration: none;
+    }
+    .events section .details.notice .title{
+      font-size: 1.5em;
+    }
+
   .events section .details .date-time {
     margin-top: 0;
     font-weight: bold; }
   .events section:last-child {
     border: none; }
   .events .view-all {
-    background-color: #8ECB91;
+    /* background-color: #8ECB91; */
     color: #2C3D6C;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1672,7 +1693,7 @@ main div.content h3:enabled {
     font-family: "Ubuntu", sans-serif;
     margin-bottom: 1em; }
   .events .view-all:hover {
-    color: black; }
+    color: #5ab35e; }
 
   .three-card-responsive,  .two-card-responsive,  .four-card-responsive {
     -moz-box-sizing: border-box;
@@ -1738,11 +1759,6 @@ main div.content h3:enabled {
     margin-right: 2.9%;
     font-size: 0.8em;
     margin-left: 3.44828%;
-    /* color: red; */
-
-    /* custom text size paragraph */
-        /* border: 1px solid red !important;/* cust */
-    /* margin-top: 0.25em !important; */
     margin-top: unset !important;
     padding: 2.5%;
     color: #2C3D6C;
@@ -2839,10 +2855,9 @@ div.research img{
       font-weight: 300;
       /* font-size: 1.2em; */
       font-size: 0.8em;
-      border-bottom: 1px solid #2C3D6C80;
-      cursor: pointer;
-      text-align: center;
-
+        /* border-bottom: 1px solid #2C3D6C; */
+        cursor: pointer;
+        text-align: center;
     }
 
     #lbrnEventSidebar2 ul {
@@ -2861,8 +2876,8 @@ div.research img{
       z-index: 1000;
       padding-left: 5%;
       padding-right: 5%;
-      /* border-bottom: 1px solid #2C3D6C; */
-      border-top: 1px solid #2C3D6C80;
+      border-bottom: 1px solid #2C3D6C;
+      border-top: 1px solid #2C3D6C;
       margin-bottom: unset;
     }
     #lbrnEventSidebar2 ul div {
@@ -3272,8 +3287,9 @@ section.directory article.person{
 }
   .Twitterf{
       width: 100%;
-      padding:10%;
+      padding: 10%;
       margin:0;
+      padding-top: 0;
   }
 
   .float {
@@ -3333,12 +3349,9 @@ section.directory article.person{
 
   .slider {
     display: block;
-    /* width: 100%;
-    height: 0;
-    padding-bottom: 50%;
-     */
+
     width: 70%;
-    height: 22.75em;
+    height: 24.75em;
     padding-bottom: 5%;
     /* padding-top: 5%; */
 
@@ -3485,8 +3498,15 @@ section.directory article.person{
     width: 30%;
     float: right;
     margin-right: 0;
-    padding-right:0;
-    padding-left:0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .events .feed{
+    /* background-color: #def0df; */
+    background-color: #c2e3c4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .events h2 {
     margin-top: 1em;
@@ -3495,11 +3515,12 @@ section.directory article.person{
     width: 90%;
     margin: 0 5%;
     margin-bottom: 1.5em;
-    padding-bottom: 1em; }
+    padding-bottom: 1em;
+  }
   .events section .date {
-    width: 33%; }
+    width: 48%; }
   .events section .date .date-day {
-    font-size: 400%; }
+    font-size: 200%; }
   .events section .date .date-month {
     font-size: 1.5em; }
   .events section .details .title {
@@ -3511,9 +3532,7 @@ section.directory article.person{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    /*  */
-    /* background-color: red; */
-    /* cust */
+
     width: 90%;
     float: left;
     margin-right: 2.85714%;
@@ -3523,7 +3542,6 @@ section.directory article.person{
     min-height: unset;
     margin-right: 2.85714%;
     padding-bottom: unset;
-    /* margin: 0;  */
   }
 
   .three-card-responsive .strip:hover, .two-card-responsive .strip:hover, .four-card-responsive .strip:hover {
@@ -3537,10 +3555,6 @@ section.directory article.person{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 38.57143%;
-    /* was 48.57143 */
-    /* width: 5%; cust*/
-    /* MODIFY FOUR COLLUMN HERE */
-    /* border: 1px solid red;/* cust EFFECTS  */
     float: left;
     margin-right: 2.85714%;
 
@@ -3757,9 +3771,15 @@ section.directory article.person{
     }
   }/* end of min-iwdth section*/
 @media (min-width: 860px) {
+  .events section .details {
+    width:50%;
+  }
+  .events section .date {
+    width:45%;
   #core-list .horiline-r{
     margin-left: 49%;
   }
+
   .socialMedia{
     display:block;
   }
@@ -3914,12 +3934,8 @@ section.directory article.person:nth-child(odd) {
     width: 50%; }
   footer p a {
     font-weight: bold;
-    line-height: 3; }
-  }
+    line-height: 3; } }
 @media (min-width: 1224px) {
-  .research #lbrnEventSidebar2{
-    width:175px;
-  }
   .npi{
     height: 10em!important;
   }
@@ -4014,8 +4030,7 @@ width:95%;
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; }
-  }
+    margin-right: 0; } }
 @media (min-width: 1500px) {
   .profileimg{
     width: 15%;
@@ -4056,8 +4071,7 @@ width:95%;
   }
 
   #lbrnEventSidebar ul li div.chooseType label {
-    width: 87%; }
-  }
+    width: 87%; } }
 
 
 @charset "UTF-8";
