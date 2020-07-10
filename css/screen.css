@@ -3842,25 +3842,7 @@ section.directory article.person:nth-child(odd) {
     /* margin-right: 2.85714%;  */
       margin-right: 5.71428%;
   }
-  /* .three-card-responsive section:nth-child(2n) {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 26.42857%;
-    float: left;
-    margin-right: 2.85714%;
-    margin-left: 2.85714%;
-          margin-right: 5.71428%;
-  } */
-  /* .three-card-responsive section:nth-child(3n) {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 31.42857%;
-   float: right;
-    margin-right: 0;
-      margin-right: 2.85714%;
-  } */
+
 
     .three-card-responsive .strip:nth-child(2n){
       -moz-box-sizing: border-box;
