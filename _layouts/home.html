@@ -35,6 +35,7 @@
           {% for event in site.events %}
           {% capture eventdate %}{{event.date | date: '%s'}} {% endcapture %}
           {% capture sitedate%} {{site.time | date: '%s' | minus:86400 | plus: 0 }}{% endcapture %}
+
           {% assign sitedateconverted = site.time | date: '%s' | minus:86400 | plus: 0 %}
           {% assign eventdateconverted = event.date | date: '%s' | plus: 0 %}
 
