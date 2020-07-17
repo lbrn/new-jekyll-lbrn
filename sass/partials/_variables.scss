@@ -8,6 +8,8 @@
 //$carbg: rgba(142, 203, 145, 0.7);
 //$cartext: #FCF59E;
 //$resgreen: #c2e2c4;
+// $aboutcores: #b1dbb3;
+// $aboutcoreshover: #e5f3e6;
 
 //Colors - BLM
 $primary: #656565;
@@ -19,6 +21,10 @@ $sexta: #ebebeb;
 $carbg: rgba(0, 0, 0, 0.7);
 $cartext: white;
 $resgreen: #d1d1d1;
+$aboutcores: #dddddd;
+$aboutcoreshover: #f2f2f2;
+
+
 
 
 // $primaryheader: $primary;
@@ -35,3 +41,6 @@ $resbuttonevenhover: $secondary;
 $titleFont: 'Open Sans Condensed', sans-serif;
 $bodyFont:'Ubuntu', sans-serif;
 $openFont: 'Open Sans', sans-serif;
+
+//misc
+$filter:  grayscale(100%);

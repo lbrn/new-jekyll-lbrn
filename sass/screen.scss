@@ -38,6 +38,7 @@ a img {
   border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  filter:$filter;
   display: block; }
 /* End at 1295ish */
 
@@ -207,7 +208,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left:0px;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-top: 2px solid $primary;
+    // border-top: 2px solid $primary;
     flex-wrap:wrap;
 
   }
@@ -1000,6 +1001,7 @@ float:left;
     overflow: hidden;
     color: #fff;
     text-align: center;
+    filter:$filter;
   }
   .slide {
     width:100%;
@@ -1173,8 +1175,10 @@ float:left;
     float: left;
     margin-left: 0;
     margin-right: 0;
-    position: relative; }
+    position: relative;
+  }
     header.research {
+      filter: $filter;
       background-image: url("../images/slider/3.jpg");
 
     }
@@ -2166,23 +2170,19 @@ main div.content h3:enabled {
     background-color: unset; }
   div.resources img /*, div.research img*/ {
     display: block;
-    /* max-width: 10em; */
-        /* border: 1px solid red;/* cust */
     margin: 5% auto;
     float: left;
-    /* padding-left: 5%; */
-    /* padding: 5%; */
     margin-left: 10%;
     width: 80%;
-      border-radius: 6px;
-      padding-right: 2.5%;
+    border-radius: 6px;
+    padding-right: 2.5%;
+   filter: $filter;
 /* CUSTOMIZE COLLUMNS IN RESEARCH HERE */
   }
 div.research img{
   /* Cust */
   display: block;
   max-width: 10em;
-      /* border: 1px solid red;/* cust */
   margin: 5% auto;
   float: unset;
   padding-left: unset;
@@ -2215,7 +2215,8 @@ div.research img{
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #b1dbb3; }
+    background-color: $aboutcores;
+  }
   section.cores ul li {
     width: 33.33332%;
     text-align: center;
@@ -2223,7 +2224,7 @@ div.research img{
     list-style: none;
     padding: 1em 0; }
   section.cores ul li:hover {
-    background-color: #e5f3e6;
+    background-color: $aboutcoreshover;
     cursor: pointer; }
     section.cores #core-swap ul li:hover {
       background-color: unset;
@@ -3038,6 +3039,9 @@ div.research img{
   .research a.btn{
     align-self: auto;
   }
+  .research img{
+    filter: $filter;
+  }
 
   .currentresearch .text{
     flex: 1 1 70%;
@@ -3049,11 +3053,10 @@ div.research img{
     }
     .currentresearch{
       text-align: left;
+      padding: 0.5em 0.5em 0.75em 0.5em;
     }
   .header h1{
     font-size: 2.5rem;
-    /* padding-left: 0px; */
-
   }
   #core-list .sevenblock:nth-of-type(even){
     border-top-style:none;
@@ -3819,15 +3822,6 @@ section.directory article.person {
   /* height: 15em; */
   min-height: 8em;
 }
-/* section.directory article.person:nth-child(even) {
-
-  float: right;
-
-}
-section.directory article.person:nth-child(odd) {
-
-  float: left;
-} */
 
   .three-card-responsive {
     -moz-box-sizing: border-box;
@@ -4491,17 +4485,8 @@ border-radius: 6px;
   -webkit-transition:background-color .2x ease-in;
   width: 45%;
   display: block;
-  /* margin-left: 2.5%; */
-  /* margin-right: 2.5%; */
-  /* margin: 2.5%; */
-  /* 1155 instead */
-  /* padding: 2.5%; */
-
-  /* color: red; */
-      /* overflow: hidden;  */
-      border-radius: 6px;
-      /* background-color:$secondary; */
-      /* background-color: $sexta; */
+  border-radius: 6px;
+  filter:$filter;
 }
 .person:hover {
 background-color: $sexta;
