@@ -43,14 +43,21 @@ a img {
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  filter: grayscale(100%);
   display: block;
 }
 
 /* End at 1295ish */
+img {
+  filter: grayscale(100%);
+}
+img:hover {
+  filter: none !important;
+  transition: filter 0.2s ease;
+}
+
 .filters .active {
   font-weight: bold;
-  color: #5ab35e !important;
+  color: #2f2f2f !important;
 }
 
 @media (min-width: 0) {
@@ -96,7 +103,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   #lbrnEventSidebar2 div li:hover a {
-    color: #5ab35e;
+    color: #2f2f2f;
     text-decoration: none;
   }
 
@@ -361,7 +368,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   .service a:hover {
-    color: #5ab35e;
+    color: #2f2f2f;
     text-decoration: none;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
@@ -1176,7 +1183,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   body a:hover {
-    color: #5ab35e;
+    color: #2f2f2f;
   }
 
   a.button {
@@ -1892,19 +1899,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   .events .view-all:hover {
-    color: #5ab35e;
+    color: #2f2f2f;
   }
 
   .three-card-responsive, .two-card-responsive, .four-card-responsive {
     box-sizing: border-box;
     width: 100%;
-    /* editing */
-    /* border: 1px solid red; cust */
     float: left;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 2%;
-    /* padding-bottom: 2em;  */
+  }
+  .three-card-responsive section a:hover img, .two-card-responsive section a:hover img, .four-card-responsive section a:hover img {
+    filter: none !important;
+    transition: filter 0.2s ease;
   }
 
   .three-card-responsive section, .two-card-responsive section, .four-card-responsive section {
@@ -1914,10 +1922,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 90%;
     /* editing */
     /* CUSTOMIZE 3 COLLUMN HERE */
-    /* border: 1px solid red;/* cust EFFECTS  */
-    /* width: 10%; */
     float: left;
-    /* margin-right: 2.9%; */
     margin: 5%;
     padding-bottom: 2em;
     position: relative;
@@ -1926,8 +1931,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .three-card-responsive section img, .two-card-responsive section img, .four-card-responsive section img {
     border-radius: 6px;
     box-sizing: border-box;
-    /* border: 1px solid red;/* cust */
-    /* editing */
     /* 4 card image section */
     float: left;
     margin-left: 0;
@@ -1936,8 +1939,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   .three-card-responsive section h2, .two-card-responsive section h2, .four-card-responsive section h2 {
-    /* font-size: 1.0em !important; */
-    /* margin-top: unset; */
     font-size: 1em;
     line-height: 1.2em !important;
     text-transform: none !important;
@@ -2411,7 +2412,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 10%;
     width: 80%;
     border-radius: 6px;
-    padding-right: 2.5%;
     filter: grayscale(100%);
     /* CUSTOMIZE COLLUMNS IN RESEARCH HERE */
   }
@@ -5029,7 +5029,7 @@ font-size: 0.8em;
   color: white;
   background-color: #e5f3e6;
   border-radius: 6px;
-  color: #5ab35e;
+  color: #2f2f2f;
 }
 
 .peoplesort {

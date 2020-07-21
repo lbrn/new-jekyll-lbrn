@@ -38,13 +38,19 @@ a img {
   border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  filter:$filter;
-  display: block; }
+  display: block;
+}
 /* End at 1295ish */
-
+img{
+    filter:$filter;
+    &:hover{
+      filter: none!important;
+      transition: filter .2s ease;
+    }
+}
 .filters .active{
   font-weight:bold;
-  color: #5ab35e!important;
+  color: $viewall!important;
 }
 @media (min-width: 0) {
   .research .content{
@@ -88,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   }
   #lbrnEventSidebar2 div li:hover a {
-    color:#5ab35e;
+    color:$viewall;
     text-decoration: none;
 
   }
@@ -335,7 +341,7 @@ background-color: $pentia;
     display: inline;
   }
   .service a:hover{
-    color:#5ab35e;
+    color:$viewall;
     text-decoration: none;
     -moz-transition: all .2s ease-in;
 -o-transition: all .2s ease-in;
@@ -1118,7 +1124,7 @@ float:left;
     text-decoration: none;
     color: $secondary; }
   body a:hover {
-    color: #5ab35e; }
+    color: $viewall; }
 
   a.button {
     padding: .2em 1.2em;
@@ -1704,20 +1710,26 @@ main div.content h3:enabled {
     font-family: $bodyFont;
     margin-bottom: 1em; }
   .events .view-all:hover {
-    color: #5ab35e; }
+    color: $viewall; }
 
   .three-card-responsive,  .two-card-responsive,  .four-card-responsive {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-    /* editing */
-      /* border: 1px solid red; cust */
     float: left;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 2%;
-    /* padding-bottom: 2em;  */
+      section a {
+        &:hover{
+         img{
+          filter:none!important;
+          transition: $transition;
+        }
+      }
+    }
+
   }
   .three-card-responsive section,  .two-card-responsive section,  .four-card-responsive section {
     border-radius: 6px;
@@ -1728,10 +1740,8 @@ main div.content h3:enabled {
     width: 90%;
     /* editing */
     /* CUSTOMIZE 3 COLLUMN HERE */
-        /* border: 1px solid red;/* cust EFFECTS  */
-    /* width: 10%; */
+
     float: left;
-    /* margin-right: 2.9%; */
     margin: 5%;
     padding-bottom: 2em;
     position: relative; }
@@ -1740,16 +1750,12 @@ main div.content h3:enabled {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    /* border: 1px solid red;/* cust */
-    /* editing */
     /* 4 card image section */
     float: left;
     margin-left: 0;
     margin-right: 0;
     width: 100%; }
   .three-card-responsive section h2,  .two-card-responsive section h2, .four-card-responsive section h2 {
-    /* font-size: 1.0em !important; */
-    /* margin-top: unset; */
     font-size: 1.0em;
     line-height: 1.2em !important;
     text-transform: none !important;
@@ -1798,6 +1804,7 @@ main div.content h3:enabled {
   }
   .three-card-responsive section p.more:hover, .two-card-responsive section p.more:hover, .four-card-responsive section p.more:hover {
     color: #4a66b4; }
+
 
   #lbrnEventHeader {
     background-color: $sexta;
@@ -2175,7 +2182,7 @@ main div.content h3:enabled {
     margin-left: 10%;
     width: 80%;
     border-radius: 6px;
-    padding-right: 2.5%;
+    // padding-right: 2.5%;
    filter: $filter;
 /* CUSTOMIZE COLLUMNS IN RESEARCH HERE */
   }
@@ -4598,7 +4605,7 @@ font-size: 0.8em;
     color: white;
     background-color: #e5f3e6;
     border-radius: 6px;
-    color: #5ab35e;
+    color: $viewall;
 }
 
 
