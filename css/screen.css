@@ -152,7 +152,7 @@ img:hover {
   }
 
   .research #lbrnEventSidebar2 {
-    float: left;
+    float: right;
   }
 
   .currentresearch.featured {
@@ -1249,6 +1249,7 @@ img:hover {
     margin-left: 0;
     margin-right: 0;
     position: relative;
+    filter: none;
   }
 
   header.research {
@@ -3215,10 +3216,12 @@ img:hover {
     font-size: 1em;
     color: #FCF59E;
     text-shadow: 0 0 10px black;
-    /* opacity: 0; */
     padding-top: 20%;
     transform: translateY(20%);
     transition: transform 0.5s 0.5s, opacity 0.5s;
+  }
+  .slide a:hover {
+    color: #FCF59E;
   }
 
   .slide {
@@ -3316,7 +3319,7 @@ img:hover {
 @media (min-width: 667px) {
   .research .content .content {
     width: 80%;
-    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .services .service {

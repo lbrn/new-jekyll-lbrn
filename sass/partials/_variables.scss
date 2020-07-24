@@ -1,53 +1,38 @@
+
 //colors - normal
-$primary: #2C3D6C;
-$secondary: #8ECB91;
-$tertiary: #7dc380;
-$quadiary: #c2e3c4;
-$pentia: #def0df;
-$sexta: #d4ebd5;
-$carbg: rgba(142, 203, 145, 0.7);
-$cartext: #FCF59E;
-$resgreen: #c2e2c4;
-$aboutcores: #b1dbb3;
-$aboutcoreshover: #e5f3e6;
-$viewall: #5ab35e;
-
-//Colors - BLM
-// $primary: #656565;
-// $secondary: #181818;
-// $tertiary: #2f2f2f;
-// $quadiary: #dedede;
-// $pentia: #bbbbbb;
-// $sexta: #ebebeb;
-// $carbg: rgba(0, 0, 0, 0.7);
-// $cartext: white;
-// $resgreen: #d1d1d1;
-// $aboutcores: #dddddd;
-// $aboutcoreshover: #f2f2f2;
-// $viewall: #2f2f2f;
+$primary: #2C3D6C !default;
+$secondary: #8ECB91 !default;
+$tertiary: #7dc380 !default;
+$quadiary: #c2e3c4 !default;
+$pentia: #def0df !default;
+$sexta: #d4ebd5 !default;
+$carbg: rgba(142, 203, 145, 0.7) !default;
+$cartext: #FCF59E !default;
+$resgreen: #c2e2c4 !default;
+$aboutcores: #b1dbb3 !default;
+$aboutcoreshover: #e5f3e6 !default;
+$viewall: #5ab35e !default;
 
 
 
 
-$resbutton: $primary;
-$primaryheader: $primary;
-$pageheader: $primary;
-$resbuttoneven: $resbutton;
-$resbuttonevenhover: white;
-// $primaryheader: #ffffff;
-// $pageheader: #000000;
-// $resbuttoneven: #ffffff;
-// $resbuttonevenhover: $secondary;
 
-//fonts
+$resbutton: $primary !default;
+$primaryheader: $primary !default;
+$pageheader: $primary !default;
+$resbuttoneven: $resbutton !default;
+$resbuttonevenhover: white !default;
+
+//font
 $titleFont: 'Open Sans Condensed', sans-serif;
 $bodyFont:'Ubuntu', sans-serif;
 $openFont: 'Open Sans', sans-serif;
 
 //misc
-// $filter:  grayscale(100%);
-$filter:  none;
+$filter:  none !default;
 $transition: filter .2s ease;
 
 
-// BLM variable - add variable that's blank or blm and turns it on or off
+
+// BLM variable
+// @import "partials/blm";
