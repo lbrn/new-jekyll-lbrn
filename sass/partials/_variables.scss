@@ -32,7 +32,13 @@ $openFont: 'Open Sans', sans-serif;
 $filter:  none !default;
 $transition: filter .2s ease;
 
-
+//Breakpoints
+$zero: 0;
+$sm: 414px;
+$md: 667px;
+$lg: 860px;
+$xl: 1224px;
+$xxl: 1500px;
 
 // BLM variable
 // @import "partials/blm";
