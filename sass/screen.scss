@@ -113,7 +113,14 @@ img{
     position: sticky;
     top: 0em;
     z-index: 1000;
+
+    #lbrnEventSidebarUl{
+      &.collapse{
+        display:block;
+      }
+    }
     button{
+      display:none;
       float:right;
       padding-top:0;
       padding-bottom:0;
@@ -157,14 +164,20 @@ img{
     }
     @media (max-width: $lg)
     {
-      // & + #lbrnEventSidebar2 {
-      //
-      // }
+      button{
+      display:block;
+      }
       #lbrnEventSidebarUl{
         display:none;
         &.show{
           display:block;
           width:100%;
+        }
+        &.collapse{
+          display:none;
+        }
+        &.collapse.show{
+          display:block;
         }
       }
         width:calc(100% + 60px);
@@ -172,15 +185,16 @@ img{
     }
     div {
       li {
-        padding:0;
-        a {
           padding-right:10px;
           padding-left: 10px;
           padding-top: 0.5em;
           padding-bottom: 0.5em;
-        }
+
       }
       // width:100%;
+    }
+    #lbrnEventSidebarUl div li a {
+      padding:0;
     }
   }
 
