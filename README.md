@@ -35,7 +35,7 @@ General code:
 
 -The site's CSS uses SASS to compile and output a file. It's kind of a mess at the time of writing, as there were updates done to the CSS that weren't included in the original sass file, so it's currently a mix of base changed CSS and SASS.
 
---The screen.scss is the main file for the sass. it contains all the basic rules, and at the time of writing, a mix of css style code and nested sass style code. Variables used here - $md, $primary, etc, are defined in the "variables" file. You can use a compiler like Prepros to compile the sass files into screen.css.
+--The screen.scss is the main file for the sass. it contains all the basic rules, and at the time of writing, a mix of css style code and nested sass style code. Variables used here - $md, $primary, etc, are defined in the "variables" file. You can use a compiler like Prepros  (or Codekit if on a mac) to compile the sass files into screen.css. These programs both have autoprefixer options- meaning if you enter a line of code that has a different version for, say, safari, it will automatically add the safari version when compiling.
 
 
 -The header menu has two seperate "include" files, depending on if the page files are nested or not. dropdown.html and dropdown_nested.html, due to requiring different linking methods if they're a folder deeper. It is also  first thing to break if bootstrap isn't linked correctly.
