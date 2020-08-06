@@ -1696,110 +1696,206 @@ main div.content h3:enabled {
     margin-right: 0;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: $secondary; }
-  .events h2 {
-    font-size: 2em;
-    font-family: $openFont;
-    color: $primary;
-    margin: 1em 0;
-    text-align: center;
-    line-height: .5em; }
-  .events section {
-    padding-top: 15px;
-    float: left;
-    width: 70%;
-    margin: 0 15%;
-    border-bottom: 1px solid $primary;
-    margin-bottom: 4%;
-    padding-bottom: 4%;
-    transition: all .3s ease-in-out;
-  }
-  .events section:hover{
-    border-radius: 7px;
-    /* background-color: $secondary; */
-    background-color: $pentia;
-    transition: all .3s ease-in-out;
-  }
-  .events section .date {
-    width: 48%;
-    float: left;
-    font-family: $bodyFont;
-    color: $primary;
-    border-right: 1px solid $primary; }
-  .events section .date .date-day {
-    font-weight: 500;
-    font-size: 4em;
-    text-align: center;
-    border: none;
-    line-height: 1;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-top: .1em;
-    padding-bottom: 0;
-    padding-left: 0; }
-  .events section .date .date-day.no-top {
-    padding-top: 0; }
-  .events section .date .date-day.notice {
-    font-size: 150%;}
-  .events section .date .date-month {
-    font-size: 1.2em;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 0; }
-  .events section .details .title {
-    font-size: 1.4em;
-    margin-bottom: 0;
-    margin-top: 0; }
-  .events section .details .title.space {
-    margin-bottom: .75em; }
-    .events section .details .date-time.space {
-      margin-bottom: .75em; }
-  .events section .details .description {
-    line-height: 1.2;
-    margin-top: 0;
-    font-weight: 300;
-    display: none; }
-  .events section .date:hover {
-    color: #384d89; }
-  .events section .details {
-    width: 48%;
-    float: right;
-    font-family: $bodyFont;
-    color: $primary; }
-    .events section .details.notice{
-      float: none;
-      text-align: center;
+    background-color: $secondary;
+    .view-all {
+      /* background-color: $secondary; */
+      color: $primary;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
       width: 100%;
-    }
-    .events section a:hover{
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0 5%;
+      text-align: center;
       text-decoration: none;
+      font-family: $bodyFont;
+      margin-bottom: 1em;
+      &:hover {
+          color: $viewall;
+      }
     }
-    .events section .details.notice .title{
-      font-size: 1.5em;
+    &.highlights{
+      section {
+        .date {
+          display:flex;
+          flex-direction: row;
+          img{
+            margin-left: auto;
+            margin-right: auto;
+            flex: 0 1 250px;
+          }
+        }
+      }
     }
+    h2{
+      font-size: 2em;
+      font-family: $openFont;
+      color: $primary;
+      margin: 1em 0;
+      text-align: center;
+      line-height: .5em;
+    }
+    section {
+      padding-top: 15px;
+      float: left;
+      width: 70%;
+      margin: 0 15%;
+      border-bottom: 1px solid $primary;
+      margin-bottom: 4%;
+      padding-bottom: 4%;
+      transition: all .3s ease-in-out;
+      &:last-child {
+            border: none;
+      }
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        .date{
+          width: 48%;
+          float: left;
+          font-family: $bodyFont;
+          color: $primary;
+          border-right: 1px solid $primary;
 
-  .events section .details .date-time {
-    margin-top: 0;
-    font-weight: bold; }
-  .events section:last-child {
-    border: none; }
-  .events .view-all {
-    /* background-color: $secondary; */
-    color: $primary;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0 5%;
-    text-align: center;
-    text-decoration: none;
-    font-family: $bodyFont;
-    margin-bottom: 1em; }
-  .events .view-all:hover {
-    color: $viewall; }
+          .date-day{
+            font-weight: 500;
+            font-size: 4em;
+            text-align: center;
+            border: none;
+            line-height: 1;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-top: .1em;
+            padding-bottom: 0;
+            padding-left: 0;
+            &.no-top{
+              padding-top: 0;
+            }
+            &.notice{
+              font-size: 150%;
+            }
+          }
+          .date-month {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 0;
+          }
+          &:hover {
+              color: #384d89;
+          }
+        }
+      &:hover {
+        border-radius: 7px;
+        /* background-color: $secondary; */
+        background-color: $pentia;
+        transition: all .3s ease-in-out;
+      }
+      .details {
+        width: 48%;
+        float: right;
+        font-family: $bodyFont;
+        color: $primary;
+          .title {
+            font-size: 1.4em;
+            margin-bottom: 0;
+            margin-top: 0;
+          &.space {
+                margin-bottom: .75em;
+          }
+        }
+        .date-time {
+          margin-top: 0;
+          font-weight: bold;
+          &.space {
+            margin-bottom: .75em;
+          }
+        }
+        .description {
+          line-height: 1.2;
+          margin-top: 0;
+          font-weight: 300;
+          display: none;
+        }
+        &.notice {
+          float: none;
+          text-align: center;
+          width: 100%;
+          .title {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+
+  // .events section .date .date-day.no-top {
+  //   padding-top: 0; }
+  // .events section .date .date-day.notice {
+  //   font-size: 150%;}
+  // .events section .date .date-month {
+  //   font-size: 1.2em;
+  //   text-transform: uppercase;
+  //   text-align: center;
+  //   margin-top: 0; }
+  // .events section .details .title {
+  //   font-size: 1.4em;
+  //   margin-bottom: 0;
+  //   margin-top: 0; }
+  // .events section .details .title.space {
+  //   margin-bottom: .75em; }
+    // .events section .details .date-time.space {
+    //   margin-bottom: .75em; }
+  // .events section .details .description {
+  //   line-height: 1.2;
+  //   margin-top: 0;
+  //   font-weight: 300;
+  //   display: none; }
+  // .events section .date:hover {
+  //   color: #384d89; }
+  // .events section .details {
+  //   width: 48%;
+  //   float: right;
+  //   font-family: $bodyFont;
+  //   color: $primary; }
+    // .events section .details.notice{
+    //   float: none;
+    //   text-align: center;
+    //   width: 100%;
+    // }
+    // .events section a:hover{
+    //   text-decoration: none;
+    // }
+    // .events section .details.notice .title{
+    //   font-size: 1.5em;
+    // }
+
+  // .events section .details .date-time {
+  //   margin-top: 0;
+  //   font-weight: bold; }
+  // .events section:last-child {
+  //   border: none; }
+  // .events .view-all {
+  //   /* background-color: $secondary; */
+  //   color: $primary;
+  //   -moz-box-sizing: border-box;
+  //   -webkit-box-sizing: border-box;
+  //   box-sizing: border-box;
+  //   width: 100%;
+  //   float: left;
+  //   margin-left: 0;
+  //   margin-right: 0;
+  //   padding: 0 5%;
+  //   text-align: center;
+  //   text-decoration: none;
+  //   font-family: $bodyFont;
+  //   margin-bottom: 1em; }
+  // .events .view-all:hover {
+  //   color: $viewall; }
 
   .three-card-responsive,  .two-card-responsive,  .four-card-responsive {
     -moz-box-sizing: border-box;
@@ -3599,33 +3695,69 @@ section.directory article.person{
     margin-right: 0;
     padding-right: 0;
     padding-left: 0;
+    h2 {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    section {
+      width: 90%;
+      margin: 0 5%;
+      margin-bottom: 1.5em;
+      padding-bottom: 1em;
+      .details {
+        .title {
+         font-size: 1em; }
+        .description {
+         display: block; }
+      }
+      .date {
+        width: 48%;
+        .date-day {
+          font-size: 200%;
+        }
+        .date-month {
+         font-size: 1.5em;
+       }
+      }
+    }
+    .feed{
+      /* background-color: $pentia; */
+      background-color: $quadiary;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      &.highlights{
+        background-color: $pentia;
+      }
+    }
+
   }
-  .events .feed{
-    /* background-color: $pentia; */
-    background-color: $quadiary;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .events h2 {
-    margin-top: 1em;
-    margin-bottom: 1em; }
-  .events section {
-    width: 90%;
-    margin: 0 5%;
-    margin-bottom: 1.5em;
-    padding-bottom: 1em;
-  }
-  .events section .date {
-    width: 48%; }
-  .events section .date .date-day {
-    font-size: 200%; }
-  .events section .date .date-month {
-    font-size: 1.5em; }
-  .events section .details .title {
-    font-size: 1em; }
-  .events section .details .description {
-    display: block; }
+  // .events .feed{
+  //   /* background-color: $pentia; */
+  //   background-color: $quadiary;
+  //   width: 100%;
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+  // .events h2 {
+  //   margin-top: 1em;
+  //   margin-bottom: 1em; }
+  // .events section {
+  //   width: 90%;
+  //   margin: 0 5%;
+  //   margin-bottom: 1.5em;
+  //   padding-bottom: 1em;
+  // }
+  // .events section .date {
+  //   width: 48%; }
+  // .events section .date .date-day {
+  //   font-size: 200%; }
+  // .events section .date .date-month {
+  //   font-size: 1.5em; }
+  // .events section .details .title {
+  //   font-size: 1em; }
+  // .events section .details .description {
+  //   display: block; }
 
   .three-card-responsive, .two-card-responsive, .four-card-responsive {
     -moz-box-sizing: border-box;

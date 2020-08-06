@@ -28,6 +28,8 @@ collections:
   old_pi:
     output:
   events:
+  highlights:
+    output: true
   admin_core:
     output:
   bbc_core:

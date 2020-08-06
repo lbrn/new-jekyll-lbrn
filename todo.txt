@@ -1,0 +1,62 @@
+Ramesh feedback -
+Research hub > research
+People link on pulldown on about
+-add a block on about that goes to people?
+-Would be above Goals
+
+Cores link - Move the research hub core content to its own page
+Take services, core bucks, core resources to Cores page
+
+
+copy descs from about page, with icon
+BBC first
+Then list out all of the services (core services)
+insert link icon to about page
+
+Research:
+
+Add new DRPP section at the top
+//Text Change - on PIs - change "one to two years" to "one year" and startup funded projects to two years
+//for "Both" add both of the cores icons instead of the neutural
+
+Email with info + email with photo
+//Change "Current" activites to Activities
+
+Where we have the workshop block :
+
+//Education page: title update
+//Training and education
+Move workshop block to training and education, leave the core icon
+
+Front Page
+//Add highlights section
+for links to awards that we've given to people success stories, maybe like events? link and date
+Link to page with success stories and awards
+
+Campus highlights, carousel piece: Take to highlights
+Take picture from LSU/LAtech
+Campus highlights collage
+comment out old slide
+create a commented out carousel slide for cores
+
+
+Examples:
+
+From John Quebedeaux to Everyone:  11:44 AM
+https://www.latech.edu/2019/05/20/senior-biology-major-one-of-10-students-in-nation-chosen-to-share-importance-of-research-with-lawmakers/
+https://test.lbrn.lsu.edu/downloads/LBRN-Newsletter_Jan_2020.pdf
+https://www.lsus.edu/news-and-events/finalists-of-the-4th-annual-regional-scholars-forum
+
+Prerana Ramesh
+
+
+Two stories + awards from annual meeting
+big one is the first one
+
+
+Add a highlights page link to carousel
+replace "works in progress seminr series" slide
+stick events above twitter
+
+training and education: gonna need a workshops section
+move workshops section to training and education, add title/desc and

@@ -51,6 +51,18 @@
 
             <a class="view-all" href="upcoming-events.html">View all events</a>
           </div>
+          <div class="feed highlights">
+
+          <h2>HIGHLIGHTS</h2>
+
+            {% for highlight in site.highlights limit:4 %}
+              {% include highlights-list-item.html %}
+            {% endfor %}
+
+
+
+              <a class="view-all" href="upcoming-events.html">View all events</a>
+            </div>
             <h2 STYLE="line-height: 1.2;">Twitter</h2>
             <!--Start of EVENT ITEM-->
             <div class="Twitterf">

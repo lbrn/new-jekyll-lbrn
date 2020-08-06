@@ -1831,125 +1831,6 @@ main div.content .accordianSection {
   padding-right: 5%;
   background-color: #8ECB91;
 }
-
-.events h2 {
-  font-size: 2em;
-  font-family: "Open Sans", sans-serif;
-  color: #2C3D6C;
-  margin: 1em 0;
-  text-align: center;
-  line-height: 0.5em;
-}
-
-.events section {
-  padding-top: 15px;
-  float: left;
-  width: 70%;
-  margin: 0 15%;
-  border-bottom: 1px solid #2C3D6C;
-  margin-bottom: 4%;
-  padding-bottom: 4%;
-  transition: all 0.3s ease-in-out;
-}
-
-.events section:hover {
-  border-radius: 7px;
-  /* background-color: $secondary; */
-  background-color: #def0df;
-  transition: all 0.3s ease-in-out;
-}
-
-.events section .date {
-  width: 48%;
-  float: left;
-  font-family: "Ubuntu", sans-serif;
-  color: #2C3D6C;
-  border-right: 1px solid #2C3D6C;
-}
-
-.events section .date .date-day {
-  font-weight: 500;
-  font-size: 4em;
-  text-align: center;
-  border: none;
-  line-height: 1;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 0.1em;
-  padding-bottom: 0;
-  padding-left: 0;
-}
-
-.events section .date .date-day.no-top {
-  padding-top: 0;
-}
-
-.events section .date .date-day.notice {
-  font-size: 150%;
-}
-
-.events section .date .date-month {
-  font-size: 1.2em;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 0;
-}
-
-.events section .details .title {
-  font-size: 1.4em;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.events section .details .title.space {
-  margin-bottom: 0.75em;
-}
-
-.events section .details .date-time.space {
-  margin-bottom: 0.75em;
-}
-
-.events section .details .description {
-  line-height: 1.2;
-  margin-top: 0;
-  font-weight: 300;
-  display: none;
-}
-
-.events section .date:hover {
-  color: #384d89;
-}
-
-.events section .details {
-  width: 48%;
-  float: right;
-  font-family: "Ubuntu", sans-serif;
-  color: #2C3D6C;
-}
-
-.events section .details.notice {
-  float: none;
-  text-align: center;
-  width: 100%;
-}
-
-.events section a:hover {
-  text-decoration: none;
-}
-
-.events section .details.notice .title {
-  font-size: 1.5em;
-}
-
-.events section .details .date-time {
-  margin-top: 0;
-  font-weight: bold;
-}
-
-.events section:last-child {
-  border: none;
-}
-
 .events .view-all {
   /* background-color: $secondary; */
   color: #2C3D6C;
@@ -1964,9 +1845,116 @@ main div.content .accordianSection {
   font-family: "Ubuntu", sans-serif;
   margin-bottom: 1em;
 }
-
 .events .view-all:hover {
   color: #5ab35e;
+}
+.events.highlights section .date {
+  display: flex;
+  flex-direction: row;
+}
+.events.highlights section .date img {
+  margin-left: auto;
+  margin-right: auto;
+  flex: 0 1 250px;
+}
+.events h2 {
+  font-size: 2em;
+  font-family: "Open Sans", sans-serif;
+  color: #2C3D6C;
+  margin: 1em 0;
+  text-align: center;
+  line-height: 0.5em;
+}
+.events section {
+  padding-top: 15px;
+  float: left;
+  width: 70%;
+  margin: 0 15%;
+  border-bottom: 1px solid #2C3D6C;
+  margin-bottom: 4%;
+  padding-bottom: 4%;
+  transition: all 0.3s ease-in-out;
+}
+.events section:last-child {
+  border: none;
+}
+.events section a:hover {
+  text-decoration: none;
+}
+.events section .date {
+  width: 48%;
+  float: left;
+  font-family: "Ubuntu", sans-serif;
+  color: #2C3D6C;
+  border-right: 1px solid #2C3D6C;
+}
+.events section .date .date-day {
+  font-weight: 500;
+  font-size: 4em;
+  text-align: center;
+  border: none;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0.1em;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.events section .date .date-day.no-top {
+  padding-top: 0;
+}
+.events section .date .date-day.notice {
+  font-size: 150%;
+}
+.events section .date .date-month {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+}
+.events section .date:hover {
+  color: #384d89;
+}
+.events section:hover {
+  border-radius: 7px;
+  /* background-color: $secondary; */
+  background-color: #def0df;
+  transition: all 0.3s ease-in-out;
+}
+.events section .details {
+  width: 48%;
+  float: right;
+  font-family: "Ubuntu", sans-serif;
+  color: #2C3D6C;
+}
+.events section .details .title {
+  font-size: 1.4em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.events section .details .title.space {
+  margin-bottom: 0.75em;
+}
+.events section .details .date-time {
+  margin-top: 0;
+  font-weight: bold;
+}
+.events section .details .date-time.space {
+  margin-bottom: 0.75em;
+}
+.events section .details .description {
+  line-height: 1.2;
+  margin-top: 0;
+  font-weight: 300;
+  display: none;
+}
+.events section .details.notice {
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+.events section .details.notice .title {
+  font-size: 1.5em;
 }
 
 .three-card-responsive, .two-card-responsive, .four-card-responsive {
@@ -3963,8 +3951,31 @@ width: 52.5%;
     padding-right: 0;
     padding-left: 0;
   }
-}
-@media (min-width: 667px) {
+  .events h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .events section {
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+  }
+  .events section .details .title {
+    font-size: 1em;
+  }
+  .events section .details .description {
+    display: block;
+  }
+  .events section .date {
+    width: 48%;
+  }
+  .events section .date .date-day {
+    font-size: 200%;
+  }
+  .events section .date .date-month {
+    font-size: 1.5em;
+  }
   .events .feed {
     /* background-color: $pentia; */
     background-color: #c2e3c4;
@@ -3972,44 +3983,8 @@ width: 52.5%;
     display: flex;
     flex-direction: column;
   }
-}
-@media (min-width: 667px) {
-  .events h2 {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-}
-@media (min-width: 667px) {
-  .events section {
-    width: 90%;
-    margin: 0 5%;
-    margin-bottom: 1.5em;
-    padding-bottom: 1em;
-  }
-}
-@media (min-width: 667px) {
-  .events section .date {
-    width: 48%;
-  }
-}
-@media (min-width: 667px) {
-  .events section .date .date-day {
-    font-size: 200%;
-  }
-}
-@media (min-width: 667px) {
-  .events section .date .date-month {
-    font-size: 1.5em;
-  }
-}
-@media (min-width: 667px) {
-  .events section .details .title {
-    font-size: 1em;
-  }
-}
-@media (min-width: 667px) {
-  .events section .details .description {
-    display: block;
+  .events .feed.highlights {
+    background-color: #def0df;
   }
 }
 @media (min-width: 667px) {

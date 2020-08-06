@@ -1,0 +1,44 @@
+<section id="{{hilight.date | date: '%d' }}{{hilight.date | date: '%b'}}">
+  {% if hilight.link != nil %}
+  <a href="{{hilight.link}}">
+    {% else %}
+
+  {% endif %}
+  {% if hilight.categories contains "events" %}
+
+
+
+  <div class="date">
+    {% if hilight.img != nil %}
+    <img src="/images/highlights/{{hilight.img}}" alt="">
+
+      {% else %}
+      <h4 class="date-day adjust">{{hilight.title}}</h4>
+      <!-- <h3 class="date-day adjust"> {{hilight.date | date: '%d' }} {{hilight.date | date: '%b'}}</h3> -->
+      <!-- <h4 class="date-month">{{hilight.date | date: '%b'}}</h4> -->
+      <!-- <h4 class="date-month"> {{hilight.date | date: '%Y'}}</h4> -->
+    {% endif %}
+  </div>
+  <div class="details">
+    <p class="title">{{hilight.title}}</p>
+    <p class="description">{{hilight.description}}</p>
+    {% if hilight.startTime != nil }
+
+    <p class="date-time">{{hilight.startTime}} to {{hilight.endTime}}</p>
+    {% else %}
+
+    {% endif %}
+
+  </div>
+  {% else %}
+  <div class="notice details">
+    <p class="title">{{hilight.title}}</p>
+    <p class="description">{{hilight.description}}</p>
+  </div>
+  {% endif %}
+  {% if hilight.link != nil %}
+  </a>
+  {% else %}
+
+  {% endif %}
+</section>
