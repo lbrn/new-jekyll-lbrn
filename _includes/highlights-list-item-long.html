@@ -1,30 +1,31 @@
-<section id="{{hilight.date | date: '%d' }}{{hilight.date | date: '%b'}}">
-  {% if hilight.link != nil %}
-  <a href="{{hilight.link}}">
+<section id="{{highlight.date | date: '%d' }}{{highlight.date | date: '%b'}}">
+  {% if highlight.link != nil %}
+  <a href="{{highlight.link}}">
     {% else %}
 
   {% endif %}
-  {% if hilight.categories contains "events" %}
+  {% if highlight.categories contains "Event" %}
 
 
 
   <div class="date">
-    {% if hilight.img != nil %}
-    <img src="/images/highlights/{{hilight.img}}" alt="">
-
+    {% if highlight.img != nil %}
+    <img src="/images/highlights/{{highlight.img}}" alt="">
+    <!-- test yes img -->
       {% else %}
-      <h4 class="date-day adjust">{{hilight.title}}</h4>
-      <!-- <h3 class="date-day adjust"> {{hilight.date | date: '%d' }} {{hilight.date | date: '%b'}}</h3> -->
-      <!-- <h4 class="date-month">{{hilight.date | date: '%b'}}</h4> -->
-      <!-- <h4 class="date-month"> {{hilight.date | date: '%Y'}}</h4> -->
+      <h4 class="date-day adjust">{{highlight.title}}</h4>
+      <!-- test no img -->
+      <!-- <h3 class="date-day adjust"> {{highlight.date | date: '%d' }} {{highlight.date | date: '%b'}}</h3> -->
+      <!-- <h4 class="date-month">{{highlight.date | date: '%b'}}</h4> -->
+      <!-- <h4 class="date-month"> {{highlight.date | date: '%Y'}}</h4> -->
     {% endif %}
   </div>
   <div class="details">
-    <p class="title">{{hilight.title}}</p>
-    <p class="description">{{hilight.description}}</p>
-    {% if hilight.startTime != nil }
+    <p class="title">{{highlight.title}}</p>
+    <p class="description">{{highlight.description}}</p>
+    {% if highlight.startTime != nil }
 
-    <p class="date-time">{{hilight.startTime}} to {{hilight.endTime}}</p>
+    <p class="date-time">{{highlight.startTime}} to {{highlight.endTime}}</p>
     {% else %}
 
     {% endif %}
@@ -32,11 +33,11 @@
   </div>
   {% else %}
   <div class="notice details">
-    <p class="title">{{hilight.title}}</p>
-    <p class="description">{{hilight.description}}</p>
+    <p class="title">{{highlight.title}}</p>
+    <p class="description">{{highlight.description}}</p>
   </div>
   {% endif %}
-  {% if hilight.link != nil %}
+  {% if highlight.link != nil %}
   </a>
   {% else %}
 

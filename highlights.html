@@ -1,12 +1,12 @@
 ---
 layout: default
-title: All Events
+title: All Highlights
 ---
 <section class="events highlights" id="eventsContainer">
 
   {% assign highlightsRev = site.highlights | reverse %}
 
-  {% for hilight in highlightsRev %}
+  {% for highlight in highlightsRev %}
     {% include highlights-list-item-long.html %}
   {% endfor %}
 

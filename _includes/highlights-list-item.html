@@ -1,13 +1,17 @@
 <section>
-  <a href="#">
+  {% if highlight.link != nil %}
+  <a href="{{highlight.link}}">
+    {% else %}
+
+  {% endif %}
   <!-- <a href="{{ '/upcoming-events.html' | relative_url }}#{{highlight.date | date: '%d' }}{{highlight.date | date: '%b'}}"> -->
 
 
-    {% if highlight.categories contains "events" %}
+  <!-- both the same for now -->
+    {% if highlight.categories contains "Event" %}
 
     <div class="date">
-      <h3 class="date-day no-top">{{highlight.date | date: '%d' }}</h3>
-      <h4 class="date-month">{{highlight.date | date: '%b'}}</h4>
+      <h3 class="date-day no-top notice">{{highlight.categories}}</h3>
     </div>
     {% else %}
     <div class="date">
@@ -16,7 +20,7 @@
     {% endif %}
   <div class="details">
 
-    {% if highlight.categories contains "events" %}
+    {% if highlight.categories contains "Event" %}
       <p class="title space">{{highlight.title}}</p>
       {% if highlight.startTime != nil }
       {% else %}
@@ -24,9 +28,13 @@
       {% endif %}
     {% else %}
     <p class="date-time space">{{highlight.title}}</p>
-    <p class="title">{{highlight.description}}</p>
+    <!-- <p class="title">{{highlight.description}}</p> -->
     {% endif %}
 
   </div>
-</a>
+  {% if highlight.link != nil %}
+  </a>
+  {% else %}
+
+  {% endif %}
 </section>

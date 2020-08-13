@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2020 LBRN Virtual Summer Program Start
-categories: events
+categories: Event
 eventDate: June 8, 2020
 startTime:
 endTime:
