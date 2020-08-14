@@ -1833,17 +1833,23 @@ main div.content h3:enabled {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 5%;
-    padding-right: 5%;
+    // padding-left: 5%;
+    // padding-right: 5%;
     background-color: $secondary;
     &#eventsContainer {
       background-color: white;
     }
     &.highlights{
-      
+      section {
+
+      }
     }
     .feed {
+      display: flex;
+      flex-direction: column;
+      background-color: $quadiary;
       &.highlights {
+        background-color: $pentia;
         section {
           .date {
             h3{

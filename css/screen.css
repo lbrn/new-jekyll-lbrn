@@ -1865,12 +1865,18 @@ main div.content .accordianSection {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 5%;
-  padding-right: 5%;
   background-color: #8ECB91;
 }
 .events#eventsContainer {
   background-color: white;
+}
+.events .feed {
+  display: flex;
+  flex-direction: column;
+  background-color: #c2e3c4;
+}
+.events .feed.highlights {
+  background-color: #def0df;
 }
 .events .feed.highlights section .date h3 {
   font-size: 17px;
