@@ -2,7 +2,7 @@
 layout: default
 title: Training & Education
 ---
-<div class="two-card-responsive resources">
+<div class="three-card-responsive resources">
 <!-- <div class="four-card-responsive"> -->
   <section>
     <!-- <a href="nih-acknowledgement.html"> -->
@@ -22,6 +22,12 @@ title: Training & Education
       <p>The BBC Core provides access to introductory lecture series on Bioinformatics, Biostatistics, and Computational Biology topics. </p>
 
       <p class="more">Lecture Series</p></a>
+  </section>
+  <section>
+    <a href="training-workshops.html"><img src="images/workshop.jpg" alt="LBRN hosted Training Workshops">
+    <h2>Training Workshops</h2>
+    <p>LBRN Cores host various one or two day workshops throughout the year where researchers, faculty, graduate and undergraduate students are invited to attend. Topics range from computational bioinformatics to protein purification, etc.</p>
+    <p class="more">view more</p></a>
   </section>
 <!--
   <section>
@@ -44,3 +50,13 @@ title: Training & Education
       <p class="more">Opt-In</p></a>
   </section> -->
 </div>
+<section class="news" id="newsContainer">
+
+
+  {% for post in site.posts limit:4 %}
+    {% if site.categories contains "news" %}
+      {% include news-list-item.html %}
+    {% endif %}
+  {% endfor %}
+
+</section>
