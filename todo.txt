@@ -117,8 +117,8 @@ Link to workshops page
 
 split page to left/right
 //or top /bottom
-add list with TNE tagged news articles
-only thing missing is moving a link to workshop over
+//add list with TNE tagged news articles
+//only thing missing is moving a link to workshop over
 tag anything i think is training
 some are research, students means not training, but a bootcamp workshop training courses
 courses counts as education
@@ -127,7 +127,7 @@ courses counts as education
 Workshops Page
 Workshops page more like events page
 block for it, 3rd lbrn loni-scientificic computing bootcamp
+//add content
 
-
-on the events/news page
-right side doesnt scroll
+//on the events/news page
+//right side doesnt scroll

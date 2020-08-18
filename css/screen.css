@@ -3956,13 +3956,18 @@ width: 52.5%;
     height: 100vh;
     top: 0em;
   }
-}
-@media (min-width: 667px) {
+  #newsSidebar::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  #newsSidebar::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
   #newsSidebar ul {
     margin-left: 0;
   }
-}
-@media (min-width: 667px) {
   #newsSidebar ul li {
     border-radius: 6px;
     -webkit-border-radius: 4px;
@@ -3979,8 +3984,6 @@ width: 52.5%;
     text-align: center;
     padding: 0.5em;
   }
-}
-@media (min-width: 667px) {
   #newsSidebar ul li:hover {
     transition: background-color 0.1s;
     background-color: #c9e6cb;
