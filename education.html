@@ -52,11 +52,13 @@ title: Training & Education
 </div>
 <section class="news" id="newsContainer">
 
+{% assign tne-post = site.posts | where: "categories", "tne" %}
+  {% for post in tne-post limit: 2 %}
 
-  {% for post in site.posts limit:4 %}
-    {% if site.categories contains "news" %}
-      {% include news-list-item.html %}
-    {% endif %}
+      <p>
+      test: {{post.categories}}
+      </p>
+
   {% endfor %}
 
 </section>

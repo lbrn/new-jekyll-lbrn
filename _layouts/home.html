@@ -76,15 +76,13 @@
       <section class="news" id="newsContainer">
         <h2>NEWS</h2>
 
-
+        {% assign news-post = site.posts | where: "categories", "news" %}
         {% for post in site.categories.featured %}
           {% include news-list-item-featured.html %}
         {% endfor %}
 
-        {% for post in site.posts limit:4 %}
-          {% if site.categories contains "news" %}
+        {% for post in news-post limit:4 %}
             {% include news-list-item.html %}
-          {% endif %}
         {% endfor %}
 
         <!--End of NEWS ITEM-->
