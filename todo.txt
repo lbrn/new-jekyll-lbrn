@@ -102,18 +102,18 @@ BBC FIRST
 Then Services
 ===
 ABOUT PAGE
-Desc for People
-Style Button
+//Desc for People
+//Style Button
 
-The Louisiana Biomedical Research Network consists of people made up from the Administrative Core, Bioinformatics, Biostatistics, and Computational Biology Core, Molecular and Cell Biology Resources Core, Currently Funded Project Investigators of all types, Past Funded Project Investigators, Primarily Undergraduate Institutional Steering Committee Members, and External Advisory Committee Members.
+//The Louisiana Biomedical Research Network consists of people made up from the Administrative Core, Bioinformatics, Biostatistics, and Computational Biology Core, Molecular and Cell Biology Resources Core, Currently Funded Project Investigators of all types, Past Funded Project Investigators, Primarily Undergraduate Institutional Steering Committee Members, and External Advisory Committee Members.
 
-Title links to core page
-maybe icon?
+//Title links to core page
+//maybe icon?
 
 ===
 Training and education
 //COPY workshops block from events
-Link to workshops page
+//Link to workshops page
 
 split page to left/right
 //or top /bottom
