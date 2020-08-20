@@ -54,11 +54,7 @@ title: Training & Education
 
 {% assign tne-post = site.posts | where: "categories", "tne" %}
   {% for post in tne-post limit: 2 %}
-
-      <p>
-      test: {{post.categories}}
-      </p>
-
+    {% include news-list-item.html %}
   {% endfor %}
 
 </section>

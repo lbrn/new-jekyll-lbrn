@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Delta Cluster Spectrum Application Center Training Biology and Bioinformatics
-categories: news
+categories: news tne
 featuredImageUrl: "images/knowlegeClick.jpg"
 featuredImageUrlSquare: "images/knowlegeClick-square.jpg"
 excerpt_separator: <!--more-->
