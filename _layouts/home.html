@@ -49,19 +49,19 @@
 
 
 
-            <a class="view-all" href="upcoming-events.html">View all events</a>
+            <a class="view-all" href="upcoming-events.html">View events</a>
           </div>
           <div class="feed highlights">
 
           <h2>HIGHLIGHTS</h2>
+          {% assign highlightsRev = site.highlights | reverse %}
+          {% for highlight in highlightsRev limit:2 %}
+            {% include highlights-list-item.html %}
+          {% endfor %}
 
-            {% for highlight in site.highlights limit:2 %}
-              {% include highlights-list-item.html %}
-            {% endfor %}
 
 
-
-              <a class="view-all" href="highlights.html">View all Highlights</a>
+              <a class="view-all" href="highlights.html">View Highlights</a>
             </div>
             <h2 STYLE="line-height: 1.2;">Twitter</h2>
             <!--Start of EVENT ITEM-->

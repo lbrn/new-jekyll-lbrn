@@ -50,11 +50,18 @@ title: Training & Education
       <p class="more">Opt-In</p></a>
   </section> -->
 </div>
-<section class="news" id="newsContainer">
-
+<section class="news tne" id="newsContainer">
+<!-- add limit: 2 to the 2nd tne post if needed -->
 {% assign tne-post = site.posts | where: "categories", "tne" %}
-  {% for post in tne-post limit: 2 %}
-    {% include news-list-item.html %}
+  {% for post in tne-post %}
+    {% include news-full-list-item.html %}
   {% endfor %}
 
 </section>
+<aside id="newsSidebar" class="tne">
+  <ul>
+    {% for post in tne-post %}
+      <a href="#{{post.date}}"><li>{{post.title}}</li></a>
+    {% endfor %}
+  </ul>
+</aside>

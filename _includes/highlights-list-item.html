@@ -8,20 +8,24 @@
 
 
   <!-- both the same for now -->
-    {% if highlight.categories contains "Event" %}
-
+    {% if highlight.img != nil %}
     <div class="date">
-      <h3 class="date-day no-top notice">{{highlight.categories}}</h3>
-    </div>
-    {% else %}
-    <div class="date">
-      <h3 class="date-day no-top notice">{{highlight.categories}}</h3>
+      <img src="/images/highlights/{{highlight.img}}" alt="">
     </div>
     {% endif %}
-  <div class="details">
+    {% if highlight.img != nil %}
+    <div class="details">
+    {% else %}
+    <div class="details notice">
+    {% endif %}
 
     {% if highlight.categories contains "Event" %}
       <p class="title space">{{highlight.title}}</p>
+      {% if highlight.description != nil }
+      <p class="description">{{highlight.description}}</p>
+      {% else %}
+      {% endif %}
+
       {% if highlight.startTime != nil }
       {% else %}
       <p class="date-time">{{highlight.startTime}} to {{highlight.endTime}}</p>

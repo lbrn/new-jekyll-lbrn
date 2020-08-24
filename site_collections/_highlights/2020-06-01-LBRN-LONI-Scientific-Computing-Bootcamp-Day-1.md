@@ -1,11 +1,9 @@
 ---
 layout: post
-title: 2020 3rd LBRN-LONI Scientific Computing Bootcamp
+title: Senior biology major one of 10 students in nation chosen to share importance of research with lawmakers
 categories: Event
-eventDate: June 1-5, 2019
-startTime: 8:00am
-endTime: 5:00pm
+eventDate: May 21-23, 2020
 img: img1.jpg
-description: HPC@LSU will hold the 3rd LBRN-LONI Scientific Computing Bootcamp on June 1-5, 2020 virtually. <a href="https://lbrn.lsu.edu/lbrn-loni-scientific-computing-bootcamp.html">https://lbrn.lsu.edu/lbrn-loni-scientific-computing-bootcamp.html</a>
+description: A decorated and hard-working Louisiana Tech senior biology major, Conner Hartupee will visit Washington, D.C., May 21-23 as one of only 10 students from throughout the country to participate in a highly competitive nationally funded program that helps new generations of young researchers communicate the importance of research.
 link:
 ---

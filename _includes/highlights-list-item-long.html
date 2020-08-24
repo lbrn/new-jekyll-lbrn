@@ -1,30 +1,27 @@
 <section id="{{highlight.date | date: '%d' }}{{highlight.date | date: '%b'}}">
   {% if highlight.link != nil %}
   <a href="{{highlight.link}}">
-    {% else %}
-
   {% endif %}
   {% if highlight.categories contains "Event" %}
 
 
 
+  {% if highlight.img != nil %}
   <div class="date">
-    {% if highlight.img != nil %}
     <img src="/images/highlights/{{highlight.img}}" alt="">
     <!-- test yes img -->
-      {% else %}
-      <h4 class="date-day adjust">{{highlight.title}}</h4>
-      <!-- test no img -->
-      <!-- <h3 class="date-day adjust"> {{highlight.date | date: '%d' }} {{highlight.date | date: '%b'}}</h3> -->
-      <!-- <h4 class="date-month">{{highlight.date | date: '%b'}}</h4> -->
-      <!-- <h4 class="date-month"> {{highlight.date | date: '%Y'}}</h4> -->
-    {% endif %}
   </div>
+  {% endif %}
+  {% if highlight.img != nil %}
   <div class="details">
+  {% else %}
+  <div class="details notice">
+
+  {% endif %}
+
     <p class="title">{{highlight.title}}</p>
     <p class="description">{{highlight.description}}</p>
     {% if highlight.startTime != nil }
-
     <p class="date-time">{{highlight.startTime}} to {{highlight.endTime}}</p>
     {% else %}
 

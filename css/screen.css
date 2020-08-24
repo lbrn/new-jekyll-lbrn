@@ -1070,7 +1070,6 @@ main.research div.content h2 {
   width: 100%;
   /* background-color: black; */
 }
-
 #newsSidebarButton h1 {
   transition: all 0.2s;
   border-radius: 6px;
@@ -1090,7 +1089,6 @@ main.research div.content h2 {
   width: auto;
   /* width:100%; */
 }
-
 #newsSidebarButton h1:hover {
   background-color: #8ECB91;
 }
@@ -1111,7 +1109,6 @@ main.research div.content h2 {
 #newsSidebarmobile ul {
   margin-left: 0;
 }
-
 #newsSidebarmobile ul li {
   border-radius: 6px;
   -webkit-border-radius: 4px;
@@ -1129,7 +1126,6 @@ main.research div.content h2 {
   padding: 0.5em;
   width: 100%;
 }
-
 #newsSidebarmobile ul li:hover {
   transition: background-color 0.1s;
   background-color: #c9e6cb;
@@ -1675,6 +1671,17 @@ main div.content #newsContainer {
   width: 100%;
   max-width: 800px;
 }
+main div.content #newsContainer.tne {
+  width: 80%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 5%;
+}
+@media (max-width: 667px) {
+  main div.content #newsContainer.tne {
+    width: 100%;
+  }
+}
 
 #newsContainer {
   padding-left: 5%;
@@ -1684,6 +1691,9 @@ main div.content #newsContainer {
   float: left;
   margin-left: 0;
   margin-right: 0;
+}
+#newsContainer.tne {
+  width: 80%;
 }
 
 #newsPageContainer {
@@ -1874,6 +1884,19 @@ main div.content #newsContainer {
     margin-right: 0;
   }
 }
+.news.tne article, div.content .news.tne article {
+  border-radius: 6px;
+  padding: 1em;
+}
+.news.tne article h3, div.content .news.tne article h3 {
+  font-size: 1.5em;
+}
+.news.tne article:hover, div.content .news.tne article:hover {
+  background-color: #d4ebd5;
+}
+.news.tne article .post-link, div.content .news.tne article .post-link {
+  margin-bottom: 0;
+}
 
 #newsSidebar {
   display: none;
@@ -1899,6 +1922,9 @@ main div.content #newsContainer {
 .events#eventsContainer {
   background-color: white;
 }
+.events .highlights section .date {
+  border-right: unset;
+}
 .events .feed {
   display: flex;
   flex-direction: column;
@@ -1906,6 +1932,10 @@ main div.content #newsContainer {
 }
 .events .feed.highlights {
   background-color: #def0df;
+}
+.events .feed.highlights section .date img {
+  width: 100%;
+  border-radius: 6px;
 }
 .events .feed.highlights section .date h3 {
   font-size: 17px;
@@ -1935,11 +1965,13 @@ main div.content #newsContainer {
 .events.highlights section .date {
   display: flex;
   flex-direction: row;
+  border-right: unset;
 }
 .events.highlights section .date img {
+  border-radius: 6px;
   margin-left: auto;
   margin-right: auto;
-  flex: 0 1 250px;
+  flex: 0 1 300px;
 }
 .events h2 {
   font-size: 2em;
@@ -3926,15 +3958,29 @@ width: 52.5%;
     height: 100vh;
     top: 0em;
   }
+  #newsSidebar.tne {
+    width: 20%;
+  }
+}
+@media (min-width: 667px) and (max-width: 667px) {
+  #newsSidebar.tne {
+    display: none;
+  }
+}
+@media (min-width: 667px) {
   #newsSidebar::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px;
   }
+}
+@media (min-width: 667px) {
   #newsSidebar::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   }
+}
+@media (min-width: 667px) {
   #newsSidebar ul {
     margin-left: 0;
   }

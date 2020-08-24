@@ -68,38 +68,38 @@ dependabot 3.1? need to update
 serialize javascript - 3.1.0
 dependabot
 
--limit highlights to 2
--add img to homepage one, remove date
-remove line between image and desc
-remove all from all highlights
-same w/ events
-fix sidebar meny on cores
+//-limit highlights to 2
+//-add img to homepage one, remove date
+//remove line between image and desc
+//remove all from all highlights
+//same w/ events
+//fix sidebar meny on cores
 
-
-move core bucks under programs
--move ALL services to cores stuff
--Research page, instead have :
-keep everything under activities
+//
+//move core bucks under programs
+//-move ALL services to cores stuff
+-//Research page, instead have :
+//keep everything under activities
 
 ===
 Research page :
-Activities then virtual summer
+//Activities then virtual summer
 
-Programs
-DRPP
-Project investigators
+//Programs
+//DRPP
+//Project investigators
 
-Funding Ops
+//Funding Ops
 
-move services to Cores
+//move services to Cores
 ===
 CORES PAGE
-Remove DRPP
-Change activities to Cores
-Add core descriptions from the about page with logo
-BBC FIRST
+//Remove DRPP
+//Change activities to Cores
+//Add core descriptions from the about page with logo
+//BBC FIRST
 
-Then Services
+//Then Services
 ===
 ABOUT PAGE
 //Desc for People
@@ -131,3 +131,8 @@ block for it, 3rd lbrn loni-scientificic computing bootcamp
 
 //on the events/news page
 //right side doesnt scroll
+
+================
+//Fix order of highlights on home page
+//workshops page work
+tag things as training in news
