@@ -21,13 +21,13 @@
 
     {% if highlight.categories contains "Event" %}
       <p class="title space">{{highlight.title}}</p>
-      {% if highlight.description != nil }
-      <p class="description">{{highlight.description}}</p>
-      {% else %}
+
+
+      {% if highlight.eventDate != nil %}
+      <p class="date-time">{{highlight.eventDate}}</p>
       {% endif %}
 
-      {% if highlight.startTime != nil }
-      {% else %}
+      {% if highlight.startTime != nil %}
       <p class="date-time">{{highlight.startTime}} to {{highlight.endTime}}</p>
       {% endif %}
     {% else %}
