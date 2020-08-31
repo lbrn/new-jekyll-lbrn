@@ -189,3 +189,17 @@ tag workshop:
 3rd lbrn loni scientific computing bootcamp
 2019 illumina training as workshop
 summer bioinformatics workshop june 30th one
+
+Start with news archive format first
+then try block format
+
+-Annual meetings block on events page
+-increase size of highlights title
+highlights awards story is upcoming
+change order - put news ahead of the events/highlights on mobile
+highlights in chronological order
+hide twitter on mobile
+
+disable hover over dropdown on mobile menu
+
+two images from highlights on carousel
