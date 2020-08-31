@@ -136,3 +136,18 @@ block for it, 3rd lbrn loni-scientificic computing bootcamp
 //Fix order of highlights on home page
 //workshops page work
 tag things as training in news
+
+Things done:
+Added dates and ceaned up homepage highlights section
+populated workshop page w/ placeholders
+set up tne page, tagged articles, set up sidebar for it
+fixed scrollar on evnets page for mac
+cleaning up sass along the way
+organized content on cores/research pages
+
+
+
+============
+New
+-Master updated
+backup master
