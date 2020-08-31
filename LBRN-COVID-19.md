@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 textOnUrl: LBRN Coronavirus (COVID-19) Information
 ---
 
-As of June 22, 2020 - The Governor of Louisiana is holding the state in Phase 2 regarding the Coronavirus. We remind all our partners, faculty, and students of maintaining safety and mitigating the spread of COVID-19. As you know, the current situation in Louisiana is still currently fluid with regards to the Coronavirus (COVID-19). <!--more-->
+As of August 26, 2020: The Governor of Louisiana website current statement "Gov. John Bel Edwards signed an order today that extends Phase Two and the statewide mask mandate, closure of bars to on-site consumption and gathering size limits in Louisiana for another two weeks, until September 11, 2020. Despite progress in slowing the spread of COVID-19 in the state, The White House Coronavirus Task Force still has Louisiana in the red zone for new cases, just as schools and colleges return to campus and Hurricane Laura is set to impact the state. Further, almost half of the state’s parishes have positivity rates in excess of 10 percent. ". We remind all our partners, faculty, and students of maintaining safety and mitigating the spread of COVID-19. As you know, the current situation in Louisiana is still currently fluid with regards to the Coronavirus (COVID-19). <!--more-->
 
 LBRN is based at Louisiana State University in Baton Rouge with administrative staff at LSU School of Veterinary Medicine and the LSU Center for Computation & Technology. We shifted to working remotely on March 17th and continue to handle the day to day activities of the grant. Any announcements regarding our activities will come out as needed. If you have any questions, please do not hesitate to drop us a note at [LBRN E-mail](mailto:lbrn@.lsu.edu) if you are not already in touch with us directly.
 
@@ -18,6 +18,7 @@ For Coronavirus (COVID-19) information please check your local administrative we
   •  [Louisiana Department of Health Coronavirus (COVID-19) Information](http://ldh.la.gov/coronavirus/)  
   •  [LSU Coronavirus Updates and Information](https://www.lsu.edu/coronavirus/index.php)  
   •  [LSU School of Veterinary Medicine Coronavirus Updates](https://lsu.edu/vetmed/disaster_preparedness/coronavirus_updates.php)  
+  •  [COVID-19 Resources Published by Cleveland Clinic](https://newsroom.clevelandclinic.org/2020/08/13/cleveland-clinic-american-lung-association-provide-advanced-covid-19-resources-for-healthcare-providers/)
 
 Please take precautions to avoid spreading the virus to the high risk population. Continue to listen to your local and state officials, college and university directives, and make sure you're in touch with your immediate supervisors, etc. to keep track of updates and what you should be doing at this time.
 
