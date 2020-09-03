@@ -227,12 +227,6 @@ main.research div.content h2 {
   font-family: "Ubuntu", sans-serif;
 }
 
-.currentresearch.featured {
-  padding: 0.5em 0.5em 0.75em 0.5em;
-  background-color: #def0df;
-  border-radius: 10px;
-}
-
 .currentresearch {
   width: 100%;
   /* height:200px; */
@@ -240,9 +234,13 @@ main.research div.content h2 {
   flex-wrap: wrap;
   text-align: center;
 }
-
 .currentresearch h2 {
   margin-top: 0;
+}
+.currentresearch.featured {
+  padding: 0.5em 0.5em 0.75em 0.5em;
+  background-color: #def0df;
+  border-radius: 10px;
 }
 
 .research a.btn {
@@ -272,24 +270,30 @@ main.research div.content h2 {
   align-content: flex-start;
   flex: 1 1 100%;
 }
-
 .currentresearch .text span {
   line-height: normal;
   font-size: 16px;
   font-weight: lighter;
   font-style: italic;
 }
-
 .currentresearch .text h2 {
   font-size: 2em;
 }
-
 .currentresearch .text p {
   line-height: normal;
   margin: 0;
   margin-bottom: 0.75em;
 }
-
+.currentresearch .text ul {
+  line-height: normal;
+  margin-bottom: 0;
+}
+.currentresearch .text ul li {
+  margin-bottom: 20px;
+}
+.currentresearch .text ul li:last-child {
+  margin-bottom: 0;
+}
 .currentresearch img {
   margin: 0;
   width: 100%;
@@ -1164,12 +1168,6 @@ main.research div.content h2 {
   transition: transform 0.5s 0.5s, opacity 0.5s;
 }
 
-.Twitterf {
-  width: unset;
-  margin: 10%;
-  /* border: 1px solid red; */
-}
-
 .vidhori {
   height: 5em;
   width: 85%;
@@ -1383,7 +1381,7 @@ header h1 {
   display: none;
 }
 @media (max-width: 860px) {
-  .navdropdownbig ul li:hover ul {
+  .navdropdownbig ul li ul {
     display: none;
   }
 }
@@ -2071,6 +2069,18 @@ main div.content #newsContainer.tne {
 }
 .events section .details.notice .title {
   font-size: 1.5em;
+}
+.events .Twitterf {
+  width: 100%;
+  padding: 10%;
+  margin: 0;
+  padding-top: 0;
+  /* border: 1px solid red; */
+}
+@media (max-width: 667px) {
+  .events .Twitterf {
+    display: none;
+  }
 }
 
 .three-card-responsive, .two-card-responsive, .four-card-responsive {
@@ -2912,12 +2922,6 @@ footer span {
   font-weight: bold;
 }
 
-.Twitterf {
-  width: unset;
-  margin: 10%;
-  /* border: 1px solid red; */
-}
-
 .mobilesidebar {
   display: block !important;
   width: 100%;
@@ -3558,19 +3562,17 @@ width: 52.5%;
     filter: none;
   }
 
+  .currentresearch {
+    text-align: left;
+    padding: 0.5em 0.5em 0.75em 0.5em;
+  }
   .currentresearch .text {
     flex: 1 1 70%;
   }
-
   .currentresearch img {
     flex: 1 1 30%;
     width: 30%;
     height: 100%;
-  }
-
-  .currentresearch {
-    text-align: left;
-    padding: 0.5em 0.5em 0.75em 0.5em;
   }
 
   .header h1 {
@@ -3800,14 +3802,6 @@ width: 52.5%;
     width: 90%;
     margin: 5%;
     min-height: 10em;
-  }
-}
-@media (min-width: 667px) {
-  .Twitterf {
-    width: 100%;
-    padding: 10%;
-    margin: 0;
-    padding-top: 0;
   }
 }
 @media (min-width: 667px) {

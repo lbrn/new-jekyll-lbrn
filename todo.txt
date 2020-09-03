@@ -154,34 +154,26 @@ backup master
 
 -re-enable link for highlights
 -stylize logos on about page
--fix image files for logos
--move workshops up to underneath training/support (second thing)
+//-fix image files for logos
+//-move workshops up to underneath training/support (second thing)
 -hide links to bbc/mcbr
--Drpp DEsc, don't have a link
+//-Drpp DEsc, don't have a link
 
 -Consider BBC, MCBR, DRPP pages
 put info on about page on those
 for drpp we could reiterate desc and put table
-"Developmental Research Project Program (DRPP) aims to strengthen and expand the research programs of the primarily undergraduate institutions (PUIs) through funding of peer-reviewed research projects. Doing so will increase the research training of students as well as the experiences of faculty. Both will have positive impacts on filling the pipeline of biomedical scientists within the state and expanding the workforce. Developmental Research Projects (DRP) include:
 
-    New Faculty Start Up projects which a aimed at attracting more biomedical researchers to the state and help them establish a research laboratory;
-    Pilot Research projects aimed at exploring a biomedical research idea through a peer reviewed process;
-    Full projects which is aimed at expanding on the successes of Pilot projects and helping the investigator establish a research program in his/her laboratory;
-    Developmental Translational Projects, which will promote translational research in collaboration with Louisiana’s IDeA-CTR, Louisiana Clinical and Translational Science Center (LA CaTS).
-    Shared Instrumentation Grants will help with increasing the research infrastructure of the PUIs
 
-"
-
-Icon - start people as new faculty, pipeline of project stuff -
+//Icon - start people as new faculty, pipeline of project stuff -
 research pipeline, people into research, particularly biomedical
 takes more then 5 yrs to do
 growth of a person or people through research pipeline
 look at funding period bullets like williams hart
 translational - translate from research to testing
 
-new factuly, then pilot, then full, then translational - research pipeline
+//new factuly, then pilot, then full, then translational - research pipeline
 
-segmented pipeline like symbols - D R P P spread on them
+//segmented pipeline like symbols - D R P P spread on them
 
 replace placeholders on workshop page with tagged "workshop" articles
 
@@ -200,6 +192,16 @@ change order - put news ahead of the events/highlights on mobile
 highlights in chronological order
 hide twitter on mobile
 
-disable hover over dropdown on mobile menu
+//disable hover over dropdown on mobile menu
 
 two images from highlights on carousel
+
+Training & Education will probably need pulldown for the three items listed at the top of the page:
+
+Bioinformatics
+Lectures
+Workshops
+
+
+backburner:
+carosuel; consider an image for TNE
