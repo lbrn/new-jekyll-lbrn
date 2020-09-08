@@ -1241,6 +1241,7 @@ float:left;
     color: #fff;
     text-align: center;
     filter:$filter;
+    order: 1;
   }
   .slide {
     width:100%;
@@ -1338,22 +1339,59 @@ float:left;
   .facultymentor, .gradmentor, .undergradmentor {
     display: none; }
 
+  body {
+    p {
+      font-weight: 400;
+      &.natural-link {
+        a {
+          text-decoration: none;
+          color: $primary;
+        }
+        &:hover a {
+          color: #161e36; }
+      }
+    }
+    h1 {
+      font-weight: 700;
+      font-style: $openFont; }
+    a {
+      text-decoration: none;
+      color: $secondary;
+    &:hover {
+      color: $viewall; }
+    }
+    &.homepage {
+      @media (max-width: $md) {
+        display: flex;
+        flex-direction: column;
+         div.layout {
+          display: flex;
+          flex: 1 0 100%;
+          flex: 0 0 100%;
+          flex-direction: column;
+         }
+         header div.layout {
+           display: block;
+         }
+      }
+    }
+  }
 
-  body p {
-    font-weight: 400; }
-  body p.natural-link a {
-    text-decoration: none;
-    color: $primary; }
-  body p.natural-link:hover a {
-    color: #161e36; }
-  body h1 {
-    font-weight: 700;
-    font-style: $openFont; }
-  body a {
-    text-decoration: none;
-    color: $secondary; }
-  body a:hover {
-    color: $viewall; }
+  // body p {
+  //   font-weight: 400; }
+  // body p.natural-link a {
+  //   text-decoration: none;
+  //   color: $primary; }
+  // body p.natural-link:hover a {
+  //   color: #161e36; }
+  // body h1 {
+  //   font-weight: 700;
+  //   font-style: $openFont; }
+  // body a {
+  //   text-decoration: none;
+  //   color: $secondary; }
+  // body a:hover {
+  //   color: $viewall; }
 
   a.button {
     padding: .2em 1.2em;
@@ -1716,6 +1754,7 @@ float:left;
     float: left;
     margin-left: 0;
     margin-right: 0;
+    order: 2;
     &.tne {
       width:80%;
     }
@@ -1968,6 +2007,7 @@ float:left;
     float: left;
     margin-left: 0;
     margin-right: 0;
+    order: 3;
 
     background-color: $secondary;
     &#eventsContainer {
@@ -2728,19 +2768,23 @@ div.research img{
          flex-wrap:wrap;
          img{
            flex: 1 1 20%;
-           width:20%;
+           // width:20%;
            float:left;
            @media (max-width: $md){
              flex:1 0 100%;
-             padding-left: 10%;
-             padding-right: 10%;
+             max-width: 200px;
+             margin-left: auto;
+             margin-right: auto;
+             padding-bottom: 0;
            }
          }
          p {
            padding-left:0;
-           flex: 1 1 80%;
+           flex: 1 1 70%;
            @media (max-width: $md){
              padding: 1em 2em;
+             // padding-left:0;
+
            }
          }
        }
@@ -2753,64 +2797,7 @@ div.research img{
 
 
   }
-  // section.cores h2 {
-  //   margin-bottom: .5em; }
-  // section.cores ul {
-  //   -moz-box-sizing: border-box;
-  //   -webkit-box-sizing: border-box;
-  //   box-sizing: border-box;
-  //   width: 100%;
-  //   float: left;
-  //   margin-left: 0;
-  //   margin-right: 0;
-  //   background-color: $aboutcores;
-  // }
-  // section.cores ul li {
-  //   width: 33.33332%;
-  //   text-align: center;
-  //   float: left;
-  //   list-style: none;
-  //   padding: 1em 0; }
-  // section.cores ul li:hover {
-  //   background-color: $aboutcoreshover;
-  //   cursor: pointer; }
-    // section.cores #core-swap ul li:hover {
-    //   background-color: unset;
-    //   cursor: auto;
-    // }
-  // section.cores ul li.active {
-  //   background-color: $sexta; }
-  // section.cores ul li.active:hover {
-  //   cursor: default; }
-  // section.cores #core-swap {
-  //   background-color: $sexta;
-  //   -moz-box-sizing: border-box;
-  //   -webkit-box-sizing: border-box;
-  //   box-sizing: border-box;
-  //   width: 100%;
-  //   float: left;
-  //   margin-left: 0;
-  //   margin-right: 0; }
-  // section.cores #core-swap h4 {
-  //   padding-left: 1.6em;
-  //   margin-top: 1em;
-  //   float: left;
-  //   line-height: 1.3; }
-  // section.cores #core-swap a {
-  //   float: right;
-  //   font-size: 1em;
-  //   margin: 1em 5% 0 0; }
-  // section.cores #core-swap p {
-  //   font-size: .8em;
-  //   font-weight: 300;
-  //   padding: 1em 2em;
-  //   line-height: 1.5;
-  //   clear: both; }
-  // section.cores #core-swap img {
-  //   width: 100%;
-  //   padding: 1em;
-  //   box-sizing: border-box;
-  //   background-color: $sexta; }
+
 
   section.directory {
     -moz-box-sizing: border-box;
