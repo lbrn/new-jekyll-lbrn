@@ -54,7 +54,7 @@
           <div class="feed highlights">
 
           <h2>HIGHLIGHTS</h2>
-          {% assign highlightsRev = site.highlights | reverse %}
+          {% assign highlightsRev = site.highlights %}
           {% for highlight in highlightsRev limit:2 %}
             {% include highlights-list-item.html %}
           {% endfor %}

@@ -152,7 +152,7 @@ New
 -Master updated
 backup master
 
--re-enable link for highlights
+//-re-enable link for highlights
 //-stylize logos on about page
 //-fix image files for logos
 //-move workshops up to underneath training/support (second thing)
@@ -166,10 +166,7 @@ for drpp we could reiterate desc and put table
 
 //Icon - start people as new faculty, pipeline of project stuff -
 research pipeline, people into research, particularly biomedical
-takes more then 5 yrs to do
-growth of a person or people through research pipeline
-look at funding period bullets like williams hart
-translational - translate from research to testing
+
 
 //new factuly, then pilot, then full, then translational - research pipeline
 
@@ -189,7 +186,7 @@ then try block format
 -increase size of highlights title
 highlights awards story is upcoming
 //change order - put news ahead of the events/highlights on mobile
-highlights in chronological order
+//highlights in chronological order
 //hide twitter on mobile
 
 //disable hover over dropdown on mobile menu
