@@ -1973,6 +1973,12 @@ main div.content #newsContainer.tne {
 .events .view-all:hover {
   color: #5ab35e;
 }
+.events.highlights section .details p.title {
+  font-size: 28px;
+  margin-bottom: 17px;
+  line-height: 1.2;
+  font-weight: 900;
+}
 .events.highlights section .date {
   display: flex;
   flex-direction: row;
