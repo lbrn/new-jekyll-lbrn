@@ -2,7 +2,7 @@
 layout: default
 title: LBRN Workshops
 ---
-<div class="three-card-responsive resources">
+<!-- <div class="three-card-responsive resources">
   <section>
     <a href="training-workshops.html"><img src="images/workshop.jpg" alt="LBRN hosted Training Workshops">
     <h2>Training Workshops</h2>
@@ -21,24 +21,19 @@ title: LBRN Workshops
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis imperdiet tellus, et molestie mauris. Curabitur blandit, arcu et maximus suscipit, enim enim semper erat, nec congue nisl nulla quis urna. Quisque consectetur velit magna, quis molestie odio finibus quis. </p>
     <p class="more">view more</p></a>
   </section>
-</div>
-<!-- <div class="three-card-responsive">
-  <section>
-    <a href="computational-biology-seminar-series.html"><img src="images/comp-bio-event.jpg" alt="Comp Bio Seminar Series">
-    <h2>LSU Computational Biology Seminar Series</h2>
-    <p>Sponsored by the LSU College of Science, the Department of Biological Sciences, the Center for Computation & Technology and the Louisiana Biomedical Research Network these monthly seminars increase student awareness of the importance of computational approaches to modern biology research.</p>
-    <p class="more">view more</p></a>
-  </section>
-  <section>
-    <a href="summer-undergrad-research-forum.html"><img src="images/research-forum.jpg" alt="Undergraduate Research Forum">
-    <h2>LSU Summer Undergrad Research Forum</h2>
-    <p>The Annual Summer Undergraduate Research Forum (SURF) showcases the numerous undergraduate students who have engaged in summer research projects this year at institutions throughout the LSU System. Morning talks to the undergraduates by graduate students, post docs, and junior researchers precede the forum event.</p>
-    <p class="more">view more</p></a>
-  </section>
-  <section>
-    <a href="lbrn-works-in-progress.html"><img src="images/works-in-prog.jpg" alt="LBRN Works-In-Progress Seminars">
-    <h2>LBRN Works-In-Progress</h2>
-    <p>The Work In Progress Seminars are presentations by LBRN Project Investigators where they present their research progress and have an opportunity for input from their peers and mentors in a collaborative setting.</p>
-    <p class="more">view more</p></a>
-  </section>
 </div> -->
+<section class="news tne" id="newsContainer">
+<!-- add limit: 2 to the 2nd tne post if needed -->
+{% assign tne-post = site.posts | where: "categories", "workshop" %}
+  {% for post in tne-post %}
+    {% include news-full-list-item.html %}
+  {% endfor %}
+
+</section>
+<aside id="newsSidebar" class="tne">
+  <ul>
+    {% for post in tne-post %}
+      <a href="#{{post.date}}"><li>{{post.title}}</li></a>
+    {% endfor %}
+  </ul>
+</aside>

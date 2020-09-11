@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3rd LBRN-LONI Scientific Computing Bootcamp
-categories: news tne
+categories: news tne workshop
 featuredImageUrl: images/2020_LBRN_LONI_Scientific_Computing_Bootcamp.png
 featuredImageUrlSquare: images/2020_LBRN_LONI_Scientific_Computing_Bootcamp.png
 excerpt_separator: <!--more-->

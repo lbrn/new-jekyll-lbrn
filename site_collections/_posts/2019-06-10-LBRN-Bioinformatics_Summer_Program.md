@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  2019 LBRN Pine Biotech Summer Bioinformatics Program
-categories: news tne
+categories: news tne workshop
 featuredImageUrl: images/postImages/2019_LBRNCCT_Bioinformatics_Summer.png
 featuredImageUrlSquare: images/postImages/2019_LBRNCCT_Bioinformatics_Summer.png
 excerpt_separator: <!--more-->

@@ -64,9 +64,7 @@ move workshops section to training and education, add title/desc and
 
 ==================
 meeting
-dependabot 3.1? need to update
-serialize javascript - 3.1.0
-dependabot
+
 
 //-limit highlights to 2
 //-add img to homepage one, remove date
@@ -172,19 +170,19 @@ research pipeline, people into research, particularly biomedical
 
 //segmented pipeline like symbols - D R P P spread on them
 
-replace placeholders on workshop page with tagged "workshop" articles
+//replace placeholders on workshop page with tagged "workshop" articles
 
-tag workshop:
-3rd lbrn loni scientific computing bootcamp
-2019 illumina training as workshop
-summer bioinformatics workshop june 30th one
+//tag workshop:
+//3rd lbrn loni scientific computing bootcamp
+//2019 illumina training as workshop
+//summer bioinformatics workshop june 30th one
 
-Start with news archive format first
+//Start with news archive format first
 then try block format
 
 -Annual meetings block on events page
--increase size of highlights title
-highlights awards story is upcoming
+//-increase size of highlights title
+//highlights awards story is upcoming
 //change order - put news ahead of the events/highlights on mobile
 //highlights in chronological order
 //hide twitter on mobile
@@ -198,3 +196,36 @@ two images from highlights on carousel
 
 backburner:
 carosuel; consider an image for TNE
+home page alternative layout consideration
+maybe update footer? with map and a bunch of links, stuff that's buried otherwise
+//consider linking projectreporter nih . gov page
+//https://projectreporter.nih.gov/project_info_description.cfm?aid=9902045&icde=51604231
+
+//and also nih.gov and nigms.nih.gov
+dont need www
+
+gopher, mosaic, both world wide web
+
+//////////////////////////
+9-9-2020 meeting
+//////////////////////////
+
+//highlights still reversed
+
+//safari has issues w/ about page cores icon, bbc/mcbr too big
+
+//Cores > services page: BBC always above MCBR in the services section
+
+//Double check Research page if any of the links have expired
+
+
+//NIH-acknowledgement the code at the bottom needs to be updated to -19
+-make it a file?nah
+
+highlights carousel image
+style like emma's things the backgrounds under resources
+
+change "summer research program" carousel item to "current activities" link to virtual summer program
+
+change the header image depending on which page you're on - need different ones for different things
+ (Cores is a computing and biomedical, look at templates, tne/connectsions and learning, cores go back to the blue or combo or such )

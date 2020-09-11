@@ -1,14 +1,14 @@
---- 
+---
 layout: post
 title: LBRN - Pine Biotech Fall/Winter Bioinformatics Orientation and Courses
-categories: news
+categories: news workshop
 featuredImageUrl: images/postImages/2018-10-BioinfoamticsOrientation.jpg
 featuredImageUrlSquare: images/postImages/2018-10-BioinfoamticsOrientation-thumb.jpg
 excerpt_separator: <!--more-->
 eventDate: October 22, 2018
 textOnUrl: LBRN - Pine Biotech Fall/Winter Bioinformatics Orientation and Courses
 link: https://redcap.lbrn.lsu.edu/surveys/?s=NY3K3P4LAA
---- 
+---
 <p>We are pleased to announce the CCT/LBRN - Pine Biotech Fall/Winter Bioinformatics course for LSU/LBRN Network institutions Students, Grad and Undergrad, PostDocs and Faculty members. In preparation for this Course an Orientation session was held on Monday October 22nd, 2018 from 10am - 12 pm at LSU CCT. Video and Opt-In links see the Full Story:<!--more--></p>
 
 <p>Orientation video: <iframe width="560" height="315" src="https://www.youtube.com/embed/Webuf-8L63w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
