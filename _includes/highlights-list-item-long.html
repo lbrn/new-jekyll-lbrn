@@ -20,7 +20,11 @@
   {% endif %}
 
     <p class="title">{{highlight.title}}</p>
+    {% if highlight.eventDate != nil %}
+    <p class="date-time">{{highlight.eventDate}}</p>
+    {% endif %}
     <p class="description">{{highlight.description}}</p>
+
     {% if highlight.startTime != nil }
     <p class="date-time">{{highlight.startTime}} to {{highlight.endTime}}</p>
     {% else %}
