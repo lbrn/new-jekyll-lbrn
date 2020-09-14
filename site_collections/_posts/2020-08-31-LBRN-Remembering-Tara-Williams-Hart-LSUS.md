@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Remembering Tara Williams-Hart LSU Shreveport PI
-categories: featured
+categories: news
 featuredImageUrl: images/Sympathy-Tara-Williams-Hart.png
 featuredImageUrlSquare: images/Sympathy-Tara-Williams-Hart.png
 excerpt_separator: <!--more-->
