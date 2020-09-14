@@ -220,12 +220,11 @@ gopher, mosaic, both world wide web
 
 
 //NIH-acknowledgement the code at the bottom needs to be updated to -19
--make it a file?nah
 
 highlights carousel image
 style like emma's things the backgrounds under resources
 
-change "summer research program" carousel item to "current activities" link to virtual summer program
+//change "summer research program" carousel item to "current activities" link to virtual summer program
 
 change the header image depending on which page you're on - need different ones for different things
  (Cores is a computing and biomedical, look at templates, tne/connectsions and learning, cores go back to the blue or combo or such )
