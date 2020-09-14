@@ -235,11 +235,12 @@ change the header image depending on which page you're on - need different ones 
 
 
 
- -add dates to highlights page version
 
  -Consider bbc/mcbr circle style into head bg
 
  - About, to be updated later, notes for doctor horswell and doctor park likely to be removed
+
+ //-add dates to highlights page version
 
  //- About, redirect the title links that bbc/mcbr to "cores" page
 
