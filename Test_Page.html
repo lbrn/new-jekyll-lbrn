@@ -31,123 +31,67 @@ title: Modified About/Test Environment
   }
 
 </style>
-<p>Site. time: {{site.time}}</p>
-<p>site.time date: {{ site.time | date: "%Y %m %d" }}</p>
 
-{% for pi in site.data.pis_full %}
-  {{pi.name}}
-{% endfor %}
-<div class="bar">
-  <!-- <a href="#">Useless Link</a> -->
-  <ul class="header2";>
-    <li>
-      <a href="#" class="ab">Dropdown Link</a>
-      <ul >
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-      </ul>
-    </li>
-  </ul>
-  <ul class="header3";>
-    <li>
-      <a href="#" class="ab">Dropdown Link2</a>
-      <ul >
-        <li><a href="#">Link 4</a></li>
-        <li><a href="#">Link 5</a></li>
-        <li><a href="#">Link 6</a></li>
-      </ul>
-    </li>
-  </ul>
+<section>
+  <h1 id="activites">Cores</h1>
+</section>
+<div class="currentresearch">
+ <img src="images/ri-cores-03.svg" alt="">
+ <div class="text">
+   <h2>BBC</h2>
+   <!-- <span>Featured | by John doe</span> -->
+   <p>The Bioinformatics, Biostatistics, and Computational Biology Core (BBCC) of the Louisiana Biomedical Research Network (LBRN) serves to train and support project investigators and their teams across Louisiana, and to lead and support
+     translational research activities at the frontiers of biomedical science. Its team uses both established and custom computational tools, operating at computational scales ranging from the mundane to analyses engaging many hundreds of
+     compute cores.</p>
+
+   <!-- <a href="virtual-summer-research-program.html" class="btn">View more</a> -->
+ </div>
+</div>
+<div class="currentresearch">
+ <img src="images/ri-cores-02.svg" alt="">
+ <div class="text">
+   <h2>MCBR</h2>
+   <!-- <span>Featured | by John doe</span> -->
+   <p>Molecular and cell biology provide an essential linkage among important basic fields of biomedical science, such as genetics, developmental biology, structural biology, immunology, neurobiology, and cancer biology. The MCBRC takes
+     advantage of existing highly organized, centralized services and equipment facilities located primarily at the LSU flagship institution in Baton Rouge, effectively uniting these units toward the common goal of supporting biomedical
+     research performed by PUI investigators. The MCBRC will provide technical and logistical support, enabling the ready exchange of information, ideas, technology, and research capabilities among PUI investigators. MCBRC will ensure that PUI
+     researchers have full access to state-of-the-art equipment and modern research techniques and services.</p>
+
+   <!-- <a href="virtual-summer-research-program.html" class="btn">View more</a> -->
+ </div>
+</div>
+<div class="currentresearch">
+ <img src="images/ri-cores-01.svg" alt="">
+ <div class="text">
+   <h2>MCBR</h2>
+   <!-- <span>Featured | by John doe</span> -->
+   <p>Molecular and cell biology provide an essential linkage among important basic fields of biomedical science, such as genetics, developmental biology, structural biology, immunology, neurobiology, and cancer biology. The MCBRC takes
+     advantage of existing highly organized, centralized services and equipment facilities located primarily at the LSU flagship institution in Baton Rouge, effectively uniting these units toward the common goal of supporting biomedical
+     research performed by PUI investigators. The MCBRC will provide technical and logistical support, enabling the ready exchange of information, ideas, technology, and research capabilities among PUI investigators. MCBRC will ensure that PUI
+     researchers have full access to state-of-the-art equipment and modern research techniques and services.</p>
+
+   <!-- <a href="virtual-summer-research-program.html" class="btn">View more</a> -->
+ </div>
 </div>
 
-<br>
-<h2>Filter DIV Elements</h2>
+<div class="services">
+  <div class="service">
+    <span>
+      <img src="images/ri-cores-03.svg" alt="">
+      <img src="images/ri-cores-02.svg" alt="">
+      <img src="images/ri-cores-01.svg" alt="">
+    </span>
+    <div class="text">
+      <h2>Cores Training & Support</h2>
 
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('admin')"> admin</button>
-  <button class="btn" onclick="filterSelection('bbc')"> bbc</button>
-  <button class="btn" onclick="filterSelection('mcbr')"> mcbr</button>
-</div>
-
-<div class="container">
-  <div class="filterDiv admin">BMW</div>
-  <div class="filterDiv bbc">Orange</div>
-  <div class="filterDiv mcbr">Volvo</div>
-</div>
-
-
-
-<article style = "display: none;">
-  <ul>
-
-    <p>date: {{ site.time }}</p>
-    <!-- {{ now }} -->
-      {% assign sorted = site.events | sort: 'eventDate'| reverse %}
-      {% for event in sorted limit:4 %}
-       {% include events-list-item.html %}
-
-      <!-- if date <= now -->
-          {{event.date}}
-          <li>{{ event.title }}</li>
-       {% endfor %}
-<!-- <div class="dropdown">
-  <button id="dropdownMenu1" data-toggle="dropdown">
-    My account
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">My cart</a></li>
-    <li><a class="dropdown-item" href="#">My orders</a></li>
-    <li><a class="dropdown-item" href="#">My details</a></li>
-    <li role="separator" class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Log out</a></li>
-  </ul>
-</div> -->
-
-<div id="item1">
-</div>
-<div class="dogtest">
-dog
-</div>
-<div id="item2">
-</div>
-<br>
-        <!-- <li id="about"><a href="about.html" class="dogtest">About</a></li> -->
-        <div id="about" class="dropdown">
-          <li ><a href="about.html" class="dogtest">About</a></li>
-
-          <div class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item_cust navLink" href="index.html#AboutEvents">
-            Events
-            <a class="dropdown-item_cust navLink" href="index.html#AboutContact">
-            Contact Us
-            </a>
-          </div>
-        </div>
-
-<span class="dogtest">Hover over me!</span>
-<div class="dogtest2">I will show on hover</div>
-
-<div class="dropdown">
-<!-- <div class="nav-item dropdown col-4 noPad row"> -->
-  <a class="Headerbutton-cust text-center col-12 navLink" href="index.html#AboutBanner" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false" style="height: 100%;">
-    About Us
-    <!-- add this line in for the active element for text-only broswers -->
-    <!-- <span class="sr-only">(current)</span> -->
-  </a>
-  <div class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item_cust navLink" href="index.html#AboutEvents">
-    Events
-    <!-- add this line in for the active element for text-only broswers -->
-      <!-- <span class="sr-only">(current)</span></a> -->
-    <a class="dropdown-item_cust navLink" href="index.html#AboutContact">
-    Contact Us
-    <!-- add this line in for the active element for text-only broswers -->
-      <!-- <span class="sr-only">(current)</span> -->
-    </a>
+      <p>The cores provide one on one training. If you have a question or would like to talk about your training needs, you would like more information about services provided by the cores, or you would like to talk to someone in the core about how someone can assist you, please use Cores Contact link:</p>
+      <a class="btn" title="Cores Contact" href="https://redcap.lbrn.lsu.edu/surveys/?s=JKJCL3QJ7E">Cores Contact</a>
+    </div>
   </div>
 </div>
+
+<p>Site. time: {{site.time}}</p>
+<p>site.time date: {{ site.time | date: "%Y %m %d" }}</p>
 
 
 

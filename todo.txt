@@ -256,5 +256,10 @@ change the header image depending on which page you're on - need different ones 
 -Hexagon shapes, BBC: use white cropped circle pattern inside hexagon, mcbr - unknown
 
 -Carousel items:
-TNE
-Highlights
+//TNE
+//Highlights
+
+
+===============
+9-22-2020
+===============
