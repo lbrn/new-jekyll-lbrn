@@ -117,8 +117,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
       .mapcontainer a div {
         opacity: 0.5;
-        border-top: solid 1.5px #2C3D6C;
-        border-bottom: solid 1.5px #2C3D6C;
+        border-top: solid .5 px #2C3D6C;
+        border-bottom: solid .5px #2C3D6C;
       }
 
       .mapcontainer a div:hover {
@@ -285,7 +285,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     .mapcontainer   .uno {
         height: 4%;
         width: 6%;
-        margin-top: 54%;
+        margin-top: 52%;
         margin-left: 74%;
         position: absolute;
       }
