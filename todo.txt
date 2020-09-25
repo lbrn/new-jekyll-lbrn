@@ -263,3 +263,15 @@ change the header image depending on which page you're on - need different ones 
 ===============
 9-22-2020
 ===============
+move the TNE lower image off of link
+Change the size of one of the two images, make white largest, bioinfo second, other last
+
+Highlights: crop the curtains a bit
+
+make text blue and leave the rest green
+
+BBC one that uses the digital numbers like one of the templates on the resources page
+
+other helix design is a possibility too
+
+one green one blue?
