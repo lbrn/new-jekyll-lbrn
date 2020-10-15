@@ -6,7 +6,9 @@ excerpt_separator: <!--more-->
 textOnUrl: LBRN Coronavirus (COVID-19) Information
 ---
 
-As of September 11, 2020: The Governor of Louisiana website current statement "Gov. John Bel Edwards has released details of his proclamation moving Louisiana’s response to COVID-19 to Phase 3. Some businesses will be able to increase their occupancy, and bars may reopen subject to certain restrictions, only in parishes that do not have high incidence of illness and only if local governments choose to opt in." We remind all our partners, faculty, and students of maintaining safety and mitigating the spread of COVID-19. As you know, the current situation in Louisiana is still currently fluid with regards to the Coronavirus (COVID-19). <!--more-->
+As of October 8, 2020: The Governor of Louisiana website current statement "Louisiana will stay in Phase 3, keeping its strong COVID-19 mitigation measures, including a continued statewide mask mandate, in place for another 28 days, Gov. John Bel Edwards announced today." We remind all our partners, faculty, and students of maintaining safety and mitigating the spread of COVID-19. As you know, the current situation in Louisiana is still currently fluid with regards to the Coronavirus (COVID-19). <!--more-->
+
+[Louisiana's Governer's statement](https://gov.louisiana.gov/index.cfm/newsroom/detail/2727)
 
 LBRN is based at Louisiana State University in Baton Rouge with administrative staff at LSU School of Veterinary Medicine and the LSU Center for Computation & Technology. We shifted to working remotely on March 17th and continue to handle the day to day activities of the grant. Any announcements regarding our activities will come out as needed. If you have any questions, please do not hesitate to drop us a note at [LBRN E-mail](mailto:lbrn@.lsu.edu) if you are not already in touch with us directly.
 
