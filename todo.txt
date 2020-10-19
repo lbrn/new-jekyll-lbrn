@@ -287,7 +287,7 @@ date near that
 For the completion of the Louisiana Biomedical Research Network 2020 Summer Research Program Undergraduate Program
 
 presented to:
-dont need presented by text 
+dont need presented by text
 
 White version; other version where text on logo is dark blue
 border: kinda fancy
@@ -303,3 +303,16 @@ mix and match dna into blue bbc logo thing
 fill in circle on green with binary stuff and then do dna on blue
 green for one, blue for the other - blue for comp/bbc and green for mcb
 more subtle colors for blue left side one
+
+
+===========
+
+typefaces and sizes
+border
+thin lines for name one name two, smaller name one name two , larger full name  those need to be small and full name (maybe uni) need to be larger
+quarter inch edges and inch and a half top
+capitalize completeion
+
+embed typeface
+
+focus on full name/certificate of completion 
