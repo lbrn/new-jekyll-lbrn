@@ -1454,7 +1454,17 @@ float:left;
     header.research {
       filter: $filter;
       background-image: url("../images/slider/3.jpg");
-      background-image: url("../images/headers/header-background_new-01.png");
+      // background-image: url("../images/headers/header-background_new-01.png");
+    }
+    header.bbc {
+      filter: $filter;
+      // background-image: url("../images/slider/3.jpg");
+      background-image: url("../images/headers/header-background_new-02.png");
+    }
+    header.mcbr {
+      filter: $filter;
+      // background-image: url("../images/slider/3.jpg");
+      background-image: url("../images/headers/header-background_new-06.png");
     }
   header img {
     float: left;

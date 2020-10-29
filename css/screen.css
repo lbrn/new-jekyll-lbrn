@@ -1622,7 +1622,18 @@ header.research {
   -webkit-filter: none;
           filter: none;
   background-image: url("../images/slider/3.jpg");
-  background-image: url("../images/headers/header-background_new-01.png");
+}
+
+header.bbc {
+  -webkit-filter: none;
+          filter: none;
+  background-image: url("../images/headers/header-background_new-02.png");
+}
+
+header.mcbr {
+  -webkit-filter: none;
+          filter: none;
+  background-image: url("../images/headers/header-background_new-06.png");
 }
 
 header img {
