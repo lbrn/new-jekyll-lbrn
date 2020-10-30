@@ -5,10 +5,10 @@ categories: featured
 featuredImageUrl: downloads/thumbnails/Bioinfo Infectious Diseases 2020.10.30.horz.png
 featuredImageUrlSquare: downloads/thumbnails/Bioinfo Infectious Diseases 2020.10.30.png
 excerpt_separator: <!--more-->
-eventDate: Postponed due to Zeta
+eventDate: November 6, 2020, 1:00pm
 textOnUrl: PineBio Webinar on Bioinformatics for Infectious Disease
 --- 
-Look for an update soon, this session is postponed due to Zeta/Power outages in SouthEast Louisiana.
+Due to Hurricane Zeta, the new event date/time is November 6, 2020, 1:00pm from October 30th, 2020 1:00pm.
 
 We welcome you to join us for a free webinar on bioinformatics for Infectious Diseases. In this
 session, we will discuss how genomic data and bioinformatics are being used to study viral
@@ -19,7 +19,7 @@ of analysis, including RNA and DNA sequencing data.<!--more-->
   
 <p><b>Pine Biotech Webinar on Bioinformatics for Infectious Disease Flyer</b><a href="https://lbrn.lsu.edu/downloads/Bioinfo Infectious Diseases 2020.10.30.pdf"><img src="https://lbrn.lsu.edu/downloads/thumbnails/Bioinfo Infectious Diseases 2020.10.30.png" alt="PineBio Webinar on Bioinformatics for Infectious Disease Flyer" style="float:left;width:300px;border:0;padding-left:20px;"></a></p>
 
-Scheduled: Postponed - <strike>October 30, 2020, 1:00 PM CST</strike>, Update Soon.  
+Scheduled: Updated date/time: November 6, 2020, 1:00pm.  
 Registration: [https://edu.tbioinfo.com/bioinformatics-for-infectious-diseases-webinar](https://edu.tbioinfo.com/bioinformatics-for-infectious-diseases-webinar)
 
 
