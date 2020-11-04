@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+desc<!DOCTYPE html>
 <html lang="en">
 <html>
   <head>
@@ -29,6 +29,10 @@
         <div class="caption">
           <!-- this h1 should contain the blog post title -->
           <h1 class="post">{{page.title}}</h1>
+          {% if page.desc != nil }
+          {% else %}
+          <p class="date-time">{{page.desc}}</p>
+          {% endif %}
           <!-- this is p is the post-date of the news item -->
           <!-- <p>{{page.date | date:" %B, %-d %Y"}}</p> -->
         </div>

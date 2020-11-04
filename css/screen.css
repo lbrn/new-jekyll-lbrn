@@ -2481,6 +2481,14 @@ main div.content #newsContainer.tne {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 2%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .three-card-responsive section a:hover img, .two-card-responsive section a:hover img, .four-card-responsive section a:hover img {
   -webkit-filter: none !important;
@@ -3079,6 +3087,48 @@ div.resources img {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+  -webkit-filter: none;
+          filter: none;
+  /* CUSTOMIZE COLLUMNS IN RESEARCH HERE */
+}
+
+div.resources > section > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+div.resources div.img {
+  display: block;
+  margin: 5% auto;
+  float: left;
+  margin-left: 10%;
+  width: 80%;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 190px;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 190px;
+          flex: 1 1 190px;
+  -webkit-background-origin: center;
+     -moz-background-origin: center;
+       -o-background-origin: center;
+          background-origin: center;
+  background-position: center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   -webkit-filter: none;
           filter: none;
   /* CUSTOMIZE COLLUMNS IN RESEARCH HERE */

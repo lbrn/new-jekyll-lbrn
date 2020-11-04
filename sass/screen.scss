@@ -2227,6 +2227,8 @@ float:left;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
       section a {
         &:hover{
          img{
@@ -2692,6 +2694,28 @@ float:left;
    filter: $filter;
 /* CUSTOMIZE COLLUMNS IN RESEARCH HERE */
   }
+div.resources {
+    &>section>a{
+      display: flex;
+      flex-direction: column;
+    }
+  div.img /*, div.research img*/ {
+    display: block;
+    margin: 5% auto;
+    float: left;
+    margin-left: 10%;
+    width: 80%;
+    border-radius: 6px;
+    flex: 1 1 190px;
+    background-origin: center;
+    background-position: center;
+    background-size: cover;
+    // padding-right: 2.5%;
+    filter: $filter;
+    /* CUSTOMIZE COLLUMNS IN RESEARCH HERE */
+  }
+}
+
 div.research img{
   /* Cust */
   display: block;

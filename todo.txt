@@ -324,3 +324,38 @@ meeting 10-29-2020
 
 http://www.naipi.org/
 wae as needed
+
+====
+WORK ON GRAPHICS/HEADERS FIRST
+
+about page -
+update logos, add sidebar menu
+people changed on lbrn main
+bring up continuity
+
+LBRN cores page
+Core bucks will have independant links for both programs
+side-by-side bbc/mcbr in core pages
+cores training could span both
+others have single thing
+small logo in title, use a ::before or ::after
+two column design, elements span both if used
+wrap, float?
+
+cores page - mix the two for header
+
+tne
+//2 and 2 adding new element
+//take out bioinformatics first element on tne page, "the goal" paragraph
+
+edit added flex to two/three cards 
+
+lectures on informatics may end up being a series page like workshops
+
+currently its an events page
+add img/desc
+hide if no desc
+
+updates from main , story and newsletter
+
+Graphics - icons review - mcbr bbc logos
