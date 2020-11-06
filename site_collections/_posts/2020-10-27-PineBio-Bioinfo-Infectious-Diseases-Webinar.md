@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Pine Biotech Webinar on Bioinformatics for Infectious Disease
-categories: featured
+categories: news
 featuredImageUrl: downloads/thumbnails/Bioinfo Infectious Diseases 2020.10.30.horz.png
 featuredImageUrlSquare: downloads/thumbnails/Bioinfo Infectious Diseases 2020.10.30.png
 excerpt_separator: <!--more-->
