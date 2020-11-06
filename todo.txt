@@ -326,10 +326,10 @@ http://www.naipi.org/
 wae as needed
 
 ====
-WORK ON GRAPHICS/HEADERS FIRST
+//WORK ON GRAPHICS/HEADERS FIRST
 
 about page -
-update logos, add sidebar menu
+update logos, //add sidebar menu
 people changed on lbrn main
 bring up continuity
 
@@ -348,13 +348,13 @@ tne
 //2 and 2 adding new element
 //take out bioinformatics first element on tne page, "the goal" paragraph
 
-edit added flex to two/three cards 
+edit added flex to two/three cards
 
-lectures on informatics may end up being a series page like workshops
+///lectures on informatics may end up being a series page like workshops
 
 currently its an events page
-add img/desc
-hide if no desc
+//add img/desc
+//hide if no desc
 
 updates from main , story and newsletter
 

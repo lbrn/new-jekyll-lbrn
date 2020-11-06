@@ -62,7 +62,8 @@ img{
   .layout.research{
 
   }
-  .content #lbrnEventSidebar2{
+  .content #lbrnEventSidebar2, .about #lbrnEventSidebar2{
+  // .content #lbrnEventSidebar2{
     background-color: $secondary;
     // width:20%;
     float: right;
@@ -2683,7 +2684,8 @@ float:left;
     -moz-border-radius: 10px; }
   div.resources section.no-hover:hover, div.research section.no-hover:hover {
     background-color: unset; }
-  div.resources img /*, div.research img*/ {
+div.resources {
+  img /*, div.research img*/ {
     display: block;
     margin: 5% auto;
     float: left;
@@ -2694,7 +2696,6 @@ float:left;
    filter: $filter;
 /* CUSTOMIZE COLLUMNS IN RESEARCH HERE */
   }
-div.resources {
     &>section>a{
       display: flex;
       flex-direction: column;
@@ -3605,10 +3606,16 @@ div.research img{
       }
     }
 
-  .research .content .content{
-    width:80%;
-    padding-right:5%;
+  .research, .about {
+    .content .content{
+      width:80%;
+      padding-right:5%;
+    }
   }
+  // .about .content .content{
+  //   width:80%;
+  //   padding-right:5%;
+  // }
   .services .service{
     padding-left: 0;
   }
