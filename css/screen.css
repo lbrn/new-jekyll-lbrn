@@ -439,19 +439,165 @@ main.research div.content h2 {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  position: relative;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-     -moz-box-orient: vertical;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
      -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   /* background-color: $resgreen; */
   background-color: #def0df;
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
           border-radius: 10px;
   padding-bottom: 0.7em;
+}
+.services .row {
+  margin-left: 0;
+  margin-right: 0;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  background-color: transparent;
+}
+@media (max-width: 740px) {
+  .services .row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+.services .row:nth-of-type(odd) {
+  background-color: transparent;
+}
+.services .row:first-child {
+  background-color: transparent;
+}
+.services .row:nth-of-type(even) {
+  background-color: #c2e2c4;
+}
+.services .row:nth-of-type(even) .service:first-child {
+  background-color: #d4ebd5;
+}
+.services .row:nth-of-type(even) .service:first-child a.btn {
+  background-color: #c2e2c4;
+  /* float:left; */
+}
+.services .row:nth-of-type(even) .btn {
+  color: #2C3D6C;
+  background-color: #8ECB91;
+}
+.services .row:nth-of-type(even) .btn:hover {
+  color: white;
+  color: #5ab35e;
+  background-color: #def0df;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2x ease-in;
+}
+.services .row .service {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+.services .row .service h2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+.services .row .service h2 img {
+  padding: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 45px;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 45px;
+          flex: 0 1 45px;
+  height: 100%;
+}
+@media (max-width: 860px) {
+  .services .row .service h2 img {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 75px;
+       -moz-box-flex: 0;
+        -ms-flex: 0 1 75px;
+            flex: 0 1 75px;
+  }
+}
+.services .row .service h2 img:first-child {
+  margin-left: auto;
+}
+.services .row .service h2 img:nth-child(2) {
+  margin-left: 0;
+}
+.services .row .service:first-child {
+  background-color: transparent;
+}
+.services .row .service:nth-child(2) {
+  background-color: #c2e2c4;
+}
+.services .row .service:only-child img:first-child {
+  margin-left: 10px;
+}
+@media (max-width: 860px) {
+  .services .row .service:only-child img:first-child {
+    margin-left: auto;
+  }
+}
+.services .row .service h2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.services .row .service.left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  float: left;
+  margin-right: 50%;
+}
+.services .row .service.right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  float: right;
+  margin-left: 50%;
 }
 .services a.btn {
   background-color: #c2e2c4;
@@ -471,11 +617,18 @@ main.research div.content h2 {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  padding-left: 1em;
+  padding-right: 1em;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .services .service a.btn:hover {
   color: white;
@@ -586,13 +739,11 @@ main.research div.content h2 {
 .services .service span img {
   padding-top: 1em;
   margin: 0;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 100px;
-     -moz-box-flex: 0;
-      -ms-flex: 0 0 100px;
-          flex: 0 0 100px;
-  height: 100px;
-  width: 100px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 200px;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
   margin-left: auto;
   margin-right: auto;
   /* order:99; */
@@ -648,15 +799,6 @@ main.research div.content h2 {
   }
 }
 
-/* .services .service .btn{
-  background-color: $secondary;
-}
-.services .service .btn:hover{
-  background-color: $pentia;
-  -moz-transition: all .2s ease-in;
-  -o-transition: all .2s ease-in;
-  -webkit-transition: all .2x ease-in; */
-/* } */
 #core-list .horiline-r {
   margin-left: 46.5%;
 }
@@ -4230,10 +4372,6 @@ width: 52.5%;
     padding-right: 5%;
   }
 
-  .services .service {
-    padding-left: 0;
-  }
-
   .services a.btn {
     margin-left: 0;
     margin-right: auto;
@@ -4249,7 +4387,6 @@ width: 52.5%;
             flex: 1 1 5%;
     padding-top: 1em;
   }
-
   .service .text {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 70%;
