@@ -4,7 +4,7 @@ title: LBRN Workshops
 featuredImageUrl: images/workshop.jpg
 featuredImageUrlSquare: images/workshop.jpg
 excerpt_separator: <!--more-->
-desc: Testing desc
+desc: LBRN Cores host various one or two day workshops throughout the year where researchers, faculty, graduate and undergraduate students are invited to attend. Topics range from computational bioinformatics to protein purification, etc.
 eventDate: Beginning June 8, 2020
 ---
 

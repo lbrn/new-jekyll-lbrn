@@ -364,17 +364,16 @@ Graphics - icons review - mcbr bbc logos
 ///
 11-16
 //
-page.desc jekyll errors on post.html
-desc at top of page
-copy text from education page as page desc
+//page.desc jekyll errors on post.html
+//desc at top of page
+//copy text from education page as page desc
 
 
 do a version where the text is in blue on logo
 blue on the outline of the dna?
 blue on one side of each line
 
-fix blexbox issues and logo size,
-john around wed
-busy thurs
+//fix blexbox issues and logo size,
 
-plain text version of resume 
+
+plain text version of resume
