@@ -369,9 +369,6 @@ Graphics - icons review - mcbr bbc logos
 //copy text from education page as page desc
 
 
-do a version where the text is in blue on logo
-blue on the outline of the dna?
-blue on one side of each line
 
 //fix blexbox issues and logo size,
 
