@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LBRN Student LSUS Senior Places First in National Competition During UTHealth CPRIT Program
+title: LBRN Student LSUS Senior Places First in National Competition
 categories: Event
 eventDate: September 24, 2020
 startTime:

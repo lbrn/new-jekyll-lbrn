@@ -2,7 +2,7 @@
 layout: post
 title: LBRN Student awarded Honors Student of the Year
 categories: Event
-eventDate:
+eventDate: September 24, 2020
 startTime:
 endTime:
 img: ttran.jpg
