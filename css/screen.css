@@ -528,6 +528,12 @@ main.research div.content h2 {
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
 }
+.services .row .service.main {
+  -webkit-border-radius: 0 10px 0 0;
+     -moz-border-radius: 0 10px 0 0;
+          border-radius: 0 10px 0 0;
+  /* top left, top right, bottom right, bottom left */
+}
 .services .row .service h2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -867,20 +873,16 @@ main.research div.content h2 {
   width: 100%;
   height: 100%;
 }
-
 .mapcontainer a div {
   opacity: 0.5;
-  border-top: solid 1.5px #2C3D6C;
   border-bottom: solid 1.5px #2C3D6C;
 }
-
 .mapcontainer a div:hover {
   background-color: #8ECB91;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2x ease-in;
 }
-
 .mapcontainer .sus {
   height: 4%;
   width: 6%;
@@ -888,7 +890,6 @@ main.research div.content h2 {
   margin-left: 9%;
   position: absolute;
 }
-
 .mapcontainer .lsuhsc-s {
   height: 4%;
   width: 13%;
@@ -896,7 +897,6 @@ main.research div.content h2 {
   margin-left: 15%;
   position: absolute;
 }
-
 .mapcontainer .la-tech {
   height: 4%;
   width: 11%;
@@ -904,7 +904,6 @@ main.research div.content h2 {
   margin-left: 37%;
   position: absolute;
 }
-
 .mapcontainer .ulm {
   height: 4%;
   width: 7%;
@@ -912,7 +911,6 @@ main.research div.content h2 {
   margin-left: 43%;
   position: absolute;
 }
-
 .mapcontainer .lsu-s {
   height: 4%;
   width: 8%;
@@ -920,7 +918,6 @@ main.research div.content h2 {
   margin-left: 11%;
   position: absolute;
 }
-
 .mapcontainer .grambling {
   height: 4%;
   width: 13%;
@@ -928,7 +925,6 @@ main.research div.content h2 {
   margin-left: 25%;
   position: absolute;
 }
-
 .mapcontainer .nsu {
   height: 4%;
   width: 6%;
@@ -936,7 +932,6 @@ main.research div.content h2 {
   margin-left: 19%;
   position: absolute;
 }
-
 .mapcontainer .centenary {
   height: 4%;
   width: 13%;
@@ -944,7 +939,6 @@ main.research div.content h2 {
   margin-left: 8%;
   position: absolute;
 }
-
 .mapcontainer .lacollege {
   height: 4%;
   width: 14%;
@@ -952,7 +946,6 @@ main.research div.content h2 {
   margin-left: 34%;
   position: absolute;
 }
-
 .mapcontainer .lsu-a {
   height: 4%;
   width: 9%;
@@ -960,7 +953,6 @@ main.research div.content h2 {
   margin-left: 29%;
   position: absolute;
 }
-
 .mapcontainer .mcneese {
   height: 4%;
   width: 11%;
@@ -968,7 +960,6 @@ main.research div.content h2 {
   margin-left: 19%;
   position: absolute;
 }
-
 .mapcontainer .ololc {
   height: 4%;
   width: 9%;
@@ -976,7 +967,6 @@ main.research div.content h2 {
   margin-left: 51%;
   position: absolute;
 }
-
 .mapcontainer .subr {
   height: 4%;
   width: 8%;
@@ -984,7 +974,6 @@ main.research div.content h2 {
   margin-left: 49%;
   position: absolute;
 }
-
 .mapcontainer .brcc {
   height: 4%;
   width: 8%;
@@ -992,7 +981,6 @@ main.research div.content h2 {
   margin-left: 50%;
   position: absolute;
 }
-
 .mapcontainer .lsu {
   height: 4%;
   width: 9%;
@@ -1000,7 +988,6 @@ main.research div.content h2 {
   margin-left: 29%;
   position: absolute;
 }
-
 .mapcontainer .ull {
   height: 4%;
   width: 6%;
@@ -1008,7 +995,6 @@ main.research div.content h2 {
   margin-left: 36%;
   position: absolute;
 }
-
 .mapcontainer .selu {
   height: 4%;
   width: 8%;
@@ -1016,7 +1002,6 @@ main.research div.content h2 {
   margin-left: 65%;
   position: absolute;
 }
-
 .mapcontainer .pbrc {
   height: 4%;
   width: 7%;
@@ -1024,7 +1009,6 @@ main.research div.content h2 {
   margin-left: 50%;
   position: absolute;
 }
-
 .mapcontainer .tnprc {
   height: 4%;
   width: 9%;
@@ -1032,15 +1016,13 @@ main.research div.content h2 {
   margin-left: 70%;
   position: absolute;
 }
-
 .mapcontainer .uno {
   height: 4%;
   width: 6%;
-  margin-top: 54%;
+  margin-top: 52%;
   margin-left: 74%;
   position: absolute;
 }
-
 .mapcontainer .suno {
   height: 4%;
   width: 8%;
@@ -1048,7 +1030,6 @@ main.research div.content h2 {
   margin-left: 82%;
   position: absolute;
 }
-
 .mapcontainer .dillard {
   height: 4%;
   width: 9%;
@@ -1056,7 +1037,6 @@ main.research div.content h2 {
   margin-left: 76%;
   position: absolute;
 }
-
 .mapcontainer .lsuhsc {
   height: 4%;
   width: 10%;
@@ -1064,7 +1044,6 @@ main.research div.content h2 {
   margin-left: 75%;
   position: absolute;
 }
-
 .mapcontainer .nicholls {
   height: 4%;
   width: 11%;
@@ -1072,7 +1051,6 @@ main.research div.content h2 {
   margin-left: 50%;
   position: absolute;
 }
-
 .mapcontainer .tulane {
   height: 4%;
   width: 9%;
@@ -1080,7 +1058,6 @@ main.research div.content h2 {
   margin-left: 67%;
   position: absolute;
 }
-
 .mapcontainer .xavier {
   height: 4%;
   width: 9%;
@@ -2481,10 +2458,11 @@ main div.content #newsContainer.tne {
   margin-left: auto;
   margin-right: auto;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 1 300px;
+  -webkit-flex: 0 1 auto;
      -moz-box-flex: 0;
-      -ms-flex: 0 1 300px;
-          flex: 0 1 300px;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  max-height: 300px;
 }
 .events h2 {
   font-size: 2em;

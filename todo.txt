@@ -377,3 +377,51 @@ blue on one side of each line
 
 
 plain text version of resume
+
+//11-24
+//two more articles
+
+//email alexis - when I did the transcript thing, not 100% sure i got it, but i did send a link and a code and haven't received news since
+at this time/email using this service
+
+add hour to work time to cover transcript
+
+//cc nayong/john
+
+//remove sidebar, "cores"/services title
+
+//remove sidebar from research page too
+
+//ready for: core bucks button for mcbr flyer, and extra card on tne page
+
+//workshops - lbrn workshops link needs to go to the workshops page on events ,
+ //change to conferrences and workshops, links: go to /workshops (also update pulldown menu)
+
+//revert to 3 cards
+
+
+//adjust link for UNO , remove lines above links
+
+
+//Remind john - two student highlights
+
+//export, implement new icons
+
+
+//Samantha muprhy and tyler tran
+//highlight articles
+
+half/half header idea
+add to newest articles highlights list, check home
+////////////////////////
+
+
+highlight link on header bar similar to newsletter, hide when narrow
+
+submission link at top of highlights page, similar to newsletter page
+
+cores page fixes, title fixes, new logos, pulldown and double workshop fix, and two more highlight articles
+remove right menu from research page
+
+post-thanksgiving public
+highlights link is lower priority
