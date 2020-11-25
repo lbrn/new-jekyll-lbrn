@@ -420,5 +420,7 @@ submission link at top of highlights page, similar to newsletter page
 cores page fixes, title fixes, new logos, pulldown and double workshop fix, and two more highlight articles
 remove right menu from research page
 
+re-style map 
+
 post-thanksgiving public
 highlights link is lower priority
