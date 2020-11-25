@@ -6,9 +6,11 @@ excerpt_separator: <!--more-->
 textOnUrl: LBRN Coronavirus (COVID-19) Information
 ---
 
-As of November 5, 2020: Louisiana will stay in Phase 3 and keep its current COVID-19 mitigation measures in place for another 28 days, Gov. John Bel Edwards announced Thursday. The Governor’s Phase 3 order was set to expire Friday, and he has extended it until Friday, December 4, 2020. <!--more-->
+As of November 24, 2020 from Louisiana's Governer's statement: "Today, Gov. John Bel Edwards announced that the aggressive third surge of COVID-19 across all regions of Louisiana has made it necessary to impose tighter mitigation measures and step back to Phase 2 in order to protect public health. 
 
-[Louisiana's Governer's statement](https://gov.louisiana.gov/index.cfm/newsroom/detail/2783)
+The Governor’s updated Phase 2 proclamation, which is slightly modified from the summer, takes effect on Wednesday, November 25. It calls for reducing occupancy at some businesses, decreasing gathering sizes, limiting indoor consumption at many bars and urges everyone in Louisiana to avoid gatherings with people outside of their everyday households." <!--more-->
+
+[Louisiana's Governer's statement](https://gov.louisiana.gov/index.cfm/newsroom/detail/2830)
 
 LBRN is based at Louisiana State University in Baton Rouge with administrative staff at LSU School of Veterinary Medicine and the LSU Center for Computation & Technology. We shifted to working remotely on March 17th and continue to handle the day to day activities of the grant. Any announcements regarding our activities will come out as needed. If you have any questions, please do not hesitate to drop us a note at [LBRN E-mail](mailto:lbrn@.lsu.edu) if you are not already in touch with us directly.
 
