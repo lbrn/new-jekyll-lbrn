@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: highlight
 title: LBRN Student awarded Honors Student of the Year
 categories: Event
 eventDate: May 5, 2020
 startTime:
 endTime:
-img: ttran.jpg
+img: images/highlights/ttran.jpg
+ftimg: images/highlights/fttran.png
 description: Tyler Tran is a Junior from Slidell pursuing a B.S in Biology concentrating in Integrative Biology and a minor in chemistry. He has served as secretary and vice-president of Delta Omega Alpha pre-professional society, Treasurer of the Biology Undergraduate Society, Ambassador for the Southeastern Honors Program, and as a member of the Honors Student Association. Tyler earned Sophomore Honors Distinction, was an Honors Freshman of the Year Finalist, and a Southeastern Male Freshman of the Year nominee.
 link: http://www.southeastern.edu/acad_research/programs/honors/student-resources/recognitions/sp2020/student-year/index.html
 ---

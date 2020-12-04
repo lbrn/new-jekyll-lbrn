@@ -736,12 +736,17 @@ img{
           opacity: 0.5;
           // border-top: solid 1.5px $primary;
           border-bottom: solid 1.5px $primary;
+          -moz-transition: all 0.2s ease-in;
+          -o-transition: all 0.2s ease-in;
+          -webkit-transition: all 0.2x ease-in;
 
           &:hover {
-            background-color: $secondary;
+            background-color: transparentize($secondary, .8);
             -moz-transition: all 0.2s ease-in;
             -o-transition: all 0.2s ease-in;
             -webkit-transition: all 0.2x ease-in;
+            border: solid 1.5px $primary;
+            border-radius: 6px;
           }
         }
 
@@ -835,9 +840,9 @@ img{
 
         .ololc {
           height: 4%;
-          width: 9%;
+          width: 10%;
           margin-top: 37%;
-          margin-left: 51%;
+          margin-left: 50.5%;
           position: absolute;
         }
 
@@ -868,7 +873,7 @@ img{
         .ull {
           height: 4%;
           width: 6%;
-          margin-top: 63%;
+          margin-top: 62.75%;
           margin-left: 36%;
           position: absolute;
         }
@@ -876,7 +881,7 @@ img{
         .selu {
           height: 4%;
           width: 8%;
-          margin-top: 44%;
+          margin-top: 43.5%;
           margin-left: 65%;
           position: absolute;
         }
@@ -934,7 +939,7 @@ img{
     .tulane {
             height: 4%;
             width: 9%;
-            margin-top: 67%;
+            margin-top: 66.5%;
             margin-left: 67%;
             position: absolute;
           }
@@ -1505,6 +1510,10 @@ float:left;
       filter: $filter;
       background-image: url("../images/slider/3.jpg");
       // background-image: url("../images/headers/header-background_new-01.png");
+    }
+    header.cores {
+      filter: $filter;
+      background-image: url("../images/headers/header-background_new-11.svg");
     }
     header.bbc {
       filter: $filter;
@@ -2088,6 +2097,15 @@ float:left;
       &.highlights {
         background-color: $pentia;
         section {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          .natural-link{
+            flex: 0 0 100%;
+            padding-top: 10px;
+            text-align: center;
+            font-family: $bodyFont;
+          }
           .date {
               display: flex;
             img {
@@ -2135,9 +2153,18 @@ float:left;
               margin-bottom: 8px;
               line-height: 1.2;
               font-weight: 900;
+              @media (max-width: $lg){
+                font-size: 24px;
+              }
+              @media (max-width: $md){
+                font-size: 20px;
+              }
             }
             &.date-time{
               margin-bottom: 8px;
+              @media (max-width: $lg){
+                font-size: 17px;
+              }
             }
           }
         }
@@ -2152,6 +2179,11 @@ float:left;
             flex: 0 1 auto;
             max-height: 200px;
           }
+        }
+      }
+      @media (max-width: $lg) {
+        center .button{
+          margin-top: 0;
         }
       }
     }
@@ -2172,6 +2204,26 @@ float:left;
       margin-bottom: 4%;
       padding-bottom: 4%;
       transition: all .3s ease-in-out;
+      .natural-link {
+        h6 {
+          @media (max-width: $lg){
+            font-size: 16px;
+          }
+        }
+      }
+      @media (max-width: $md) {
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .date {
+          padding-bottom: 5%;
+        }
+        .natural-link {
+          text-align: center;
+        }
+      }
       &:last-child {
             border: none;
       }
@@ -2186,6 +2238,10 @@ float:left;
           font-family: $bodyFont;
           color: $primary;
           border-right: 1px solid $primary;
+          // color: red;
+          @media (max-width: $md){
+            width: 100%;
+          }
 
           .date-day{
             font-weight: 500;
@@ -2226,6 +2282,10 @@ float:left;
         float: right;
         font-family: $bodyFont;
         color: $primary;
+        // color: red;
+        @media (max-width: $md){
+          width: 100%;
+        }
           .title {
             font-size: 1.4em;
             margin-bottom: 0;
@@ -2369,7 +2429,7 @@ float:left;
     color: #4a66b4; }
 
 
-  #lbrnEventHeader {
+  #lbrnEventHeader, #lbrnHighlightHeader {
     background-color: $sexta;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2379,16 +2439,15 @@ float:left;
     margin-left: 0;
     margin-right: 0;
     padding-left: 4%;
-  }
-  #lbrnEventHeader h1 {
-    font-size: 2.4em;
-    line-height: 1.2em;
-    font-family: $titleFont;
-    color: $primary;
-    margin-top: .5em;
-    margin-bottom: .5em;
-  }
-  #lbrnEventHeader .imagebox {
+    h1 {
+     font-size: 2.4em;
+     line-height: 1.2em;
+     font-family: $titleFont;
+     color: $primary;
+     margin-top: .5em;
+     margin-bottom: .5em;
+   }
+   .imagebox {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -2398,63 +2457,90 @@ float:left;
     margin-right: 0;
     width: 100%;
     position: relative;
-    overflow: hidden; }
-  #lbrnEventHeader .imagebox img {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; }
-  #lbrnEventHeader .imagebox #quickReference {
-    position: absolute;
-    bottom: -95%;
-    left: -17px;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 1em;
-    padding-left: 3em; }
-  #lbrnEventHeader .imagebox #quickReference div {
-    display: block;
-    text-align: center;
-    margin-bottom: 1.5em; }
-  #lbrnEventHeader .imagebox #quickReference p {
-    margin: 1em;
-    margin-top: 2em;
-    font-family: $bodyFont;
-    color: $primary; }
-  #lbrnEventHeader div.caption {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 5%;
-    padding-top: 1.5em;
-    padding-bottom: 2em; }
-  #lbrnEventHeader div.caption h1 {
-    font-size: 2.4em;
-    line-height: 1.2em;
-    font-family: $titleFont;
-    color: $primary; }
-  #lbrnEventHeader div.caption p {
-    font-size: 1.2em;
-    font-family: $bodyFont;
-    color: $primary;
-    margin-top: .5em; }
-  #lbrnEventHeader div.caption #date {
-    font-family: $openFont;
-    font-weight: 300;
-    font-size: 1.25em;
-    line-height: 1em; }
-  #lbrnEventHeader div.caption .button {
-    margin-top: 1em;
-    padding: .4em 0;
-    width: 95%; }
+    overflow: hidden;
+    img {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     width: 100%;
+     float: left;
+     margin-left: 0;
+     margin-right: 0; }
+     #quickReference {
+      position: absolute;
+      bottom: -95%;
+      left: -17px;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 1em;
+      padding-left: 3em;
+      div {
+       display: block;
+       text-align: center;
+       margin-bottom: 1.5em; }
+       p {
+        margin: 1em;
+        margin-top: 2em;
+        font-family: $bodyFont;
+        color: $primary; }
+    }
+   }
+   div.caption {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     width: 100%;
+     float: left;
+     margin-left: 0;
+     margin-right: 0;
+     padding-left: 5%;
+     padding-top: 1.5em;
+     padding-bottom: 2em;
+     h1 {
+      font-size: 2.4em;
+      line-height: 1.2em;
+      font-family: $titleFont;
+      color: $primary; }
+    p {
+     font-size: 1.2em;
+     font-family: $bodyFont;
+     color: $primary;
+     margin-top: .5em; }
+     #date {
+      font-family: $openFont;
+      font-weight: 300;
+      font-size: 1.25em;
+      line-height: 1em; }
+       .button {
+        margin-top: 1em;
+        padding: .4em 0;
+        width: 95%; }
+   }
+  }
+  #lbrnHighlightHeader {
+    padding-left: 20px;
+    padding-right: 20px;
+    @media (max-width: $md){
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+    .imagebox {
+      img{
+        max-width: 100%;
+        width: auto;
+        max-height: 500px;
+        align-self: flex-start;
+      }
+    }
+    div.caption {
+      padding-left: 20px;
+      @media (max-width: $md){
+        padding-left: 0;
+      }
+
+    }
+  }
 
   #eventSummary, #eventMediaLink, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
     position: relative;
@@ -3784,8 +3870,8 @@ div.research img{
   .navdropdownbig ul li {
      width: unset;
      display:block;
-     &.socialMedia{
-       @media (max-width: 770px) and (min-width: $md){
+     &.socialMedia, .highlights{
+       @media (max-width: 900px) and (min-width: $md){
          display:none;
        }
      }
@@ -4105,7 +4191,21 @@ section.directory article.person{
       margin: 0 5%;
       margin-bottom: 1.5em;
       padding-bottom: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      @media (max-width: $md){
+        flex-direction: column;
+      }
+      .natural-link {
+        flex: 0 0 100%;
+        text-align: center;
+        padding-left: 50%;
+        &.noticelink {
+          padding-left: 0;
+        }
+      }
       .details {
+
         .title {
          font-size: 1em; }
         .description {
@@ -4113,6 +4213,7 @@ section.directory article.person{
       }
       .date {
         width: 48%;
+
         .date-day {
           font-size: 200%;
         }
@@ -4184,31 +4285,41 @@ section.directory article.person{
     float: right;
     margin-right: 0; } */
 
-  #lbrnEventHeader .imagebox {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 48.57143%;
-    float: right;
-    margin-right: 0; }
-  #lbrnEventHeader div.caption {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 48.57143%;
-    float: left;
-    margin-right: 2.85714%;
-    min-height: 100%; }
-  #lbrnEventHeader div.caption h1 {
-    font-size: 2.4em;
-    line-height: 1.2em;
-    font-family: $titleFont;
-    color: $primary; }
-  #lbrnEventHeader div.caption p {
-    font-size: 1.2em;
-    font-family: $bodyFont;
-    color: $primary;
-    margin-top: .5em; }
+  #lbrnEventHeader, #lbrnHighlightHeader {
+    .imagebox {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     width: 48.57143%;
+     float: right;
+     margin-right: 0;
+     display: flex;
+     img {
+       margin-left: auto;
+       margin-right: auto;
+     }
+   }
+     div.caption {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 48.57143%;
+      float: left;
+      margin-right: 2.85714%;
+      min-height: 100%;
+      h1 {
+       font-size: 2.4em;
+       line-height: 1.2em;
+       font-family: $titleFont;
+       color: $primary; }
+       p {
+        font-size: 1.2em;
+        font-family: $bodyFont;
+        color: $primary;
+        margin-top: .5em; }
+    }
+  }
+
 
   #matchHeight {
     -moz-box-sizing: border-box;
@@ -4378,19 +4489,16 @@ section.directory article.person{
     }
   }/* end of min-iwdth section*/
 @media (min-width: $lg) {
-  .events section .details {
-    width:50%;
-  }
-  .events section .date {
-    width:45%;
-  }
+  // .events section .details {
+  //   width:50%;
+  // }
+  // .events section .date {
+  //   width:45%;
+  // }
   #core-list .horiline-r{
     margin-left: 49%;
   }
 
-  // .socialMedia{
-  //   display:block;
-  // }
 
   .peoplewrap{
         width: 100%;
@@ -4521,7 +4629,7 @@ section.directory article.person {
   .npi{
     height: 10em!important;
   }
-  #lbrnEventHeader{
+  #lbrnEventHeader, #lbrnHighlightHeader{
     padding-left: unset;
   }
   .navdropdown li{

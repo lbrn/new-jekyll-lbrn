@@ -10,7 +10,7 @@
   <!-- both the same for now -->
     {% if highlight.img != nil %}
     <div class="date">
-      <img src="/images/highlights/{{highlight.img}}" alt="">
+      <img src="{{highlight.img}}" alt="">
     </div>
     {% endif %}
     {% if highlight.img != nil %}
@@ -41,4 +41,5 @@
   {% else %}
 
   {% endif %}
+  <a class="natural-link" href="{{highlight.url | relative_url }}"><h5>View Full Highlight </h5></a>
 </section>

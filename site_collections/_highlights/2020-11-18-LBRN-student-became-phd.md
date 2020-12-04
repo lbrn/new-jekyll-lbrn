@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: highlight
 title: LBRN Student became a Ph.D.
 categories: Event
 eventDate: September 18, 2020
 startTime:
 endTime:
-img: skm.png
+img: images/highlights/skm.png
+ftimg: images/highlights/ftskm.png
 description: Samantha K. Murphy fulfilled the requirements for the Doctor of Philosophy Degree in the Department of Microbiology and Immunology at LSU Health Shreveport on September 18, 2020.
 link:
 ---

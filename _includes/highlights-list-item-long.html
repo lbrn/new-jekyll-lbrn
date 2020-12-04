@@ -1,46 +1,55 @@
 <section id="{{highlight.date | date: '%d' }}{{highlight.date | date: '%b'}}">
   {% if highlight.link != nil %}
   <a href="{{highlight.link}}">
-  {% endif %}
-  {% if highlight.categories contains "Event" %}
-
-
-
-  {% if highlight.img != nil %}
-  <div class="date">
-    <img src="/images/highlights/{{highlight.img}}" alt="">
-    <!-- test yes img -->
-  </div>
-  {% endif %}
-  {% if highlight.img != nil %}
-  <div class="details">
-  {% else %}
-  <div class="details notice">
-
-  {% endif %}
-
-    <p class="title">{{highlight.title}}</p>
-    {% if highlight.eventDate != nil %}
-    <p class="date-time">{{highlight.eventDate}}</p>
     {% endif %}
-    <p class="description">{{highlight.description}}</p>
+    {% if highlight.categories contains "Event" %}
 
-    {% if highlight.startTime != nil }
-    <p class="date-time">{{highlight.startTime}} to {{highlight.endTime}}</p>
-    {% else %}
 
+
+    {% if highlight.img != nil %}
+    <div class="date">
+      <img src="{{highlight.img}}" alt="">
+      <!-- test yes img -->
+    </div>
     {% endif %}
+    {% if highlight.img != nil %}
+    <div class="details">
+      {% else %}
+      <div class="details notice">
 
-  </div>
-  {% else %}
-  <div class="notice details">
-    <p class="title">{{highlight.title}}</p>
-    <p class="description">{{highlight.description}}</p>
-  </div>
-  {% endif %}
+        {% endif %}
+
+        <p class="title">{{highlight.title}}</p>
+        {% if highlight.eventDate != nil %}
+        <p class="date-time">{{highlight.eventDate}}</p>
+        {% endif %}
+        <p class="description">{{highlight.description}}</p>
+
+        {% if highlight.startTime != nil }
+        <p class="date-time">{{highlight.startTime}} to {{highlight.endTime}}</p>
+        {% else %}
+        {% endif %}
+
+      </div>
+      {% else %}
+      <div class="notice details">
+        <p class="title">{{highlight.title}}</p>
+        <p class="description">{{highlight.description}}</p>
+      </div>
+      {% endif %}
+
   {% if highlight.link != nil %}
   </a>
   {% else %}
 
   {% endif %}
+
+    {% if highlight.img != nil %}
+    <a class="natural-link" href="{{highlight.url | relative_url }}">
+    {% else %}
+    <a class="natural-link noticelink" href="{{highlight.url | relative_url }}">
+    {% endif %}
+      <h6>View Full Highlight </h6>
+    </a>
+
 </section>

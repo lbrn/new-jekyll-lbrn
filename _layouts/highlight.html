@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/screen.css{% include style.html %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Louisiana Biomedical Research Network" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://lbrn.lsu.edu/" />
+	<meta property="og:image" content="https://lbrn.lsu.edu/images/LBRN_logo_wname.png" />
+	<meta property="og:image:alt" content="Louisiana Biomedical Research Network Square Logo Image depicting a high resoulution microscope, DNA helix, and image of the state of Louisiana with LBRN initials underneath." />
+  </head>
+  <body>
+
+
+    {% include dropdown.html %}
+
+    <main class="layout">
+      <section id="lbrnHighlightHeader">
+        {% if page.img %}
+          <div class="imagebox">
+            <!-- DYNAMIC:this image will have to be inserted into the src attribute. I used the Page title for the alt attribute -->
+            {% if page.ftimg %}
+            <img src="{{site.baseurl}}/{{page.ftimg}}" alt="{{page.title}}">
+            
+            {% else %}
+            <img src="{{site.baseurl}}/{{page.img}}" alt="{{page.title}}">
+            {% endif %}
+
+            <!-- FEATURED img? -->
+          </div>
+        {% endif %}
+        <div class="caption">
+          <h1>{{page.title}}</h1>
+          <p id="date">Event Date: {{page.eventDate}}</p>
+          <!-- <p id="date">Deadline: {{page.eventDeadlines}}</p>
+          <p>Location: {{page.eventLocation}}</p> -->
+          <!-- <a class="button" href="#eventRegistration">Registration Information</a> -->
+          {% if page.description != nil %}
+            <p class="date-time">{{page.description}}</p>
+          {% endif %}
+          {% if page.link != nil %}
+            <a class="button" href="{{page.link}}">
+              <h6>Article Link</h6>
+            </a>
+          {% endif %}
+        </div>
+      </section>
+      <!-- ALL USER INPUT CONTENT SHOULD BE CONTAINED WITHIN CONTENTS -->
+      <div class="content" >
+
+
+        {{content}}
+      </div>
+    </main>
+	{% include footer.html %}
+    {% include scriptfooter.html %}
+    {% include google-analytics.html %}
+  </body>
+</html>

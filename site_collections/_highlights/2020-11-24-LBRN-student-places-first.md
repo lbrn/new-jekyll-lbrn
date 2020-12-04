@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: highlight
 title: LBRN Student LSUS Senior Places First in National Competition
 categories: Event
 eventDate: September 24, 2020
 startTime:
 endTime:
-img: Prerana Ramesh.jpg
+img: images/highlights/Prerana Ramesh.jpg
+ftimg: images/highlights/ftram.png
 description: Shreveport, LA—LSU Shreveport senior Prerana Ramesh placed first in the Virtual Poster Presentation Competition in the 2020 UTHealth CPRIT Summer Undergraduate Fellowship Program. Ramesh also claimed a finalist title in the 90-Second Elevator Speech Competition.
 link: https://www.lsus.edu/news-and-events/lsus-senior-places-first-in-national-competition-during-uthealth-cprit-program
 ---

@@ -876,12 +876,19 @@ main.research div.content h2 {
 .mapcontainer a div {
   opacity: 0.5;
   border-bottom: solid 1.5px #2C3D6C;
-}
-.mapcontainer a div:hover {
-  background-color: #8ECB91;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2x ease-in;
+}
+.mapcontainer a div:hover {
+  background-color: rgba(142, 203, 145, 0.2);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2x ease-in;
+  border: solid 1.5px #2C3D6C;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
 }
 .mapcontainer .sus {
   height: 4%;
@@ -962,9 +969,9 @@ main.research div.content h2 {
 }
 .mapcontainer .ololc {
   height: 4%;
-  width: 9%;
+  width: 10%;
   margin-top: 37%;
-  margin-left: 51%;
+  margin-left: 50.5%;
   position: absolute;
 }
 .mapcontainer .subr {
@@ -991,14 +998,14 @@ main.research div.content h2 {
 .mapcontainer .ull {
   height: 4%;
   width: 6%;
-  margin-top: 63%;
+  margin-top: 62.75%;
   margin-left: 36%;
   position: absolute;
 }
 .mapcontainer .selu {
   height: 4%;
   width: 8%;
-  margin-top: 44%;
+  margin-top: 43.5%;
   margin-left: 65%;
   position: absolute;
 }
@@ -1054,7 +1061,7 @@ main.research div.content h2 {
 .mapcontainer .tulane {
   height: 4%;
   width: 9%;
-  margin-top: 67%;
+  margin-top: 66.5%;
   margin-left: 67%;
   position: absolute;
 }
@@ -1735,6 +1742,12 @@ header.research {
   background-image: url("../images/slider/3.jpg");
 }
 
+header.cores {
+  -webkit-filter: none;
+          filter: none;
+  background-image: url("../images/headers/header-background_new-11.svg");
+}
+
 header.bbc {
   -webkit-filter: none;
           filter: none;
@@ -2394,6 +2407,33 @@ main div.content #newsContainer.tne {
 .events .feed.highlights {
   background-color: #def0df;
 }
+.events .feed.highlights section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.events .feed.highlights section .natural-link {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  padding-top: 10px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
 .events .feed.highlights section .date {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2443,8 +2483,23 @@ main div.content #newsContainer.tne {
   line-height: 1.2;
   font-weight: 900;
 }
+@media (max-width: 860px) {
+  .events.highlights section .details p.title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 667px) {
+  .events.highlights section .details p.title {
+    font-size: 20px;
+  }
+}
 .events.highlights section .details p.date-time {
   margin-bottom: 8px;
+}
+@media (max-width: 860px) {
+  .events.highlights section .details p.date-time {
+    font-size: 17px;
+  }
 }
 .events.highlights section .date {
   display: -webkit-box;
@@ -2474,6 +2529,11 @@ main div.content #newsContainer.tne {
           flex: 0 1 auto;
   max-height: 200px;
 }
+@media (max-width: 860px) {
+  .events.highlights center .button {
+    margin-top: 0;
+  }
+}
 .events h2 {
   font-size: 2em;
   font-family: "Open Sans", sans-serif;
@@ -2495,6 +2555,38 @@ main div.content #newsContainer.tne {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 860px) {
+  .events section .natural-link h6 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 667px) {
+  .events section {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .events section .date {
+    padding-bottom: 5%;
+  }
+  .events section .natural-link {
+    text-align: center;
+  }
+}
 .events section:last-child {
   border: none;
 }
@@ -2507,6 +2599,11 @@ main div.content #newsContainer.tne {
   font-family: "Ubuntu", sans-serif;
   color: #2C3D6C;
   border-right: 1px solid #2C3D6C;
+}
+@media (max-width: 667px) {
+  .events section .date {
+    width: 100%;
+  }
 }
 .events section .date .date-day {
   font-weight: 500;
@@ -2551,6 +2648,11 @@ main div.content #newsContainer.tne {
   float: right;
   font-family: "Ubuntu", sans-serif;
   color: #2C3D6C;
+}
+@media (max-width: 667px) {
+  .events section .details {
+    width: 100%;
+  }
 }
 .events section .details .title {
   font-size: 1.4em;
@@ -2710,7 +2812,7 @@ main div.content #newsContainer.tne {
   color: #4a66b4;
 }
 
-#lbrnEventHeader {
+#lbrnEventHeader, #lbrnHighlightHeader {
   background-color: #d4ebd5;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2721,8 +2823,7 @@ main div.content #newsContainer.tne {
   margin-right: 0;
   padding-left: 4%;
 }
-
-#lbrnEventHeader h1 {
+#lbrnEventHeader h1, #lbrnHighlightHeader h1 {
   font-size: 2.4em;
   line-height: 1.2em;
   font-family: "Open Sans Condensed", sans-serif;
@@ -2730,8 +2831,7 @@ main div.content #newsContainer.tne {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-
-#lbrnEventHeader .imagebox {
+#lbrnEventHeader .imagebox, #lbrnHighlightHeader .imagebox {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2743,8 +2843,7 @@ main div.content #newsContainer.tne {
   position: relative;
   overflow: hidden;
 }
-
-#lbrnEventHeader .imagebox img {
+#lbrnEventHeader .imagebox img, #lbrnHighlightHeader .imagebox img {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2753,8 +2852,7 @@ main div.content #newsContainer.tne {
   margin-left: 0;
   margin-right: 0;
 }
-
-#lbrnEventHeader .imagebox #quickReference {
+#lbrnEventHeader .imagebox #quickReference, #lbrnHighlightHeader .imagebox #quickReference {
   position: absolute;
   bottom: -95%;
   left: -17px;
@@ -2764,21 +2862,18 @@ main div.content #newsContainer.tne {
   padding: 1em;
   padding-left: 3em;
 }
-
-#lbrnEventHeader .imagebox #quickReference div {
+#lbrnEventHeader .imagebox #quickReference div, #lbrnHighlightHeader .imagebox #quickReference div {
   display: block;
   text-align: center;
   margin-bottom: 1.5em;
 }
-
-#lbrnEventHeader .imagebox #quickReference p {
+#lbrnEventHeader .imagebox #quickReference p, #lbrnHighlightHeader .imagebox #quickReference p {
   margin: 1em;
   margin-top: 2em;
   font-family: "Ubuntu", sans-serif;
   color: #2C3D6C;
 }
-
-#lbrnEventHeader div.caption {
+#lbrnEventHeader div.caption, #lbrnHighlightHeader div.caption {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2790,32 +2885,55 @@ main div.content #newsContainer.tne {
   padding-top: 1.5em;
   padding-bottom: 2em;
 }
-
-#lbrnEventHeader div.caption h1 {
+#lbrnEventHeader div.caption h1, #lbrnHighlightHeader div.caption h1 {
   font-size: 2.4em;
   line-height: 1.2em;
   font-family: "Open Sans Condensed", sans-serif;
   color: #2C3D6C;
 }
-
-#lbrnEventHeader div.caption p {
+#lbrnEventHeader div.caption p, #lbrnHighlightHeader div.caption p {
   font-size: 1.2em;
   font-family: "Ubuntu", sans-serif;
   color: #2C3D6C;
   margin-top: 0.5em;
 }
-
-#lbrnEventHeader div.caption #date {
+#lbrnEventHeader div.caption #date, #lbrnHighlightHeader div.caption #date {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.25em;
   line-height: 1em;
 }
-
-#lbrnEventHeader div.caption .button {
+#lbrnEventHeader div.caption .button, #lbrnHighlightHeader div.caption .button {
   margin-top: 1em;
   padding: 0.4em 0;
   width: 95%;
+}
+
+#lbrnHighlightHeader {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 667px) {
+  #lbrnHighlightHeader {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+#lbrnHighlightHeader .imagebox img {
+  max-width: 100%;
+  width: auto;
+  max-height: 500px;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+#lbrnHighlightHeader div.caption {
+  padding-left: 20px;
+}
+@media (max-width: 667px) {
+  #lbrnHighlightHeader div.caption {
+    padding-left: 0;
+  }
 }
 
 #eventSummary, #eventMediaLink, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
@@ -4536,8 +4654,8 @@ width: 52.5%;
   /* div.resources img, div.research img {
     max-width: 90%; } */
 }
-@media (min-width: 667px) and (max-width: 770px) and (min-width: 667px) {
-  .navdropdownbig ul li.socialMedia {
+@media (min-width: 667px) and (max-width: 900px) and (min-width: 667px) {
+  .navdropdownbig ul li.socialMedia, .navdropdownbig ul li .highlights {
     display: none;
   }
 }
@@ -4924,13 +5042,50 @@ width: 52.5%;
     margin: 0 5%;
     margin-bottom: 1.5em;
     padding-bottom: 1em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
+}
+@media (min-width: 667px) and (max-width: 667px) {
+  .events section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 667px) {
+  .events section .natural-link {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    text-align: center;
+    padding-left: 50%;
+  }
+  .events section .natural-link.noticelink {
+    padding-left: 0;
+  }
+}
+@media (min-width: 667px) {
   .events section .details .title {
     font-size: 1em;
   }
   .events section .details .description {
     display: block;
   }
+}
+@media (min-width: 667px) {
   .events section .date {
     width: 48%;
   }
@@ -4940,6 +5095,8 @@ width: 52.5%;
   .events section .date .date-month {
     font-size: 1.5em;
   }
+}
+@media (min-width: 667px) {
   .events .feed {
     /* background-color: $pentia; */
     background-color: #c2e3c4;
@@ -5017,17 +5174,24 @@ width: 52.5%;
   }
 }
 @media (min-width: 667px) {
-  #lbrnEventHeader .imagebox {
+  #lbrnEventHeader .imagebox, #lbrnHighlightHeader .imagebox {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 48.57143%;
     float: right;
     margin-right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-}
-@media (min-width: 667px) {
-  #lbrnEventHeader div.caption {
+  #lbrnEventHeader .imagebox img, #lbrnHighlightHeader .imagebox img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #lbrnEventHeader div.caption, #lbrnHighlightHeader div.caption {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -5036,17 +5200,13 @@ width: 52.5%;
     margin-right: 2.85714%;
     min-height: 100%;
   }
-}
-@media (min-width: 667px) {
-  #lbrnEventHeader div.caption h1 {
+  #lbrnEventHeader div.caption h1, #lbrnHighlightHeader div.caption h1 {
     font-size: 2.4em;
     line-height: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
     color: #2C3D6C;
   }
-}
-@media (min-width: 667px) {
-  #lbrnEventHeader div.caption p {
+  #lbrnEventHeader div.caption p, #lbrnHighlightHeader div.caption p {
     font-size: 1.2em;
     font-family: "Ubuntu", sans-serif;
     color: #2C3D6C;
@@ -5281,14 +5441,6 @@ width: 52.5%;
 }
 /* end of min-iwdth section*/
 @media (min-width: 860px) {
-  .events section .details {
-    width: 50%;
-  }
-
-  .events section .date {
-    width: 45%;
-  }
-
   #core-list .horiline-r {
     margin-left: 49%;
   }
@@ -5438,7 +5590,7 @@ width: 52.5%;
     height: 10em !important;
   }
 
-  #lbrnEventHeader {
+  #lbrnEventHeader, #lbrnHighlightHeader {
     padding-left: unset;
   }
 
