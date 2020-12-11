@@ -2460,6 +2460,7 @@ float:left;
     position: relative;
     overflow: hidden;
     img {
+      align-self: flex-start;
      -moz-box-sizing: border-box;
      -webkit-box-sizing: border-box;
      box-sizing: border-box;

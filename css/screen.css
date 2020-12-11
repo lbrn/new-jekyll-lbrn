@@ -2845,6 +2845,9 @@ main div.content #newsContainer.tne {
   overflow: hidden;
 }
 #lbrnEventHeader .imagebox img, #lbrnHighlightHeader .imagebox img {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
