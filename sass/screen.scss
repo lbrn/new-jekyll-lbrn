@@ -598,6 +598,7 @@ img{
           flex-direction: column;
           // flex: 1 1 5%;
           flex: 1 1 auto;
+          margin-bottom: -50px;
           img{
             // padding-top: .5em;
             padding-top: 1em;
@@ -1513,7 +1514,7 @@ float:left;
     }
     header.cores {
       filter: $filter;
-      background-image: url("../images/headers/header-background_new-11.svg");
+      background-image: url("../images/headers/header-background_new-13.svg");
     }
     header.bbc {
       filter: $filter;

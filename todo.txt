@@ -426,3 +426,41 @@ add to newest articles highlights list, check home
 
 post-thanksgiving public
 highlights link is lower priority
+
+
+new header options done
+highlight link in bar done
+cleaned up map, new style for map hover
+full view link/page
+
+
+//==============
+12-7-2020-meeting
+
+test website is up
+versions of the graphics
+
+flip entire image
+
+bbc logo green could be a bit darker , saturate a bit more? maybe grab from header
+
+//remove 2nd dna helix right next to the thing, remove the //circle one and the overlapping background one
+
+//try: hide extra dna
+//less thick lines, darker on left maybe?
+//move visible binary
+//in blue dna on the green side? green binary in circles ?
+//move helix more towards the center
+
+//try blue/green helix, matching the side its on
+
+flip bg, make text pop more
+
+maybe use on main page
+
+
+LBRN cores page : move text up, some overlap in area
+
+merge main in, new stories
+
+new repo?
