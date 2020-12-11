@@ -6,9 +6,9 @@
   {% if post.eventDate != nil %}
     <p class="post-date"><span class="pre">Event Date: </span>{{post.eventDate}}</p>
   {% else %}
-    <p class="post-date"><span class="pre">Post Date: </span>{{post.date | date:" %B, %-d %Y"}}</p>
+    <p class="post-date"><span class="pre">Post Date: </span>{{post.date | date:" %B %-d, %Y"}}</p>
   {% endif %}
-  <!-- <p class="post-date">{{post.date | date:" %B, %-d %Y"}}</p> -->
+  <!-- <p class="post-date">{{post.date | date:" %B %-d, %Y"}}</p> -->
   <p class="summary">{{post.excerpt | strip_html }}</p>
   <a class="post-link" href="{{site.baseurl}}{{post.url}}">View&nbsp;full&nbsp;story</a>
 </article>
