@@ -1512,7 +1512,7 @@ float:left;
       background-image: url("../images/slider/3.jpg");
       // background-image: url("../images/headers/header-background_new-01.png");
     }
-    header.cores {
+    header.cores, header.home{
       filter: $filter;
       background-image: url("../images/headers/header-background_new-13.svg");
     }
