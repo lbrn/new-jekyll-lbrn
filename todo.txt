@@ -442,7 +442,7 @@ versions of the graphics
 
 flip entire image
 
-bbc logo green could be a bit darker , saturate a bit more? maybe grab from header
+//bbc logo green could be a bit darker , saturate a bit more? maybe grab from header
 
 //remove 2nd dna helix right next to the thing, remove the //circle one and the overlapping background one
 
@@ -459,8 +459,59 @@ flip bg, make text pop more
 maybe use on main page
 
 
-LBRN cores page : move text up, some overlap in area
+//LBRN cores page : move text up, some overlap in area
 
 merge main in, new stories
 
-new repo?
+
+=========
+12-15-2020
+=========
+
+cores page : article like, text to the left of the logo
+
+try no bg color
+-25% large icons
+
+less thickk or lighter blue borders
+
+less parts to circle, less busy version
+helix in front of line
+
+modify logo colors for visibility
+
+dark blue menu bar text and something
+
+news button on menu bar
+
+maybe move social media bar to a 2nd row beneath the highlights/newsletter? which gives more font room for the left side stuff
+
+
+transpaceny issue on DNA
+potential widescreen stuff
+
+kinda dark
+highlight flagship
+different type of icon for flagship ? color?
+
+
+
+outter edge highlight state?
+
+
+priority:
+map first
+hide banner
+new branch for nitpicky stuff
+
+access issue - events, highlights, news are all caps, make em lowercase properly
+
+solidify banner image / hold off for now hide banners on ramesh branch
+
+white version of core page
+finalize that branch for now
+
+new repo
+
+how to tag to make sure it shows up in the right place
+e.g. workshops lectures, what groups do we have
