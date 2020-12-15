@@ -452,6 +452,7 @@ main.research div.content h2 {
           flex-wrap: wrap;
   /* background-color: $resgreen; */
   background-color: #def0df;
+  background-color: transparent;
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
           border-radius: 10px;
@@ -480,6 +481,7 @@ main.research div.content h2 {
 }
 .services .row:nth-of-type(even) {
   background-color: #c2e2c4;
+  background-color: transparent;
   -webkit-border-radius: 5px 10px 15px 20px;
      -moz-border-radius: 5px 10px 15px 20px;
           border-radius: 5px 10px 15px 20px;
@@ -487,6 +489,7 @@ main.research div.content h2 {
 }
 .services .row:nth-of-type(even) .service:first-child {
   background-color: #d4ebd5;
+  background-color: transparent;
 }
 .services .row:nth-of-type(even) .service:first-child a.btn {
   background-color: #c2e2c4;
@@ -515,13 +518,13 @@ main.research div.content h2 {
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-     -moz-box-orient: vertical;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
      -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 100%;
      -moz-box-flex: 1;
@@ -593,6 +596,7 @@ main.research div.content h2 {
 }
 .services .row .service:nth-child(2) {
   background-color: #c2e2c4;
+  background-color: transparent;
 }
 .services .row .service:only-child img:first-child {
   margin-left: auto;
@@ -630,6 +634,7 @@ main.research div.content h2 {
 }
 .services .row .service:nth-of-type(even) {
   background-color: #c2e2c4;
+  background-color: transparent;
 }
 .services .row .service:nth-of-type(even) .btn {
   color: #2C3D6C;
@@ -710,11 +715,6 @@ main.research div.content h2 {
 @media (max-width: 860px) {
   .services .row .service .text {
     padding-left: 0.5em;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-       -moz-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
   }
 }
 .services .row .service span {
@@ -731,24 +731,28 @@ main.research div.content h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
+  -webkit-flex: 1 1 20%;
      -moz-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  margin-bottom: -50px;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
 }
 .services .row .service span img {
   padding-top: 1em;
+  padding-left: 5px;
+  padding-right: 5px;
   margin: 0;
+  max-height: 150px;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 200px;
+  -webkit-flex: 1 1 100%;
      -moz-box-flex: 1;
-      -ms-flex: 1 1 200px;
-          flex: 1 1 200px;
-  max-height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  /* order:99; */
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+@media (max-width: 860px) {
+  .services .row .service span img {
+    max-height: 110px;
+    padding: 0;
+  }
 }
 .services .row .service img {
   padding-top: 1em;
