@@ -12,7 +12,7 @@ link: https://edu.tbioinfo.com/lbrn-2020-1
 Omics LOGIC Bioinformatics Training has been designed by LBRN in collaboration with Pine Biotech to give students access to basic introductory to advanced analytical bioinformatics courses. The training will be made available through our online platform for students interested in learning about Big Data Bioinformatics. The training is modeled after undergraduate and graduate course topics at LSU, Georgetown University Medical Center and other universities and was designed by faculty and researchers at the Tauber Bioinformatics Research Center.<!--more-->
 
 <section style="overflow: hidden;">
-<a href="LBRN-OmicsLOGICS-2021.2020.12.15.pdf" alt="" target="_blank"><img src="http://localhost:4000/images/postImages/LBRN-OmicsLOGICS-2021.2020.12.15.p1.png" alt="OmicsLOGIC Bioinformatics Training (2020.12.15) Page 1" style="float:right;width:400px;border:0;padding-left:20px;"></a>
+<a href="LBRN-OmicsLOGICS-2021.2020.12.15.pdf" alt="" target="_blank"><img src="images/postImages/LBRN-OmicsLOGICS-2021.2020.12.15.p1.png" alt="OmicsLOGIC Bioinformatics Training (2020.12.15) Page 1" style="float:right;width:400px;border:0;padding-left:20px;"></a>
 
 <p>This online training is your opportunity to master BIOINFORMATICS as a supplement to other coursework and receive a certificate from the Louisiana Biomedical Research Network (LBRN). Bioinformatics is a discipline that combines Mathematics, Computer Science and Biology.</p>
 <p>By applying for this program, you will gain access to OMICS LOGIC resources on a monthly subscription which provides access to 12 online courses that cover various domains of Big Data Bioinformatics. The same license also enables participants to access the AI guided and user-friendly T-BioInfo platform for hands-on analytical experience and practice.</p>
@@ -21,6 +21,6 @@ Omics LOGIC Bioinformatics Training has been designed by LBRN in collaboration 
 </section>
 
 Flier for all the details. OmicsLOGIC Bioinformatics Training:
-<a href="http://localhost:4000/downloads/LBRN-OmicsLOGICS-2021.2020.12.15.pdf" alt="" target="_blank">OmicsLOGIC Bioinformatics Training (2020.12.15)</a>
+<a href="downloads/LBRN-OmicsLOGICS-2021.2020.12.15.pdf" alt="" target="_blank">OmicsLOGIC Bioinformatics Training (2020.12.15)</a>
 
 ### [Learn more and registration on this link.](https://edu.tbioinfo.com/lbrn-2020-1)
