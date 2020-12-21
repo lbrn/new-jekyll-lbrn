@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: LBRN Omics LOGIC Bioinformatics Training
-categories: featured
+categories: news
 featuredImageUrl: images/postImages/LBRN-OmicsLOGICS-2021-header.v2.png
 featuredImageUrlSquare: images/postImages/Omics_Bioinformatics_Training.png
 excerpt_separator: <!--more-->
