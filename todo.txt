@@ -468,7 +468,7 @@ merge main in, new stories
 12-15-2020
 =========
 
-cores page : article like, text to the left of the logo
+//cores page : article like, text to the left of the logo
 
 //try no bg color
 //-25% large icons

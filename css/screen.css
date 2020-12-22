@@ -1748,7 +1748,7 @@ header.research {
 header.cores, header.home {
   -webkit-filter: none;
           filter: none;
-  background-image: url("../images/headers/header-background_new-13.svg");
+  background-image: url("../images/headers/header-background_new-15.svg");
 }
 
 header header.bbc {
@@ -1799,13 +1799,11 @@ header h1 {
   margin-left: 0;
   margin-right: 0;
 }
-
 .navdropdown ul {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-
 .navdropdown li {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
@@ -1855,12 +1853,7 @@ div.navdropdown li.socialMedia {
   color: white;
 }
 
-.navdropdown li a:hover {
-  background-color: #b1dbb3;
-  color: white;
-}
-
-.navdropdown li a {
+.navdropdown li a .navdropdown li a {
   padding: 1em 0.25em;
   text-decoration: none;
   display: block;
@@ -1871,6 +1864,10 @@ div.navdropdown li.socialMedia {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
+}
+.navdropdown li a .navdropdown li a:hover {
+  background-color: #b1dbb3;
+  color: white;
 }
 
 .navdropdown ul li a:hover {
