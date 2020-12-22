@@ -1740,19 +1740,18 @@ header {
   -webkit-filter: none;
           filter: none;
 }
-
 header.research {
   -webkit-filter: none;
           filter: none;
   background-image: url("../images/slider/3.jpg");
 }
-
 header.cores, header.home {
   -webkit-filter: none;
           filter: none;
+  background-image: url("../images/headers/header-background_new-13.svg");
 }
 
-header.bbc {
+header header.bbc {
   -webkit-filter: none;
           filter: none;
 }

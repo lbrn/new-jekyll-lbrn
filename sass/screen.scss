@@ -1512,16 +1512,22 @@ float:left;
     margin-right: 0;
     position: relative;
     filter: $filter;
-  }
-    header.research {
+    &.research {
       filter: $filter;
       background-image: url("../images/slider/3.jpg");
       // background-image: url("../images/headers/header-background_new-01.png");
     }
-    header.cores, header.home{
+    &.cores, &.home{
       filter: $filter;
-      // background-image: url("../images/headers/header-background_new-13.svg");
+      background-image: url("../images/headers/header-background_new-13.svg");
     }
+  }
+    // header.research {
+    //   filter: $filter;
+    //   background-image: url("../images/slider/3.jpg");
+      // background-image: url("../images/headers/header-background_new-01.png");
+    // }
+    header
     header.bbc {
       filter: $filter;
       // background-image: url("../images/slider/3.jpg");

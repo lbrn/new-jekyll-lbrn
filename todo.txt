@@ -470,15 +470,15 @@ merge main in, new stories
 
 cores page : article like, text to the left of the logo
 
-try no bg color
--25% large icons
+//try no bg color
+//-25% large icons
 
-less thickk or lighter blue borders
+//less thickk or lighter blue borders
 
 less parts to circle, less busy version
-helix in front of line
+//helix in front of line
 
-modify logo colors for visibility
+//modify logo colors for visibility
 
 dark blue menu bar text and something
 
@@ -487,29 +487,23 @@ news button on menu bar
 maybe move social media bar to a 2nd row beneath the highlights/newsletter? which gives more font room for the left side stuff
 
 
-transpaceny issue on DNA
-potential widescreen stuff
-
-kinda dark
-highlight flagship
-different type of icon for flagship ? color?
-
-
+//transpaceny issue on DNA
+//potential widescreen stuff
 
 outter edge highlight state?
 
 
 priority:
-map first
-hide banner
+//map first
+//hide banner
 new branch for nitpicky stuff
 
-access issue - events, highlights, news are all caps, make em lowercase properly
+//access issue - events, highlights, news are all caps, make em lowercase properly
 
 solidify banner image / hold off for now hide banners on ramesh branch
 
-white version of core page
-finalize that branch for now
+//white version of core page
+//finalize that branch for now
 
 new repo
 

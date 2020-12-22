@@ -29,7 +29,7 @@
       <aside class="events">
         <div class="feed">
 
-        <h2>EVENTS</h2>
+        <h2>Events</h2>
 
         {% assign eventsR = site.events %}
           {% for event in site.events %}
@@ -53,7 +53,7 @@
           </div>
           <div class="feed highlights">
 
-          <h2>HIGHLIGHTS</h2>
+          <h2>Highlights</h2>
           {% assign highlightsRev = site.highlights | reverse %}
           {% for highlight in highlightsRev limit:2 %}
             {% include highlights-list-item.html %}
@@ -74,7 +74,7 @@
       <!-- <aside class="events">
           </aside> -->
       <section class="news" id="newsContainer">
-        <h2>NEWS</h2>
+        <h2>News</h2>
 
         {% assign news-post = site.posts | where: "categories", "news" %}
         {% for post in site.categories.featured %}
