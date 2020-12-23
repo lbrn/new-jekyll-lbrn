@@ -1854,7 +1854,6 @@ div.navdropdown li.socialMedia {
 }
 .navdropdown li.right > a {
   display: inline-block;
-  margin: 8px 0;
 }
 .navdropdown li.right > a:hover {
   color: #2C3D6C;
@@ -1866,8 +1865,8 @@ div.navdropdown li.socialMedia {
 }
 .navdropdown li.right.socialMedia {
   display: inline-block;
-  padding: 1em 0.5em;
   margin: 0;
+  margin-right: 0.5em;
 }
 
 .navdropdown ul li a:hover {
