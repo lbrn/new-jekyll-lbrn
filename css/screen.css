@@ -1816,25 +1816,23 @@ div.navdropdown li.socialMedia {
   margin-right: 0.5em;
 }
 
-.navdropdown li.right {
-  /* margin-left: .5em; */
-  margin-right: unset;
-}
-
-.navdropdown li.right > a {
-  padding: 1em 0.2em;
-  display: inline-block;
-}
-
-.navdropdown li.right > a:hover {
+.navdropdown li a {
+  padding: 1em 0.25em;
+  text-decoration: none;
+  display: block;
+  /* color: red; */
+  color: white;
   color: #2C3D6C;
-  -webkit-transition: ALL 0.15s;
-  -o-transition: ALL 0.15s;
-  -moz-transition: ALL 0.15s;
-  transition: ALL 0.15s;
-  background-color: unset;
+  text-decoration: none;
+  padding: 1em 0;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-
+.navdropdown li a:hover {
+  background-color: #b1dbb3;
+  color: white;
+}
 .navdropdown li a.button {
   border: 2px solid #2C3D6C;
   -webkit-border-radius: 25px;
@@ -1847,27 +1845,29 @@ div.navdropdown li.socialMedia {
   font-size: 0.8em;
   float: none;
 }
-
 .navdropdown li a.button:hover {
   background-color: #2C3D6C;
   color: white;
 }
-
-.navdropdown li a .navdropdown li a {
-  padding: 1em 0.25em;
-  text-decoration: none;
-  display: block;
-  /* color: red; */
-  color: white;
-  text-decoration: none;
-  padding: 1em 0;
-  display: block;
-  text-transform: uppercase;
-  font-weight: bold;
+.navdropdown li.right {
+  margin-right: unset;
 }
-.navdropdown li a .navdropdown li a:hover {
-  background-color: #b1dbb3;
-  color: white;
+.navdropdown li.right > a {
+  display: inline-block;
+  margin: 8px 0;
+}
+.navdropdown li.right > a:hover {
+  color: #2C3D6C;
+  -webkit-transition: ALL 0.15s;
+  -o-transition: ALL 0.15s;
+  -moz-transition: ALL 0.15s;
+  transition: ALL 0.15s;
+  background-color: unset;
+}
+.navdropdown li.right.socialMedia {
+  display: inline-block;
+  padding: 1em 0.5em;
+  margin: 0;
 }
 
 .navdropdown ul li a:hover {
@@ -4878,6 +4878,7 @@ width: 52.5%;
     /* font-size: 1.2em; */
     border: none;
     color: white;
+    color: #2C3D6C;
   }
 }
 @media (min-width: 667px) {
