@@ -509,3 +509,50 @@ new repo
 
 how to tag to make sure it shows up in the right place
 e.g. workshops lectures, what groups do we have
+
+
+//
+===============
+12-23-2020
+-----==========
+mid-janiary zoom backgrounds
+2-3 weeks from now
+4 weeks
+certificate style too
+2 from certificate style and 2 from ehader style
+include lbrn logo
+
+hired effective the 17th- to the date i put in hours
+
+start break tomorrow
+holiday to the 1st
+
+update from main
+
+remember guide for tagging
+
+
+in the logo for cores page: maginify glass, state, dna helix on page
+we should
+improve the logos on the LBRN logo
+different versions playing with the colors we use for mcbr/bbc background while having the same or different image
+
+hexagon logo pieced together which groups are represented based on logo
+blue/green versions of the others
+
+small version of dna helix
+
+use the elements we have explored via banneretc
+new hexagon versions
+ties to zoom: affiliated with different cores
+diff color versions
+
+social media thing below highlights, also consider thicker font or change typeface
+
+add news section
+add news to the thing and move social media down 
+
+break up news via pages on jekyll
+
+outline seems a bit heavy, and thing is a bit dark
+up the opacity a bit? etc
