@@ -1896,11 +1896,26 @@ header h1 {
   margin-left: auto;
   margin-right: auto;
 }
+.navdropdown ul li ul li a:hover {
+  background-color: #d4ebd5;
+  color: #2C3D6C;
+}
+.navdropdown ul li a:hover {
+  background-color: #7dc380;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  color: white;
+}
 .navdropdown li {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   border-bottom: 1px solid white;
   font-size: 1.2em;
+}
+.navdropdown li:last-child {
+  border: none;
 }
 .navdropdown li a {
   padding: 1em 0.25em;
@@ -1937,12 +1952,15 @@ header h1 {
 }
 .navdropdown li.right {
   margin-right: unset;
+  margin: 0.955em 0;
 }
 .navdropdown li.right > a {
   display: inline-block;
+  margin: 0;
+  margin-bottom: 0.955em;
 }
 .navdropdown li.right > a:hover {
-  color: #2C3D6C;
+  color: white;
   -webkit-transition: ALL 0.15s;
   -o-transition: ALL 0.15s;
   -moz-transition: ALL 0.15s;
@@ -1962,8 +1980,6 @@ header h1 {
 .navdropdown li.right .socialMedia a {
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 0;
-  color: red;
 }
 @media (max-width: 900px) and (min-width: 667px) {
   .navdropdown li.right .socialMedia .highlights {
@@ -1990,24 +2006,6 @@ header h1 {
     display: -ms-flexbox;
     display: flex;
   }
-}
-
-.navdropdown ul li a:hover {
-  background-color: #7dc380;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-  color: white;
-}
-
-.navdropdown ul li ul li a:hover {
-  background-color: #d4ebd5;
-  color: #2C3D6C;
-}
-
-.navdropdown li:last-child {
-  border: none;
 }
 
 .mediapage p {

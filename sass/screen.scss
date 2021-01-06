@@ -1771,6 +1771,18 @@ header h1 {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    li {
+      ul li a:hover {
+        background-color: $sexta;
+        color: $primary;
+      }
+      a:hover {
+        background-color: $tertiary;
+        transition: all 0.2s;
+        color: white;
+      }
+
+    }
   }
 
   li {
@@ -1778,7 +1790,9 @@ header h1 {
     text-align: center;
     border-bottom: 1px solid white;
     font-size: 1.2em;
-
+    &:last-child {
+      border: none;
+    }
     a {
       padding: 1em 0.25em;
       text-decoration: none;
@@ -1818,11 +1832,15 @@ header h1 {
       margin-right: unset;
       // display:flex;
       // flex-direction: column;
+      margin: 0.955em 0;
       > a {
         display: inline-block;
         // margin: 8px 0;
+        margin: 0;
+        margin-bottom: .955em;
+
         &:hover {
-          color: $primary;
+          color: white;
           transition: ALL 0.15s;
           background-color: unset;
         }
@@ -1840,8 +1858,8 @@ header h1 {
         a {
           margin-left: auto;
           margin-right: auto;
-          padding: 10px 0;
-          color: red;
+          // padding: 10px 0;
+          // color: red;
         }
         .highlights {
           @media (max-width: 900px) and (min-width: $md) {
@@ -1862,26 +1880,21 @@ header h1 {
   }
 }
 
-// div.navdropdown li.socialMedia {
-//   /* margin-left: .5em; */
-//   margin-right: 0.5em;
+
+// .navdropdown ul li a:hover {
+//   background-color: $tertiary;
+//   transition: all 0.2s;
+//   color: white;
 // }
 
+// .navdropdown ul li ul li a:hover {
+//   background-color: $sexta;
+//   color: $primary;
+// }
 
-.navdropdown ul li a:hover {
-  background-color: $tertiary;
-  transition: all 0.2s;
-  color: white;
-}
-
-.navdropdown ul li ul li a:hover {
-  background-color: $sexta;
-  color: $primary;
-}
-
-.navdropdown li:last-child {
-  border: none;
-}
+// .navdropdown li:last-child {
+//   border: none;
+// }
 
 .mediapage p {
   font-size: 16pt;
@@ -4490,13 +4503,6 @@ footer span {
   .navdropdownbig ul li {
     width: unset;
     display: block;
-
-    &.socialMedia,
-    .highlights {
-    //   @media (max-width: 900px) and (min-width: $md) {
-    //     display: none;
-    //   }
-    }
 
     &:hover ul {
       display: block;
