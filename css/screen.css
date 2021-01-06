@@ -1952,7 +1952,7 @@ header h1 {
 }
 .navdropdown li.right {
   margin-right: unset;
-  margin: 0.955em 0;
+  margin: 0.6em 0;
 }
 .navdropdown li.right > a {
   display: inline-block;
@@ -1980,6 +1980,7 @@ header h1 {
 .navdropdown li.right .socialMedia a {
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 @media (max-width: 900px) and (min-width: 667px) {
   .navdropdown li.right .socialMedia .highlights {
@@ -3664,7 +3665,7 @@ section.cores #core-swap a {
   margin: 1em 5% 0 0;
 }
 section.cores #core-swap a.title {
-  margin: 1em unset unset;
+  margin: 1em 0 0;
   float: left;
   color: #2C3D6C;
 }
@@ -4585,17 +4586,13 @@ footer span {
   }
 }
 @media (min-width: 414px) {
+  .navdropdown ul li ul {
+    max-width: 5em;
+  }
   .navdropdown ul li ul li {
     margin-right: unset;
     width: 100%;
   }
-}
-@media (min-width: 414px) {
-  .navdropdown ul li ul {
-    max-width: 5em;
-  }
-}
-@media (min-width: 414px) {
   .navdropdown ul li ul li a {
     background-color: #8ECB91;
     /* background-color: $sexta; */
@@ -4603,7 +4600,7 @@ footer span {
     font-size: 1rem;
     font-weight: 300;
     margin: unset;
-    padding: 0.5em unset;
+    padding: 0.5em 0;
     text-align: left;
     padding-left: 0.7em;
   }

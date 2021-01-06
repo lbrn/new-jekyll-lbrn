@@ -1832,7 +1832,7 @@ header h1 {
       margin-right: unset;
       // display:flex;
       // flex-direction: column;
-      margin: 0.955em 0;
+      margin: 0.6em 0;
       > a {
         display: inline-block;
         // margin: 8px 0;
@@ -1858,6 +1858,7 @@ header h1 {
         a {
           margin-left: auto;
           margin-right: auto;
+          padding: 0;
           // padding: 10px 0;
           // color: red;
         }
@@ -3473,7 +3474,7 @@ section.cores {
       margin: 1em 5% 0 0;
 
       &.title {
-        margin: 1em unset unset;
+        margin: 1em 0 0;
         float: left;
         color: $primary;
       }
@@ -4272,26 +4273,25 @@ footer span {
     margin-bottom: 10em;
   }
 
-  .navdropdown ul li ul li {
-    margin-right: unset;
-    width: 100%;
-  }
-
   .navdropdown ul li ul {
     max-width: 5em;
+    li {
+     margin-right: unset;
+     width: 100%;
+     a {
+      background-color: $secondary;
+      /* background-color: $sexta; */
+      color: $primaryheader;
+      font-size: 1rem;
+      font-weight: 300;
+      margin: unset;
+      padding: 0.5em 0;
+      text-align: left;
+      padding-left: 0.7em;
+    }
+   }
   }
 
-  .navdropdown ul li ul li a {
-    background-color: $secondary;
-    /* background-color: $sexta; */
-    color: $primaryheader;
-    font-size: 1rem;
-    font-weight: 300;
-    margin: unset;
-    padding: 0.5em unset;
-    text-align: left;
-    padding-left: 0.7em;
-  }
 
   .bar a {
     text-decoration: none;
