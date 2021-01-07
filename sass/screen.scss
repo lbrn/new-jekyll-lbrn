@@ -171,7 +171,6 @@ img {
   width: 100%;
 }
 
-.layout.research {}
 
 .about #lbrnEventSidebar2,
 .content #lbrnEventSidebar2 {
@@ -1674,13 +1673,13 @@ main.layout {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: unset;
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
 }
 
-.layout:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
 
 header {
   padding-left: 5%;
@@ -1771,7 +1770,33 @@ header h1 {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    &.layout {
+      display: flex;
+      flex-direction: row;
+      max-width: 90%;
+      @media (max-width: $md){
+        flex-direction: column;
+      }
+      @media (max-width: $lg){
+        padding-left: 2.5%;
+        max-width: none;
+
+      }
+      // @media (max-width: $sm){
+      // }
+    }
     li {
+      a {
+          text-transform: capitalize;
+          font-weight: 400;
+          line-height: 17px;
+          @media (max-width: $lg){
+            max-width: 90px;
+          }
+          @media (max-width: $md){
+            max-width: none;
+          }
+      }
       ul li a:hover {
         background-color: $sexta;
         color: $primary;
@@ -1833,6 +1858,10 @@ header h1 {
       // display:flex;
       // flex-direction: column;
       margin: 0.6em 0;
+      @media (min-width: $md) {
+        float: right;
+        margin-left: auto;
+      }
       > a {
         display: inline-block;
         // margin: 8px 0;
@@ -1861,10 +1890,10 @@ header h1 {
           padding: 0;
           // padding: 10px 0;
           // color: red;
-        }
-        .highlights {
           @media (max-width: 900px) and (min-width: $md) {
             display: none;
+          }
+          .button {
           }
         }
         @media (min-width: 770px) {
@@ -4123,17 +4152,17 @@ footer span {
     padding-bottom: 50%;
   }
 
-  .navdropdown ul.layout {
-    max-width: 90%;
-  }
-
-  .navdropdown ul li a {
-    text-transform: capitalize;
-    /* font-weight: normal; */
-    font-weight: 400;
-    /* font-size: 1.4em; */
-    line-height: 17px;
-  }
+  // .navdropdown ul.layout {
+  //   max-width: 90%;
+  // }
+  //
+  // .navdropdown ul li a {
+  //   text-transform: capitalize;
+  //   /* font-weight: normal; */
+  //   font-weight: 400;
+  //   /* font-size: 1.4em; */
+  //   line-height: 17px;
+  // }
 
   .strip section {
     /* width: 30%; */
@@ -4700,9 +4729,9 @@ footer span {
     color: $primary;
   }
 
-  .navdropdown li.right {
-    float: right;
-  }
+  // .navdropdown li.right {
+  //   float: right;
+  // }
 
   .slider {
     display: block;
@@ -5387,15 +5416,7 @@ footer span {
     width: 95%;
     float: right;
   }
-  /* .layout {
-    margin: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0; } */
+
   .layout {
     margin: 0;
     -moz-box-sizing: border-box;
@@ -5405,13 +5426,13 @@ footer span {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    &:after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
   }
 
-  .layout:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
 
   main div.content {
     padding-left: 0;
@@ -5424,23 +5445,23 @@ footer span {
 
   header {
     padding: 0;
+    & .layout {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      max-width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      color: red;
+      &:after {
+        content: " ";
+        display: block;
+        clear: both;
+      }
+    }
   }
 
-  header .layout {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    color: red;
-  }
 
-  header .layout:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
 
   header h1 {
     font-size: 2.5em;
@@ -5511,13 +5532,13 @@ footer span {
     /* sized of content */
     margin-left: auto;
     margin-right: auto;
+    &:after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
   }
 
-  .layout:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
 
   .three-card-responsive section {
     /* min-height: 36em;  */
