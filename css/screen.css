@@ -2041,7 +2041,7 @@ header h1 {
 .navdropdown li.right > a {
   display: inline-block;
   margin: 0;
-  margin-bottom: 0.955em;
+  margin-bottom: 0.5em;
 }
 .navdropdown li.right > a:hover {
   color: white;
