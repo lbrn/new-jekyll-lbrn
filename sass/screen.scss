@@ -1746,12 +1746,38 @@ header h1 {
   display: none;
 }
 
+#navdropdownsmall {
+  @media (min-width: $sm){
+    display: none;
+  }
+}
+// .navdropdownbig {
+//   display: none;
+//
+//   &.show {
+//     display: block;
+//   }
+//
+//   ul li:hover ul {
+//     display: none;
+//   }
+// }
 .navdropdownbig {
-  display: none;
+  display: block;
   @media (max-width: $lg) {
     ul li ul {
       display: none;
     }
+  }
+  @media (max-width: $md){
+    display: none;
+      &.show {
+        display: block;
+      }
+
+      ul li:hover ul {
+        display: none;
+      }
   }
 }
 
@@ -1765,7 +1791,9 @@ header h1 {
   float: left;
   margin-left: 0;
   margin-right: 0;
-
+  // @media (min-width: $sm){
+  //   background-color: $secondary;
+  // }
   ul {
     max-width: 100%;
     margin-left: auto;
@@ -1774,18 +1802,19 @@ header h1 {
       display: flex;
       flex-direction: row;
       max-width: 90%;
-      @media (max-width: $md){
-        flex-direction: column;
-      }
       @media (max-width: $lg){
         padding-left: 2.5%;
         max-width: none;
-
       }
-      // @media (max-width: $sm){
-      // }
+      @media (max-width: $md){
+        flex-direction: column;
+        padding-left: 0;
+      }
+
     }
     li {
+
+
       a {
           text-transform: capitalize;
           font-weight: 400;
@@ -1813,8 +1842,25 @@ header h1 {
   li {
     font-family: $bodyFont;
     text-align: center;
-    border-bottom: 1px solid white;
+    // border-bottom: 1px solid white;
     font-size: 1.2em;
+    // @media (min-width: $sm){
+    width: auto;
+    float: left;
+    margin-right: 0.5em;
+    padding: 0;
+    font-family: $bodyFont;
+    /* font-size: 1.2em; */
+    border: none;
+    // color: $primary;
+    margin-top: auto;
+    margin-bottom: auto;
+  // }
+  @media (max-width: $md){
+    border-bottom: 1px solid white;
+    color: white;
+
+  }
     &:last-child {
       border: none;
     }
@@ -3339,7 +3385,6 @@ div.chooseTypeInline div label:hover {
   font-size: 0.8em;
   /* margin-left: 3.44828%; */
   margin-top: unset !important;
-  /* padding: 2.5%; */
   padding: 1.5%;
   color: $primary !important;
   font-family: $bodyFont;
@@ -3590,8 +3635,6 @@ section.directory article.person {
   box-sizing: border-box;
   width: 95%;
   float: left;
-  /* padding-left: 2.5%;
-    padding-right: 2.5%; */
   margin: 2.5%;
 }
 
@@ -4120,17 +4163,17 @@ footer span {
     margin-left: 48%;
   }
 
-  .navdropdownbig {
-    display: none;
-
-    &.show {
-      display: block;
-    }
-
-    ul li:hover ul {
-      display: none;
-    }
-  }
+  // .navdropdownbig {
+  //   display: none;
+  //
+  //   &.show {
+  //     display: block;
+  //   }
+  //
+  //   ul li:hover ul {
+  //     display: none;
+  //   }
+  // }
 
   .content_tweek {
     width: 80% !important;
@@ -4705,33 +4748,6 @@ footer span {
     display: none;
   }
 
-  #navdropdownsmall {
-    display: none;
-  }
-
-  .navdropdownbig {
-    display: block!important;
-  }
-
-  .navdropdown {
-    background-color: $secondary;
-  }
-
-  .navdropdown li {
-    width: auto;
-    float: left;
-    margin-right: 0.5em;
-    padding: 0;
-    font-family: $bodyFont;
-    /* font-size: 1.2em; */
-    border: none;
-    color: white;
-    color: $primary;
-  }
-
-  // .navdropdown li.right {
-  //   float: right;
-  // }
 
   .slider {
     display: block;
@@ -5898,8 +5914,6 @@ div.resources h2 {
 
 .more {
   border-radius: 6px;
-  /* padding:2.5%; */
-  /* margin-top:unset !important; */
   margin-top: 0.75em !important;
   margin-bottom: 0.75em;
 }
@@ -5971,9 +5985,6 @@ vertical-align: baseline; */
   position: absolute;
   bottom: 0;
   font-size: 0.8em; /* margin-top: unset !important; */
-  /* padding: 2.5%; */
-  /* padding-top: 2.5%; */
-  /* padding-bottom: 2.5%; */
   padding: 0;
   color: $primary;
   font-family: $bodyFont;
@@ -6010,18 +6021,7 @@ vertical-align: baseline; */
   width: 20%;
   padding: 2.5%;
 }
-/* .vidhori{
-  height: 5em;
-  width: 20%;
-  padding: 2.5%;
-float:left;
-border-radius: 6px;
-} */
-/* .vidtext{
-  display: inline-block;
-  width: 70%;
-  margin-top: 1.5%;
-} */
+
 
 .videoblocks {
   min-height: unset;
