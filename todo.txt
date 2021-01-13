@@ -550,9 +550,74 @@ diff color versions
 social media thing below highlights, also consider thicker font or change typeface
 
 add news section
-add news to the thing and move social media down 
+add news to the thing and move social media down
 
 break up news via pages on jekyll
 
 outline seems a bit heavy, and thing is a bit dark
 up the opacity a bit? etc
+
+==============
+1-12-2020
+==============
+
+new spreadsheet updates for PIs
+on both main and dev website
+
+double check last project type still matches, update end date
+green ones are new, except Marjan who had a new project rather then translational; john needs to find out if hes the same title
+
+ordered this list by project ID
+
+green has added a new project and changed project type: no longer x, now whatever is in green
+
+some still have the same mentors
+
+yellow/delete = not active PIs
+
+add new project type to pages, inbre suppliment
+
+add: inbre suppliment category
+in there: all the green ones
+include the owrh mental health
+orange means leave active
+
+change collab to suppliment, display that as project type on page with filters, and then get more specific on page
+
+re-activate marjan, add new project
+8-1-20-4-30-21
+
+
+news highlights newsletter, move SM icons out from underneath
+
+
+
+zooooooom
+make 0s and ones disappear more in network blue left lower
+
+LBRN binary ascii hexidecimal binary
+01001100 01101111 01110101 01101001 01110011 01101001 01100001 01101110 01100001 00100000 01000010 01101001 01101111 01101101 01100101 01100100 01101001 01100011 01100001 01101100 00100000 01010010 01100101 01110011 01100101 01100001 01110010 01100011 01101000 00100000 01001110 01100101 01110100 01110111 01101111 01110010 01101011
+Convert Binary with https://www.ConvertBinary.com (Text to Binary Translator)
+
+translated into DNA code
+
+GACACTGAGTTGATCTGTGATCTGTGACTGACTCTCACTAGCCATCTGTGTACACTATACCTGTCAACTATCAGCCACCTATGACTAACTCACTCACGTAGCCTCCTATAGATGTGTCACTCGTAATGATCA
+https://earthsciweb.org/js/bio/dna-writer/
+
+blue version of logo in top-center green
+
+pick two design elements and leave it
+shading on the circle throws john off
+angle/horizontal dna
+
+change resources > templates to Media Templates
+including on pulldown
+do this for ramesh branch too
+
+
+Create powerpoint links, and zoom links
+powerpoint background and image background
+update grant number in the file
+take off the dash-18
+
+DO THE COLLAB/SUPPLIMENT THING ON ITS OWN BRANCH

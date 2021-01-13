@@ -2029,19 +2029,43 @@ header h1 {
   color: white;
 }
 .navdropdown li.right {
+  float: right;
+  margin-left: auto;
   margin-right: unset;
-  margin: 0.6em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-@media (min-width: 667px) {
+@media (max-width: 667px) {
   .navdropdown li.right {
-    float: right;
-    margin-left: auto;
+    margin: 0.6em 0;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
 }
 .navdropdown li.right > a {
   display: inline-block;
-  margin: 0;
-  margin-bottom: 0.5em;
+  margin: 8px 0.2em;
+  margin-right: 0.4em;
+  margin-left: 0;
+}
+@media (max-width: 667px) {
+  .navdropdown li.right > a {
+    margin: 0 auto;
+  }
 }
 .navdropdown li.right > a:hover {
   color: white;
@@ -2059,12 +2083,48 @@ header h1 {
   display: -ms-flexbox;
   display: flex;
   margin-right: unset;
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+     -moz-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
   /* padding-right:0.5em; */
+}
+@media (max-width: 667px) {
+  .navdropdown li.right .socialMedia {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+       -moz-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+       -moz-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 .navdropdown li.right .socialMedia a {
   margin-left: auto;
   margin-right: auto;
-  padding: 0;
+  margin: 0.5em 0;
+  padding: 0.2em 0.2em;
+}
+.navdropdown li.right .socialMedia a:first-child {
+  color: red;
+}
+.navdropdown li.right .socialMedia a:last-child {
+  color: orange;
+}
+@media (max-width: 667px) {
+  .navdropdown li.right .socialMedia a {
+    margin: 0.5em 5em;
+  }
 }
 @media (max-width: 900px) and (min-width: 667px) {
   .navdropdown li.right .socialMedia a {
@@ -2091,6 +2151,75 @@ header h1 {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.presentation-templates.two-card-responsive section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.presentation-templates.two-card-responsive section img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.presentation-templates.two-card-responsive section h2 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+.presentation-templates.two-card-responsive section a.button {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 30%;
+     -moz-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1em;
+  line-height: 27px;
+}
+.presentation-templates.two-card-responsive section a.button:only-of-type {
+  margin: auto 30%;
+}
+@media (max-width: 414px) {
+  .presentation-templates.two-card-responsive section a.button:only-of-type {
+    margin: auto 5%;
+  }
+}
+.presentation-templates section {
+  min-height: 0 !important;
+  text-align: center;
+  background-color: unset !important;
+  border-bottom: 10px solid #d4ebd5;
+}
+.presentation-templates section img {
+  float: none !important;
+  margin: 0 auto;
+  max-width: 20em;
+}
+.presentation-templates section h2 {
+  clear: both;
+  padding: 0.2em 0;
+  text-align: center;
+}
+.presentation-templates section button {
+  float: none !important;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .mediapage p {
@@ -3987,31 +4116,6 @@ section.directory ul li {
 
 .navdropdown#pi-filter ul .on:active {
   background-color: #4da651;
-}
-
-.presentation-templates section {
-  min-height: 0 !important;
-  text-align: center;
-  background-color: unset !important;
-  border-bottom: 10px solid #d4ebd5;
-}
-
-.presentation-templates img {
-  float: none !important;
-  margin: 0 auto;
-  max-width: 20em;
-}
-
-.presentation-templates h2 {
-  clear: both;
-  padding: 0.2em 0;
-  text-align: center;
-}
-
-.presentation-templates button {
-  float: none !important;
-  text-align: center;
-  margin: 0 auto;
 }
 
 footer {
