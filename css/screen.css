@@ -1572,7 +1572,7 @@ main div.content h3:enabled {
   }
 
   #eventSummary h2:hover,  #eventMediaLink h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover{
-    background-color: #e5f3e6;
+    /* background-color: #e5f3e6; */
     /* cursor: pointer; */
     border-radius: 10px;
   }
@@ -1728,9 +1728,13 @@ main div.content h3:enabled {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     transform: rotate(90deg);
-
+    position: absolute;
+    transition: all 0.5s;
+    top: 14px;
  }
-
+ i.collapsetstyle h2 {
+  padding-left: 32px;
+}
  i.collapsetstyle.collapsed:before {
    -webkit-transform: rotate(0deg);
    -moz-transform: rotate(0deg);
@@ -3170,7 +3174,7 @@ section.directory article.person{
     margin-right: 0;
     overflow: hidden; }
   #eventSummary h2, #eventMediaLink h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2,  #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
-    padding-left: 0;
+    padding-left: 32px;
     background-color: white;
     cursor: auto;
   }
