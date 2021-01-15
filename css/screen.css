@@ -1712,15 +1712,30 @@ main div.content h3:enabled {
   }
 
   .collapsetstyle {
-    display: none;
-    position: absolute;
+    /* display: none; */
+    /* position: absolute; */
     top: .1em;
     right: .1em;
     width: 100%;
     height: 2em;
-    position:absolute;
+    transition: all 0.5s;
+    /* position:absolute; */
     /* position: static; */
    }
+  i.collapsetstyle:before {
+    display: inline-block;
+    padding-left: 4px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+ }
+
+ i.collapsetstyle.collapsed:before {
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   transform: rotate(0deg);
+  }
 
   #lbrnEventSidebar {
     display: none; }
@@ -2636,9 +2651,9 @@ div.research img{
      width: unset;
    }
 
-  .collapsetstyle{
+  /* .collapsetstyle{
     display:none !important;
-  }
+  } */
 
   #uni{
     width:unset;
@@ -3163,9 +3178,9 @@ section.directory article.person{
     #eventSummary h2:hover,  #eventMediaLink h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover{
       background-color: unset;
 }
-
+/*
   .collapsetstyle {
-    color: white; }
+    color: white; } */
 
   .collapsenobs {
     height: inherit; }
