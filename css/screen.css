@@ -3141,6 +3141,16 @@ i.collapsetstyle:before {
   -ms-transform: rotate(90deg);
    -o-transform: rotate(90deg);
       transform: rotate(90deg);
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  top: 14px;
+}
+
+i.collapsetstyle h2 {
+  padding-left: 32px;
 }
 
 i.collapsetstyle.collapsed:before {
@@ -5258,7 +5268,6 @@ width: 52.5%;
 }
 @media (min-width: 667px) {
   #eventSummary h2, #eventMediaLink h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2, #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
-    padding-left: 0;
     background-color: white;
     cursor: auto;
   }

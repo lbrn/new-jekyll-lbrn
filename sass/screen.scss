@@ -2722,7 +2722,9 @@ float:left;
     transition: all 0.5s;
     top: 14px;
   }
-
+  i.collapsetstyle h2 {
+   padding-left: 32px;
+  }
   i.collapsetstyle.collapsed:before {
    -webkit-transform: rotate(0deg);
    -moz-transform: rotate(0deg);
@@ -4364,7 +4366,7 @@ section.directory article.person{
     margin-right: 0;
     overflow: hidden; }
   #eventSummary h2, #eventMediaLink h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2,  #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
-    padding-left: 0;
+    // padding-left: 0;
     background-color: white;
     cursor: auto;
   }
