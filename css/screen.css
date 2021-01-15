@@ -2955,7 +2955,6 @@ main div.content #newsContainer.tne {
 }
 
 #eventSummary h2:hover, #eventMediaLink h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover {
-  background-color: #e5f3e6;
   /* cursor: pointer; */
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
@@ -3120,14 +3119,36 @@ main div.content #newsContainer.tne {
 }
 
 .collapsetstyle {
-  display: none;
-  position: absolute;
+  /* display: none; */
+  /* position: absolute; */
   top: 0.1em;
   right: 0.1em;
   width: 100%;
   height: 2em;
-  position: absolute;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  /* position:absolute; */
   /* position: static; */
+}
+
+i.collapsetstyle:before {
+  display: inline-block;
+  padding-left: 4px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+}
+
+i.collapsetstyle.collapsed:before {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+      transform: rotate(0deg);
 }
 
 #lbrnEventSidebar {
@@ -4670,11 +4691,6 @@ width: 52.5%;
   }
 }
 @media (min-width: 667px) {
-  .collapsetstyle {
-    display: none !important;
-  }
-}
-@media (min-width: 667px) {
   #uni {
     width: unset;
   }
@@ -5250,11 +5266,6 @@ width: 52.5%;
 @media (min-width: 667px) {
   #eventSummary h2:hover, #eventMediaLink h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover {
     background-color: unset;
-  }
-}
-@media (min-width: 667px) {
-  .collapsetstyle {
-    color: white;
   }
 }
 @media (min-width: 667px) {
