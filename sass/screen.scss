@@ -2718,7 +2718,9 @@ float:left;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     transform: rotate(90deg);
-
+    position: absolute;
+    transition: all 0.5s;
+    top: 14px;
   }
 
   i.collapsetstyle.collapsed:before {
