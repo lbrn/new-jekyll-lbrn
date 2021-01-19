@@ -1710,7 +1710,9 @@ main div.content h3:enabled {
 
     position: unset;
   }
-
+  .collapsetitle {
+    position: relative;
+  }
   .collapsetstyle {
     /* display: none; */
     /* position: absolute; */
@@ -1730,10 +1732,12 @@ main div.content h3:enabled {
     transform: rotate(90deg);
     position: absolute;
     transition: all 0.5s;
-    top: 14px;
+    top: 9px;
+    font-size: 18px;
  }
  i.collapsetstyle h2 {
-  padding-left: 32px;
+   font-size: 24px;
+   padding-left: 26px;
  }
  i.collapsetstyle.collapsed:before {
    -webkit-transform: rotate(0deg);
