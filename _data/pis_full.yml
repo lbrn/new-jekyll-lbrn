@@ -78,10 +78,9 @@
     -
       name: ORWH Maternal Health
       period: August 1, 2020 – April 30, 2021
-  abstract:
     -
       name: Translational
-      period: May 1, 2019 to August 18, 2020
+      period: May 1, 2019 - August 18, 2020
   abstract: |
       The goal of this research is to design, implement and in the long-term evaluate the application of mobile technology to improve detection of undiagnosed diabetes and pre-diabetes. Specifically, we would like to develop this app that is an innovation on the current available set of apps. We believe that the addition of an app on smart phones in outpatient settings to the current standard practice will lead to improved diagnosis of diabetes and pre-diabetes in these patients.
 -
@@ -383,10 +382,13 @@
   origin: Louisiana State University-Shreveport
   image: WYu.jpg
   project_title: Medical Imaging by Enhanced Fluorescent Nanoclusters
+  project_title2: Mechanism of translation initiation in the protozoan parasite Giardia lamblia
   mentors:
     -
       name: Shile Huang
-      origin: LSUHSC-S; Urksa Cvek
+      origin: LSUHSC-S
+    -
+      name: Urksa Cvek
       origin: LSU-S
   funding:
     -
@@ -781,7 +783,7 @@
       origin: LSU Health Sciences Center in Shreveport, Department of Molecular and Cellular Physiology
   funding:
     -
-      name: Translational
+      name: Translational Project
       period: May 1, 2018-	April 30, 2019
     -
       name: Translational Project
@@ -871,7 +873,7 @@
   funding:
     -
       name: Full Project
-      period: May 1, 2015 - April 30, 2018
+      period: May 1, 2015 - April 30, 2019
 
   abstract: |
     Incretins are gut hormones secreted from enteroendocrine cells into the blood rapidly following ingestion of food, and are known to regulate insulin secretion. The two known incretins are glucose-dependent insulinotropic peptide (GIP) and glucagon-like peptide-1 (GLP-1). Both incretins are rapidly inactivated by dipeptidyl peptidase 4 (DPP4). The GLP agonists and DPP-4 inhibitors are drugs that augment the incretin system representing a novel class of anti-hyperglycemic agents which also have been shown to elicit pleotropic effects such as improvement of hepatic inflammation and hepatosteatosis, insulin resistance, help cardiac health, weight loss and induce satiety. Hypercholesterolemia and hyperhomocysteinemia (HHcy) are among the widely documented risk factors for the development and progression of atherosclerosis and cardiovascular diseases (CVDs). Homocysteine (Hcy), an intermediate in the metabolism of the essential amino acid methionine (Met) has been implicated in various age related pathologies such as heart disease, Alzheimers disease, osteoporosis, stroke, and end stage renal disease. Hyperhomocysteinemia can result from deficiencies of vitamins like folate, B6 and B12 or enzyme defects (Met metabolizing) or dietary excess of Met. High serum Cholesterol (Chol) or hypercholesterolemia that contributes to the development of atherosclerosis is also considered to be caused due to inflammatory processes. Among others, increased levels of Chol are known to impair endothelium-dependent vasodilatation, exaggerate the pressor response to stress and contribute to blood pressure increase. Interestingly, both Met and Chol are rich in meat and dairy based products (extensively consumed in US and components of staple diet), and are invariably consumed together. Therefore, studying the effects of a dietary combination of Met and Chol is very important especially in the context of nutrition and atherosclerosis. The DPP4 inhibitors reduce post-prandial glycemia via inhibition of the degradation of GLP-1. In addition to their antidiabetic action, DPP-4 inhibitors have pleiotropic cardiovascular protective effects. Feeding rats with diets rich in L-Met and Chol, we will test the hypothesis Hyperhomocysteinemia in high Cholesterol fed rats potentiates development of atherosclerosis, and can be alleviated by DPP4 inhibitors' with two specific aims; a) To determine the effects of feeding a dietary excess of Cholesterol and Methionine on the vascular (aorta) structural/atherosclerotic changes; and b) To evaluate if treatment with a DPP-4 inhibitor sitagliptin alleviates inflammation and the atherosclerotic processes, and study the mechanistic aspects involved. Four groups of male Sprague Dawley rats weighing between 250-275g will be fed i) normal feed (without any enrichment), ii) a diet enriched with 1% L-methionine, iii) a diet enriched with 2% Chol, and iv) a diet enriched with 1% L-Met and 2% Chol. Each group will comprise of 10 rats on the respective dietary regimen and the feeding will be carried out for a period of 5 weeks. A similar protocol will be followed with 4 additional groups of 10 rats each, and administered an aqueous suspension of sitagliptin (300 mg/kg/d) by oral gavage from day 15 till the end of the experiment. The overall goals of this proposal are to evaluate the effects of manipulating the dietary content of Met and Chol and identify key events involved in the interplay of risk factors responsible for the development of cardiovascular pathology. An additional goal is to determine if treatment with sitagliptin, a DPP-4 inhibitor, ameliorates the development of these risk factors, and understand the mechanistic aspects. These studies will yield useful information in understanding the development of vascular complications during the combined consumption of Met and Chol (rich in Western diets), and if DPP4 inhibitors help in recession of problems and for better patient management.
@@ -1073,7 +1075,7 @@
   funding:
     -
       name: Full Project
-      period: May 1, 2017 – April 30, 2018
+      period: May 1, 2017 – April 30, 2019
     -
       name: Pilot Project
       period: May 1, 2015 – April 30, 2017

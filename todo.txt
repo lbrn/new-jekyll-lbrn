@@ -621,3 +621,53 @@ update grant number in the file
 take off the dash-18
 
 DO THE COLLAB/SUPPLIMENT THING ON ITS OWN BRANCH
+
+h2 space issues
+
+oral presentation down to "if you have any questions" above registration
+
+record dashboard on redcap for PI info
+
+
+eventwhenandwhere
+
+.collapsetitle {
+  position: relative;
+}
+.collapsetstyle {
+  /* display: none; */
+  /* position: absolute; */
+  top: .1em;
+  right: .1em;
+  width: 100%;
+  height: 2em;
+  transition: all 0.5s;
+  /* position:absolute; */
+  /* position: static; */
+ }
+i.collapsetstyle:before {
+  display: inline-block;
+  padding-left: 4px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  transition: all 0.5s;
+  top: 9px;
+  font-size: 18px;
+}
+i.collapsetstyle h2 {
+ font-size: 24px;
+ padding-left: 26px;
+}
+i.collapsetstyle.collapsed:before {
+ -webkit-transform: rotate(0deg);
+ -moz-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+ a
+
+new?
+name: William Yu
+
+project_title2: Mechanism of translation initiation in the protozoan parasite Giardia lamblia
