@@ -171,6 +171,8 @@ function piFilter(){
   var pilots = $("article:has(h6:contains('Pilot'))");
   var translproj = $("article:has(h6:contains('Translational'))");
   var collab = $("article:has(h6:contains('Collaborative'))");
+  var supp = $("article:has(h6:contains('Supplement'))");
+  var supp2 = $("article:has(h6:contains('Maternal'))");
 
   // var translproj = $('article[data-ptype="TranslationalProject"]');
 
@@ -218,6 +220,12 @@ function piFilter(){
     $(this).toggleClass('on');
     $(this).toggleClass('active');
     collab.slideToggle('fast');
+  });
+  $(".pispp").click(function(){
+    $(this).toggleClass('on');
+    $(this).toggleClass('active');
+    supp.slideToggle('fast');
+    supp2.slideToggle('fast');
   });
   $(".pipp").click(function(){
     $(this).toggleClass('on');
@@ -419,6 +427,26 @@ $(".pibc").click(function(){
   });
   $(".piicp").click(function(){
     // console.log('dog');
+    for(var i=0; i < ppi.length; i++)
+        {
+        // ppi[i].style.display ='none';
+          if (ppi[i].style.display == "none")
+            {
+              ppi[i].style.display = "block";
+              pitrack++;
+              // console.log(pitrack);
+            }
+            else
+            {
+              ppi[i].style.display = "none";
+              pitrack--;
+            }
+        }
+
+    $(this).toggleClass('on');
+  });
+  $(".pispp").click(function(){
+    console.log('dog');
     for(var i=0; i < ppi.length; i++)
         {
         // ppi[i].style.display ='none';
