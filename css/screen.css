@@ -1564,7 +1564,7 @@ main div.content h3:enabled {
     position: relative;
     margin-bottom: 1.2em; }
   #eventSummary h2, #eventMediaLink h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2, #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
-    padding-left: 1em;
+    /* padding-left: 1em; */
     /* padding-right: 1.5em; */
     margin-top:unset;
     background-color: unset;
