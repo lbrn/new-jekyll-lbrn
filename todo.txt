@@ -675,10 +675,49 @@ also include seperate element logo
 
 text below logo element
 
+
 SQUARE Logo:
 LBRN
 logos
 lines
 Long LBRN
 
-stick with the green 
+stick with the green
+
+
+work from email
+
+more space between funding period and abstract
+
+not fixed on ramesh branch
+force change case
+fix + hide abstract too if no abstract
+https://lbrn.lsu.edu/pis/Dua_Prerna_sethi.html
+
+marian and nam are both inbre cobre collab
+tag for both?
+both collab
+
+marjan translational is OLD
+update to new one
+
+inbre cobre collab (supplement) for nam/marjan
+
+    Galina Goloverda: Funding Period and Mentor info not displaying.
+    Lidiya Dubytska: Funding Period and Mentor info not displaying.
+    Marjan Trutschl: Funding Periods (2) and Mentor info not displaying.
+    Paul Kim: His full project extended to April 30, 2021. - just a reminder his date changed too.
+    Elahe Mahdavian’s Funding Periods are incorrect, see updated spreadsheet for types and time periods. The existing title/mentor/abstact are current with the last project.
+    Prerna Dua: not showing up on webpage after clicking on link: https://lbrn.lsu.edu/pis/Dua_Prerna_Sethi.html
+    Devaiah Kambiranda: I found a photo to use. I’ll email with spreadsheet.
+
+
+click to open/click to close
+move down to guidles
+remove old arrows
+
+priorities:
+-Graphics for poster/email/letter
+-PI works (tied with) v
+-arrow fixes for thing
+-zoom last
