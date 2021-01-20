@@ -382,7 +382,6 @@
   origin: Louisiana State University-Shreveport
   image: WYu.jpg
   project_title: Medical Imaging by Enhanced Fluorescent Nanoclusters
-  project_title2: Mechanism of translation initiation in the protozoan parasite Giardia lamblia
   mentors:
     -
       name: Shile Huang
@@ -1019,7 +1018,6 @@
     -
       name: Hyung Nam
       origin: LSUHSC-S
-
   funding:
     -
       name: Translational, INBRE COBRE Collaboration

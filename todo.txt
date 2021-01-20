@@ -610,19 +610,19 @@ pick two design elements and leave it
 shading on the circle throws john off
 angle/horizontal dna
 
-change resources > templates to Media Templates
-including on pulldown
-do this for ramesh branch too
+//change resources > templates to Media Templates
+//including on pulldown
+//do this for ramesh branch too
 
 
-Create powerpoint links, and zoom links
+//Create powerpoint links, and zoom links
 powerpoint background and image background
 update grant number in the file
 take off the dash-18
 
-DO THE COLLAB/SUPPLIMENT THING ON ITS OWN BRANCH
+//DO THE COLLAB/SUPPLIMENT THING ON ITS OWN BRANCH
 
-h2 space issues
+//h2 space issues
 
 oral presentation down to "if you have any questions" above registration
 
@@ -665,9 +665,30 @@ i.collapsetstyle.collapsed:before {
  -moz-transform: rotate(0deg);
  transform: rotate(0deg);
 }
- a
 
-new?
-name: William Yu
+1-20-2021
+==================
+digital posters
+like the top  of the live site
 
-project_title2: Mechanism of translation initiation in the protozoan parasite Giardia lamblia
+also include seperate element logo
+
+text below logo element
+
+
+SQUARE Logo:
+LBRN
+logos
+lines
+Long LBRN
+
+stick with the green
+
+
+work from email
+
+more space between funding period and abstract
+
+not fixed on ramesh branch 
+fix + hide abstract too if no abstract
+https://lbrn.lsu.edu/pis/Dua_Prerna_sethi.html
