@@ -1020,8 +1020,11 @@
       origin: LSUHSC-S
   funding:
     -
-      name: Translational, INBRE COBRE Collaboration
+      name: INBRE COBRE Collaborative (Supplement)
       period: August 1, 2020 – April 30, 2021
+    -
+      name: Translational
+      period: May 1, 2018 – April 30, 2019
   abstract:
 -
   name: Maureen Shuh
@@ -1162,6 +1165,6 @@
   project_title: Computational Modeling of Blood Metabolomics Biomarkers Addressing Racial Disparity
   funding:
     -
-      name: INBRE COBRE Supplement
+      name: INBRE COBRE Collaborative (Supplement)
       period: August 1, 2020 – April 30, 2021
   abstract: |

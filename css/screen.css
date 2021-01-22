@@ -371,6 +371,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .npi{
     height: 15em!important;
   }
+  .npi.soff.coff {
+    display: none!important;
+  }
   .LBRNe article {
     min-height: 5em;
 padding-bottom: 1em;
