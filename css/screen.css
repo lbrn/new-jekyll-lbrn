@@ -3715,8 +3715,7 @@ div.chooseTypeInline div label:hover {
   -o-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  /* position:absolute; */
-  /* position: static; */
+  position: relative;
 }
 
 i.collapsetstyle:before {
