@@ -468,17 +468,17 @@ merge main in, new stories
 12-15-2020
 =========
 
-cores page : article like, text to the left of the logo
+//cores page : article like, text to the left of the logo
 
-try no bg color
--25% large icons
+//try no bg color
+//-25% large icons
 
-less thickk or lighter blue borders
+//less thickk or lighter blue borders
 
 less parts to circle, less busy version
-helix in front of line
+//helix in front of line
 
-modify logo colors for visibility
+//modify logo colors for visibility
 
 dark blue menu bar text and something
 
@@ -487,31 +487,243 @@ news button on menu bar
 maybe move social media bar to a 2nd row beneath the highlights/newsletter? which gives more font room for the left side stuff
 
 
-transpaceny issue on DNA
-potential widescreen stuff
-
-kinda dark
-highlight flagship
-different type of icon for flagship ? color?
-
-
+//transpaceny issue on DNA
+//potential widescreen stuff
 
 outter edge highlight state?
 
 
 priority:
-map first
-hide banner
+//map first
+//hide banner
 new branch for nitpicky stuff
 
-access issue - events, highlights, news are all caps, make em lowercase properly
+//access issue - events, highlights, news are all caps, make em lowercase properly
 
 solidify banner image / hold off for now hide banners on ramesh branch
 
-white version of core page
-finalize that branch for now
+//white version of core page
+//finalize that branch for now
 
 new repo
 
 how to tag to make sure it shows up in the right place
 e.g. workshops lectures, what groups do we have
+
+
+//
+===============
+12-23-2020
+-----==========
+mid-janiary zoom backgrounds
+2-3 weeks from now
+4 weeks
+certificate style too
+2 from certificate style and 2 from ehader style
+include lbrn logo
+
+hired effective the 17th- to the date i put in hours
+
+start break tomorrow
+holiday to the 1st
+
+update from main
+
+remember guide for tagging
+
+
+in the logo for cores page: maginify glass, state, dna helix on page
+we should
+improve the logos on the LBRN logo
+different versions playing with the colors we use for mcbr/bbc background while having the same or different image
+
+hexagon logo pieced together which groups are represented based on logo
+blue/green versions of the others
+
+small version of dna helix
+
+use the elements we have explored via banneretc
+new hexagon versions
+ties to zoom: affiliated with different cores
+diff color versions
+
+social media thing below highlights, also consider thicker font or change typeface
+
+add news section
+add news to the thing and move social media down
+
+break up news via pages on jekyll
+
+outline seems a bit heavy, and thing is a bit dark
+up the opacity a bit? etc
+
+==============
+1-12-2020
+==============
+
+new spreadsheet updates for PIs
+on both main and dev website
+
+double check last project type still matches, update end date
+green ones are new, except Marjan who had a new project rather then translational; john needs to find out if hes the same title
+
+ordered this list by project ID
+
+green has added a new project and changed project type: no longer x, now whatever is in green
+
+some still have the same mentors
+
+yellow/delete = not active PIs
+
+add new project type to pages, inbre suppliment
+
+add: inbre suppliment category
+in there: all the green ones
+include the owrh mental health
+orange means leave active
+
+change collab to suppliment, display that as project type on page with filters, and then get more specific on page
+
+re-activate marjan, add new project
+8-1-20-4-30-21
+
+
+news highlights newsletter, move SM icons out from underneath
+
+
+
+zooooooom
+make 0s and ones disappear more in network blue left lower
+
+LBRN binary ascii hexidecimal binary
+01001100 01101111 01110101 01101001 01110011 01101001 01100001 01101110 01100001 00100000 01000010 01101001 01101111 01101101 01100101 01100100 01101001 01100011 01100001 01101100 00100000 01010010 01100101 01110011 01100101 01100001 01110010 01100011 01101000 00100000 01001110 01100101 01110100 01110111 01101111 01110010 01101011
+Convert Binary with https://www.ConvertBinary.com (Text to Binary Translator)
+
+translated into DNA code
+
+GACACTGAGTTGATCTGTGATCTGTGACTGACTCTCACTAGCCATCTGTGTACACTATACCTGTCAACTATCAGCCACCTATGACTAACTCACTCACGTAGCCTCCTATAGATGTGTCACTCGTAATGATCA
+https://earthsciweb.org/js/bio/dna-writer/
+
+blue version of logo in top-center green
+
+pick two design elements and leave it
+shading on the circle throws john off
+angle/horizontal dna
+
+//change resources > templates to Media Templates
+//including on pulldown
+//do this for ramesh branch too
+
+
+//Create powerpoint links, and zoom links
+powerpoint background and image background
+update grant number in the file
+take off the dash-18
+
+//DO THE COLLAB/SUPPLIMENT THING ON ITS OWN BRANCH
+
+//h2 space issues
+
+oral presentation down to "if you have any questions" above registration
+
+record dashboard on redcap for PI info
+
+
+eventwhenandwhere
+
+.collapsetitle {
+  position: relative;
+}
+.collapsetstyle {
+  /* display: none; */
+  /* position: absolute; */
+  top: .1em;
+  right: .1em;
+  width: 100%;
+  height: 2em;
+  transition: all 0.5s;
+  /* position:absolute; */
+  /* position: static; */
+ }
+i.collapsetstyle:before {
+  display: inline-block;
+  padding-left: 4px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  transition: all 0.5s;
+  top: 9px;
+  font-size: 18px;
+}
+i.collapsetstyle h2 {
+ font-size: 24px;
+ padding-left: 26px;
+}
+i.collapsetstyle.collapsed:before {
+ -webkit-transform: rotate(0deg);
+ -moz-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+
+1-20-2021
+==================
+digital posters
+like the top  of the live site
+
+also include seperate element logo
+
+text below logo element
+
+
+SQUARE Logo:
+LBRN
+logos
+lines
+Long LBRN
+
+stick with the green
+
+
+work from email
+
+more space between funding period and abstract
+
+not fixed on ramesh branch
+force change case
+fix + hide abstract too if no abstract
+https://lbrn.lsu.edu/pis/Dua_Prerna_sethi.html
+
+marian and nam are both inbre cobre collab
+tag for both?
+both collab
+
+marjan translational is OLD
+update to new one
+
+inbre cobre collab (supplement) for nam/marjan
+
+    //Galina Goloverda: Funding Period and Mentor info not displaying.
+    //Lidiya Dubytska: Funding Period and Mentor info not displaying.
+    Marjan Trutschl: Funding Periods (2) and Mentor info not displaying.
+    Paul Kim: His full project extended to April 30, 2021. - just a reminder his date changed too.
+    //Elahe Mahdavian’s Funding Periods are incorrect, see updated spreadsheet for types and time periods. The existing title/mentor/abstact are current with the last project.
+    Prerna Dua: not showing up on webpage after clicking on link: https://lbrn.lsu.edu/pis/Dua_Prerna_Sethi.html
+    Devaiah Kambiranda: I found a photo to use. I’ll email with spreadsheet.
+
+
+
+//click to open/click to close
+//move down to guidles
+//remove old arrows
+
+priorities:
+//-Graphics for poster/email/letter
+-PI works (tied with) v
+//-arrow fixes for thing
+==update ramesh branch with those
+-zoom last
+
+update css update version number
+
+note john with submitted hours
