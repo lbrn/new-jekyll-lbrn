@@ -12,7 +12,7 @@
   funding:
     -
       name: Pilot Project
-      period: May 1, 2019 - April 30, 2020
+      period: May 1, 2019 - August 18, 2020
     -
       name: Startup Project
       period: May 1, 2018 - April 30, 2019
@@ -41,7 +41,7 @@
   funding:
     -
       name: Startup Project
-      period: May 1, 2018 - April 30, 2020
+      period: May 1, 2018 -  August 18, 2020
   abstract: |
       Human Kinesin-5, an anticancer drug target, is key to the assembly of the bipolar spindle during mitosis. This research project seeks to define the mechanism of mechanical output by kinesin motor proteins. Our interest is in the neck-linker, a 12-15 residue segment at the N-terminus of kinesin plays an important role in processivity. However, it is not well understood the importance of the conformational change that forms a short β-sheet from a floppy region to its inhibition by anticancer drugs nor its influence on the coil-coil domain, the region necessary for oligomerization. The goal of this project is to determine the effects of substitutions and insertions in the neck-linker of kinesin-5, including human polymorphic variants, on in vitro measurements of catalytic activity and motion and whether the neck-linker controls structural asymmetry and initiation of the coil-coil, necessary for kinesin oligomerization. AIM1: We will insert three residues (DAL) into various places along the neck-linker of dimeric Kinesin-5 construct (Eg5-513) followed by expression and purification of the mutants in a bacterial system. We predict that the loss of the neck-linker will start the result in lower processivity of the chimera as the conformational change. Our experimental readout will be MT gliding by the mutant Kinesin-5. We will quantitate MT-gliding velocities for each mutant Kinesin-5 motor as well as WT Kinesin-5 for control. We expect that perturbations to the individual β-strands will prevent the extension of the central β-sheet by the cover neck bundle and reduce the motility of the motor along MT tracks. The anticipated result is that we expect a loss of interaction between β7 and β10 as a result of the glycine mutations. We anticipate that this will lead to total loss of kinesin motility. We will then test the response to inhibition by current anticancer inhibitor STLC AIM 2: We will generate mutations to the dimeric Kinesin-5 construct (Eg5-513) in β7 (E254G, L255G, V256G, K257G, I258G) by site-directed mutagenesis followed by expression and purification of the mutants in a bacterial system. It has been ignored that the docking of the NL and cover-neck to the motor head coordinates an interaction with β7. We will test the inhibitory effects of these mutations with the inhibitor STC on ATPase activity and processivity. The result of these experiments will provide a framework for understanding the role of the neck-linker as well as the cover neck bundle in Eg5 and may be expended to other kinesins and motor proteins which also exhibit conformational switching.
 -
@@ -55,7 +55,7 @@
   funding:
     -
       name: INBRE COBRE Collaborative Project
-      period: 08-01-2019 to 04-30-2020
+      period: 08-01-2019 to 8-18-2020
     -
       name: Pilot Project
       period: 05-01-2018 to 04-30-2019
@@ -66,15 +66,21 @@
   active: true
   origin: Louisiana State University, Shreveport
   image: UCvek.jpg
-  project_title: Design and application of mobile app to improve detection of undiagnosed and pre- diabetes
+  project_title: Women's Health in IDEA States
   mentors:
+    -
+      name: Nadejda Korneeva
+      origin: LSUHSC-S
     -
       name: Brian Cornelius
       origin: Ochsner LSU Health Sciences Center, Shreveport
   funding:
     -
+      name: ORWH Maternal Health
+      period: August 1, 2020 – April 30, 2021
+    -
       name: Translational
-      period: 05-01-2019 to 04-30-2020
+      period: May 1, 2019 - August 18, 2020
   abstract: |
       The goal of this research is to design, implement and in the long-term evaluate the application of mobile technology to improve detection of undiagnosed diabetes and pre-diabetes. Specifically, we would like to develop this app that is an innovation on the current available set of apps. We believe that the addition of an app on smart phones in outpatient settings to the current standard practice will lead to improved diagnosis of diabetes and pre-diabetes in these patients.
 -
@@ -131,7 +137,7 @@
   funding:
     -
       name: Translational Project
-      period: May 1, 2019 - April 30, 2020
+      period: May 1, 2019 - August 18, 2020
     -
       name: Full Project
       period: May 1, 2011 - April 30, 2015
@@ -153,7 +159,7 @@
   funding:
     -
       name: Pilot Project
-      period: May 1, 2019 - April 30, 2020
+      period: May 1, 2019 - August 18, 2020
   abstract: |
 
 -
@@ -169,7 +175,7 @@
   funding:
     -
       name: Full Project
-      period: May 1, 2015 - April 30, 2020
+      period: May 1, 2015 - April 30, 2021
   abstract: |
       Nonalcoholic fatty liver disease (NAFLD) is the most common chronic liver disease in the US. The Hallmark of NAFLD is the buildup of excess fat in the liver. NAFLD is a progressive disease that can lead to fibrosis, cirrhosis, and ultimately liver failure [1]. The growing prevalence of NAFLD is associated with the obesity epidemic, but the molecular mechanisms underlying disease development and progression are not fully understood. A growing body of evidence suggests that disruption of endoplasmic reticulum homeostasis, termed ER stress, may play a role in NAFLD pathogenesis [2-4]. ER stress activates the unfolded protein response (UPR), which acts to restore ER homeostasis. Importantly, UPR activation has been reported in the livers of humans with obesity and NAFLD [5-7] and its activation can trigger lipid biosynthesis, insulin resistance, inflammation, and apoptosis, all characteristic features of NAFLD [8,9]. Moreover, murine models of obesity have shown that increasing the amount of saturated fatty acids in circulation or in the liver induces ER stress, apoptosis, and liver injury [10-12]. Taken together, these data suggest that elevated levels of circulating fatty acids, typical of obesity, contribute to NAFLD pathogenesis by inducing ER stress. Given that ER stress results from the accumulation of unfolded proteins in the ER lumen, elevated fatty acid levels may induce ER stress by increasing the load of ER client proteins (i.e. protein synthesis), or decreasing the capacity to process that load (i.e., protein folding or degradation), or both. My pilot project tested the hypothesis that excess saturated fatty acids mediate ER stress by stimulating protein synthesis. We found that in both hepatocyte and rodent models of obesity and NAFLD, excess saturated fatty acids did not alter rates of protein synthesis (manuscript in preparation). This has led to the hypothesis that excess saturated fatty acids mediate ER stress by impairing protein folding or degradation.
 -
@@ -210,7 +216,7 @@
   funding:
     -
       name: Pilot Project
-      period: May 1, 2019 - April 30, 2020
+      period: May 1, 2019 - August 18, 2020
     -
       name: Pilot Project
       period: May 1, 2018 - April 30, 2019
@@ -232,7 +238,7 @@
   funding:
     -
       name: Translational Project
-      period: May 1, 2019 - April 30, 2020
+      period: May 1, 2019 - August 18, 2020
   abstract: |
       Craniomaxillofacial (CMF) surgeons treat bone defects using autografts, allografts, and even xenografts in an attempt to restore functionality and aesthetic appearance. Metallic biomaterials are also employed in various forms as substitutes for damaged bones, to hold bones together, strengthen tendons and ligaments or attach them to the bone, and replace diseased bone. These materials are also bioinert, possess little biological activity in vivo, with subsequent poor tissue integration, increased incidence of inflammation and infection, and implant loosening and failure due to infection. Further, ions can leach from the implants due to metal wear debris, resulting from corrosion, wear, and attrition from the metallic surfaces. The same degradation processes can lead to the loss of mechanical integrity and robustness, with the implant failing to perform the intended function. 3D printing can be used to create prostheses to replace or repair damaged tissues. Reconstructive surgery can also leverage 3D-printing technologies to develop custom cutting guides, fixation devices, practice models and implanted medical devices to improve patient outcomes. Recent advances in our lab have led to the development of a 3D printing technique able to fabricate an implantable medical device capable of delivering therapeutic drugs (antibiotics, chemotherapeutics, hormones, and steroids) directly to the intended target and then degrade safely in the body. The objective of this research is to fabricate a customized drug-eluting and biodegradable implant (e.g., resorbable bone mesh, screws and plates) using 3D printing technology. Our polymer nanocomposite will couple the treatment of infection while simultaneously encouraging tissue regeneration. The nanocomposite will consist of a polycaprolactone (PCL) and polyethylene oxide (PEO) polymer blend, and a calcium phosphate cement (CPC) enhanced with halloysite nanotubes (HNTs). The PCL/PEO blend will have controlled degradation and will be coupled with HNTs doped with antimicrobials and osteoinductive/osteogenic growth factors (hereafter termed bioactive agents). It can also serve as an orthobiologic. When applied or implanted into bone tissue, it will facilitate disease remediation, osteogenesis, matrix formation, mineralization, and biointegration. This project will produce a novel, cost-effective and customizable medical devices for use in the treatment of developmental or traumatic CMF defects or injuries.
 -
@@ -251,7 +257,7 @@
   funding:
     -
       name: Pilot Project
-      period: May 1, 2019 - April 30, 2020
+      period: May 1, 2019 - August 18, 2020
     -
       name: Startup Project
       period: May 1, 2018 - April 30, 2019
@@ -267,7 +273,7 @@
   funding:
     -
       name: Startup Project
-      period: May 1, 2018 - April 30, 2020
+      period: May 1, 2018 - August 18, 2020
   abstract: |
       Inflammation is the main cause of major cardiovascular diseases, including acute lung injury (ALI) and acute respiratory distress syndrome (ARDS). While glucocorticosteroids possess a strong anti-inflammatory activity, their side effects restrict their wide-spread use to only severe circumstances. On the other hand, single-target anti-inflammatory agents (e.g., COX inhibitors) lack serious side effects but are void of broad-spectrum anti-inflammatory activity. Strong anti-inflammatory agents with limited side effects would be of great significance in the prevention and management of cardiovascular disease. Hsp90 inhibitors have already completed Phase I and II trials for cancer and represent an exciting new possibility as clinically useful anti- inflammatory drugs. Vascular endothelium forms a barrier that controls the extravasation of solutes, macromolecules and leukocytes. Endothelial barrier dysfunction (EBD) leads to capillary hyper-permeability, which, in the lung, is a hallmark of acute lung injury (ALI) and of the acute respiratory distress syndrome (ARDS). Frequently, EBD results from the re-arrangement of the actin cytoskeleton, from a cortical architecture to the formation of actin stress fibers that "pull apart" adjacent endothelial cells to increase paracellular permeability. Recent data suggest that Hsp90 inhibitors exert a strong anti - inflammatory activity, and that can protect the endothelium against inflammatory insults; such as LPS. We have recently discovered that the wild type P53 mediates the protective effect of the hsp90 inhibitors in the vasculature. In the current grant application we report our findings on the discovery of new mechanisms by which Hsp90 inhibition protects against the LPS induced barrier dysfunction.
 -
@@ -280,7 +286,7 @@
   funding:
     -
       name: Startup Project
-      period: May 1, 2018 - April 30, 2020
+      period: May 1, 2018 -  August 18, 2020
   abstract: |
       The effects of environmental contaminant (e.g., bisphenol A, organochlorine pesticides, phthalates, etc.) exposure are detrimental to organisms at two major life stages, adult or developing organism. However, there is a lack of understanding to the degree at which maternal transfer of environmental contaminants during pregnancy or even early exposure to these compounds may have on the potential to cause neurobehavioral disorders. Thus, the goal of this project will be to determine if exposure to environmental contaminants early in development or if maternal transfer of contaminants result in neurobehavioral disorders such as those relating to learning ability, emotional distress, and memory. The model organism for these studies will be the zebrafish (Danio rerio). Zebrafish are an ideal model because they are small and robust, cheaper to maintain than mice, and share similar genetic homology to humans. These fish have also been used to assess behavioral abnormalities relating to exposure of environmental contaminants. These compounds will be delivered through either food-borne or water-borne exposures to mimic direct (ingestion) or indirect exposures, respectively. In addition to behavior studies, mechanisms to which the contaminants impair neurobehavioral changes will be assessed to define novel biomarkers for the early onset of neurobehavioral disorders. Results from this study may provide insight into potential adverse effects of environmental contaminants on neurobehavioral changes in humans such as attention-deficit hyperactivity disorder (ADHD), autism spectrum disorder (ASD), and aggression. In addition, the detection of new biomarkers relating to early onset of neurobehavioral impairments may be identified which can greatly benefit early diagnosis of these disorders.
 -
@@ -293,7 +299,7 @@
   funding:
     -
       name: INBRE COBRE Collaborative Project
-      period: 08-01-2019 to 04-30-2020
+      period: August 1, 2019 - August 18, 2020
   collaborator: Jean Christopher Chamcheu
   abstract: |
       The primary objective of this proposal is to validate the critical role of the mTOR and secondary signaling in skin inflammation with emphasis on psoriasis pathogenesis and to test fisetin, a common natural dietary ingredient for its management. Psoriasis is a chronic and currently incurable inflammatory skin disease that affects an estimated 3% of the world population3, 4,5 with > 8 million afflicted individuals in the US alone3, 4. Psoriasis etiology is incompletely understood, but involves disruption of multiple cell systems impinging on the dynamic interaction amid immune cells and the skin, featuring epidermal hyperplasia, immune cell infiltration, immune-mediators orchestration and skin barrier dysfunction3, 4. The past several decades have recorded a skyrocketing increase in new psoriasis cases, associated with significant decline in patients’ quality of life and an increased risk of arthritis and cardiovascular diseases6. Being multifactorial, curative treatments for mild/moderate psoriasis have proved frustrating and still remain elusive, thus it is unlikely that hitting a single target will effectively control the disease. Thus, there remains a dire need to develop novel and effective mechanisms and target-based strategies for long-term patient benefits. Our preliminary data suggest that amongst multiple signaling networks implicated in psoriasis, the phospho-inositol- 3 Kinase (PI3K)/protein kinase B(Akt)/mammalian target of Rapamycin (mTOR) and MAPK pathways, which regulate cell growth and angiogenesis, are clinically relevant targets that cooperatively promote psoriasis7, 8. We observed that PI3K/Akt/mTOR signaling is hyperactivated in both human psoriatic and imiquimod (IMQ)-induced murine psoriasis-like skin lesions compared to unaffected tissues7, 8. Likewise, our pilot studies on competitive binding, Kd’s and in-silico docking analyses identified fisetin as a potent dual mTOR kinase inhibitor that physically interacts and competitively binds mTOR and p70S6K1 with binding energies of -7 to -10.5Kcal/mol9. In addition, fisetin alone or in combination with activating agents, induced differentiation in normal human epidermal keratinocytes (NHEKs) and inhibited 1) NHEK proliferation, 2) PI3K/Akt/mTOR activation, 3) mTOR activity, 4) secretion of pro-inflammatory cytokines by NHEKs, peripheral blood mononuclear cells (PBMCs) and a CD4+T activated 3 dimensional (3D) Full-Thickness Reconstituted Human Skin equivalent model of Psoriasis (FTRHSP). Based on these observations, we posit that “PI3K/Akt/mTOR and MAPK networks are critical in psoriasis pathogenesis and, fisetin will inhibit the activation of these pathways, suppress proliferation, inflammation and neo-vascularization, and concomitantly induce differentiation to efficiently alleviate psoriasiform disease”.
@@ -313,7 +319,7 @@
   funding:
     -
       name: Pilot Project
-      period: May 1, 2019 - April 30, 2020
+      period: May 1, 2019 - August 18, 2020
   abstract: |
       Plants have been known as sources of immensely diverse specialized metabolites with substantial medicinal properties. Among the unique phytochemicals are monoterpene indole alkaloids (MIAs), which have been used in chemotherapy treatments. While there is an increasing demand for anticancer drugs, their production still depends on isolation of natural product precursors from medicinal plants. Alternative production of these drugs in microbial systems via metabolic engineering requires comprehensive knowledge of biosynthetic and regulatory machineries in plants. Our research focuses on the elucidation of biosynthetic pathways at the molecular and enzymatic level for more efficient production of cytotoxic compounds used in cancer treatments. The variety of biochemical pathways in MIA-producing plants also results in the diversity of plant natural products that is being investigated for discovery of drugs with new mechanisms of action. Currently, we integrate omics and biochemical approaches to understand biosynthesis of camptothecin, a monoterpene indole alkaloid in the medicinal plant Camptotheca acuminata, as well as other potential bioactive compounds with anticancer properties.
 -
@@ -326,7 +332,7 @@
   funding:
     -
       name: Startup Project
-      period: May 1, 2018 - April 30, 2020
+      period: May 1, 2018 -  August 18, 2020
   abstract: |
       Understanding the link between brain function and behavior is crucial to addressing neurological disorders. In this respect, developing tools that can measure the dynamics of the brain's activities plays an important role. This proposal aims to build an fNIR (functional near infrared) signal detection and recording system to be used for brain activity recognition. After developing the fNIR system, the PI will collaborate with researchers in the Department of Kinesiology and Health Studies and the Department of Psychology at Southeastern Louisiana University and Louisiana State University to test the system. In addition, the PI will work closely with undergraduate and graduate students to prepare them for the work force. In this regard, the PI will develop a curriculum that teaches students how to conduct scientific research and translate the outcome of the research into technology. The equipment requested in this proposal will also be used to build a Data Science Research and Technology Lab in the Department of Computer Science and Industrial Technology. The specific aims are: Aim-1: Developing an NIR imaging system to measure brain hemodynamics. Aim-2: Developing a phantom model to simulate the optical properties of a brain structure. Aim-3: Developing a blood circulation simulator. Aim-4: Testing the performance of the system and exploring the effect of parameters. Aim-5: Building a Data Science Research and Technology Lab.
 -
@@ -379,12 +385,14 @@
   mentors:
     -
       name: Shile Huang
-      origin: LSUHSC-S; Urksa Cvek
+      origin: LSUHSC-S
+    -
+      name: Urksa Cvek
       origin: LSU-S
   funding:
     -
       name: Full Project
-      period: May 1, 2015 - April 30, 2020
+      period: May 1, 2015 - August 18, 2020
   abstract: |
       Super small metal particles (<2nm, thereinafter referred as nanoclusters) represent an emerging new type of alternative fluorescent probes due to their excellent biocompatibility, tunable emission, large Stokes shift, and long fluorescence lifetime. However, the low quantum yield being the most serious weakness limits their practical applications. The goal of this project is to develop a hybridized hierarchical nanostructure which contains metal particles of 20_50nm (thereinafter referred as nanoparticles) and small metal nanoclusters to greatly enhance the fluorescence emission of the small metal nanoclusters by coupling surface plasmon resonance of the big metal nanoparticles. This project focuses on increasing the fluorescence quantum yield of metal nanoclusters for bioimaging applications by utilizing metal surface plasmon resonances through controlling the morphology and size of the big metal nanoparticles, as well as the distance between the nanoparticles and the nanoclusters. This study investigates the mechanism of fluorescence coupling with surface plasmon resonance, establishes a basic theoretical understanding for solving the low quantum yield issue of metal nanoclusters. The research outcomes will help to develop efficient targeting fluorescent nanoprobes for imaging and diagnosis of tumors for medical application.
 -
@@ -422,8 +430,8 @@
   funding:
     -
       name: Translational
-      period: May 1, 2019  April 1, 2020
-      
+      period: May 1, 2019 - August 18, 2020
+
     -
       name: Full Project
       period: May 1, 2015 - April 30, 2018
@@ -561,7 +569,7 @@
     -
       name: Project R3
       period: May 1, 2010 - April 30, 2012
-      
+
     -
       name: Pilot Project
       period: May 1, 2009 – April 30, 2010
@@ -767,7 +775,7 @@
   active: false
   origin: Louisiana State University in Shreveport, Department of Computer Science
   image: EMahdavian.jpg
-  project_title: Development Of Novel Anti-Cancer Agents
+  project_title: Combination Cancer Therapeutics Based on Fusarochromanone
   mentors:
     -
       name: Christopher Kevil, Ph.D.
@@ -775,6 +783,9 @@
   funding:
     -
       name: Translational Project
+      period: May 1, 2018-	April 30, 2019
+    -
+      name: Full Project
       period: May 1, 2010 - April 30, 2015
     -
       name: Pilot Project
@@ -861,7 +872,7 @@
   funding:
     -
       name: Full Project
-      period: May 1, 2015 - April 30, 2018
+      period: May 1, 2015 - April 30, 2019
 
   abstract: |
     Incretins are gut hormones secreted from enteroendocrine cells into the blood rapidly following ingestion of food, and are known to regulate insulin secretion. The two known incretins are glucose-dependent insulinotropic peptide (GIP) and glucagon-like peptide-1 (GLP-1). Both incretins are rapidly inactivated by dipeptidyl peptidase 4 (DPP4). The GLP agonists and DPP-4 inhibitors are drugs that augment the incretin system representing a novel class of anti-hyperglycemic agents which also have been shown to elicit pleotropic effects such as improvement of hepatic inflammation and hepatosteatosis, insulin resistance, help cardiac health, weight loss and induce satiety. Hypercholesterolemia and hyperhomocysteinemia (HHcy) are among the widely documented risk factors for the development and progression of atherosclerosis and cardiovascular diseases (CVDs). Homocysteine (Hcy), an intermediate in the metabolism of the essential amino acid methionine (Met) has been implicated in various age related pathologies such as heart disease, Alzheimers disease, osteoporosis, stroke, and end stage renal disease. Hyperhomocysteinemia can result from deficiencies of vitamins like folate, B6 and B12 or enzyme defects (Met metabolizing) or dietary excess of Met. High serum Cholesterol (Chol) or hypercholesterolemia that contributes to the development of atherosclerosis is also considered to be caused due to inflammatory processes. Among others, increased levels of Chol are known to impair endothelium-dependent vasodilatation, exaggerate the pressor response to stress and contribute to blood pressure increase. Interestingly, both Met and Chol are rich in meat and dairy based products (extensively consumed in US and components of staple diet), and are invariably consumed together. Therefore, studying the effects of a dietary combination of Met and Chol is very important especially in the context of nutrition and atherosclerosis. The DPP4 inhibitors reduce post-prandial glycemia via inhibition of the degradation of GLP-1. In addition to their antidiabetic action, DPP-4 inhibitors have pleiotropic cardiovascular protective effects. Feeding rats with diets rich in L-Met and Chol, we will test the hypothesis Hyperhomocysteinemia in high Cholesterol fed rats potentiates development of atherosclerosis, and can be alleviated by DPP4 inhibitors' with two specific aims; a) To determine the effects of feeding a dietary excess of Cholesterol and Methionine on the vascular (aorta) structural/atherosclerotic changes; and b) To evaluate if treatment with a DPP-4 inhibitor sitagliptin alleviates inflammation and the atherosclerotic processes, and study the mechanistic aspects involved. Four groups of male Sprague Dawley rats weighing between 250-275g will be fed i) normal feed (without any enrichment), ii) a diet enriched with 1% L-methionine, iii) a diet enriched with 2% Chol, and iv) a diet enriched with 1% L-Met and 2% Chol. Each group will comprise of 10 rats on the respective dietary regimen and the feeding will be carried out for a period of 5 weeks. A similar protocol will be followed with 4 additional groups of 10 rats each, and administered an aqueous suspension of sitagliptin (300 mg/kg/d) by oral gavage from day 15 till the end of the experiment. The overall goals of this proposal are to evaluate the effects of manipulating the dietary content of Met and Chol and identify key events involved in the interplay of risk factors responsible for the development of cardiovascular pathology. An additional goal is to determine if treatment with sitagliptin, a DPP-4 inhibitor, ameliorates the development of these risk factors, and understand the mechanistic aspects. These studies will yield useful information in understanding the development of vascular complications during the combined consumption of Met and Chol (rich in Western diets), and if DPP4 inhibitors help in recession of problems and for better patient management.
@@ -933,8 +944,11 @@
   origin: Louisiana Tech University, Department of Health Information Management
   university: Louisiana Tech University
   image: PSethi.jpg
-  project_title: Rule-based Data Mining for Knowledge Discovery in Alzheimer’s Disease using Microarray Databases
+  project_title: A Predictive Modeling Framework for Continued Investigation of Disparity in Colorectal Cancer Screening
   mentors:
+    -
+      name: Ronald Horswell
+      origin: PBRC
     -
       name: Walter J. Lukiw, Ph.D.
       origin: LSU Health Science Center in New Orleans, Neuroscience Center of Excellence
@@ -942,6 +956,9 @@
       name: Mark DeCoster, Ph.D.
       origin: Louisiana Tech University
   funding:
+    -
+      name: Translational
+      period: May 1, 2018 - April 30, 2019
     -
       name: Project R9
       period: May 1, 2010 - April 30, 2015
@@ -954,13 +971,25 @@
     We will objectively achieve the aims of the Computational and Structural Biology core of LA-INBRE by fostering new collaborations across the State and extensively leveraging the computational resources made available through the Data Mining laboratory in the College and LONI for the design and development of algorithms.
 -
   name: Lidiya Dubytska
-  active: false
+  active: true
   origin: Southern University and A&amp;M College
   university: Southern University and A&amp;M College
   image: LDubytska.jpg
   project_title: Legionella pneumophilia T4SS (lvh) system and its role in virulence
   mentors:
+    -
+      name: Eduardo Ceballos-Martinez
+      origin: SUBR
+    -
+      name: Sanjay Batra
+      origin: SUBR
+    -
+      name: Gus Kousoulas
+      origin: LSU
   funding:
+    -
+      name: Pilot Project
+      period: 5/1/2018 - 4/30/2019
   abstract:
 -
   name: Galina Goloverda
@@ -970,17 +999,32 @@
   image: GGoloverda.jpg
   project_title: Toward development of a novel cancer diagnostic tool
   mentors:
+    -
+      name: Vladimir Kolesnichenko
+      origin: Xavier University of Louisiana
   funding:
+    -
+      name: Pilot Project
+      period: 5/1/2018 - 4/30/2019
   abstract:
 -
   name: Marjan Trutschl
-  active: false
+  active: true
   origin: Louisiana State University, Shreveport
   university: Louisiana State University, Shreveport
   image: MTrutschl.jpg
   project_title: Computational Modeling of Blood Metabolomics Biomarkers Addressing Racial Disparity
   mentors:
+    -
+      name: Hyung Nam
+      origin: LSUHSC-S
   funding:
+    -
+      name: INBRE COBRE Collaborative (Supplement)
+      period: August 1, 2020 – April 30, 2021
+    -
+      name: Translational
+      period: May 1, 2018 – April 30, 2019
   abstract:
 -
   name: Maureen Shuh
@@ -1032,7 +1076,7 @@
   funding:
     -
       name: Full Project
-      period: May 1, 2017 – April 30, 2018
+      period: May 1, 2017 – April 30, 2019
     -
       name: Pilot Project
       period: May 1, 2015 – April 30, 2017
@@ -1112,3 +1156,15 @@
   abstract: |
     Immune cells such as pro-inflammatory folate receptor positive (FR+) activated macrophages play a key role in the development of inflammatory diseases . Because treatment of most inflammation pathologies are encumbered by unwanted side effects that arise from the deposition of drug into wrong tissues . The logical remedy for these undesirable properties involves selective targeting of the therapeutic agent to pathologic cells, thereby avoiding collateral toxic ity to healthy cells and undesirable side effects. Previous published work has demonstrated that activated macrophages overexpress folate receptor (but not resting macrophages) that can be exploited for selective targeting and internalization of small molecular folate conjugates (SMFCs) (Mw < 3000) proven useful in sites of inflammation in both human patients and animal models, however little work has been investigated on nanoscale drug delivery system such as biopolymer nanoparticle. Although, peptide drugs may be effective in promoting anti-inflammatory effects but poor bioavailability limits its commercial application, thereby alternative delivery approaches must be sought. In recent years, temperature sensitive polymeric nanoparticles have attracted much attention for their potential biomedical applications in delivering drug to tumor sites and inflamed tissues.
     For this purpose, we propose designing a nanoscale drug carrier that function as selective targeting and ability to protect peptide drug from enzymatic degradation, thus increasing the half-life of the peptide for diagnostics and therapeutic treatment. By combining folate-targeting and biopolymer as a carrier, we examined whether folate-targeted thermosensit ive polymer (FTSP) loaded with fluorescent and therapeutic cargos could selectively target folate receptor positive (FR+) activated macrophages, presenting the opportunity to both visualize and suppressing pro-inflammatory mediators, with little or no collateral toxicity to healthy cells.
+
+-
+  name: Hyung Nam
+  active: true
+  origin: LSUHSC-S
+  image: HNam.jpg
+  project_title: Computational Modeling of Blood Metabolomics Biomarkers Addressing Racial Disparity
+  funding:
+    -
+      name: INBRE COBRE Collaborative (Supplement)
+      period: August 1, 2020 – April 30, 2021
+  abstract: |
