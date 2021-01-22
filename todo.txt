@@ -719,9 +719,9 @@ inbre cobre collab (supplement) for nam/marjan
     //supplement: collab
     Prerna Dua
 
-click to open/click to close
+//click to open/click to close
 move down to guidles
-remove old arrows
+//remove old arrows
 
 priorities:
 //-Graphics for poster/email/letter

@@ -811,7 +811,13 @@ main.research div.content h2 {
 #core-list .horiline-r {
   margin-left: 46.5%;
 }
-
+.npi.soff.coff {
+  display: none!important;
+}
+.LBRNe article {
+  min-height: 5em;
+  padding-bottom: 1em;
+}
 #campusmap {
   /* background:url(../images/campus-map.svg); */
   /* height: 10vh; */
@@ -954,13 +960,7 @@ main.research div.content h2 {
     position: absolute;
   }
 
-  .npi.soff.coff {
-    display: none!important;
-  }
-  .LBRNe article {
-    min-height: 5em;
-    padding-bottom: 1em;
-  }
+
 
   .centenary {
     height: 4%;

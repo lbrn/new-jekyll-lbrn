@@ -909,6 +909,15 @@ main.research div.content h2 {
   margin-left: 46.5%;
 }
 
+.npi.soff.coff {
+  display: none !important;
+}
+
+.LBRNe article {
+  min-height: 5em;
+  padding-bottom: 1em;
+}
+
 #campusmap {
   /* background:url(../images/campus-map.svg); */
   /* height: 10vh; */
@@ -1046,13 +1055,6 @@ main.research div.content h2 {
   margin-top: 35%;
   margin-left: 19%;
   position: absolute;
-}
-.mapcontainer .npi.soff.coff {
-  display: none !important;
-}
-.mapcontainer .LBRNe article {
-  min-height: 5em;
-  padding-bottom: 1em;
 }
 .mapcontainer .centenary {
   height: 4%;
