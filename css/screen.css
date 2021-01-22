@@ -1047,6 +1047,13 @@ main.research div.content h2 {
   margin-left: 19%;
   position: absolute;
 }
+.mapcontainer .npi.soff.coff {
+  display: none !important;
+}
+.mapcontainer .LBRNe article {
+  min-height: 5em;
+  padding-bottom: 1em;
+}
 .mapcontainer .centenary {
   height: 4%;
   width: 13%;
@@ -3317,6 +3324,22 @@ div.content .news.tne article .post-link {
       -ms-flex-item-align: start;
           align-self: flex-start;
 }
+#lbrnHighlightHeader #eventSummary, #lbrnHighlightHeader #eventMediaLink, #lbrnHighlightHeader #eventWhenAndWhere, #lbrnHighlightHeader #eventLodgingAndExpenses, #lbrnHighlightHeader #eventPresentations, #lbrnHighlightHeader #eventParticipants, #lbrnHighlightHeader #eventPastParticipants, #lbrnHighlightHeader #eventRegistration, #lbrnHighlightHeader #eventArchiveMedia {
+  position: relative;
+  margin-bottom: 1.2em;
+}
+#lbrnHighlightHeader #eventSummary h2, #lbrnHighlightHeader #eventMediaLink h2, #lbrnHighlightHeader #eventWhenAndWhere h2, #lbrnHighlightHeader #eventLodgingAndExpenses h2, #lbrnHighlightHeader #eventPresentations h2, #lbrnHighlightHeader #eventParticipants h2, #lbrnHighlightHeader #eventPastParticipants h2, #lbrnHighlightHeader #eventRegistration h2, #lbrnHighlightHeader #eventArchiveMedia h2 {
+  /* padding-right: 1.5em; */
+  margin-top: unset;
+  background-color: unset;
+  cursor: pointer;
+}
+#lbrnHighlightHeader #eventSummary h2:hover, #lbrnHighlightHeader #eventMediaLink h2:hover, #lbrnHighlightHeader #eventWhenAndWhere h2:hover, #lbrnHighlightHeader #eventLodgingAndExpenses h2:hover, #lbrnHighlightHeader #eventPresentations h2:hover, #lbrnHighlightHeader #eventParticipants h2:hover, #lbrnHighlightHeader #eventPastParticipants h2:hover, #lbrnHighlightHeader #eventRegistration h2:hover, #lbrnHighlightHeader #eventArchiveMedia h2:hover {
+  /* cursor: pointer; */
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+}
 #lbrnHighlightHeader div.caption {
   padding-left: 20px;
 }
@@ -3676,6 +3699,63 @@ div.chooseTypeInline div label:hover {
   padding: 0;
   margin: 0.1em 0;
   display: inline-block;
+}
+
+.collapsetitle {
+  position: relative;
+}
+
+.collapsetstyle {
+  /* display: none; */
+  /* position: absolute; */
+  top: 0.1em;
+  right: 0.1em;
+  width: 100%;
+  height: 2em;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  /* position:absolute; */
+  /* position: static; */
+}
+
+i.collapsetstyle:before {
+  display: inline-block;
+  padding-left: 4px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  top: 9px;
+  font-size: 18px;
+}
+
+i.collapsetstyle h2 {
+  font-size: 24px;
+  padding-left: 26px;
+}
+
+i.collapsetstyle.collapsed h2:after {
+  content: " (Click to open)";
+}
+
+i.collapsetstyle h2:after {
+  content: " (Click to close)";
+}
+
+i.collapsetstyle.collapsed:before {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+      transform: rotate(0deg);
 }
 
 #mobileChooseType div.chooseType label:hover {
@@ -5009,10 +5089,6 @@ footer span {
     display: block;
   }
 
-  .collapsetstyle {
-    display: none !important;
-  }
-
   #uni {
     width: unset;
   }
@@ -5560,16 +5636,7 @@ footer span {
   }
 }
 @media (min-width: 667px) {
-  #eventArchiveMedia h2,
-#eventLodgingAndExpenses h2,
-#eventMediaLink h2,
-#eventParticipants h2,
-#eventPastParticipants h2,
-#eventPresentations h2,
-#eventRegistration h2,
-#eventSummary h2,
-#eventWhenAndWhere h2 {
-    padding-left: 0;
+  #eventSummary h2, #eventMediaLink h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2, #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
     background-color: white;
     cursor: auto;
   }
@@ -5585,11 +5652,6 @@ footer span {
 #eventSummary h2:hover,
 #eventWhenAndWhere h2:hover {
     background-color: unset;
-  }
-}
-@media (min-width: 667px) {
-  .collapsetstyle {
-    color: white;
   }
 }
 @media (min-width: 667px) {

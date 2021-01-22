@@ -954,6 +954,14 @@ main.research div.content h2 {
     position: absolute;
   }
 
+  .npi.soff.coff {
+    display: none!important;
+  }
+  .LBRNe article {
+    min-height: 5em;
+    padding-bottom: 1em;
+  }
+
   .centenary {
     height: 4%;
     width: 13%;
@@ -3100,6 +3108,22 @@ div.content .news {
       align-self: flex-start;
     }
   }
+  #eventSummary, #eventMediaLink, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventPresentations, #eventParticipants, #eventPastParticipants, #eventRegistration, #eventArchiveMedia {
+    position: relative;
+    margin-bottom: 1.2em; }
+  #eventSummary h2, #eventMediaLink h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2, #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
+    // padding-left: 1em;
+    /* padding-right: 1.5em; */
+    margin-top:unset;
+    background-color: unset;
+    cursor: pointer;
+  }
+
+  #eventSummary h2:hover,  #eventMediaLink h2:hover, #eventWhenAndWhere h2:hover, #eventLodgingAndExpenses h2:hover, #eventPresentations h2:hover, #eventParticipants h2:hover, #eventPastParticipants h2:hover, #eventRegistration h2:hover, #eventArchiveMedia h2:hover{
+    // background-color: #e5f3e6;
+    /* cursor: pointer; */
+    border-radius: 10px;
+  }
 
   div.caption {
     padding-left: 20px;
@@ -3426,6 +3450,77 @@ div.chooseTypeInline div label:hover {
   margin: 0.1em 0;
   display: inline-block;
 }
+  //
+  // .collapsetstyle {
+  //   /* display: none; */
+  //   /* position: absolute; */
+  //   top: .1em;
+  //   right: .1em;
+  //   width: 100%;
+  //   height: 2em;
+  //   transition: all 0.5s;
+  //   /* position:absolute; */
+  //   /* position: static; */
+  //  }
+  // i.collapsetstyle:before {
+  //   display: inline-block;
+  //   padding-left: 4px;
+  //   -webkit-transform: rotate(90deg);
+  //   -moz-transform: rotate(90deg);
+  //   transform: rotate(90deg);
+  //   position: absolute;
+  //   transition: all 0.5s;
+  //   top: 14px;
+  // }
+  // i.collapsetstyle h2 {
+  //  padding-left: 32px;
+  // }
+  // i.collapsetstyle.collapsed:before {
+  //  -webkit-transform: rotate(0deg);
+  //  -moz-transform: rotate(0deg);
+  //  transform: rotate(0deg);
+  // }
+
+  .collapsetitle {
+    position: relative;
+  }
+  .collapsetstyle {
+    /* display: none; */
+    /* position: absolute; */
+    top: .1em;
+    right: .1em;
+    width: 100%;
+    height: 2em;
+    transition: all 0.5s;
+    /* position:absolute; */
+    /* position: static; */
+   }
+  i.collapsetstyle:before {
+    display: inline-block;
+    padding-left: 4px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    transition: all 0.5s;
+    top: 9px;
+    font-size: 18px;
+ }
+ i.collapsetstyle h2 {
+   font-size: 24px;
+   padding-left: 26px;
+ }
+ i.collapsetstyle.collapsed h2:after {
+   content: " (Click to open)";
+ }
+ i.collapsetstyle h2:after {
+   content: " (Click to close)";
+ }
+ i.collapsetstyle.collapsed:before {
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   transform: rotate(0deg);
+  }
 
 #mobileChooseType div.chooseType label:hover {
   color: #425ca2;
@@ -4613,8 +4708,8 @@ footer span {
     }
   }
 
-  .collapsetstyle {
-    display: none !important;
+  .collapsetstyle{
+    // display:none !important;
   }
 
   #uni {
@@ -5105,19 +5200,9 @@ footer span {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    overflow: hidden;
-  }
-
-  #eventArchiveMedia h2,
-  #eventLodgingAndExpenses h2,
-  #eventMediaLink h2,
-  #eventParticipants h2,
-  #eventPastParticipants h2,
-  #eventPresentations h2,
-  #eventRegistration h2,
-  #eventSummary h2,
-  #eventWhenAndWhere h2 {
-    padding-left: 0;
+    overflow: hidden; }
+  #eventSummary h2, #eventMediaLink h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventPresentations h2, #eventParticipants h2,  #eventPastParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
+    // padding-left: 0;
     background-color: white;
     cursor: auto;
   }
@@ -5134,9 +5219,8 @@ footer span {
     background-color: unset;
   }
 
-  .collapsetstyle {
-    color: white;
-  }
+  // .collapsetstyle {
+  //   color: white; }
 
   .collapsenobs {
     height: inherit;

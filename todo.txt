@@ -610,14 +610,125 @@ pick two design elements and leave it
 shading on the circle throws john off
 angle/horizontal dna
 
-change resources > templates to Media Templates
-including on pulldown
-do this for ramesh branch too
+//change resources > templates to Media Templates
+//including on pulldown
+//do this for ramesh branch too
 
 
-Create powerpoint links, and zoom links
+//Create powerpoint links, and zoom links
 powerpoint background and image background
 update grant number in the file
 take off the dash-18
 
-DO THE COLLAB/SUPPLIMENT THING ON ITS OWN BRANCH
+//DO THE COLLAB/SUPPLIMENT THING ON ITS OWN BRANCH
+
+//h2 space issues
+
+oral presentation down to "if you have any questions" above registration
+
+record dashboard on redcap for PI info
+
+
+eventwhenandwhere
+
+.collapsetitle {
+  position: relative;
+}
+.collapsetstyle {
+  /* display: none; */
+  /* position: absolute; */
+  top: .1em;
+  right: .1em;
+  width: 100%;
+  height: 2em;
+  transition: all 0.5s;
+  /* position:absolute; */
+  /* position: static; */
+ }
+i.collapsetstyle:before {
+  display: inline-block;
+  padding-left: 4px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  transition: all 0.5s;
+  top: 9px;
+  font-size: 18px;
+}
+i.collapsetstyle h2 {
+ font-size: 24px;
+ padding-left: 26px;
+}
+i.collapsetstyle.collapsed:before {
+ -webkit-transform: rotate(0deg);
+ -moz-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+
+.npi.soff.coff {
+  display: none!important;
+}
+
+1-20-2021
+==================
+digital posters
+like the top  of the live site
+
+also include seperate element logo
+
+text below logo element
+
+
+SQUARE Logo:
+LBRN
+logos
+lines
+Long LBRN
+
+stick with the green
+
+
+work from email
+
+more space between funding period and abstract
+
+not fixed on ramesh branch
+force change case
+fix + hide abstract too if no abstract
+https://lbrn.lsu.edu/pis/Dua_Prerna_sethi.html
+
+marian and nam are both inbre cobre collab
+tag for both?
+both collab
+
+marjan translational is OLD
+update to new one
+
+inbre cobre collab (supplement) for nam/marjan
+
+    //Galina Goloverda: Funding Period and Mentor info not displaying.
+    //Lidiya Dubytska: Funding Period and Mentor info not displaying.
+    //Marjan Trutschl: Funding Periods (2) and Mentor info not displaying.
+    //Paul Kim: His full project extended to April 30, 2021. - just a reminder his date changed too.
+    //Elahe Mahdavian’s Funding Periods are incorrect, see updated spreadsheet for types and time periods. The existing title/mentor/abstact are current with the last project.
+    //Prerna Dua: not showing up on webpage after clicking on link: https://lbrn.lsu.edu/pis/Dua_Prerna_Sethi.html
+    //Devaiah Kambiranda: I found a photo to use. I’ll email with spreadsheet.
+
+
+    //supplement: collab
+    Prerna Dua
+
+click to open/click to close
+move down to guidles
+remove old arrows
+
+priorities:
+//-Graphics for poster/email/letter
+//-PI works (tied with) v
+//-arrow fixes for thing
+==update ramesh branch with those
+-zoom last
+
+
+update css update version number
