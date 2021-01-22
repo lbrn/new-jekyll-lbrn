@@ -1739,6 +1739,12 @@ main div.content h3:enabled {
    font-size: 24px;
    padding-left: 26px;
  }
+ i.collapsetstyle.collapsed h2:after {
+   content: " (Click to open)";
+ }
+ i.collapsetstyle h2:after {
+   content: " (Click to close)";
+ }
  i.collapsetstyle.collapsed:before {
    -webkit-transform: rotate(0deg);
    -moz-transform: rotate(0deg);

@@ -703,21 +703,27 @@ update to new one
 
 inbre cobre collab (supplement) for nam/marjan
 
-    Galina Goloverda: Funding Period and Mentor info not displaying.
-    Lidiya Dubytska: Funding Period and Mentor info not displaying.
+    //Galina Goloverda: Funding Period and Mentor info not displaying.
+    //Lidiya Dubytska: Funding Period and Mentor info not displaying.
     Marjan Trutschl: Funding Periods (2) and Mentor info not displaying.
     Paul Kim: His full project extended to April 30, 2021. - just a reminder his date changed too.
-    Elahe Mahdavian’s Funding Periods are incorrect, see updated spreadsheet for types and time periods. The existing title/mentor/abstact are current with the last project.
+    //Elahe Mahdavian’s Funding Periods are incorrect, see updated spreadsheet for types and time periods. The existing title/mentor/abstact are current with the last project.
     Prerna Dua: not showing up on webpage after clicking on link: https://lbrn.lsu.edu/pis/Dua_Prerna_Sethi.html
     Devaiah Kambiranda: I found a photo to use. I’ll email with spreadsheet.
 
 
-click to open/click to close
-move down to guidles
-remove old arrows
+
+//click to open/click to close
+//move down to guidles
+//remove old arrows
 
 priorities:
--Graphics for poster/email/letter
+//-Graphics for poster/email/letter
 -PI works (tied with) v
--arrow fixes for thing
+//-arrow fixes for thing
+==update ramesh branch with those
 -zoom last
+
+update css update version number
+
+note john with submitted hours
