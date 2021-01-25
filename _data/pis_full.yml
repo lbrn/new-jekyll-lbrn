@@ -160,8 +160,7 @@
     -
       name: Pilot Project
       period: May 1, 2019 - August 18, 2020
-  abstract: |
-
+  abstract:
 -
   name: Paul Kim
   active: true
@@ -223,8 +222,7 @@
     -
       name: Startup Project
       period: May 1, 2017 - April 30, 2019
-  abstract: |
-
+  abstract:
 -
   name: David Mills
   active: true
@@ -1167,4 +1165,4 @@
     -
       name: INBRE COBRE Collaborative (Supplement)
       period: August 1, 2020 – April 30, 2021
-  abstract: |
+  abstract:
