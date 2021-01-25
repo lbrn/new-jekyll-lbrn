@@ -727,8 +727,13 @@ priorities:
 //-Graphics for poster/email/letter
 //-PI works (tied with) v
 //-arrow fixes for thing
-==update ramesh branch with those
+//==update ramesh branch with those
 -zoom last
 
 
 update css update version number
+
+=========
+1-25-2021
+=========
+font-size: 1.2rem;
