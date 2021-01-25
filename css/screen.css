@@ -75,6 +75,10 @@ img:hover {
   width: 100%;
 }
 
+.about .content p {
+  font-size: 1.2rem;
+}
+
 .content #lbrnEventSidebar2, .about #lbrnEventSidebar2 {
   background-color: #8ECB91;
   float: right;
