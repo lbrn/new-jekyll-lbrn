@@ -174,8 +174,12 @@ img:hover {
   width: 100%;
 }
 
-.about #lbrnEventSidebar2,
-.content #lbrnEventSidebar2 {
+.about .content p {
+  font-size: 19.2px;
+  line-height: 35px;
+}
+
+.content #lbrnEventSidebar2, .about #lbrnEventSidebar2 {
   background-color: #8ECB91;
   float: right;
 }
@@ -326,6 +330,7 @@ a.btn.grn:hover {
   padding-bottom: 5px;
   margin-bottom: 0;
   font-size: 2rem;
+  font-size: 32px;
   padding-left: 20px;
 }
 
@@ -1844,7 +1849,6 @@ header {
 header.research {
   -webkit-filter: none;
           filter: none;
-  background-image: url("../images/slider/3.jpg");
 }
 header.cores, header.home {
   -webkit-filter: none;
@@ -5006,10 +5010,6 @@ footer span {
             flex: 1 1 30%;
     width: 30%;
     height: 100%;
-  }
-
-  .header h1 {
-    font-size: 2.5rem;
   }
 
   #core-list .sevenblock:nth-of-type(even) {

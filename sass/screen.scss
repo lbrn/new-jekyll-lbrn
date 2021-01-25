@@ -172,52 +172,53 @@ img {
 }
 
 
-.about #lbrnEventSidebar2,
-.content #lbrnEventSidebar2 {
-  // .content #lbrnEventSidebar2{
-  background-color: $secondary;
-  // width:20%;
-  float: right;
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  ul li {
-    border-bottom: 1px solid $primary;
-  }
-
-  ul a {
-    text-align: left;
-    /* margin-left:10px; */
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2x ease-in;
-  }
-
-  li {
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    margin: 0;
-    line-height: 1.5em;
-    list-style: none;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2x ease-in;
-
-    a {
-      color: $primary;
-
-      &:hover {
-        background-color: transparent;
-        -moz-transition: all 0.2s ease-in;
-        -o-transition: all 0.2s ease-in;
-        -webkit-transition: all 0.2x ease-in;
+  .about {
+    .content {
+      p {
+        font-size: 19.2px;
+        line-height: 35px;
       }
     }
+  }
+  .content #lbrnEventSidebar2, .about #lbrnEventSidebar2{
+  // .content #lbrnEventSidebar2{
+    background-color: $secondary;
+    // width:20%;
+    float: right;
+    ul {
+      margin: 0;
+      padding:0;
+    }
+    ul li{
+      border-bottom: 1px solid $primary;
+    }
+    ul a{
+      text-align: left;
+      /* margin-left:10px; */
+      -moz-transition: all .2s ease-in;
+      -o-transition: all .2s ease-in;
+      -webkit-transition: all .2x ease-in;
+    }
+    li{
+      text-align: left;
+      padding-left:10px;
+      padding-top:0.5em;
+      padding-bottom:0.5em;
+      margin:0;
+      line-height: 1.5em;
+      list-style: none;
+      -moz-transition: all .2s ease-in;
+      -o-transition: all .2s ease-in;
+      -webkit-transition: all .2x ease-in;
+      a{
+        color:$primary;
+        &:hover{
+          background-color: transparent;
+          -moz-transition: all .2s ease-in;
+          -o-transition: all .2s ease-in;
+          -webkit-transition: all .2x ease-in;
+        }
+      }
 
     &:hover {
       color: $viewall;
@@ -338,13 +339,14 @@ a.btn {
   }
 }
 
-.header h1 {
+.header h1{
   background-color: $resgreen;
-  color: $pageheader;
-  line-height: 2.2;
-  padding-bottom: 5px;
-  margin-bottom: 0;
+  color:$pageheader;
+  line-height:2.2;
+  padding-bottom:5px;
+  margin-bottom:0;
   font-size: 2rem;
+  font-size: 32px;
   padding-left: 20px;
 }
 
@@ -1711,11 +1713,36 @@ header {
     background-image: url("../images/slider/3.jpg");
     // background-image: url("../images/headers/header-background_new-01.png");
   }
-
-  &.cores,
-  &.home {
-    filter: $filter;
-    background-image: url("../images/headers/header-background_new2-15.svg");
+  // &.cores,
+  // &.home {
+  //   filter: $filter;
+  //   background-image: url("../images/headers/header-background_new2-15.svg"); }
+  //
+    header.research {
+      filter: $filter;
+      // background-image: url("../images/slider/3.jpg");
+      // background-image: url("../images/headers/header-background_new-01.png");
+    }
+    header.cores, header.home{
+      filter: $filter;
+      // background-image: url("../images/headers/header-background_new-13.svg");
+    }
+    header.bbc {
+      filter: $filter;
+      // background-image: url("../images/slider/3.jpg");
+      // background-image: url("../images/headers/header-background_new-06.png");
+    }
+    header.mcbr {
+      filter: $filter;
+      // background-image: url("../images/slider/3.jpg");
+      // background-image: url("../images/headers/header-background_new-02.png");
+    }
+  header img {
+    float: left;
+    margin: 1em 0;
+    margin-top: 1em;
+    height: 5em;
+    // content: url("/images/webLogoblm.png");
   }
 }
 // header.research {
@@ -4601,14 +4628,13 @@ footer span {
       width: 30%;
       height: 100%;
     }
-  }
 
-  .header h1 {
-    font-size: 2.5rem;
-  }
+    .header h1 {
+      font-size: 2.5rem;
+    }
 
-  #core-list .sevenblock:nth-of-type(even) {
-    border-top-style: none;
+  #core-list .sevenblock:nth-of-type(even){
+    border-top-style:none;
   }
 
   #core-list .horiline-r {
