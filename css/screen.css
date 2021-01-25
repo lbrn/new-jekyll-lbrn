@@ -183,25 +183,21 @@ img:hover {
   background-color: #8ECB91;
   float: right;
 }
-.about #lbrnEventSidebar2 ul,
-.content #lbrnEventSidebar2 ul {
+.content #lbrnEventSidebar2 ul, .about #lbrnEventSidebar2 ul {
   margin: 0;
   padding: 0;
 }
-.about #lbrnEventSidebar2 ul li,
-.content #lbrnEventSidebar2 ul li {
+.content #lbrnEventSidebar2 ul li, .about #lbrnEventSidebar2 ul li {
   border-bottom: 1px solid #2C3D6C;
 }
-.about #lbrnEventSidebar2 ul a,
-.content #lbrnEventSidebar2 ul a {
+.content #lbrnEventSidebar2 ul a, .about #lbrnEventSidebar2 ul a {
   text-align: left;
   /* margin-left:10px; */
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2x ease-in;
 }
-.about #lbrnEventSidebar2 li,
-.content #lbrnEventSidebar2 li {
+.content #lbrnEventSidebar2 li, .about #lbrnEventSidebar2 li {
   text-align: left;
   padding-left: 10px;
   padding-top: 0.5em;
@@ -213,19 +209,16 @@ img:hover {
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2x ease-in;
 }
-.about #lbrnEventSidebar2 li a,
-.content #lbrnEventSidebar2 li a {
+.content #lbrnEventSidebar2 li a, .about #lbrnEventSidebar2 li a {
   color: #2C3D6C;
 }
-.about #lbrnEventSidebar2 li a:hover,
-.content #lbrnEventSidebar2 li a:hover {
+.content #lbrnEventSidebar2 li a:hover, .about #lbrnEventSidebar2 li a:hover {
   background-color: transparent;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2x ease-in;
 }
-.about #lbrnEventSidebar2 li:hover,
-.content #lbrnEventSidebar2 li:hover {
+.content #lbrnEventSidebar2 li:hover, .about #lbrnEventSidebar2 li:hover {
   color: #5ab35e;
   text-decoration: none;
 }
@@ -1849,11 +1842,29 @@ header {
 header.research {
   -webkit-filter: none;
           filter: none;
+  background-image: url("../images/slider/3.jpg");
 }
-header.cores, header.home {
+header header.research {
   -webkit-filter: none;
           filter: none;
-  background-image: url("../images/headers/header-background_new2-15.svg");
+}
+header header.cores, header header.home {
+  -webkit-filter: none;
+          filter: none;
+}
+header header.bbc {
+  -webkit-filter: none;
+          filter: none;
+}
+header header.mcbr {
+  -webkit-filter: none;
+          filter: none;
+}
+header header img {
+  float: left;
+  margin: 1em 0;
+  margin-top: 1em;
+  height: 5em;
 }
 
 header header.bbc {
@@ -5010,6 +5021,10 @@ footer span {
             flex: 1 1 30%;
     width: 30%;
     height: 100%;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
   }
 
   #core-list .sevenblock:nth-of-type(even) {
